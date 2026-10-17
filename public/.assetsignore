@@ -1,0 +1,5 @@
+# Official Astro + Cloudflare Workers recommendation:
+# https://docs.astro.build/en/guides/integrations-guide/cloudflare/
+# https://developers.cloudflare.com/workers/framework-guides/web-apps/astro/
+_worker.js
+_routes.json
