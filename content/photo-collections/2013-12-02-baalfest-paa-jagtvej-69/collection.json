@@ -1,0 +1,336 @@
+{
+  "id": "2013-12-02-baalfest-paa-jagtvej-69",
+  "sourceNid": 23357,
+  "slug": "baalfest-paa-jagtvej-69",
+  "title": "Bålfest på Jagtvej 69",
+  "publishedAt": "2013-12-02T13:06:34+01:00",
+  "modifiedAt": "2013-12-02T19:11:05+01:00",
+  "authors": [
+    "Mette Kramer Kristensen"
+  ],
+  "photographers": [
+    "Mette Kramer Kristensen"
+  ],
+  "prefix": null,
+  "series": null,
+  "manchet": "Fest for opløsningen af Faderhuset, den religiøse sekt der købte det tidligere Ungdomshus på Jagtvej 69, Nørrebro, blev natten til 1. december 2013 lukket af Københavns Politi. Resultat: 19 arresterede og en brækket arm.",
+  "introMarkdown": "",
+  "tags": [
+    "Aktivisme",
+    "Jagtvej 69",
+    "Nørrebro",
+    "Ungdomshuset"
+  ],
+  "genre": "Nyhed",
+  "coverImage": "01",
+  "images": [
+    {
+      "id": "01",
+      "sortOrder": 1,
+      "filename": "01-jagtvej-69-4349.jpg",
+      "originalFilename": "jagtvej_69-4349.JPG",
+      "width": 940,
+      "height": 627,
+      "credit": "Mette Kramer Kristensen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "Aktivisme",
+        "Jagtvej 69",
+        "Nørrebro",
+        "Ungdomshuset"
+      ]
+    },
+    {
+      "id": "02",
+      "sortOrder": 2,
+      "filename": "02-jagtvej-69-4318.jpg",
+      "originalFilename": "jagtvej_69-4318.JPG",
+      "width": 627,
+      "height": 940,
+      "credit": "Mette Kramer Kristensen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "Aktivisme",
+        "Jagtvej 69",
+        "Nørrebro",
+        "Ungdomshuset"
+      ]
+    },
+    {
+      "id": "03",
+      "sortOrder": 3,
+      "filename": "03-jagtvej-69-4343.jpg",
+      "originalFilename": "jagtvej_69-4343.JPG",
+      "width": 940,
+      "height": 627,
+      "credit": "Mette Kramer Kristensen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "Aktivisme",
+        "Jagtvej 69",
+        "Nørrebro",
+        "Ungdomshuset"
+      ]
+    },
+    {
+      "id": "04",
+      "sortOrder": 4,
+      "filename": "04-jagtvej-69-4345.jpg",
+      "originalFilename": "jagtvej_69-4345.JPG",
+      "width": 627,
+      "height": 940,
+      "credit": "Mette Kramer Kristensen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "Aktivisme",
+        "Jagtvej 69",
+        "Nørrebro",
+        "Ungdomshuset"
+      ]
+    },
+    {
+      "id": "05",
+      "sortOrder": 5,
+      "filename": "05-jagtvej-69-4410.jpg",
+      "originalFilename": "jagtvej_69-4410.JPG",
+      "width": 940,
+      "height": 627,
+      "credit": "Mette Kramer Kristensen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "Aktivisme",
+        "Jagtvej 69",
+        "Nørrebro",
+        "Ungdomshuset"
+      ]
+    },
+    {
+      "id": "06",
+      "sortOrder": 6,
+      "filename": "06-jagtvej-69-4449.jpg",
+      "originalFilename": "jagtvej_69-4449.JPG",
+      "width": 940,
+      "height": 627,
+      "credit": "Mette Kramer Kristensen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "Aktivisme",
+        "Jagtvej 69",
+        "Nørrebro",
+        "Ungdomshuset"
+      ]
+    },
+    {
+      "id": "07",
+      "sortOrder": 7,
+      "filename": "07-jagtvej-69-4493-0.jpg",
+      "originalFilename": "jagtvej_69-4493_0.JPG",
+      "width": 940,
+      "height": 627,
+      "credit": "Mette Kramer Kristensen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "Aktivisme",
+        "Jagtvej 69",
+        "Nørrebro",
+        "Ungdomshuset"
+      ]
+    },
+    {
+      "id": "08",
+      "sortOrder": 8,
+      "filename": "08-jagtvej-69-4499.jpg",
+      "originalFilename": "jagtvej_69-4499.JPG",
+      "width": 940,
+      "height": 627,
+      "credit": "Mette Kramer Kristensen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "Aktivisme",
+        "Jagtvej 69",
+        "Nørrebro",
+        "Ungdomshuset"
+      ]
+    },
+    {
+      "id": "09",
+      "sortOrder": 9,
+      "filename": "09-jagtvej-69-4505.jpg",
+      "originalFilename": "jagtvej_69-4505.JPG",
+      "width": 940,
+      "height": 627,
+      "credit": "Mette Kramer Kristensen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "Aktivisme",
+        "Jagtvej 69",
+        "Nørrebro",
+        "Ungdomshuset"
+      ]
+    },
+    {
+      "id": "10",
+      "sortOrder": 10,
+      "filename": "10-jagtvej-69-4516.jpg",
+      "originalFilename": "jagtvej_69-4516.JPG",
+      "width": 940,
+      "height": 627,
+      "credit": "Mette Kramer Kristensen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "Aktivisme",
+        "Jagtvej 69",
+        "Nørrebro",
+        "Ungdomshuset"
+      ]
+    },
+    {
+      "id": "11",
+      "sortOrder": 11,
+      "filename": "11-jagtvej-69-4521.jpg",
+      "originalFilename": "jagtvej_69-4521.JPG",
+      "width": 940,
+      "height": 627,
+      "credit": "Mette Kramer Kristensen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "Aktivisme",
+        "Jagtvej 69",
+        "Nørrebro",
+        "Ungdomshuset"
+      ]
+    },
+    {
+      "id": "12",
+      "sortOrder": 12,
+      "filename": "12-jagtvej-69-4530.jpg",
+      "originalFilename": "jagtvej_69-4530.JPG",
+      "width": 940,
+      "height": 627,
+      "credit": "Mette Kramer Kristensen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "Aktivisme",
+        "Jagtvej 69",
+        "Nørrebro",
+        "Ungdomshuset"
+      ]
+    },
+    {
+      "id": "13",
+      "sortOrder": 13,
+      "filename": "13-jagtvej-69-4535.jpg",
+      "originalFilename": "jagtvej_69-4535.JPG",
+      "width": 940,
+      "height": 627,
+      "credit": "Mette Kramer Kristensen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "Aktivisme",
+        "Jagtvej 69",
+        "Nørrebro",
+        "Ungdomshuset"
+      ]
+    },
+    {
+      "id": "14",
+      "sortOrder": 14,
+      "filename": "14-jagtvej-69-4540.jpg",
+      "originalFilename": "jagtvej_69-4540.JPG",
+      "width": 940,
+      "height": 627,
+      "credit": "Mette Kramer Kristensen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "Aktivisme",
+        "Jagtvej 69",
+        "Nørrebro",
+        "Ungdomshuset"
+      ]
+    },
+    {
+      "id": "15",
+      "sortOrder": 15,
+      "filename": "15-jagtvej-69-4542.jpg",
+      "originalFilename": "jagtvej_69-4542.JPG",
+      "width": 940,
+      "height": 627,
+      "credit": "Mette Kramer Kristensen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "Aktivisme",
+        "Jagtvej 69",
+        "Nørrebro",
+        "Ungdomshuset"
+      ]
+    },
+    {
+      "id": "16",
+      "sortOrder": 16,
+      "filename": "16-jagtvej-69-4556.jpg",
+      "originalFilename": "jagtvej_69-4556.JPG",
+      "width": 940,
+      "height": 627,
+      "credit": "Mette Kramer Kristensen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "Aktivisme",
+        "Jagtvej 69",
+        "Nørrebro",
+        "Ungdomshuset"
+      ]
+    },
+    {
+      "id": "17",
+      "sortOrder": 17,
+      "filename": "17-jagtvej-69-4582.jpg",
+      "originalFilename": "jagtvej_69-4582.JPG",
+      "width": 940,
+      "height": 627,
+      "credit": "Mette Kramer Kristensen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "Aktivisme",
+        "Jagtvej 69",
+        "Nørrebro",
+        "Ungdomshuset"
+      ]
+    }
+  ],
+  "sourceUrl": "fotoserie/b-lfest-p-jagtvej-69.html",
+  "sourceType": "fotoserie"
+}

@@ -1,0 +1,239 @@
+{
+  "id": "2014-04-23-eu-foer-lukketid",
+  "sourceNid": 24200,
+  "slug": "eu-foer-lukketid",
+  "title": "EU før lukketid",
+  "publishedAt": "2014-04-23T14:17:50+02:00",
+  "modifiedAt": "2014-04-23T14:56:05+02:00",
+  "authors": [
+    "Anders Birger"
+  ],
+  "photographers": [
+    "Anders Birger"
+  ],
+  "prefix": null,
+  "series": null,
+  "manchet": "Mandag den 14. april 2014, med valget til Europa Parlamentet kun en måned væk, tog samtlige parlamentarikere, embedsmænd og -kvinder, medhjælpere, politiske rådgivere og journalister endnu engang turen fra Bruxelles til Strasbourg for at stemme om de sidste sager, inden EU går i politisk dvale op til valget i maj.Dette er for mange sidste chance til at få deres politiske mærkesager stemt igennem og dermed få sat et fingeraftryk på EU-politikken både lokalt og internationalt. Med en offentlighed, der ofte har svært ved at genkende EU parlamentarikere, er det også en god mulighed for at markere sig i den hjemlige debat og få vælgerne engageret i nogle af de vigtigste europæiske spørgsmål lige nu.Fotograf Anders Birger er fulgt i hælene på EU-apparatet for at få et indblik i livet i Europas politiske navle.",
+  "introMarkdown": "",
+  "tags": [
+    "EU",
+    "Folkebevægelsen mod EU",
+    "Strasbourg"
+  ],
+  "genre": "Nyhed",
+  "coverImage": "01",
+  "images": [
+    {
+      "id": "01",
+      "sortOrder": 1,
+      "filename": "01-eu-anders-birger-01.jpg",
+      "originalFilename": "EU - Anders Birger 01.jpg",
+      "width": 940,
+      "height": 627,
+      "credit": "Anders Birger",
+      "caption": "Der er møde i gruppen ‘European United Left - Nordic Green Left,’ hvor Folkebevægelsen mod EU er repræsenteret ved Rina Ronja Kari",
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "EU",
+        "Folkebevægelsen mod EU",
+        "Rina Ronja Kari",
+        "Strasbourg"
+      ]
+    },
+    {
+      "id": "02",
+      "sortOrder": 2,
+      "filename": "02-eu-anders-birger-02.jpg",
+      "originalFilename": "EU - Anders Birger 02.jpg",
+      "width": 627,
+      "height": 940,
+      "credit": "Anders Birger",
+      "caption": "En af mange plenarforsamlinger er i gang. I disse sidste dage er der to stemmerunder om dagen, hver med en varighed af to timer",
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "EU",
+        "Folkebevægelsen mod EU",
+        "Strasbourg"
+      ]
+    },
+    {
+      "id": "03",
+      "sortOrder": 3,
+      "filename": "03-eu-anders-birger-03.jpg",
+      "originalFilename": "EU - Anders Birger 03.jpg",
+      "width": 940,
+      "height": 627,
+      "credit": "Anders Birger",
+      "caption": "SF’s Margrete Auken diskuterer bankunion, som skal til afstemning næste dag med TV2 News og kommunikationsansvarlig Mikkel Bahl",
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "EU",
+        "Folkebevægelsen mod EU",
+        "Margrete Auken",
+        "SF",
+        "Strasbourg"
+      ]
+    },
+    {
+      "id": "04",
+      "sortOrder": 4,
+      "filename": "04-eu-anders-birger-04.jpg",
+      "originalFilename": "EU - Anders Birger 04.jpg",
+      "width": 940,
+      "height": 627,
+      "credit": "Anders Birger",
+      "caption": "Louise Weiss-bygningen, som huser plenarforsamlingen, har et samlet areal på 220.000 m² og er en af de største og mest synlige bygninger i Strasbourg",
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "EU",
+        "Folkebevægelsen mod EU",
+        "Strasbourg"
+      ]
+    },
+    {
+      "id": "05",
+      "sortOrder": 5,
+      "filename": "05-eu-anders-birger-05-0.jpg",
+      "originalFilename": "EU - Anders Birger 05_0.jpg",
+      "width": 940,
+      "height": 627,
+      "credit": "Anders Birger",
+      "caption": "Med 24 officielle sprog er oversætternes arbejde enormt. Der er gerne tre oversættere per sprog til samtlige større møder i plenarforsamlingen og i de individuelle grupper",
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "EU",
+        "Folkebevægelsen mod EU",
+        "Strasbourg"
+      ]
+    },
+    {
+      "id": "06",
+      "sortOrder": 6,
+      "filename": "06-eu-anders-birger-06.jpg",
+      "originalFilename": "EU - Anders Birger 06.jpg",
+      "width": 627,
+      "height": 940,
+      "credit": "Anders Birger",
+      "caption": "Europa Parlamentet er ved lov bundet til at mødes 12 gange om året i Strasbourg med hver samling varende mindst fire dage",
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "EU",
+        "Folkebevægelsen mod EU",
+        "Strasbourg"
+      ]
+    },
+    {
+      "id": "07",
+      "sortOrder": 7,
+      "filename": "07-eu-anders-birger-07.jpg",
+      "originalFilename": "EU - Anders Birger 07.jpg",
+      "width": 940,
+      "height": 627,
+      "credit": "Anders Birger",
+      "caption": "Christel Schaldemose fra Socialdemokraterne er ved at forklare nogle af grundideerne i den Europæiske Union til DR3",
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "Christel Schaldemose",
+        "EU",
+        "Folkebevægelsen mod EU",
+        "Socialdemokraterne",
+        "Strasbourg"
+      ]
+    },
+    {
+      "id": "08",
+      "sortOrder": 8,
+      "filename": "08-eu-anders-birger-08.jpg",
+      "originalFilename": "EU - Anders Birger 08.jpg",
+      "width": 940,
+      "height": 627,
+      "credit": "Anders Birger",
+      "caption": "En typisk dag i Strasbourg starter kl. 7 om morgenen og varer gerne til kl. 23 om aftenen",
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "EU",
+        "Folkebevægelsen mod EU",
+        "Strasbourg"
+      ]
+    },
+    {
+      "id": "09",
+      "sortOrder": 9,
+      "filename": "09-eu-anders-birger-09.jpg",
+      "originalFilename": "EU - Anders Birger 09.jpg",
+      "width": 940,
+      "height": 627,
+      "credit": "Anders Birger",
+      "caption": "De daglige programmer distribueres i presserummet",
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "EU",
+        "Folkebevægelsen mod EU",
+        "Strasbourg"
+      ]
+    },
+    {
+      "id": "10",
+      "sortOrder": 10,
+      "filename": "10-eu-anders-birger-10.jpg",
+      "originalFilename": "EU - Anders Birger 10.jpg",
+      "width": 940,
+      "height": 627,
+      "credit": "Anders Birger",
+      "caption": "Rina Ronja Kari og resten af Folkebevægelsen mod EU’s kontor gennemgår stemmelisterne for dagens mange afstemninger",
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "EU",
+        "Folkebevægelsen mod EU",
+        "Rina Ronja Kari",
+        "Strasbourg"
+      ]
+    },
+    {
+      "id": "11",
+      "sortOrder": 11,
+      "filename": "11-eu-anders-birger-11.jpg",
+      "originalFilename": "EU - Anders Birger 11.jpg",
+      "width": 940,
+      "height": 627,
+      "credit": "Anders Birger",
+      "caption": "To assistenter spiller bordtennis sent om aftenen i den blå blok af Louise Weiss bygningen",
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "EU",
+        "Folkebevægelsen mod EU",
+        "Strasbourg"
+      ]
+    },
+    {
+      "id": "12",
+      "sortOrder": 12,
+      "filename": "12-eu-anders-birger-12.jpg",
+      "originalFilename": "EU - Anders Birger 12.jpg",
+      "width": 940,
+      "height": 627,
+      "credit": "Anders Birger",
+      "caption": "Overalt i parlamentet ses tv-hold, der laver spots til hele Europa",
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "EU",
+        "Folkebevægelsen mod EU",
+        "Strasbourg"
+      ]
+    }
+  ],
+  "sourceUrl": "fotoserie/eu-f-r-lukketid.html",
+  "sourceType": "fotoserie"
+}

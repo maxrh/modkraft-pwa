@@ -1,0 +1,1 @@
+Nøgen og nøgtern skildring af et parisisk liv. Vanessa er en fotoserie af Charlotte Quitzau, som er uddannet i fotografisk kommunikation i Sydafrika, Paris og på Danmarks Medie- og Journalisthøjskole.

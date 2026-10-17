@@ -1,0 +1,133 @@
+{
+  "id": "2014-12-09-hjemloese-og-hjaelpemidler",
+  "sourceNid": 25553,
+  "slug": "hjemloese-og-hjaelpemidler",
+  "title": "Hjemløse og hjælpemidler",
+  "publishedAt": "2014-12-09T14:29:12+01:00",
+  "modifiedAt": "2014-12-09T16:37:39+01:00",
+  "authors": [
+    "Mette Kramer Kristensen"
+  ],
+  "photographers": [
+    "Mette Kramer Kristensen"
+  ],
+  "prefix": "Kalender",
+  "series": null,
+  "manchet": "Rejsekort, medicin og smartphone. Hjemløse og socialt udsatte i Danmark har mange hjælpemidler på deres vej igennem livet. Hjemløsebladet Hus Forbi stiller med deres kalender for 2015 skarpt på fænomenet med billeder af fotograf Mette Kramer Kristensen. Kalenderen sælges af målgruppen og overskuddet fra salget går til at hjælpe socialt udsatte. Vi bringer et udddrag.",
+  "introMarkdown": "",
+  "tags": [
+    "Hjemløse",
+    "Hus Forbi",
+    "Socialt"
+  ],
+  "genre": "Nyhed",
+  "coverImage": "01",
+  "images": [
+    {
+      "id": "01",
+      "sortOrder": 1,
+      "filename": "01-modkraft-michael-8022.jpg",
+      "originalFilename": "modkraft- michael-8022.JPG",
+      "width": 940,
+      "height": 627,
+      "credit": "Mette Kramer Kristensen",
+      "caption": "Michael fra Fyn bruger iltapparat 16 timer i døgnet på grund af KOL",
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "Hjemløse",
+        "Hus Forbi",
+        "Socialt"
+      ]
+    },
+    {
+      "id": "02",
+      "sortOrder": 2,
+      "filename": "02-modkraft-rasmusklump-sheriffen-5814.jpg",
+      "originalFilename": "modkraft- rasmusklump_sheriffen-5814.JPG",
+      "width": 940,
+      "height": 627,
+      "credit": "Mette Kramer Kristensen",
+      "caption": "Sheriffen og Rasmus Klump fra Jylland går på landevejene med deres barnevogne, der er deres rullende hjem med alt fra telt og soveposer til tøj og kogegrej",
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "Hjemløse",
+        "Hus Forbi",
+        "Socialt"
+      ]
+    },
+    {
+      "id": "03",
+      "sortOrder": 3,
+      "filename": "03-modkraft-tom-8099.jpg",
+      "originalFilename": "modkraft- tom-8099.JPG",
+      "width": 940,
+      "height": 627,
+      "credit": "Mette Kramer Kristensen",
+      "caption": "Tom fra Maribo bruger rejsekort, så han hver dag kan komme på værestedet i Nykøbing Falster samt byture til København",
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "Hjemløse",
+        "Hus Forbi",
+        "Maribo",
+        "Socialt"
+      ]
+    },
+    {
+      "id": "04",
+      "sortOrder": 4,
+      "filename": "04-modkraft-andre-7726.jpg",
+      "originalFilename": "modkraft-andre-7726.JPG",
+      "width": 940,
+      "height": 627,
+      "credit": "Mette Kramer Kristensen",
+      "caption": "André fra København bruger medicin for sine psykiske lidelser, så tankerne bliver lidt lysere",
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "Hjemløse",
+        "Hus Forbi",
+        "Socialt"
+      ]
+    },
+    {
+      "id": "05",
+      "sortOrder": 5,
+      "filename": "05-modkraft-juliane-7081-0.jpg",
+      "originalFilename": "modkraft-juliane-7081_0.JPG",
+      "width": 940,
+      "height": 627,
+      "credit": "Mette Kramer Kristensen",
+      "caption": "Juliane fra København bruger smartphone, der er en mobil livline, både til familie og venner og det offentlige",
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "Hjemløse",
+        "Hus Forbi",
+        "Socialt"
+      ]
+    },
+    {
+      "id": "06",
+      "sortOrder": 6,
+      "filename": "06-modkraft-maciej-5752.jpg",
+      "originalFilename": "modkraft-maciej-5752.JPG",
+      "width": 940,
+      "height": 627,
+      "credit": "Mette Kramer Kristensen",
+      "caption": "Maciej fra Aarhus har alt, hvad han ejer i sin taske",
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "Hjemløse",
+        "Hus Forbi",
+        "Socialt",
+        "Aarhus"
+      ]
+    }
+  ],
+  "sourceUrl": "fotoserie/hjeml-se-og-hj-lpemidler.html",
+  "sourceType": "fotoserie"
+}

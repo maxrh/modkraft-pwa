@@ -1,0 +1,1 @@
+Fotos: Ole Garde

@@ -1,0 +1,347 @@
+---
+import type { Photo } from '@/lib/photos';
+import { packIntoColumns } from '@/lib/photos';
+import PhotoCard from '@/components/PhotoCard.astro';
+
+interface Props {
+  photos: Photo[];
+}
+
+const { photos } = Astro.props;
+
+const INITIAL_COUNT = 48;
+const BATCH_SIZE = 48;
+const ssrColumnCount = 4;
+
+const initialPhotos = photos.slice(0, INITIAL_COUNT);
+const restPhotos = photos.slice(INITIAL_COUNT);
+const ssrColumns = packIntoColumns(initialPhotos, ssrColumnCount);
+const indexById = new Map(initialPhotos.map((photo, index) => [photo.id, index]));
+
+/** Compact payload for client-side card construction (mirrors PhotoCard fields). */
+const restPayload = restPhotos.map((photo) => ({
+  href: photo.href,
+  thumb: photo.thumb,
+  width: photo.width,
+  height: photo.height,
+  caption: photo.caption,
+  collectionTitle: photo.collectionTitle,
+  sortOrder: photo.sortOrder,
+  imageCount: photo.imageCount,
+  prefix: photo.prefix,
+  series: photo.series,
+  credit: photo.credit,
+}));
+
+// Prevent </script> in captions from breaking the inline JSON payload.
+const restJson = JSON.stringify(restPayload).replace(/</g, '\\u003c');
+---
+
+<div
+  data-mosaic-root
+  data-batch-size={String(BATCH_SIZE)}
+  data-initial-count={String(INITIAL_COUNT)}
+  data-total={String(photos.length)}
+>
+  <div
+    data-mosaic
+    data-ssr-cols={String(ssrColumnCount)}
+    class="grid grid-cols-1 items-start gap-4 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4"
+  >
+    {
+      ssrColumns.map((column) => (
+        <div class="flex min-w-0 flex-col gap-4" data-mosaic-col>
+          {column.map((photo) => {
+            const globalIndex = indexById.get(photo.id) ?? 0;
+            return (
+              <div
+                data-index={String(globalIndex)}
+                data-ratio={(photo.height / photo.width).toFixed(4)}
+                class="min-w-0"
+              >
+                <PhotoCard photo={photo} highPriority={globalIndex < 2} />
+              </div>
+            );
+          })}
+        </div>
+      ))
+    }
+  </div>
+
+  {
+    restPayload.length > 0 && (
+      <>
+        <script type="application/json" data-mosaic-rest set:html={restJson} />
+        <div data-mosaic-more class="mt-8 flex flex-col items-center gap-3">
+          <button
+            type="button"
+            data-mosaic-load
+            class="rounded-md border border-border bg-background px-4 py-2 text-sm font-medium text-foreground hover:bg-accent"
+          >
+            Vis flere fotos
+          </button>
+          <div data-mosaic-sentinel class="h-px w-full" aria-hidden="true" />
+        </div>
+      </>
+    )
+  }
+</div>
+
+<script is:inline>
+  (function (root) {
+    if (!root || root.hasAttribute('data-ready')) return;
+    root.setAttribute('data-ready', '');
+
+    var GAP = 16;
+    var mosaic = root.querySelector('[data-mosaic]');
+    if (!mosaic) return;
+
+    var ssrCols = Number(mosaic.getAttribute('data-ssr-cols') || 4);
+    var batchSize = Number(root.getAttribute('data-batch-size') || 48);
+    var initialCount = Number(root.getAttribute('data-initial-count') || 48);
+    var queries = [
+      window.matchMedia('(min-width: 80rem)'),
+      window.matchMedia('(min-width: 64rem)'),
+      window.matchMedia('(min-width: 40rem)'),
+    ];
+    var current = 0;
+    var heights = [];
+    var rest = [];
+    var nextIndex = initialCount;
+    var observer = null;
+
+    var restScript = root.querySelector('[data-mosaic-rest]');
+    if (restScript && restScript.textContent) {
+      try {
+        rest = JSON.parse(restScript.textContent);
+      } catch (e) {
+        rest = [];
+      }
+    }
+
+    var moreEl = root.querySelector('[data-mosaic-more]');
+    var loadBtn = root.querySelector('[data-mosaic-load]');
+    var sentinel = root.querySelector('[data-mosaic-sentinel]');
+
+    function columnCount() {
+      if (queries[0].matches) return 4;
+      if (queries[1].matches) return 3;
+      if (queries[2].matches) return 2;
+      return 1;
+    }
+
+    function getColumns() {
+      return Array.prototype.slice.call(mosaic.querySelectorAll('[data-mosaic-col]'));
+    }
+
+    function collectItemsSorted() {
+      var items = [];
+      var cols = getColumns();
+      for (var i = 0; i < cols.length; i++) {
+        var kids = cols[i].children;
+        for (var j = 0; j < kids.length; j++) items.push(kids[j]);
+      }
+      items.sort(function (a, b) {
+        return Number(a.getAttribute('data-index') || 0) - Number(b.getAttribute('data-index') || 0);
+      });
+      return items;
+    }
+
+    function recomputeHeights(columns) {
+      heights = [];
+      for (var c = 0; c < columns.length; c++) {
+        var h = 0;
+        var kids = columns[c].children;
+        for (var i = 0; i < kids.length; i++) {
+          h += parseFloat(kids[i].getAttribute('data-ratio')) || 1;
+        }
+        heights.push(h);
+      }
+    }
+
+    function markHighPriority(columns) {
+      var marked = 0;
+      for (var c = 0; c < columns.length; c++) {
+        var imgs = columns[c].querySelectorAll('img');
+        for (var i = 0; i < imgs.length; i++) {
+          if (marked < 2 && i === 0) {
+            imgs[i].setAttribute('fetchpriority', 'high');
+            imgs[i].setAttribute('loading', 'eager');
+            marked++;
+          } else {
+            imgs[i].removeAttribute('fetchpriority');
+            imgs[i].setAttribute('loading', 'lazy');
+          }
+        }
+      }
+    }
+
+    function pack(n) {
+      var items = collectItemsSorted();
+      var columns = [];
+      heights = [];
+      for (var c = 0; c < n; c++) {
+        var col = document.createElement('div');
+        col.setAttribute('data-mosaic-col', '');
+        col.style.cssText = 'display:flex;flex-direction:column;gap:' + GAP + 'px;min-width:0';
+        columns.push(col);
+        heights.push(0);
+      }
+
+      for (var i = 0; i < items.length; i++) {
+        var shortest = 0;
+        for (var k = 1; k < n; k++) if (heights[k] < heights[shortest]) shortest = k;
+        columns[shortest].appendChild(items[i]);
+        heights[shortest] += parseFloat(items[i].getAttribute('data-ratio')) || 1;
+      }
+
+      mosaic.style.gridTemplateColumns = 'repeat(' + n + ', minmax(0, 1fr))';
+      mosaic.replaceChildren.apply(mosaic, columns);
+      markHighPriority(columns);
+    }
+
+    function escapeHtml(value) {
+      return String(value == null ? '' : value)
+        .replace(/&/g, '&amp;')
+        .replace(/</g, '&lt;')
+        .replace(/>/g, '&gt;')
+        .replace(/"/g, '&quot;');
+    }
+
+    function buildCard(photo, globalIndex) {
+      var ratio = (photo.height / photo.width).toFixed(4);
+      var wrap = document.createElement('div');
+      wrap.setAttribute('data-index', String(globalIndex));
+      wrap.setAttribute('data-ratio', ratio);
+      wrap.className = 'min-w-0';
+
+      var alt = photo.caption || photo.collectionTitle + ' (' + photo.sortOrder + '/' + photo.imageCount + ')';
+      var badge =
+        photo.prefix || photo.series
+          ? '<span class="truncate rounded bg-black/70 px-2 py-0.5 uppercase">' +
+            escapeHtml(photo.prefix || photo.series) +
+            '</span>'
+          : '<span></span>';
+
+      var captionHtml = photo.caption
+        ? '<p class="line-clamp-2 text-xs leading-relaxed text-white/85">' + escapeHtml(photo.caption) + '</p>'
+        : '';
+      var creditHtml = photo.credit
+        ? '<p class="pt-0.5 text-[11px] font-medium tracking-wide text-white/75 uppercase">Foto: ' +
+          escapeHtml(photo.credit) +
+          '</p>'
+        : '';
+
+      wrap.innerHTML =
+        '<a href="' +
+        escapeHtml(photo.href) +
+        '" class="group relative block w-full overflow-hidden rounded-sm bg-muted no-underline focus-visible:ring-2 focus-visible:ring-ring focus-visible:outline-none" style="aspect-ratio: ' +
+        photo.width +
+        ' / ' +
+        photo.height +
+        ';">' +
+        '<img src="' +
+        escapeHtml(photo.thumb) +
+        '" alt="' +
+        escapeHtml(alt) +
+        '" width="' +
+        photo.width +
+        '" height="' +
+        photo.height +
+        '" loading="lazy" decoding="async" sizes="(max-width: 40rem) 100vw, (max-width: 64rem) 50vw, (max-width: 80rem) 33vw, 25vw" onload="this.dataset.loaded=\'\'" class="photo-img absolute inset-0 block h-full w-full object-cover text-transparent opacity-0 transition-[opacity,transform] duration-300 data-loaded:opacity-100 group-hover:scale-[1.015]" />' +
+        '<div class="pointer-events-none absolute inset-0 flex flex-col justify-between bg-gradient-to-t from-black/80 via-black/20 to-black/30 p-3.5 text-white opacity-0 transition-opacity duration-200 group-hover:opacity-100 group-focus-visible:opacity-100">' +
+        '<div class="flex items-start justify-between gap-2 text-[11px] font-medium tracking-wide">' +
+        badge +
+        '<span class="shrink-0 rounded bg-black/70 px-1.5 py-0.5 tabular-nums">' +
+        photo.sortOrder +
+        '/' +
+        photo.imageCount +
+        '</span></div>' +
+        '<div class="space-y-1"><p class="font-display line-clamp-2 text-sm leading-snug font-semibold text-white drop-shadow-xs">' +
+        escapeHtml(photo.collectionTitle) +
+        '</p>' +
+        captionHtml +
+        creditHtml +
+        '</div></div></a>';
+
+      return wrap;
+    }
+
+    function appendBatch() {
+      if (!rest.length) {
+        cleanupMore();
+        return;
+      }
+
+      var columns = getColumns();
+      if (!columns.length || heights.length !== columns.length) {
+        recomputeHeights(columns);
+      }
+
+      var batch = rest.splice(0, batchSize);
+      for (var i = 0; i < batch.length; i++) {
+        var shortest = 0;
+        for (var k = 1; k < columns.length; k++) {
+          if (heights[k] < heights[shortest]) shortest = k;
+        }
+        var card = buildCard(batch[i], nextIndex++);
+        columns[shortest].appendChild(card);
+        heights[shortest] += parseFloat(card.getAttribute('data-ratio')) || 1;
+      }
+
+      if (!rest.length) cleanupMore();
+      else if (loadBtn) {
+        loadBtn.textContent = 'Vis flere fotos (' + rest.length + ' tilbage)';
+      }
+    }
+
+    function cleanupMore() {
+      if (observer && sentinel) observer.unobserve(sentinel);
+      if (moreEl) moreEl.remove();
+      if (restScript) restScript.remove();
+    }
+
+    function layout() {
+      var n = columnCount();
+      if (n === current) return;
+
+      // First paint: viewport matches SSR — keep DOM, just sync heights.
+      if (n === ssrCols && current === 0) {
+        current = n;
+        mosaic.style.gridTemplateColumns = 'repeat(' + n + ', minmax(0, 1fr))';
+        recomputeHeights(getColumns());
+        markHighPriority(getColumns());
+        return;
+      }
+
+      current = n;
+      pack(n);
+    }
+
+    layout();
+    queries.forEach(function (q) {
+      q.addEventListener('change', layout);
+    });
+
+    if (loadBtn) {
+      loadBtn.addEventListener('click', function () {
+        appendBatch();
+      });
+      if (rest.length) {
+        loadBtn.textContent = 'Vis flere fotos (' + rest.length + ' tilbage)';
+      }
+    }
+
+    if (sentinel && 'IntersectionObserver' in window) {
+      observer = new IntersectionObserver(
+        function (entries) {
+          for (var i = 0; i < entries.length; i++) {
+            if (entries[i].isIntersecting) appendBatch();
+          }
+        },
+        { rootMargin: '600px 0px' }
+      );
+      observer.observe(sentinel);
+    }
+  })(document.currentScript && document.currentScript.previousElementSibling);
+</script>

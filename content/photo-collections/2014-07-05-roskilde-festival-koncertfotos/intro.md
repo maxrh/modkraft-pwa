@@ -1,0 +1,1 @@
+[Se også links om Roskilde Festival 2014-2004 på Modkraft](http://modkraft.dk/artikel/roskilde-festival-0).

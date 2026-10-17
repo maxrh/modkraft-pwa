@@ -1,0 +1,40 @@
+---
+import BaseLayout from '@/layouts/BaseLayout.astro';
+import PhotoMosaic from '@/components/PhotoMosaic.astro';
+import { getAllPhotos, type Photo } from '@/lib/photos';
+
+export async function getStaticPaths() {
+  const photos = await getAllPhotos();
+  const byTag = new Map<string, Photo[]>();
+
+  for (const photo of photos) {
+    for (const tag of photo.tags) {
+      const list = byTag.get(tag) ?? [];
+      list.push(photo);
+      byTag.set(tag, list);
+    }
+  }
+
+  return [...byTag.entries()].map(([tag, tagPhotos]) => ({
+    params: { tag },
+    props: { tag, photos: tagPhotos },
+  }));
+}
+
+interface Props {
+  tag: string;
+  photos: Photo[];
+}
+
+const { tag, photos } = Astro.props;
+---
+
+<BaseLayout
+  title={tag}
+  description={`${photos.length} fotos med tagget "${tag}".`}
+  activeTag={tag}
+>
+  <section class="mx-auto max-w-[1600px] px-4 pt-4 pb-16 sm:px-6">
+    <PhotoMosaic photos={photos} />
+  </section>
+</BaseLayout>

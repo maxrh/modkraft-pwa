@@ -1,0 +1,1 @@
+Forårssol, fløjter og røde faner. Modkrafts fotografer fulgte med fra morgenmøder, med demonstrationsoptog til Fælledparken i København.

@@ -1,0 +1,386 @@
+{
+  "id": "2015-10-22-hjemloesedagen-2015",
+  "sourceNid": 27115,
+  "slug": "hjemloesedagen-2015",
+  "title": "Hjemløsedagen 2015",
+  "publishedAt": "2015-10-22T12:55:31+02:00",
+  "modifiedAt": "2015-10-22T16:52:39+02:00",
+  "authors": [
+    "Mette Kramer Kristensen"
+  ],
+  "photographers": [
+    "Mette Kramer Kristensen"
+  ],
+  "prefix": "Hjemløse",
+  "series": null,
+  "manchet": "Lørdag den 17. oktober blev FN´s internationale fattigdomsdag traditionen tro markeret med den årlige »Hjemløsedag« i København.",
+  "introMarkdown": "Rådhuspladsen blev omdannet til en markedsplads, hvor en lang række frivilligorganisationer, der i det daglige arbejder med udsatte mennesker, inviterer til dialog og samvær. På scenen var der fuldt program med masser af danseglad musik fra hhv. Folkeklubben, Stig Møller og Kaffas Band, krydret med taler af hjemløse og af socialministeren.\n\nHjemløseprisen gik i år til overlæge Henrik Thiesen for hans mangeårige engagement i sundhedsarbejdet med hjemløse og socialt udsatte. Henrik Thiesen er bl.a. stifter og leder af Københavns Kommunes opsøgende sundhedsteam.\n\nHjemløsekoret underholdt også med et par numre, og hjemløsepræst Asser Skude holdt en mindeandagt for de kammerater, som vi har mistet i det sidste år.",
+  "tags": [
+    "Hjemløse",
+    "Socialt",
+    "Velfærd"
+  ],
+  "genre": "Nyhed",
+  "coverImage": "01",
+  "images": [
+    {
+      "id": "01",
+      "sortOrder": 1,
+      "filename": "01-hjemloesedagen-0059.jpg",
+      "originalFilename": "hjemløsedagen-0059.JPG",
+      "width": 753,
+      "height": 940,
+      "credit": "Mette Kramer Kristensen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "Hjemløse",
+        "Socialt",
+        "Velfærd"
+      ]
+    },
+    {
+      "id": "02",
+      "sortOrder": 2,
+      "filename": "02-hjemloesedagen-0079.jpg",
+      "originalFilename": "hjemløsedagen-0079.JPG",
+      "width": 940,
+      "height": 627,
+      "credit": "Mette Kramer Kristensen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "Hjemløse",
+        "Socialt",
+        "Velfærd"
+      ]
+    },
+    {
+      "id": "03",
+      "sortOrder": 3,
+      "filename": "03-hjemloesedagen-0127.jpg",
+      "originalFilename": "hjemløsedagen-0127.JPG",
+      "width": 653,
+      "height": 940,
+      "credit": "Mette Kramer Kristensen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "Hjemløse",
+        "Socialt",
+        "Velfærd"
+      ]
+    },
+    {
+      "id": "04",
+      "sortOrder": 4,
+      "filename": "04-hjemloesedagen-0152.jpg",
+      "originalFilename": "hjemløsedagen-0152.JPG",
+      "width": 940,
+      "height": 627,
+      "credit": "Mette Kramer Kristensen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "Hjemløse",
+        "Socialt",
+        "Velfærd"
+      ]
+    },
+    {
+      "id": "05",
+      "sortOrder": 5,
+      "filename": "05-hjemloesedagen-0156.jpg",
+      "originalFilename": "hjemløsedagen-0156.JPG",
+      "width": 940,
+      "height": 627,
+      "credit": "Mette Kramer Kristensen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "Hjemløse",
+        "Socialt",
+        "Velfærd"
+      ]
+    },
+    {
+      "id": "06",
+      "sortOrder": 6,
+      "filename": "06-hjemloesedagen-0177.jpg",
+      "originalFilename": "hjemløsedagen-0177.JPG",
+      "width": 940,
+      "height": 627,
+      "credit": "Mette Kramer Kristensen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "Hjemløse",
+        "Socialt",
+        "Velfærd"
+      ]
+    },
+    {
+      "id": "07",
+      "sortOrder": 7,
+      "filename": "07-hjemloesedagen-0210.jpg",
+      "originalFilename": "hjemløsedagen-0210.JPG",
+      "width": 940,
+      "height": 627,
+      "credit": "Mette Kramer Kristensen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "Hjemløse",
+        "Socialt",
+        "Velfærd"
+      ]
+    },
+    {
+      "id": "08",
+      "sortOrder": 8,
+      "filename": "08-hjemloesedagen-0220.jpg",
+      "originalFilename": "hjemløsedagen-0220.JPG",
+      "width": 940,
+      "height": 627,
+      "credit": "Mette Kramer Kristensen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "Hjemløse",
+        "Socialt",
+        "Velfærd"
+      ]
+    },
+    {
+      "id": "09",
+      "sortOrder": 9,
+      "filename": "09-hjemloesedagen-0257.jpg",
+      "originalFilename": "hjemløsedagen-0257.JPG",
+      "width": 940,
+      "height": 611,
+      "credit": "Mette Kramer Kristensen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "Hjemløse",
+        "Socialt",
+        "Velfærd"
+      ]
+    },
+    {
+      "id": "10",
+      "sortOrder": 10,
+      "filename": "10-hjemloesedagen-0279-0.jpg",
+      "originalFilename": "hjemløsedagen-0279_0.JPG",
+      "width": 940,
+      "height": 627,
+      "credit": "Mette Kramer Kristensen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "Hjemløse",
+        "Socialt",
+        "Velfærd"
+      ]
+    },
+    {
+      "id": "11",
+      "sortOrder": 11,
+      "filename": "11-hjemloesedagen-0286.jpg",
+      "originalFilename": "hjemløsedagen-0286.JPG",
+      "width": 940,
+      "height": 627,
+      "credit": "Mette Kramer Kristensen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "Hjemløse",
+        "Socialt",
+        "Velfærd"
+      ]
+    },
+    {
+      "id": "12",
+      "sortOrder": 12,
+      "filename": "12-hjemloesedagen-0315.jpg",
+      "originalFilename": "hjemløsedagen-0315.JPG",
+      "width": 940,
+      "height": 627,
+      "credit": "Mette Kramer Kristensen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "Hjemløse",
+        "Socialt",
+        "Velfærd"
+      ]
+    },
+    {
+      "id": "13",
+      "sortOrder": 13,
+      "filename": "13-hjemloesedagen-0319.jpg",
+      "originalFilename": "hjemløsedagen-0319.JPG",
+      "width": 940,
+      "height": 627,
+      "credit": "Mette Kramer Kristensen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "Hjemløse",
+        "Socialt",
+        "Velfærd"
+      ]
+    },
+    {
+      "id": "14",
+      "sortOrder": 14,
+      "filename": "14-hjemloesedagen-0328.jpg",
+      "originalFilename": "hjemløsedagen-0328.JPG",
+      "width": 940,
+      "height": 627,
+      "credit": "Mette Kramer Kristensen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "Hjemløse",
+        "Socialt",
+        "Velfærd"
+      ]
+    },
+    {
+      "id": "15",
+      "sortOrder": 15,
+      "filename": "15-hjemloesedagen-0339.jpg",
+      "originalFilename": "hjemløsedagen-0339.JPG",
+      "width": 940,
+      "height": 627,
+      "credit": "Mette Kramer Kristensen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "Hjemløse",
+        "Socialt",
+        "Velfærd"
+      ]
+    },
+    {
+      "id": "16",
+      "sortOrder": 16,
+      "filename": "16-hjemloesedagen-0356.jpg",
+      "originalFilename": "hjemløsedagen-0356.JPG",
+      "width": 627,
+      "height": 940,
+      "credit": "Mette Kramer Kristensen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "Hjemløse",
+        "Socialt",
+        "Velfærd"
+      ]
+    },
+    {
+      "id": "17",
+      "sortOrder": 17,
+      "filename": "17-hjemloesedagen-0378.jpg",
+      "originalFilename": "hjemløsedagen-0378.JPG",
+      "width": 627,
+      "height": 940,
+      "credit": "Mette Kramer Kristensen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "Hjemløse",
+        "Socialt",
+        "Velfærd"
+      ]
+    },
+    {
+      "id": "18",
+      "sortOrder": 18,
+      "filename": "18-hjemloesedagen-0403.jpg",
+      "originalFilename": "hjemløsedagen-0403.JPG",
+      "width": 627,
+      "height": 940,
+      "credit": "Mette Kramer Kristensen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "Hjemløse",
+        "Socialt",
+        "Velfærd"
+      ]
+    },
+    {
+      "id": "19",
+      "sortOrder": 19,
+      "filename": "19-hjemloesedagen-0446.jpg",
+      "originalFilename": "hjemløsedagen-0446.JPG",
+      "width": 700,
+      "height": 940,
+      "credit": "Mette Kramer Kristensen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "Hjemløse",
+        "Socialt",
+        "Velfærd"
+      ]
+    },
+    {
+      "id": "20",
+      "sortOrder": 20,
+      "filename": "20-hjemloesedagen-0476.jpg",
+      "originalFilename": "hjemløsedagen-0476.JPG",
+      "width": 940,
+      "height": 627,
+      "credit": "Mette Kramer Kristensen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "Hjemløse",
+        "Socialt",
+        "Velfærd"
+      ]
+    },
+    {
+      "id": "21",
+      "sortOrder": 21,
+      "filename": "21-hjemloesedagen-0486.jpg",
+      "originalFilename": "hjemløsedagen-0486.JPG",
+      "width": 940,
+      "height": 627,
+      "credit": "Mette Kramer Kristensen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "Hjemløse",
+        "Socialt",
+        "Velfærd"
+      ]
+    }
+  ],
+  "sourceUrl": "fotoserie/hjeml-sedagen-2015.html",
+  "sourceType": "fotoserie"
+}

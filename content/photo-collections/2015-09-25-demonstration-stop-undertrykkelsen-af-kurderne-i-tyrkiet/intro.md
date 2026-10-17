@@ -1,0 +1,1 @@
+Selahattin Demirtas, formand for HDP, var trækplaster på folkemødet og uhyre populær blandt de mange fremmødte. Selahattin Demirtas mødtes også med udenrigsudvalget. [Læs på Modkraft.](http://modkraft.dk/artikel/tiden-er-kurdernes)

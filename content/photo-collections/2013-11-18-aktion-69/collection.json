@@ -1,0 +1,354 @@
+{
+  "id": "2013-11-18-aktion-69",
+  "sourceNid": 23249,
+  "slug": "aktion-69",
+  "title": "Aktion 69",
+  "publishedAt": "2013-11-18T16:33:18+01:00",
+  "modifiedAt": "2013-11-18T16:37:51+01:00",
+  "authors": [
+    "Mark Knudsen"
+  ],
+  "photographers": [
+    "Mette Kramer Kristensen"
+  ],
+  "prefix": "Demonstrationer",
+  "series": null,
+  "manchet": "Aktioner, demonstrationer og bannerdrop. Unge med tilknytning til Ungdomshuset har været på gaden i uge 46 under parolen »Aktion 69« for at kræve medbestemmelse over grunden på Jagtvej 69.",
+  "introMarkdown": "",
+  "tags": [
+    "Aktivisme",
+    "Demonstration",
+    "Jagtvej 69",
+    "Nørrebro",
+    "Ungdomshuset"
+  ],
+  "genre": null,
+  "coverImage": "01",
+  "images": [
+    {
+      "id": "01",
+      "sortOrder": 1,
+      "filename": "01-42a2432.jpg",
+      "originalFilename": "_42A2432.jpg",
+      "width": 940,
+      "height": 627,
+      "credit": "Mette Kramer Kristensen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "Aktivisme",
+        "Demonstration",
+        "Jagtvej 69",
+        "Nørrebro",
+        "Ungdomshuset"
+      ]
+    },
+    {
+      "id": "02",
+      "sortOrder": 2,
+      "filename": "02-42a2450.jpg",
+      "originalFilename": "_42A2450.jpg",
+      "width": 940,
+      "height": 627,
+      "credit": "Mette Kramer Kristensen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "Aktivisme",
+        "Demonstration",
+        "Jagtvej 69",
+        "Nørrebro",
+        "Ungdomshuset"
+      ]
+    },
+    {
+      "id": "03",
+      "sortOrder": 3,
+      "filename": "03-42a2475.jpg",
+      "originalFilename": "_42A2475.jpg",
+      "width": 940,
+      "height": 627,
+      "credit": "Mette Kramer Kristensen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "Aktivisme",
+        "Demonstration",
+        "Jagtvej 69",
+        "Nørrebro",
+        "Ungdomshuset"
+      ]
+    },
+    {
+      "id": "04",
+      "sortOrder": 4,
+      "filename": "04-42a2505-0.jpg",
+      "originalFilename": "_42A2505_0.jpg",
+      "width": 940,
+      "height": 627,
+      "credit": null,
+      "caption": null,
+      "captionSource": "none",
+      "sourceResolve": "relative",
+      "tags": [
+        "Aktivisme",
+        "Demonstration",
+        "Jagtvej 69",
+        "Nørrebro",
+        "Ungdomshuset"
+      ]
+    },
+    {
+      "id": "05",
+      "sortOrder": 5,
+      "filename": "05-42a2540.jpg",
+      "originalFilename": "_42A2540.jpg",
+      "width": 940,
+      "height": 627,
+      "credit": "Mette Kramer Kristensen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "Aktivisme",
+        "Demonstration",
+        "Jagtvej 69",
+        "Nørrebro",
+        "Ungdomshuset"
+      ]
+    },
+    {
+      "id": "06",
+      "sortOrder": 6,
+      "filename": "06-42a2550.jpg",
+      "originalFilename": "_42A2550.jpg",
+      "width": 940,
+      "height": 626,
+      "credit": "Mette Kramer Kristensen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "Aktivisme",
+        "Demonstration",
+        "Jagtvej 69",
+        "Nørrebro",
+        "Ungdomshuset"
+      ]
+    },
+    {
+      "id": "07",
+      "sortOrder": 7,
+      "filename": "07-42a2561.jpg",
+      "originalFilename": "_42A2561.jpg",
+      "width": 940,
+      "height": 627,
+      "credit": "Mette Kramer Kristensen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "Aktivisme",
+        "Demonstration",
+        "Jagtvej 69",
+        "Nørrebro",
+        "Ungdomshuset"
+      ]
+    },
+    {
+      "id": "08",
+      "sortOrder": 8,
+      "filename": "08-42a2585.jpg",
+      "originalFilename": "_42A2585.jpg",
+      "width": 940,
+      "height": 627,
+      "credit": "Mette Kramer Kristensen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "Aktivisme",
+        "Demonstration",
+        "Jagtvej 69",
+        "Nørrebro",
+        "Ungdomshuset"
+      ]
+    },
+    {
+      "id": "09",
+      "sortOrder": 9,
+      "filename": "09-42a2626.jpg",
+      "originalFilename": "_42A2626.jpg",
+      "width": 940,
+      "height": 627,
+      "credit": "Mette Kramer Kristensen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "Aktivisme",
+        "Demonstration",
+        "Jagtvej 69",
+        "Nørrebro",
+        "Ungdomshuset"
+      ]
+    },
+    {
+      "id": "10",
+      "sortOrder": 10,
+      "filename": "10-42a2697.jpg",
+      "originalFilename": "_42A2697.jpg",
+      "width": 940,
+      "height": 627,
+      "credit": "Mette Kramer Kristensen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "Aktivisme",
+        "Demonstration",
+        "Jagtvej 69",
+        "Nørrebro",
+        "Ungdomshuset"
+      ]
+    },
+    {
+      "id": "11",
+      "sortOrder": 11,
+      "filename": "11-42a2718.jpg",
+      "originalFilename": "_42A2718.jpg",
+      "width": 940,
+      "height": 627,
+      "credit": "Mette Kramer Kristensen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "Aktivisme",
+        "Demonstration",
+        "Jagtvej 69",
+        "Nørrebro",
+        "Ungdomshuset"
+      ]
+    },
+    {
+      "id": "12",
+      "sortOrder": 12,
+      "filename": "12-42a2767-0.jpg",
+      "originalFilename": "_42A2767_0.jpg",
+      "width": 940,
+      "height": 627,
+      "credit": "Mette Kramer Kristensen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "Aktivisme",
+        "Demonstration",
+        "Jagtvej 69",
+        "Nørrebro",
+        "Ungdomshuset"
+      ]
+    },
+    {
+      "id": "13",
+      "sortOrder": 13,
+      "filename": "13-42a2778.jpg",
+      "originalFilename": "_42A2778.jpg",
+      "width": 940,
+      "height": 627,
+      "credit": "Mette Kramer Kristensen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "Aktivisme",
+        "Demonstration",
+        "Jagtvej 69",
+        "Nørrebro",
+        "Ungdomshuset"
+      ]
+    },
+    {
+      "id": "14",
+      "sortOrder": 14,
+      "filename": "14-42a2848.jpg",
+      "originalFilename": "_42A2848.jpg",
+      "width": 940,
+      "height": 627,
+      "credit": "Mette Kramer Kristensen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "Aktivisme",
+        "Demonstration",
+        "Jagtvej 69",
+        "Nørrebro",
+        "Ungdomshuset"
+      ]
+    },
+    {
+      "id": "15",
+      "sortOrder": 15,
+      "filename": "15-42a2877.jpg",
+      "originalFilename": "_42A2877.jpg",
+      "width": 940,
+      "height": 627,
+      "credit": "Mette Kramer Kristensen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "Aktivisme",
+        "Demonstration",
+        "Jagtvej 69",
+        "Nørrebro",
+        "Ungdomshuset"
+      ]
+    },
+    {
+      "id": "16",
+      "sortOrder": 16,
+      "filename": "16-42a2932.jpg",
+      "originalFilename": "_42A2932.jpg",
+      "width": 940,
+      "height": 627,
+      "credit": "Mette Kramer Kristensen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "Aktivisme",
+        "Demonstration",
+        "Jagtvej 69",
+        "Nørrebro",
+        "Ungdomshuset"
+      ]
+    },
+    {
+      "id": "17",
+      "sortOrder": 17,
+      "filename": "17-69demo-2974.jpg",
+      "originalFilename": "69demo-2974.JPG",
+      "width": 940,
+      "height": 627,
+      "credit": "Mette Kramer Kristensen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "Aktivisme",
+        "Demonstration",
+        "Jagtvej 69",
+        "Nørrebro",
+        "Ungdomshuset"
+      ]
+    }
+  ],
+  "sourceUrl": "fotoserie/aktion-69.html",
+  "sourceType": "fotoserie"
+}

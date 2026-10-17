@@ -1,0 +1,22 @@
+# Dependencies
+node_modules/
+scripts/import-foto/node_modules/
+
+# Build / env
+dist/
+.astro/
+.wrangler/
+.dev.vars
+.env
+.env.*
+!.env.example
+
+# Media junction (created by scripts/link-media.mjs)
+public/media/
+
+# OS / editor
+.DS_Store
+Thumbs.db
+*.log
+.vscode/
+.idea/

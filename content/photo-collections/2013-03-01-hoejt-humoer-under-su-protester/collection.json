@@ -1,0 +1,481 @@
+{
+  "id": "2013-03-01-hoejt-humoer-under-su-protester",
+  "sourceNid": 21188,
+  "slug": "hoejt-humoer-under-su-protester",
+  "title": "Højt humør under SU-protester",
+  "publishedAt": "2013-03-01T12:15:15+01:00",
+  "modifiedAt": "2013-03-01T15:07:28+01:00",
+  "authors": [
+    "Mark Knudsen"
+  ],
+  "photographers": [
+    "Mark Knudsen",
+    "Mette Kramer Kristensen"
+  ],
+  "prefix": null,
+  "series": null,
+  "manchet": "Protester imod regeringens forslag til forringelser af Statens Uddannelsesstøtte samlede torsdag den 28. februar mange tusind demonstranter i København. Efter samling på Christiansborg Slotsplads fortsatte antikapitalister protesterne i egen demonstration. Fotos af Mark Knudsen og Mette Kramer Kristensen.",
+  "introMarkdown": "",
+  "tags": [
+    "Demonstration",
+    "Studerende",
+    "SU",
+    "Uddannelse"
+  ],
+  "genre": null,
+  "coverImage": "01",
+  "images": [
+    {
+      "id": "01",
+      "sortOrder": 1,
+      "filename": "01-mg-2951.jpg",
+      "originalFilename": "_MG_2951.jpg",
+      "width": 940,
+      "height": 627,
+      "credit": "Mark Knudsen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "Demonstration",
+        "Studerende",
+        "SU",
+        "Uddannelse"
+      ]
+    },
+    {
+      "id": "02",
+      "sortOrder": 2,
+      "filename": "02-mg-2964.jpg",
+      "originalFilename": "_MG_2964.jpg",
+      "width": 940,
+      "height": 627,
+      "credit": "Mark Knudsen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "Demonstration",
+        "Studerende",
+        "SU",
+        "Uddannelse"
+      ]
+    },
+    {
+      "id": "03",
+      "sortOrder": 3,
+      "filename": "03-mg-2979.jpg",
+      "originalFilename": "_MG_2979.jpg",
+      "width": 940,
+      "height": 627,
+      "credit": "Mark Knudsen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "Demonstration",
+        "Studerende",
+        "SU",
+        "Uddannelse"
+      ]
+    },
+    {
+      "id": "04",
+      "sortOrder": 4,
+      "filename": "04-mg-3005.jpg",
+      "originalFilename": "_MG_3005.jpg",
+      "width": 940,
+      "height": 627,
+      "credit": "Mark Knudsen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "Demonstration",
+        "Studerende",
+        "SU",
+        "Uddannelse"
+      ]
+    },
+    {
+      "id": "05",
+      "sortOrder": 5,
+      "filename": "05-mg-3015.jpg",
+      "originalFilename": "_MG_3015.jpg",
+      "width": 940,
+      "height": 627,
+      "credit": "Mark Knudsen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "Demonstration",
+        "Studerende",
+        "SU",
+        "Uddannelse"
+      ]
+    },
+    {
+      "id": "06",
+      "sortOrder": 6,
+      "filename": "06-mg-3048.jpg",
+      "originalFilename": "_MG_3048.jpg",
+      "width": 940,
+      "height": 627,
+      "credit": "Mark Knudsen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "Demonstration",
+        "Studerende",
+        "SU",
+        "Uddannelse"
+      ]
+    },
+    {
+      "id": "07",
+      "sortOrder": 7,
+      "filename": "07-mg-3054.jpg",
+      "originalFilename": "_MG_3054.jpg",
+      "width": 940,
+      "height": 627,
+      "credit": "Mark Knudsen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "Demonstration",
+        "Studerende",
+        "SU",
+        "Uddannelse"
+      ]
+    },
+    {
+      "id": "08",
+      "sortOrder": 8,
+      "filename": "08-mg-3089.jpg",
+      "originalFilename": "_MG_3089.jpg",
+      "width": 940,
+      "height": 627,
+      "credit": "Mark Knudsen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "Demonstration",
+        "Studerende",
+        "SU",
+        "Uddannelse"
+      ]
+    },
+    {
+      "id": "09",
+      "sortOrder": 9,
+      "filename": "09-mg-3101.jpg",
+      "originalFilename": "_MG_3101.jpg",
+      "width": 940,
+      "height": 627,
+      "credit": "Mark Knudsen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "Demonstration",
+        "Studerende",
+        "SU",
+        "Uddannelse"
+      ]
+    },
+    {
+      "id": "10",
+      "sortOrder": 10,
+      "filename": "10-mg-3116.jpg",
+      "originalFilename": "_MG_3116.jpg",
+      "width": 940,
+      "height": 627,
+      "credit": "Mark Knudsen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "Demonstration",
+        "Studerende",
+        "SU",
+        "Uddannelse"
+      ]
+    },
+    {
+      "id": "11",
+      "sortOrder": 11,
+      "filename": "11-mg-3119.jpg",
+      "originalFilename": "_MG_3119.jpg",
+      "width": 940,
+      "height": 627,
+      "credit": "Mark Knudsen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "Demonstration",
+        "Studerende",
+        "SU",
+        "Uddannelse"
+      ]
+    },
+    {
+      "id": "12",
+      "sortOrder": 12,
+      "filename": "12-mg-3134.jpg",
+      "originalFilename": "_MG_3134.jpg",
+      "width": 940,
+      "height": 627,
+      "credit": "Mark Knudsen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "Demonstration",
+        "Studerende",
+        "SU",
+        "Uddannelse"
+      ]
+    },
+    {
+      "id": "13",
+      "sortOrder": 13,
+      "filename": "13-mg-3139.jpg",
+      "originalFilename": "_MG_3139.jpg",
+      "width": 940,
+      "height": 627,
+      "credit": "Mark Knudsen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "Demonstration",
+        "Studerende",
+        "SU",
+        "Uddannelse"
+      ]
+    },
+    {
+      "id": "14",
+      "sortOrder": 14,
+      "filename": "14-mg-3150.jpg",
+      "originalFilename": "_MG_3150.jpg",
+      "width": 940,
+      "height": 627,
+      "credit": "Mark Knudsen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "Demonstration",
+        "Studerende",
+        "SU",
+        "Uddannelse"
+      ]
+    },
+    {
+      "id": "15",
+      "sortOrder": 15,
+      "filename": "15-mg-3154.jpg",
+      "originalFilename": "_MG_3154.jpg",
+      "width": 940,
+      "height": 627,
+      "credit": "Mark Knudsen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "Demonstration",
+        "Studerende",
+        "SU",
+        "Uddannelse"
+      ]
+    },
+    {
+      "id": "16",
+      "sortOrder": 16,
+      "filename": "16-untitled-1.jpg",
+      "originalFilename": "Untitled-1.jpg",
+      "width": 940,
+      "height": 627,
+      "credit": "Mette Kramer Kristensen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "Demonstration",
+        "Studerende",
+        "SU",
+        "Uddannelse"
+      ]
+    },
+    {
+      "id": "17",
+      "sortOrder": 17,
+      "filename": "17-su-demo-2013-6.jpg",
+      "originalFilename": "su_demo_2013-6.JPG",
+      "width": 940,
+      "height": 627,
+      "credit": "Mette Kramer Kristensen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "Demonstration",
+        "Studerende",
+        "SU",
+        "Uddannelse"
+      ]
+    },
+    {
+      "id": "18",
+      "sortOrder": 18,
+      "filename": "18-su-demo-2013-14-0.jpg",
+      "originalFilename": "su_demo_2013-14_0.JPG",
+      "width": 940,
+      "height": 627,
+      "credit": "Mette Kramer Kristensen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "Demonstration",
+        "Studerende",
+        "SU",
+        "Uddannelse"
+      ]
+    },
+    {
+      "id": "19",
+      "sortOrder": 19,
+      "filename": "19-su-demo-2013-18.jpg",
+      "originalFilename": "su_demo_2013-18.JPG",
+      "width": 940,
+      "height": 627,
+      "credit": "Mette Kramer Kristensen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "Demonstration",
+        "Studerende",
+        "SU",
+        "Uddannelse"
+      ]
+    },
+    {
+      "id": "20",
+      "sortOrder": 20,
+      "filename": "20-su-demo-2013-23.jpg",
+      "originalFilename": "su_demo_2013-23.JPG",
+      "width": 940,
+      "height": 627,
+      "credit": "Mette Kramer Kristensen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "Demonstration",
+        "Studerende",
+        "SU",
+        "Uddannelse"
+      ]
+    },
+    {
+      "id": "21",
+      "sortOrder": 21,
+      "filename": "21-su-demo-2013-25.jpg",
+      "originalFilename": "su_demo_2013-25.JPG",
+      "width": 940,
+      "height": 627,
+      "credit": "Mette Kramer Kristensen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "Demonstration",
+        "Studerende",
+        "SU",
+        "Uddannelse"
+      ]
+    },
+    {
+      "id": "22",
+      "sortOrder": 22,
+      "filename": "22-su-demo-2013-30.jpg",
+      "originalFilename": "su_demo_2013-30.JPG",
+      "width": 940,
+      "height": 627,
+      "credit": "Mette Kramer Kristensen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "Demonstration",
+        "Studerende",
+        "SU",
+        "Uddannelse"
+      ]
+    },
+    {
+      "id": "23",
+      "sortOrder": 23,
+      "filename": "23-su-demo-2013-38.jpg",
+      "originalFilename": "su_demo_2013-38.JPG",
+      "width": 940,
+      "height": 627,
+      "credit": "Mette Kramer Kristensen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "Demonstration",
+        "Studerende",
+        "SU",
+        "Uddannelse"
+      ]
+    },
+    {
+      "id": "24",
+      "sortOrder": 24,
+      "filename": "24-su-demo-2013-41.jpg",
+      "originalFilename": "su_demo_2013-41.JPG",
+      "width": 940,
+      "height": 627,
+      "credit": "Mette Kramer Kristensen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "Demonstration",
+        "Studerende",
+        "SU",
+        "Uddannelse"
+      ]
+    },
+    {
+      "id": "25",
+      "sortOrder": 25,
+      "filename": "25-su-demo-2013-47.jpg",
+      "originalFilename": "su_demo_2013-47.JPG",
+      "width": 940,
+      "height": 627,
+      "credit": "Mette Kramer Kristensen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "Demonstration",
+        "Studerende",
+        "SU",
+        "Uddannelse"
+      ]
+    }
+  ],
+  "sourceUrl": "fotoserie/højt-humør-under-su-protester.html",
+  "sourceType": "fotoserie"
+}

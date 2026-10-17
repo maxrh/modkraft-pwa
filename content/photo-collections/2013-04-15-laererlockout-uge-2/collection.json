@@ -1,0 +1,634 @@
+{
+  "id": "2013-04-15-laererlockout-uge-2",
+  "sourceNid": 21609,
+  "slug": "laererlockout-uge-2",
+  "title": "Lærerlockout, uge 2",
+  "publishedAt": "2013-04-15T11:58:04+02:00",
+  "modifiedAt": "2013-04-24T13:58:01+02:00",
+  "authors": [
+    "Mark Knudsen"
+  ],
+  "photographers": [
+    "Brian Berg",
+    "Mette Kramer Kristensen"
+  ],
+  "prefix": "Lockout",
+  "series": null,
+  "manchet": "Gader, haller og Christiansborgs Slotsplads fyldes op af aktionerende lærere den 11. april 2013 i aktion mod statens og Kommunernes Landsforenings lockout.",
+  "introMarkdown": "",
+  "tags": [
+    "Aktivisme",
+    "Demonstration",
+    "Fagbevægelse",
+    "København",
+    "Lockout",
+    "Uddannelse"
+  ],
+  "genre": null,
+  "coverImage": "01",
+  "images": [
+    {
+      "id": "01",
+      "sortOrder": 1,
+      "filename": "01-044-2.jpg",
+      "originalFilename": "_044-2.jpg",
+      "width": 940,
+      "height": 620,
+      "credit": "Brian Berg",
+      "caption": "»Verdens største KLF-møde«. Carlsberg, Tap 1",
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "Aktivisme",
+        "Demonstration",
+        "Fagbevægelse",
+        "København",
+        "Lockout",
+        "Uddannelse"
+      ]
+    },
+    {
+      "id": "02",
+      "sortOrder": 2,
+      "filename": "02-045.jpg",
+      "originalFilename": "_045.JPG",
+      "width": 940,
+      "height": 627,
+      "credit": "Mette Kramer Kristensen",
+      "caption": "Flashmob på Rådhuspladsen",
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "Aktivisme",
+        "Demonstration",
+        "Fagbevægelse",
+        "København",
+        "Lockout",
+        "Rådhuspladsen",
+        "Uddannelse"
+      ]
+    },
+    {
+      "id": "03",
+      "sortOrder": 3,
+      "filename": "03-046.jpg",
+      "originalFilename": "_046.JPG",
+      "width": 940,
+      "height": 627,
+      "credit": "Mette Kramer Kristensen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "Aktivisme",
+        "Demonstration",
+        "Fagbevægelse",
+        "København",
+        "Lockout",
+        "Uddannelse"
+      ]
+    },
+    {
+      "id": "04",
+      "sortOrder": 4,
+      "filename": "04-047.jpg",
+      "originalFilename": "_047.JPG",
+      "width": 627,
+      "height": 940,
+      "credit": "Mette Kramer Kristensen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "Aktivisme",
+        "Demonstration",
+        "Fagbevægelse",
+        "København",
+        "Lockout",
+        "Uddannelse"
+      ]
+    },
+    {
+      "id": "05",
+      "sortOrder": 5,
+      "filename": "05-049.jpg",
+      "originalFilename": "_049.JPG",
+      "width": 940,
+      "height": 627,
+      "credit": "Mette Kramer Kristensen",
+      "caption": "Lærere fra SOSU-skolerne demonstrerer foran Finansministeriet",
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "Aktivisme",
+        "Demonstration",
+        "Fagbevægelse",
+        "Finansministeriet",
+        "København",
+        "Lockout",
+        "Uddannelse"
+      ]
+    },
+    {
+      "id": "06",
+      "sortOrder": 6,
+      "filename": "06-050.jpg",
+      "originalFilename": "_050.JPG",
+      "width": 627,
+      "height": 940,
+      "credit": "Mette Kramer Kristensen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "Aktivisme",
+        "Demonstration",
+        "Fagbevægelse",
+        "København",
+        "Lockout",
+        "Uddannelse"
+      ]
+    },
+    {
+      "id": "07",
+      "sortOrder": 7,
+      "filename": "07-052.jpg",
+      "originalFilename": "_052.JPG",
+      "width": 940,
+      "height": 627,
+      "credit": "Mette Kramer Kristensen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "Aktivisme",
+        "Demonstration",
+        "Fagbevægelse",
+        "København",
+        "Lockout",
+        "Uddannelse"
+      ]
+    },
+    {
+      "id": "08",
+      "sortOrder": 8,
+      "filename": "08-053.jpg",
+      "originalFilename": "_053.JPG",
+      "width": 940,
+      "height": 627,
+      "credit": "Mette Kramer Kristensen",
+      "caption": "Elever demonstrerer imod heldagsskolen",
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "Aktivisme",
+        "Demonstration",
+        "Fagbevægelse",
+        "København",
+        "Lockout",
+        "Uddannelse"
+      ]
+    },
+    {
+      "id": "09",
+      "sortOrder": 9,
+      "filename": "09-056.jpg",
+      "originalFilename": "_056.JPG",
+      "width": 940,
+      "height": 627,
+      "credit": "Mette Kramer Kristensen",
+      "caption": "Patchanka ved fordemonstration på Blågårds Plads forud for gigantdemonstration på Christiansborg Slotsplads 11. april",
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "Aktivisme",
+        "Blågårds Plads",
+        "Christiansborg",
+        "Demonstration",
+        "Fagbevægelse",
+        "Koncert",
+        "København",
+        "Lockout",
+        "Musik",
+        "Nørrebro",
+        "Patchanka",
+        "Uddannelse"
+      ]
+    },
+    {
+      "id": "10",
+      "sortOrder": 10,
+      "filename": "10-057-2.jpg",
+      "originalFilename": "_057-2.JPG",
+      "width": 940,
+      "height": 627,
+      "credit": "Mette Kramer Kristensen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "Aktivisme",
+        "Demonstration",
+        "Fagbevægelse",
+        "København",
+        "Lockout",
+        "Uddannelse"
+      ]
+    },
+    {
+      "id": "11",
+      "sortOrder": 11,
+      "filename": "11-058-2.jpg",
+      "originalFilename": "_058-2.JPG",
+      "width": 940,
+      "height": 627,
+      "credit": "Mette Kramer Kristensen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "Aktivisme",
+        "Demonstration",
+        "Fagbevægelse",
+        "København",
+        "Lockout",
+        "Uddannelse"
+      ]
+    },
+    {
+      "id": "12",
+      "sortOrder": 12,
+      "filename": "12-059-2.jpg",
+      "originalFilename": "_059-2.JPG",
+      "width": 940,
+      "height": 627,
+      "credit": "Mette Kramer Kristensen",
+      "caption": "Demonstration på vej til Christiansborg Slotsplads 11. april 2013",
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "Aktivisme",
+        "Christiansborg",
+        "Demonstration",
+        "Fagbevægelse",
+        "København",
+        "Lockout",
+        "Uddannelse"
+      ]
+    },
+    {
+      "id": "13",
+      "sortOrder": 13,
+      "filename": "13-060.jpg",
+      "originalFilename": "_060.JPG",
+      "width": 940,
+      "height": 627,
+      "credit": "Mette Kramer Kristensen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "Aktivisme",
+        "Demonstration",
+        "Fagbevægelse",
+        "København",
+        "Lockout",
+        "Uddannelse"
+      ]
+    },
+    {
+      "id": "14",
+      "sortOrder": 14,
+      "filename": "14-061.jpg",
+      "originalFilename": "_061.JPG",
+      "width": 940,
+      "height": 627,
+      "credit": "Mette Kramer Kristensen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "Aktivisme",
+        "Demonstration",
+        "Fagbevægelse",
+        "København",
+        "Lockout",
+        "Uddannelse"
+      ]
+    },
+    {
+      "id": "15",
+      "sortOrder": 15,
+      "filename": "15-062.jpg",
+      "originalFilename": "_062.JPG",
+      "width": 940,
+      "height": 627,
+      "credit": "Mette Kramer Kristensen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "Aktivisme",
+        "Demonstration",
+        "Fagbevægelse",
+        "København",
+        "Lockout",
+        "Uddannelse"
+      ]
+    },
+    {
+      "id": "16",
+      "sortOrder": 16,
+      "filename": "16-063.jpg",
+      "originalFilename": "_063.JPG",
+      "width": 940,
+      "height": 627,
+      "credit": "Mette Kramer Kristensen",
+      "caption": "Rådhuspladsen 11. april 2013",
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "Aktivisme",
+        "Demonstration",
+        "Fagbevægelse",
+        "København",
+        "Lockout",
+        "Rådhuspladsen",
+        "Uddannelse"
+      ]
+    },
+    {
+      "id": "17",
+      "sortOrder": 17,
+      "filename": "17-064.jpg",
+      "originalFilename": "_064.JPG",
+      "width": 940,
+      "height": 627,
+      "credit": "Mette Kramer Kristensen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "Aktivisme",
+        "Demonstration",
+        "Fagbevægelse",
+        "København",
+        "Lockout",
+        "Uddannelse"
+      ]
+    },
+    {
+      "id": "18",
+      "sortOrder": 18,
+      "filename": "18-065.jpg",
+      "originalFilename": "_065.JPG",
+      "width": 940,
+      "height": 627,
+      "credit": "Mette Kramer Kristensen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "Aktivisme",
+        "Demonstration",
+        "Fagbevægelse",
+        "København",
+        "Lockout",
+        "Uddannelse"
+      ]
+    },
+    {
+      "id": "19",
+      "sortOrder": 19,
+      "filename": "19-066.jpg",
+      "originalFilename": "_066.JPG",
+      "width": 940,
+      "height": 627,
+      "credit": "Mette Kramer Kristensen",
+      "caption": "Titusinder af lærere samlet på Christiansborg Slotsplads 11. april 2013",
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "Aktivisme",
+        "Christiansborg",
+        "Demonstration",
+        "Fagbevægelse",
+        "København",
+        "Lockout",
+        "Uddannelse"
+      ]
+    },
+    {
+      "id": "20",
+      "sortOrder": 20,
+      "filename": "20-067.jpg",
+      "originalFilename": "_067.jpg",
+      "width": 940,
+      "height": 627,
+      "credit": "Brian Berg",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "Aktivisme",
+        "Demonstration",
+        "Fagbevægelse",
+        "København",
+        "Lockout",
+        "Uddannelse"
+      ]
+    },
+    {
+      "id": "21",
+      "sortOrder": 21,
+      "filename": "21-068-0.jpg",
+      "originalFilename": "_068_0.JPG",
+      "width": 940,
+      "height": 627,
+      "credit": "Mette Kramer Kristensen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "Aktivisme",
+        "Demonstration",
+        "Fagbevægelse",
+        "København",
+        "Lockout",
+        "Uddannelse"
+      ]
+    },
+    {
+      "id": "22",
+      "sortOrder": 22,
+      "filename": "22-069.jpg",
+      "originalFilename": "_069.JPG",
+      "width": 940,
+      "height": 627,
+      "credit": "Mette Kramer Kristensen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "Aktivisme",
+        "Demonstration",
+        "Fagbevægelse",
+        "København",
+        "Lockout",
+        "Uddannelse"
+      ]
+    },
+    {
+      "id": "23",
+      "sortOrder": 23,
+      "filename": "23-070.jpg",
+      "originalFilename": "_070.JPG",
+      "width": 940,
+      "height": 627,
+      "credit": "Mette Kramer Kristensen",
+      "caption": "Rasmus Nørh på Christiansborg Slotsplads, 11. april 2013",
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "Aktivisme",
+        "Christiansborg",
+        "Demonstration",
+        "Fagbevægelse",
+        "København",
+        "Lockout",
+        "Uddannelse"
+      ]
+    },
+    {
+      "id": "24",
+      "sortOrder": 24,
+      "filename": "24-071.jpg",
+      "originalFilename": "_071.JPG",
+      "width": 940,
+      "height": 627,
+      "credit": "Mette Kramer Kristensen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "Aktivisme",
+        "Demonstration",
+        "Fagbevægelse",
+        "København",
+        "Lockout",
+        "Uddannelse"
+      ]
+    },
+    {
+      "id": "25",
+      "sortOrder": 25,
+      "filename": "25-072.jpg",
+      "originalFilename": "_072.JPG",
+      "width": 627,
+      "height": 940,
+      "credit": "Mette Kramer Kristensen",
+      "caption": "Dennis Kristensen, FOA, Christiansborg Slotsplads 11. april 2013",
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "Aktivisme",
+        "Christiansborg",
+        "Demonstration",
+        "Dennis Kristensen",
+        "Fagbevægelse",
+        "FOA",
+        "København",
+        "Lockout",
+        "Uddannelse"
+      ]
+    },
+    {
+      "id": "26",
+      "sortOrder": 26,
+      "filename": "26-073.jpg",
+      "originalFilename": "_073.JPG",
+      "width": 940,
+      "height": 627,
+      "credit": "Mette Kramer Kristensen",
+      "caption": "Anders Bondo, Danmarks Lærerforening, Christiansborg Slotsplads 11. april 2013",
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "Aktivisme",
+        "Anders Bondo Christensen",
+        "Christiansborg",
+        "Danmarks Lærerforening",
+        "Demonstration",
+        "Fagbevægelse",
+        "København",
+        "Lockout",
+        "Uddannelse"
+      ]
+    },
+    {
+      "id": "27",
+      "sortOrder": 27,
+      "filename": "27-075.jpg",
+      "originalFilename": "_075.JPG",
+      "width": 940,
+      "height": 627,
+      "credit": "Mette Kramer Kristensen",
+      "caption": "Raske Penge gi'r den gas, Christianshavns Slotplads 11. april 2013",
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "Aktivisme",
+        "Demonstration",
+        "Fagbevægelse",
+        "Koncert",
+        "København",
+        "Lockout",
+        "Musik",
+        "Raske Penge",
+        "Uddannelse"
+      ]
+    },
+    {
+      "id": "28",
+      "sortOrder": 28,
+      "filename": "28-074.jpg",
+      "originalFilename": "_074.JPG",
+      "width": 940,
+      "height": 627,
+      "credit": "Mette Kramer Kristensen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "Aktivisme",
+        "Demonstration",
+        "Fagbevægelse",
+        "København",
+        "Lockout",
+        "Uddannelse"
+      ]
+    },
+    {
+      "id": "29",
+      "sortOrder": 29,
+      "filename": "29-076.jpg",
+      "originalFilename": "_076.JPG",
+      "width": 940,
+      "height": 627,
+      "credit": "Mette Kramer Kristensen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "Aktivisme",
+        "Demonstration",
+        "Fagbevægelse",
+        "København",
+        "Lockout",
+        "Uddannelse"
+      ]
+    }
+  ],
+  "sourceUrl": "fotoserie/lærerlockout-uge-2.html",
+  "sourceType": "fotoserie"
+}

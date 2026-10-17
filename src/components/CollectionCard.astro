@@ -1,0 +1,50 @@
+---
+import type { CollectionEntry } from 'astro:content';
+import { collectionCoverUrl, formatDate, byline } from '@/lib/photos';
+
+interface Props {
+  collection: CollectionEntry<'photoCollections'>;
+}
+
+const { collection } = Astro.props;
+const cover = collectionCoverUrl(collection);
+const { title, publishedAt, authors, series, prefix, images } = collection.data;
+---
+
+<a
+  href={`/samling/${collection.data.id}`}
+  class="group flex flex-col overflow-hidden rounded-xl border border-border/80 bg-card text-card-foreground no-underline shadow-sm transition hover:border-foreground/20 hover:shadow-md"
+>
+  <div class="aspect-[3/2] overflow-hidden bg-muted">
+    {
+      cover ? (
+        <img
+          src={cover}
+          alt=""
+          loading="lazy"
+          decoding="async"
+          class="h-full w-full object-cover transition duration-500 group-hover:scale-[1.03]"
+        />
+      ) : (
+        <div class="flex h-full items-center justify-center text-sm text-muted-foreground">Ingen cover</div>
+      )
+    }
+  </div>
+  <div class="flex flex-1 flex-col gap-2 p-4">
+    {
+      prefix || series ? (
+        <p class="text-xs font-medium tracking-wide text-muted-foreground uppercase">
+          {prefix || series}
+        </p>
+      ) : null
+    }
+    <h2 class="font-display text-lg leading-snug font-semibold text-foreground group-hover:underline">
+      {title}
+    </h2>
+    <p class="text-sm text-muted-foreground">
+      {formatDate(publishedAt)}
+      {authors.length ? ` · ${byline(authors)}` : ''}
+      {` · ${images.length} fotos`}
+    </p>
+  </div>
+</a>

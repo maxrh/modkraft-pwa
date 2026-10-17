@@ -1,0 +1,1 @@
+[Læs artiklen »Efter to år med NoPegida - hvad så'? hos Modkraft](http://modkraft.dk/artikel/efter-r-med-nopegida-hvad-s)

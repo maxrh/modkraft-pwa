@@ -1,0 +1,507 @@
+{
+  "id": "2015-10-30-stop-milliardnedskaeringer-paa-uddannelse",
+  "sourceNid": 27168,
+  "slug": "stop-milliardnedskaeringer-paa-uddannelse",
+  "title": "Stop milliardnedskæringer på uddannelse",
+  "publishedAt": "2015-10-30T10:55:48+01:00",
+  "modifiedAt": "2015-10-30T11:50:03+01:00",
+  "authors": [
+    "Ole Garde"
+  ],
+  "photographers": [
+    "Mette Kramer Kristensen",
+    "Mark Knudsen"
+  ],
+  "prefix": null,
+  "series": null,
+  "manchet": "Flere steder i landet var studerende og undervisere fra både ungdomsuddannelser og videregående uddannelser torsdag samlet i protest mod regeringens besparelser på uddannelsesområdet.",
+  "introMarkdown": "Over 100 erhvervsskoler og gymnasier havde i dagens anledning nedlagt undervisningen. Op mod 40.000 gymnasie-elever og studerende demonstrerede i København og i Aarhus mod regeringen, der har varslet milliard-besparelser på uddannelses-området.",
+  "tags": [
+    "Demonstration",
+    "Nedskæringer",
+    "Studerende",
+    "Uddannelse",
+    "Velfærd"
+  ],
+  "genre": "Nyhed",
+  "coverImage": "01",
+  "images": [
+    {
+      "id": "01",
+      "sortOrder": 1,
+      "filename": "01-modkraft-demo-0888.jpg",
+      "originalFilename": "modkraft_demo-0888.JPG",
+      "width": 940,
+      "height": 627,
+      "credit": "Mette Kramer Kristensen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "Demonstration",
+        "Nedskæringer",
+        "Studerende",
+        "Uddannelse",
+        "Velfærd"
+      ]
+    },
+    {
+      "id": "02",
+      "sortOrder": 2,
+      "filename": "02-modkraft-demo-0900.jpg",
+      "originalFilename": "modkraft_demo-0900.JPG",
+      "width": 940,
+      "height": 627,
+      "credit": "Mette Kramer Kristensen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "Demonstration",
+        "Nedskæringer",
+        "Studerende",
+        "Uddannelse",
+        "Velfærd"
+      ]
+    },
+    {
+      "id": "03",
+      "sortOrder": 3,
+      "filename": "03-dsf0371.jpg",
+      "originalFilename": "_DSF0371.jpg",
+      "width": 940,
+      "height": 626,
+      "credit": "Mark Knudsen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "Demonstration",
+        "Nedskæringer",
+        "Studerende",
+        "Uddannelse",
+        "Velfærd"
+      ]
+    },
+    {
+      "id": "04",
+      "sortOrder": 4,
+      "filename": "04-modkraft-demo-0906.jpg",
+      "originalFilename": "modkraft_demo-0906.JPG",
+      "width": 940,
+      "height": 627,
+      "credit": "Mette Kramer Kristensen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "Demonstration",
+        "Nedskæringer",
+        "Studerende",
+        "Uddannelse",
+        "Velfærd"
+      ]
+    },
+    {
+      "id": "05",
+      "sortOrder": 5,
+      "filename": "05-modkraft-demo-0924.jpg",
+      "originalFilename": "modkraft_demo-0924.JPG",
+      "width": 940,
+      "height": 627,
+      "credit": "Mette Kramer Kristensen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "Demonstration",
+        "Nedskæringer",
+        "Studerende",
+        "Uddannelse",
+        "Velfærd"
+      ]
+    },
+    {
+      "id": "06",
+      "sortOrder": 6,
+      "filename": "06-dsf0380.jpg",
+      "originalFilename": "_DSF0380.jpg",
+      "width": 940,
+      "height": 627,
+      "credit": "Mark Knudsen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "Demonstration",
+        "Nedskæringer",
+        "Studerende",
+        "Uddannelse",
+        "Velfærd"
+      ]
+    },
+    {
+      "id": "07",
+      "sortOrder": 7,
+      "filename": "07-dsf0383.jpg",
+      "originalFilename": "_DSF0383.jpg",
+      "width": 940,
+      "height": 627,
+      "credit": "Mark Knudsen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "Demonstration",
+        "Nedskæringer",
+        "Studerende",
+        "Uddannelse",
+        "Velfærd"
+      ]
+    },
+    {
+      "id": "08",
+      "sortOrder": 8,
+      "filename": "08-dsf0413.jpg",
+      "originalFilename": "_DSF0413.jpg",
+      "width": 940,
+      "height": 627,
+      "credit": "Mark Knudsen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "Demonstration",
+        "Nedskæringer",
+        "Studerende",
+        "Uddannelse",
+        "Velfærd"
+      ]
+    },
+    {
+      "id": "09",
+      "sortOrder": 9,
+      "filename": "09-dsf0416.jpg",
+      "originalFilename": "_DSF0416.jpg",
+      "width": 940,
+      "height": 627,
+      "credit": null,
+      "caption": null,
+      "captionSource": "none",
+      "sourceResolve": "relative",
+      "tags": [
+        "Demonstration",
+        "Nedskæringer",
+        "Studerende",
+        "Uddannelse",
+        "Velfærd"
+      ]
+    },
+    {
+      "id": "10",
+      "sortOrder": 10,
+      "filename": "10-dsf0404.jpg",
+      "originalFilename": "_DSF0404.jpg",
+      "width": 940,
+      "height": 627,
+      "credit": "Mark Knudsen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "Demonstration",
+        "Nedskæringer",
+        "Studerende",
+        "Uddannelse",
+        "Velfærd"
+      ]
+    },
+    {
+      "id": "11",
+      "sortOrder": 11,
+      "filename": "11-modkraft-demo-0929-0.jpg",
+      "originalFilename": "modkraft_demo-0929_0.JPG",
+      "width": 940,
+      "height": 627,
+      "credit": "Mette Kramer Kristensen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "Demonstration",
+        "Nedskæringer",
+        "Studerende",
+        "Uddannelse",
+        "Velfærd"
+      ]
+    },
+    {
+      "id": "12",
+      "sortOrder": 12,
+      "filename": "12-modkraft-demo-0936.jpg",
+      "originalFilename": "modkraft_demo-0936.JPG",
+      "width": 940,
+      "height": 627,
+      "credit": "Mette Kramer Kristensen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "Demonstration",
+        "Nedskæringer",
+        "Studerende",
+        "Uddannelse",
+        "Velfærd"
+      ]
+    },
+    {
+      "id": "13",
+      "sortOrder": 13,
+      "filename": "13-modkraft-demo-0964.jpg",
+      "originalFilename": "modkraft_demo-0964.JPG",
+      "width": 627,
+      "height": 940,
+      "credit": "Mette Kramer Kristensen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "Demonstration",
+        "Nedskæringer",
+        "Studerende",
+        "Uddannelse",
+        "Velfærd"
+      ]
+    },
+    {
+      "id": "14",
+      "sortOrder": 14,
+      "filename": "14-modkraft-demo-0970.jpg",
+      "originalFilename": "modkraft_demo-0970.JPG",
+      "width": 940,
+      "height": 627,
+      "credit": "Mette Kramer Kristensen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "Demonstration",
+        "Nedskæringer",
+        "Studerende",
+        "Uddannelse",
+        "Velfærd"
+      ]
+    },
+    {
+      "id": "15",
+      "sortOrder": 15,
+      "filename": "15-modkraft-demo-0979.jpg",
+      "originalFilename": "modkraft_demo-0979.JPG",
+      "width": 940,
+      "height": 627,
+      "credit": "Mette Kramer Kristensen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "Demonstration",
+        "Nedskæringer",
+        "Studerende",
+        "Uddannelse",
+        "Velfærd"
+      ]
+    },
+    {
+      "id": "16",
+      "sortOrder": 16,
+      "filename": "16-modkraft-demo-0989.jpg",
+      "originalFilename": "modkraft_demo-0989.JPG",
+      "width": 940,
+      "height": 627,
+      "credit": "Mette Kramer Kristensen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "Demonstration",
+        "Nedskæringer",
+        "Studerende",
+        "Uddannelse",
+        "Velfærd"
+      ]
+    },
+    {
+      "id": "17",
+      "sortOrder": 17,
+      "filename": "17-modkraft-demo-1029.jpg",
+      "originalFilename": "modkraft_demo-1029.JPG",
+      "width": 940,
+      "height": 627,
+      "credit": "Mette Kramer Kristensen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "Demonstration",
+        "Nedskæringer",
+        "Studerende",
+        "Uddannelse",
+        "Velfærd"
+      ]
+    },
+    {
+      "id": "18",
+      "sortOrder": 18,
+      "filename": "18-modkraft-demo-1051.jpg",
+      "originalFilename": "modkraft_demo-1051.JPG",
+      "width": 940,
+      "height": 627,
+      "credit": "Mette Kramer Kristensen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "Demonstration",
+        "Nedskæringer",
+        "Studerende",
+        "Uddannelse",
+        "Velfærd"
+      ]
+    },
+    {
+      "id": "19",
+      "sortOrder": 19,
+      "filename": "19-modkraft-demo-1073-0.jpg",
+      "originalFilename": "modkraft_demo-1073_0.JPG",
+      "width": 940,
+      "height": 627,
+      "credit": "Mette Kramer Kristensen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "Demonstration",
+        "Nedskæringer",
+        "Studerende",
+        "Uddannelse",
+        "Velfærd"
+      ]
+    },
+    {
+      "id": "20",
+      "sortOrder": 20,
+      "filename": "20-modkraft-demo-1105.jpg",
+      "originalFilename": "modkraft_demo-1105.JPG",
+      "width": 940,
+      "height": 627,
+      "credit": "Mette Kramer Kristensen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "Demonstration",
+        "Nedskæringer",
+        "Studerende",
+        "Uddannelse",
+        "Velfærd"
+      ]
+    },
+    {
+      "id": "21",
+      "sortOrder": 21,
+      "filename": "21-modkraft-demo-1110.jpg",
+      "originalFilename": "modkraft_demo-1110.JPG",
+      "width": 940,
+      "height": 627,
+      "credit": "Mette Kramer Kristensen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "Demonstration",
+        "Nedskæringer",
+        "Studerende",
+        "Uddannelse",
+        "Velfærd"
+      ]
+    },
+    {
+      "id": "22",
+      "sortOrder": 22,
+      "filename": "22-modkraft-demo-1124.jpg",
+      "originalFilename": "modkraft_demo-1124.JPG",
+      "width": 627,
+      "height": 940,
+      "credit": "Mette Kramer Kristensen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "Demonstration",
+        "Nedskæringer",
+        "Studerende",
+        "Uddannelse",
+        "Velfærd"
+      ]
+    },
+    {
+      "id": "23",
+      "sortOrder": 23,
+      "filename": "23-modkraft-demo-1140.jpg",
+      "originalFilename": "modkraft_demo-1140.JPG",
+      "width": 940,
+      "height": 627,
+      "credit": "Mette Kramer Kristensen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "Demonstration",
+        "Nedskæringer",
+        "Studerende",
+        "Uddannelse",
+        "Velfærd"
+      ]
+    },
+    {
+      "id": "24",
+      "sortOrder": 24,
+      "filename": "24-modkraft-demo-1156.jpg",
+      "originalFilename": "modkraft_demo-1156.JPG",
+      "width": 940,
+      "height": 627,
+      "credit": "Mette Kramer Kristensen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "Demonstration",
+        "Nedskæringer",
+        "Studerende",
+        "Uddannelse",
+        "Velfærd"
+      ]
+    },
+    {
+      "id": "25",
+      "sortOrder": 25,
+      "filename": "25-modkraft-demo-1150.jpg",
+      "originalFilename": "modkraft_demo-1150.JPG",
+      "width": 940,
+      "height": 627,
+      "credit": "Mette Kramer Kristensen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "Demonstration",
+        "Nedskæringer",
+        "Studerende",
+        "Uddannelse",
+        "Velfærd"
+      ]
+    }
+  ],
+  "sourceUrl": "fotoserie/stop-milliardnedsk-ringer-p-uddannelse.html",
+  "sourceType": "fotoserie"
+}

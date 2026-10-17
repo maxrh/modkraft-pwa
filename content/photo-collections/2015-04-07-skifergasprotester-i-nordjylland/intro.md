@@ -1,0 +1,1 @@
+I 250 dage har lokale aktivister protesteret mod prøveboringer efter skifergas i Nordjylland. Den 5. april 2015 deltog aktivister i hele landet blokader af de lastbiler, der kører med materiel til borepladsen. Foto: Emil Aagaard.

@@ -1,0 +1,312 @@
+{
+  "id": "2015-07-04-roskilde-vibrerer",
+  "sourceNid": 26656,
+  "slug": "roskilde-vibrerer",
+  "title": "Roskilde Vibrerer",
+  "publishedAt": "2015-07-04T14:20:36+02:00",
+  "modifiedAt": "2015-07-04T20:41:15+02:00",
+  "authors": [
+    "Anders Birger"
+  ],
+  "photographers": [
+    "Anders Birger"
+  ],
+  "prefix": null,
+  "series": null,
+  "manchet": "Vi ventede så længe, endelig blev sluserne åbnet. Nu skinner solen igen over festivalen og igen bliver der danset med os selv og de andre. I aften er der fællessang foran Orange og afslutningsfest på Grøn. Endnu en Roskilde præcis som Roskilde skal være.",
+  "introMarkdown": "",
+  "tags": [
+    "Koncert",
+    "Kultur",
+    "Musik",
+    "Roskilde Festival"
+  ],
+  "genre": null,
+  "coverImage": "01",
+  "images": [
+    {
+      "id": "01",
+      "sortOrder": 1,
+      "filename": "01-ab-roskilde-hjul-2-0002-0b4b4.jpg",
+      "originalFilename": "AB ROSKILDE HJUL 2 - _0002_0b4b4.jpg",
+      "width": 515,
+      "height": 344,
+      "credit": "Anders Birger",
+      "caption": null,
+      "captionSource": "none",
+      "sourceResolve": "style-large-fallback",
+      "tags": [
+        "Koncert",
+        "Kultur",
+        "Musik",
+        "Roskilde Festival"
+      ]
+    },
+    {
+      "id": "02",
+      "sortOrder": 2,
+      "filename": "02-ab-roskilde-hjul-2-0001-26abe.jpg",
+      "originalFilename": "AB ROSKILDE HJUL 2 - _0001_26abe.jpg",
+      "width": 515,
+      "height": 344,
+      "credit": "Anders Birger",
+      "caption": "Lars H.U.G.",
+      "captionSource": "sibling-p",
+      "sourceResolve": "style-large-fallback",
+      "tags": [
+        "Koncert",
+        "Kultur",
+        "Lars H.U.G.",
+        "Musik",
+        "Roskilde Festival"
+      ]
+    },
+    {
+      "id": "03",
+      "sortOrder": 3,
+      "filename": "03-ab-roskilde-hjul-2-0003-04248.jpg",
+      "originalFilename": "AB ROSKILDE HJUL 2 - _0003_04248.jpg",
+      "width": 515,
+      "height": 344,
+      "credit": "Anders Birger",
+      "caption": null,
+      "captionSource": "none",
+      "sourceResolve": "style-large-fallback",
+      "tags": [
+        "Koncert",
+        "Kultur",
+        "Musik",
+        "Roskilde Festival"
+      ]
+    },
+    {
+      "id": "04",
+      "sortOrder": 4,
+      "filename": "04-ab-roskilde-hjul-2-0004-07e39.jpg",
+      "originalFilename": "AB ROSKILDE HJUL 2 - _0004_07e39.jpg",
+      "width": 515,
+      "height": 344,
+      "credit": "Anders Birger",
+      "caption": "Gretchen Peters",
+      "captionSource": "sibling-p",
+      "sourceResolve": "style-large-fallback",
+      "tags": [
+        "Gretchen Peters",
+        "Koncert",
+        "Kultur",
+        "Musik",
+        "Roskilde Festival"
+      ]
+    },
+    {
+      "id": "05",
+      "sortOrder": 5,
+      "filename": "05-ab-roskilde-hjul-2-0005-08cb4.jpg",
+      "originalFilename": "AB ROSKILDE HJUL 2 - _0005_08cb4.jpg",
+      "width": 515,
+      "height": 344,
+      "credit": "Anders Birger",
+      "caption": "Gretchen Peters",
+      "captionSource": "sibling-p",
+      "sourceResolve": "style-large-fallback",
+      "tags": [
+        "Gretchen Peters",
+        "Koncert",
+        "Kultur",
+        "Musik",
+        "Roskilde Festival"
+      ]
+    },
+    {
+      "id": "06",
+      "sortOrder": 6,
+      "filename": "06-ab-roskilde-hjul-2-00060d5e.jpg",
+      "originalFilename": "AB ROSKILDE HJUL 2 - _00060d5e.jpg",
+      "width": 515,
+      "height": 344,
+      "credit": "Anders Birger",
+      "caption": "Die Antwoord",
+      "captionSource": "sibling-p",
+      "sourceResolve": "style-large-fallback",
+      "tags": [
+        "Die Antwoord",
+        "Koncert",
+        "Kultur",
+        "Musik",
+        "Roskilde Festival"
+      ]
+    },
+    {
+      "id": "07",
+      "sortOrder": 7,
+      "filename": "07-ab-roskilde-hjul-2-0007b678.jpg",
+      "originalFilename": "AB ROSKILDE HJUL 2 - _0007b678.jpg",
+      "width": 515,
+      "height": 344,
+      "credit": "Anders Birger",
+      "caption": "Die Antwoord",
+      "captionSource": "sibling-p",
+      "sourceResolve": "style-large-fallback",
+      "tags": [
+        "Die Antwoord",
+        "Koncert",
+        "Kultur",
+        "Musik",
+        "Roskilde Festival"
+      ]
+    },
+    {
+      "id": "08",
+      "sortOrder": 8,
+      "filename": "08-ab-roskilde-hjul-2-0008-0dc31.jpg",
+      "originalFilename": "AB ROSKILDE HJUL 2 - _0008_0dc31.jpg",
+      "width": 515,
+      "height": 344,
+      "credit": "Anders Birger",
+      "caption": "Father John Misty",
+      "captionSource": "sibling-p",
+      "sourceResolve": "style-large-fallback",
+      "tags": [
+        "Father John Misty",
+        "Koncert",
+        "Kultur",
+        "Musik",
+        "Roskilde Festival"
+      ]
+    },
+    {
+      "id": "09",
+      "sortOrder": 9,
+      "filename": "09-ab-roskilde-hjul-2-0009-0b7bf.jpg",
+      "originalFilename": "AB ROSKILDE HJUL 2 - _0009_0b7bf.jpg",
+      "width": 515,
+      "height": 344,
+      "credit": "Anders Birger",
+      "caption": "Father John Misty",
+      "captionSource": "sibling-p",
+      "sourceResolve": "style-large-fallback",
+      "tags": [
+        "Father John Misty",
+        "Koncert",
+        "Kultur",
+        "Musik",
+        "Roskilde Festival"
+      ]
+    },
+    {
+      "id": "10",
+      "sortOrder": 10,
+      "filename": "10-ab-roskilde-hjul-2-0010-088ed.jpg",
+      "originalFilename": "AB ROSKILDE HJUL 2 - _0010_088ed.jpg",
+      "width": 515,
+      "height": 344,
+      "credit": "Anders Birger",
+      "caption": null,
+      "captionSource": "none",
+      "sourceResolve": "style-large-fallback",
+      "tags": [
+        "Koncert",
+        "Kultur",
+        "Musik",
+        "Roskilde Festival"
+      ]
+    },
+    {
+      "id": "11",
+      "sortOrder": 11,
+      "filename": "11-ab-roskilde-hjul-2-00112714.jpg",
+      "originalFilename": "AB ROSKILDE HJUL 2 - _00112714.jpg",
+      "width": 515,
+      "height": 344,
+      "credit": "Anders Birger",
+      "caption": "Dreamers' Circus",
+      "captionSource": "sibling-p",
+      "sourceResolve": "style-large-fallback",
+      "tags": [
+        "Dreamers' Circus",
+        "Koncert",
+        "Kultur",
+        "Musik",
+        "Roskilde Festival"
+      ]
+    },
+    {
+      "id": "12",
+      "sortOrder": 12,
+      "filename": "12-ab-roskilde-hjul-2-0012-0a514.jpg",
+      "originalFilename": "AB ROSKILDE HJUL 2 - _0012_0a514.jpg",
+      "width": 515,
+      "height": 344,
+      "credit": "Anders Birger",
+      "caption": "Fat White Family",
+      "captionSource": "sibling-p",
+      "sourceResolve": "style-large-fallback",
+      "tags": [
+        "Fat White Family",
+        "Koncert",
+        "Kultur",
+        "Musik",
+        "Roskilde Festival"
+      ]
+    },
+    {
+      "id": "13",
+      "sortOrder": 13,
+      "filename": "13-ab-roskilde-hjul-2-0013-01930.jpg",
+      "originalFilename": "AB ROSKILDE HJUL 2 - _0013_01930.jpg",
+      "width": 515,
+      "height": 344,
+      "credit": "Anders Birger",
+      "caption": "Die Antwoord",
+      "captionSource": "sibling-p",
+      "sourceResolve": "style-large-fallback",
+      "tags": [
+        "Die Antwoord",
+        "Koncert",
+        "Kultur",
+        "Musik",
+        "Roskilde Festival"
+      ]
+    },
+    {
+      "id": "14",
+      "sortOrder": 14,
+      "filename": "14-ab-roskilde-hjul-2-0014-04f7b.jpg",
+      "originalFilename": "AB ROSKILDE HJUL 2 - _0014_04f7b.jpg",
+      "width": 515,
+      "height": 344,
+      "credit": "Anders Birger",
+      "caption": "Einstürzende Neubauten",
+      "captionSource": "sibling-p",
+      "sourceResolve": "style-large-fallback",
+      "tags": [
+        "Einstürzende Neubauten",
+        "Koncert",
+        "Kultur",
+        "Musik",
+        "Roskilde Festival"
+      ]
+    },
+    {
+      "id": "15",
+      "sortOrder": 15,
+      "filename": "15-ab-roskilde-hjul-2-0015-06a9f.jpg",
+      "originalFilename": "AB ROSKILDE HJUL 2 - _0015_06a9f.jpg",
+      "width": 515,
+      "height": 344,
+      "credit": "Anders Birger",
+      "caption": "Pharmakon",
+      "captionSource": "sibling-p",
+      "sourceResolve": "style-large-fallback",
+      "tags": [
+        "Koncert",
+        "Kultur",
+        "Musik",
+        "Pharmakon",
+        "Roskilde Festival"
+      ]
+    }
+  ],
+  "sourceUrl": "fotoblog/roskilde-vibrerer.html",
+  "sourceType": "fotoblog"
+}

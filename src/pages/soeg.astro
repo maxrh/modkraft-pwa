@@ -1,0 +1,35 @@
+---
+import BaseLayout from '@/layouts/BaseLayout.astro';
+import PhotoMosaic from '@/components/PhotoMosaic.astro';
+import { getAllPhotos, photoMatchesQuery } from '@/lib/photos';
+
+export const prerender = false;
+
+const q = Astro.url.searchParams.get('q')?.trim() ?? '';
+const all = await getAllPhotos();
+const photos = q ? all.filter((photo) => photoMatchesQuery(photo, q)) : all;
+---
+
+<BaseLayout
+  title={q ? `Søg: ${q}` : 'Søg'}
+  description={q ? `Søgeresultater for “${q}”.` : 'Søg i Modkraft-fotoarkivet.'}
+  searchQuery={q}
+>
+  <section class="mx-auto max-w-[1600px] px-4 pt-4 pb-16 sm:px-6">
+    {
+      q && (
+        <p class="mb-4 text-sm text-muted-foreground">
+          {photos.length.toLocaleString('da-DK')} resultat{photos.length === 1 ? '' : 'er'} for
+          <span class="font-medium text-foreground"> “{q}”</span>
+        </p>
+      )
+    }
+    {
+      photos.length > 0 ? (
+        <PhotoMosaic photos={photos} />
+      ) : (
+        <p class="py-16 text-center text-muted-foreground">Ingen fotos matchede din søgning.</p>
+      )
+    }
+  </section>
+</BaseLayout>

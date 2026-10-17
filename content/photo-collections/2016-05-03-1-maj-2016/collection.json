@@ -1,0 +1,288 @@
+{
+  "id": "2016-05-03-1-maj-2016",
+  "sourceNid": 28084,
+  "slug": "1-maj-2016",
+  "title": "1. maj 2016",
+  "publishedAt": "2016-05-03T13:54:42+02:00",
+  "modifiedAt": "2016-05-03T15:50:30+02:00",
+  "authors": [
+    "Laura Na Blankholm"
+  ],
+  "photographers": [
+    "Brian Berg",
+    "Aage Christensen",
+    "Hans Jørgensen/nathue.dk",
+    "Mette Kramer Kristensen",
+    "Erling Skov Madsen"
+  ],
+  "prefix": "Demonstrationer",
+  "series": null,
+  "manchet": "Dette års 1. maj blev markeret af flere tusinde mennesker flere steder. Modkrafts fotografer var med til morgenmad i Folkets Park, Revolutionære Antifascisters demonstration fra Vesterbro Torv under parolen No Borders - No Nations og til Fagbevægelsens arrangement i Fælledparken.",
+  "introMarkdown": "[Læs artiklen »Måske kan vi en lille fornemmelse af at være en bevægelse« hos Modkraft](http://modkraft.dk/artikel/1-maj-m-ske-kan-vi-f-en-lille-fornemmelse-af-v-re-en-bev-gelse)\n\n[Se resten af Modkraft-temaet »1. maj som politisk kampplads i 2016?« her.](http://modkraft.dk/artikel/till-g-2016-1-maj-som-en-politisk-kampplads)\n\n[Læs Modkrafts linksamling om 1. maj her.](http://modkraft.dk/node/21780/Tillæg 2016: 1. maj som en politisk kampplads?)\n\n[Læs artiklen »Fagbevægelsen i dag er gået helt i stå« hos Modkraft](http://modkraft.dk/artikel/fagbev-gelsen-i-dag-er-g-et-helt-i-st)\n\n[Læs artiklen »Vi arbejder i en samlet retning for en styrket venstrefløj« hos Modkraft.](http://modkraft.dk/artikel/vi-arbejder-i-en-samlet-retning-en-styrket-venstrefl-j)\n\n[Se også Modkraft-tema 2016 »1. maj som en politisk kampplads«.](http://modkraft.dk/artikel/till-g-2016-1-maj-som-en-politisk-kampplads) Et tillæg til linksamlingen [1. maj : Historie og traditioner.](http://modkraft.dk/artikel/1-maj-may-day)",
+  "tags": [
+    "1. maj",
+    "Aktivisme",
+    "Antifascisme",
+    "Demonstration",
+    "Fagbevægelse",
+    "København"
+  ],
+  "genre": "Nyhed",
+  "coverImage": "01",
+  "images": [
+    {
+      "id": "01",
+      "sortOrder": 1,
+      "filename": "01-1maj1-0.jpg",
+      "originalFilename": "1maj1_0.jpg",
+      "width": 940,
+      "height": 627,
+      "credit": "Brian Berg",
+      "caption": "Folkets Park, Nørrebro",
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "1. maj",
+        "Aktivisme",
+        "Antifascisme",
+        "Demonstration",
+        "Fagbevægelse",
+        "Folkets Park",
+        "København",
+        "Nørrebro"
+      ]
+    },
+    {
+      "id": "02",
+      "sortOrder": 2,
+      "filename": "02-1maj3.jpg",
+      "originalFilename": "1maj3.jpg",
+      "width": 940,
+      "height": 627,
+      "credit": "Brian Berg",
+      "caption": "Pernille Skipper holder tale på Blågårds plads",
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "1. maj",
+        "Aktivisme",
+        "Antifascisme",
+        "Blågårds Plads",
+        "Demonstration",
+        "Enhedslisten",
+        "Fagbevægelse",
+        "København",
+        "Nørrebro",
+        "Pernille Skipper"
+      ]
+    },
+    {
+      "id": "03",
+      "sortOrder": 3,
+      "filename": "03-hejhej.jpg",
+      "originalFilename": "hejhej.jpg",
+      "width": 940,
+      "height": 627,
+      "credit": "Aage Christensen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "1. maj",
+        "Aktivisme",
+        "Antifascisme",
+        "Demonstration",
+        "Fagbevægelse",
+        "København"
+      ]
+    },
+    {
+      "id": "04",
+      "sortOrder": 4,
+      "filename": "04-1maj10.jpg",
+      "originalFilename": "1maj10.JPG",
+      "width": 940,
+      "height": 627,
+      "credit": "Brian Berg",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "1. maj",
+        "Aktivisme",
+        "Antifascisme",
+        "Demonstration",
+        "Fagbevægelse",
+        "København"
+      ]
+    },
+    {
+      "id": "05",
+      "sortOrder": 5,
+      "filename": "05-anti1maj2.jpg",
+      "originalFilename": "anti1maj2.jpg",
+      "width": 940,
+      "height": 627,
+      "credit": "Hans Jørgensen/nathue.dk",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "1. maj",
+        "Aktivisme",
+        "Antifascisme",
+        "Demonstration",
+        "Fagbevægelse",
+        "København"
+      ]
+    },
+    {
+      "id": "06",
+      "sortOrder": 6,
+      "filename": "06-1-maj-demo-4060.jpg",
+      "originalFilename": "1_maj_demo-4060.JPG",
+      "width": 940,
+      "height": 627,
+      "credit": null,
+      "caption": "No Borders, No Nations - Antikapitalistisk 1.maj - Mette Kramer Kristensen",
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "1. maj",
+        "Aktivisme",
+        "Antifascisme",
+        "Antikapitalistisk 1. maj",
+        "Demonstration",
+        "Fagbevægelse",
+        "København"
+      ]
+    },
+    {
+      "id": "07",
+      "sortOrder": 7,
+      "filename": "07-ant1maj.jpg",
+      "originalFilename": "ant1maj.jpg",
+      "width": 940,
+      "height": 627,
+      "credit": "Hans Jørgensen/nathue.dk",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "1. maj",
+        "Aktivisme",
+        "Antifascisme",
+        "Demonstration",
+        "Fagbevægelse",
+        "København"
+      ]
+    },
+    {
+      "id": "08",
+      "sortOrder": 8,
+      "filename": "08-1-maj-demo-4105.jpg",
+      "originalFilename": "1_maj_demo-4105.JPG",
+      "width": 627,
+      "height": 940,
+      "credit": "Mette Kramer Kristensen",
+      "caption": "No Borders, No Nations - Antikapitalistisk 1.maj",
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "1. maj",
+        "Aktivisme",
+        "Antifascisme",
+        "Antikapitalistisk 1. maj",
+        "Demonstration",
+        "Fagbevægelse",
+        "København"
+      ]
+    },
+    {
+      "id": "09",
+      "sortOrder": 9,
+      "filename": "09-1-maj-demo-4218.jpg",
+      "originalFilename": "1_maj_demo-4218.JPG",
+      "width": 940,
+      "height": 627,
+      "credit": "Mette Kramer Kristensen",
+      "caption": "No Borders, No Nations - Antikapitalistisk 1.maj",
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "1. maj",
+        "Aktivisme",
+        "Antifascisme",
+        "Antikapitalistisk 1. maj",
+        "Demonstration",
+        "Fagbevægelse",
+        "København"
+      ]
+    },
+    {
+      "id": "10",
+      "sortOrder": 10,
+      "filename": "10-1-maj-demo-4308.jpg",
+      "originalFilename": "1_maj_demo-4308.JPG",
+      "width": 940,
+      "height": 627,
+      "credit": "Mette Kramer Kristensen",
+      "caption": "No Borders, No Nations - Antikapitalistisk 1.maj",
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "1. maj",
+        "Aktivisme",
+        "Antifascisme",
+        "Antikapitalistisk 1. maj",
+        "Demonstration",
+        "Fagbevægelse",
+        "København"
+      ]
+    },
+    {
+      "id": "11",
+      "sortOrder": 11,
+      "filename": "11-1m.jpg",
+      "originalFilename": "1m.jpg",
+      "width": 940,
+      "height": 627,
+      "credit": "Erling Skov Madsen",
+      "caption": "Fælledparken",
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "1. maj",
+        "Aktivisme",
+        "Antifascisme",
+        "Demonstration",
+        "Fagbevægelse",
+        "Fælledparken",
+        "København"
+      ]
+    },
+    {
+      "id": "12",
+      "sortOrder": 12,
+      "filename": "12-2m.jpg",
+      "originalFilename": "2m.jpg",
+      "width": 940,
+      "height": 627,
+      "credit": "Erling Skov Madsen",
+      "caption": "Fælledparken",
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "1. maj",
+        "Aktivisme",
+        "Antifascisme",
+        "Demonstration",
+        "Fagbevægelse",
+        "Fælledparken",
+        "København"
+      ]
+    }
+  ],
+  "sourceUrl": "fotoserie/1-maj-2016.html",
+  "sourceType": "fotoserie"
+}

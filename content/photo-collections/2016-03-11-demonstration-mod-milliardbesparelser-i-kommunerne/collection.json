@@ -1,0 +1,240 @@
+{
+  "id": "2016-03-11-demonstration-mod-milliardbesparelser-i-kommunerne",
+  "sourceNid": 27869,
+  "slug": "demonstration-mod-milliardbesparelser-i-kommunerne",
+  "title": "Demonstration mod milliardbesparelser i kommunerne",
+  "publishedAt": "2016-03-11T11:10:55+01:00",
+  "modifiedAt": "2016-03-11T13:22:00+01:00",
+  "authors": [
+    "Aage Christensen"
+  ],
+  "photographers": [
+    "Aage Christensen"
+  ],
+  "prefix": null,
+  "series": null,
+  "manchet": "Fagforeningssamarbejdet Velfærdsalliancen afholdt demonstration den 9. marts i protest mod bl.a. omprioriteringsbidraget, som kommunerne er blevet underlagt. Demonstrationen foregik foran Kommunernes Landsforening i København under parolen: Ja til tryghed - nej til milliardbesparelser!",
+  "introMarkdown": "Demonstrationen fandt sted foran Kommunernes Landsforenings lokaler på Amager op til et årsmøde i foreningen med 1.600 kommunalpolitikere fra hele landet i Aalborg de næste to dage.\n\nRegeringens planer om at pålægge kommunerne et omprioriteringsbidrag vil betyde, at kommunerne skal spare én procent af den samlede drift hvert år frem til 2019. Regeringen vil derefter vil kunne bestemme, hvad pengene skal bruges til.\n\nVelfærdsalliance-DK er sammensat af især fagforeninger for et bredt udsnit af faggrupper, bl.a. pædagoger, sosu’er, rengøringsassistenter, socialrådgivere, fysioterapeuter, gartnere, servicemedarbejdere, hk’ere og lærere.",
+  "tags": [
+    "Demonstration",
+    "Fagbevægelse",
+    "København",
+    "Nedskæringer",
+    "Velfærd"
+  ],
+  "genre": "Nyhed",
+  "coverImage": "01",
+  "images": [
+    {
+      "id": "01",
+      "sortOrder": 1,
+      "filename": "01-mg-8163-demo-foran-kommunernes-landsforening-090316.jpg",
+      "originalFilename": "_MG_8163 Demo foran Kommunernes Landsforening 090316.jpg",
+      "width": 940,
+      "height": 627,
+      "credit": "Aage Christensen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "Demonstration",
+        "Fagbevægelse",
+        "København",
+        "Nedskæringer",
+        "Velfærd"
+      ]
+    },
+    {
+      "id": "02",
+      "sortOrder": 2,
+      "filename": "02-mg-8189-demo-foran-kommunernes-landsforening-090316.jpg",
+      "originalFilename": "_MG_8189 Demo foran Kommunernes Landsforening 090316.jpg",
+      "width": 940,
+      "height": 627,
+      "credit": "Aage Christensen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "Demonstration",
+        "Fagbevægelse",
+        "København",
+        "Nedskæringer",
+        "Velfærd"
+      ]
+    },
+    {
+      "id": "03",
+      "sortOrder": 3,
+      "filename": "03-mg-8200-demo-foran-kommunernes-landsforening-090316-0.jpg",
+      "originalFilename": "_MG_8200 Demo foran Kommunernes Landsforening 090316_0.jpg",
+      "width": 940,
+      "height": 627,
+      "credit": "Aage Christensen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "Demonstration",
+        "Fagbevægelse",
+        "København",
+        "Nedskæringer",
+        "Velfærd"
+      ]
+    },
+    {
+      "id": "04",
+      "sortOrder": 4,
+      "filename": "04-mg-8243-demo-foran-kommunernes-landsforening-090316.jpg",
+      "originalFilename": "_MG_8243 Demo foran Kommunernes Landsforening 090316.jpg",
+      "width": 940,
+      "height": 627,
+      "credit": "Aage Christensen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "Demonstration",
+        "Fagbevægelse",
+        "København",
+        "Nedskæringer",
+        "Velfærd"
+      ]
+    },
+    {
+      "id": "05",
+      "sortOrder": 5,
+      "filename": "05-mg-8275-demo-foran-kommunernes-landsforening-090316.jpg",
+      "originalFilename": "_MG_8275 Demo foran Kommunernes Landsforening 090316.jpg",
+      "width": 940,
+      "height": 627,
+      "credit": "Aage Christensen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "Demonstration",
+        "Fagbevægelse",
+        "København",
+        "Nedskæringer",
+        "Velfærd"
+      ]
+    },
+    {
+      "id": "06",
+      "sortOrder": 6,
+      "filename": "06-mg-8278-demo-foran-kommunernes-landsforening-090316.jpg",
+      "originalFilename": "_MG_8278 Demo foran Kommunernes Landsforening 090316.jpg",
+      "width": 940,
+      "height": 627,
+      "credit": "Aage Christensen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "Demonstration",
+        "Fagbevægelse",
+        "København",
+        "Nedskæringer",
+        "Velfærd"
+      ]
+    },
+    {
+      "id": "07",
+      "sortOrder": 7,
+      "filename": "07-mg-8333-demo-foran-kommunernes-landsforening-090316.jpg",
+      "originalFilename": "_MG_8333 Demo foran Kommunernes Landsforening 090316.jpg",
+      "width": 940,
+      "height": 627,
+      "credit": "Aage Christensen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "Demonstration",
+        "Fagbevægelse",
+        "København",
+        "Nedskæringer",
+        "Velfærd"
+      ]
+    },
+    {
+      "id": "08",
+      "sortOrder": 8,
+      "filename": "08-mg-8357-demo-foran-kommunernes-landsforening-090316.jpg",
+      "originalFilename": "_MG_8357 Demo foran Kommunernes Landsforening 090316.jpg",
+      "width": 940,
+      "height": 627,
+      "credit": "Aage Christensen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "Demonstration",
+        "Fagbevægelse",
+        "København",
+        "Nedskæringer",
+        "Velfærd"
+      ]
+    },
+    {
+      "id": "09",
+      "sortOrder": 9,
+      "filename": "09-mg-8364-demo-foran-kommunernes-landsforening-090316.jpg",
+      "originalFilename": "_MG_8364 Demo foran Kommunernes Landsforening 090316.jpg",
+      "width": 940,
+      "height": 627,
+      "credit": "Aage Christensen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "Demonstration",
+        "Fagbevægelse",
+        "København",
+        "Nedskæringer",
+        "Velfærd"
+      ]
+    },
+    {
+      "id": "10",
+      "sortOrder": 10,
+      "filename": "10-mg-8377-demo-foran-kommunernes-landsforening-090316.jpg",
+      "originalFilename": "_MG_8377 Demo foran Kommunernes Landsforening 090316.jpg",
+      "width": 940,
+      "height": 627,
+      "credit": "Aage Christensen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "Demonstration",
+        "Fagbevægelse",
+        "København",
+        "Nedskæringer",
+        "Velfærd"
+      ]
+    },
+    {
+      "id": "11",
+      "sortOrder": 11,
+      "filename": "11-mg-8390-demo-foran-kommunernes-landsforening-090316.jpg",
+      "originalFilename": "_MG_8390 Demo foran Kommunernes Landsforening 090316.jpg",
+      "width": 940,
+      "height": 627,
+      "credit": "Aage Christensen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "Demonstration",
+        "Fagbevægelse",
+        "København",
+        "Nedskæringer",
+        "Velfærd"
+      ]
+    }
+  ],
+  "sourceUrl": "fotoserie/demonstration-mod-milliardbesparelser-i-kommunerne.html",
+  "sourceType": "fotoserie"
+}

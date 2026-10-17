@@ -1,0 +1,314 @@
+{
+  "id": "2015-06-19-valgfester",
+  "sourceNid": 26587,
+  "slug": "valgfester",
+  "title": "Valgfester",
+  "publishedAt": "2015-06-19T12:20:34+02:00",
+  "modifiedAt": "2015-06-19T15:56:20+02:00",
+  "authors": [
+    "Mark Knudsen"
+  ],
+  "photographers": [
+    "Mark Knudsen",
+    "Mette Kramer Kristensen"
+  ],
+  "prefix": "Folketingsvalg 2015",
+  "series": null,
+  "manchet": "Fotoindtryk fra valgaftenen ved Folketingsvalget den 18. juni 2015.",
+  "introMarkdown": "",
+  "tags": [
+    "Christiansborg",
+    "Enhedslisten",
+    "Folketingsvalg",
+    "Venstrefløj"
+  ],
+  "genre": "Nyhed",
+  "coverImage": "01",
+  "images": [
+    {
+      "id": "01",
+      "sortOrder": 1,
+      "filename": "01-dsf5001.jpg",
+      "originalFilename": "_DSF5001.jpg",
+      "width": 940,
+      "height": 627,
+      "credit": "Mark Knudsen",
+      "caption": "Finn Sørensen venter på at give interview. Enhedslistens valgfest",
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "Christiansborg",
+        "Enhedslisten",
+        "Finn Sørensen",
+        "Folketingsvalg",
+        "Venstrefløj"
+      ]
+    },
+    {
+      "id": "02",
+      "sortOrder": 2,
+      "filename": "02-dsf5017.jpg",
+      "originalFilename": "_DSF5017.jpg",
+      "width": 940,
+      "height": 627,
+      "credit": "Mark Knudsen",
+      "caption": "Victoria Ninosca Risbjerg Velásquez. Enhedslistens valgfest",
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "Christiansborg",
+        "Enhedslisten",
+        "Folketingsvalg",
+        "Venstrefløj",
+        "Victoria Velásquez"
+      ]
+    },
+    {
+      "id": "03",
+      "sortOrder": 3,
+      "filename": "03-ny-dsf5019.jpg",
+      "originalFilename": "ny_DSF5019.jpg",
+      "width": 940,
+      "height": 627,
+      "credit": "Mark Knudsen",
+      "caption": "Søpavillionen, Enhedslistens valgfest",
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "Christiansborg",
+        "Enhedslisten",
+        "Folketingsvalg",
+        "Venstrefløj"
+      ]
+    },
+    {
+      "id": "04",
+      "sortOrder": 4,
+      "filename": "04-dsf5024-0.jpg",
+      "originalFilename": "_DSF5024_0.jpg",
+      "width": 940,
+      "height": 627,
+      "credit": "Mark Knudsen",
+      "caption": "Jakob Sølvhøj, Maria Gjerding, Mikkel Warming m.fl. kigger på valgresultater. Enhedslistens valgfest",
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "Christiansborg",
+        "Enhedslisten",
+        "Folketingsvalg",
+        "Jakob Sølvhøj",
+        "Maria Gjerding",
+        "Mikkel Warming",
+        "Venstrefløj"
+      ]
+    },
+    {
+      "id": "05",
+      "sortOrder": 5,
+      "filename": "05-dsf5040.jpg",
+      "originalFilename": "_DSF5040.jpg",
+      "width": 940,
+      "height": 627,
+      "credit": "Mark Knudsen",
+      "caption": "Enhedslistens valgfest",
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "Christiansborg",
+        "Enhedslisten",
+        "Folketingsvalg",
+        "Venstrefløj"
+      ]
+    },
+    {
+      "id": "06",
+      "sortOrder": 6,
+      "filename": "06-dsf5045.jpg",
+      "originalFilename": "_DSF5045.jpg",
+      "width": 940,
+      "height": 627,
+      "credit": "Mark Knudsen",
+      "caption": "Johanne Schmidt-Nielsen ankommer til Enhedslistens valgfest",
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "Christiansborg",
+        "Enhedslisten",
+        "Folketingsvalg",
+        "Johanne Schmidt-Nielsen",
+        "Venstrefløj"
+      ]
+    },
+    {
+      "id": "07",
+      "sortOrder": 7,
+      "filename": "07-dsf5050.jpg",
+      "originalFilename": "_DSF5050.jpg",
+      "width": 940,
+      "height": 627,
+      "credit": "Mark Knudsen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "Christiansborg",
+        "Enhedslisten",
+        "Folketingsvalg",
+        "Venstrefløj"
+      ]
+    },
+    {
+      "id": "08",
+      "sortOrder": 8,
+      "filename": "08-valgaften-4845.jpg",
+      "originalFilename": "valgaften-4845.jpg",
+      "width": 940,
+      "height": 627,
+      "credit": "Mette Kramer Kristensen",
+      "caption": "Pernille Skipper klapper hund",
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "Christiansborg",
+        "Enhedslisten",
+        "Folketingsvalg",
+        "Pernille Skipper",
+        "Venstrefløj"
+      ]
+    },
+    {
+      "id": "09",
+      "sortOrder": 9,
+      "filename": "09-valgaften-4916.jpg",
+      "originalFilename": "valgaften-4916.jpg",
+      "width": 940,
+      "height": 627,
+      "credit": "Mette Kramer Kristensen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "Christiansborg",
+        "Enhedslisten",
+        "Folketingsvalg",
+        "Venstrefløj"
+      ]
+    },
+    {
+      "id": "10",
+      "sortOrder": 10,
+      "filename": "10-valgaften-4935.jpg",
+      "originalFilename": "valgaften-4935.jpg",
+      "width": 940,
+      "height": 627,
+      "credit": "Mette Kramer Kristensen",
+      "caption": "Pia Kjærsgaard interviewes",
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "Christiansborg",
+        "Dansk Folkeparti",
+        "Enhedslisten",
+        "Folketingsvalg",
+        "Pia Kjærsgaard",
+        "Venstrefløj"
+      ]
+    },
+    {
+      "id": "11",
+      "sortOrder": 11,
+      "filename": "11-valgaften-4985.jpg",
+      "originalFilename": "valgaften-4985.jpg",
+      "width": 940,
+      "height": 627,
+      "credit": "Mette Kramer Kristensen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "Christiansborg",
+        "Enhedslisten",
+        "Folketingsvalg",
+        "Venstrefløj"
+      ]
+    },
+    {
+      "id": "12",
+      "sortOrder": 12,
+      "filename": "12-valgaften-5152.jpg",
+      "originalFilename": "valgaften-5152.jpg",
+      "width": 940,
+      "height": 627,
+      "credit": "Mette Kramer Kristensen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "Christiansborg",
+        "Enhedslisten",
+        "Folketingsvalg",
+        "Venstrefløj"
+      ]
+    },
+    {
+      "id": "13",
+      "sortOrder": 13,
+      "filename": "13-valgaften-5214-0.jpg",
+      "originalFilename": "valgaften-5214_0.jpg",
+      "width": 940,
+      "height": 627,
+      "credit": "Mette Kramer Kristensen",
+      "caption": "Helle Thorning-Schmidt holder tale",
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "Christiansborg",
+        "Enhedslisten",
+        "Folketingsvalg",
+        "Helle Thorning-Schmidt",
+        "Socialdemokraterne",
+        "Venstrefløj"
+      ]
+    },
+    {
+      "id": "14",
+      "sortOrder": 14,
+      "filename": "14-valgaften-4775.jpg",
+      "originalFilename": "valgaften-4775.jpg",
+      "width": 940,
+      "height": 627,
+      "credit": "Mette Kramer Kristensen",
+      "caption": "Kristian Thulesen Dahl",
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "Christiansborg",
+        "Dansk Folkeparti",
+        "Enhedslisten",
+        "Folketingsvalg",
+        "Kristian Thulesen Dahl",
+        "Venstrefløj"
+      ]
+    },
+    {
+      "id": "15",
+      "sortOrder": 15,
+      "filename": "15-valgaften-5253.jpg",
+      "originalFilename": "valgaften-5253.jpg",
+      "width": 940,
+      "height": 627,
+      "credit": "Mette Kramer Kristensen",
+      "caption": "Tak for i aften",
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "Christiansborg",
+        "Enhedslisten",
+        "Folketingsvalg",
+        "Venstrefløj"
+      ]
+    }
+  ],
+  "sourceUrl": "fotoserie/valgfester.html",
+  "sourceType": "fotoserie"
+}

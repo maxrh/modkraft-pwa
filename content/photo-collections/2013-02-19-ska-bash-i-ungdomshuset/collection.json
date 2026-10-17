@@ -1,0 +1,354 @@
+{
+  "id": "2013-02-19-ska-bash-i-ungdomshuset",
+  "sourceNid": 21055,
+  "slug": "ska-bash-i-ungdomshuset",
+  "title": "Ska Bash i Ungdomshuset",
+  "publishedAt": "2013-02-19T16:05:56+01:00",
+  "modifiedAt": "2013-02-20T13:51:07+01:00",
+  "authors": [
+    "Mette Kramer Kristensen"
+  ],
+  "photographers": [
+    "Mette Kramer Kristensen"
+  ],
+  "prefix": "Koncert",
+  "series": null,
+  "manchet": "Den 26. januar åbnede Ungdomshuset – for tredje år i træk – dørene op til en dansefest ud over det sædvanlige: SKA BASH 2013. Mette Kramer Kristensen var med og forevigede den glade stemning med sit kamera.",
+  "introMarkdown": "",
+  "tags": [
+    "Koncert",
+    "Musik",
+    "Ska",
+    "Ungdomshuset"
+  ],
+  "genre": null,
+  "coverImage": "01",
+  "images": [
+    {
+      "id": "01",
+      "sortOrder": 1,
+      "filename": "01-20130126-001.jpg",
+      "originalFilename": "20130126_001.JPG",
+      "width": 467,
+      "height": 700,
+      "credit": "Mette Kramer Kristensen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "Koncert",
+        "Musik",
+        "Ska",
+        "Ungdomshuset"
+      ]
+    },
+    {
+      "id": "02",
+      "sortOrder": 2,
+      "filename": "02-20130126-002.jpg",
+      "originalFilename": "20130126_002.JPG",
+      "width": 467,
+      "height": 700,
+      "credit": "Mette Kramer Kristensen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "Koncert",
+        "Musik",
+        "Ska",
+        "Ungdomshuset"
+      ]
+    },
+    {
+      "id": "03",
+      "sortOrder": 3,
+      "filename": "03-20130126-003.jpg",
+      "originalFilename": "20130126_003.JPG",
+      "width": 940,
+      "height": 627,
+      "credit": "Mette Kramer Kristensen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "Koncert",
+        "Musik",
+        "Ska",
+        "Ungdomshuset"
+      ]
+    },
+    {
+      "id": "04",
+      "sortOrder": 4,
+      "filename": "04-20130126-004.jpg",
+      "originalFilename": "20130126_004.JPG",
+      "width": 467,
+      "height": 700,
+      "credit": "Mette Kramer Kristensen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "Koncert",
+        "Musik",
+        "Ska",
+        "Ungdomshuset"
+      ]
+    },
+    {
+      "id": "05",
+      "sortOrder": 5,
+      "filename": "05-20130126-005.jpg",
+      "originalFilename": "20130126_005.JPG",
+      "width": 467,
+      "height": 700,
+      "credit": "Mette Kramer Kristensen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "Koncert",
+        "Musik",
+        "Ska",
+        "Ungdomshuset"
+      ]
+    },
+    {
+      "id": "06",
+      "sortOrder": 6,
+      "filename": "06-20130126-006.jpg",
+      "originalFilename": "20130126_006.JPG",
+      "width": 940,
+      "height": 627,
+      "credit": "Mette Kramer Kristensen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "Koncert",
+        "Musik",
+        "Ska",
+        "Ungdomshuset"
+      ]
+    },
+    {
+      "id": "07",
+      "sortOrder": 7,
+      "filename": "07-20130126-007.jpg",
+      "originalFilename": "20130126_007.JPG",
+      "width": 467,
+      "height": 700,
+      "credit": "Mette Kramer Kristensen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "Koncert",
+        "Musik",
+        "Ska",
+        "Ungdomshuset"
+      ]
+    },
+    {
+      "id": "08",
+      "sortOrder": 8,
+      "filename": "08-20130126-008.jpg",
+      "originalFilename": "20130126_008.JPG",
+      "width": 467,
+      "height": 700,
+      "credit": "Mette Kramer Kristensen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "Koncert",
+        "Musik",
+        "Ska",
+        "Ungdomshuset"
+      ]
+    },
+    {
+      "id": "09",
+      "sortOrder": 9,
+      "filename": "09-20130126-009.jpg",
+      "originalFilename": "20130126_009.JPG",
+      "width": 467,
+      "height": 700,
+      "credit": "Mette Kramer Kristensen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "Koncert",
+        "Musik",
+        "Ska",
+        "Ungdomshuset"
+      ]
+    },
+    {
+      "id": "10",
+      "sortOrder": 10,
+      "filename": "10-20130126-011.jpg",
+      "originalFilename": "20130126_011.JPG",
+      "width": 940,
+      "height": 627,
+      "credit": "Mette Kramer Kristensen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "Koncert",
+        "Musik",
+        "Ska",
+        "Ungdomshuset"
+      ]
+    },
+    {
+      "id": "11",
+      "sortOrder": 11,
+      "filename": "11-20130126-012.jpg",
+      "originalFilename": "20130126_012.JPG",
+      "width": 467,
+      "height": 700,
+      "credit": "Mette Kramer Kristensen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "Koncert",
+        "Musik",
+        "Ska",
+        "Ungdomshuset"
+      ]
+    },
+    {
+      "id": "12",
+      "sortOrder": 12,
+      "filename": "12-20130126-013.jpg",
+      "originalFilename": "20130126_013.JPG",
+      "width": 940,
+      "height": 627,
+      "credit": "Mette Kramer Kristensen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "Koncert",
+        "Musik",
+        "Ska",
+        "Ungdomshuset"
+      ]
+    },
+    {
+      "id": "13",
+      "sortOrder": 13,
+      "filename": "13-20130127-014.jpg",
+      "originalFilename": "20130127_014.JPG",
+      "width": 467,
+      "height": 700,
+      "credit": "Mette Kramer Kristensen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "Koncert",
+        "Musik",
+        "Ska",
+        "Ungdomshuset"
+      ]
+    },
+    {
+      "id": "14",
+      "sortOrder": 14,
+      "filename": "14-20130127-015-0.jpg",
+      "originalFilename": "20130127_015_0.JPG",
+      "width": 940,
+      "height": 627,
+      "credit": "Mette Kramer Kristensen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "Koncert",
+        "Musik",
+        "Ska",
+        "Ungdomshuset"
+      ]
+    },
+    {
+      "id": "15",
+      "sortOrder": 15,
+      "filename": "15-20130127-016.jpg",
+      "originalFilename": "20130127_016.JPG",
+      "width": 940,
+      "height": 627,
+      "credit": "Mette Kramer Kristensen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "Koncert",
+        "Musik",
+        "Ska",
+        "Ungdomshuset"
+      ]
+    },
+    {
+      "id": "16",
+      "sortOrder": 16,
+      "filename": "16-20130127-017.jpg",
+      "originalFilename": "20130127_017.JPG",
+      "width": 467,
+      "height": 700,
+      "credit": "Mette Kramer Kristensen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "Koncert",
+        "Musik",
+        "Ska",
+        "Ungdomshuset"
+      ]
+    },
+    {
+      "id": "17",
+      "sortOrder": 17,
+      "filename": "17-20130127-018.jpg",
+      "originalFilename": "20130127_018.JPG",
+      "width": 940,
+      "height": 627,
+      "credit": "Mette Kramer Kristensen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "Koncert",
+        "Musik",
+        "Ska",
+        "Ungdomshuset"
+      ]
+    },
+    {
+      "id": "18",
+      "sortOrder": 18,
+      "filename": "18-20130127-019.jpg",
+      "originalFilename": "20130127_019.JPG",
+      "width": 940,
+      "height": 627,
+      "credit": "Mette Kramer Kristensen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "Koncert",
+        "Musik",
+        "Ska",
+        "Ungdomshuset"
+      ]
+    }
+  ],
+  "sourceUrl": "fotoserie/ska-bash-i-ungdomshuset.html",
+  "sourceType": "fotoserie"
+}

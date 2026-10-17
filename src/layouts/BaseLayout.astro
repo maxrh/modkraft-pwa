@@ -1,0 +1,136 @@
+---
+import '@/styles/global.css';
+import { getNavTags } from '@/lib/photos';
+
+interface Props {
+  title?: string;
+  description?: string;
+  /** Currently selected tag filter (null/undefined = Alle). */
+  activeTag?: string | null;
+  /** Prefill the header search field. */
+  searchQuery?: string;
+}
+
+const {
+  title = 'Modkraft Arkiv',
+  description = 'Fotoarkiv fra Modkraft — dokumentariske fotoseries og fotoblogs.',
+  activeTag = null,
+  searchQuery = '',
+} = Astro.props;
+
+const pageTitle = title === 'Modkraft Arkiv' ? title : `${title} · Modkraft Arkiv`;
+const navTags = await getNavTags(10);
+const isHome = Astro.url.pathname === '/' || Astro.url.pathname === '';
+---
+
+<!doctype html>
+<html lang="da">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content={description} />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wdth,wght@12..96,75..100,200..800&display=swap"
+      rel="stylesheet"
+    />
+    <title>{pageTitle}</title>
+    <style>[data-mosaic]:not([data-ready]){visibility:hidden}</style>
+    <noscript>
+      <style>
+        .photo-img { opacity: 1 !important; }
+        [data-mosaic] { visibility: visible !important; }
+      </style>
+    </noscript>
+  </head>
+  <body class="min-h-dvh flex flex-col">
+    <header class="sticky top-0 z-40 border-b border-border bg-white">
+      <div class="mx-auto flex max-w-[1600px] items-center gap-4 px-4 py-3 sm:gap-6 sm:px-6">
+        <form action="/soeg" method="get" class="min-w-0 flex-1" role="search">
+          <label class="sr-only" for="site-search">Søg fotos</label>
+          <div
+            class="flex h-12 items-center gap-3 rounded-lg bg-muted/80 px-4 transition-shadow focus-within:bg-muted focus-within:ring-2 focus-within:ring-ring/40"
+          >
+            <svg
+              class="size-5 shrink-0 text-muted-foreground"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              aria-hidden="true"
+            >
+              <circle cx="11" cy="11" r="7"></circle>
+              <path d="m20 20-3.5-3.5" stroke-linecap="round"></path>
+            </svg>
+            <input
+              id="site-search"
+              name="q"
+              type="search"
+              value={searchQuery}
+              placeholder="Søg efter fotos, tags, fotografer…"
+              autocomplete="off"
+              class="h-full w-full min-w-0 border-0 bg-transparent text-[15px] text-foreground outline-none placeholder:text-muted-foreground"
+            />
+          </div>
+        </form>
+
+        <a
+          href="/"
+          class="font-display shrink-0 text-lg font-semibold tracking-tight text-foreground no-underline hover:opacity-80 sm:text-xl"
+        >
+          Modkraft
+        </a>
+      </div>
+
+      <nav
+        class="mx-auto flex max-w-[1600px] gap-5 overflow-x-auto px-4 sm:gap-6 sm:px-6"
+        aria-label="Filtrer efter emne"
+      >
+        <a
+          href="/"
+          class:list={[
+            'shrink-0 border-b-2 py-3 text-sm whitespace-nowrap no-underline transition-colors',
+            isHome && !activeTag && !searchQuery
+              ? 'border-foreground font-semibold text-foreground'
+              : 'border-transparent text-muted-foreground hover:text-foreground',
+          ]}
+        >
+          Alle
+        </a>
+        {
+          navTags.map((tag) => {
+            const selected = activeTag === tag;
+            return (
+              <a
+                href={`/tag/${encodeURIComponent(tag)}`}
+                class:list={[
+                  'shrink-0 border-b-2 py-3 text-sm whitespace-nowrap no-underline transition-colors',
+                  selected
+                    ? 'border-foreground font-semibold text-foreground'
+                    : 'border-transparent text-muted-foreground hover:text-foreground',
+                ]}
+              >
+                {tag}
+              </a>
+            );
+          })
+        }
+      </nav>
+    </header>
+
+    <main class="flex-1">
+      <slot />
+    </main>
+
+    <footer class="mt-16 border-t border-border/70">
+      <div class="mx-auto max-w-[1600px] px-4 py-8 text-sm text-muted-foreground sm:px-6">
+        <p>
+          Modkraft Arkiv — 1.641 dokumentariske fotografier fra 99 fotoseries og fotoblogs (2012–2017).
+          <a href="/samling" class="ml-1 text-foreground underline-offset-2 hover:underline">Samlinger</a>
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>

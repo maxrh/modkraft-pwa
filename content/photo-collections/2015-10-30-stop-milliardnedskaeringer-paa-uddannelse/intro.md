@@ -1,0 +1,1 @@
+Over 100 erhvervsskoler og gymnasier havde i dagens anledning nedlagt undervisningen. Op mod 40.000 gymnasie-elever og studerende demonstrerede i København og i Aarhus mod regeringen, der har varslet milliard-besparelser på uddannelses-området.

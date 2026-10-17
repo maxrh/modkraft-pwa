@@ -1,0 +1,1 @@
+Vi var meget glade for at blive inviteret til at optræde, til støtte for Børnemagt. Det har været en aften vi aldrig glemmer, og det var en stor fornøjelse at være 16 år for en aften, fortæller en af bandmedlemmerne fra SNAFU, der optrådte på aftenen.

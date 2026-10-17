@@ -1,0 +1,2 @@
+# Cloudflare Worker local secrets (copy to .dev.vars)
+# SANITY_API_READ_TOKEN=

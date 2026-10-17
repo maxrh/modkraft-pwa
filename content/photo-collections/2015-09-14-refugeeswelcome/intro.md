@@ -1,0 +1,1 @@
+Ud over København var også demonstrationer i Aarhus, Odense, Padborg og Aalborg. Internationalt var der demonstrationer i 54 europæiske byer.

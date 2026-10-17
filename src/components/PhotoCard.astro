@@ -1,0 +1,65 @@
+---
+import type { Photo } from '@/lib/photos';
+
+interface Props {
+  photo: Photo;
+  highPriority?: boolean;
+}
+
+const { photo, highPriority = false } = Astro.props;
+const altText = photo.caption || `${photo.collectionTitle} (${photo.sortOrder}/${photo.imageCount})`;
+---
+
+<a
+  href={photo.href}
+  class="group relative block w-full overflow-hidden rounded-sm bg-muted no-underline focus-visible:ring-2 focus-visible:ring-ring focus-visible:outline-none"
+  style={`aspect-ratio: ${photo.width} / ${photo.height};`}
+>
+  <img
+    src={photo.thumb}
+    alt={altText}
+    width={photo.width}
+    height={photo.height}
+    loading={highPriority ? 'eager' : 'lazy'}
+    fetchpriority={highPriority ? 'high' : undefined}
+    decoding="async"
+    sizes="(max-width: 40rem) 100vw, (max-width: 64rem) 50vw, (max-width: 80rem) 33vw, 25vw"
+    onload="this.dataset.loaded=''"
+    class="photo-img absolute inset-0 block h-full w-full object-cover text-transparent opacity-0 transition-[opacity,transform] duration-300 data-loaded:opacity-100 group-hover:scale-[1.015]"
+  />
+
+  <div
+    class="pointer-events-none absolute inset-0 flex flex-col justify-between bg-gradient-to-t from-black/80 via-black/20 to-black/30 p-3.5 text-white opacity-0 transition-opacity duration-200 group-hover:opacity-100 group-focus-visible:opacity-100"
+  >
+    <div class="flex items-start justify-between gap-2 text-[11px] font-medium tracking-wide">
+      {
+        photo.prefix || photo.series ? (
+          <span class="truncate rounded bg-black/70 px-2 py-0.5 uppercase">{photo.prefix || photo.series}</span>
+        ) : (
+          <span />
+        )
+      }
+      <span class="shrink-0 rounded bg-black/70 px-1.5 py-0.5 tabular-nums">
+        {photo.sortOrder}/{photo.imageCount}
+      </span>
+    </div>
+
+    <div class="space-y-1">
+      <p class="font-display line-clamp-2 text-sm leading-snug font-semibold text-white drop-shadow-xs">
+        {photo.collectionTitle}
+      </p>
+      {
+        photo.caption && (
+          <p class="line-clamp-2 text-xs leading-relaxed text-white/85">{photo.caption}</p>
+        )
+      }
+      {
+        photo.credit && (
+          <p class="pt-0.5 text-[11px] font-medium tracking-wide text-white/75 uppercase">
+            Foto: {photo.credit}
+          </p>
+        )
+      }
+    </div>
+  </div>
+</a>
