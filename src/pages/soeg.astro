@@ -16,7 +16,7 @@ const photos = q ? all.filter((photo) => photoMatchesQuery(photo, q)) : all;
   description={q ? `Søgeresultater for “${q}”.` : 'Søg i Modkraft-fotoarkivet.'}
   searchQuery={q}
 >
-  <Container class="pt-4 pb-16">
+  <Container class="pt-8 pb-16">
     {
       q && (
         <p class="mb-4 text-sm text-muted-foreground">

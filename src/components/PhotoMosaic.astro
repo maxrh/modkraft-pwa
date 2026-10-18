@@ -96,6 +96,8 @@ const restJson = JSON.stringify(restPayload).replace(/</g, '\\u003c');
     function initMosaic(root) {
     if (!root || root.hasAttribute('data-ready')) return;
     root.setAttribute('data-ready', '');
+    // Show SSR columns immediately; packing below may still reflow breakpoints.
+    root.setAttribute('data-revealed', '');
 
     var GAP = 16;
     var mosaic = root.querySelector('[data-mosaic]');

@@ -21,11 +21,16 @@ const pageTitle = title === 'Modkraft Arkiv' ? title : `${title} · Modkraft Ark
   rel="stylesheet"
 />
 <title>{pageTitle}</title>
-<ClientRouter />
-<style>[data-mosaic]:not([data-ready]){visibility:hidden}</style>
+<ClientRouter fallback="swap" />
+<style>
+  /* Hide until revealed — set at start of mosaic init / after client navigations. */
+  [data-mosaic-root]:not([data-revealed]) [data-mosaic] {
+    visibility: hidden;
+  }
+</style>
 <noscript>
   <style>
     .photo-img { opacity: 1 !important; }
-    [data-mosaic] { visibility: visible !important; }
+    [data-mosaic-root] [data-mosaic] { visibility: visible !important; }
   </style>
 </noscript>

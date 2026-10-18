@@ -11,10 +11,10 @@ const { activeTag = null, searchQuery = '' } = Astro.props;
 
 <header
   id="site-header"
-  class="sticky top-0 z-40 border-b border-border bg-white"
+  class="sticky top-0 z-50 border-b border-border bg-white"
   transition:persist="site-header"
 >
-  <div class="flex items-center gap-4 px-4 py-4 sm:gap-6 sm:px-6">
+  <div class="flex items-center gap-6 px-4 py-4 sm:gap-8 sm:px-6">
     <form action="/soeg" method="get" class="min-w-0 flex-1" role="search">
       <label class="sr-only" for="site-search">Søg fotos</label>
       <div
@@ -45,7 +45,7 @@ const { activeTag = null, searchQuery = '' } = Astro.props;
 
     <a
       href="/"
-      class="font-display shrink-0 text-lg font-semibold tracking-tight text-foreground no-underline hover:opacity-80 sm:text-xl"
+      class="font-display shrink-0 text-lg !font-extrabold tracking-tight text-foreground no-underline hover:opacity-80 sm:text-xl"
     >
       Modkraft
     </a>
@@ -104,7 +104,25 @@ const { activeTag = null, searchQuery = '' } = Astro.props;
       }
     }
 
-    document.addEventListener('astro:after-swap', syncHeader);
+    function jumpTop() {
+      window.scrollTo({ left: 0, top: 0, behavior: 'instant' });
+    }
+
+    // Jump to top before the VT snapshot so scrolled mosaic never covers the header.
+    var scrollToTop = false;
+    document.addEventListener('astro:before-preparation', function (event) {
+      scrollToTop = event.navigationType !== 'traverse';
+      if (scrollToTop) jumpTop();
+    });
+    document.addEventListener('astro:after-swap', function () {
+      if (scrollToTop) jumpTop();
+      // Reveal mosaics immediately so content isn't blank until init scripts run.
+      var mosaics = document.querySelectorAll('[data-mosaic-root]');
+      for (var i = 0; i < mosaics.length; i++) {
+        mosaics[i].setAttribute('data-revealed', '');
+      }
+      syncHeader();
+    });
     document.addEventListener('astro:page-load', syncHeader);
   })();
 </script>
