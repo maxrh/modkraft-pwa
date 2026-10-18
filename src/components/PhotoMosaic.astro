@@ -87,8 +87,13 @@ const restJson = JSON.stringify(restPayload).replace(/</g, '\\u003c');
   }
 </div>
 
-<script is:inline>
-  (function (root) {
+<script is:inline data-astro-rerun>
+  (function () {
+    // View transitions can re-run this without a currentScript; init every new mosaic root.
+    var roots = document.querySelectorAll('[data-mosaic-root]:not([data-ready])');
+    for (var r = 0; r < roots.length; r++) initMosaic(roots[r]);
+
+    function initMosaic(root) {
     if (!root || root.hasAttribute('data-ready')) return;
     root.setAttribute('data-ready', '');
 
@@ -341,5 +346,6 @@ const restJson = JSON.stringify(restPayload).replace(/</g, '\\u003c');
       );
       observer.observe(sentinel);
     }
-  })(document.currentScript && document.currentScript.previousElementSibling);
+    } // initMosaic
+  })();
 </script>

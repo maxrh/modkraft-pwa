@@ -1,4 +1,6 @@
 ---
+import { ClientRouter } from 'astro:transitions';
+
 interface Props {
   title: string;
   description: string;
@@ -19,6 +21,7 @@ const pageTitle = title === 'Modkraft Arkiv' ? title : `${title} · Modkraft Ark
   rel="stylesheet"
 />
 <title>{pageTitle}</title>
+<ClientRouter />
 <style>[data-mosaic]:not([data-ready]){visibility:hidden}</style>
 <noscript>
   <style>
