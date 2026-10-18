@@ -46,7 +46,7 @@ const { tag, photos } = Astro.props;
   description={`${photos.length} fotos med tagget "${tag}".`}
   activeTag={tag}
 >
-  <Container class="pt-4 pb-16">
+  <Container class="pt-8 pb-16">
     <PhotoMosaic photos={photos} />
   </Container>
 </BaseLayout>

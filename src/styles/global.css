@@ -11,6 +11,7 @@
   --color-card-foreground: var(--card-foreground);
   --color-popover: var(--popover);
   --color-popover-foreground: var(--popover-foreground);
+  --color-brand: var(--brand);
   --color-primary: var(--primary);
   --color-primary-foreground: var(--primary-foreground);
   --color-secondary: var(--secondary);
@@ -46,8 +47,9 @@
   --card-foreground: oklch(0.22 0.02 55);
   --popover: oklch(0.995 0.002 95);
   --popover-foreground: oklch(0.22 0.02 55);
-  --primary: oklch(0.32 0.04 45);
-  --primary-foreground: oklch(0.98 0.005 95);
+  --brand: #c8505a;
+  --primary: var(--brand);
+  --primary-foreground: #fff;
   --secondary: oklch(0.94 0.01 90);
   --secondary-foreground: oklch(0.28 0.02 55);
   --muted: oklch(0.945 0.008 90);
@@ -57,7 +59,7 @@
   --destructive: oklch(0.55 0.2 25);
   --border: oklch(0.88 0.01 90);
   --input: oklch(0.88 0.01 90);
-  --ring: oklch(0.55 0.04 55);
+  --ring: var(--brand);
 }
 
 @layer base {
@@ -76,4 +78,15 @@
   a {
     @apply underline-offset-4 transition-colors;
   }
+}
+
+/* Instant swaps — no root crossfade that can paint scrolled content over the header. */
+::view-transition-old(root),
+::view-transition-new(root) {
+  animation: none;
+  mix-blend-mode: normal;
+}
+
+::view-transition-group(site-header) {
+  z-index: 50;
 }
