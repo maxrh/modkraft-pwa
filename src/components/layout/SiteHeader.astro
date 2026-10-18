@@ -9,8 +9,12 @@ interface Props {
 const { activeTag = null, searchQuery = '' } = Astro.props;
 ---
 
-<header class="sticky top-0 z-40 border-b border-border bg-white">
-  <div class="mx-auto flex max-w-[1600px] items-center gap-4 px-4 py-3 sm:gap-6 sm:px-6">
+<header
+  id="site-header"
+  class="sticky top-0 z-40 border-b border-border bg-white"
+  transition:persist="site-header"
+>
+  <div class="flex items-center gap-4 px-4 py-4 sm:gap-6 sm:px-6">
     <form action="/soeg" method="get" class="min-w-0 flex-1" role="search">
       <label class="sr-only" for="site-search">Søg fotos</label>
       <div
@@ -49,3 +53,58 @@ const { activeTag = null, searchQuery = '' } = Astro.props;
 
   <TagNav activeTag={activeTag} searchQuery={searchQuery} />
 </header>
+
+{/* Persisted header keeps DOM across navigations — sync active tag + search from the URL. */}
+<script is:inline>
+  (function () {
+    if (window.__modkraftHeaderSync) return;
+    window.__modkraftHeaderSync = true;
+
+    var SELECTED = ['border-foreground', 'font-semibold', 'text-foreground'];
+    var IDLE = ['border-transparent', 'text-muted-foreground', 'hover:text-foreground'];
+
+    function setSelected(el, on) {
+      SELECTED.forEach(function (c) {
+        el.classList.toggle(c, on);
+      });
+      IDLE.forEach(function (c) {
+        el.classList.toggle(c, !on);
+      });
+      if (on) el.setAttribute('aria-current', 'page');
+      else el.removeAttribute('aria-current');
+    }
+
+    function syncHeader() {
+      var path = location.pathname;
+      var q = new URLSearchParams(location.search).get('q') || '';
+      var isHome = path === '/' || path === '';
+      var tagMatch = path.match(/^\/t\/([^/]+)\/?$/);
+      var activeSlug = tagMatch ? decodeURIComponent(tagMatch[1]) : null;
+      var onSearch = path === '/soeg' || path === '/soeg/';
+
+      var input = document.getElementById('site-search');
+      if (input && document.activeElement !== input) {
+        input.value = onSearch ? q : '';
+      }
+
+      var nav = document.querySelector('#site-header nav[aria-label="Filtrer efter emne"]');
+      if (!nav) return;
+
+      var links = nav.querySelectorAll('a');
+      for (var i = 0; i < links.length; i++) {
+        var a = links[i];
+        var href = a.getAttribute('href') || '';
+        var selected = false;
+        if (href === '/') {
+          selected = isHome && !activeSlug && !onSearch;
+        } else if (href.indexOf('/t/') === 0) {
+          selected = activeSlug === href.slice(3);
+        }
+        setSelected(a, selected);
+      }
+    }
+
+    document.addEventListener('astro:after-swap', syncHeader);
+    document.addEventListener('astro:page-load', syncHeader);
+  })();
+</script>

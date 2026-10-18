@@ -1,5 +1,5 @@
 ---
-import { getNavTags } from '@/lib/photos';
+import { getNavTags, tagHref } from '@/lib/photos';
 
 interface Props {
   activeTag?: string | null;
@@ -12,7 +12,7 @@ const isHome = Astro.url.pathname === '/' || Astro.url.pathname === '';
 ---
 
 <nav
-  class="mx-auto flex max-w-[1600px] gap-5 overflow-x-auto px-4 sm:gap-6 sm:px-6"
+  class="flex gap-5 overflow-x-auto px-4 sm:gap-6 sm:px-6"
   aria-label="Filtrer efter emne"
 >
   <a
@@ -23,6 +23,7 @@ const isHome = Astro.url.pathname === '/' || Astro.url.pathname === '';
         ? 'border-foreground font-semibold text-foreground'
         : 'border-transparent text-muted-foreground hover:text-foreground',
     ]}
+    aria-current={isHome && !activeTag && !searchQuery ? 'page' : undefined}
   >
     Alle
   </a>
@@ -31,13 +32,14 @@ const isHome = Astro.url.pathname === '/' || Astro.url.pathname === '';
       const selected = activeTag === tag;
       return (
         <a
-          href={`/tag/${encodeURIComponent(tag)}`}
+          href={tagHref(tag)}
           class:list={[
             'shrink-0 border-b-2 py-3 text-sm whitespace-nowrap no-underline transition-colors',
             selected
               ? 'border-foreground font-semibold text-foreground'
               : 'border-transparent text-muted-foreground hover:text-foreground',
           ]}
+          aria-current={selected ? 'page' : undefined}
         >
           {tag}
         </a>

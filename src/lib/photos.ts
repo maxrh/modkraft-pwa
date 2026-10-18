@@ -41,6 +41,25 @@ export function photoHref(collectionId: string, imageId: string): string {
   return `/foto/${collectionId}/${imageId}`;
 }
 
+/** Stable URL slug for tag display names (æ→ae, ø→oe, å→aa). */
+export function slugifyTag(tag: string): string {
+  return tag
+    .trim()
+    .replace(/æ/gi, 'ae')
+    .replace(/ø/gi, 'oe')
+    .replace(/å/gi, 'aa')
+    .normalize('NFD')
+    .replace(/[\u0300-\u036f]/g, '')
+    .toLowerCase()
+    .replace(/[^a-z0-9]+/g, '-')
+    .replace(/^-+|-+$/g, '')
+    .replace(/-+/g, '-');
+}
+
+export function tagHref(tag: string): string {
+  return `/t/${slugifyTag(tag)}`;
+}
+
 export function collectionCoverUrl(collection: PhotoCollection): string | null {
   const coverId = collection.data.coverImage;
   const cover =

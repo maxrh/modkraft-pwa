@@ -28,7 +28,7 @@ const {
   </head>
   <body class="flex min-h-dvh flex-col">
     <SiteHeader activeTag={activeTag} searchQuery={searchQuery} />
-    <main class="flex-1">
+    <main class="flex-1" transition:animate="fade">
       <slot />
     </main>
     <SiteFooter />

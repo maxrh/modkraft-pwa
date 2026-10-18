@@ -40,7 +40,7 @@ Images are served via a directory junction (`public/media/photo-collections` →
 - `/foto/[collectionId]/[imageId]` — photo detail with collection context and siblings
 - `/samling` / `/samling/[id]` — collection index and hubs
 - `/serie/[id]` — multi-part series hub
-- `/tag/[tag]` — tag-filtered mosaic (header underline matches selected tag)
+- `/t/[tag]` — tag-filtered mosaic (slug URL, e.g. `/t/noedhjaelp`)
 - `/admin` — Sanity Studio (when configured)
 
 ## Sanity (optional)
