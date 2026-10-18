@@ -28,6 +28,11 @@ if (sanityEnabled) {
 // https://astro.build/config
 export default defineConfig({
   output: 'static',
+  prefetch: {
+    prefetchAll: true,
+    // hover never fires on touch; tap covers mobile tag-nav clicks
+    defaultStrategy: 'tap',
+  },
   adapter: cloudflare({
     imageService: 'passthrough',
     platformProxy: {
