@@ -1,5 +1,6 @@
 ---
 import BaseLayout from '@/layouts/BaseLayout.astro';
+import Container from '@/components/layout/Container.astro';
 import PhotoMosaic from '@/components/PhotoMosaic.astro';
 import { getAllPhotos, photoMatchesQuery } from '@/lib/photos';
 
@@ -15,7 +16,7 @@ const photos = q ? all.filter((photo) => photoMatchesQuery(photo, q)) : all;
   description={q ? `Søgeresultater for “${q}”.` : 'Søg i Modkraft-fotoarkivet.'}
   searchQuery={q}
 >
-  <section class="mx-auto max-w-[1600px] px-4 pt-4 pb-16 sm:px-6">
+  <Container class="pt-4 pb-16">
     {
       q && (
         <p class="mb-4 text-sm text-muted-foreground">
@@ -31,5 +32,5 @@ const photos = q ? all.filter((photo) => photoMatchesQuery(photo, q)) : all;
         <p class="py-16 text-center text-muted-foreground">Ingen fotos matchede din søgning.</p>
       )
     }
-  </section>
+  </Container>
 </BaseLayout>

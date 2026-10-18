@@ -1,0 +1,64 @@
+---
+import TagPills from './TagPills.astro';
+
+interface Crumb {
+  label: string;
+  href?: string;
+}
+
+interface Props {
+  title: string;
+  kicker?: string | null;
+  meta?: string | null;
+  crumbs?: Crumb[];
+  tags?: string[];
+  class?: string;
+}
+
+const {
+  title,
+  kicker = null,
+  meta = null,
+  crumbs = [],
+  tags = [],
+  class: className,
+} = Astro.props;
+---
+
+<header class:list={['max-w-3xl', className]}>
+  {
+    crumbs.length > 0 && (
+      <p class="mb-3 flex flex-wrap items-center gap-2 text-sm">
+        {crumbs.map((crumb, i) => (
+          <>
+            {i > 0 && <span class="text-muted-foreground">·</span>}
+            {crumb.href ? (
+              <a
+                href={crumb.href}
+                class="text-muted-foreground no-underline hover:text-foreground"
+              >
+                {crumb.label}
+              </a>
+            ) : (
+              <span class="text-foreground">{crumb.label}</span>
+            )}
+          </>
+        ))}
+      </p>
+    )
+  }
+
+  {
+    kicker && (
+      <p class="mb-1 text-xs font-semibold tracking-wider text-muted-foreground uppercase">{kicker}</p>
+    )
+  }
+
+  <h1 class="font-display text-3xl font-bold tracking-tight sm:text-4xl">{title}</h1>
+
+  {meta && <p class="mt-2 text-sm text-muted-foreground">{meta}</p>}
+
+  {tags.length > 0 && <TagPills tags={tags} class="mt-4" />}
+
+  <slot />
+</header>

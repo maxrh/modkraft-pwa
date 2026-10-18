@@ -1,0 +1,51 @@
+---
+import TagNav from './TagNav.astro';
+
+interface Props {
+  activeTag?: string | null;
+  searchQuery?: string;
+}
+
+const { activeTag = null, searchQuery = '' } = Astro.props;
+---
+
+<header class="sticky top-0 z-40 border-b border-border bg-white">
+  <div class="mx-auto flex max-w-[1600px] items-center gap-4 px-4 py-3 sm:gap-6 sm:px-6">
+    <form action="/soeg" method="get" class="min-w-0 flex-1" role="search">
+      <label class="sr-only" for="site-search">Søg fotos</label>
+      <div
+        class="flex h-12 items-center gap-3 rounded-lg bg-muted/80 px-4 transition-shadow focus-within:bg-muted focus-within:ring-2 focus-within:ring-ring/40"
+      >
+        <svg
+          class="size-5 shrink-0 text-muted-foreground"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          aria-hidden="true"
+        >
+          <circle cx="11" cy="11" r="7"></circle>
+          <path d="m20 20-3.5-3.5" stroke-linecap="round"></path>
+        </svg>
+        <input
+          id="site-search"
+          name="q"
+          type="search"
+          value={searchQuery}
+          placeholder="Søg efter fotos, tags, fotografer…"
+          autocomplete="off"
+          class="h-full w-full min-w-0 border-0 bg-transparent text-[15px] text-foreground outline-none placeholder:text-muted-foreground"
+        />
+      </div>
+    </form>
+
+    <a
+      href="/"
+      class="font-display shrink-0 text-lg font-semibold tracking-tight text-foreground no-underline hover:opacity-80 sm:text-xl"
+    >
+      Modkraft
+    </a>
+  </div>
+
+  <TagNav activeTag={activeTag} searchQuery={searchQuery} />
+</header>

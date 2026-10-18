@@ -1,6 +1,8 @@
 ---
 import { getCollection, type CollectionEntry } from 'astro:content';
 import BaseLayout from '@/layouts/BaseLayout.astro';
+import Container from '@/components/layout/Container.astro';
+import PageHeader from '@/components/layout/PageHeader.astro';
 import CollectionCard from '@/components/CollectionCard.astro';
 import PhotoMosaic from '@/components/PhotoMosaic.astro';
 import { renderMarkdown } from '@/lib/markdown';
@@ -27,55 +29,55 @@ const seriesPhotos = posts.flatMap(flattenCollectionPhotos);
 const aboutHtml = renderMarkdown(series.data.aboutSeries);
 const viomisHtml = renderMarkdown(series.data.aboutViomis);
 const authorHtml = renderMarkdown(series.data.aboutAuthor);
+
+const meta = `Af ${series.data.author} · ${posts.length} kapitler · ${seriesPhotos.length} fotos`;
 ---
 
 <BaseLayout title={series.data.title} description={series.data.intro}>
-  <article class="mx-auto max-w-[1600px] px-4 pt-8 pb-16 sm:px-6">
-    <div class="max-w-3xl">
-      <p class="mb-3">
-        <a href="/" class="text-sm text-muted-foreground no-underline hover:text-foreground">← Alle fotos</a>
-      </p>
+  <Container class="pt-8 pb-16">
+    <article>
+      <PageHeader
+        title={series.data.title}
+        kicker="Serie"
+        meta={meta}
+        crumbs={[{ label: '← Alle fotos', href: '/' }]}
+      >
+        <p class="mt-5 text-lg text-muted-foreground">{series.data.intro}</p>
+        {aboutHtml && <div class="prose prose-neutral mt-6 max-w-none" set:html={aboutHtml} />}
+      </PageHeader>
 
-      <p class="mb-1 text-xs font-semibold tracking-wider text-muted-foreground uppercase">Serie</p>
-      <h1 class="font-display text-3xl font-bold tracking-tight sm:text-4xl">{series.data.title}</h1>
-      <p class="mt-2 text-sm text-muted-foreground">
-        Af {series.data.author} · {posts.length} kapitler · {seriesPhotos.length} fotos
-      </p>
+      <section class="mt-10">
+        <h2 class="font-display mb-4 text-2xl font-semibold">
+          Alle fotos i serien ({seriesPhotos.length})
+        </h2>
+        <PhotoMosaic photos={seriesPhotos} />
+      </section>
 
-      <p class="mt-5 text-lg text-muted-foreground">{series.data.intro}</p>
+      <section class="mt-14">
+        <h2 class="font-display mb-5 text-2xl font-semibold">Kapitler i serien ({posts.length})</h2>
+        <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+          {posts.map((collection) => <CollectionCard collection={collection} />)}
+        </div>
+      </section>
 
-      {aboutHtml && <div class="prose prose-neutral mt-6 max-w-none" set:html={aboutHtml} />}
-    </div>
-
-    <section class="mt-10">
-      <h2 class="font-display mb-4 text-2xl font-semibold">Alle fotos i serien ({seriesPhotos.length})</h2>
-      <PhotoMosaic photos={seriesPhotos} />
-    </section>
-
-    <section class="mt-14">
-      <h2 class="font-display mb-5 text-2xl font-semibold">Kapitler i serien ({posts.length})</h2>
-      <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-        {posts.map((collection) => <CollectionCard collection={collection} />)}
-      </div>
-    </section>
-
-    {
-      (viomisHtml || authorHtml) && (
-        <section class="mt-16 grid max-w-5xl gap-8 border-t border-border pt-10 md:grid-cols-2">
-          {viomisHtml && (
-            <div>
-              <h2 class="font-display mb-3 text-xl font-semibold">Om VIOMIS</h2>
-              <div class="prose prose-neutral max-w-none" set:html={viomisHtml} />
-            </div>
-          )}
-          {authorHtml && (
-            <div>
-              <h2 class="font-display mb-3 text-xl font-semibold">Om fotografen</h2>
-              <div class="prose prose-neutral max-w-none" set:html={authorHtml} />
-            </div>
-          )}
-        </section>
-      )
-    }
-  </article>
+      {
+        (viomisHtml || authorHtml) && (
+          <section class="mt-16 grid max-w-5xl gap-8 border-t border-border pt-10 md:grid-cols-2">
+            {viomisHtml && (
+              <div>
+                <h2 class="font-display mb-3 text-xl font-semibold">Om VIOMIS</h2>
+                <div class="prose prose-neutral max-w-none" set:html={viomisHtml} />
+              </div>
+            )}
+            {authorHtml && (
+              <div>
+                <h2 class="font-display mb-3 text-xl font-semibold">Om fotografen</h2>
+                <div class="prose prose-neutral max-w-none" set:html={authorHtml} />
+              </div>
+            )}
+          </section>
+        )
+      }
+    </article>
+  </Container>
 </BaseLayout>

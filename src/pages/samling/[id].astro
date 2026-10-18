@@ -1,6 +1,8 @@
 ---
 import { getCollection, type CollectionEntry } from 'astro:content';
 import BaseLayout from '@/layouts/BaseLayout.astro';
+import Container from '@/components/layout/Container.astro';
+import PageHeader from '@/components/layout/PageHeader.astro';
 import PhotoMosaic from '@/components/PhotoMosaic.astro';
 import { renderMarkdown } from '@/lib/markdown';
 import { byline, flattenCollectionPhotos, formatDate } from '@/lib/photos';
@@ -22,70 +24,44 @@ const data = collection.data;
 const photos = flattenCollectionPhotos(collection);
 const manchetHtml = renderMarkdown(data.manchet);
 const introHtml = renderMarkdown(data.introMarkdown);
+
+const crumbs = [
+  { label: '← Alle fotos', href: '/' },
+  { label: 'Samlinger', href: '/samling' },
+  ...(data.series
+    ? [{ label: `Serie: ${data.prefix || data.series}`, href: `/serie/${data.series}` }]
+    : []),
+];
+
+const meta = [
+  formatDate(data.publishedAt),
+  data.authors.length ? byline(data.authors) : null,
+  `${photos.length} fotos`,
+]
+  .filter(Boolean)
+  .join(' · ');
 ---
 
 <BaseLayout
   title={data.title}
   description={data.manchet?.slice(0, 160) || `Fotoserie: ${data.title}`}
 >
-  <article class="mx-auto max-w-[1600px] px-4 pt-8 pb-16 sm:px-6">
-    <div class="max-w-3xl">
-      <p class="mb-3 flex flex-wrap items-center gap-2 text-sm">
-        <a href="/" class="text-muted-foreground no-underline hover:text-foreground">← Alle fotos</a>
-        <span class="text-muted-foreground">·</span>
-        <a href="/samling" class="text-muted-foreground no-underline hover:text-foreground">Samlinger</a>
-        {
-          data.series && (
-            <>
-              <span class="text-muted-foreground">·</span>
-              <a
-                href={`/serie/${data.series}`}
-                class="text-muted-foreground no-underline hover:text-foreground"
-              >
-                Serie: {data.prefix || data.series}
-              </a>
-            </>
-          )
-        }
-      </p>
+  <Container class="pt-8 pb-16">
+    <article>
+      <PageHeader
+        title={data.title}
+        kicker={data.prefix}
+        meta={meta}
+        crumbs={crumbs}
+        tags={data.tags}
+      >
+        {manchetHtml && <div class="prose prose-neutral mt-6 max-w-none" set:html={manchetHtml} />}
+        {introHtml && <div class="prose prose-neutral mt-4 max-w-none" set:html={introHtml} />}
+      </PageHeader>
 
-      {
-        data.prefix && (
-          <p class="mb-1 text-xs font-semibold tracking-wider text-muted-foreground uppercase">{data.prefix}</p>
-        )
-      }
-
-      <h1 class="font-display text-3xl font-bold tracking-tight sm:text-4xl">{data.title}</h1>
-
-      <p class="mt-2 text-sm text-muted-foreground">
-        {formatDate(data.publishedAt)}
-        {data.authors.length ? ` · ${byline(data.authors)}` : ''}
-        {` · ${photos.length} fotos`}
-      </p>
-
-      {
-        data.tags.length > 0 && (
-          <ul class="mt-4 flex flex-wrap gap-2">
-            {data.tags.map((tag) => (
-              <li>
-                <a
-                  href={`/tag/${encodeURIComponent(tag)}`}
-                  class="rounded-full border border-border px-3 py-1 text-xs text-muted-foreground no-underline hover:border-foreground/40 hover:text-foreground"
-                >
-                  {tag}
-                </a>
-              </li>
-            ))}
-          </ul>
-        )
-      }
-
-      {manchetHtml && <div class="prose prose-neutral mt-6 max-w-none" set:html={manchetHtml} />}
-      {introHtml && <div class="prose prose-neutral mt-4 max-w-none" set:html={introHtml} />}
-    </div>
-
-    <section class="mt-10">
-      <PhotoMosaic photos={photos} />
-    </section>
-  </article>
+      <section class="mt-10">
+        <PhotoMosaic photos={photos} />
+      </section>
+    </article>
+  </Container>
 </BaseLayout>

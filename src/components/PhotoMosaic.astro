@@ -11,7 +11,7 @@ const { photos } = Astro.props;
 
 const INITIAL_COUNT = 48;
 const BATCH_SIZE = 48;
-const ssrColumnCount = 4;
+const ssrColumnCount = 3;
 
 const initialPhotos = photos.slice(0, INITIAL_COUNT);
 const restPhotos = photos.slice(INITIAL_COUNT);
@@ -46,7 +46,7 @@ const restJson = JSON.stringify(restPayload).replace(/</g, '\\u003c');
   <div
     data-mosaic
     data-ssr-cols={String(ssrColumnCount)}
-    class="grid grid-cols-1 items-start gap-4 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4"
+    class="grid grid-cols-1 items-start gap-4 sm:grid-cols-2 lg:grid-cols-3"
   >
     {
       ssrColumns.map((column) => (
@@ -96,11 +96,10 @@ const restJson = JSON.stringify(restPayload).replace(/</g, '\\u003c');
     var mosaic = root.querySelector('[data-mosaic]');
     if (!mosaic) return;
 
-    var ssrCols = Number(mosaic.getAttribute('data-ssr-cols') || 4);
+    var ssrCols = Number(mosaic.getAttribute('data-ssr-cols') || 3);
     var batchSize = Number(root.getAttribute('data-batch-size') || 48);
     var initialCount = Number(root.getAttribute('data-initial-count') || 48);
     var queries = [
-      window.matchMedia('(min-width: 80rem)'),
       window.matchMedia('(min-width: 64rem)'),
       window.matchMedia('(min-width: 40rem)'),
     ];
@@ -124,9 +123,8 @@ const restJson = JSON.stringify(restPayload).replace(/</g, '\\u003c');
     var sentinel = root.querySelector('[data-mosaic-sentinel]');
 
     function columnCount() {
-      if (queries[0].matches) return 4;
-      if (queries[1].matches) return 3;
-      if (queries[2].matches) return 2;
+      if (queries[0].matches) return 3;
+      if (queries[1].matches) return 2;
       return 1;
     }
 
@@ -248,7 +246,7 @@ const restJson = JSON.stringify(restPayload).replace(/</g, '\\u003c');
         photo.width +
         '" height="' +
         photo.height +
-        '" loading="lazy" decoding="async" sizes="(max-width: 40rem) 100vw, (max-width: 64rem) 50vw, (max-width: 80rem) 33vw, 25vw" onload="this.dataset.loaded=\'\'" class="photo-img absolute inset-0 block h-full w-full object-cover text-transparent opacity-0 transition-[opacity,transform] duration-300 data-loaded:opacity-100 group-hover:scale-[1.015]" />' +
+        '" loading="lazy" decoding="async" sizes="(max-width: 40rem) 100vw, (max-width: 64rem) 50vw, 33vw" onload="this.dataset.loaded=\'\'" class="photo-img absolute inset-0 block h-full w-full object-cover text-transparent opacity-0 transition-[opacity,transform] duration-300 data-loaded:opacity-100 group-hover:scale-[1.015]" />' +
         '<div class="pointer-events-none absolute inset-0 flex flex-col justify-between bg-gradient-to-t from-black/80 via-black/20 to-black/30 p-3.5 text-white opacity-0 transition-opacity duration-200 group-hover:opacity-100 group-focus-visible:opacity-100">' +
         '<div class="flex items-start justify-between gap-2 text-[11px] font-medium tracking-wide">' +
         badge +

@@ -80,24 +80,71 @@ export function flattenCollectionPhotos(collection: PhotoCollection): Photo[] {
   }));
 }
 
+/** Prod-only caches so ~2k prerendered pages share one scan; dev stays fresh. */
+let photosCache: Promise<Photo[]> | null = null;
+let navTagsCache = new Map<number, Promise<string[]>>();
+let archiveStatsCache: Promise<ArchiveStats> | null = null;
+
+export interface ArchiveStats {
+  photoCount: number;
+  collectionCount: number;
+  tagCount: number;
+}
+
 export async function getAllPhotos(): Promise<Photo[]> {
-  const collections = (await getCollection('photoCollections')).sort(sortCollectionsNewest);
-  return collections.flatMap(flattenCollectionPhotos);
+  const load = async () => {
+    const collections = (await getCollection('photoCollections')).sort(sortCollectionsNewest);
+    return collections.flatMap(flattenCollectionPhotos);
+  };
+
+  if (!import.meta.env.PROD) return load();
+  photosCache ??= load();
+  return photosCache;
 }
 
 /** Top tags for the Unsplash-style header filter row (by photo count). */
 export async function getNavTags(limit = 10): Promise<string[]> {
-  const photos = await getAllPhotos();
-  const counts = new Map<string, number>();
-  for (const photo of photos) {
-    for (const tag of photo.tags) {
-      counts.set(tag, (counts.get(tag) ?? 0) + 1);
+  const load = async () => {
+    const photos = await getAllPhotos();
+    const counts = new Map<string, number>();
+    for (const photo of photos) {
+      for (const tag of photo.tags) {
+        counts.set(tag, (counts.get(tag) ?? 0) + 1);
+      }
     }
+    return [...counts.entries()]
+      .sort((a, b) => b[1] - a[1] || a[0].localeCompare(b[0], 'da'))
+      .slice(0, limit)
+      .map(([tag]) => tag);
+  };
+
+  if (!import.meta.env.PROD) return load();
+  let cached = navTagsCache.get(limit);
+  if (!cached) {
+    cached = load();
+    navTagsCache.set(limit, cached);
   }
-  return [...counts.entries()]
-    .sort((a, b) => b[1] - a[1] || a[0].localeCompare(b[0], 'da'))
-    .slice(0, limit)
-    .map(([tag]) => tag);
+  return cached;
+}
+
+export async function getArchiveStats(): Promise<ArchiveStats> {
+  const load = async (): Promise<ArchiveStats> => {
+    const collections = await getCollection('photoCollections');
+    const photos = await getAllPhotos();
+    const tags = new Set<string>();
+    for (const photo of photos) {
+      for (const tag of photo.tags) tags.add(tag);
+    }
+    return {
+      photoCount: photos.length,
+      collectionCount: collections.length,
+      tagCount: tags.size,
+    };
+  };
+
+  if (!import.meta.env.PROD) return load();
+  archiveStatsCache ??= load();
+  return archiveStatsCache;
 }
 
 export function photoMatchesQuery(photo: Photo, query: string): boolean {

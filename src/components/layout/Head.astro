@@ -1,0 +1,28 @@
+---
+interface Props {
+  title: string;
+  description: string;
+}
+
+const { title, description } = Astro.props;
+const pageTitle = title === 'Modkraft Arkiv' ? title : `${title} · Modkraft Arkiv`;
+---
+
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="description" content={description} />
+<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link
+  href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wdth,wght@12..96,75..100,200..800&display=swap"
+  rel="stylesheet"
+/>
+<title>{pageTitle}</title>
+<style>[data-mosaic]:not([data-ready]){visibility:hidden}</style>
+<noscript>
+  <style>
+    .photo-img { opacity: 1 !important; }
+    [data-mosaic] { visibility: visible !important; }
+  </style>
+</noscript>

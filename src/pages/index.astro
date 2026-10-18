@@ -1,5 +1,6 @@
 ---
 import BaseLayout from '@/layouts/BaseLayout.astro';
+import Container from '@/components/layout/Container.astro';
 import PhotoMosaic from '@/components/PhotoMosaic.astro';
 import { getAllPhotos } from '@/lib/photos';
 
@@ -10,7 +11,7 @@ const photos = await getAllPhotos();
   title="Modkraft Arkiv"
   description="1.641 dokumentariske fotografier fra Modkrafts fotoseries og fotoblogs."
 >
-  <section class="mx-auto max-w-[1600px] px-4 pt-4 pb-16 sm:px-6">
+  <Container class="pt-4 pb-16">
     <PhotoMosaic photos={photos} />
-  </section>
+  </Container>
 </BaseLayout>

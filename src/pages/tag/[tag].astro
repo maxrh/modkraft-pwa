@@ -1,5 +1,6 @@
 ---
 import BaseLayout from '@/layouts/BaseLayout.astro';
+import Container from '@/components/layout/Container.astro';
 import PhotoMosaic from '@/components/PhotoMosaic.astro';
 import { getAllPhotos, type Photo } from '@/lib/photos';
 
@@ -34,7 +35,7 @@ const { tag, photos } = Astro.props;
   description={`${photos.length} fotos med tagget "${tag}".`}
   activeTag={tag}
 >
-  <section class="mx-auto max-w-[1600px] px-4 pt-4 pb-16 sm:px-6">
+  <Container class="pt-4 pb-16">
     <PhotoMosaic photos={photos} />
-  </section>
+  </Container>
 </BaseLayout>

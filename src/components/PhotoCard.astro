@@ -23,7 +23,7 @@ const altText = photo.caption || `${photo.collectionTitle} (${photo.sortOrder}/$
     loading={highPriority ? 'eager' : 'lazy'}
     fetchpriority={highPriority ? 'high' : undefined}
     decoding="async"
-    sizes="(max-width: 40rem) 100vw, (max-width: 64rem) 50vw, (max-width: 80rem) 33vw, 25vw"
+    sizes="(max-width: 40rem) 100vw, (max-width: 64rem) 50vw, 33vw"
     onload="this.dataset.loaded=''"
     class="photo-img absolute inset-0 block h-full w-full object-cover text-transparent opacity-0 transition-[opacity,transform] duration-300 data-loaded:opacity-100 group-hover:scale-[1.015]"
   />
