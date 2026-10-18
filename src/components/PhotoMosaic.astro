@@ -253,7 +253,7 @@ const restJson = JSON.stringify(restPayload).replace(/</g, '\\u003c');
         photo.width +
         '" height="' +
         photo.height +
-        '" loading="lazy" decoding="async" sizes="(max-width: 40rem) 100vw, (max-width: 64rem) 50vw, 33vw" onload="this.dataset.loaded=\'\'" class="photo-img absolute inset-0 block h-full w-full object-cover text-transparent opacity-0 transition-[opacity,transform] duration-300 data-loaded:opacity-100 group-hover:scale-[1.015]" />' +
+        '" loading="lazy" decoding="async" sizes="(max-width: 40rem) 100vw, (max-width: 64rem) 50vw, 33vw" class="photo-img absolute inset-0 block h-full w-full object-cover text-transparent transition-transform duration-300 group-hover:scale-[1.015]" />' +
         '<div class="pointer-events-none absolute inset-0 flex flex-col justify-between bg-gradient-to-t from-black/80 via-black/20 to-black/30 p-3.5 text-white opacity-0 transition-opacity duration-200 group-hover:opacity-100 group-focus-visible:opacity-100">' +
         '<div class="flex items-start justify-between gap-2 text-[11px] font-medium tracking-wide">' +
         badge +

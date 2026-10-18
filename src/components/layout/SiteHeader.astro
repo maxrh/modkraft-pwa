@@ -108,10 +108,12 @@ const { activeTag = null, searchQuery = '' } = Astro.props;
       window.scrollTo({ left: 0, top: 0, behavior: 'instant' });
     }
 
-    // Jump to top before the VT snapshot so scrolled mosaic never covers the header.
+    // Scroll after fetch, just before VT snapshot — avoids old-page jump during load.
     var scrollToTop = false;
     document.addEventListener('astro:before-preparation', function (event) {
       scrollToTop = event.navigationType !== 'traverse';
+    });
+    document.addEventListener('astro:after-preparation', function () {
       if (scrollToTop) jumpTop();
     });
     document.addEventListener('astro:after-swap', function () {

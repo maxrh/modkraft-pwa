@@ -24,8 +24,7 @@ const altText = photo.caption || `${photo.collectionTitle} (${photo.sortOrder}/$
     fetchpriority={highPriority ? 'high' : undefined}
     decoding="async"
     sizes="(max-width: 40rem) 100vw, (max-width: 64rem) 50vw, 33vw"
-    onload="this.dataset.loaded=''"
-    class="photo-img absolute inset-0 block h-full w-full object-cover text-transparent opacity-0 transition-[opacity,transform] duration-300 data-loaded:opacity-100 group-hover:scale-[1.015]"
+    class="photo-img absolute inset-0 block h-full w-full object-cover text-transparent transition-transform duration-300 group-hover:scale-[1.015]"
   />
 
   <div
