@@ -1723,29 +1723,6 @@
     "manchet": "Vi ventede så længe, endelig blev sluserne åbnet. Nu skinner solen igen over festivalen og igen bliver der danset med os selv og de andre. I aften er der fællessang foran Orange og afslutningsfest på Grøn. Endnu en Roskilde præcis som Roskilde skal være."
   },
   {
-    "id": "2015-08-19-tillid-paa-tvaers",
-    "slug": "tillid-paa-tvaers",
-    "title": "Tillid på tværs!",
-    "publishedAt": "2015-08-19T17:41:29+02:00",
-    "authors": [
-      "Gitte Gry"
-    ],
-    "photographers": [],
-    "prefix": "Nørrebro",
-    "series": null,
-    "tags": [
-      "Antiracisme",
-      "Kultur",
-      "København",
-      "Nørrebro"
-    ],
-    "genre": "Nyhed",
-    "sourceType": "fotoserie",
-    "imageCount": 15,
-    "coverImage": "images/01-1-12.jpg",
-    "manchet": "Fotoserie om skabelsen af verdens største kridttegning."
-  },
-  {
     "id": "2015-09-08-flygtninge-i-roedby-havn",
     "slug": "flygtninge-i-roedby-havn",
     "title": "Flygtninge i Rødby Havn",
@@ -1753,7 +1730,9 @@
     "authors": [
       "Peter Schwarz-Nielsen"
     ],
-    "photographers": [],
+    "photographers": [
+      "Ole Garde"
+    ],
     "prefix": "Billedserie",
     "series": null,
     "tags": [
@@ -2097,7 +2076,9 @@
     "authors": [
       "Anna Geisler"
     ],
-    "photographers": [],
+    "photographers": [
+      "Charlotte Quitzau"
+    ],
     "prefix": null,
     "series": null,
     "tags": [
@@ -2272,85 +2253,6 @@
     "manchet": null
   },
   {
-    "id": "2016-05-13-fotoserie-se-da-demoer-mod-nedskaeringer-ramte-hele-landet",
-    "slug": "fotoserie-se-da-demoer-mod-nedskaeringer-ramte-hele-landet",
-    "title": "Fotoserie: Se da demoer mod nedskæringer ramte hele landet",
-    "publishedAt": "2016-05-13T15:45:31+02:00",
-    "authors": [
-      "Peter Schwarz-Nielsen"
-    ],
-    "photographers": [
-      "Folkeklubben",
-      "Vibeke Genefke",
-      "Marianne Petersen",
-      "Anja Elizabeth Thomsen",
-      "Jonna Jul Gudmundsen",
-      "Anette Stage Burnning",
-      "Kristian F. Berner",
-      "Randi Angelica Christensen",
-      "FOA Nordsjælland",
-      "Carsten Larsen",
-      "Flemming Gade",
-      "FOA Frederikssund",
-      "Velfærdsalliancen Halsnæs",
-      "Sarah Hvidbjerg",
-      "Anne Angelsø",
-      "Mille Stockner",
-      "Enhedslisten i Favrskov",
-      "Bent Brams",
-      "Bo Jul Nielsen",
-      "Connie Maansson",
-      "Jakob Gislund",
-      "Karen Thestrup Clausen",
-      "Dan René Dahlin",
-      "Enhedslisten-København",
-      "Velfærdsalliancen",
-      "Velfærdsalliancen-DK",
-      "Tina Schack Jensen",
-      "Claus Vestergaard Madsen",
-      "Pia Boisen",
-      "Helle Andersen",
-      "FOA Sydsjælland",
-      "Sonja Marie Jensen",
-      "Alexander Drachmann",
-      "Nana Højlund Skjødt",
-      "Morten Riis",
-      "Hans Jørgen Hald",
-      "Ole Alex Larsen",
-      "Heidi Larsen",
-      "Mette G. Nielsen",
-      "Karsten Wohlgemut",
-      "Tina Jensen",
-      "Karin Strange Hargreave",
-      "Lene Kaldahl Laursen",
-      "Gitte Christensen",
-      "Marianne Myung Rosengren Pacarada",
-      "Ulla Eriksen",
-      "Jens Otto Madsen",
-      "Folkeskoleforældre",
-      "Louise Berg",
-      "Mette Tolstrup",
-      "Karina Lorentzen",
-      "Grethe Ørum Hauger",
-      "Johnny Gaardsdal",
-      "Lotte Berthelsen",
-      "Lasse Olsen"
-    ],
-    "prefix": null,
-    "series": null,
-    "tags": [
-      "Demonstration",
-      "Fagbevægelse",
-      "Nedskæringer",
-      "Velfærd"
-    ],
-    "genre": "Nyhed",
-    "sourceType": "fotoserie",
-    "imageCount": 62,
-    "coverImage": "images/01-a-rhus-1.jpg",
-    "manchet": "Torsdag den 12. maj demonstrerede græsrodsinitiativet Velfærdsalliancen i 74 kommuner landet over. Modkraft bringer her billeder fra størstedelen af demonstrationerne."
-  },
-  {
     "id": "2016-10-10-ja-til-velfaerd-nej-til-fattigdom",
     "slug": "ja-til-velfaerd-nej-til-fattigdom",
     "title": "»Ja til velfærd - Nej til fattigdom«",
@@ -2435,7 +2337,9 @@
       "Alexander Zehntner",
       "Peter Schwarz-Nielsen"
     ],
-    "photographers": [],
+    "photographers": [
+      "Alexander Zehntner"
+    ],
     "prefix": "Foto og interview",
     "series": null,
     "tags": [
@@ -2484,7 +2388,9 @@
     "authors": [
       "Peter Schwarz-Nielsen"
     ],
-    "photographers": [],
+    "photographers": [
+      "Rasmus Nielsen"
+    ],
     "prefix": null,
     "series": null,
     "tags": [

@@ -1,10 +1,10 @@
 #!/usr/bin/env node
 /**
- * Normalize and enrich collection and per-image tags across all 99 photo collections (1,641 images).
+ * Normalize and enrich collection and per-image tags across all photo collections.
  *
  * - Normalizes all raw tags to canonical Danish Title/Sentence Case
  * - Drops meta/noise tags (`fotoserie`, `kalender`)
- * - Enriches all 99 collections (including all 24 previously untagged collections)
+ * - Enriches all collections (including previously untagged collections)
  * - Normalizes `prefix` casing (e.g. "NØDHJÆLP TIL SYRIEN" -> "Nødhjælp til Syrien")
  * - Fixes known caption typos
  * - Populates a complete, self-contained `tags` array on every single image object in `collection.json`
@@ -456,7 +456,6 @@ const COLLECTION_EXTRAS = {
   '2015-06-30-punx-picnic': ['Punk', 'K-Town', 'Bike Wars', 'Ungdomshuset', 'Kultur'],
   '2015-07-02-roskilde-2015-skudt-i-gang': ['Roskilde Festival', 'Koncert', 'Musik', 'Kultur'],
   '2015-07-04-roskilde-vibrerer': ['Roskilde Festival', 'Koncert', 'Musik', 'Kultur'],
-  '2015-08-19-tillid-paa-tvaers': ['Nørrebro', 'København', 'Antiracisme', 'Kultur'],
   '2015-09-08-flygtninge-i-roedby-havn': ['Flygtninge', 'Asyl', 'Rødby', 'Syrien'],
   '2015-09-14-refugeeswelcome': [
     'Refugees Welcome',
@@ -569,12 +568,6 @@ const COLLECTION_EXTRAS = {
     'Antiracisme',
     'Vesterbro',
     'København',
-  ],
-  '2016-05-13-fotoserie-se-da-demoer-mod-nedskaeringer-ramte-hele-landet': [
-    'Nedskæringer',
-    'Velfærd',
-    'Fagbevægelse',
-    'Demonstration',
   ],
   '2016-10-10-ja-til-velfaerd-nej-til-fattigdom': [
     'Velfærd',
@@ -821,16 +814,6 @@ function enrichImageTags(collectionId, collectionTags, img) {
   // Special handling: `2016-02-03-boernemagt-i-ungdomshuset` images 01-04 are the punk band "Lig"
   if (collectionId === '2016-02-03-boernemagt-i-ungdomshuset' && img.caption === 'Lig') {
     imageTags.add('Lig');
-  }
-
-  // Special handling: `2016-05-13-fotoserie-se-da-demoer-mod-nedskaeringer-ramte-hele-landet`
-  // Every image caption is the municipality/city name where that demonstration took place
-  if (
-    collectionId === '2016-05-13-fotoserie-se-da-demoer-mod-nedskaeringer-ramte-hele-landet' &&
-    img.caption
-  ) {
-    const city = img.caption.trim() === 'Århus' ? 'Aarhus' : img.caption.trim();
-    if (city) imageTags.add(city);
   }
 
   return sortTagsDa(imageTags);

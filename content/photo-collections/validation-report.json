@@ -2,10 +2,10 @@
   "generatedAt": "2026-10-17T00:37:40.124Z",
   "source": "C:\\Users\\max\\Desktop\\modkraft-foto\\modkraft-foto\\temp.modkraft.dk",
   "totals": {
-    "collections": 99,
-    "fotoserie": 92,
+    "collections": 97,
+    "fotoserie": 90,
     "fotoblog": 7,
-    "imagesCopied": 1641,
+    "imagesCopied": 1564,
     "missingImages": 0,
     "series": 1,
     "md5DuplicateGroups": 17
@@ -930,15 +930,6 @@
       "credited": 15
     },
     {
-      "id": "2015-08-19-tillid-paa-tvaers",
-      "sourceNid": 26768,
-      "sourceType": "fotoserie",
-      "title": "Tillid på tværs!",
-      "imageCount": 15,
-      "captioned": 0,
-      "credited": 0
-    },
-    {
       "id": "2015-09-08-flygtninge-i-roedby-havn",
       "sourceNid": 26857,
       "sourceType": "fotoserie",
@@ -1117,15 +1108,6 @@
       "imageCount": 8,
       "captioned": 2,
       "credited": 8
-    },
-    {
-      "id": "2016-05-13-fotoserie-se-da-demoer-mod-nedskaeringer-ramte-hele-landet",
-      "sourceNid": 28115,
-      "sourceType": "fotoserie",
-      "title": "Fotoserie: Se da demoer mod nedskæringer ramte hele landet",
-      "imageCount": 62,
-      "captioned": 62,
-      "credited": 58
     },
     {
       "id": "2016-10-10-ja-til-velfaerd-nej-til-fattigdom",
