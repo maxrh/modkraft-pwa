@@ -14,7 +14,9 @@
     "cf-typegen": "wrangler types",
     "import:foto": "npm --prefix scripts/import-foto run import",
     "link:media": "node scripts/link-media.mjs",
-    "thumbs": "node scripts/make-thumbs.mjs"
+    "thumbs": "node scripts/make-thumbs.mjs",
+    "match:api": "node scripts/match/match-server.mjs",
+    "match:hires": "node scripts/match/import-confirmed-hires.mjs"
   },
   "dependencies": {
     "@astrojs/cloudflare": "^12.6.9",
@@ -43,6 +45,7 @@
     "@types/react": "^19.1.13",
     "@types/react-dom": "^19.1.9",
     "@types/styled-components": "^5.1.36",
+    "exif-reader": "^2.0.3",
     "sharp": "^0.34.5",
     "typescript": "^5.9.2",
     "wrangler": "^4.40.2"

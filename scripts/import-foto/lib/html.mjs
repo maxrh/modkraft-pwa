@@ -138,6 +138,23 @@ export function normalizePrefix(prefix) {
 
 const DROP_TAGS = new Set(['foto', 'fotoblog']);
 
+/** Canonical display forms for tags that only differ by case in the archive. */
+const CANONICAL_TAGS = new Map([['koncert', 'Koncert']]);
+
 export function normalizeTags(tags) {
-  return (tags || []).filter((t) => t && !DROP_TAGS.has(t.toLowerCase()));
+  const out = [];
+  const seen = new Set();
+  for (const raw of tags || []) {
+    if (!raw) continue;
+    const cleaned = cleanText(raw);
+    if (!cleaned) continue;
+    const lower = cleaned.toLowerCase();
+    if (DROP_TAGS.has(lower)) continue;
+    const tag = CANONICAL_TAGS.get(lower) || cleaned;
+    const key = tag.toLowerCase();
+    if (seen.has(key)) continue;
+    seen.add(key);
+    out.push(tag);
+  }
+  return out;
 }

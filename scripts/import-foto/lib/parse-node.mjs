@@ -14,10 +14,34 @@ import {
 } from './html.mjs';
 import { isEmptyParagraphText, normalizeCredit, splitCaptionCredit } from './captions.mjs';
 
+/** True when taxonomy vocabulary marks Redaktion = Foto. */
+export function isFotoRedaktion($) {
+  const links = $('.field-name-taxonomy-vocabulary-1 a').toArray();
+  return links.some((el) => {
+    const text = cleanText($(el).text());
+    const href = String($(el).attr('href') || '');
+    return /^foto$/i.test(text) || /redaktion\/foto/i.test(href);
+  });
+}
+
 function detectSourceType($) {
   const bodyClass = $('body').attr('class') || '';
   if (bodyClass.includes('node-type-fotoblog') || $('.node-fotoblog').length) return 'fotoblog';
   if (bodyClass.includes('node-type-fotoserie') || $('.node-fotoserie').length) return 'fotoserie';
+
+  // Early Foto gallery artikels: node-type-articles + Redaktion Foto + field_fotoserie
+  const isArticles =
+    bodyClass.includes('node-type-articles') ||
+    $('.node-type-articles').length > 0 ||
+    $('.node-articles').length > 0;
+  if (
+    isArticles &&
+    isFotoRedaktion($) &&
+    $('.field-name-field-fotoserie img').length > 0
+  ) {
+    return 'artikel-foto';
+  }
+
   if ($('.field-name-field-fotoserie').length) return 'fotoserie';
   return null;
 }
@@ -225,7 +249,7 @@ export function parseNodeFile(filePath, siteRoot) {
   let introMarkdown = '';
   let images = [];
 
-  if (sourceType === 'fotoserie') {
+  if (sourceType === 'fotoserie' || sourceType === 'artikel-foto') {
     const bodyHtml = fieldHtml($, 'body');
     introMarkdown = htmlToMarkdown(bodyHtml);
     images = parseFotoserieImages($);

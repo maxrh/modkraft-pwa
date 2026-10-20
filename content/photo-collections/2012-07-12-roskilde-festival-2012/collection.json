@@ -1,0 +1,624 @@
+{
+  "id": "2012-07-12-roskilde-festival-2012",
+  "sourceNid": 19092,
+  "slug": "roskilde-festival-2012",
+  "title": "Roskilde Festival 2012",
+  "publishedAt": "2012-07-12T13:07:13+02:00",
+  "modifiedAt": "2012-07-13T15:30:49+02:00",
+  "authors": [
+    "Anders Birger"
+  ],
+  "photographers": [
+    "Anders Birger"
+  ],
+  "prefix": "Musikfoto",
+  "series": null,
+  "manchet": "Koncerter og stemninger fra årets festival.",
+  "introMarkdown": "[Se også linkbox om Roskilde Festival 2004-2012 på Modkraft.dk](../../spip.modkraft.dk/tidsskriftcentret/linkbox/article/roskilde-festival).",
+  "tags": [
+    "Koncert",
+    "Kultur",
+    "Musik",
+    "Roskilde Festival"
+  ],
+  "genre": null,
+  "coverImage": "01",
+  "images": [
+    {
+      "id": "01",
+      "sortOrder": 1,
+      "filename": "01-abs-ros-final-01.jpg",
+      "originalFilename": "ABS ROS FINAL 01.jpg",
+      "width": 940,
+      "height": 628,
+      "credit": "Anders Birger",
+      "caption": "Nicklas optræder for første gang på Roskilde Festival for et hvinende teenage publikum",
+      "captionSource": "title",
+      "sourceResolve": "root-stripped-hash",
+      "tags": [
+        "Koncert",
+        "Kultur",
+        "Musik",
+        "Roskilde Festival"
+      ]
+    },
+    {
+      "id": "02",
+      "sortOrder": 2,
+      "filename": "02-abs-ros-final-02.jpg",
+      "originalFilename": "ABS ROS FINAL 02.jpg",
+      "width": 940,
+      "height": 627,
+      "credit": "Anders Birger",
+      "caption": "Nicklas optræder for første gang på Roskilde Festival for et stordansende teenage publikum",
+      "captionSource": "title",
+      "sourceResolve": "root-stripped-hash",
+      "tags": [
+        "Koncert",
+        "Kultur",
+        "Musik",
+        "Roskilde Festival"
+      ]
+    },
+    {
+      "id": "03",
+      "sortOrder": 3,
+      "filename": "03-abs-ros-final-03.jpg",
+      "originalFilename": "ABS ROS FINAL 03.jpg",
+      "width": 467,
+      "height": 700,
+      "credit": "Anders Birger",
+      "caption": "En af de danske dansere, der ledsagede Tuneyards optræden på Odeon scenen",
+      "captionSource": "title",
+      "sourceResolve": "root-stripped-hash",
+      "tags": [
+        "Koncert",
+        "Kultur",
+        "Musik",
+        "Roskilde Festival"
+      ]
+    },
+    {
+      "id": "04",
+      "sortOrder": 4,
+      "filename": "04-abs-ros-final-04.jpg",
+      "originalFilename": "ABS ROS FINAL 04.jpg",
+      "width": 940,
+      "height": 627,
+      "credit": "Anders Birger",
+      "caption": "Tuneyards optræder på Odeon scenen",
+      "captionSource": "title",
+      "sourceResolve": "root-stripped-hash",
+      "tags": [
+        "Koncert",
+        "Kultur",
+        "Musik",
+        "Roskilde Festival"
+      ]
+    },
+    {
+      "id": "05",
+      "sortOrder": 5,
+      "filename": "05-abs-ros-final-05-0.jpg",
+      "originalFilename": "ABS ROS FINAL 05_0.jpg",
+      "width": 940,
+      "height": 627,
+      "credit": "Anders Birger",
+      "caption": "Janelle Monae crowdsurfer til sin fyldte koncert på Arena scenen.",
+      "captionSource": "title",
+      "sourceResolve": "root-stripped-hash",
+      "tags": [
+        "Koncert",
+        "Kultur",
+        "Musik",
+        "Roskilde Festival"
+      ]
+    },
+    {
+      "id": "06",
+      "sortOrder": 6,
+      "filename": "06-abs-ros-final-06.jpg",
+      "originalFilename": "ABS ROS FINAL 06.jpg",
+      "width": 940,
+      "height": 627,
+      "credit": "Anders Birger",
+      "caption": "Tuneyards' dansere optræder på Odeon scenen",
+      "captionSource": "title",
+      "sourceResolve": "root-stripped-hash",
+      "tags": [
+        "Koncert",
+        "Kultur",
+        "Musik",
+        "Roskilde Festival"
+      ]
+    },
+    {
+      "id": "07",
+      "sortOrder": 7,
+      "filename": "07-abs-ros-final-07.jpg",
+      "originalFilename": "ABS ROS FINAL 07.jpg",
+      "width": 940,
+      "height": 627,
+      "credit": "Anders Birger",
+      "caption": null,
+      "captionSource": "none",
+      "sourceResolve": "root-stripped-hash",
+      "tags": [
+        "Koncert",
+        "Kultur",
+        "Musik",
+        "Roskilde Festival"
+      ]
+    },
+    {
+      "id": "08",
+      "sortOrder": 8,
+      "filename": "08-abs-ros-final-08.jpg",
+      "originalFilename": "ABS ROS FINAL 08.jpg",
+      "width": 940,
+      "height": 627,
+      "credit": "Anders Birger",
+      "caption": "Hank3 spillede sit fusions sæt fra Southern Dixie til Hardcore Heavy",
+      "captionSource": "title",
+      "sourceResolve": "root-stripped-hash",
+      "tags": [
+        "Koncert",
+        "Kultur",
+        "Musik",
+        "Roskilde Festival"
+      ]
+    },
+    {
+      "id": "09",
+      "sortOrder": 9,
+      "filename": "09-abs-ros-final-09.jpg",
+      "originalFilename": "ABS ROS FINAL 09.jpg",
+      "width": 940,
+      "height": 627,
+      "credit": "Anders Birger",
+      "caption": null,
+      "captionSource": "none",
+      "sourceResolve": "root-stripped-hash",
+      "tags": [
+        "Koncert",
+        "Kultur",
+        "Musik",
+        "Roskilde Festival"
+      ]
+    },
+    {
+      "id": "10",
+      "sortOrder": 10,
+      "filename": "10-abs-ros-final-10.jpg",
+      "originalFilename": "ABS ROS FINAL 10.jpg",
+      "width": 940,
+      "height": 627,
+      "credit": "Anders Birger",
+      "caption": "Roskilde Festival opført i Lego. På scenen spiller Volbeat.",
+      "captionSource": "title",
+      "sourceResolve": "root-stripped-hash",
+      "tags": [
+        "Koncert",
+        "Kultur",
+        "Musik",
+        "Roskilde Festival"
+      ]
+    },
+    {
+      "id": "11",
+      "sortOrder": 11,
+      "filename": "11-abs-ros-final-11.jpg",
+      "originalFilename": "ABS ROS FINAL 11.jpg",
+      "width": 940,
+      "height": 627,
+      "credit": "Anders Birger",
+      "caption": "Kaos på åbningsdagen",
+      "captionSource": "title",
+      "sourceResolve": "root-stripped-hash",
+      "tags": [
+        "Koncert",
+        "Kultur",
+        "Musik",
+        "Roskilde Festival"
+      ]
+    },
+    {
+      "id": "12",
+      "sortOrder": 12,
+      "filename": "12-abs-ros-final-12.jpg",
+      "originalFilename": "ABS ROS FINAL 12.jpg",
+      "width": 940,
+      "height": 627,
+      "credit": "Anders Birger",
+      "caption": "Årets festival havde fokus på de ofte lukkede døre for unge asylansøgere i Norden.",
+      "captionSource": "title",
+      "sourceResolve": "root-stripped-hash",
+      "tags": [
+        "Koncert",
+        "Kultur",
+        "Musik",
+        "Roskilde Festival"
+      ]
+    },
+    {
+      "id": "13",
+      "sortOrder": 13,
+      "filename": "13-abs-ros-final-13.jpg",
+      "originalFilename": "ABS ROS FINAL 13.jpg",
+      "width": 467,
+      "height": 700,
+      "credit": "Anders Birger",
+      "caption": "Tuneyards optræder på Odeon scenen",
+      "captionSource": "title",
+      "sourceResolve": "root-stripped-hash",
+      "tags": [
+        "Koncert",
+        "Kultur",
+        "Musik",
+        "Roskilde Festival"
+      ]
+    },
+    {
+      "id": "14",
+      "sortOrder": 14,
+      "filename": "14-abs-ros-final-14.jpg",
+      "originalFilename": "ABS ROS FINAL 14.jpg",
+      "width": 940,
+      "height": 627,
+      "credit": "Anders Birger",
+      "caption": null,
+      "captionSource": "none",
+      "sourceResolve": "root-stripped-hash",
+      "tags": [
+        "Koncert",
+        "Kultur",
+        "Musik",
+        "Roskilde Festival"
+      ]
+    },
+    {
+      "id": "15",
+      "sortOrder": 15,
+      "filename": "15-abs-ros-final-15.jpg",
+      "originalFilename": "ABS ROS FINAL 15.jpg",
+      "width": 940,
+      "height": 627,
+      "credit": "Anders Birger",
+      "caption": "M83 leverede skarp elektronik på Arena",
+      "captionSource": "title",
+      "sourceResolve": "root-stripped-hash",
+      "tags": [
+        "Koncert",
+        "Kultur",
+        "Musik",
+        "Roskilde Festival"
+      ]
+    },
+    {
+      "id": "16",
+      "sortOrder": 16,
+      "filename": "16-abs-ros-final-16.jpg",
+      "originalFilename": "ABS ROS FINAL 16.jpg",
+      "width": 467,
+      "height": 700,
+      "credit": "Anders Birger",
+      "caption": "M83 leverede skarp elektronik på Arena",
+      "captionSource": "title",
+      "sourceResolve": "root-stripped-hash",
+      "tags": [
+        "Koncert",
+        "Kultur",
+        "Musik",
+        "Roskilde Festival"
+      ]
+    },
+    {
+      "id": "17",
+      "sortOrder": 17,
+      "filename": "17-abs-ros-final-17.jpg",
+      "originalFilename": "ABS ROS FINAL 17.jpg",
+      "width": 940,
+      "height": 627,
+      "credit": "Anders Birger",
+      "caption": "The Shins",
+      "captionSource": "title",
+      "sourceResolve": "root-stripped-hash",
+      "tags": [
+        "Koncert",
+        "Kultur",
+        "Musik",
+        "Roskilde Festival"
+      ]
+    },
+    {
+      "id": "18",
+      "sortOrder": 18,
+      "filename": "18-abs-ros-final-18.jpg",
+      "originalFilename": "ABS ROS FINAL 18.jpg",
+      "width": 940,
+      "height": 627,
+      "credit": "Anders Birger",
+      "caption": null,
+      "captionSource": "none",
+      "sourceResolve": "root-stripped-hash",
+      "tags": [
+        "Koncert",
+        "Kultur",
+        "Musik",
+        "Roskilde Festival"
+      ]
+    },
+    {
+      "id": "19",
+      "sortOrder": 19,
+      "filename": "19-abs-ros-final-19.jpg",
+      "originalFilename": "ABS ROS FINAL 19.jpg",
+      "width": 940,
+      "height": 627,
+      "credit": "Anders Birger",
+      "caption": "R. Stevie Moore, ”the godfather of home recording”, spiller til stor begejstring på miniscenen Gloria",
+      "captionSource": "title",
+      "sourceResolve": "root-stripped-hash",
+      "tags": [
+        "Koncert",
+        "Kultur",
+        "Musik",
+        "Roskilde Festival"
+      ]
+    },
+    {
+      "id": "20",
+      "sortOrder": 20,
+      "filename": "20-abs-ros-final-20.jpg",
+      "originalFilename": "ABS ROS FINAL 20.jpg",
+      "width": 940,
+      "height": 627,
+      "credit": "Anders Birger",
+      "caption": "Friendly Fires",
+      "captionSource": "title",
+      "sourceResolve": "root-stripped-hash",
+      "tags": [
+        "Koncert",
+        "Kultur",
+        "Musik",
+        "Roskilde Festival"
+      ]
+    },
+    {
+      "id": "21",
+      "sortOrder": 21,
+      "filename": "21-abs-ros-final-21.jpg",
+      "originalFilename": "ABS ROS FINAL 21.jpg",
+      "width": 940,
+      "height": 627,
+      "credit": "Anders Birger",
+      "caption": "Dr. John",
+      "captionSource": "title",
+      "sourceResolve": "root-stripped-hash",
+      "tags": [
+        "Koncert",
+        "Kultur",
+        "Musik",
+        "Roskilde Festival"
+      ]
+    },
+    {
+      "id": "22",
+      "sortOrder": 22,
+      "filename": "22-abs-ros-final-22.jpg",
+      "originalFilename": "ABS ROS FINAL 22.jpg",
+      "width": 940,
+      "height": 627,
+      "credit": "Anders Birger",
+      "caption": "Friendly Fires frontfigur Ed Macfarlane dansede sig igennem en hæsblæsende koncert på Arena scenen.",
+      "captionSource": "title",
+      "sourceResolve": "root-stripped-hash",
+      "tags": [
+        "Koncert",
+        "Kultur",
+        "Musik",
+        "Roskilde Festival"
+      ]
+    },
+    {
+      "id": "23",
+      "sortOrder": 23,
+      "filename": "23-abs-ros-final-23.jpg",
+      "originalFilename": "ABS ROS FINAL 23.jpg",
+      "width": 940,
+      "height": 627,
+      "credit": "Anders Birger",
+      "caption": "Friendly Fires frontfigur Ed Macfarlane dansede sig igennem en hæsblæsende koncert på Arena scenen.",
+      "captionSource": "title",
+      "sourceResolve": "root-stripped-hash",
+      "tags": [
+        "Koncert",
+        "Kultur",
+        "Musik",
+        "Roskilde Festival"
+      ]
+    },
+    {
+      "id": "24",
+      "sortOrder": 24,
+      "filename": "24-abs-ros-final-24.jpg",
+      "originalFilename": "ABS ROS FINAL 24.jpg",
+      "width": 940,
+      "height": 627,
+      "credit": "Anders Birger",
+      "caption": "Friendly Fires",
+      "captionSource": "title",
+      "sourceResolve": "root-stripped-hash",
+      "tags": [
+        "Koncert",
+        "Kultur",
+        "Musik",
+        "Roskilde Festival"
+      ]
+    },
+    {
+      "id": "25",
+      "sortOrder": 25,
+      "filename": "25-abs-ros-final-25.jpg",
+      "originalFilename": "ABS ROS FINAL 25.jpg",
+      "width": 940,
+      "height": 627,
+      "credit": "Anders Birger",
+      "caption": null,
+      "captionSource": "none",
+      "sourceResolve": "root-stripped-hash",
+      "tags": [
+        "Koncert",
+        "Kultur",
+        "Musik",
+        "Roskilde Festival"
+      ]
+    },
+    {
+      "id": "26",
+      "sortOrder": 26,
+      "filename": "26-abs-ros-final-26.jpg",
+      "originalFilename": "ABS ROS FINAL 26.jpg",
+      "width": 940,
+      "height": 627,
+      "credit": "Anders Birger",
+      "caption": "Orquestra Tipica Fernandez Fierro",
+      "captionSource": "title",
+      "sourceResolve": "root-stripped-hash",
+      "tags": [
+        "Koncert",
+        "Kultur",
+        "Musik",
+        "Roskilde Festival"
+      ]
+    },
+    {
+      "id": "27",
+      "sortOrder": 27,
+      "filename": "27-abs-ros-final-27.jpg",
+      "originalFilename": "ABS ROS FINAL 27.jpg",
+      "width": 940,
+      "height": 627,
+      "credit": "Anders Birger",
+      "caption": null,
+      "captionSource": "none",
+      "sourceResolve": "root-stripped-hash",
+      "tags": [
+        "Koncert",
+        "Kultur",
+        "Musik",
+        "Roskilde Festival"
+      ]
+    },
+    {
+      "id": "28",
+      "sortOrder": 28,
+      "filename": "28-abs-ros-final-28.jpg",
+      "originalFilename": "ABS ROS FINAL 28.jpg",
+      "width": 940,
+      "height": 627,
+      "credit": "Anders Birger",
+      "caption": "Hank3",
+      "captionSource": "title",
+      "sourceResolve": "root-stripped-hash",
+      "tags": [
+        "Koncert",
+        "Kultur",
+        "Musik",
+        "Roskilde Festival"
+      ]
+    },
+    {
+      "id": "29",
+      "sortOrder": 29,
+      "filename": "29-abs-ros-final-29.jpg",
+      "originalFilename": "ABS ROS FINAL 29.jpg",
+      "width": 600,
+      "height": 900,
+      "credit": "Anders Birger",
+      "caption": "Orquestra Tipica Fernandez Fierro",
+      "captionSource": "title",
+      "sourceResolve": "root-stripped-hash",
+      "tags": [
+        "Koncert",
+        "Kultur",
+        "Musik",
+        "Roskilde Festival"
+      ]
+    },
+    {
+      "id": "30",
+      "sortOrder": 30,
+      "filename": "30-abs-ros-final-30.jpg",
+      "originalFilename": "ABS ROS FINAL 30.jpg",
+      "width": 940,
+      "height": 627,
+      "credit": "Anders Birger",
+      "caption": null,
+      "captionSource": "none",
+      "sourceResolve": "root-stripped-hash",
+      "tags": [
+        "Koncert",
+        "Kultur",
+        "Musik",
+        "Roskilde Festival"
+      ]
+    },
+    {
+      "id": "31",
+      "sortOrder": 31,
+      "filename": "31-abs-ros-final-31.jpg",
+      "originalFilename": "ABS ROS FINAL 31.jpg",
+      "width": 940,
+      "height": 627,
+      "credit": "Anders Birger",
+      "caption": "Friendly Fires",
+      "captionSource": "title",
+      "sourceResolve": "root-stripped-hash",
+      "tags": [
+        "Koncert",
+        "Kultur",
+        "Musik",
+        "Roskilde Festival"
+      ]
+    },
+    {
+      "id": "32",
+      "sortOrder": 32,
+      "filename": "32-abs-ros-final-32.jpg",
+      "originalFilename": "ABS ROS FINAL 32.jpg",
+      "width": 940,
+      "height": 627,
+      "credit": "Anders Birger",
+      "caption": "The Shins",
+      "captionSource": "title",
+      "sourceResolve": "root-stripped-hash",
+      "tags": [
+        "Koncert",
+        "Kultur",
+        "Musik",
+        "Roskilde Festival"
+      ]
+    },
+    {
+      "id": "33",
+      "sortOrder": 33,
+      "filename": "33-abs-ros-final-33.jpg",
+      "originalFilename": "ABS ROS FINAL 33.jpg",
+      "width": 940,
+      "height": 627,
+      "credit": "Anders Birger",
+      "caption": "The Cure satte sit præg på Orange scene med deres tre timers lange koncert torsdag aften.",
+      "captionSource": "title",
+      "sourceResolve": "root-stripped-hash",
+      "tags": [
+        "Koncert",
+        "Kultur",
+        "Musik",
+        "Roskilde Festival"
+      ]
+    }
+  ],
+  "sourceUrl": "artikel/roskilde-festival-2012.html",
+  "sourceType": "artikel-foto"
+}

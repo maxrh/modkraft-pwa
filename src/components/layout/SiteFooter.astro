@@ -28,6 +28,13 @@ const collectionCount = stats.collectionCount.toLocaleString('da-DK');
           </a>
         ))
       }
+      {
+        import.meta.env.DEV && (
+          <a href="/match" class="text-foreground underline-offset-2 hover:underline">
+            Match (local)
+          </a>
+        )
+      }
     </nav>
   </Container>
 </footer>

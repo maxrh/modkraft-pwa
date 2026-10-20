@@ -46,31 +46,52 @@ export function resolveImagePath(src, htmlFilePath, siteRoot) {
     const fileName = stylesMatch[2];
     const rootOriginal = path.join(siteRoot, 'sites', 'default', 'files', fileName);
 
-    // Prefer root original when available
+    // Prefer root original when available (exact style derivative name)
     if (fs.existsSync(rootOriginal)) {
       return { resolved: rootOriginal, reason: 'root-from-style' };
     }
 
-    // Accept styles/large as fallback; skip span-8 / top_blogs listing thumbs unless that's all we have
-    if (fs.existsSync(relativeCandidate)) {
-      if (styleName === 'large' || styleName === 'span-8') {
-        return {
-          resolved: relativeCandidate,
-          reason: styleName === 'large' ? 'style-large-fallback' : 'style-span8-fallback',
-        };
-      }
-      return { resolved: relativeCandidate, reason: `style-${styleName}-fallback` };
-    }
-
-    // Style filenames often have a hash suffix inserted before extension
-    // e.g. ANDERS BIRGER ... 001fac2.jpg for original ... 001.jpg
-    // Try stripping trailing hash before extension
-    const stripped = fileName.replace(/([a-f0-9]{4,})(\.[^.]+)$/i, '$2');
-    if (stripped !== fileName) {
+    // Style filenames often append a short hex token before the extension
+    // e.g. _MG_552651d6.jpg → _MG_5526.jpg. Try fixed lengths (greedy {4,}
+    // would eat digits that belong to the camera counter).
+    for (let len = 4; len <= 8; len++) {
+      const re = new RegExp(`([a-f0-9]{${len}})(\\.[^.]+)$`, 'i');
+      const stripped = fileName.replace(re, '$2');
+      if (stripped === fileName) continue;
       const alt = path.join(siteRoot, 'sites', 'default', 'files', stripped);
       if (fs.existsSync(alt)) {
         return { resolved: alt, reason: 'root-stripped-hash' };
       }
+    }
+
+    // Prefer larger style presets over blogbar/thumbnail derivatives when present
+    const preferredStyles = ['large', 'span-8', 'blogbar_span8', styleName];
+    for (const pref of preferredStyles) {
+      const candidate = path.join(
+        siteRoot,
+        'sites',
+        'default',
+        'files',
+        'styles',
+        pref,
+        'public',
+        fileName,
+      );
+      if (fs.existsSync(candidate)) {
+        return {
+          resolved: candidate,
+          reason:
+            pref === 'large'
+              ? 'style-large-fallback'
+              : pref === 'span-8'
+                ? 'style-span8-fallback'
+                : `style-${pref}-fallback`,
+        };
+      }
+    }
+
+    if (fs.existsSync(relativeCandidate)) {
+      return { resolved: relativeCandidate, reason: `style-${styleName}-fallback` };
     }
 
     return { resolved: null, reason: 'style-missing', attempted: relativeCandidate };

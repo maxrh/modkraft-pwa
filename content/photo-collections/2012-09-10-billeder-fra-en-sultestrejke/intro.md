@@ -1,0 +1,1 @@
+Modkrafts fotograf Mette Kramer Kristensen udstiller Billeder fra en Sultestrejke i Stefanskirken, Nørrebrogade 191.Der er fernisering onsdag den 12. september klokken 20, hvor der vil være iransk mad og musik.[Se opslaget i Modkrafts kalender.](http://modkraft.dk/kalenderopslag/fernisering-billeder-fra-en-sultestrejke)

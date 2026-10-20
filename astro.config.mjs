@@ -6,13 +6,15 @@ import cloudflare from '@astrojs/cloudflare';
 import react from '@astrojs/react';
 import tailwindcss from '@tailwindcss/vite';
 import sanity from '@sanity/astro';
+// Local match workbench (dev): starts API on :4322 — see scripts/match/
+import { matchWorkbenchIntegration } from './scripts/match/astro-integration.mjs';
 
 const rootDir = path.dirname(fileURLToPath(import.meta.url));
 const sanityProjectId = process.env.PUBLIC_SANITY_PROJECT_ID?.trim();
 const sanityEnabled = Boolean(sanityProjectId);
 
 /** @type {import('astro').AstroIntegration[]} */
-const integrations = [react()];
+const integrations = [react(), matchWorkbenchIntegration(rootDir)];
 
 if (sanityEnabled) {
   integrations.push(

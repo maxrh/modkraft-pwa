@@ -78,8 +78,8 @@
       "sortOrder": 3,
       "filename": "03-img-4047-ap.jpg",
       "originalFilename": "IMG_4047_ap.jpg",
-      "width": 940,
-      "height": 627,
+      "width": 3568,
+      "height": 2379,
       "credit": "Anders Pedersen",
       "caption": null,
       "captionSource": "title",
@@ -92,7 +92,9 @@
         "Flygtninge",
         "Refugees Welcome",
         "Syrien"
-      ]
+      ],
+      "hiresSource": "C:\\Users\\max\\Dropbox\\Monsun\\Monsun Foto Upload\\fotobase\\demo\\20150912_Refugees_Welcome_demo\\IMG_4047_ap.jpg",
+      "hiresAt": "2026-10-20T02:28:39.647Z"
     },
     {
       "id": "04",
@@ -187,8 +189,8 @@
       "sortOrder": 8,
       "filename": "08-img-4031-ap.jpg",
       "originalFilename": "IMG_4031_ap.jpg",
-      "width": 940,
-      "height": 627,
+      "width": 3588,
+      "height": 2392,
       "credit": "Anders Pedersen",
       "caption": null,
       "captionSource": "title",
@@ -201,15 +203,17 @@
         "Flygtninge",
         "Refugees Welcome",
         "Syrien"
-      ]
+      ],
+      "hiresSource": "C:\\Users\\max\\Dropbox\\Monsun\\Monsun Foto Upload\\fotobase\\demo\\20150912_Refugees_Welcome_demo\\IMG_4031_ap.jpg",
+      "hiresAt": "2026-10-20T02:28:40.257Z"
     },
     {
       "id": "09",
       "sortOrder": 9,
       "filename": "09-img-4022-ap.jpg",
       "originalFilename": "IMG_4022_ap.jpg",
-      "width": 940,
-      "height": 627,
+      "width": 3028,
+      "height": 2019,
       "credit": "Anders Pedersen",
       "caption": null,
       "captionSource": "title",
@@ -222,7 +226,9 @@
         "Flygtninge",
         "Refugees Welcome",
         "Syrien"
-      ]
+      ],
+      "hiresSource": "C:\\Users\\max\\Dropbox\\Monsun\\Monsun Foto Upload\\fotobase\\demo\\20150912_Pato\\IMG_4022_ap.jpg",
+      "hiresAt": "2026-10-20T02:28:40.634Z"
     },
     {
       "id": "10",
@@ -273,8 +279,8 @@
       "sortOrder": 12,
       "filename": "12-img-3941-ap.jpg",
       "originalFilename": "IMG_3941_ap.jpg",
-      "width": 940,
-      "height": 626,
+      "width": 1969,
+      "height": 1312,
       "credit": "Anders Pedersen",
       "caption": null,
       "captionSource": "none",
@@ -287,7 +293,9 @@
         "Flygtninge",
         "Refugees Welcome",
         "Syrien"
-      ]
+      ],
+      "hiresSource": "C:\\Users\\max\\Dropbox\\Monsun\\Monsun Foto Upload\\fotobase\\demo\\20150912_Refugees_Welcome_demo\\IMG_3941_ap.jpg",
+      "hiresAt": "2026-10-20T02:28:43.437Z"
     },
     {
       "id": "13",
@@ -381,8 +389,8 @@
       "sortOrder": 17,
       "filename": "17-mg-9333-0.jpg",
       "originalFilename": "_MG_9333_0.jpg",
-      "width": 940,
-      "height": 627,
+      "width": 5472,
+      "height": 3648,
       "credit": "Mark Knudsen",
       "caption": null,
       "captionSource": "title",
@@ -395,7 +403,9 @@
         "Flygtninge",
         "Refugees Welcome",
         "Syrien"
-      ]
+      ],
+      "hiresSource": "C:\\Users\\max\\Dropbox\\Monsun\\Monsun Foto Upload\\fotobase\\demo\\20151113_flygtninge_demo_chr_borg_refugees_welcome\\_MG_9333_mk.jpg",
+      "hiresAt": "2026-10-20T02:28:43.274Z"
     },
     {
       "id": "18",

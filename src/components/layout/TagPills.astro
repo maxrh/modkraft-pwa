@@ -1,4 +1,6 @@
 ---
+import { badgeVariants } from '@/components/ui/badge';
+import { cn } from '@/lib/utils';
 import { tagHref } from '@/lib/photos';
 
 interface Props {
@@ -16,7 +18,10 @@ const { tags, class: className } = Astro.props;
         <li>
           <a
             href={tagHref(tag)}
-            class="inline-block rounded-full border border-border bg-background px-3 py-1 text-xs font-medium text-muted-foreground no-underline hover:border-foreground/40 hover:text-foreground"
+            class={cn(
+              badgeVariants({ variant: 'muted' }),
+              'no-underline hover:bg-muted/80 hover:text-foreground',
+            )}
           >
             {tag}
           </a>

@@ -1,0 +1,27 @@
+---
+import BaseLayout from '@/layouts/BaseLayout.astro';
+import Container from '@/components/layout/Container.astro';
+import MatchWorkbench from '@/components/match/MatchWorkbench';
+import fs from 'node:fs';
+import path from 'node:path';
+
+export function getStaticPaths() {
+  const collectionsDir = path.join(process.cwd(), 'content', 'photo-collections');
+  if (!fs.existsSync(collectionsDir)) return [];
+  return fs
+    .readdirSync(collectionsDir, { withFileTypes: true })
+    .filter((d) => d.isDirectory() && !d.name.startsWith('_'))
+    .map((d) => ({ params: { collectionId: d.name } }));
+}
+
+const { collectionId } = Astro.params;
+---
+
+<BaseLayout
+  title={`Match · ${collectionId}`}
+  description="Local-only fotobase matching workbench"
+>
+  <Container size="stage" class="pt-6 pb-16">
+    <MatchWorkbench client:load collectionId={collectionId!} />
+  </Container>
+</BaseLayout>

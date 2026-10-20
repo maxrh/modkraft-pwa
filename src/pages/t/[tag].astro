@@ -2,35 +2,49 @@
 import BaseLayout from '@/layouts/BaseLayout.astro';
 import Container from '@/components/layout/Container.astro';
 import PhotoMosaic from '@/components/PhotoMosaic.astro';
-import { getAllPhotos, slugifyTag, type Photo } from '@/lib/photos';
+import { getAllPhotos, preferTagLabel, slugifyTag, type Photo } from '@/lib/photos';
 
 export async function getStaticPaths() {
   const photos = await getAllPhotos();
-  const byTag = new Map<string, Photo[]>();
+  /** slug → { label, counts by raw tag, photos } */
+  const bySlug = new Map<
+    string,
+    { label: string; labelCounts: Map<string, number>; photos: Photo[]; seen: Set<string> }
+  >();
 
   for (const photo of photos) {
     for (const tag of photo.tags) {
-      const list = byTag.get(tag) ?? [];
-      list.push(photo);
-      byTag.set(tag, list);
+      const slug = slugifyTag(tag);
+      if (!slug) continue;
+      let bucket = bySlug.get(slug);
+      if (!bucket) {
+        bucket = {
+          label: tag,
+          labelCounts: new Map(),
+          photos: [],
+          seen: new Set(),
+        };
+        bySlug.set(slug, bucket);
+      }
+      bucket.labelCounts.set(tag, (bucket.labelCounts.get(tag) ?? 0) + 1);
+      bucket.label = preferTagLabel(
+        bucket.label,
+        tag,
+        bucket.labelCounts.get(bucket.label) ?? 0,
+        bucket.labelCounts.get(tag) ?? 0,
+      );
+      // One photo once per tag page even if both case variants are present
+      if (!bucket.seen.has(photo.id)) {
+        bucket.seen.add(photo.id);
+        bucket.photos.push(photo);
+      }
     }
   }
 
-  const usedSlugs = new Map<string, string>();
-
-  return [...byTag.entries()].map(([tag, tagPhotos]) => {
-    const slug = slugifyTag(tag);
-    const existing = usedSlugs.get(slug);
-    if (existing && existing !== tag) {
-      throw new Error(`Tag slug collision: "${existing}" and "${tag}" both map to "${slug}"`);
-    }
-    usedSlugs.set(slug, tag);
-
-    return {
-      params: { tag: slug },
-      props: { tag, photos: tagPhotos },
-    };
-  });
+  return [...bySlug.entries()].map(([slug, bucket]) => ({
+    params: { tag: slug },
+    props: { tag: bucket.label, photos: bucket.photos },
+  }));
 }
 
 interface Props {
