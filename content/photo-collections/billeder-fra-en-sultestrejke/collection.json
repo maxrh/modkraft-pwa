@@ -1,0 +1,126 @@
+{
+  "id": "billeder-fra-en-sultestrejke",
+  "sourceNid": 19490,
+  "slug": "billeder-fra-en-sultestrejke",
+  "title": "Billeder fra en sultestrejke",
+  "publishedAt": "2012-09-10T15:41:41+02:00",
+  "modifiedAt": "2012-09-10T15:41:41+02:00",
+  "authors": [
+    "Mark Knudsen"
+  ],
+  "photographers": [
+    "Mette Kramer Kristensen"
+  ],
+  "prefix": "Fotoudstilling",
+  "series": null,
+  "manchet": null,
+  "introMarkdown": "Modkrafts fotograf Mette Kramer Kristensen udstiller Billeder fra en Sultestrejke i Stefanskirken, Nørrebrogade 191.Der er fernisering onsdag den 12. september klokken 20, hvor der vil være iransk mad og musik.[Se opslaget i Modkrafts kalender.](http://modkraft.dk/kalenderopslag/fernisering-billeder-fra-en-sultestrejke)",
+  "tags": [
+    "Asyl",
+    "Fotoudstilling",
+    "Nørrebro",
+    "Stefanskirken",
+    "Sultestrejke"
+  ],
+  "genre": null,
+  "coverImage": "01",
+  "images": [
+    {
+      "id": "01",
+      "sortOrder": 1,
+      "filename": "01-sultestrejke-5.jpg",
+      "originalFilename": "Sultestrejke-5.jpg",
+      "width": 467,
+      "height": 700,
+      "credit": "Mette Kramer Kristensen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "root-stripped-hash",
+      "tags": [
+        "Asyl",
+        "Fotoudstilling",
+        "Nørrebro",
+        "Stefanskirken",
+        "Sultestrejke"
+      ]
+    },
+    {
+      "id": "02",
+      "sortOrder": 2,
+      "filename": "02-sultestrejke-8.jpg",
+      "originalFilename": "Sultestrejke-8.jpg",
+      "width": 940,
+      "height": 627,
+      "credit": "Mette Kramer Kristensen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "root-stripped-hash",
+      "tags": [
+        "Asyl",
+        "Fotoudstilling",
+        "Nørrebro",
+        "Stefanskirken",
+        "Sultestrejke"
+      ]
+    },
+    {
+      "id": "03",
+      "sortOrder": 3,
+      "filename": "03-sultestrejke-12.jpg",
+      "originalFilename": "Sultestrejke-12.jpg",
+      "width": 940,
+      "height": 627,
+      "credit": "Mette Kramer Kristensen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "root-stripped-hash",
+      "tags": [
+        "Asyl",
+        "Fotoudstilling",
+        "Nørrebro",
+        "Stefanskirken",
+        "Sultestrejke"
+      ]
+    },
+    {
+      "id": "04",
+      "sortOrder": 4,
+      "filename": "04-sultestrejke-22-2-0.jpg",
+      "originalFilename": "Sultestrejke-22-2_0.jpg",
+      "width": 940,
+      "height": 627,
+      "credit": "Mette Kramer Kristensen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "root-stripped-hash",
+      "tags": [
+        "Asyl",
+        "Fotoudstilling",
+        "Nørrebro",
+        "Stefanskirken",
+        "Sultestrejke"
+      ]
+    },
+    {
+      "id": "05",
+      "sortOrder": 5,
+      "filename": "05-dariush-2.jpg",
+      "originalFilename": "Dariush-2.jpg",
+      "width": 940,
+      "height": 627,
+      "credit": "Mette Kramer Kristensen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "root-stripped-hash",
+      "tags": [
+        "Asyl",
+        "Fotoudstilling",
+        "Nørrebro",
+        "Stefanskirken",
+        "Sultestrejke"
+      ]
+    }
+  ],
+  "sourceUrl": "artikel/billeder-fra-en-sultestrejke.html",
+  "sourceType": "artikel-foto"
+}

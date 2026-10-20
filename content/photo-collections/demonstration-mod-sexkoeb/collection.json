@@ -1,0 +1,318 @@
+{
+  "id": "demonstration-mod-sexkoeb",
+  "sourceNid": 27860,
+  "slug": "demonstration-mod-sexkoeb",
+  "title": "Demonstration mod sexkøb",
+  "publishedAt": "2016-03-09T08:40:11+01:00",
+  "modifiedAt": "2016-03-09T10:11:57+01:00",
+  "authors": [
+    "Mette Kramer Kristensen"
+  ],
+  "photographers": [
+    "Mette kramer Kristensen"
+  ],
+  "prefix": null,
+  "series": null,
+  "manchet": "Der var kun få demonstrationer på Kvindernes internationale kampdag tirsdag den 8. marts 2016. En af dem var en demonstration på Rådhuspladsen i København imod sexkøb.",
+  "introMarkdown": "",
+  "tags": [
+    "8. marts",
+    "Demonstration",
+    "Feminisme",
+    "Kvindekamp"
+  ],
+  "genre": "Nyhed",
+  "coverImage": "01",
+  "images": [
+    {
+      "id": "01",
+      "sortOrder": 1,
+      "filename": "01-8-marts-9506.jpg",
+      "originalFilename": "8_marts-9506.JPG",
+      "width": 940,
+      "height": 627,
+      "credit": "Mette kramer Kristensen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "8. marts",
+        "Demonstration",
+        "Feminisme",
+        "Kvindekamp"
+      ]
+    },
+    {
+      "id": "02",
+      "sortOrder": 2,
+      "filename": "02-8-marts-9509.jpg",
+      "originalFilename": "8_marts-9509.JPG",
+      "width": 940,
+      "height": 631,
+      "credit": "Mette kramer Kristensen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "8. marts",
+        "Demonstration",
+        "Feminisme",
+        "Kvindekamp"
+      ]
+    },
+    {
+      "id": "03",
+      "sortOrder": 3,
+      "filename": "03-8-marts-9510.jpg",
+      "originalFilename": "8_marts-9510.JPG",
+      "width": 940,
+      "height": 627,
+      "credit": "Mette kramer Kristensen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "8. marts",
+        "Demonstration",
+        "Feminisme",
+        "Kvindekamp"
+      ]
+    },
+    {
+      "id": "04",
+      "sortOrder": 4,
+      "filename": "04-8-marts-9516.jpg",
+      "originalFilename": "8_marts-9516.JPG",
+      "width": 940,
+      "height": 627,
+      "credit": "Mette kramer Kristensen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "8. marts",
+        "Demonstration",
+        "Feminisme",
+        "Kvindekamp"
+      ]
+    },
+    {
+      "id": "05",
+      "sortOrder": 5,
+      "filename": "05-8-marts-9517.jpg",
+      "originalFilename": "8_marts-9517.JPG",
+      "width": 940,
+      "height": 627,
+      "credit": "Mette kramer Kristensen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "8. marts",
+        "Demonstration",
+        "Feminisme",
+        "Kvindekamp"
+      ]
+    },
+    {
+      "id": "06",
+      "sortOrder": 6,
+      "filename": "06-8-marts-9520-0.jpg",
+      "originalFilename": "8_marts-9520_0.JPG",
+      "width": 940,
+      "height": 627,
+      "credit": "Mette kramer Kristensen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "8. marts",
+        "Demonstration",
+        "Feminisme",
+        "Kvindekamp"
+      ]
+    },
+    {
+      "id": "07",
+      "sortOrder": 7,
+      "filename": "07-8-marts-9523.jpg",
+      "originalFilename": "8_marts-9523.JPG",
+      "width": 627,
+      "height": 940,
+      "credit": "Mette kramer Kristensen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "8. marts",
+        "Demonstration",
+        "Feminisme",
+        "Kvindekamp"
+      ]
+    },
+    {
+      "id": "08",
+      "sortOrder": 8,
+      "filename": "08-8-marts-9526.jpg",
+      "originalFilename": "8_marts-9526.JPG",
+      "width": 940,
+      "height": 627,
+      "credit": "Mette kramer Kristensen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "8. marts",
+        "Demonstration",
+        "Feminisme",
+        "Kvindekamp"
+      ]
+    },
+    {
+      "id": "09",
+      "sortOrder": 9,
+      "filename": "09-8-marts-9528.jpg",
+      "originalFilename": "8_marts-9528.JPG",
+      "width": 940,
+      "height": 627,
+      "credit": "Mette kramer Kristensen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "8. marts",
+        "Demonstration",
+        "Feminisme",
+        "Kvindekamp"
+      ]
+    },
+    {
+      "id": "10",
+      "sortOrder": 10,
+      "filename": "10-8-marts-9533.jpg",
+      "originalFilename": "8_marts-9533.JPG",
+      "width": 940,
+      "height": 627,
+      "credit": "Mette kramer Kristensen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "8. marts",
+        "Demonstration",
+        "Feminisme",
+        "Kvindekamp"
+      ]
+    },
+    {
+      "id": "11",
+      "sortOrder": 11,
+      "filename": "11-8-marts-9539.jpg",
+      "originalFilename": "8_marts-9539.JPG",
+      "width": 940,
+      "height": 627,
+      "credit": "Mette kramer Kristensen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "8. marts",
+        "Demonstration",
+        "Feminisme",
+        "Kvindekamp"
+      ]
+    },
+    {
+      "id": "12",
+      "sortOrder": 12,
+      "filename": "12-8-marts-9557.jpg",
+      "originalFilename": "8_marts-9557.JPG",
+      "width": 940,
+      "height": 627,
+      "credit": "Mette kramer Kristensen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "8. marts",
+        "Demonstration",
+        "Feminisme",
+        "Kvindekamp"
+      ]
+    },
+    {
+      "id": "13",
+      "sortOrder": 13,
+      "filename": "13-8-marts-9559.jpg",
+      "originalFilename": "8_marts-9559.JPG",
+      "width": 940,
+      "height": 627,
+      "credit": "Mette kramer Kristensen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "8. marts",
+        "Demonstration",
+        "Feminisme",
+        "Kvindekamp"
+      ]
+    },
+    {
+      "id": "14",
+      "sortOrder": 14,
+      "filename": "14-8-marts-9565.jpg",
+      "originalFilename": "8_marts-9565.JPG",
+      "width": 940,
+      "height": 627,
+      "credit": "Mette kramer Kristensen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "8. marts",
+        "Demonstration",
+        "Feminisme",
+        "Kvindekamp"
+      ]
+    },
+    {
+      "id": "15",
+      "sortOrder": 15,
+      "filename": "15-8-marts-9596.jpg",
+      "originalFilename": "8_marts-9596.JPG",
+      "width": 940,
+      "height": 627,
+      "credit": "Mette kramer Kristensen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "8. marts",
+        "Demonstration",
+        "Feminisme",
+        "Kvindekamp"
+      ]
+    },
+    {
+      "id": "16",
+      "sortOrder": 16,
+      "filename": "16-8-marts-9604.jpg",
+      "originalFilename": "8_marts-9604.JPG",
+      "width": 940,
+      "height": 627,
+      "credit": "Mette kramer Kristensen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "8. marts",
+        "Demonstration",
+        "Feminisme",
+        "Kvindekamp"
+      ]
+    }
+  ],
+  "sourceUrl": "fotoserie/demonstration-mod-sexk-b.html",
+  "sourceType": "fotoserie"
+}

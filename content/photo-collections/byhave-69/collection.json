@@ -1,0 +1,411 @@
+{
+  "id": "byhave-69",
+  "sourceNid": 24282,
+  "slug": "byhave-69",
+  "title": "Byhave 69",
+  "publishedAt": "2014-05-05T15:39:38+02:00",
+  "modifiedAt": "2014-05-05T17:11:34+02:00",
+  "authors": [
+    "Mette Kramer Kristensen"
+  ],
+  "photographers": [
+    "Mette Kramer Kristensen"
+  ],
+  "prefix": null,
+  "series": null,
+  "manchet": "Omkring 50 unge mennesker skabte lørdag og søndag den 3. maj og 4. maj en blomstrende byhave på Jagtvej 69 på Nørrebro i København, som har ligget tom og ubrugt hen siden Ungdomshuset blev revet ned i 2007. Ejendomsselskabet Procasa, som formelt set ejer grunden, bad straks politiet fjerne de unge, hvilket har betydet, at flere haveaktivister lørdag blev registreret og bortvist fra stedet, mens flere fik bøder søndag.[Læs mere her: »Unge skaber byhave på Jagtvej 69« hos Modkraft.](http://modkraft.dk/artikel/unge-skaber-byhave-p-jagtvej-69)",
+  "introMarkdown": "",
+  "tags": [
+    "Aktivisme",
+    "Byhave 69",
+    "Fristeder",
+    "Jagtvej 69",
+    "Nørrebro"
+  ],
+  "genre": "Nyhed",
+  "coverImage": "01",
+  "images": [
+    {
+      "id": "01",
+      "sortOrder": 1,
+      "filename": "01-byhave-69-loerdag-8260.jpg",
+      "originalFilename": "byhave_69_loerdag-8260.JPG",
+      "width": 940,
+      "height": 627,
+      "credit": "Mette Kramer Kristensen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "Aktivisme",
+        "Byhave 69",
+        "Fristeder",
+        "Jagtvej 69",
+        "Nørrebro"
+      ]
+    },
+    {
+      "id": "02",
+      "sortOrder": 2,
+      "filename": "02-byhave-69-loerdag-8269.jpg",
+      "originalFilename": "byhave_69_loerdag-8269.JPG",
+      "width": 940,
+      "height": 627,
+      "credit": "Mette Kramer Kristensen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "Aktivisme",
+        "Byhave 69",
+        "Fristeder",
+        "Jagtvej 69",
+        "Nørrebro"
+      ]
+    },
+    {
+      "id": "03",
+      "sortOrder": 3,
+      "filename": "03-byhave-69-loerdag-8280.jpg",
+      "originalFilename": "byhave_69_loerdag-8280.JPG",
+      "width": 940,
+      "height": 627,
+      "credit": "Mette Kramer Kristensen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "Aktivisme",
+        "Byhave 69",
+        "Fristeder",
+        "Jagtvej 69",
+        "Nørrebro"
+      ]
+    },
+    {
+      "id": "04",
+      "sortOrder": 4,
+      "filename": "04-byhave-69-loerdag-8283.jpg",
+      "originalFilename": "byhave_69_loerdag-8283.JPG",
+      "width": 940,
+      "height": 627,
+      "credit": "Mette Kramer Kristensen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "Aktivisme",
+        "Byhave 69",
+        "Fristeder",
+        "Jagtvej 69",
+        "Nørrebro"
+      ]
+    },
+    {
+      "id": "05",
+      "sortOrder": 5,
+      "filename": "05-byhave-69-loerdag-8287-0.jpg",
+      "originalFilename": "byhave_69_loerdag-8287_0.JPG",
+      "width": 940,
+      "height": 627,
+      "credit": "Mette Kramer Kristensen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "Aktivisme",
+        "Byhave 69",
+        "Fristeder",
+        "Jagtvej 69",
+        "Nørrebro"
+      ]
+    },
+    {
+      "id": "06",
+      "sortOrder": 6,
+      "filename": "06-byhave-69-loerdag-8289.jpg",
+      "originalFilename": "byhave_69_loerdag-8289.JPG",
+      "width": 940,
+      "height": 627,
+      "credit": "Mette Kramer Kristensen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "Aktivisme",
+        "Byhave 69",
+        "Fristeder",
+        "Jagtvej 69",
+        "Nørrebro"
+      ]
+    },
+    {
+      "id": "07",
+      "sortOrder": 7,
+      "filename": "07-byhave-69-loerdag-8295.jpg",
+      "originalFilename": "byhave_69_loerdag-8295.JPG",
+      "width": 940,
+      "height": 627,
+      "credit": "Mette Kramer Kristensen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "Aktivisme",
+        "Byhave 69",
+        "Fristeder",
+        "Jagtvej 69",
+        "Nørrebro"
+      ]
+    },
+    {
+      "id": "08",
+      "sortOrder": 8,
+      "filename": "08-byhave-69-loerdag-8326.jpg",
+      "originalFilename": "byhave_69_loerdag-8326.JPG",
+      "width": 940,
+      "height": 627,
+      "credit": "Mette Kramer Kristensen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "Aktivisme",
+        "Byhave 69",
+        "Fristeder",
+        "Jagtvej 69",
+        "Nørrebro"
+      ]
+    },
+    {
+      "id": "09",
+      "sortOrder": 9,
+      "filename": "09-byhave-69-loerdag-8346.jpg",
+      "originalFilename": "byhave_69_loerdag-8346.JPG",
+      "width": 940,
+      "height": 627,
+      "credit": "Mette Kramer Kristensen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "Aktivisme",
+        "Byhave 69",
+        "Fristeder",
+        "Jagtvej 69",
+        "Nørrebro"
+      ]
+    },
+    {
+      "id": "10",
+      "sortOrder": 10,
+      "filename": "10-byhave-69-loerdag-8356.jpg",
+      "originalFilename": "byhave_69_loerdag-8356.JPG",
+      "width": 940,
+      "height": 627,
+      "credit": "Mette Kramer Kristensen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "Aktivisme",
+        "Byhave 69",
+        "Fristeder",
+        "Jagtvej 69",
+        "Nørrebro"
+      ]
+    },
+    {
+      "id": "11",
+      "sortOrder": 11,
+      "filename": "11-byhave-69-loerdag-8359.jpg",
+      "originalFilename": "byhave_69_loerdag-8359.JPG",
+      "width": 940,
+      "height": 627,
+      "credit": "Mette Kramer Kristensen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "Aktivisme",
+        "Byhave 69",
+        "Fristeder",
+        "Jagtvej 69",
+        "Nørrebro"
+      ]
+    },
+    {
+      "id": "12",
+      "sortOrder": 12,
+      "filename": "12-byhave-69-soendag-8418.jpg",
+      "originalFilename": "byhave_69_soendag-8418.JPG",
+      "width": 940,
+      "height": 627,
+      "credit": "Mette Kramer Kristensen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "Aktivisme",
+        "Byhave 69",
+        "Fristeder",
+        "Jagtvej 69",
+        "Nørrebro"
+      ]
+    },
+    {
+      "id": "13",
+      "sortOrder": 13,
+      "filename": "13-byhave-69-soendag-8425.jpg",
+      "originalFilename": "byhave_69_soendag-8425.JPG",
+      "width": 940,
+      "height": 627,
+      "credit": "Mette Kramer Kristensen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "Aktivisme",
+        "Byhave 69",
+        "Fristeder",
+        "Jagtvej 69",
+        "Nørrebro"
+      ]
+    },
+    {
+      "id": "14",
+      "sortOrder": 14,
+      "filename": "14-byhave-69-soendag-8451.jpg",
+      "originalFilename": "byhave_69_soendag-8451.JPG",
+      "width": 940,
+      "height": 627,
+      "credit": "Mette Kramer Kristensen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "Aktivisme",
+        "Byhave 69",
+        "Fristeder",
+        "Jagtvej 69",
+        "Nørrebro"
+      ]
+    },
+    {
+      "id": "15",
+      "sortOrder": 15,
+      "filename": "15-byhave-69-soendag-8456.jpg",
+      "originalFilename": "byhave_69_soendag-8456.JPG",
+      "width": 940,
+      "height": 627,
+      "credit": "Mette Kramer Kristensen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "Aktivisme",
+        "Byhave 69",
+        "Fristeder",
+        "Jagtvej 69",
+        "Nørrebro"
+      ]
+    },
+    {
+      "id": "16",
+      "sortOrder": 16,
+      "filename": "16-byhave-69-soendag-8465.jpg",
+      "originalFilename": "byhave_69_soendag-8465.JPG",
+      "width": 940,
+      "height": 627,
+      "credit": "Mette Kramer Kristensen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "Aktivisme",
+        "Byhave 69",
+        "Fristeder",
+        "Jagtvej 69",
+        "Nørrebro"
+      ]
+    },
+    {
+      "id": "17",
+      "sortOrder": 17,
+      "filename": "17-byhave-69-soendag-8476.jpg",
+      "originalFilename": "byhave_69_soendag-8476.JPG",
+      "width": 940,
+      "height": 627,
+      "credit": "Mette Kramer Kristensen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "Aktivisme",
+        "Byhave 69",
+        "Fristeder",
+        "Jagtvej 69",
+        "Nørrebro"
+      ]
+    },
+    {
+      "id": "18",
+      "sortOrder": 18,
+      "filename": "18-byhave-69-soendag-8488.jpg",
+      "originalFilename": "byhave_69_soendag-8488.JPG",
+      "width": 940,
+      "height": 627,
+      "credit": "Mette Kramer Kristensen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "Aktivisme",
+        "Byhave 69",
+        "Fristeder",
+        "Jagtvej 69",
+        "Nørrebro"
+      ]
+    },
+    {
+      "id": "19",
+      "sortOrder": 19,
+      "filename": "19-byhave-69-soendag-8489.jpg",
+      "originalFilename": "byhave_69_soendag-8489.JPG",
+      "width": 940,
+      "height": 627,
+      "credit": "Mette Kramer Kristensen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "Aktivisme",
+        "Byhave 69",
+        "Fristeder",
+        "Jagtvej 69",
+        "Nørrebro"
+      ]
+    },
+    {
+      "id": "20",
+      "sortOrder": 20,
+      "filename": "20-byhave-69-soendag-8494.jpg",
+      "originalFilename": "byhave_69_soendag-8494.JPG",
+      "width": 940,
+      "height": 627,
+      "credit": "Mette Kramer Kristensen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "Aktivisme",
+        "Byhave 69",
+        "Fristeder",
+        "Jagtvej 69",
+        "Nørrebro"
+      ]
+    }
+  ],
+  "sourceUrl": "fotoserie/byhave-69.html",
+  "sourceType": "fotoserie"
+}

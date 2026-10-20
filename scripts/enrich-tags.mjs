@@ -226,7 +226,7 @@ const TAG_MAP = {
  */
 const COLLECTION_EXTRAS = {
   // --- artikel-foto imports (2012) ---
-  '2012-03-02-intet-glemt-intet-tilgivet': [
+  'intet-glemt-intet-tilgivet': [
     '1. marts',
     'Demonstration',
     'Jagtvej 69',
@@ -234,35 +234,35 @@ const COLLECTION_EXTRAS = {
     'Rydning',
     'Ungdomshuset',
   ],
-  '2012-03-07-blokade-mod-vus-lokaler': [
+  'blokade-mod-vus-lokaler': [
     'Antifascisme',
     'Antiracisme',
     'Blokade',
     'Demonstration',
     'København',
   ],
-  '2012-03-09-8-marts': ['8. marts', 'Demonstration', 'Feminisme', 'Kvindekamp'],
-  '2012-03-17-soelleroedgade-tyve-aar-efter': [
+  '8-marts-2012': ['8. marts', 'Demonstration', 'Feminisme', 'Kvindekamp'],
+  'soelleroedgade-tyve-aar-efter': [
     'Antiracisme',
     'Demonstration',
     'Historie',
     'Nørrebro',
     'Venstrefløj',
   ],
-  '2012-03-30-forandring-nu': [
+  'forandring-nu': [
     'Demonstration',
     'Fagbevægelse',
     'Klima',
     'Velfærd',
   ],
-  '2012-04-02-ingen-fascister-i-vores-gader': [
+  'ingen-fascister-i-vores-gader': [
     'Aarhus',
     'Antifascisme',
     'Antiracisme',
     'Demonstration',
   ],
-  '2012-04-13-flere-frie-steder': ['BZ', 'Demonstration', 'Fristeder', 'Nørrebro'],
-  '2012-05-02-fest-faner-og-fadoel': [
+  'flere-frie-steder': ['BZ', 'Demonstration', 'Fristeder', 'Nørrebro'],
+  'fest-faner-og-fadoel': [
     '1. maj',
     'Antifascisme',
     'Demonstration',
@@ -270,34 +270,34 @@ const COLLECTION_EXTRAS = {
     'Fælledparken',
     'København',
   ],
-  '2012-05-07-helt-ude-i-hampen': [
+  'helt-ude-i-hampen': [
     'Aktivisme',
     'Demonstration',
     'København',
     'Rådhuspladsen',
   ],
-  '2012-05-08-tunge-toner': ['Koncert', 'Kultur', 'Musik', 'Ungdomshuset'],
-  '2012-05-14-out-of-the-camps': [
+  'tunge-toner': ['Koncert', 'Kultur', 'Musik', 'Ungdomshuset'],
+  'out-of-the-camps': [
     'Asyl',
     'Demonstration',
     'Flygtninge',
     'København',
   ],
-  '2012-05-18-sultestrejke-i-sigerslev': [
+  'sultestrejke-i-sigerslev': [
     'Asyl',
     'Flygtninge',
     'Kurdistan',
     'Sultestrejke',
     'Syrien',
   ],
-  '2012-05-23-syrisk-soergeoptog': [
+  'syrisk-soergeoptog': [
     'Amnesty',
     'Demonstration',
     'Rusland',
     'Solidaritet',
     'Syrien',
   ],
-  '2012-06-25-glade-punks-fik-cykelkrig-og-veganske-hotdogs': [
+  'glade-punks-fik-cykelkrig-og-veganske-hotdogs': [
     'Bike Wars',
     'K-Town',
     'Koncert',
@@ -305,15 +305,15 @@ const COLLECTION_EXTRAS = {
     'Punk',
     'Ungdomshuset',
   ],
-  '2012-07-12-roskilde-festival-2012': [
+  'roskilde-festival-2012': [
     'Koncert',
     'Kultur',
     'Musik',
     'Roskilde Festival',
   ],
-  '2012-07-27-jazz': ['Jazz', 'Koncert', 'Kultur', 'København', 'Musik'],
-  '2012-08-02-turisme': ['Italien', 'Kultur', 'Turisme'],
-  '2012-08-21-pussy-riot': [
+  'jazz': ['Jazz', 'Koncert', 'Kultur', 'København', 'Musik'],
+  'turisme': ['Italien', 'Kultur', 'Turisme'],
+  'pussy-riot': [
     'Demonstration',
     'København',
     'LGBT+',
@@ -321,54 +321,54 @@ const COLLECTION_EXTRAS = {
     'Rusland',
     'Solidaritet',
   ],
-  '2012-08-27-save-fernanda': [
+  'save-fernanda': [
     'Asyl',
     'Demonstration',
     'København',
     'LGBT+',
     'Solidaritet',
   ],
-  '2012-09-10-billeder-fra-en-sultestrejke': [
+  'billeder-fra-en-sultestrejke': [
     'Asyl',
     'Fotoudstilling',
     'Nørrebro',
     'Stefanskirken',
     'Sultestrejke',
   ],
-  '2012-10-03-3f-og-vejlegaarden-i-arbejdsretten': [
+  '3f-og-vejlegaarden-i-arbejdsretten': [
     '3F',
     'Blokade',
     'Demonstration',
     'Fagbevægelse',
     'Vejlegården',
   ],
-  '2012-10-03-folketinget-aabner': [
+  'folketinget-aabner-2012': [
     'Christiansborg',
     'Demonstration',
     'Folketingets åbning',
     'København',
   ],
-  '2012-10-18-hjemloesedag': ['Hjemløse', 'Hus Forbi', 'København', 'Socialt'],
-  '2012-10-22-vaelt-regeringen': [
+  'hjemloesedag': ['Hjemløse', 'Hus Forbi', 'København', 'Socialt'],
+  'vaelt-regeringen': [
     'Aktivisme',
     'Demonstration',
     'København',
     'Venstrefløj',
   ],
-  '2012-11-02-savage-rose-i-koncerthuset': [
+  'savage-rose-i-koncerthuset': [
     'Anisette',
     'Koncert',
     'Kultur',
     'Musik',
     'Savage Rose',
   ],
-  '2012-11-05-verdensmester-i-oekologi': [
+  'verdensmester-i-oekologi': [
     'Fotoudstilling',
     'Kultur',
     'København',
     'Økologi',
   ],
-  '2012-11-21-stoette-til-kurdisk-sultestrejke': [
+  'stoette-til-kurdisk-sultestrejke': [
     'Demonstration',
     'Kurdistan',
     'København',
@@ -376,7 +376,7 @@ const COLLECTION_EXTRAS = {
     'Sultestrejke',
     'Tyrkiet',
   ],
-  '2012-11-23-solidaritet-med-gaza': [
+  'solidaritet-med-gaza': [
     'Christiansborg',
     'Demonstration',
     'Gaza',
@@ -384,187 +384,187 @@ const COLLECTION_EXTRAS = {
     'Solidaritet',
   ],
 
-  '2012-11-28-ataturk-lufthavn': ['Syrien', 'Nødhjælp', 'Tyrkiet', 'Istanbul', 'VIOMIS'],
-  '2012-11-29-istanbul-er-en-foelelse-et-indtryk-og-et-afsaet-videre': [
+  'ataturk-lufthavn': ['Syrien', 'Nødhjælp', 'Tyrkiet', 'Istanbul', 'VIOMIS'],
+  'istanbul-er-en-foelelse-et-indtryk-og-et-afsaet-videre': [
     'Syrien',
     'Nødhjælp',
     'Tyrkiet',
     'Istanbul',
   ],
-  '2012-12-02-moedet-med-de-syriske-flygtninge': [
+  'moedet-med-de-syriske-flygtninge': [
     'Syrien',
     'Nødhjælp',
     'Flygtninge',
     'Tyrkiet',
   ],
-  '2012-12-06-bomber-i-det-fjerne': ['Syrien', 'Nødhjælp', 'Flygtninge', 'Tyrkiet'],
-  '2012-12-10-livet-aendrer-sig-paa-et-splitsekund': [
+  'bomber-i-det-fjerne': ['Syrien', 'Nødhjælp', 'Flygtninge', 'Tyrkiet'],
+  'livet-aendrer-sig-paa-et-splitsekund': [
     'Syrien',
     'Nødhjælp',
     'Flygtninge',
     'Aleppo',
     'Den Frie Syriske Hær',
   ],
-  '2012-12-11-til-te-med-oproeret': [
+  'til-te-med-oproeret': [
     'Syrien',
     'Nødhjælp',
     'Flygtninge',
     'Tyrkiet',
     'Den Frie Syriske Hær',
   ],
-  '2013-01-22-antifascistisk-solidaritet-med-graekenland': [
+  'antifascistisk-solidaritet-med-graekenland': [
     'Grækenland',
     'Antifascisme',
     'Demonstration',
     'Solidaritet',
   ],
-  '2013-02-05-die-mauer': ['Berlinmuren', 'Berlin', 'Historie'],
-  '2013-02-19-ska-bash-i-ungdomshuset': ['Ungdomshuset', 'Koncert', 'Musik', 'Ska'],
-  '2013-02-24-antifascister-mod-siad': [
+  'die-mauer': ['Berlinmuren', 'Berlin', 'Historie'],
+  'ska-bash-i-ungdomshuset': ['Ungdomshuset', 'Koncert', 'Musik', 'Ska'],
+  'antifascister-mod-siad': [
     'Antifascisme',
     'Antiracisme',
     'Demonstration',
     'Antifascistisk Aktion',
     'København',
   ],
-  '2013-03-01-hoejt-humoer-under-su-protester': [
+  'hoejt-humoer-under-su-protester': [
     'SU',
     'Studerende',
     'Uddannelse',
     'Demonstration',
   ],
-  '2013-03-04-seks-aar-efter': [
+  'seks-aar-efter': [
     'Jagtvej 69',
     'Ungdomshuset',
     '1. marts',
     'Demonstration',
     'Nørrebro',
   ],
-  '2013-03-11-8-marts': ['8. marts', 'Kvindekamp', 'Feminisme', 'Ligeløn', 'Demonstration'],
-  '2013-03-20-laererne-er-de-foerste-hvem-bliver-de-naeste': [
+  '8-marts-2013': ['8. marts', 'Kvindekamp', 'Feminisme', 'Ligeløn', 'Demonstration'],
+  'laererne-er-de-foerste-hvem-bliver-de-naeste': [
     'Lockout',
     'Fagbevægelse',
     'Uddannelse',
     'Demonstration',
   ],
-  '2013-04-09-protest-mod-lockout': [
-    'Lockout',
-    'Fagbevægelse',
-    'Uddannelse',
-    'Demonstration',
-    'København',
-  ],
-  '2013-04-15-laererlockout-uge-2': [
+  'protest-mod-lockout': [
     'Lockout',
     'Fagbevægelse',
     'Uddannelse',
     'Demonstration',
     'København',
   ],
-  '2013-05-02-1-maj-2013-faner-er-roede-helle-er': [
+  'laererlockout-uge-2': [
+    'Lockout',
+    'Fagbevægelse',
+    'Uddannelse',
+    'Demonstration',
+    'København',
+  ],
+  '1-maj-2013-faner-er-roede-helle-er': [
     '1. maj',
     'Fagbevægelse',
     'Demonstration',
     'Fælledparken',
     'København',
   ],
-  '2013-05-06-her-er-plads-stop-udvisningerne-til-afghanistan': [
+  'her-er-plads-stop-udvisningerne-til-afghanistan': [
     'Asyl',
     'Flygtninge',
     'Afghanistan',
     'Demonstration',
     'Aktivisme',
   ],
-  '2013-05-08-pausefisk': ['Akvarium', 'Den Blå Planet', 'Natur'],
-  '2013-05-13-jagtvej-demo-besaettelse-og-rydning': [
+  'pausefisk': ['Akvarium', 'Den Blå Planet', 'Natur'],
+  'jagtvej-demo-besaettelse-og-rydning': [
     'BZ',
     'Fristeder',
     'Rydning',
     'Demonstration',
     'Nørrebro',
   ],
-  '2013-05-30-moskemodstandere-moeder-modstand': [
+  'moskemodstandere-moeder-modstand': [
     'Antifascisme',
     'Antiracisme',
     'Demonstration',
     'Rådhuspladsen',
     'København',
   ],
-  '2013-06-06-hjemloese-fejrer-grundlovsdag': ['Hjemløse', 'Grundlovsdag', 'Socialt'],
-  '2013-06-14-valentina-tereshkova': ['Valentina Tereshkova', 'Historie', 'Kvindekamp'],
-  '2013-07-01-tilbage-paa-tahrir': ['Egypten', 'Cairo', 'Tahrir', 'Demonstration'],
-  '2013-07-03-opvarming-roskilde-festival-2013': [
+  'hjemloese-fejrer-grundlovsdag': ['Hjemløse', 'Grundlovsdag', 'Socialt'],
+  'valentina-tereshkova': ['Valentina Tereshkova', 'Historie', 'Kvindekamp'],
+  'tilbage-paa-tahrir': ['Egypten', 'Cairo', 'Tahrir', 'Demonstration'],
+  'opvarming-roskilde-festival-2013': [
     'Roskilde Festival',
     'Koncert',
     'Musik',
     'Kultur',
   ],
-  '2013-08-21-to-russia-with-love': ['LGBT+', 'Rusland', 'Demonstration', 'Solidaritet'],
-  '2013-08-26-gadefest-mod-vold-trusler-og-boeller': [
+  'to-russia-with-love': ['LGBT+', 'Rusland', 'Demonstration', 'Solidaritet'],
+  'gadefest-mod-vold-trusler-og-boeller': [
     'Hjemløse',
     'Hus Forbi',
     'Socialt',
     'Fest',
   ],
-  '2013-09-19-punx-picnic': ['Punk', 'K-Town', 'Koncert', 'Musik', 'Ungdomshuset'],
-  '2013-10-01-folketinget-aabner': [
+  'punx-picnic-2013': ['Punk', 'K-Town', 'Koncert', 'Musik', 'Ungdomshuset'],
+  'folketinget-aabner-2013': [
     'Folketingets åbning',
     'Christiansborg',
     'Demonstration',
     'Fagbevægelse',
   ],
-  '2013-11-18-aktion-69': [
+  'aktion-69': [
     'Jagtvej 69',
     'Ungdomshuset',
     'Aktivisme',
     'Demonstration',
     'Nørrebro',
   ],
-  '2013-11-27-studenterprotester-mod-fremdriftsreform-paa-universiteterne': [
+  'studenterprotester-mod-fremdriftsreform-paa-universiteterne': [
     'Studerende',
     'Uddannelse',
     'Demonstration',
     'Københavns Universitet',
   ],
-  '2013-12-02-baalfest-paa-jagtvej-69': [
+  'baalfest-paa-jagtvej-69': [
     'Jagtvej 69',
     'Ungdomshuset',
     'Nørrebro',
     'Aktivisme',
   ],
-  '2013-12-19-hjemloese-er-hundens-bedste-ven': ['Hjemløse', 'Hus Forbi', 'Socialt'],
-  '2014-01-29-ding-dong-dynamodemo': [
+  'hjemloese-er-hundens-bedste-ven': ['Hjemløse', 'Hus Forbi', 'Socialt'],
+  'ding-dong-dynamodemo': [
     'DONG Energy',
     'Goldman Sachs',
     'Demonstration',
     'Aktivisme',
   ],
-  '2014-02-01-vi-vil-huske-dong-salget': [
+  'vi-vil-huske-dong-salget': [
     'DONG Energy',
     'Goldman Sachs',
     'Demonstration',
     'Socialdemokraterne',
     'Nørrebro',
   ],
-  '2014-02-04-ministerrokade': ['Regeringen', 'Christiansborg', 'SF', 'Socialdemokraterne', 'Radikale Venstre'],
-  '2014-02-12-tag-internettet-tilbage': ['Digital aktivisme', 'Demonstration', 'Aktivisme'],
-  '2014-03-03-1-marts-vores-kampdag': [
+  'ministerrokade': ['Regeringen', 'Christiansborg', 'SF', 'Socialdemokraterne', 'Radikale Venstre'],
+  'tag-internettet-tilbage': ['Digital aktivisme', 'Demonstration', 'Aktivisme'],
+  '1-marts-vores-kampdag': [
     'Jagtvej 69',
     'Ungdomshuset',
     '1. marts',
     'Rydning',
     'Demonstration',
   ],
-  '2014-03-10-kvindekampdag-2014-tag-natten-tilbage-kraev-respekt-forbyd-sexkoeb': [
+  'kvindekampdag-2014-tag-natten-tilbage-kraev-respekt-forbyd-sexkoeb': [
     '8. marts',
     'Kvindekamp',
     'Feminisme',
     'Demonstration',
     'Nørrebro',
   ],
-  '2014-03-17-kampa-malmo': ['Malmø', 'Antifascisme', 'Demonstration', 'Solidaritet'],
-  '2014-03-17-protest-mod-politibrutalitet': ['Politivold', 'Demonstration', 'København'],
-  '2014-03-17-rote-flora': [
+  'kampa-malmo': ['Malmø', 'Antifascisme', 'Demonstration', 'Solidaritet'],
+  'protest-mod-politibrutalitet': ['Politivold', 'Demonstration', 'København'],
+  'rote-flora': [
     'Rote Flora',
     'Fristeder',
     'BZ',
@@ -572,41 +572,34 @@ const COLLECTION_EXTRAS = {
     'Nørrebro',
     'Demonstration',
   ],
-  '2014-03-21-newroz-piroz-be': ['Newroz', 'Kurdistan', 'Kultur', 'Rådhuspladsen', 'Christiansborg'],
-  '2014-03-24-racismefri-by': [
+  'newroz-piroz-be': ['Newroz', 'Kurdistan', 'Kultur', 'Rådhuspladsen', 'Christiansborg'],
+  'racismefri-by-marts-2014': [
     'Racismefri By',
     'Antiracisme',
     'Demonstration',
     'Vesterbro',
     'Sydhavnen',
   ],
-  '2014-04-21-aktion-paa-christiania': ['Christiania', 'Aktivisme', 'Fristeder', 'København'],
-  '2014-04-23-eu-foer-lukketid': ['EU', 'Strasbourg', 'Folkebevægelsen mod EU'],
-  '2014-05-02-1-maj-fotokavalkade-2014': [
+  'aktion-paa-christiania': ['Christiania', 'Aktivisme', 'Fristeder', 'København'],
+  'eu-foer-lukketid': ['EU', 'Strasbourg', 'Folkebevægelsen mod EU'],
+  '1-maj-fotokavalkade-2014': [
     '1. maj',
     'Fagbevægelse',
     'Demonstration',
     'Fælledparken',
     'København',
   ],
-  '2014-05-05-byhave-69': ['Byhave 69', 'Jagtvej 69', 'Nørrebro', 'Aktivisme', 'Fristeder'],
-  '2014-05-12-racismefri-by': ['Racismefri By', 'Antiracisme', 'Antifascisme', 'Demonstration'],
-  '2014-06-10-grundlovsdag-paa-christiania': ['Christiania', 'Grundlovsdag', 'Fristeder', 'Kultur'],
-  '2014-06-20-nordvest-hyldes-i-ny-bog-om-det-vilde-og-kaotiske-gadeliv': [
-    'Nordvest',
-    'København',
-    'Kultur',
-    'Bøger',
-  ],
-  '2014-06-27-elsker-fodbold-hader-fifa': ['Fodbold', 'FIFA', 'Demonstration', 'Aktivisme'],
-  '2014-07-05-roskilde-festival-koncertfotos': [
+  'byhave-69': ['Byhave 69', 'Jagtvej 69', 'Nørrebro', 'Aktivisme', 'Fristeder'],
+  'racismefri-by-maj-2014': ['Racismefri By', 'Antiracisme', 'Antifascisme', 'Demonstration'],
+  'grundlovsdag-paa-christiania': ['Christiania', 'Grundlovsdag', 'Fristeder', 'Kultur'],
+  'roskilde-festival-koncertfotos': [
     'Roskilde Festival',
     'Koncert',
     'Musik',
     'Kultur',
   ],
-  '2014-09-17-modkraft-fester': ['Modkraft', 'Fest', 'Kultur'],
-  '2014-10-01-solidaritet-med-kobane-og-rojava': [
+  'modkraft-fester': ['Modkraft', 'Fest', 'Kultur'],
+  'solidaritet-med-kobane-og-rojava': [
     'Kobane',
     'Rojava',
     'Kurdistan',
@@ -615,22 +608,22 @@ const COLLECTION_EXTRAS = {
     'Solidaritet',
     'Christiansborg',
   ],
-  '2014-10-08-folketinget-aabner': [
+  'folketinget-aabner-2014': [
     'Folketingets åbning',
     'Christiansborg',
     'Demonstration',
     'Velfærd',
   ],
-  '2014-12-09-hjemloese-og-hjaelpemidler': ['Hjemløse', 'Hus Forbi', 'Socialt'],
-  '2015-01-20-for-og-imod-pegida': ['Pegida', 'Antiracisme', 'Demonstration', 'København'],
-  '2015-01-27-koebenhavn-for-mangfoldighed': [
+  'hjemloese-og-hjaelpemidler': ['Hjemløse', 'Hus Forbi', 'Socialt'],
+  'for-og-imod-pegida': ['Pegida', 'Antiracisme', 'Demonstration', 'København'],
+  'koebenhavn-for-mangfoldighed': [
     'København for Mangfoldighed',
     'Pegida',
     'Antiracisme',
     'Demonstration',
     'København',
   ],
-  '2015-03-02-8-aars-demo-intet-glemt-intet-tilgivet': [
+  '8-aars-demo-intet-glemt-intet-tilgivet': [
     'Jagtvej 69',
     'Ungdomshuset',
     '1. marts',
@@ -638,7 +631,7 @@ const COLLECTION_EXTRAS = {
     'Demonstration',
     'Nørrebro',
   ],
-  '2015-03-12-8-marts-2015': [
+  '8-marts-2015': [
     '8. marts',
     'Kvindekamp',
     'Feminisme',
@@ -646,87 +639,79 @@ const COLLECTION_EXTRAS = {
     'Demonstration',
     'København',
   ],
-  '2015-04-07-skifergasprotester-i-nordjylland': [
+  'skifergasprotester-i-nordjylland': [
     'Skifergas',
     'Klima',
     'Blokade',
     'Aktivisme',
   ],
-  '2015-05-05-foraar-fest-og-1-maj': [
+  'foraar-fest-og-1-maj': [
     '1. maj',
     'Fagbevægelse',
     'Demonstration',
     'Antifascisme',
     'København',
   ],
-  '2015-06-19-valgfester': ['Folketingsvalg', 'Venstrefløj', 'Enhedslisten', 'Christiansborg'],
-  '2015-06-30-punx-picnic': ['Punk', 'K-Town', 'Bike Wars', 'Ungdomshuset', 'Kultur'],
-  '2015-07-02-roskilde-2015-skudt-i-gang': ['Roskilde Festival', 'Koncert', 'Musik', 'Kultur'],
-  '2015-07-04-roskilde-vibrerer': ['Roskilde Festival', 'Koncert', 'Musik', 'Kultur'],
-  '2015-09-08-flygtninge-i-roedby-havn': ['Flygtninge', 'Asyl', 'Rødby', 'Syrien'],
-  '2015-09-14-refugeeswelcome': [
+  'valgfester': ['Folketingsvalg', 'Venstrefløj', 'Enhedslisten', 'Christiansborg'],
+  'punx-picnic-2015': ['Punk', 'K-Town', 'Bike Wars', 'Ungdomshuset', 'Kultur'],
+  'roskilde-2015-skudt-i-gang': ['Roskilde Festival', 'Koncert', 'Musik', 'Kultur'],
+  'roskilde-vibrerer': ['Roskilde Festival', 'Koncert', 'Musik', 'Kultur'],
+  'refugeeswelcome': [
     'Refugees Welcome',
     'Flygtninge',
     'Asyl',
     'Demonstration',
     'Christiansborg',
   ],
-  '2015-09-25-demonstration-stop-undertrykkelsen-af-kurderne-i-tyrkiet': [
-    'Kurdistan',
-    'Tyrkiet',
-    'Demonstration',
-    'Solidaritet',
-    'Christiansborg',
-  ],
-  '2015-10-03-spids-noegenhat-i-pumpehuset': [
+  'spids-noegenhat-i-pumpehuset': [
     'Spids Nøgenhat',
     'Pumpehuset',
     'Koncert',
     'Musik',
   ],
-  '2015-10-07-folkevandring-samlede-20-000-deltagere': [
+  'folkevandring-samlede-20-000-deltagere': [
     'Refugees Welcome',
     'Flygtninge',
     'Asyl',
     'Demonstration',
     'København',
   ],
-  '2015-10-22-hjemloesedagen-2015': ['Hjemløse', 'Socialt', 'Velfærd'],
-  '2015-10-30-stop-milliardnedskaeringer-paa-uddannelse': [
+  'hjemloesedagen-2015': ['Hjemløse', 'Socialt', 'Velfærd'],
+  'stop-milliardnedskaeringer-paa-uddannelse': [
     'Uddannelse',
     'Nedskæringer',
     'Studerende',
     'Demonstration',
   ],
-  '2015-11-04-sidste-nat-i-roma-lejren': ['Romaer', 'Malmø', 'Hjemløse', 'Rydning', 'Socialt'],
-  '2015-12-01-mangfoldig-klimamarch-i-koebenhavn': [
+  'sidste-nat-i-roma-lejren': ['Romaer', 'Malmø', 'Hjemløse', 'Rydning', 'Socialt'],
+  'mangfoldig-klimamarch-i-koebenhavn': [
     'Klima',
     'COP21',
     'Demonstration',
     'København',
   ],
-  '2016-01-09-aktion-mod-id-kontrol': [
+  'aktion-mod-id-kontrol': [
     'Flygtninge',
     'Asyl',
     'Aktivisme',
     'Demonstration',
     'København',
   ],
-  '2016-01-27-close-sjaelsmark': [
+  'close-sjaelsmark': [
     'Sjælsmark',
     'Sandholmlejren',
     'Asyl',
     'Flygtninge',
     'Demonstration',
   ],
-  '2016-02-03-boernemagt-i-ungdomshuset': [
+  'boernemagt-i-ungdomshuset': [
     'Ungdomshuset',
     'Punk',
     'Koncert',
     'Musik',
     'Børnemagt',
   ],
-  '2016-02-05-demonstrationer-i-aarhus-odense-og-koebenhavn-udsatte-kraever-respekt-og-vaerdighed-til-alle': [
+  'demonstrationer-i-aarhus-odense-og-koebenhavn-udsatte-kraever-respekt-og-vaerdighed-til-alle': [
     'Velfærd',
     'Socialt',
     'Demonstration',
@@ -735,63 +720,63 @@ const COLLECTION_EXTRAS = {
     'Aarhus',
     'Odense',
   ],
-  '2016-03-08-kvindernes-internationale-kampdag-i-seks-aar': [
+  'kvindernes-internationale-kampdag-i-seks-aar': [
     '8. marts',
     'Kvindekamp',
     'Feminisme',
     'Demonstration',
   ],
-  '2016-03-08-vanessa': ['Kultur', 'Portræt'],
-  '2016-03-09-demonstration-mod-sexkoeb': [
+  'vanessa': ['Kultur', 'Portræt'],
+  'demonstration-mod-sexkoeb': [
     '8. marts',
     'Kvindekamp',
     'Feminisme',
     'Demonstration',
   ],
-  '2016-03-10-aktivister-paa-gaden-for-at-stoette-rydningstruede-fristeder-i-berlin': [
+  'aktivister-paa-gaden-for-at-stoette-rydningstruede-fristeder-i-berlin': [
     'Berlin',
     'Fristeder',
     'BZ',
     'Solidaritet',
     'Demonstration',
   ],
-  '2016-03-11-demonstration-mod-milliardbesparelser-i-kommunerne': [
+  'demonstration-mod-milliardbesparelser-i-kommunerne': [
     'Nedskæringer',
     'Velfærd',
     'Fagbevægelse',
     'Demonstration',
     'København',
   ],
-  '2016-05-03-1-maj-2016': [
+  '1-maj-2016': [
     '1. maj',
     'Fagbevægelse',
     'Demonstration',
     'Antifascisme',
     'København',
   ],
-  '2016-10-10-ja-til-velfaerd-nej-til-fattigdom': [
+  'ja-til-velfaerd-nej-til-fattigdom': [
     'Velfærd',
     'Nedskæringer',
     'Socialt',
     'Demonstration',
   ],
-  '2016-10-14-kaempe-protest-mod-su-nedskaeringer': [
+  'kaempe-protest-mod-su-nedskaeringer': [
     'SU',
     'Uddannelse',
     'Studerende',
     'Nedskæringer',
     'Demonstration',
   ],
-  '2016-10-28-stop-ttip-og-ceta': ['TTIP', 'CETA', 'EU', 'Demonstration'],
-  '2016-11-16-blokade-mod-lukning-af-biblioteker-paa-ku-studerende-frygter-for-faerre-boeger-og-laesepladser': [
+  'stop-ttip-og-ceta': ['TTIP', 'CETA', 'EU', 'Demonstration'],
+  'blokade-mod-lukning-af-biblioteker-paa-ku-studerende-frygter-for-faerre-boeger-og-laesepladser': [
     'Københavns Universitet',
     'Studerende',
     'Uddannelse',
     'Blokade',
     'Aktivisme',
   ],
-  '2016-11-29-aleida-guevara': ['Aleida Guevara', 'Cuba', 'Solidaritet', 'Nørrebro'],
-  '2016-12-05-islamkritikere-gik-gennem-noerrebro-med-hjaelp-fra-politiet': [
+  'aleida-guevara': ['Aleida Guevara', 'Cuba', 'Solidaritet', 'Nørrebro'],
+  'islamkritikere-gik-gennem-noerrebro-med-hjaelp-fra-politiet': [
     'For Frihed',
     'Pegida',
     'Antiracisme',
@@ -799,22 +784,22 @@ const COLLECTION_EXTRAS = {
     'Nørrebro',
     'Demonstration',
   ],
-  '2016-12-16-save-aleppo': [
+  'save-aleppo': [
     'Aleppo',
     'Syrien',
     'Demonstration',
     'Solidaritet',
     'Christiansborg',
   ],
-  '2016-12-19-stop-politivold': ['Politivold', 'Demonstration', 'Aktivisme'],
-  '2017-01-09-to-aar-med-protester-mod-for-frihed': [
+  'stop-politivold': ['Politivold', 'Demonstration', 'Aktivisme'],
+  'to-aar-med-protester-mod-for-frihed': [
     'For Frihed',
     'Pegida',
     'Antiracisme',
     'Antifascisme',
     'Demonstration',
   ],
-  '2017-01-10-aktion-mod-dagpengeregler': [
+  'aktion-mod-dagpengeregler': [
     'Dagpenge',
     'Velfærd',
     'Fagbevægelse',
@@ -979,7 +964,7 @@ function cleanCaption(collectionId, img) {
   // Stray copy-paste caption "Lig" on 2016-02-05 image 04
   if (
     collectionId ===
-      '2016-02-05-demonstrationer-i-aarhus-odense-og-koebenhavn-udsatte-kraever-respekt-og-vaerdighed-til-alle' &&
+      'demonstrationer-i-aarhus-odense-og-koebenhavn-udsatte-kraever-respekt-og-vaerdighed-til-alle' &&
     img.id === '04' &&
     c === 'Lig'
   ) {
@@ -1029,7 +1014,7 @@ function enrichImageTags(collectionId, collectionTags, img) {
   }
 
   // Special handling: `2016-02-03-boernemagt-i-ungdomshuset` images 01-04 are the punk band "Lig"
-  if (collectionId === '2016-02-03-boernemagt-i-ungdomshuset' && img.caption === 'Lig') {
+  if (collectionId === 'boernemagt-i-ungdomshuset' && img.caption === 'Lig') {
     imageTags.add('Lig');
   }
 

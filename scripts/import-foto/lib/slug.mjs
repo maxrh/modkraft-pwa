@@ -54,10 +54,14 @@ export function datePrefix(iso) {
   return `${y}-${mo}-${day}`;
 }
 
+/**
+ * Stable folder/URL id from title only (no YYYY-MM-DD prefix).
+ * Callers should append nid (or similar) when the slug collides.
+ */
 export function collectionId(publishedAt, title, nid) {
   const date = datePrefix(publishedAt);
   const slug = slugifyTitle(title);
-  return { id: `${date}-${slug}`, slug, date };
+  return { id: slug, slug, date };
 }
 
 /** Sanitize an original image filename stem for use in cleaned filenames. */

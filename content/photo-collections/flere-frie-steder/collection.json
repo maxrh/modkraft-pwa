@@ -1,0 +1,318 @@
+{
+  "id": "flere-frie-steder",
+  "sourceNid": 18139,
+  "slug": "flere-frie-steder",
+  "title": "Flere Frie Steder",
+  "publishedAt": "2012-04-13T14:14:58+02:00",
+  "modifiedAt": "2012-04-13T14:59:11+02:00",
+  "authors": [
+    "Mark Knudsen"
+  ],
+  "photographers": [
+    "Mette Kramer Kristensen"
+  ],
+  "prefix": "Demonstration",
+  "series": null,
+  "manchet": null,
+  "introMarkdown": "Torsdag den 5. april gik små 100 mennesker fra Folkets Park på Nørrebro i demonstration med retning mod Frederiksberg Rådhus med krav om »flere frie steder«.\n\nInden demonstrationen nåede sit endemål vendte forsamling om og forsøgte at storme ind i en tom bygning på H. C. Ørstedsvej 63 for at besætte det.\n\nPolitiet forhindrede dog en besættelse i denne omgang.\n\n[Læs mere i artiklen »Fristed på Frederiksberg?« hos Modkraft.](http://www.modkraft.dk/artikel/fristed-på-frederiksberg)\n\nFoto: Mette Kramer Kristensen.",
+  "tags": [
+    "BZ",
+    "Demonstration",
+    "Fristeder",
+    "Nørrebro"
+  ],
+  "genre": null,
+  "coverImage": "01",
+  "images": [
+    {
+      "id": "01",
+      "sortOrder": 1,
+      "filename": "01-demo-flere-fristeder-3.jpg",
+      "originalFilename": "Demo - Flere Fristeder-3.jpg",
+      "width": 940,
+      "height": 627,
+      "credit": "Mette Kramer Kristensen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "root-stripped-hash",
+      "tags": [
+        "BZ",
+        "Demonstration",
+        "Fristeder",
+        "Nørrebro"
+      ]
+    },
+    {
+      "id": "02",
+      "sortOrder": 2,
+      "filename": "02-demo-flere-fristeder-4.jpg",
+      "originalFilename": "Demo - Flere Fristeder-4.jpg",
+      "width": 940,
+      "height": 627,
+      "credit": "Mette Kramer Kristensen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "root-stripped-hash",
+      "tags": [
+        "BZ",
+        "Demonstration",
+        "Fristeder",
+        "Nørrebro"
+      ]
+    },
+    {
+      "id": "03",
+      "sortOrder": 3,
+      "filename": "03-demo-flere-fristeder-5.jpg",
+      "originalFilename": "Demo - Flere Fristeder-5.jpg",
+      "width": 940,
+      "height": 627,
+      "credit": "Mette Kramer Kristensen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "root-stripped-hash",
+      "tags": [
+        "BZ",
+        "Demonstration",
+        "Fristeder",
+        "Nørrebro"
+      ]
+    },
+    {
+      "id": "04",
+      "sortOrder": 4,
+      "filename": "04-demo-flere-fristeder-8.jpg",
+      "originalFilename": "Demo - Flere Fristeder-8.jpg",
+      "width": 940,
+      "height": 627,
+      "credit": "Mette Kramer Kristensen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "root-stripped-hash",
+      "tags": [
+        "BZ",
+        "Demonstration",
+        "Fristeder",
+        "Nørrebro"
+      ]
+    },
+    {
+      "id": "05",
+      "sortOrder": 5,
+      "filename": "05-demo-flere-fristeder-11.jpg",
+      "originalFilename": "Demo - Flere Fristeder-11.jpg",
+      "width": 940,
+      "height": 627,
+      "credit": "Mette Kramer Kristensen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "root-stripped-hash",
+      "tags": [
+        "BZ",
+        "Demonstration",
+        "Fristeder",
+        "Nørrebro"
+      ]
+    },
+    {
+      "id": "06",
+      "sortOrder": 6,
+      "filename": "06-demo-flere-fristeder-17.jpg",
+      "originalFilename": "Demo - Flere Fristeder-17.jpg",
+      "width": 940,
+      "height": 627,
+      "credit": "Mette Kramer Kristensen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "root-stripped-hash",
+      "tags": [
+        "BZ",
+        "Demonstration",
+        "Fristeder",
+        "Nørrebro"
+      ]
+    },
+    {
+      "id": "07",
+      "sortOrder": 7,
+      "filename": "07-demo-flere-fristeder-18.jpg",
+      "originalFilename": "Demo - Flere Fristeder-18.jpg",
+      "width": 940,
+      "height": 627,
+      "credit": "Mette Kramer Kristensen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "root-stripped-hash",
+      "tags": [
+        "BZ",
+        "Demonstration",
+        "Fristeder",
+        "Nørrebro"
+      ]
+    },
+    {
+      "id": "08",
+      "sortOrder": 8,
+      "filename": "08-demo-flere-fristeder-26.jpg",
+      "originalFilename": "Demo - Flere Fristeder-26.jpg",
+      "width": 940,
+      "height": 627,
+      "credit": "Mette Kramer Kristensen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "root-stripped-hash",
+      "tags": [
+        "BZ",
+        "Demonstration",
+        "Fristeder",
+        "Nørrebro"
+      ]
+    },
+    {
+      "id": "09",
+      "sortOrder": 9,
+      "filename": "09-demo-flere-fristeder-31.jpg",
+      "originalFilename": "Demo - Flere Fristeder-31.jpg",
+      "width": 940,
+      "height": 627,
+      "credit": "Mette Kramer Kristensen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "root-stripped-hash",
+      "tags": [
+        "BZ",
+        "Demonstration",
+        "Fristeder",
+        "Nørrebro"
+      ]
+    },
+    {
+      "id": "10",
+      "sortOrder": 10,
+      "filename": "10-demo-flere-fristeder-33.jpg",
+      "originalFilename": "Demo - Flere Fristeder-33.jpg",
+      "width": 940,
+      "height": 627,
+      "credit": "Mette Kramer Kristensen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "root-stripped-hash",
+      "tags": [
+        "BZ",
+        "Demonstration",
+        "Fristeder",
+        "Nørrebro"
+      ]
+    },
+    {
+      "id": "11",
+      "sortOrder": 11,
+      "filename": "11-demo-flere-fristeder-35.jpg",
+      "originalFilename": "Demo - Flere Fristeder-35.jpg",
+      "width": 580,
+      "height": 700,
+      "credit": "Mette Kramer Kristensen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "root-stripped-hash",
+      "tags": [
+        "BZ",
+        "Demonstration",
+        "Fristeder",
+        "Nørrebro"
+      ]
+    },
+    {
+      "id": "12",
+      "sortOrder": 12,
+      "filename": "12-demo-flere-fristeder-39.jpg",
+      "originalFilename": "Demo - Flere Fristeder-39.jpg",
+      "width": 920,
+      "height": 700,
+      "credit": "Mette Kramer Kristensen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "root-stripped-hash",
+      "tags": [
+        "BZ",
+        "Demonstration",
+        "Fristeder",
+        "Nørrebro"
+      ]
+    },
+    {
+      "id": "13",
+      "sortOrder": 13,
+      "filename": "13-demo-flere-fristeder-46.jpg",
+      "originalFilename": "Demo - Flere Fristeder-46.jpg",
+      "width": 940,
+      "height": 627,
+      "credit": "Mette Kramer Kristensen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "root-stripped-hash",
+      "tags": [
+        "BZ",
+        "Demonstration",
+        "Fristeder",
+        "Nørrebro"
+      ]
+    },
+    {
+      "id": "14",
+      "sortOrder": 14,
+      "filename": "14-demo-flere-fristeder-52.jpg",
+      "originalFilename": "Demo - Flere Fristeder-52.jpg",
+      "width": 940,
+      "height": 627,
+      "credit": "Mette Kramer Kristensen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "root-stripped-hash",
+      "tags": [
+        "BZ",
+        "Demonstration",
+        "Fristeder",
+        "Nørrebro"
+      ]
+    },
+    {
+      "id": "15",
+      "sortOrder": 15,
+      "filename": "15-demo-flere-fristeder-53.jpg",
+      "originalFilename": "Demo - Flere Fristeder-53.jpg",
+      "width": 940,
+      "height": 627,
+      "credit": "Mette Kramer Kristensen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "root-stripped-hash",
+      "tags": [
+        "BZ",
+        "Demonstration",
+        "Fristeder",
+        "Nørrebro"
+      ]
+    },
+    {
+      "id": "16",
+      "sortOrder": 16,
+      "filename": "16-demo-flere-fristeder-59.jpg",
+      "originalFilename": "Demo - Flere Fristeder-59.jpg",
+      "width": 940,
+      "height": 627,
+      "credit": "Mette Kramer Kristensen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "root-stripped-hash",
+      "tags": [
+        "BZ",
+        "Demonstration",
+        "Fristeder",
+        "Nørrebro"
+      ]
+    }
+  ],
+  "sourceUrl": "artikel/flere-frie-steder.html",
+  "sourceType": "artikel-foto"
+}

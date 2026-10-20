@@ -1,0 +1,217 @@
+{
+  "id": "stop-politivold",
+  "sourceNid": 28789,
+  "slug": "stop-politivold",
+  "title": "Stop politivold",
+  "publishedAt": "2016-12-19T12:34:43+01:00",
+  "modifiedAt": "2016-12-19T12:54:25+01:00",
+  "authors": [
+    "Mark Knudsen"
+  ],
+  "photographers": [
+    "Alexander Zehntner",
+    "Mette Kramer Kristensen"
+  ],
+  "prefix": null,
+  "series": null,
+  "manchet": "17. december var der indkaldt til demonstration mod politivold. Ifølge arrangørerne var anledningen politiets agressive adfærd under moddemonstrationen mod 'For Frihed' den 3. december, hvor flere demonstranter blev slået med politiknipler.",
+  "introMarkdown": "",
+  "tags": [
+    "Aktivisme",
+    "Demonstration",
+    "Politivold"
+  ],
+  "genre": "Kultur",
+  "coverImage": "01",
+  "images": [
+    {
+      "id": "01",
+      "sortOrder": 1,
+      "filename": "01-ssk6842-0.jpg",
+      "originalFilename": "_SSK6842_0.jpg",
+      "width": 940,
+      "height": 625,
+      "credit": "Alexander Zehntner",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "Aktivisme",
+        "Demonstration",
+        "Politivold"
+      ]
+    },
+    {
+      "id": "02",
+      "sortOrder": 2,
+      "filename": "02-ssk6863-0.jpg",
+      "originalFilename": "_SSK6863_0.jpg",
+      "width": 940,
+      "height": 625,
+      "credit": "Alexander Zehntner",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "Aktivisme",
+        "Demonstration",
+        "Politivold"
+      ]
+    },
+    {
+      "id": "03",
+      "sortOrder": 3,
+      "filename": "03-demo-stop-politivold-2278.jpg",
+      "originalFilename": "demo_stop_politivold-2278.JPG",
+      "width": 940,
+      "height": 627,
+      "credit": "Mette Kramer Kristensen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "Aktivisme",
+        "Demonstration",
+        "Politivold"
+      ]
+    },
+    {
+      "id": "04",
+      "sortOrder": 4,
+      "filename": "04-ssk6856-0.jpg",
+      "originalFilename": "_SSK6856_0.jpg",
+      "width": 940,
+      "height": 625,
+      "credit": "Alexander Zehntner",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "Aktivisme",
+        "Demonstration",
+        "Politivold"
+      ]
+    },
+    {
+      "id": "05",
+      "sortOrder": 5,
+      "filename": "05-demo-stop-politivold-2281.jpg",
+      "originalFilename": "demo_stop_politivold-2281.JPG",
+      "width": 940,
+      "height": 627,
+      "credit": "Mette Kramer Kristensen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "Aktivisme",
+        "Demonstration",
+        "Politivold"
+      ]
+    },
+    {
+      "id": "06",
+      "sortOrder": 6,
+      "filename": "06-demo-stop-politivold-2297.jpg",
+      "originalFilename": "demo_stop_politivold-2297.JPG",
+      "width": 940,
+      "height": 627,
+      "credit": "Mette Kramer Kristensen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "Aktivisme",
+        "Demonstration",
+        "Politivold"
+      ]
+    },
+    {
+      "id": "07",
+      "sortOrder": 7,
+      "filename": "07-demo-stop-politivold-2300-0.jpg",
+      "originalFilename": "demo_stop_politivold-2300_0.JPG",
+      "width": 940,
+      "height": 627,
+      "credit": "Mette Kramer Kristensen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "Aktivisme",
+        "Demonstration",
+        "Politivold"
+      ]
+    },
+    {
+      "id": "08",
+      "sortOrder": 8,
+      "filename": "08-demo-stop-politivold-2306.jpg",
+      "originalFilename": "demo_stop_politivold-2306.JPG",
+      "width": 940,
+      "height": 627,
+      "credit": "Mette Kramer Kristensen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "Aktivisme",
+        "Demonstration",
+        "Politivold"
+      ]
+    },
+    {
+      "id": "09",
+      "sortOrder": 9,
+      "filename": "09-demo-stop-politivold-2307.jpg",
+      "originalFilename": "demo_stop_politivold-2307.JPG",
+      "width": 940,
+      "height": 627,
+      "credit": "Mette Kramer Kristensen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "Aktivisme",
+        "Demonstration",
+        "Politivold"
+      ]
+    },
+    {
+      "id": "10",
+      "sortOrder": 10,
+      "filename": "10-demo-stop-politivold-2315.jpg",
+      "originalFilename": "demo_stop_politivold-2315.JPG",
+      "width": 940,
+      "height": 627,
+      "credit": "Mette Kramer Kristensen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "Aktivisme",
+        "Demonstration",
+        "Politivold"
+      ]
+    },
+    {
+      "id": "11",
+      "sortOrder": 11,
+      "filename": "11-demo-stop-politivold-2320.jpg",
+      "originalFilename": "demo_stop_politivold-2320.JPG",
+      "width": 940,
+      "height": 627,
+      "credit": "Mette Kramer Kristensen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "Aktivisme",
+        "Demonstration",
+        "Politivold"
+      ]
+    }
+  ],
+  "sourceUrl": "fotoserie/stop-politivold.html",
+  "sourceType": "fotoserie"
+}

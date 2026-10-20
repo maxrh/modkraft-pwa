@@ -1,0 +1,138 @@
+{
+  "id": "hjemloese-er-hundens-bedste-ven",
+  "sourceNid": 23465,
+  "slug": "hjemloese-er-hundens-bedste-ven",
+  "title": "Hjemløse er hundens bedste ven",
+  "publishedAt": "2013-12-19T14:55:28+01:00",
+  "modifiedAt": "2013-12-20T17:15:09+01:00",
+  "authors": [
+    "Mark Knudsen"
+  ],
+  "photographers": [
+    "Mette Kramer Kristensen"
+  ],
+  "prefix": "Kalender",
+  "series": null,
+  "manchet": "Modkraft-fotograf Mette Kramer Kristensen har fotograferet socialt udsatte, hjemløse – og deres hunde. Billederne kan også ses i bladet Hus Forbi's årlige kalender, der kan købes af lokale sælgere for 50 kroner (30 kr. går direkte til sælgeren).",
+  "introMarkdown": "",
+  "tags": [
+    "Hjemløse",
+    "Hus Forbi",
+    "Socialt",
+    "Velfærd"
+  ],
+  "genre": "Nyhed",
+  "coverImage": "01",
+  "images": [
+    {
+      "id": "01",
+      "sortOrder": 1,
+      "filename": "01-frank-ricky.jpg",
+      "originalFilename": "frank_ricky.JPG",
+      "width": 940,
+      "height": 712,
+      "credit": "Mette Kramer Kristensen",
+      "caption": "Ricky og Frank med hundene Bertram og Blondie",
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "Hjemløse",
+        "Hus Forbi",
+        "Socialt",
+        "Velfærd"
+      ]
+    },
+    {
+      "id": "02",
+      "sortOrder": 2,
+      "filename": "02-karin-michael.jpg",
+      "originalFilename": "karin_michael.JPG",
+      "width": 940,
+      "height": 712,
+      "credit": "Mette Kramer Kristensen",
+      "caption": "Karin og Michael med hundene Nicki og Tyson",
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "Hjemløse",
+        "Hus Forbi",
+        "Socialt",
+        "Velfærd"
+      ]
+    },
+    {
+      "id": "03",
+      "sortOrder": 3,
+      "filename": "03-runar.jpg",
+      "originalFilename": "runar.JPG",
+      "width": 940,
+      "height": 712,
+      "credit": "Mette Kramer Kristensen",
+      "caption": "Runar med hundene Sacha, Storm og Freja",
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "Hjemløse",
+        "Hus Forbi",
+        "Socialt",
+        "Velfærd"
+      ]
+    },
+    {
+      "id": "04",
+      "sortOrder": 4,
+      "filename": "04-klaus-0.jpg",
+      "originalFilename": "klaus_0.JPG",
+      "width": 940,
+      "height": 712,
+      "credit": "Mette Kramer Kristensen",
+      "caption": "Klaus med hunden Bandit",
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "Hjemløse",
+        "Hus Forbi",
+        "Socialt",
+        "Velfærd"
+      ]
+    },
+    {
+      "id": "05",
+      "sortOrder": 5,
+      "filename": "05-linda-1.jpg",
+      "originalFilename": "linda-1.JPG",
+      "width": 940,
+      "height": 712,
+      "credit": "Mette Kramer Kristensen",
+      "caption": "Linda med hunden Maya",
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "Hjemløse",
+        "Hus Forbi",
+        "Socialt",
+        "Velfærd"
+      ]
+    },
+    {
+      "id": "06",
+      "sortOrder": 6,
+      "filename": "06-poelse.jpg",
+      "originalFilename": "poelse.JPG",
+      "width": 940,
+      "height": 712,
+      "credit": "Mette Kramer Kristensen",
+      "caption": "Pølse med hunden Pøcha",
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "Hjemløse",
+        "Hus Forbi",
+        "Socialt",
+        "Velfærd"
+      ]
+    }
+  ],
+  "sourceUrl": "fotoserie/hjeml-se-er-hundens-bedste-ven.html",
+  "sourceType": "fotoserie"
+}

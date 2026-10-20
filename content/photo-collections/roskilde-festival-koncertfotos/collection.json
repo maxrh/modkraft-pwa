@@ -1,0 +1,334 @@
+{
+  "id": "roskilde-festival-koncertfotos",
+  "sourceNid": 24642,
+  "slug": "roskilde-festival-koncertfotos",
+  "title": "Roskilde Festival: Koncertfotos",
+  "publishedAt": "2014-07-05T11:55:30+02:00",
+  "modifiedAt": "2014-07-07T09:45:56+02:00",
+  "authors": [
+    "Mark Knudsen"
+  ],
+  "photographers": [
+    "Mark Knudsen"
+  ],
+  "prefix": null,
+  "series": null,
+  "manchet": "Bands og solister fra Roskilde Festival 2014.",
+  "introMarkdown": "[Se også links om Roskilde Festival 2014-2004 på Modkraft](http://modkraft.dk/artikel/roskilde-festival-0).",
+  "tags": [
+    "Koncert",
+    "Kultur",
+    "Musik",
+    "Roskilde Festival"
+  ],
+  "genre": "Nyhed",
+  "coverImage": "01",
+  "images": [
+    {
+      "id": "01",
+      "sortOrder": 1,
+      "filename": "01-sivas-5200.jpg",
+      "originalFilename": "sivas_5200.jpg",
+      "width": 940,
+      "height": 627,
+      "credit": "Mark Knudsen",
+      "caption": "S!vas",
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "Koncert",
+        "Kultur",
+        "Musik",
+        "Roskilde Festival",
+        "S!vas"
+      ]
+    },
+    {
+      "id": "02",
+      "sortOrder": 2,
+      "filename": "02-sivas-5177.jpg",
+      "originalFilename": "sivas_5177.jpg",
+      "width": 940,
+      "height": 627,
+      "credit": "Mark Knudsen",
+      "caption": "S!vas",
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "Koncert",
+        "Kultur",
+        "Musik",
+        "Roskilde Festival",
+        "S!vas"
+      ]
+    },
+    {
+      "id": "03",
+      "sortOrder": 3,
+      "filename": "03-outcast-5410.jpg",
+      "originalFilename": "outcast_5410.jpg",
+      "width": 940,
+      "height": 627,
+      "credit": "Mark Knudsen",
+      "caption": "Outkast",
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "Koncert",
+        "Kultur",
+        "Musik",
+        "Outkast",
+        "Roskilde Festival"
+      ]
+    },
+    {
+      "id": "04",
+      "sortOrder": 4,
+      "filename": "04-mg-5349.jpg",
+      "originalFilename": "_MG_5349.jpg",
+      "width": 940,
+      "height": 627,
+      "credit": "Mark Knudsen",
+      "caption": "Outkast",
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "Koncert",
+        "Kultur",
+        "Musik",
+        "Outkast",
+        "Roskilde Festival"
+      ]
+    },
+    {
+      "id": "05",
+      "sortOrder": 5,
+      "filename": "05-liars-5490.jpg",
+      "originalFilename": "liars_5490.jpg",
+      "width": 940,
+      "height": 627,
+      "credit": "Mark Knudsen",
+      "caption": "Liars",
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "Koncert",
+        "Kultur",
+        "Liars",
+        "Musik",
+        "Roskilde Festival"
+      ]
+    },
+    {
+      "id": "06",
+      "sortOrder": 6,
+      "filename": "06-mg-5635.jpg",
+      "originalFilename": "_MG_5635.jpg",
+      "width": 940,
+      "height": 627,
+      "credit": "Mark Knudsen",
+      "caption": "Nadya Tolokonnikova og Masha Alyokhina fra Pussy Riot",
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "Koncert",
+        "Kultur",
+        "Musik",
+        "Pussy Riot",
+        "Roskilde Festival"
+      ]
+    },
+    {
+      "id": "07",
+      "sortOrder": 7,
+      "filename": "07-mg-5672.jpg",
+      "originalFilename": "_MG_5672.jpg",
+      "width": 940,
+      "height": 627,
+      "credit": "Mark Knudsen",
+      "caption": "Mamar Kassey",
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "Koncert",
+        "Kultur",
+        "Mamar Kassey",
+        "Musik",
+        "Roskilde Festival"
+      ]
+    },
+    {
+      "id": "08",
+      "sortOrder": 8,
+      "filename": "08-mg-6029.jpg",
+      "originalFilename": "_MG_6029.jpg",
+      "width": 940,
+      "height": 627,
+      "credit": "Mark Knudsen",
+      "caption": "Damon Albarn",
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "Damon Albarn",
+        "Koncert",
+        "Kultur",
+        "Musik",
+        "Roskilde Festival"
+      ]
+    },
+    {
+      "id": "09",
+      "sortOrder": 9,
+      "filename": "09-mg-6095-0.jpg",
+      "originalFilename": "_MG_6095_0.jpg",
+      "width": 940,
+      "height": 627,
+      "credit": "Mark Knudsen",
+      "caption": "Damon Albarn",
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "Damon Albarn",
+        "Koncert",
+        "Kultur",
+        "Musik",
+        "Roskilde Festival"
+      ]
+    },
+    {
+      "id": "10",
+      "sortOrder": 10,
+      "filename": "10-mg-6169.jpg",
+      "originalFilename": "_MG_6169.jpg",
+      "width": 940,
+      "height": 627,
+      "credit": "Mark Knudsen",
+      "caption": "Rob Zombie",
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "Koncert",
+        "Kultur",
+        "Musik",
+        "Rob Zombie",
+        "Roskilde Festival"
+      ]
+    },
+    {
+      "id": "11",
+      "sortOrder": 11,
+      "filename": "11-mg-6439.jpg",
+      "originalFilename": "_MG_6439.jpg",
+      "width": 940,
+      "height": 627,
+      "credit": "Mark Knudsen",
+      "caption": "Future Islands",
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "Future Islands",
+        "Koncert",
+        "Kultur",
+        "Musik",
+        "Roskilde Festival"
+      ]
+    },
+    {
+      "id": "12",
+      "sortOrder": 12,
+      "filename": "12-mg-6265-alt.jpg",
+      "originalFilename": "_MG_6265_alt.jpg",
+      "width": 940,
+      "height": 1410,
+      "credit": "Mark Knudsen",
+      "caption": "Future Islands",
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "Future Islands",
+        "Koncert",
+        "Kultur",
+        "Musik",
+        "Roskilde Festival"
+      ]
+    },
+    {
+      "id": "13",
+      "sortOrder": 13,
+      "filename": "13-mg-6617.jpg",
+      "originalFilename": "_MG_6617.jpg",
+      "width": 940,
+      "height": 627,
+      "credit": "Mark Knudsen",
+      "caption": "Nikolaj Nørlund",
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "Koncert",
+        "Kultur",
+        "Musik",
+        "Nikolaj Nørlund",
+        "Roskilde Festival"
+      ]
+    },
+    {
+      "id": "14",
+      "sortOrder": 14,
+      "filename": "14-mg-6674.jpg",
+      "originalFilename": "_MG_6674.jpg",
+      "width": 940,
+      "height": 627,
+      "credit": "Mark Knudsen",
+      "caption": "Nikolaj Nørlund",
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "Koncert",
+        "Kultur",
+        "Musik",
+        "Nikolaj Nørlund",
+        "Roskilde Festival"
+      ]
+    },
+    {
+      "id": "15",
+      "sortOrder": 15,
+      "filename": "15-mg-6714.jpg",
+      "originalFilename": "_MG_6714.jpg",
+      "width": 940,
+      "height": 627,
+      "credit": "Mark Knudsen",
+      "caption": "Jenny Wilson",
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "Jenny Wilson",
+        "Koncert",
+        "Kultur",
+        "Musik",
+        "Roskilde Festival"
+      ]
+    },
+    {
+      "id": "16",
+      "sortOrder": 16,
+      "filename": "16-mg-6793.jpg",
+      "originalFilename": "_MG_6793.jpg",
+      "width": 940,
+      "height": 627,
+      "credit": "Mark Knudsen",
+      "caption": "Jenny Wilson",
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "Jenny Wilson",
+        "Koncert",
+        "Kultur",
+        "Musik",
+        "Roskilde Festival"
+      ]
+    }
+  ],
+  "sourceUrl": "fotoserie/roskilde-festival-koncertfotos.html",
+  "sourceType": "fotoserie"
+}

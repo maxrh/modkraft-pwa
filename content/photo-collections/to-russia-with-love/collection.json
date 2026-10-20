@@ -1,0 +1,210 @@
+{
+  "id": "to-russia-with-love",
+  "sourceNid": 22593,
+  "slug": "to-russia-with-love",
+  "title": "To Russia With Love",
+  "publishedAt": "2013-08-21T13:05:09+02:00",
+  "modifiedAt": "2013-08-21T13:58:36+02:00",
+  "authors": [
+    "Brian Berg"
+  ],
+  "photographers": [
+    "Brian Berg"
+  ],
+  "prefix": "Demonstration",
+  "series": null,
+  "manchet": "Omkring 10.000 mennesker deltog tirsdag den 20. august 2013 i en farverig demonstration imod Ruslands nye lovgivning imod »propaganda for utraditionelle familieformer«.",
+  "introMarkdown": "",
+  "tags": [
+    "Demonstration",
+    "LGBT+",
+    "Rusland",
+    "Solidaritet"
+  ],
+  "genre": null,
+  "coverImage": "01",
+  "images": [
+    {
+      "id": "01",
+      "sortOrder": 1,
+      "filename": "01-1.jpg",
+      "originalFilename": "1_.jpg",
+      "width": 940,
+      "height": 627,
+      "credit": "Brian Berg",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "Demonstration",
+        "LGBT+",
+        "Rusland",
+        "Solidaritet"
+      ]
+    },
+    {
+      "id": "02",
+      "sortOrder": 2,
+      "filename": "02-2.jpg",
+      "originalFilename": "2_.jpg",
+      "width": 940,
+      "height": 627,
+      "credit": "Brian Berg",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "Demonstration",
+        "LGBT+",
+        "Rusland",
+        "Solidaritet"
+      ]
+    },
+    {
+      "id": "03",
+      "sortOrder": 3,
+      "filename": "03-4.jpg",
+      "originalFilename": "4_.jpg",
+      "width": 940,
+      "height": 627,
+      "credit": "Brian Berg",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "Demonstration",
+        "LGBT+",
+        "Rusland",
+        "Solidaritet"
+      ]
+    },
+    {
+      "id": "04",
+      "sortOrder": 4,
+      "filename": "04-5.jpg",
+      "originalFilename": "5_.jpg",
+      "width": 940,
+      "height": 627,
+      "credit": "Brian Berg",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "Demonstration",
+        "LGBT+",
+        "Rusland",
+        "Solidaritet"
+      ]
+    },
+    {
+      "id": "05",
+      "sortOrder": 5,
+      "filename": "05-6.jpg",
+      "originalFilename": "6_.jpg",
+      "width": 940,
+      "height": 627,
+      "credit": "Brian Berg",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "Demonstration",
+        "LGBT+",
+        "Rusland",
+        "Solidaritet"
+      ]
+    },
+    {
+      "id": "06",
+      "sortOrder": 6,
+      "filename": "06-7.jpg",
+      "originalFilename": "7_.jpg",
+      "width": 940,
+      "height": 627,
+      "credit": "Brian Berg",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "Demonstration",
+        "LGBT+",
+        "Rusland",
+        "Solidaritet"
+      ]
+    },
+    {
+      "id": "07",
+      "sortOrder": 7,
+      "filename": "07-11-0.jpg",
+      "originalFilename": "11__0.jpg",
+      "width": 940,
+      "height": 627,
+      "credit": "Brian Berg",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "Demonstration",
+        "LGBT+",
+        "Rusland",
+        "Solidaritet"
+      ]
+    },
+    {
+      "id": "08",
+      "sortOrder": 8,
+      "filename": "08-30.jpg",
+      "originalFilename": "30_.jpg",
+      "width": 940,
+      "height": 627,
+      "credit": "Brian Berg",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "Demonstration",
+        "LGBT+",
+        "Rusland",
+        "Solidaritet"
+      ]
+    },
+    {
+      "id": "09",
+      "sortOrder": 9,
+      "filename": "09-35.jpg",
+      "originalFilename": "35_.jpg",
+      "width": 940,
+      "height": 627,
+      "credit": "Brian Berg",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "Demonstration",
+        "LGBT+",
+        "Rusland",
+        "Solidaritet"
+      ]
+    },
+    {
+      "id": "10",
+      "sortOrder": 10,
+      "filename": "10-36-0.jpg",
+      "originalFilename": "36__0.jpg",
+      "width": 940,
+      "height": 639,
+      "credit": "Brian Berg",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "Demonstration",
+        "LGBT+",
+        "Rusland",
+        "Solidaritet"
+      ]
+    }
+  ],
+  "sourceUrl": "fotoserie/russia-love.html",
+  "sourceType": "fotoserie"
+}

@@ -1,0 +1,216 @@
+{
+  "id": "pausefisk",
+  "sourceNid": 21889,
+  "slug": "pausefisk",
+  "title": "Pausefisk",
+  "publishedAt": "2013-05-08T15:15:38+02:00",
+  "modifiedAt": "2013-05-09T11:56:57+02:00",
+  "authors": [
+    "Brian Berg"
+  ],
+  "photographers": [
+    "Brian Berg"
+  ],
+  "prefix": "Akvarium",
+  "series": null,
+  "manchet": "Modkraft har besøgt akvariet Den Blå Planet. 7 millioner liter vand med friske fisk.\n\nEn halv liter vand i kantinen koster 20 kr., men det er gratis på lokummet.",
+  "introMarkdown": "",
+  "tags": [
+    "Akvarium",
+    "Den Blå Planet",
+    "Natur"
+  ],
+  "genre": null,
+  "coverImage": "01",
+  "images": [
+    {
+      "id": "01",
+      "sortOrder": 1,
+      "filename": "01-0.jpg",
+      "originalFilename": "0.jpg",
+      "width": 940,
+      "height": 627,
+      "credit": "Brian Berg",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "Akvarium",
+        "Den Blå Planet",
+        "Natur"
+      ]
+    },
+    {
+      "id": "02",
+      "sortOrder": 2,
+      "filename": "02-2-3.jpg",
+      "originalFilename": "2_3.jpg",
+      "width": 940,
+      "height": 627,
+      "credit": "Brian Berg",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "Akvarium",
+        "Den Blå Planet",
+        "Natur"
+      ]
+    },
+    {
+      "id": "03",
+      "sortOrder": 3,
+      "filename": "03-3.jpg",
+      "originalFilename": "3,.jpg",
+      "width": 940,
+      "height": 627,
+      "credit": "Brian Berg",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "Akvarium",
+        "Den Blå Planet",
+        "Natur"
+      ]
+    },
+    {
+      "id": "04",
+      "sortOrder": 4,
+      "filename": "04-3-3.jpg",
+      "originalFilename": "3_3.jpg",
+      "width": 940,
+      "height": 627,
+      "credit": "Brian Berg",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "Akvarium",
+        "Den Blå Planet",
+        "Natur"
+      ]
+    },
+    {
+      "id": "05",
+      "sortOrder": 5,
+      "filename": "05-5.jpg",
+      "originalFilename": "5,.jpg",
+      "width": 940,
+      "height": 627,
+      "credit": "Brian Berg",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "Akvarium",
+        "Den Blå Planet",
+        "Natur"
+      ]
+    },
+    {
+      "id": "06",
+      "sortOrder": 6,
+      "filename": "06-5-2.jpg",
+      "originalFilename": "5_2.jpg",
+      "width": 940,
+      "height": 627,
+      "credit": "Brian Berg",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "Akvarium",
+        "Den Blå Planet",
+        "Natur"
+      ]
+    },
+    {
+      "id": "07",
+      "sortOrder": 7,
+      "filename": "07-6.jpg",
+      "originalFilename": "6,.jpg",
+      "width": 940,
+      "height": 627,
+      "credit": "Brian Berg",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "Akvarium",
+        "Den Blå Planet",
+        "Natur"
+      ]
+    },
+    {
+      "id": "08",
+      "sortOrder": 8,
+      "filename": "08-9-0.jpg",
+      "originalFilename": "9_0.jpg",
+      "width": 940,
+      "height": 627,
+      "credit": "Brian Berg",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "Akvarium",
+        "Den Blå Planet",
+        "Natur"
+      ]
+    },
+    {
+      "id": "09",
+      "sortOrder": 9,
+      "filename": "09-10.jpg",
+      "originalFilename": "10,,.jpg",
+      "width": 940,
+      "height": 627,
+      "credit": "Brian Berg",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "Akvarium",
+        "Den Blå Planet",
+        "Natur"
+      ]
+    },
+    {
+      "id": "10",
+      "sortOrder": 10,
+      "filename": "10-fisk-05.jpg",
+      "originalFilename": "fisk_05.jpg",
+      "width": 940,
+      "height": 627,
+      "credit": "Brian Berg",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "Akvarium",
+        "Den Blå Planet",
+        "Natur"
+      ]
+    },
+    {
+      "id": "11",
+      "sortOrder": 11,
+      "filename": "11-12-0.jpg",
+      "originalFilename": "12_0.jpg",
+      "width": 940,
+      "height": 627,
+      "credit": "Brian Berg",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "Akvarium",
+        "Den Blå Planet",
+        "Natur"
+      ]
+    }
+  ],
+  "sourceUrl": "fotoserie/pausefisk.html",
+  "sourceType": "fotoserie"
+}

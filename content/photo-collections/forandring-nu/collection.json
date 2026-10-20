@@ -1,0 +1,354 @@
+{
+  "id": "forandring-nu",
+  "sourceNid": 18023,
+  "slug": "forandring-nu",
+  "title": "Forandring Nu!",
+  "publishedAt": "2012-03-30T11:13:00+02:00",
+  "modifiedAt": "2012-04-02T14:54:25+02:00",
+  "authors": [
+    "Mark Knudsen"
+  ],
+  "photographers": [
+    "Mette Kramer Kristensen"
+  ],
+  "prefix": "Demonstration",
+  "series": null,
+  "manchet": null,
+  "introMarkdown": "Forandring nu! Sådan lød opfordringen fra 1.500 demonstranter, der torsdag den 29. marts 2012 gik på gaden. Bag initiativet stod den danske fagbevægelse, som sagde: »Brug krisen til grøn og social omstilling af Europa, beskyt klima og miljø, bekæmp jobkrise, ungdomsledighed og rå finansmagt, forsvar velfærd og solidaritet - stop social dumping i EU«.\n\nFoto: Mette Kramer Kristensen.",
+  "tags": [
+    "Demonstration",
+    "Fagbevægelse",
+    "Klima",
+    "Velfærd"
+  ],
+  "genre": null,
+  "coverImage": "01",
+  "images": [
+    {
+      "id": "01",
+      "sortOrder": 1,
+      "filename": "01-forandring-nu-3.jpg",
+      "originalFilename": "Forandring Nu-3.jpg",
+      "width": 940,
+      "height": 627,
+      "credit": "Mette Kramer Kristensen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "root-stripped-hash",
+      "tags": [
+        "Demonstration",
+        "Fagbevægelse",
+        "Klima",
+        "Velfærd"
+      ]
+    },
+    {
+      "id": "02",
+      "sortOrder": 2,
+      "filename": "02-forandring-nu-6.jpg",
+      "originalFilename": "Forandring Nu-6.jpg",
+      "width": 940,
+      "height": 675,
+      "credit": "Mette Kramer Kristensen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "root-stripped-hash",
+      "tags": [
+        "Demonstration",
+        "Fagbevægelse",
+        "Klima",
+        "Velfærd"
+      ]
+    },
+    {
+      "id": "03",
+      "sortOrder": 3,
+      "filename": "03-forandring-nu-10.jpg",
+      "originalFilename": "Forandring Nu-10.jpg",
+      "width": 467,
+      "height": 700,
+      "credit": "Mette Kramer Kristensen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "root-stripped-hash",
+      "tags": [
+        "Demonstration",
+        "Fagbevægelse",
+        "Klima",
+        "Velfærd"
+      ]
+    },
+    {
+      "id": "04",
+      "sortOrder": 4,
+      "filename": "04-forandring-nu-11.jpg",
+      "originalFilename": "Forandring Nu-11.jpg",
+      "width": 467,
+      "height": 700,
+      "credit": "Mette Kramer Kristensen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "root-stripped-hash",
+      "tags": [
+        "Demonstration",
+        "Fagbevægelse",
+        "Klima",
+        "Velfærd"
+      ]
+    },
+    {
+      "id": "05",
+      "sortOrder": 5,
+      "filename": "05-forandring-nu-23.jpg",
+      "originalFilename": "Forandring Nu-23.jpg",
+      "width": 940,
+      "height": 627,
+      "credit": "Mette Kramer Kristensen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "root-stripped-hash",
+      "tags": [
+        "Demonstration",
+        "Fagbevægelse",
+        "Klima",
+        "Velfærd"
+      ]
+    },
+    {
+      "id": "06",
+      "sortOrder": 6,
+      "filename": "06-forandring-nu-25.jpg",
+      "originalFilename": "Forandring Nu-25.jpg",
+      "width": 940,
+      "height": 627,
+      "credit": "Mette Kramer Kristensen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "root-stripped-hash",
+      "tags": [
+        "Demonstration",
+        "Fagbevægelse",
+        "Klima",
+        "Velfærd"
+      ]
+    },
+    {
+      "id": "07",
+      "sortOrder": 7,
+      "filename": "07-forandring-nu-26.jpg",
+      "originalFilename": "Forandring Nu-26.jpg",
+      "width": 940,
+      "height": 627,
+      "credit": "Mette Kramer Kristensen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "root-stripped-hash",
+      "tags": [
+        "Demonstration",
+        "Fagbevægelse",
+        "Klima",
+        "Velfærd"
+      ]
+    },
+    {
+      "id": "08",
+      "sortOrder": 8,
+      "filename": "08-forandring-nu-27.jpg",
+      "originalFilename": "Forandring Nu-27.jpg",
+      "width": 940,
+      "height": 627,
+      "credit": "Mette Kramer Kristensen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "root-stripped-hash",
+      "tags": [
+        "Demonstration",
+        "Fagbevægelse",
+        "Klima",
+        "Velfærd"
+      ]
+    },
+    {
+      "id": "09",
+      "sortOrder": 9,
+      "filename": "09-forandring-nu-32.jpg",
+      "originalFilename": "Forandring Nu-32.jpg",
+      "width": 940,
+      "height": 627,
+      "credit": "Mette Kramer Kristensen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "root-stripped-hash",
+      "tags": [
+        "Demonstration",
+        "Fagbevægelse",
+        "Klima",
+        "Velfærd"
+      ]
+    },
+    {
+      "id": "10",
+      "sortOrder": 10,
+      "filename": "10-forandring-nu-47.jpg",
+      "originalFilename": "Forandring Nu-47.jpg",
+      "width": 940,
+      "height": 627,
+      "credit": "Mette Kramer Kristensen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "root-stripped-hash",
+      "tags": [
+        "Demonstration",
+        "Fagbevægelse",
+        "Klima",
+        "Velfærd"
+      ]
+    },
+    {
+      "id": "11",
+      "sortOrder": 11,
+      "filename": "11-forandring-nu-51.jpg",
+      "originalFilename": "Forandring Nu-51.jpg",
+      "width": 940,
+      "height": 600,
+      "credit": "Mette Kramer Kristensen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "root-stripped-hash",
+      "tags": [
+        "Demonstration",
+        "Fagbevægelse",
+        "Klima",
+        "Velfærd"
+      ]
+    },
+    {
+      "id": "12",
+      "sortOrder": 12,
+      "filename": "12-forandring-nu-52.jpg",
+      "originalFilename": "Forandring Nu-52.jpg",
+      "width": 940,
+      "height": 627,
+      "credit": "Mette Kramer Kristensen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "root-stripped-hash",
+      "tags": [
+        "Demonstration",
+        "Fagbevægelse",
+        "Klima",
+        "Velfærd"
+      ]
+    },
+    {
+      "id": "13",
+      "sortOrder": 13,
+      "filename": "13-forandring-nu-59.jpg",
+      "originalFilename": "Forandring Nu-59.jpg",
+      "width": 940,
+      "height": 627,
+      "credit": "Mette Kramer Kristensen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "root-stripped-hash",
+      "tags": [
+        "Demonstration",
+        "Fagbevægelse",
+        "Klima",
+        "Velfærd"
+      ]
+    },
+    {
+      "id": "14",
+      "sortOrder": 14,
+      "filename": "14-forandring-nu-67.jpg",
+      "originalFilename": "Forandring Nu-67.jpg",
+      "width": 557,
+      "height": 700,
+      "credit": "Mette Kramer Kristensen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "root-stripped-hash",
+      "tags": [
+        "Demonstration",
+        "Fagbevægelse",
+        "Klima",
+        "Velfærd"
+      ]
+    },
+    {
+      "id": "15",
+      "sortOrder": 15,
+      "filename": "15-forandring-nu-73.jpg",
+      "originalFilename": "Forandring Nu-73.jpg",
+      "width": 940,
+      "height": 627,
+      "credit": "Mette Kramer Kristensen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "root-stripped-hash",
+      "tags": [
+        "Demonstration",
+        "Fagbevægelse",
+        "Klima",
+        "Velfærd"
+      ]
+    },
+    {
+      "id": "16",
+      "sortOrder": 16,
+      "filename": "16-forandring-nu-76.jpg",
+      "originalFilename": "Forandring Nu-76.jpg",
+      "width": 940,
+      "height": 627,
+      "credit": "Mette Kramer Kristensen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "root-stripped-hash",
+      "tags": [
+        "Demonstration",
+        "Fagbevægelse",
+        "Klima",
+        "Velfærd"
+      ]
+    },
+    {
+      "id": "17",
+      "sortOrder": 17,
+      "filename": "17-forandring-nu-78.jpg",
+      "originalFilename": "Forandring Nu-78.jpg",
+      "width": 467,
+      "height": 700,
+      "credit": "Mette Kramer Kristensen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "root-stripped-hash",
+      "tags": [
+        "Demonstration",
+        "Fagbevægelse",
+        "Klima",
+        "Velfærd"
+      ]
+    },
+    {
+      "id": "18",
+      "sortOrder": 18,
+      "filename": "18-forandring-nu-79.jpg",
+      "originalFilename": "Forandring Nu-79.jpg",
+      "width": 940,
+      "height": 627,
+      "credit": "Mette Kramer Kristensen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "root-stripped-hash",
+      "tags": [
+        "Demonstration",
+        "Fagbevægelse",
+        "Klima",
+        "Velfærd"
+      ]
+    }
+  ],
+  "sourceUrl": "artikel/forandring-nu.html",
+  "sourceType": "artikel-foto"
+}

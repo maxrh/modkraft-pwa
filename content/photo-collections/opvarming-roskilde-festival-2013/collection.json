@@ -1,0 +1,363 @@
+{
+  "id": "opvarming-roskilde-festival-2013",
+  "sourceNid": 22385,
+  "slug": "opvarming-roskilde-festival-2013",
+  "title": "Opvarming Roskilde Festival 2013",
+  "publishedAt": "2013-07-03T15:21:52+02:00",
+  "modifiedAt": "2013-07-03T15:21:52+02:00",
+  "authors": [
+    "Anders Pedersen"
+  ],
+  "photographers": [
+    "Anders Pedersen"
+  ],
+  "prefix": "Roskilde Festival 2013",
+  "series": null,
+  "manchet": "Campingpladsen på Roskilde Festival åbnede officielt i lørdags kl. 18. En halv time inden, væltede publikum hegnet på Camping West og opvarmingen til årets festival var dermed skudt igang. Siden er der blevet hygget, festet, leget, drukket og danset, bl.a. på de 3 scener der skal underholde publikum, indtil festivalenpladsen åbner imorgen kl. 17.",
+  "introMarkdown": "",
+  "tags": [
+    "Koncert",
+    "Kultur",
+    "Musik",
+    "Roskilde Festival"
+  ],
+  "genre": null,
+  "coverImage": "01",
+  "images": [
+    {
+      "id": "01",
+      "sortOrder": 1,
+      "filename": "01-img-0613-0.jpg",
+      "originalFilename": "IMG_0613_0.jpg",
+      "width": 940,
+      "height": 627,
+      "credit": "Anders Pedersen",
+      "caption": "Hegnet i publikumskøen blev væltet 17.30 i torsdags",
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "Koncert",
+        "Kultur",
+        "Musik",
+        "Roskilde Festival"
+      ]
+    },
+    {
+      "id": "02",
+      "sortOrder": 2,
+      "filename": "02-img-0567-0.jpg",
+      "originalFilename": "IMG_0567_0.jpg",
+      "width": 940,
+      "height": 627,
+      "credit": "Anders Pedersen",
+      "caption": "Publikum \"stormer\" campingpladsen for at finde en god teltplads",
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "Koncert",
+        "Kultur",
+        "Musik",
+        "Roskilde Festival"
+      ]
+    },
+    {
+      "id": "03",
+      "sortOrder": 3,
+      "filename": "03-img-0808-0.jpg",
+      "originalFilename": "IMG_0808_0.jpg",
+      "width": 940,
+      "height": 627,
+      "credit": "Anders Pedersen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "Koncert",
+        "Kultur",
+        "Musik",
+        "Roskilde Festival"
+      ]
+    },
+    {
+      "id": "04",
+      "sortOrder": 4,
+      "filename": "04-img-0755-0.jpg",
+      "originalFilename": "IMG_0755_0.jpg",
+      "width": 940,
+      "height": 626,
+      "credit": "Anders Pedersen",
+      "caption": "Ponyblod på Streetscenen",
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "Koncert",
+        "Kultur",
+        "Musik",
+        "Ponyblod",
+        "Roskilde Festival"
+      ]
+    },
+    {
+      "id": "05",
+      "sortOrder": 5,
+      "filename": "05-img-0844-0.jpg",
+      "originalFilename": "IMG_0844_0.jpg",
+      "width": 940,
+      "height": 627,
+      "credit": "Anders Pedersen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "Koncert",
+        "Kultur",
+        "Musik",
+        "Roskilde Festival"
+      ]
+    },
+    {
+      "id": "06",
+      "sortOrder": 6,
+      "filename": "06-img-0818-0.jpg",
+      "originalFilename": "IMG_0818_0.jpg",
+      "width": 940,
+      "height": 627,
+      "credit": "Anders Pedersen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "Koncert",
+        "Kultur",
+        "Musik",
+        "Roskilde Festival"
+      ]
+    },
+    {
+      "id": "07",
+      "sortOrder": 7,
+      "filename": "07-img-0857-0.jpg",
+      "originalFilename": "IMG_0857_0.jpg",
+      "width": 940,
+      "height": 627,
+      "credit": "Anders Pedersen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "Koncert",
+        "Kultur",
+        "Musik",
+        "Roskilde Festival"
+      ]
+    },
+    {
+      "id": "08",
+      "sortOrder": 8,
+      "filename": "08-img-0867-0.jpg",
+      "originalFilename": "IMG_0867_0.jpg",
+      "width": 940,
+      "height": 627,
+      "credit": "Anders Pedersen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "Koncert",
+        "Kultur",
+        "Musik",
+        "Roskilde Festival"
+      ]
+    },
+    {
+      "id": "09",
+      "sortOrder": 9,
+      "filename": "09-img-1134-0.jpg",
+      "originalFilename": "IMG_1134_0.jpg",
+      "width": 940,
+      "height": 627,
+      "credit": "Anders Pedersen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "Koncert",
+        "Kultur",
+        "Musik",
+        "Roskilde Festival"
+      ]
+    },
+    {
+      "id": "10",
+      "sortOrder": 10,
+      "filename": "10-img-0863-0.jpg",
+      "originalFilename": "IMG_0863_0.jpg",
+      "width": 940,
+      "height": 627,
+      "credit": "Anders Pedersen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "Koncert",
+        "Kultur",
+        "Musik",
+        "Roskilde Festival"
+      ]
+    },
+    {
+      "id": "11",
+      "sortOrder": 11,
+      "filename": "11-img-1030-0.jpg",
+      "originalFilename": "IMG_1030_0.jpg",
+      "width": 940,
+      "height": 627,
+      "credit": "Anders Pedersen",
+      "caption": "Kaka, Pavillion Junior, søndag",
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "Kaka",
+        "Koncert",
+        "Kultur",
+        "Musik",
+        "Roskilde Festival"
+      ]
+    },
+    {
+      "id": "12",
+      "sortOrder": 12,
+      "filename": "12-img-0999-2.jpg",
+      "originalFilename": "IMG_0999_2.jpg",
+      "width": 940,
+      "height": 627,
+      "credit": "Anders Pedersen",
+      "caption": "Kaka, Pavillion Junior, søndag",
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "Kaka",
+        "Koncert",
+        "Kultur",
+        "Musik",
+        "Roskilde Festival"
+      ]
+    },
+    {
+      "id": "13",
+      "sortOrder": 13,
+      "filename": "13-img-1146-0.jpg",
+      "originalFilename": "IMG_1146_0.jpg",
+      "width": 940,
+      "height": 627,
+      "credit": "Anders Pedersen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "Koncert",
+        "Kultur",
+        "Musik",
+        "Roskilde Festival"
+      ]
+    },
+    {
+      "id": "14",
+      "sortOrder": 14,
+      "filename": "14-img-1247.jpg",
+      "originalFilename": "IMG_1247.jpg",
+      "width": 940,
+      "height": 627,
+      "credit": "Anders Pedersen",
+      "caption": "Okay Funky, Streetscenen, mandag",
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "Koncert",
+        "Kultur",
+        "Musik",
+        "Okay Funky",
+        "Roskilde Festival"
+      ]
+    },
+    {
+      "id": "15",
+      "sortOrder": 15,
+      "filename": "15-img-1258.jpg",
+      "originalFilename": "IMG_1258.jpg",
+      "width": 940,
+      "height": 627,
+      "credit": "Anders Pedersen",
+      "caption": "Okay Funky, Streetscenen, mandag",
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "Koncert",
+        "Kultur",
+        "Musik",
+        "Okay Funky",
+        "Roskilde Festival"
+      ]
+    },
+    {
+      "id": "16",
+      "sortOrder": 16,
+      "filename": "16-img-1448-0.jpg",
+      "originalFilename": "IMG_1448_0.jpg",
+      "width": 940,
+      "height": 627,
+      "credit": "Anders Pedersen",
+      "caption": "Topgunn og Klumben, Streetscenen, mandag",
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "Klumben",
+        "Koncert",
+        "Kultur",
+        "Musik",
+        "Roskilde Festival",
+        "TopGunn"
+      ]
+    },
+    {
+      "id": "17",
+      "sortOrder": 17,
+      "filename": "17-img-1560-0.jpg",
+      "originalFilename": "IMG_1560_0.jpg",
+      "width": 940,
+      "height": 626,
+      "credit": "Anders Pedersen",
+      "caption": "Topgunn og Klumben, Streetscenen, mandag",
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "Klumben",
+        "Koncert",
+        "Kultur",
+        "Musik",
+        "Roskilde Festival",
+        "TopGunn"
+      ]
+    },
+    {
+      "id": "18",
+      "sortOrder": 18,
+      "filename": "18-img-1646-0.jpg",
+      "originalFilename": "IMG_1646_0.jpg",
+      "width": 940,
+      "height": 627,
+      "credit": "Anders Pedersen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "Koncert",
+        "Kultur",
+        "Musik",
+        "Roskilde Festival"
+      ]
+    }
+  ],
+  "sourceUrl": "fotoserie/opvarming-roskilde-festival-2013.html",
+  "sourceType": "fotoserie"
+}

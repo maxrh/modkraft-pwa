@@ -6,7 +6,7 @@ import { getAllPhotos, getArchiveStats } from '@/lib/photos';
 
 const photos = await getAllPhotos();
 const { photoCount } = await getArchiveStats();
-const description = `${photoCount.toLocaleString('da-DK')} dokumentariske fotografier fra Modkrafts fotoseries og fotoblogs.`;
+const description = `${photoCount.toLocaleString('da-DK')} dokumentariske fotografier fra Modkrafts fotoserier og fotoblogs.`;
 ---
 
 <BaseLayout title="Modkraft Arkiv" description={description}>

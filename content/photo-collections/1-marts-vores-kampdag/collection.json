@@ -1,0 +1,354 @@
+{
+  "id": "1-marts-vores-kampdag",
+  "sourceNid": 23883,
+  "slug": "1-marts-vores-kampdag",
+  "title": "1. marts: Vores kampdag",
+  "publishedAt": "2014-03-03T11:12:09+01:00",
+  "modifiedAt": "2014-03-03T12:26:35+01:00",
+  "authors": [
+    "Mette Kramer Kristensen"
+  ],
+  "photographers": [
+    "Mette Kramer Kristensen"
+  ],
+  "prefix": null,
+  "series": null,
+  "manchet": "Flere hundrede mennesker deltog lørdag den 1. marts i protest- og mindedemonstration på syvårsdagen for rydningen af Ungdomshuset på Nørrebro. Vores fotograf var med.\n\n[Læs mere i artiklen »Venstreradikale markerede årsdag for Ungdomshusrydning«.](http://modkraft.dk/artikel/foto-og-video-venstreradikale-markerede-rsdag-ungdomshusrydning)",
+  "introMarkdown": "",
+  "tags": [
+    "1. marts",
+    "Demonstration",
+    "Jagtvej 69",
+    "Rydning",
+    "Ungdomshuset"
+  ],
+  "genre": "Nyhed",
+  "coverImage": "01",
+  "images": [
+    {
+      "id": "01",
+      "sortOrder": 1,
+      "filename": "01-jagtvej-69-1483.jpg",
+      "originalFilename": "jagtvej_69-1483.JPG",
+      "width": 940,
+      "height": 627,
+      "credit": "Mette Kramer Kristensen",
+      "caption": null,
+      "captionSource": "none",
+      "sourceResolve": "relative",
+      "tags": [
+        "1. marts",
+        "Demonstration",
+        "Jagtvej 69",
+        "Rydning",
+        "Ungdomshuset"
+      ]
+    },
+    {
+      "id": "02",
+      "sortOrder": 2,
+      "filename": "02-jagtvej-69-1549-0.jpg",
+      "originalFilename": "jagtvej_69-1549_0.JPG",
+      "width": 940,
+      "height": 627,
+      "credit": "Mette Kramer Kristensen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "1. marts",
+        "Demonstration",
+        "Jagtvej 69",
+        "Rydning",
+        "Ungdomshuset"
+      ]
+    },
+    {
+      "id": "03",
+      "sortOrder": 3,
+      "filename": "03-jagtvej-69-1554.jpg",
+      "originalFilename": "jagtvej_69-1554.JPG",
+      "width": 940,
+      "height": 627,
+      "credit": "Mette Kramer Kristensen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "1. marts",
+        "Demonstration",
+        "Jagtvej 69",
+        "Rydning",
+        "Ungdomshuset"
+      ]
+    },
+    {
+      "id": "04",
+      "sortOrder": 4,
+      "filename": "04-jagtvej-69-1582.jpg",
+      "originalFilename": "jagtvej_69-1582.JPG",
+      "width": 940,
+      "height": 627,
+      "credit": "Mette Kramer Kristensen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "1. marts",
+        "Demonstration",
+        "Jagtvej 69",
+        "Rydning",
+        "Ungdomshuset"
+      ]
+    },
+    {
+      "id": "05",
+      "sortOrder": 5,
+      "filename": "05-jagtvej-69-1591.jpg",
+      "originalFilename": "jagtvej_69-1591.JPG",
+      "width": 940,
+      "height": 627,
+      "credit": "Mette Kramer Kristensen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "1. marts",
+        "Demonstration",
+        "Jagtvej 69",
+        "Rydning",
+        "Ungdomshuset"
+      ]
+    },
+    {
+      "id": "06",
+      "sortOrder": 6,
+      "filename": "06-jagtvej-69-1594.jpg",
+      "originalFilename": "jagtvej_69-1594.JPG",
+      "width": 940,
+      "height": 627,
+      "credit": "Mette Kramer Kristensen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "1. marts",
+        "Demonstration",
+        "Jagtvej 69",
+        "Rydning",
+        "Ungdomshuset"
+      ]
+    },
+    {
+      "id": "07",
+      "sortOrder": 7,
+      "filename": "07-jagtvej-69-1602.jpg",
+      "originalFilename": "jagtvej_69-1602.JPG",
+      "width": 940,
+      "height": 627,
+      "credit": "Mette Kramer Kristensen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "1. marts",
+        "Demonstration",
+        "Jagtvej 69",
+        "Rydning",
+        "Ungdomshuset"
+      ]
+    },
+    {
+      "id": "08",
+      "sortOrder": 8,
+      "filename": "08-jagtvej-69-1619.jpg",
+      "originalFilename": "jagtvej_69-1619.JPG",
+      "width": 940,
+      "height": 627,
+      "credit": "Mette Kramer Kristensen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "1. marts",
+        "Demonstration",
+        "Jagtvej 69",
+        "Rydning",
+        "Ungdomshuset"
+      ]
+    },
+    {
+      "id": "09",
+      "sortOrder": 9,
+      "filename": "09-jagtvej-69-1643.jpg",
+      "originalFilename": "jagtvej_69-1643.JPG",
+      "width": 940,
+      "height": 627,
+      "credit": "Mette Kramer Kristensen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "1. marts",
+        "Demonstration",
+        "Jagtvej 69",
+        "Rydning",
+        "Ungdomshuset"
+      ]
+    },
+    {
+      "id": "10",
+      "sortOrder": 10,
+      "filename": "10-jagtvej-69-1650.jpg",
+      "originalFilename": "jagtvej_69-1650.JPG",
+      "width": 940,
+      "height": 627,
+      "credit": "Mette Kramer Kristensen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "1. marts",
+        "Demonstration",
+        "Jagtvej 69",
+        "Rydning",
+        "Ungdomshuset"
+      ]
+    },
+    {
+      "id": "11",
+      "sortOrder": 11,
+      "filename": "11-jagtvej-69-1662.jpg",
+      "originalFilename": "jagtvej_69-1662.JPG",
+      "width": 940,
+      "height": 627,
+      "credit": "Mette Kramer Kristensen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "1. marts",
+        "Demonstration",
+        "Jagtvej 69",
+        "Rydning",
+        "Ungdomshuset"
+      ]
+    },
+    {
+      "id": "12",
+      "sortOrder": 12,
+      "filename": "12-jagtvej-69-1687.jpg",
+      "originalFilename": "jagtvej_69-1687.JPG",
+      "width": 940,
+      "height": 627,
+      "credit": "Mette Kramer Kristensen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "1. marts",
+        "Demonstration",
+        "Jagtvej 69",
+        "Rydning",
+        "Ungdomshuset"
+      ]
+    },
+    {
+      "id": "13",
+      "sortOrder": 13,
+      "filename": "13-jagtvej-69-1705.jpg",
+      "originalFilename": "jagtvej_69-1705.JPG",
+      "width": 940,
+      "height": 627,
+      "credit": "Mette Kramer Kristensen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "1. marts",
+        "Demonstration",
+        "Jagtvej 69",
+        "Rydning",
+        "Ungdomshuset"
+      ]
+    },
+    {
+      "id": "14",
+      "sortOrder": 14,
+      "filename": "14-jagtvej-69-1709.jpg",
+      "originalFilename": "jagtvej_69-1709.JPG",
+      "width": 940,
+      "height": 627,
+      "credit": "Mette Kramer Kristensen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "1. marts",
+        "Demonstration",
+        "Jagtvej 69",
+        "Rydning",
+        "Ungdomshuset"
+      ]
+    },
+    {
+      "id": "15",
+      "sortOrder": 15,
+      "filename": "15-jagtvej-69-1718.jpg",
+      "originalFilename": "jagtvej_69-1718.JPG",
+      "width": 940,
+      "height": 627,
+      "credit": "Mette Kramer Kristensen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "1. marts",
+        "Demonstration",
+        "Jagtvej 69",
+        "Rydning",
+        "Ungdomshuset"
+      ]
+    },
+    {
+      "id": "16",
+      "sortOrder": 16,
+      "filename": "16-jagtvej-69-1743.jpg",
+      "originalFilename": "jagtvej_69-1743.JPG",
+      "width": 940,
+      "height": 627,
+      "credit": "Mette Kramer Kristensen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "1. marts",
+        "Demonstration",
+        "Jagtvej 69",
+        "Rydning",
+        "Ungdomshuset"
+      ]
+    },
+    {
+      "id": "17",
+      "sortOrder": 17,
+      "filename": "17-jagtvej-69-1754.jpg",
+      "originalFilename": "jagtvej_69-1754.JPG",
+      "width": 940,
+      "height": 627,
+      "credit": "Mette Kramer Kristensen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "1. marts",
+        "Demonstration",
+        "Jagtvej 69",
+        "Rydning",
+        "Ungdomshuset"
+      ]
+    }
+  ],
+  "sourceUrl": "fotoserie/1-marts-vores-kampdag.html",
+  "sourceType": "fotoserie"
+}

@@ -1,0 +1,325 @@
+{
+  "id": "save-aleppo",
+  "sourceNid": 28784,
+  "slug": "save-aleppo",
+  "title": "Save Aleppo",
+  "publishedAt": "2016-12-16T10:38:43+01:00",
+  "modifiedAt": "2016-12-18T19:00:21+01:00",
+  "authors": [
+    "Mark Knudsen"
+  ],
+  "photographers": [
+    "Alexander Zehntner"
+  ],
+  "prefix": null,
+  "series": null,
+  "manchet": "Tusindvis af mennesker var samlet på Christiansborgs Slotsplads for at vise deres modstand mod drab på civile i det borgerkrigshærgede Aleppo i Syrien.",
+  "introMarkdown": "",
+  "tags": [
+    "Aleppo",
+    "Christiansborg",
+    "Demonstration",
+    "Solidaritet",
+    "Syrien"
+  ],
+  "genre": "Nyhed",
+  "coverImage": "01",
+  "images": [
+    {
+      "id": "01",
+      "sortOrder": 1,
+      "filename": "01-ssk6407.jpg",
+      "originalFilename": "_SSK6407.jpg",
+      "width": 4256,
+      "height": 2832,
+      "credit": "Alexander Zehntner",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "Aleppo",
+        "Christiansborg",
+        "Demonstration",
+        "Solidaritet",
+        "Syrien"
+      ],
+      "hiresSource": "C:\\Users\\max\\Dropbox\\Monsun\\Monsun Foto Upload\\fotobase\\demo\\20161215_fakkeldemo_ms_syrien\\_SSK6407_az.jpg",
+      "hiresAt": "2026-10-20T02:28:44.111Z"
+    },
+    {
+      "id": "02",
+      "sortOrder": 2,
+      "filename": "02-ssk6414.jpg",
+      "originalFilename": "_SSK6414.jpg",
+      "width": 4256,
+      "height": 2832,
+      "credit": "Alexander Zehntner",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "Aleppo",
+        "Christiansborg",
+        "Demonstration",
+        "Solidaritet",
+        "Syrien"
+      ],
+      "hiresSource": "C:\\Users\\max\\Dropbox\\Monsun\\Monsun Foto Upload\\fotobase\\demo\\20161215_fakkeldemo_ms_syrien\\_SSK6414_az.jpg",
+      "hiresAt": "2026-10-20T02:28:44.843Z"
+    },
+    {
+      "id": "03",
+      "sortOrder": 3,
+      "filename": "03-ssk6417-0.jpg",
+      "originalFilename": "_SSK6417_0.jpg",
+      "width": 4256,
+      "height": 2832,
+      "credit": "Alexander Zehntner",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "Aleppo",
+        "Christiansborg",
+        "Demonstration",
+        "Solidaritet",
+        "Syrien"
+      ],
+      "hiresSource": "C:\\Users\\max\\Dropbox\\Monsun\\Monsun Foto Upload\\fotobase\\demo\\20161215_fakkeldemo_ms_syrien\\_SSK6417_az.jpg",
+      "hiresAt": "2026-10-20T02:28:45.620Z"
+    },
+    {
+      "id": "04",
+      "sortOrder": 4,
+      "filename": "04-ssk6441.jpg",
+      "originalFilename": "_SSK6441.jpg",
+      "width": 4256,
+      "height": 2832,
+      "credit": "Alexander Zehntner",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "Aleppo",
+        "Christiansborg",
+        "Demonstration",
+        "Solidaritet",
+        "Syrien"
+      ],
+      "hiresSource": "C:\\Users\\max\\Dropbox\\Monsun\\Monsun Foto Upload\\fotobase\\demo\\20161215_fakkeldemo_ms_syrien\\_SSK6441_az.jpg",
+      "hiresAt": "2026-10-20T02:28:46.299Z"
+    },
+    {
+      "id": "05",
+      "sortOrder": 5,
+      "filename": "05-ssk6449.jpg",
+      "originalFilename": "_SSK6449.jpg",
+      "width": 4256,
+      "height": 2832,
+      "credit": "Alexander Zehntner",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "Aleppo",
+        "Christiansborg",
+        "Demonstration",
+        "Solidaritet",
+        "Syrien"
+      ],
+      "hiresSource": "C:\\Users\\max\\Dropbox\\Monsun\\Monsun Foto Upload\\fotobase\\demo\\20161215_fakkeldemo_ms_syrien\\_SSK6449_az.jpg",
+      "hiresAt": "2026-10-20T02:28:47.318Z"
+    },
+    {
+      "id": "06",
+      "sortOrder": 6,
+      "filename": "06-ssk6464.jpg",
+      "originalFilename": "_SSK6464.jpg",
+      "width": 4256,
+      "height": 2832,
+      "credit": "Alexander Zehntner",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "Aleppo",
+        "Christiansborg",
+        "Demonstration",
+        "Solidaritet",
+        "Syrien"
+      ],
+      "hiresSource": "C:\\Users\\max\\Dropbox\\Monsun\\Monsun Foto Upload\\fotobase\\demo\\20161215_fakkeldemo_ms_syrien\\_SSK6464_az.jpg",
+      "hiresAt": "2026-10-20T02:28:48.212Z"
+    },
+    {
+      "id": "07",
+      "sortOrder": 7,
+      "filename": "07-ssk6502.jpg",
+      "originalFilename": "_SSK6502.jpg",
+      "width": 4256,
+      "height": 2832,
+      "credit": "Alexander Zehntner",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "Aleppo",
+        "Christiansborg",
+        "Demonstration",
+        "Solidaritet",
+        "Syrien"
+      ],
+      "hiresSource": "C:\\Users\\max\\Dropbox\\Monsun\\Monsun Foto Upload\\fotobase\\demo\\20161215_fakkeldemo_ms_syrien\\_SSK6502_az.jpg",
+      "hiresAt": "2026-10-20T02:28:48.931Z"
+    },
+    {
+      "id": "08",
+      "sortOrder": 8,
+      "filename": "08-ssk6508.jpg",
+      "originalFilename": "_SSK6508.jpg",
+      "width": 4256,
+      "height": 2832,
+      "credit": "Alexander Zehntner",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "Aleppo",
+        "Christiansborg",
+        "Demonstration",
+        "Solidaritet",
+        "Syrien"
+      ],
+      "hiresSource": "C:\\Users\\max\\Dropbox\\Monsun\\Monsun Foto Upload\\fotobase\\demo\\20161215_fakkeldemo_ms_syrien\\_SSK6508_az.jpg",
+      "hiresAt": "2026-10-20T02:28:49.537Z"
+    },
+    {
+      "id": "09",
+      "sortOrder": 9,
+      "filename": "09-ssk6523.jpg",
+      "originalFilename": "_SSK6523.jpg",
+      "width": 4256,
+      "height": 2832,
+      "credit": "Alexander Zehntner",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "Aleppo",
+        "Christiansborg",
+        "Demonstration",
+        "Solidaritet",
+        "Syrien"
+      ],
+      "hiresSource": "C:\\Users\\max\\Dropbox\\Monsun\\Monsun Foto Upload\\fotobase\\demo\\20161215_fakkeldemo_ms_syrien\\_SSK6523_az.jpg",
+      "hiresAt": "2026-10-20T02:28:50.070Z"
+    },
+    {
+      "id": "10",
+      "sortOrder": 10,
+      "filename": "10-ssk6566.jpg",
+      "originalFilename": "_SSK6566.jpg",
+      "width": 4256,
+      "height": 2832,
+      "credit": "Alexander Zehntner",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "Aleppo",
+        "Christiansborg",
+        "Demonstration",
+        "Solidaritet",
+        "Syrien"
+      ],
+      "hiresSource": "C:\\Users\\max\\Dropbox\\Monsun\\Monsun Foto Upload\\fotobase\\demo\\20161215_fakkeldemo_ms_syrien\\_SSK6566_az.jpg",
+      "hiresAt": "2026-10-20T02:28:50.509Z"
+    },
+    {
+      "id": "11",
+      "sortOrder": 11,
+      "filename": "11-ssk6572.jpg",
+      "originalFilename": "_SSK6572.jpg",
+      "width": 4256,
+      "height": 2832,
+      "credit": "Alexander Zehntner",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "Aleppo",
+        "Christiansborg",
+        "Demonstration",
+        "Solidaritet",
+        "Syrien"
+      ],
+      "hiresSource": "C:\\Users\\max\\Dropbox\\Monsun\\Monsun Foto Upload\\fotobase\\demo\\20161215_fakkeldemo_ms_syrien\\_SSK6572_az.jpg",
+      "hiresAt": "2026-10-20T02:28:51.199Z"
+    },
+    {
+      "id": "12",
+      "sortOrder": 12,
+      "filename": "12-ssk6588.jpg",
+      "originalFilename": "_SSK6588.jpg",
+      "width": 4256,
+      "height": 2832,
+      "credit": "Alexander Zehntner",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "Aleppo",
+        "Christiansborg",
+        "Demonstration",
+        "Solidaritet",
+        "Syrien"
+      ],
+      "hiresSource": "C:\\Users\\max\\Dropbox\\Monsun\\Monsun Foto Upload\\fotobase\\demo\\20161215_fakkeldemo_ms_syrien\\_SSK6588_az.jpg",
+      "hiresAt": "2026-10-20T02:28:51.646Z"
+    },
+    {
+      "id": "13",
+      "sortOrder": 13,
+      "filename": "13-ssk6660.jpg",
+      "originalFilename": "_SSK6660.jpg",
+      "width": 4256,
+      "height": 2832,
+      "credit": "Alexander Zehntner",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "Aleppo",
+        "Christiansborg",
+        "Demonstration",
+        "Solidaritet",
+        "Syrien"
+      ],
+      "hiresSource": "C:\\Users\\max\\Dropbox\\Monsun\\Monsun Foto Upload\\fotobase\\demo\\20161215_fakkeldemo_ms_syrien\\_SSK6660_az.jpg",
+      "hiresAt": "2026-10-20T02:28:52.100Z"
+    },
+    {
+      "id": "14",
+      "sortOrder": 14,
+      "filename": "14-ssk6690.jpg",
+      "originalFilename": "_SSK6690.jpg",
+      "width": 4256,
+      "height": 2832,
+      "credit": "Alexander Zehntner",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "Aleppo",
+        "Christiansborg",
+        "Demonstration",
+        "Solidaritet",
+        "Syrien"
+      ],
+      "hiresSource": "C:\\Users\\max\\Dropbox\\Monsun\\Monsun Foto Upload\\fotobase\\demo\\20161215_fakkeldemo_ms_syrien\\_SSK6690_az.jpg",
+      "hiresAt": "2026-10-20T02:28:52.957Z"
+    }
+  ],
+  "sourceUrl": "fotoserie/save-aleppo.html",
+  "sourceType": "fotoserie"
+}

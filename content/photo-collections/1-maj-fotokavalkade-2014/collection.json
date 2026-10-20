@@ -1,0 +1,734 @@
+{
+  "id": "1-maj-fotokavalkade-2014",
+  "sourceNid": 24266,
+  "slug": "1-maj-fotokavalkade-2014",
+  "title": "1. maj fotokavalkade 2014",
+  "publishedAt": "2014-05-02T13:36:13+02:00",
+  "modifiedAt": "2014-05-02T15:13:42+02:00",
+  "authors": [
+    "Mark Knudsen"
+  ],
+  "photographers": [
+    "Mark Knudsen",
+    "Mette Kramer Kristensen"
+  ],
+  "prefix": null,
+  "series": null,
+  "manchet": null,
+  "introMarkdown": "Forårssol, fløjter og røde faner. Modkrafts fotografer fulgte med fra morgenmøder, med demonstrationsoptog til Fælledparken i København.",
+  "tags": [
+    "1. maj",
+    "Demonstration",
+    "Fagbevægelse",
+    "Fælledparken",
+    "København"
+  ],
+  "genre": "Nyhed",
+  "coverImage": "01",
+  "images": [
+    {
+      "id": "01",
+      "sortOrder": 1,
+      "filename": "01-001-1.jpg",
+      "originalFilename": "_001_1.jpg",
+      "width": 4712,
+      "height": 3141,
+      "credit": "Mark Knudsen",
+      "caption": "FOA Social- og Sundhed på Frederiksberg byder på morgenbrød til medlemmer",
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "1. maj",
+        "Demonstration",
+        "Fagbevægelse",
+        "FOA",
+        "Frederiksberg",
+        "Fælledparken",
+        "København"
+      ],
+      "hiresSource": "C:\\Users\\max\\Dropbox\\Monsun\\Monsun Foto Upload\\fotobase\\fagligt\\20140502_foa_1.maj_2014_infoa\\_MG_2100_mk.jpg",
+      "hiresAt": "2026-10-20T02:26:06.934Z"
+    },
+    {
+      "id": "02",
+      "sortOrder": 2,
+      "filename": "02-002-1.jpg",
+      "originalFilename": "_002_1.jpg",
+      "width": 5616,
+      "height": 3744,
+      "credit": "Mark Knudsen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "1. maj",
+        "Demonstration",
+        "Fagbevægelse",
+        "Fælledparken",
+        "København"
+      ],
+      "hiresSource": "C:\\Users\\max\\Dropbox\\Monsun\\Monsun Foto Upload\\fotobase\\fagligt\\20140502_foa_1.maj_2014_infoa\\_MG_2220_mk.jpg",
+      "hiresAt": "2026-10-20T02:26:08.430Z"
+    },
+    {
+      "id": "03",
+      "sortOrder": 3,
+      "filename": "03-003-1.jpg",
+      "originalFilename": "_003_1.jpg",
+      "width": 5616,
+      "height": 3744,
+      "credit": "Mark Knudsen",
+      "caption": "Demonstration på vej mod Fælledparken",
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "1. maj",
+        "Demonstration",
+        "Fagbevægelse",
+        "Fælledparken",
+        "København"
+      ],
+      "hiresSource": "C:\\Users\\max\\Dropbox\\Monsun\\Monsun Foto Upload\\fotobase\\fagligt\\20140502_foa_1.maj_2014_infoa\\_MG_2318_mk.jpg",
+      "hiresAt": "2026-10-20T02:26:10.595Z"
+    },
+    {
+      "id": "04",
+      "sortOrder": 4,
+      "filename": "04-004-1.jpg",
+      "originalFilename": "_004_1.jpg",
+      "width": 5616,
+      "height": 3744,
+      "credit": "Mark Knudsen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "1. maj",
+        "Demonstration",
+        "Fagbevægelse",
+        "Fælledparken",
+        "København"
+      ],
+      "hiresSource": "C:\\Users\\max\\Dropbox\\Monsun\\Monsun Foto Upload\\fotobase\\fagligt\\20140502_foa_1.maj_2014_infoa\\_MG_2410_mk.jpg",
+      "hiresAt": "2026-10-20T02:26:12.267Z"
+    },
+    {
+      "id": "05",
+      "sortOrder": 5,
+      "filename": "05-005-1.jpg",
+      "originalFilename": "_005_1.jpg",
+      "width": 3348,
+      "height": 5022,
+      "credit": "Mark Knudsen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "1. maj",
+        "Demonstration",
+        "Fagbevægelse",
+        "Fælledparken",
+        "København"
+      ],
+      "hiresSource": "C:\\Users\\max\\Dropbox\\Monsun\\Monsun Foto Upload\\fotobase\\fagligt\\20140502_foa_1.maj_2014_infoa\\_MG_2553_mk.jpg",
+      "hiresAt": "2026-10-20T02:26:13.681Z"
+    },
+    {
+      "id": "06",
+      "sortOrder": 6,
+      "filename": "06-006-0.jpg",
+      "originalFilename": "_006_0.JPG",
+      "width": 940,
+      "height": 627,
+      "credit": "Mette Kramer Kristensen",
+      "caption": "Hos Antikapitalistisk 1. Maj på Vesterbro Torv er der mulighed for at kaste lagkage på Dansk Folkeparti-politikere",
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "1. maj",
+        "Antikapitalistisk 1. maj",
+        "Dansk Folkeparti",
+        "Demonstration",
+        "Fagbevægelse",
+        "Fælledparken",
+        "København",
+        "Vesterbro"
+      ]
+    },
+    {
+      "id": "07",
+      "sortOrder": 7,
+      "filename": "07-007-0.jpg",
+      "originalFilename": "_007_0.JPG",
+      "width": 940,
+      "height": 627,
+      "credit": "Mette Kramer Kristensen",
+      "caption": "»Antikapitalistisk 1. maj« bevæger sig maj mod Fælledparken",
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "1. maj",
+        "Antikapitalistisk 1. maj",
+        "Demonstration",
+        "Fagbevægelse",
+        "Fælledparken",
+        "København"
+      ]
+    },
+    {
+      "id": "08",
+      "sortOrder": 8,
+      "filename": "08-008.jpg",
+      "originalFilename": "_008.JPG",
+      "width": 940,
+      "height": 627,
+      "credit": "Mette Kramer Kristensen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "1. maj",
+        "Demonstration",
+        "Fagbevægelse",
+        "Fælledparken",
+        "København"
+      ]
+    },
+    {
+      "id": "09",
+      "sortOrder": 9,
+      "filename": "09-009-0.jpg",
+      "originalFilename": "_009_0.JPG",
+      "width": 940,
+      "height": 627,
+      "credit": "Mette Kramer Kristensen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "1. maj",
+        "Demonstration",
+        "Fagbevægelse",
+        "Fælledparken",
+        "København"
+      ]
+    },
+    {
+      "id": "10",
+      "sortOrder": 10,
+      "filename": "10-010-0.jpg",
+      "originalFilename": "_010_0.JPG",
+      "width": 940,
+      "height": 627,
+      "credit": "Mette Kramer Kristensen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "1. maj",
+        "Demonstration",
+        "Fagbevægelse",
+        "Fælledparken",
+        "København"
+      ]
+    },
+    {
+      "id": "11",
+      "sortOrder": 11,
+      "filename": "11-011-0.jpg",
+      "originalFilename": "_011_0.JPG",
+      "width": 940,
+      "height": 627,
+      "credit": "Mette Kramer Kristensen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "1. maj",
+        "Demonstration",
+        "Fagbevægelse",
+        "Fælledparken",
+        "København"
+      ]
+    },
+    {
+      "id": "12",
+      "sortOrder": 12,
+      "filename": "12-012-0.jpg",
+      "originalFilename": "_012_0.JPG",
+      "width": 940,
+      "height": 627,
+      "credit": "Mette Kramer Kristensen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "1. maj",
+        "Demonstration",
+        "Fagbevægelse",
+        "Fælledparken",
+        "København"
+      ]
+    },
+    {
+      "id": "13",
+      "sortOrder": 13,
+      "filename": "13-013-0.jpg",
+      "originalFilename": "_013_0.JPG",
+      "width": 940,
+      "height": 627,
+      "credit": "Mette Kramer Kristensen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "1. maj",
+        "Demonstration",
+        "Fagbevægelse",
+        "Fælledparken",
+        "København"
+      ]
+    },
+    {
+      "id": "14",
+      "sortOrder": 14,
+      "filename": "14-015-0.jpg",
+      "originalFilename": "_015_0.JPG",
+      "width": 940,
+      "height": 627,
+      "credit": "Mette Kramer Kristensen",
+      "caption": "Lærlinge laver bannerdrop på Blegdamsvej nær Fælledparken, København",
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "1. maj",
+        "Demonstration",
+        "Fagbevægelse",
+        "Fælledparken",
+        "København"
+      ]
+    },
+    {
+      "id": "15",
+      "sortOrder": 15,
+      "filename": "15-016-0.jpg",
+      "originalFilename": "_016_0.JPG",
+      "width": 940,
+      "height": 627,
+      "credit": "Mette Kramer Kristensen",
+      "caption": "Fagforeningen PROSA advarer imod patenttrolde",
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "1. maj",
+        "Demonstration",
+        "Fagbevægelse",
+        "Fælledparken",
+        "København",
+        "PROSA"
+      ]
+    },
+    {
+      "id": "16",
+      "sortOrder": 16,
+      "filename": "16-017-0.jpg",
+      "originalFilename": "_017_0.JPG",
+      "width": 940,
+      "height": 627,
+      "credit": "Mette Kramer Kristensen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "1. maj",
+        "Demonstration",
+        "Fagbevægelse",
+        "Fælledparken",
+        "København"
+      ]
+    },
+    {
+      "id": "17",
+      "sortOrder": 17,
+      "filename": "17-018.jpg",
+      "originalFilename": "_018.jpg",
+      "width": 900,
+      "height": 600,
+      "credit": "Mark Knudsen",
+      "caption": "DSU går i samlet optog mod hovedscenen, hvor statsminister Helle Thorning-Schmidt (S) skal tale",
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "1. maj",
+        "Demonstration",
+        "DSU",
+        "Fagbevægelse",
+        "Fælledparken",
+        "Helle Thorning-Schmidt",
+        "København",
+        "Socialdemokraterne"
+      ]
+    },
+    {
+      "id": "18",
+      "sortOrder": 18,
+      "filename": "18-019.jpg",
+      "originalFilename": "_019.jpg",
+      "width": 5616,
+      "height": 3744,
+      "credit": "Mark Knudsen",
+      "caption": "Helle Thorning-Schmidt går på talerstolen, og aktivister starter larmekoncert",
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "1. maj",
+        "Demonstration",
+        "Fagbevægelse",
+        "Fælledparken",
+        "Helle Thorning-Schmidt",
+        "København",
+        "Socialdemokraterne"
+      ],
+      "hiresSource": "C:\\Users\\max\\Dropbox\\Monsun\\Monsun Foto Upload\\fotobase\\aktivisme\\20140505_floejte_helle_thorning_1_maj\\_MG_9924_mk.jpg",
+      "hiresAt": "2026-10-20T02:26:15.275Z"
+    },
+    {
+      "id": "19",
+      "sortOrder": 19,
+      "filename": "19-020.jpg",
+      "originalFilename": "_020.jpg",
+      "width": 5616,
+      "height": 3744,
+      "credit": "Mark Knudsen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "1. maj",
+        "Demonstration",
+        "Fagbevægelse",
+        "Fælledparken",
+        "København"
+      ],
+      "hiresSource": "C:\\Users\\max\\Dropbox\\Monsun\\Monsun Foto Upload\\fotobase\\aktivisme\\20140505_floejte_helle_thorning_1_maj\\_MG_0031_mk.jpg",
+      "hiresAt": "2026-10-20T02:26:16.624Z"
+    },
+    {
+      "id": "20",
+      "sortOrder": 20,
+      "filename": "20-026-0.jpg",
+      "originalFilename": "_026_0.JPG",
+      "width": 940,
+      "height": 627,
+      "credit": "Mette Kramer Kristensen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "1. maj",
+        "Demonstration",
+        "Fagbevægelse",
+        "Fælledparken",
+        "København"
+      ]
+    },
+    {
+      "id": "21",
+      "sortOrder": 21,
+      "filename": "21-021-0.jpg",
+      "originalFilename": "_021_0.jpg",
+      "width": 5239,
+      "height": 3493,
+      "credit": "Mark Knudsen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "1. maj",
+        "Demonstration",
+        "Fagbevægelse",
+        "Fælledparken",
+        "København"
+      ],
+      "hiresSource": "C:\\Users\\max\\Dropbox\\Monsun\\Monsun Foto Upload\\fotobase\\aktivisme\\20140505_floejte_helle_thorning_1_maj\\_MG_9964_mk.jpg",
+      "hiresAt": "2026-10-20T02:26:18.077Z"
+    },
+    {
+      "id": "22",
+      "sortOrder": 22,
+      "filename": "22-022-2.jpg",
+      "originalFilename": "_022_2.jpg",
+      "width": 5178,
+      "height": 3452,
+      "credit": "Mark Knudsen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "1. maj",
+        "Demonstration",
+        "Fagbevægelse",
+        "Fælledparken",
+        "København"
+      ],
+      "hiresSource": "C:\\Users\\max\\Dropbox\\Monsun\\Monsun Foto Upload\\fotobase\\aktivisme\\20140505_floejte_helle_thorning_1_maj\\_MG_0034_mk.jpg",
+      "hiresAt": "2026-10-20T02:26:19.412Z"
+    },
+    {
+      "id": "23",
+      "sortOrder": 23,
+      "filename": "23-023-0.jpg",
+      "originalFilename": "_023_0.jpg",
+      "width": 900,
+      "height": 600,
+      "credit": "Mark Knudsen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "1. maj",
+        "Demonstration",
+        "Fagbevægelse",
+        "Fælledparken",
+        "København"
+      ]
+    },
+    {
+      "id": "24",
+      "sortOrder": 24,
+      "filename": "24-025.jpg",
+      "originalFilename": "_025.JPG",
+      "width": 940,
+      "height": 627,
+      "credit": "Mette Kramer Kristensen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "1. maj",
+        "Demonstration",
+        "Fagbevægelse",
+        "Fælledparken",
+        "København"
+      ]
+    },
+    {
+      "id": "25",
+      "sortOrder": 25,
+      "filename": "25-027.jpg",
+      "originalFilename": "_027.JPG",
+      "width": 940,
+      "height": 627,
+      "credit": "Mette Kramer Kristensen",
+      "caption": null,
+      "captionSource": "none",
+      "sourceResolve": "relative",
+      "tags": [
+        "1. maj",
+        "Demonstration",
+        "Fagbevægelse",
+        "Fælledparken",
+        "København"
+      ]
+    },
+    {
+      "id": "26",
+      "sortOrder": 26,
+      "filename": "26-028-0.jpg",
+      "originalFilename": "_028_0.JPG",
+      "width": 940,
+      "height": 627,
+      "credit": "Mette Kramer Kristensen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "1. maj",
+        "Demonstration",
+        "Fagbevægelse",
+        "Fælledparken",
+        "København"
+      ]
+    },
+    {
+      "id": "27",
+      "sortOrder": 27,
+      "filename": "27-031.jpg",
+      "originalFilename": "_031.JPG",
+      "width": 940,
+      "height": 627,
+      "credit": "Mette Kramer Kristensen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "1. maj",
+        "Demonstration",
+        "Fagbevægelse",
+        "Fælledparken",
+        "København"
+      ]
+    },
+    {
+      "id": "28",
+      "sortOrder": 28,
+      "filename": "28-033.jpg",
+      "originalFilename": "_033.JPG",
+      "width": 940,
+      "height": 627,
+      "credit": "Mette Kramer Kristensen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "1. maj",
+        "Demonstration",
+        "Fagbevægelse",
+        "Fælledparken",
+        "København"
+      ]
+    },
+    {
+      "id": "29",
+      "sortOrder": 29,
+      "filename": "29-034.jpg",
+      "originalFilename": "_034.JPG",
+      "width": 940,
+      "height": 627,
+      "credit": "Mette Kramer Kristensen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "1. maj",
+        "Demonstration",
+        "Fagbevægelse",
+        "Fælledparken",
+        "København"
+      ]
+    },
+    {
+      "id": "30",
+      "sortOrder": 30,
+      "filename": "30-024-1.jpg",
+      "originalFilename": "_024_1.jpg",
+      "width": 900,
+      "height": 600,
+      "credit": "Mette Kramer Kristensen",
+      "caption": "»Antifascistisk 1. Maj« fejrer 20 årsjubilæum for selvstændigt arrangement bag søen i Fælledparken",
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "1. maj",
+        "Antifascisme",
+        "Antifascistisk 1. maj",
+        "Demonstration",
+        "Fagbevægelse",
+        "Fælledparken",
+        "København"
+      ]
+    },
+    {
+      "id": "31",
+      "sortOrder": 31,
+      "filename": "31-035.jpg",
+      "originalFilename": "_035.JPG",
+      "width": 940,
+      "height": 627,
+      "credit": "Mette Kramer Kristensen",
+      "caption": "Sort Stue på scenen til Antifascistisk 1. maj",
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "1. maj",
+        "Antifascisme",
+        "Antifascistisk 1. maj",
+        "Demonstration",
+        "Fagbevægelse",
+        "Fælledparken",
+        "Koncert",
+        "København",
+        "Musik",
+        "Sort Stue"
+      ]
+    },
+    {
+      "id": "32",
+      "sortOrder": 32,
+      "filename": "32-036-0.jpg",
+      "originalFilename": "_036_0.JPG",
+      "width": 940,
+      "height": 627,
+      "credit": "Mette Kramer Kristensen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "1. maj",
+        "Demonstration",
+        "Fagbevægelse",
+        "Fælledparken",
+        "København"
+      ]
+    },
+    {
+      "id": "33",
+      "sortOrder": 33,
+      "filename": "33-038-0.jpg",
+      "originalFilename": "_038_0.JPG",
+      "width": 940,
+      "height": 627,
+      "credit": "Mette Kramer Kristensen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "1. maj",
+        "Demonstration",
+        "Fagbevægelse",
+        "Fælledparken",
+        "København"
+      ]
+    },
+    {
+      "id": "34",
+      "sortOrder": 34,
+      "filename": "34-040-0.jpg",
+      "originalFilename": "_040_0.JPG",
+      "width": 627,
+      "height": 940,
+      "credit": "Mette Kramer Kristensen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "1. maj",
+        "Demonstration",
+        "Fagbevægelse",
+        "Fælledparken",
+        "København"
+      ]
+    },
+    {
+      "id": "35",
+      "sortOrder": 35,
+      "filename": "35-041-0.jpg",
+      "originalFilename": "_041_0.JPG",
+      "width": 940,
+      "height": 627,
+      "credit": "Mette Kramer Kristensen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "1. maj",
+        "Demonstration",
+        "Fagbevægelse",
+        "Fælledparken",
+        "København"
+      ]
+    }
+  ],
+  "sourceUrl": "fotoserie/1-maj-fotokavalkade-2014.html",
+  "sourceType": "fotoserie"
+}

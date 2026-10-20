@@ -1,0 +1,374 @@
+{
+  "id": "to-aar-med-protester-mod-for-frihed",
+  "sourceNid": 28840,
+  "slug": "to-aar-med-protester-mod-for-frihed",
+  "title": "To år med protester mod 'For Frihed'",
+  "publishedAt": "2017-01-09T13:36:09+01:00",
+  "modifiedAt": "2017-01-09T14:46:16+01:00",
+  "authors": [
+    "Mette Kramer Kristensen"
+  ],
+  "photographers": [
+    "Mette Kramer Kristensen",
+    "Aage Christensen"
+  ],
+  "prefix": null,
+  "series": null,
+  "manchet": "Det er snart to år siden, at Pegida-DK med den tidligere talsmand Nicolai Sennels i spidsen for første gang gik på gaden i Danmark for at protestere »mod fundamentalistisk islam«.\n\nOg i snart to år har forskellige grupper på venstrefløjen ligeledes arrangeret moddemonstrationer mod den stærkt islamkritiske gruppe, som de mener fører en racistisk hetz mod muslimer i Danmark.\n\nLørdag den 7. december havde NoPegida igen indkaldt til protest mod det tidligere Pegida og ifølge EB.dk var der et massivt politiopbud på mindst 200 politibetjente, der skulle sikre, at demonstrationen forløb fredeligt.\n\nParolen for moddemonstrationen var [»Stop racisme, før det smitter«](https://www.facebook.com/events/1824608137806473/). Og en blok i demonstrationen bar fulddragter og beskyttelsestøj for symbolsk at undgå smittefare.",
+  "introMarkdown": "[Læs artiklen »Efter to år med NoPegida - hvad så'? hos Modkraft](http://modkraft.dk/artikel/efter-r-med-nopegida-hvad-s)",
+  "tags": [
+    "Antifascisme",
+    "Antiracisme",
+    "Demonstration",
+    "For Frihed",
+    "Pegida"
+  ],
+  "genre": "Nyhed",
+  "coverImage": "01",
+  "images": [
+    {
+      "id": "01",
+      "sortOrder": 1,
+      "filename": "01-pegida-2711.jpg",
+      "originalFilename": "pegida-2711.JPG",
+      "width": 940,
+      "height": 627,
+      "credit": "Mette Kramer Kristensen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "Antifascisme",
+        "Antiracisme",
+        "Demonstration",
+        "For Frihed",
+        "Pegida"
+      ]
+    },
+    {
+      "id": "02",
+      "sortOrder": 2,
+      "filename": "02-dscf5333-pegida-demo.jpg",
+      "originalFilename": "DSCF5333 Pegida demo.jpg",
+      "width": 900,
+      "height": 600,
+      "credit": "Aage Christensen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "Antifascisme",
+        "Antiracisme",
+        "Demonstration",
+        "For Frihed",
+        "Pegida"
+      ]
+    },
+    {
+      "id": "03",
+      "sortOrder": 3,
+      "filename": "03-dscf5619-pegida-demo-0.jpg",
+      "originalFilename": "DSCF5619 Pegida demo_0.jpg",
+      "width": 900,
+      "height": 600,
+      "credit": "Aage Christensen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "Antifascisme",
+        "Antiracisme",
+        "Demonstration",
+        "For Frihed",
+        "Pegida"
+      ]
+    },
+    {
+      "id": "04",
+      "sortOrder": 4,
+      "filename": "04-dscf5403-pegida-demo.jpg",
+      "originalFilename": "DSCF5403 Pegida demo.jpg",
+      "width": 900,
+      "height": 600,
+      "credit": "Aage Christensen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "Antifascisme",
+        "Antiracisme",
+        "Demonstration",
+        "For Frihed",
+        "Pegida"
+      ]
+    },
+    {
+      "id": "05",
+      "sortOrder": 5,
+      "filename": "05-dscf5437-pegida-demo.jpg",
+      "originalFilename": "DSCF5437 Pegida demo.jpg",
+      "width": 900,
+      "height": 600,
+      "credit": "Aage Christensen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "Antifascisme",
+        "Antiracisme",
+        "Demonstration",
+        "For Frihed",
+        "Pegida"
+      ]
+    },
+    {
+      "id": "06",
+      "sortOrder": 6,
+      "filename": "06-dscf5480-pegida-demo.jpg",
+      "originalFilename": "DSCF5480 Pegida demo.jpg",
+      "width": 900,
+      "height": 600,
+      "credit": "Aage Christensen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "Antifascisme",
+        "Antiracisme",
+        "Demonstration",
+        "For Frihed",
+        "Pegida"
+      ]
+    },
+    {
+      "id": "07",
+      "sortOrder": 7,
+      "filename": "07-dscf5658-pegida-demo.jpg",
+      "originalFilename": "DSCF5658 Pegida demo.jpg",
+      "width": 900,
+      "height": 600,
+      "credit": "Aage Christensen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "Antifascisme",
+        "Antiracisme",
+        "Demonstration",
+        "For Frihed",
+        "Pegida"
+      ]
+    },
+    {
+      "id": "08",
+      "sortOrder": 8,
+      "filename": "08-dscf5688-pegida-demo.jpg",
+      "originalFilename": "DSCF5688 Pegida demo.jpg",
+      "width": 900,
+      "height": 600,
+      "credit": "Aage Christensen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "Antifascisme",
+        "Antiracisme",
+        "Demonstration",
+        "For Frihed",
+        "Pegida"
+      ]
+    },
+    {
+      "id": "09",
+      "sortOrder": 9,
+      "filename": "09-dscf5701-pegida-demo.jpg",
+      "originalFilename": "DSCF5701 Pegida demo.jpg",
+      "width": 900,
+      "height": 600,
+      "credit": "Aage Christensen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "Antifascisme",
+        "Antiracisme",
+        "Demonstration",
+        "For Frihed",
+        "Pegida"
+      ]
+    },
+    {
+      "id": "10",
+      "sortOrder": 10,
+      "filename": "10-pegida-2742.jpg",
+      "originalFilename": "pegida-2742.JPG",
+      "width": 940,
+      "height": 627,
+      "credit": "Mette Kramer Kristensen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "Antifascisme",
+        "Antiracisme",
+        "Demonstration",
+        "For Frihed",
+        "Pegida"
+      ]
+    },
+    {
+      "id": "11",
+      "sortOrder": 11,
+      "filename": "11-pegida-2750.jpg",
+      "originalFilename": "pegida-2750.JPG",
+      "width": 940,
+      "height": 627,
+      "credit": "Mette Kramer Kristensen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "Antifascisme",
+        "Antiracisme",
+        "Demonstration",
+        "For Frihed",
+        "Pegida"
+      ]
+    },
+    {
+      "id": "12",
+      "sortOrder": 12,
+      "filename": "12-pegida-2781.jpg",
+      "originalFilename": "pegida-2781.JPG",
+      "width": 940,
+      "height": 627,
+      "credit": "Mette Kramer Kristensen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "Antifascisme",
+        "Antiracisme",
+        "Demonstration",
+        "For Frihed",
+        "Pegida"
+      ]
+    },
+    {
+      "id": "13",
+      "sortOrder": 13,
+      "filename": "13-pegida-2783.jpg",
+      "originalFilename": "pegida-2783.JPG",
+      "width": 940,
+      "height": 627,
+      "credit": "Mette Kramer Kristensen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "Antifascisme",
+        "Antiracisme",
+        "Demonstration",
+        "For Frihed",
+        "Pegida"
+      ]
+    },
+    {
+      "id": "14",
+      "sortOrder": 14,
+      "filename": "14-pegida-2741.jpg",
+      "originalFilename": "pegida-2741.JPG",
+      "width": 940,
+      "height": 627,
+      "credit": "Mette Kramer Kristensen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "Antifascisme",
+        "Antiracisme",
+        "Demonstration",
+        "For Frihed",
+        "Pegida"
+      ]
+    },
+    {
+      "id": "15",
+      "sortOrder": 15,
+      "filename": "15-dscf5624-pegida-demo.jpg",
+      "originalFilename": "DSCF5624 Pegida demo.jpg",
+      "width": 900,
+      "height": 600,
+      "credit": "Aage Christensen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "Antifascisme",
+        "Antiracisme",
+        "Demonstration",
+        "For Frihed",
+        "Pegida"
+      ]
+    },
+    {
+      "id": "16",
+      "sortOrder": 16,
+      "filename": "16-pegida-2802.jpg",
+      "originalFilename": "pegida-2802.JPG",
+      "width": 940,
+      "height": 627,
+      "credit": "Mette Kramer Kristensen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "Antifascisme",
+        "Antiracisme",
+        "Demonstration",
+        "For Frihed",
+        "Pegida"
+      ]
+    },
+    {
+      "id": "17",
+      "sortOrder": 17,
+      "filename": "17-pegida-2816.jpg",
+      "originalFilename": "pegida-2816.JPG",
+      "width": 940,
+      "height": 627,
+      "credit": "Mette Kramer Kristensen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "Antifascisme",
+        "Antiracisme",
+        "Demonstration",
+        "For Frihed",
+        "Pegida"
+      ]
+    },
+    {
+      "id": "18",
+      "sortOrder": 18,
+      "filename": "18-pegida-2818.jpg",
+      "originalFilename": "pegida-2818.JPG",
+      "width": 940,
+      "height": 627,
+      "credit": "Mette Kramer Kristensen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "Antifascisme",
+        "Antiracisme",
+        "Demonstration",
+        "For Frihed",
+        "Pegida"
+      ]
+    }
+  ],
+  "sourceUrl": "fotoserie/r-med-protester-mod-frihed.html",
+  "sourceType": "fotoserie"
+}

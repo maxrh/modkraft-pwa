@@ -1,0 +1,354 @@
+{
+  "id": "hjemloese-fejrer-grundlovsdag",
+  "sourceNid": 22160,
+  "slug": "hjemloese-fejrer-grundlovsdag",
+  "title": "Hjemløse fejrer grundlovsdag",
+  "publishedAt": "2013-06-06T13:47:01+02:00",
+  "modifiedAt": "2013-06-06T16:30:08+02:00",
+  "authors": [
+    "Mette Kramer Kristensen"
+  ],
+  "photographers": [
+    "Mette Kramer Kristensen"
+  ],
+  "prefix": "Grundlovsdag",
+  "series": null,
+  "manchet": "Der var sange fra Hjemløsekoret, mad fra Hus Forbi og fadøl og vand på Blågårds Plads,da hjemløse fra København og omegn fejrede grundlovsdag onsdag den 5. juni.",
+  "introMarkdown": "",
+  "tags": [
+    "Grundlovsdag",
+    "Hjemløse",
+    "Socialt",
+    "Velfærd"
+  ],
+  "genre": null,
+  "coverImage": "01",
+  "images": [
+    {
+      "id": "01",
+      "sortOrder": 1,
+      "filename": "01-grundlovsdag-2013-1.jpg",
+      "originalFilename": "Grundlovsdag 2013-1.JPG",
+      "width": 940,
+      "height": 627,
+      "credit": "Mette Kramer Kristensen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "Grundlovsdag",
+        "Hjemløse",
+        "Socialt",
+        "Velfærd"
+      ]
+    },
+    {
+      "id": "02",
+      "sortOrder": 2,
+      "filename": "02-grundlovsdag-2013-3.jpg",
+      "originalFilename": "Grundlovsdag 2013-3.JPG",
+      "width": 940,
+      "height": 627,
+      "credit": "Mette Kramer Kristensen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "Grundlovsdag",
+        "Hjemløse",
+        "Socialt",
+        "Velfærd"
+      ]
+    },
+    {
+      "id": "03",
+      "sortOrder": 3,
+      "filename": "03-grundlovsdag-2013-4.jpg",
+      "originalFilename": "Grundlovsdag 2013-4.JPG",
+      "width": 940,
+      "height": 627,
+      "credit": "Mette Kramer Kristensen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "Grundlovsdag",
+        "Hjemløse",
+        "Socialt",
+        "Velfærd"
+      ]
+    },
+    {
+      "id": "04",
+      "sortOrder": 4,
+      "filename": "04-grundlovsdag-2013-5.jpg",
+      "originalFilename": "Grundlovsdag 2013-5.JPG",
+      "width": 940,
+      "height": 627,
+      "credit": "Mette Kramer Kristensen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "Grundlovsdag",
+        "Hjemløse",
+        "Socialt",
+        "Velfærd"
+      ]
+    },
+    {
+      "id": "05",
+      "sortOrder": 5,
+      "filename": "05-grundlovsdag-2013-6.jpg",
+      "originalFilename": "Grundlovsdag 2013-6.JPG",
+      "width": 940,
+      "height": 627,
+      "credit": "Mette Kramer Kristensen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "Grundlovsdag",
+        "Hjemløse",
+        "Socialt",
+        "Velfærd"
+      ]
+    },
+    {
+      "id": "06",
+      "sortOrder": 6,
+      "filename": "06-grundlovsdag-2013-7.jpg",
+      "originalFilename": "Grundlovsdag 2013-7.JPG",
+      "width": 940,
+      "height": 627,
+      "credit": "Mette Kramer Kristensen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "Grundlovsdag",
+        "Hjemløse",
+        "Socialt",
+        "Velfærd"
+      ]
+    },
+    {
+      "id": "07",
+      "sortOrder": 7,
+      "filename": "07-grundlovsdag-2013-10.jpg",
+      "originalFilename": "Grundlovsdag 2013-10.JPG",
+      "width": 940,
+      "height": 627,
+      "credit": "Mette Kramer Kristensen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "Grundlovsdag",
+        "Hjemløse",
+        "Socialt",
+        "Velfærd"
+      ]
+    },
+    {
+      "id": "08",
+      "sortOrder": 8,
+      "filename": "08-grundlovsdag-2013-11-0.jpg",
+      "originalFilename": "Grundlovsdag 2013-11_0.JPG",
+      "width": 940,
+      "height": 627,
+      "credit": "Mette Kramer Kristensen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "Grundlovsdag",
+        "Hjemløse",
+        "Socialt",
+        "Velfærd"
+      ]
+    },
+    {
+      "id": "09",
+      "sortOrder": 9,
+      "filename": "09-grundlovsdag-2013-12.jpg",
+      "originalFilename": "Grundlovsdag 2013-12.JPG",
+      "width": 627,
+      "height": 940,
+      "credit": "Mette Kramer Kristensen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "Grundlovsdag",
+        "Hjemløse",
+        "Socialt",
+        "Velfærd"
+      ]
+    },
+    {
+      "id": "10",
+      "sortOrder": 10,
+      "filename": "10-grundlovsdag-2013-13.jpg",
+      "originalFilename": "Grundlovsdag 2013-13.JPG",
+      "width": 940,
+      "height": 627,
+      "credit": "Mette Kramer Kristensen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "Grundlovsdag",
+        "Hjemløse",
+        "Socialt",
+        "Velfærd"
+      ]
+    },
+    {
+      "id": "11",
+      "sortOrder": 11,
+      "filename": "11-grundlovsdag-2013-15.jpg",
+      "originalFilename": "Grundlovsdag 2013-15.JPG",
+      "width": 940,
+      "height": 627,
+      "credit": "Mette Kramer Kristensen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "Grundlovsdag",
+        "Hjemløse",
+        "Socialt",
+        "Velfærd"
+      ]
+    },
+    {
+      "id": "12",
+      "sortOrder": 12,
+      "filename": "12-grundlovsdag-2013-16.jpg",
+      "originalFilename": "Grundlovsdag 2013-16.JPG",
+      "width": 940,
+      "height": 627,
+      "credit": "Mette Kramer Kristensen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "Grundlovsdag",
+        "Hjemløse",
+        "Socialt",
+        "Velfærd"
+      ]
+    },
+    {
+      "id": "13",
+      "sortOrder": 13,
+      "filename": "13-grundlovsdag-2013-17.jpg",
+      "originalFilename": "Grundlovsdag 2013-17.JPG",
+      "width": 940,
+      "height": 627,
+      "credit": "Mette Kramer Kristensen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "Grundlovsdag",
+        "Hjemløse",
+        "Socialt",
+        "Velfærd"
+      ]
+    },
+    {
+      "id": "14",
+      "sortOrder": 14,
+      "filename": "14-grundlovsdag-2013-20.jpg",
+      "originalFilename": "Grundlovsdag 2013-20.JPG",
+      "width": 940,
+      "height": 627,
+      "credit": "Mette Kramer Kristensen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "Grundlovsdag",
+        "Hjemløse",
+        "Socialt",
+        "Velfærd"
+      ]
+    },
+    {
+      "id": "15",
+      "sortOrder": 15,
+      "filename": "15-grundlovsdag-2013-21.jpg",
+      "originalFilename": "Grundlovsdag 2013-21.JPG",
+      "width": 940,
+      "height": 627,
+      "credit": "Mette Kramer Kristensen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "Grundlovsdag",
+        "Hjemløse",
+        "Socialt",
+        "Velfærd"
+      ]
+    },
+    {
+      "id": "16",
+      "sortOrder": 16,
+      "filename": "16-grundlovsdag-2013-24.jpg",
+      "originalFilename": "Grundlovsdag 2013-24.JPG",
+      "width": 940,
+      "height": 627,
+      "credit": "Mette Kramer Kristensen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "Grundlovsdag",
+        "Hjemløse",
+        "Socialt",
+        "Velfærd"
+      ]
+    },
+    {
+      "id": "17",
+      "sortOrder": 17,
+      "filename": "17-grundlovsdag-2013-27.jpg",
+      "originalFilename": "Grundlovsdag 2013-27.JPG",
+      "width": 940,
+      "height": 627,
+      "credit": "Mette Kramer Kristensen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "Grundlovsdag",
+        "Hjemløse",
+        "Socialt",
+        "Velfærd"
+      ]
+    },
+    {
+      "id": "18",
+      "sortOrder": 18,
+      "filename": "18-grundlovsdag-2013-29.jpg",
+      "originalFilename": "Grundlovsdag 2013-29.JPG",
+      "width": 940,
+      "height": 627,
+      "credit": "Mette Kramer Kristensen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "Grundlovsdag",
+        "Hjemløse",
+        "Socialt",
+        "Velfærd"
+      ]
+    }
+  ],
+  "sourceUrl": "fotoserie/hjeml-se-fejrer-grundlovsdag.html",
+  "sourceType": "fotoserie"
+}

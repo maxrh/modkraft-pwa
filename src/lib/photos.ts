@@ -27,6 +27,23 @@ export interface Photo {
   introMarkdown: string | null;
   tags: string[];
   genre: string | null;
+  sourceType: string | null;
+}
+
+/** Modkraft source kinds shown in the UI (artikel-foto maps to fotoserie). */
+export type CollectionKind = 'fotoserie' | 'fotoblog';
+
+export function collectionKind(sourceType: string | null | undefined): CollectionKind {
+  return sourceType === 'fotoblog' ? 'fotoblog' : 'fotoserie';
+}
+
+export function collectionKindLabel(
+  sourceType: string | null | undefined,
+  form: 'singular' | 'plural' = 'singular',
+): string {
+  const kind = collectionKind(sourceType);
+  if (form === 'plural') return kind === 'fotoblog' ? 'Fotoblogs' : 'Fotoserier';
+  return kind === 'fotoblog' ? 'Fotoblog' : 'Fotoserie';
 }
 
 export function imageUrl(collectionId: string, filename: string): string {
@@ -111,6 +128,7 @@ export function flattenCollectionPhotos(collection: PhotoCollection): Photo[] {
     introMarkdown: d.introMarkdown ?? null,
     tags: img.tags?.length ? [...new Set([...d.tags, ...img.tags])] : d.tags,
     genre: d.genre ?? null,
+    sourceType: d.sourceType ?? null,
   }));
 }
 

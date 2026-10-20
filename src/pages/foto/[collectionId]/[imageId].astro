@@ -8,6 +8,8 @@ import PhotoMosaic from '@/components/PhotoMosaic.astro';
 import { buttonVariants } from '@/components/ui/button';
 import { readCameraModel } from '@/lib/exif';
 import {
+  collectionKind,
+  collectionKindLabel,
   flattenCollectionPhotos,
   formatDate,
   sortCollectionsNewest,
@@ -58,6 +60,8 @@ interface Props {
 }
 
 const { photo, siblings, prevPhoto, nextPhoto } = Astro.props;
+const kind = collectionKind(photo.sourceType);
+const kindLabel = collectionKindLabel(photo.sourceType);
 const cameraModel = await readCameraModel(photo.collectionId, photo.filename);
 const pageTitle = photo.caption
   ? `${photo.caption.slice(0, 60)} — ${photo.collectionTitle}`
@@ -84,9 +88,9 @@ if (cameraModel) {
       <!-- Top bar: back link, prev/next within series -->
       <div class="mb-6 flex flex-wrap items-center justify-between gap-4 ">
         <div class="flex flex-wrap items-center gap-1 text-lg">
-          Samling:
+          {kindLabel}:
           <a
-            href={`/samling/${photo.collectionId}`}
+            href={`/fotoserie/${photo.collectionId}`}
             class="inline-flex items-center gap-1 font-semibold text-foreground no-underline hover:underline"
           >
             {photo.collectionTitle}
@@ -97,10 +101,10 @@ if (cameraModel) {
               <>
                 <span class="text-muted-foreground">·</span>
                 <a
-                  href={`/serie/${photo.series}`}
+                  href={`/fotoblog/${photo.series}`}
                   class="rounded bg-secondary px-2 py-0.5 text-xs font-medium text-secondary-foreground no-underline hover:bg-accent"
                 >
-                  Serie
+                  Fotoblog
                 </a>
               </>
             )
@@ -121,7 +125,7 @@ if (cameraModel) {
               <a
                 href={prevPhoto.href}
                 class={cn(buttonVariants({ variant: 'outline', size: 'sm' }), 'no-underline')}
-                title="Forrige foto i serien"
+                title={`Forrige foto i ${kind === 'fotoblog' ? 'fotobloggen' : 'fotoserien'}`}
               >
                 <ArrowLeft aria-hidden="true" />
               </a>
@@ -142,7 +146,7 @@ if (cameraModel) {
               <a
                 href={nextPhoto.href}
                 class={cn(buttonVariants({ variant: 'outline', size: 'sm' }), 'no-underline')}
-                title="Næste foto i serien"
+                title={`Næste foto i ${kind === 'fotoblog' ? 'fotobloggen' : 'fotoserien'}`}
               >
                 <ArrowRight aria-hidden="true" />
               </a>
@@ -238,7 +242,7 @@ if (cameraModel) {
         siblings.length > 0 && (
           <section class="mt-14">
             <h2 class="mb-5 font-display text-xl font-semibold sm:text-2xl">
-              Fotos fra samme serie
+              Fotos fra samme {kind}
             </h2>
             <PhotoMosaic photos={siblings} />
           </section>

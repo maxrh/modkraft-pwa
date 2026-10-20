@@ -1,0 +1,278 @@
+{
+  "id": "vi-vil-huske-dong-salget",
+  "sourceNid": 23674,
+  "slug": "vi-vil-huske-dong-salget",
+  "title": "Vi vil huske DONG-salget",
+  "publishedAt": "2014-02-01T10:26:49+01:00",
+  "modifiedAt": "2014-02-01T11:14:16+01:00",
+  "authors": [
+    "Mette Kramer Kristensen"
+  ],
+  "photographers": [
+    "Mette Kramer Kristensen"
+  ],
+  "prefix": null,
+  "series": null,
+  "manchet": "Omkring 150 demonstranter gik fredag den 31. januar fra Blågårds Plads på Nørrebro til Socialdemokraternes hovedkontor på Danasvej på Frederiksberg for at råbe partiet op. Demonstranterne var utilfredse med salg af aktier i DONG Energy til Goldman Sachs. »Salget bliver ikke glemt og tilgivet. Politikerne skal holdes til ansvar, når de går imod deres befolkning,« hed det i indkaldelsen til demonstrantion.",
+  "introMarkdown": "",
+  "tags": [
+    "Demonstration",
+    "DONG Energy",
+    "Goldman Sachs",
+    "Nørrebro",
+    "Socialdemokraterne"
+  ],
+  "genre": "Nyhed",
+  "coverImage": "01",
+  "images": [
+    {
+      "id": "01",
+      "sortOrder": 1,
+      "filename": "01-dongdemo-2-8793-0.jpg",
+      "originalFilename": "dongdemo_2-8793_0.JPG",
+      "width": 940,
+      "height": 627,
+      "credit": "Mette Kramer Kristensen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "Demonstration",
+        "DONG Energy",
+        "Goldman Sachs",
+        "Nørrebro",
+        "Socialdemokraterne"
+      ]
+    },
+    {
+      "id": "02",
+      "sortOrder": 2,
+      "filename": "02-dongdemo-2-8797.jpg",
+      "originalFilename": "dongdemo_2-8797.JPG",
+      "width": 940,
+      "height": 627,
+      "credit": "Mette Kramer Kristensen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "Demonstration",
+        "DONG Energy",
+        "Goldman Sachs",
+        "Nørrebro",
+        "Socialdemokraterne"
+      ]
+    },
+    {
+      "id": "03",
+      "sortOrder": 3,
+      "filename": "03-dongdemo-2-8813.jpg",
+      "originalFilename": "dongdemo_2-8813.JPG",
+      "width": 627,
+      "height": 940,
+      "credit": "Mette Kramer Kristensen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "Demonstration",
+        "DONG Energy",
+        "Goldman Sachs",
+        "Nørrebro",
+        "Socialdemokraterne"
+      ]
+    },
+    {
+      "id": "04",
+      "sortOrder": 4,
+      "filename": "04-dongdemo-2-8816.jpg",
+      "originalFilename": "dongdemo_2-8816.JPG",
+      "width": 940,
+      "height": 627,
+      "credit": "Mette Kramer Kristensen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "Demonstration",
+        "DONG Energy",
+        "Goldman Sachs",
+        "Nørrebro",
+        "Socialdemokraterne"
+      ]
+    },
+    {
+      "id": "05",
+      "sortOrder": 5,
+      "filename": "05-dongdemo-2-8827.jpg",
+      "originalFilename": "dongdemo_2-8827.JPG",
+      "width": 940,
+      "height": 627,
+      "credit": "Mette Kramer Kristensen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "Demonstration",
+        "DONG Energy",
+        "Goldman Sachs",
+        "Nørrebro",
+        "Socialdemokraterne"
+      ]
+    },
+    {
+      "id": "06",
+      "sortOrder": 6,
+      "filename": "06-dongdemo-2-8833.jpg",
+      "originalFilename": "dongdemo_2-8833.JPG",
+      "width": 940,
+      "height": 627,
+      "credit": "Mette Kramer Kristensen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "Demonstration",
+        "DONG Energy",
+        "Goldman Sachs",
+        "Nørrebro",
+        "Socialdemokraterne"
+      ]
+    },
+    {
+      "id": "07",
+      "sortOrder": 7,
+      "filename": "07-dongdemo-2-8841.jpg",
+      "originalFilename": "dongdemo_2-8841.JPG",
+      "width": 940,
+      "height": 627,
+      "credit": "Mette Kramer Kristensen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "Demonstration",
+        "DONG Energy",
+        "Goldman Sachs",
+        "Nørrebro",
+        "Socialdemokraterne"
+      ]
+    },
+    {
+      "id": "08",
+      "sortOrder": 8,
+      "filename": "08-dongdemo-2-8843.jpg",
+      "originalFilename": "dongdemo_2-8843.JPG",
+      "width": 940,
+      "height": 627,
+      "credit": "Mette Kramer Kristensen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "Demonstration",
+        "DONG Energy",
+        "Goldman Sachs",
+        "Nørrebro",
+        "Socialdemokraterne"
+      ]
+    },
+    {
+      "id": "09",
+      "sortOrder": 9,
+      "filename": "09-dongdemo-2-8846.jpg",
+      "originalFilename": "dongdemo_2-8846.JPG",
+      "width": 940,
+      "height": 627,
+      "credit": "Mette Kramer Kristensen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "Demonstration",
+        "DONG Energy",
+        "Goldman Sachs",
+        "Nørrebro",
+        "Socialdemokraterne"
+      ]
+    },
+    {
+      "id": "10",
+      "sortOrder": 10,
+      "filename": "10-dongdemo-2-8855.jpg",
+      "originalFilename": "dongdemo_2-8855.JPG",
+      "width": 940,
+      "height": 627,
+      "credit": "Mette Kramer Kristensen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "Demonstration",
+        "DONG Energy",
+        "Goldman Sachs",
+        "Nørrebro",
+        "Socialdemokraterne"
+      ]
+    },
+    {
+      "id": "11",
+      "sortOrder": 11,
+      "filename": "11-dongdemo-2-8859.jpg",
+      "originalFilename": "dongdemo_2-8859.JPG",
+      "width": 940,
+      "height": 627,
+      "credit": "Mette Kramer Kristensen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "Demonstration",
+        "DONG Energy",
+        "Goldman Sachs",
+        "Nørrebro",
+        "Socialdemokraterne"
+      ]
+    },
+    {
+      "id": "12",
+      "sortOrder": 12,
+      "filename": "12-dongdemo-2-8873.jpg",
+      "originalFilename": "dongdemo_2-8873.JPG",
+      "width": 940,
+      "height": 627,
+      "credit": "Mette Kramer Kristensen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "Demonstration",
+        "DONG Energy",
+        "Goldman Sachs",
+        "Nørrebro",
+        "Socialdemokraterne"
+      ]
+    },
+    {
+      "id": "13",
+      "sortOrder": 13,
+      "filename": "13-dongdemo-2-8864.jpg",
+      "originalFilename": "dongdemo_2-8864.JPG",
+      "width": 940,
+      "height": 627,
+      "credit": "Mette Kramer Kristensen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "Demonstration",
+        "DONG Energy",
+        "Goldman Sachs",
+        "Nørrebro",
+        "Socialdemokraterne"
+      ]
+    }
+  ],
+  "sourceUrl": "fotoserie/vi-vil-huske-dong-salget.html",
+  "sourceType": "fotoserie"
+}

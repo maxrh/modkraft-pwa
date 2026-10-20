@@ -1,0 +1,382 @@
+{
+  "id": "roskilde-2015-skudt-i-gang",
+  "sourceNid": 26647,
+  "slug": "roskilde-2015-skudt-i-gang",
+  "title": "Roskilde 2015 skudt i gang",
+  "publishedAt": "2015-07-02T14:19:34+02:00",
+  "modifiedAt": "2015-07-03T13:27:08+02:00",
+  "authors": [
+    "Anders Birger"
+  ],
+  "photographers": [
+    "Anders Birger"
+  ],
+  "prefix": null,
+  "series": null,
+  "manchet": "Roskilde Festival åbnede dørene for sin 45. optræden med manér. Der var fest, farver, flaskesamlere og fadøl mast sammen med internationale såvel som lokale stjerner, dj’s, rock'n'rollers, punks, queers og en enkelt stiv svensker. Først og fremmest var der dog en følelse af masser af god festivalkarma, som overstrømmede pladsen helt fra starten. Rigtig god festival!",
+  "introMarkdown": "",
+  "tags": [
+    "Koncert",
+    "Kultur",
+    "Musik",
+    "Roskilde Festival"
+  ],
+  "genre": "Nyhed",
+  "coverImage": "01",
+  "images": [
+    {
+      "id": "01",
+      "sortOrder": 1,
+      "filename": "01-ab-roskilde-web-1-001.jpg",
+      "originalFilename": "AB ROSKILDE web 1 - 001.jpg",
+      "width": 940,
+      "height": 627,
+      "credit": "Anders Birger",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "Koncert",
+        "Kultur",
+        "Musik",
+        "Roskilde Festival"
+      ]
+    },
+    {
+      "id": "02",
+      "sortOrder": 2,
+      "filename": "02-ab-roskilde-web-1-002.jpg",
+      "originalFilename": "AB ROSKILDE web 1 - 002.jpg",
+      "width": 940,
+      "height": 627,
+      "credit": "Anders Birger",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "Koncert",
+        "Kultur",
+        "Musik",
+        "Roskilde Festival"
+      ]
+    },
+    {
+      "id": "03",
+      "sortOrder": 3,
+      "filename": "03-ab-roskilde-web-1-003.jpg",
+      "originalFilename": "AB ROSKILDE web 1 - 003.jpg",
+      "width": 940,
+      "height": 627,
+      "credit": "Anders Birger",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "Koncert",
+        "Kultur",
+        "Musik",
+        "Roskilde Festival"
+      ]
+    },
+    {
+      "id": "04",
+      "sortOrder": 4,
+      "filename": "04-ab-roskilde-web-1-004.jpg",
+      "originalFilename": "AB ROSKILDE web 1 - 004.jpg",
+      "width": 940,
+      "height": 627,
+      "credit": "Anders Birger",
+      "caption": "Molly",
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "Koncert",
+        "Kultur",
+        "Molly",
+        "Musik",
+        "Roskilde Festival"
+      ]
+    },
+    {
+      "id": "05",
+      "sortOrder": 5,
+      "filename": "05-ab-roskilde-web-1-005.jpg",
+      "originalFilename": "AB ROSKILDE web 1 - 005.jpg",
+      "width": 940,
+      "height": 627,
+      "credit": "Anders Birger",
+      "caption": "Future Brown",
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "Future Brown",
+        "Koncert",
+        "Kultur",
+        "Musik",
+        "Roskilde Festival"
+      ]
+    },
+    {
+      "id": "06",
+      "sortOrder": 6,
+      "filename": "06-ab-roskilde-web-1-006.jpg",
+      "originalFilename": "AB ROSKILDE web 1 - 006.jpg",
+      "width": 940,
+      "height": 627,
+      "credit": "Anders Birger",
+      "caption": "Noel Gallagher's High Flying Birds",
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "Koncert",
+        "Kultur",
+        "Musik",
+        "Noel Gallagher's High Flying Birds",
+        "Roskilde Festival"
+      ]
+    },
+    {
+      "id": "07",
+      "sortOrder": 7,
+      "filename": "07-ab-roskilde-web-1-007.jpg",
+      "originalFilename": "AB ROSKILDE web 1 - 007.jpg",
+      "width": 940,
+      "height": 627,
+      "credit": "Anders Birger",
+      "caption": "Future Brown",
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "Future Brown",
+        "Koncert",
+        "Kultur",
+        "Musik",
+        "Roskilde Festival"
+      ]
+    },
+    {
+      "id": "08",
+      "sortOrder": 8,
+      "filename": "08-ab-roskilde-web-1-008.jpg",
+      "originalFilename": "AB ROSKILDE web 1 - 008.jpg",
+      "width": 940,
+      "height": 627,
+      "credit": "Anders Birger",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "Koncert",
+        "Kultur",
+        "Musik",
+        "Roskilde Festival"
+      ]
+    },
+    {
+      "id": "09",
+      "sortOrder": 9,
+      "filename": "09-ab-roskilde-web-1-009.jpg",
+      "originalFilename": "AB ROSKILDE web 1 - 009.jpg",
+      "width": 940,
+      "height": 627,
+      "credit": "Anders Birger",
+      "caption": "Timbuktu & Damn!",
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "Koncert",
+        "Kultur",
+        "Musik",
+        "Roskilde Festival",
+        "Timbuktu"
+      ]
+    },
+    {
+      "id": "10",
+      "sortOrder": 10,
+      "filename": "10-ab-roskilde-web-1-010.jpg",
+      "originalFilename": "AB ROSKILDE web 1 - 010.jpg",
+      "width": 940,
+      "height": 627,
+      "credit": "Anders Birger",
+      "caption": "Timbuktu & Damn!",
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "Koncert",
+        "Kultur",
+        "Musik",
+        "Roskilde Festival",
+        "Timbuktu"
+      ]
+    },
+    {
+      "id": "11",
+      "sortOrder": 11,
+      "filename": "11-ab-roskilde-web-1-011.jpg",
+      "originalFilename": "AB ROSKILDE web 1 - 011.jpg",
+      "width": 940,
+      "height": 627,
+      "credit": "Anders Birger",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "Koncert",
+        "Kultur",
+        "Musik",
+        "Roskilde Festival"
+      ]
+    },
+    {
+      "id": "12",
+      "sortOrder": 12,
+      "filename": "12-ab-roskilde-web-1-012.jpg",
+      "originalFilename": "AB ROSKILDE web 1 - 012.jpg",
+      "width": 940,
+      "height": 627,
+      "credit": "Anders Birger",
+      "caption": "Timbuktu & Damn!",
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "Koncert",
+        "Kultur",
+        "Musik",
+        "Roskilde Festival",
+        "Timbuktu"
+      ]
+    },
+    {
+      "id": "13",
+      "sortOrder": 13,
+      "filename": "13-ab-roskilde-web-1-013.jpg",
+      "originalFilename": "AB ROSKILDE web 1 - 013.jpg",
+      "width": 940,
+      "height": 627,
+      "credit": "Anders Birger",
+      "caption": "Santiago",
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "Koncert",
+        "Kultur",
+        "Musik",
+        "Roskilde Festival"
+      ]
+    },
+    {
+      "id": "14",
+      "sortOrder": 14,
+      "filename": "14-ab-roskilde-web-1-014.jpg",
+      "originalFilename": "AB ROSKILDE web 1 - 014.jpg",
+      "width": 940,
+      "height": 627,
+      "credit": "Anders Birger",
+      "caption": "The War On Drugs",
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "Koncert",
+        "Kultur",
+        "Musik",
+        "Roskilde Festival",
+        "The War on Drugs"
+      ]
+    },
+    {
+      "id": "15",
+      "sortOrder": 15,
+      "filename": "15-ab-roskilde-web-1-015.jpg",
+      "originalFilename": "AB ROSKILDE web 1 - 015.jpg",
+      "width": 940,
+      "height": 627,
+      "credit": "Anders Birger",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "Koncert",
+        "Kultur",
+        "Musik",
+        "Roskilde Festival"
+      ]
+    },
+    {
+      "id": "16",
+      "sortOrder": 16,
+      "filename": "16-ab-roskilde-web-1-016.jpg",
+      "originalFilename": "AB ROSKILDE web 1 - 016.jpg",
+      "width": 940,
+      "height": 627,
+      "credit": "Anders Birger",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "Koncert",
+        "Kultur",
+        "Musik",
+        "Roskilde Festival"
+      ]
+    },
+    {
+      "id": "17",
+      "sortOrder": 17,
+      "filename": "17-ab-roskilde-web-1-017.jpg",
+      "originalFilename": "AB ROSKILDE web 1 - 017.jpg",
+      "width": 940,
+      "height": 627,
+      "credit": "Anders Birger",
+      "caption": "Noel Gallagher's High Flying Birds",
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "Koncert",
+        "Kultur",
+        "Musik",
+        "Noel Gallagher's High Flying Birds",
+        "Roskilde Festival"
+      ]
+    },
+    {
+      "id": "18",
+      "sortOrder": 18,
+      "filename": "18-ab-roskilde-web-1-018.jpg",
+      "originalFilename": "AB ROSKILDE web 1 - 018.jpg",
+      "width": 940,
+      "height": 627,
+      "credit": "Anders Birger",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "Koncert",
+        "Kultur",
+        "Musik",
+        "Roskilde Festival"
+      ]
+    },
+    {
+      "id": "19",
+      "sortOrder": 19,
+      "filename": "19-ab-roskilde-web-1-019-0.jpg",
+      "originalFilename": "AB ROSKILDE web 1 - 019_0.jpg",
+      "width": 940,
+      "height": 627,
+      "credit": "Anders Birger",
+      "caption": "Bob Hund",
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "Bob Hund",
+        "Koncert",
+        "Kultur",
+        "Musik",
+        "Roskilde Festival"
+      ]
+    }
+  ],
+  "sourceUrl": "fotoserie/roskilde-2015-skudt-i-gang.html",
+  "sourceType": "fotoserie"
+}
