@@ -6,6 +6,7 @@
   "description": "Import HTTrack Drupal foto archive into cleaned photo-collections",
   "scripts": {
     "import": "node run.mjs",
+    "import:artikel-foto": "node import-artikel-foto.mjs",
     "validate": "node validate.mjs"
   },
   "dependencies": {

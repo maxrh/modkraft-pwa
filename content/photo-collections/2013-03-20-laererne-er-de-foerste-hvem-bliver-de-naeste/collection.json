@@ -121,8 +121,8 @@
       "sortOrder": 6,
       "filename": "06-img-8606-ap.jpg",
       "originalFilename": "IMG_8606_ap.jpg",
-      "width": 940,
-      "height": 627,
+      "width": 3194,
+      "height": 2130,
       "credit": "Anders Pedersen",
       "caption": null,
       "captionSource": "title",
@@ -132,7 +132,9 @@
         "Fagbevægelse",
         "Lockout",
         "Uddannelse"
-      ]
+      ],
+      "hiresSource": "C:\\Users\\max\\Dropbox\\Monsun\\Monsun Foto Upload\\fotobase\\demo\\20130320_Lærer demonstration\\IMG_8606_ap.jpg",
+      "hiresAt": "2026-10-20T02:27:43.859Z"
     },
     {
       "id": "07",
@@ -319,8 +321,8 @@
       "sortOrder": 17,
       "filename": "17-img-8798-ap.jpg",
       "originalFilename": "IMG_8798_ap.jpg",
-      "width": 940,
-      "height": 627,
+      "width": 3861,
+      "height": 2574,
       "credit": "Anders Pedersen",
       "caption": null,
       "captionSource": "title",
@@ -330,15 +332,17 @@
         "Fagbevægelse",
         "Lockout",
         "Uddannelse"
-      ]
+      ],
+      "hiresSource": "C:\\Users\\max\\Dropbox\\Monsun\\Monsun Foto Upload\\fotobase\\demo\\20130320_Lærer demonstration\\IMG_8798_ap.jpg",
+      "hiresAt": "2026-10-20T02:27:44.575Z"
     },
     {
       "id": "18",
       "sortOrder": 18,
       "filename": "18-img-8828-ap.jpg",
       "originalFilename": "IMG_8828_ap.jpg",
-      "width": 940,
-      "height": 627,
+      "width": 3861,
+      "height": 2574,
       "credit": "Anders Pedersen",
       "caption": null,
       "captionSource": "title",
@@ -348,7 +352,9 @@
         "Fagbevægelse",
         "Lockout",
         "Uddannelse"
-      ]
+      ],
+      "hiresSource": "C:\\Users\\max\\Dropbox\\Monsun\\Monsun Foto Upload\\fotobase\\demo\\20130320_Lærer demonstration\\IMG_8828_ap.jpg",
+      "hiresAt": "2026-10-20T02:27:45.452Z"
     },
     {
       "id": "19",

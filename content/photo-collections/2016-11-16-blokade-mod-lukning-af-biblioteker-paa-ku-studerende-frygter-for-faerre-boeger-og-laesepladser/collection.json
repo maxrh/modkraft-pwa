@@ -9,7 +9,9 @@
     "Alexander Zehntner",
     "Peter Schwarz-Nielsen"
   ],
-  "photographers": [],
+  "photographers": [
+    "Alexander Zehntner"
+  ],
   "prefix": "Foto og interview",
   "series": null,
   "manchet": "FOTOSERIE: Tirsdag blokerede studerende adgangen for ledelsen på Det Humanistiske Fakultet på Københavns Universitet, hvor man planlægger at spare biblioteker væk.",
@@ -29,9 +31,9 @@
       "sortOrder": 1,
       "filename": "01-blokade2.jpg",
       "originalFilename": "blokade2.jpg",
-      "width": 940,
-      "height": 627,
-      "credit": null,
+      "width": 4256,
+      "height": 2832,
+      "credit": "Alexander Zehntner",
       "caption": null,
       "captionSource": "none",
       "sourceResolve": "relative",
@@ -41,16 +43,18 @@
         "Københavns Universitet",
         "Studerende",
         "Uddannelse"
-      ]
+      ],
+      "hiresSource": "C:\\Users\\max\\Dropbox\\Monsun\\Monsun Foto Upload\\fotobase\\aktivisme\\20161116_skriv kort beskrivelse her\\_SSK5330_az.jpg",
+      "hiresAt": "2026-10-20T02:28:53.456Z"
     },
     {
       "id": "02",
       "sortOrder": 2,
       "filename": "02-blokade3-0.jpg",
       "originalFilename": "blokade3_0.jpg",
-      "width": 940,
-      "height": 627,
-      "credit": null,
+      "width": 4256,
+      "height": 2832,
+      "credit": "Alexander Zehntner",
       "caption": "Niklas Zenius Jespersen",
       "captionSource": "title",
       "sourceResolve": "relative",
@@ -60,16 +64,18 @@
         "Københavns Universitet",
         "Studerende",
         "Uddannelse"
-      ]
+      ],
+      "hiresSource": "C:\\Users\\max\\Dropbox\\Monsun\\Monsun Foto Upload\\fotobase\\aktivisme\\20161116_skriv kort beskrivelse her\\_SSK5242_az.jpg",
+      "hiresAt": "2026-10-20T02:28:53.959Z"
     },
     {
       "id": "03",
       "sortOrder": 3,
       "filename": "03-blokade4.jpg",
       "originalFilename": "blokade4.jpg",
-      "width": 940,
-      "height": 627,
-      "credit": null,
+      "width": 4256,
+      "height": 2832,
+      "credit": "Alexander Zehntner",
       "caption": null,
       "captionSource": "none",
       "sourceResolve": "relative",
@@ -79,16 +85,18 @@
         "Københavns Universitet",
         "Studerende",
         "Uddannelse"
-      ]
+      ],
+      "hiresSource": "C:\\Users\\max\\Dropbox\\Monsun\\Monsun Foto Upload\\fotobase\\aktivisme\\20161116_skriv kort beskrivelse her\\_SSK5247_az.jpg",
+      "hiresAt": "2026-10-20T02:28:54.433Z"
     },
     {
       "id": "04",
       "sortOrder": 4,
       "filename": "04-blokade5.jpg",
       "originalFilename": "blokade5.jpg",
-      "width": 940,
-      "height": 627,
-      "credit": null,
+      "width": 4256,
+      "height": 2832,
+      "credit": "Alexander Zehntner",
       "caption": null,
       "captionSource": "none",
       "sourceResolve": "relative",
@@ -98,7 +106,9 @@
         "Københavns Universitet",
         "Studerende",
         "Uddannelse"
-      ]
+      ],
+      "hiresSource": "C:\\Users\\max\\Dropbox\\Monsun\\Monsun Foto Upload\\fotobase\\aktivisme\\20161116_skriv kort beskrivelse her\\_SSK5285_az.jpg",
+      "hiresAt": "2026-10-20T02:28:54.922Z"
     }
   ],
   "sourceUrl": "fotoserie/blokade-mod-lukning-af-biblioteker-p-ku-studerende-frygter-f-rre-b-ger-og-l-sepladser.html",

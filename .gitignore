@@ -14,6 +14,12 @@ dist/
 # Media junction (created by scripts/link-media.mjs)
 public/media/
 
+# Local match-workbench preview cache (dev only)
+.match-cache/
+
+# Generated survey/import reports (keep fotobase-match-decisions.json)
+content/photo-collections/*-report.json
+
 # OS / editor
 .DS_Store
 Thumbs.db

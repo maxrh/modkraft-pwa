@@ -1,0 +1,354 @@
+{
+  "id": "2012-08-27-save-fernanda",
+  "sourceNid": 19354,
+  "slug": "save-fernanda",
+  "title": "Save Fernanda",
+  "publishedAt": "2012-08-27T10:42:04+02:00",
+  "modifiedAt": "2012-08-27T18:09:03+02:00",
+  "authors": [
+    "Mette Kramer Kristensen"
+  ],
+  "photographers": [
+    "Mette Kramer Kristensen"
+  ],
+  "prefix": "Demonstration",
+  "series": null,
+  "manchet": "Omkring 200 mennesker deltog lørdag den 25. august i en demonstration i København i protest mod udvisningen af den transkønnede kvinde Fernanda Milan.",
+  "introMarkdown": "Omkring 200 mennesker deltog lørdag den 25. august i en demonstration i København i protest mod en kommende udvisningen af den transkønnede kvinde Fernanda Milan.\n\n[Læs mere om sagen her: »Stolthed! - over hvad?« hos Queerkraft.](http://www.modkraft.dk/artikel/stolthed-over-hvad)\n\n[Læs artiklen »Protest mod udvisning af transkønnet kvinde« hos Out and About.](http://www.out-and-about.dk/visnyhed.asp?id=3841)\n\n[Læs artiklen »Håndteringen af transpersoners asylsager viser et samfundsproblem« hos LBGT Danmark.](http://www.lgbt.dk/111/?tx_ttnews%5Byear%5D=2012&tx_ttnews%5Bmonth%5D=08&tx_ttnews%5Btt_news%5D=3481&cHash=00726e0c88)\n\n[Læs Elizabeth Japsen blog: »Menneskeretsaktivist voldtaget og udvises nu!«.](http://www.modkraft.dk/blogindlæg/menneskeretsaktivist-voldtaget-og-udvises-nu)\n\n[Læs også om sagen om T-Lounge Society.](http://tlounge.dk/save-fernanda/)",
+  "tags": [
+    "Asyl",
+    "Demonstration",
+    "København",
+    "LGBT+",
+    "Solidaritet"
+  ],
+  "genre": null,
+  "coverImage": "01",
+  "images": [
+    {
+      "id": "01",
+      "sortOrder": 1,
+      "filename": "01-demo-save-fernanda-milan-2.jpg",
+      "originalFilename": "Demo Save Fernanda Milan-2.jpg",
+      "width": 940,
+      "height": 627,
+      "credit": "Mette Kramer Kristensen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "root-stripped-hash",
+      "tags": [
+        "Asyl",
+        "Demonstration",
+        "København",
+        "LGBT+",
+        "Solidaritet"
+      ]
+    },
+    {
+      "id": "02",
+      "sortOrder": 2,
+      "filename": "02-demo-save-fernanda-milan-4.jpg",
+      "originalFilename": "Demo Save Fernanda Milan-4.jpg",
+      "width": 940,
+      "height": 627,
+      "credit": "Mette Kramer Kristensen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "root-stripped-hash",
+      "tags": [
+        "Asyl",
+        "Demonstration",
+        "København",
+        "LGBT+",
+        "Solidaritet"
+      ]
+    },
+    {
+      "id": "03",
+      "sortOrder": 3,
+      "filename": "03-demo-save-fernanda-milan-6.jpg",
+      "originalFilename": "Demo Save Fernanda Milan-6.jpg",
+      "width": 940,
+      "height": 627,
+      "credit": "Mette Kramer Kristensen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "root-stripped-hash",
+      "tags": [
+        "Asyl",
+        "Demonstration",
+        "København",
+        "LGBT+",
+        "Solidaritet"
+      ]
+    },
+    {
+      "id": "04",
+      "sortOrder": 4,
+      "filename": "04-demo-save-fernanda-milan-8-0.jpg",
+      "originalFilename": "Demo Save Fernanda Milan-8_0.jpg",
+      "width": 940,
+      "height": 627,
+      "credit": "Mette Kramer Kristensen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "root-stripped-hash",
+      "tags": [
+        "Asyl",
+        "Demonstration",
+        "København",
+        "LGBT+",
+        "Solidaritet"
+      ]
+    },
+    {
+      "id": "05",
+      "sortOrder": 5,
+      "filename": "05-demo-save-fernanda-milan-16.jpg",
+      "originalFilename": "Demo Save Fernanda Milan-16.jpg",
+      "width": 940,
+      "height": 627,
+      "credit": "Mette Kramer Kristensen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "root-stripped-hash",
+      "tags": [
+        "Asyl",
+        "Demonstration",
+        "København",
+        "LGBT+",
+        "Solidaritet"
+      ]
+    },
+    {
+      "id": "06",
+      "sortOrder": 6,
+      "filename": "06-demo-save-fernanda-milan-19.jpg",
+      "originalFilename": "Demo Save Fernanda Milan-19.jpg",
+      "width": 940,
+      "height": 627,
+      "credit": "Mette Kramer Kristensen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "root-stripped-hash",
+      "tags": [
+        "Asyl",
+        "Demonstration",
+        "København",
+        "LGBT+",
+        "Solidaritet"
+      ]
+    },
+    {
+      "id": "07",
+      "sortOrder": 7,
+      "filename": "07-demo-save-fernanda-milan-23.jpg",
+      "originalFilename": "Demo Save Fernanda Milan-23.jpg",
+      "width": 940,
+      "height": 627,
+      "credit": "Mette Kramer Kristensen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "root-stripped-hash",
+      "tags": [
+        "Asyl",
+        "Demonstration",
+        "København",
+        "LGBT+",
+        "Solidaritet"
+      ]
+    },
+    {
+      "id": "08",
+      "sortOrder": 8,
+      "filename": "08-demo-save-fernanda-milan-26.jpg",
+      "originalFilename": "Demo Save Fernanda Milan-26.jpg",
+      "width": 940,
+      "height": 627,
+      "credit": "Mette Kramer Kristensen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "root-stripped-hash",
+      "tags": [
+        "Asyl",
+        "Demonstration",
+        "København",
+        "LGBT+",
+        "Solidaritet"
+      ]
+    },
+    {
+      "id": "09",
+      "sortOrder": 9,
+      "filename": "09-demo-save-fernanda-milan-27.jpg",
+      "originalFilename": "Demo Save Fernanda Milan-27.jpg",
+      "width": 940,
+      "height": 627,
+      "credit": "Mette Kramer Kristensen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "root-stripped-hash",
+      "tags": [
+        "Asyl",
+        "Demonstration",
+        "København",
+        "LGBT+",
+        "Solidaritet"
+      ]
+    },
+    {
+      "id": "10",
+      "sortOrder": 10,
+      "filename": "10-demo-save-fernanda-milan-29.jpg",
+      "originalFilename": "Demo Save Fernanda Milan-29.jpg",
+      "width": 940,
+      "height": 627,
+      "credit": "Mette Kramer Kristensen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "root-stripped-hash",
+      "tags": [
+        "Asyl",
+        "Demonstration",
+        "København",
+        "LGBT+",
+        "Solidaritet"
+      ]
+    },
+    {
+      "id": "11",
+      "sortOrder": 11,
+      "filename": "11-demo-save-fernanda-milan-34.jpg",
+      "originalFilename": "Demo Save Fernanda Milan-34.jpg",
+      "width": 940,
+      "height": 627,
+      "credit": "Mette Kramer Kristensen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "root-stripped-hash",
+      "tags": [
+        "Asyl",
+        "Demonstration",
+        "København",
+        "LGBT+",
+        "Solidaritet"
+      ]
+    },
+    {
+      "id": "12",
+      "sortOrder": 12,
+      "filename": "12-demo-save-fernanda-milan-44.jpg",
+      "originalFilename": "Demo Save Fernanda Milan-44.jpg",
+      "width": 940,
+      "height": 627,
+      "credit": "Mette Kramer Kristensen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "root-stripped-hash",
+      "tags": [
+        "Asyl",
+        "Demonstration",
+        "København",
+        "LGBT+",
+        "Solidaritet"
+      ]
+    },
+    {
+      "id": "13",
+      "sortOrder": 13,
+      "filename": "13-demo-save-fernanda-milan-45.jpg",
+      "originalFilename": "Demo Save Fernanda Milan-45.jpg",
+      "width": 940,
+      "height": 627,
+      "credit": "Mette Kramer Kristensen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "root-stripped-hash",
+      "tags": [
+        "Asyl",
+        "Demonstration",
+        "København",
+        "LGBT+",
+        "Solidaritet"
+      ]
+    },
+    {
+      "id": "14",
+      "sortOrder": 14,
+      "filename": "14-demo-save-fernanda-milan-48.jpg",
+      "originalFilename": "Demo Save Fernanda Milan-48.jpg",
+      "width": 940,
+      "height": 627,
+      "credit": "Mette Kramer Kristensen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "root-stripped-hash",
+      "tags": [
+        "Asyl",
+        "Demonstration",
+        "København",
+        "LGBT+",
+        "Solidaritet"
+      ]
+    },
+    {
+      "id": "15",
+      "sortOrder": 15,
+      "filename": "15-demo-save-fernanda-milan-49.jpg",
+      "originalFilename": "Demo Save Fernanda Milan-49.jpg",
+      "width": 940,
+      "height": 627,
+      "credit": "Mette Kramer Kristensen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "root-stripped-hash",
+      "tags": [
+        "Asyl",
+        "Demonstration",
+        "København",
+        "LGBT+",
+        "Solidaritet"
+      ]
+    },
+    {
+      "id": "16",
+      "sortOrder": 16,
+      "filename": "16-demo-save-fernanda-milan-51.jpg",
+      "originalFilename": "Demo Save Fernanda Milan-51.jpg",
+      "width": 940,
+      "height": 627,
+      "credit": "Mette Kramer Kristensen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "root-stripped-hash",
+      "tags": [
+        "Asyl",
+        "Demonstration",
+        "København",
+        "LGBT+",
+        "Solidaritet"
+      ]
+    },
+    {
+      "id": "17",
+      "sortOrder": 17,
+      "filename": "17-demo-save-fernanda-milan-52.jpg",
+      "originalFilename": "Demo Save Fernanda Milan-52.jpg",
+      "width": 940,
+      "height": 627,
+      "credit": "Mette Kramer Kristensen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "root-stripped-hash",
+      "tags": [
+        "Asyl",
+        "Demonstration",
+        "København",
+        "LGBT+",
+        "Solidaritet"
+      ]
+    }
+  ],
+  "sourceUrl": "artikel/save-fernanda.html",
+  "sourceType": "artikel-foto"
+}

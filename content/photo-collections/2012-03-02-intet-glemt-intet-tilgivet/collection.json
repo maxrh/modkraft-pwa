@@ -1,0 +1,473 @@
+{
+  "id": "2012-03-02-intet-glemt-intet-tilgivet",
+  "sourceNid": 17688,
+  "slug": "intet-glemt-intet-tilgivet",
+  "title": "Intet glemt - intet tilgivet",
+  "publishedAt": "2012-03-02T07:19:34+01:00",
+  "modifiedAt": "2012-03-13T11:23:44+01:00",
+  "authors": [
+    "Mark Knudsen"
+  ],
+  "photographers": [
+    "Mette Kramer Kristensen",
+    "Brian Berg"
+  ],
+  "prefix": null,
+  "series": null,
+  "manchet": "Op mod 600 mennesker gik torsdag den 1. marts 2012 på gaden for markere rydningen af Jagtvej 69 for fem år siden.\n\nFoto: Mette Kramer Kristensen.",
+  "introMarkdown": "",
+  "tags": [
+    "1. marts",
+    "Demonstration",
+    "Jagtvej 69",
+    "Nørrebro",
+    "Rydning",
+    "Ungdomshuset"
+  ],
+  "genre": null,
+  "coverImage": "01",
+  "images": [
+    {
+      "id": "01",
+      "sortOrder": 1,
+      "filename": "01-jagtvej-69-5-a-r-efter-11.jpg",
+      "originalFilename": "Jagtvej 69 - 5 år efter-11.jpg",
+      "width": 900,
+      "height": 600,
+      "credit": "Mette Kramer Kristensen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "root-stripped-hash",
+      "tags": [
+        "1. marts",
+        "Demonstration",
+        "Jagtvej 69",
+        "Nørrebro",
+        "Rydning",
+        "Ungdomshuset"
+      ]
+    },
+    {
+      "id": "02",
+      "sortOrder": 2,
+      "filename": "02-jagtvej-69-5-a-r-efter-15.jpg",
+      "originalFilename": "Jagtvej 69 - 5 år efter-15.jpg",
+      "width": 900,
+      "height": 600,
+      "credit": "Mette Kramer Kristensen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "root-stripped-hash",
+      "tags": [
+        "1. marts",
+        "Demonstration",
+        "Jagtvej 69",
+        "Nørrebro",
+        "Rydning",
+        "Ungdomshuset"
+      ]
+    },
+    {
+      "id": "03",
+      "sortOrder": 3,
+      "filename": "03-jagtvej-69-5-a-r-efter-19.jpg",
+      "originalFilename": "Jagtvej 69 - 5 år efter-19.jpg",
+      "width": 900,
+      "height": 600,
+      "credit": "Mette Kramer Kristensen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "root-stripped-hash",
+      "tags": [
+        "1. marts",
+        "Demonstration",
+        "Jagtvej 69",
+        "Nørrebro",
+        "Rydning",
+        "Ungdomshuset"
+      ]
+    },
+    {
+      "id": "04",
+      "sortOrder": 4,
+      "filename": "04-jagtvej-69-5-a-r-efter-21.jpg",
+      "originalFilename": "Jagtvej 69 - 5 år efter-21.jpg",
+      "width": 900,
+      "height": 600,
+      "credit": "Mette Kramer Kristensen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "root-stripped-hash",
+      "tags": [
+        "1. marts",
+        "Demonstration",
+        "Jagtvej 69",
+        "Nørrebro",
+        "Rydning",
+        "Ungdomshuset"
+      ]
+    },
+    {
+      "id": "05",
+      "sortOrder": 5,
+      "filename": "05-jagtvej-69-5-a-r-efter-24.jpg",
+      "originalFilename": "Jagtvej 69 - 5 år efter-24.jpg",
+      "width": 900,
+      "height": 600,
+      "credit": "Mette Kramer Kristensen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "root-stripped-hash",
+      "tags": [
+        "1. marts",
+        "Demonstration",
+        "Jagtvej 69",
+        "Nørrebro",
+        "Rydning",
+        "Ungdomshuset"
+      ]
+    },
+    {
+      "id": "06",
+      "sortOrder": 6,
+      "filename": "06-jagtvej-69-5-a-r-efter-25.jpg",
+      "originalFilename": "Jagtvej 69 - 5 år efter-25.jpg",
+      "width": 900,
+      "height": 636,
+      "credit": "Mette Kramer Kristensen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "root-stripped-hash",
+      "tags": [
+        "1. marts",
+        "Demonstration",
+        "Jagtvej 69",
+        "Nørrebro",
+        "Rydning",
+        "Ungdomshuset"
+      ]
+    },
+    {
+      "id": "07",
+      "sortOrder": 7,
+      "filename": "07-jagtvej-69-5-a-r-efter-26.jpg",
+      "originalFilename": "Jagtvej 69 - 5 år efter-26.jpg",
+      "width": 900,
+      "height": 600,
+      "credit": "Mette Kramer Kristensen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "root-stripped-hash",
+      "tags": [
+        "1. marts",
+        "Demonstration",
+        "Jagtvej 69",
+        "Nørrebro",
+        "Rydning",
+        "Ungdomshuset"
+      ]
+    },
+    {
+      "id": "08",
+      "sortOrder": 8,
+      "filename": "08-jagtvej-69-5-a-r-efter-30.jpg",
+      "originalFilename": "Jagtvej 69 - 5 år efter-30.jpg",
+      "width": 900,
+      "height": 600,
+      "credit": "Mette Kramer Kristensen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "root-stripped-hash",
+      "tags": [
+        "1. marts",
+        "Demonstration",
+        "Jagtvej 69",
+        "Nørrebro",
+        "Rydning",
+        "Ungdomshuset"
+      ]
+    },
+    {
+      "id": "09",
+      "sortOrder": 9,
+      "filename": "09-jagtvej-69-5-a-r-efter-33.jpg",
+      "originalFilename": "Jagtvej 69 - 5 år efter-33.jpg",
+      "width": 900,
+      "height": 600,
+      "credit": "Mette Kramer Kristensen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "root-stripped-hash",
+      "tags": [
+        "1. marts",
+        "Demonstration",
+        "Jagtvej 69",
+        "Nørrebro",
+        "Rydning",
+        "Ungdomshuset"
+      ]
+    },
+    {
+      "id": "10",
+      "sortOrder": 10,
+      "filename": "10-jagtvej-69-5-a-r-efter-36.jpg",
+      "originalFilename": "Jagtvej 69 - 5 år efter-36.jpg",
+      "width": 900,
+      "height": 600,
+      "credit": "Mette Kramer Kristensen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "root-stripped-hash",
+      "tags": [
+        "1. marts",
+        "Demonstration",
+        "Jagtvej 69",
+        "Nørrebro",
+        "Rydning",
+        "Ungdomshuset"
+      ]
+    },
+    {
+      "id": "11",
+      "sortOrder": 11,
+      "filename": "11-jagtvej-69-5-a-r-efter-39-0.jpg",
+      "originalFilename": "Jagtvej 69 - 5 år efter-39_0.jpg",
+      "width": 900,
+      "height": 600,
+      "credit": "Mette Kramer Kristensen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "root-stripped-hash",
+      "tags": [
+        "1. marts",
+        "Demonstration",
+        "Jagtvej 69",
+        "Nørrebro",
+        "Rydning",
+        "Ungdomshuset"
+      ]
+    },
+    {
+      "id": "12",
+      "sortOrder": 12,
+      "filename": "12-jagtvej-69-5-a-r-efter-40.jpg",
+      "originalFilename": "Jagtvej 69 - 5 år efter-40.jpg",
+      "width": 900,
+      "height": 600,
+      "credit": "Mette Kramer Kristensen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "root-stripped-hash",
+      "tags": [
+        "1. marts",
+        "Demonstration",
+        "Jagtvej 69",
+        "Nørrebro",
+        "Rydning",
+        "Ungdomshuset"
+      ]
+    },
+    {
+      "id": "13",
+      "sortOrder": 13,
+      "filename": "13-jagtvej-69-5-a-r-efter-55.jpg",
+      "originalFilename": "Jagtvej 69 - 5 år efter-55.jpg",
+      "width": 900,
+      "height": 600,
+      "credit": "Mette Kramer Kristensen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "root-stripped-hash",
+      "tags": [
+        "1. marts",
+        "Demonstration",
+        "Jagtvej 69",
+        "Nørrebro",
+        "Rydning",
+        "Ungdomshuset"
+      ]
+    },
+    {
+      "id": "14",
+      "sortOrder": 14,
+      "filename": "14-jagtvej-69-5-a-r-efter-58.jpg",
+      "originalFilename": "Jagtvej 69 - 5 år efter-58.jpg",
+      "width": 900,
+      "height": 472,
+      "credit": "Mette Kramer Kristensen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "root-stripped-hash",
+      "tags": [
+        "1. marts",
+        "Demonstration",
+        "Jagtvej 69",
+        "Nørrebro",
+        "Rydning",
+        "Ungdomshuset"
+      ]
+    },
+    {
+      "id": "15",
+      "sortOrder": 15,
+      "filename": "15-jagtvej-69-5-a-r-efter-61.jpg",
+      "originalFilename": "Jagtvej 69 - 5 år efter-61.jpg",
+      "width": 467,
+      "height": 700,
+      "credit": "Mette Kramer Kristensen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "root-stripped-hash",
+      "tags": [
+        "1. marts",
+        "Demonstration",
+        "Jagtvej 69",
+        "Nørrebro",
+        "Rydning",
+        "Ungdomshuset"
+      ]
+    },
+    {
+      "id": "16",
+      "sortOrder": 16,
+      "filename": "16-ungern1.jpg",
+      "originalFilename": "ungern1,.jpg",
+      "width": 940,
+      "height": 625,
+      "credit": "Brian Berg",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "root-stripped-hash",
+      "tags": [
+        "1. marts",
+        "Demonstration",
+        "Jagtvej 69",
+        "Nørrebro",
+        "Rydning",
+        "Ungdomshuset"
+      ]
+    },
+    {
+      "id": "17",
+      "sortOrder": 17,
+      "filename": "17-ungern2.jpg",
+      "originalFilename": "ungern2,.jpg",
+      "width": 940,
+      "height": 625,
+      "credit": "Brian Berg",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "root-stripped-hash",
+      "tags": [
+        "1. marts",
+        "Demonstration",
+        "Jagtvej 69",
+        "Nørrebro",
+        "Rydning",
+        "Ungdomshuset"
+      ]
+    },
+    {
+      "id": "18",
+      "sortOrder": 18,
+      "filename": "18-ungern3.jpg",
+      "originalFilename": "ungern3,.jpg",
+      "width": 625,
+      "height": 940,
+      "credit": "Brian Berg",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "root-stripped-hash",
+      "tags": [
+        "1. marts",
+        "Demonstration",
+        "Jagtvej 69",
+        "Nørrebro",
+        "Rydning",
+        "Ungdomshuset"
+      ]
+    },
+    {
+      "id": "19",
+      "sortOrder": 19,
+      "filename": "19-ungern7.jpg",
+      "originalFilename": "ungern7,.jpg",
+      "width": 940,
+      "height": 625,
+      "credit": "Brian Berg",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "root-stripped-hash",
+      "tags": [
+        "1. marts",
+        "Demonstration",
+        "Jagtvej 69",
+        "Nørrebro",
+        "Rydning",
+        "Ungdomshuset"
+      ]
+    },
+    {
+      "id": "20",
+      "sortOrder": 20,
+      "filename": "20-ungern8.jpg",
+      "originalFilename": "ungern8,.jpg",
+      "width": 940,
+      "height": 625,
+      "credit": "Brian Berg",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "root-stripped-hash",
+      "tags": [
+        "1. marts",
+        "Demonstration",
+        "Jagtvej 69",
+        "Nørrebro",
+        "Rydning",
+        "Ungdomshuset"
+      ]
+    },
+    {
+      "id": "21",
+      "sortOrder": 21,
+      "filename": "21-ungern10.jpg",
+      "originalFilename": "ungern10,.jpg",
+      "width": 625,
+      "height": 940,
+      "credit": "Brian Berg",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "root-stripped-hash",
+      "tags": [
+        "1. marts",
+        "Demonstration",
+        "Jagtvej 69",
+        "Nørrebro",
+        "Rydning",
+        "Ungdomshuset"
+      ]
+    },
+    {
+      "id": "22",
+      "sortOrder": 22,
+      "filename": "22-ungern11.jpg",
+      "originalFilename": "ungern11,.jpg",
+      "width": 940,
+      "height": 625,
+      "credit": "Brian Berg",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "root-stripped-hash",
+      "tags": [
+        "1. marts",
+        "Demonstration",
+        "Jagtvej 69",
+        "Nørrebro",
+        "Rydning",
+        "Ungdomshuset"
+      ]
+    }
+  ],
+  "sourceUrl": "artikel/intet-glemt-intet-tilgivet.html",
+  "sourceType": "artikel-foto"
+}

@@ -28,10 +28,10 @@ function main() {
     console.log(pass ? '✓' : '✗', name, detail || '');
   }
 
-  check('99 collections', index.length === 99, `got ${index.length}`);
+  check('97 collections', index.length === 97, `got ${index.length}`);
   check(
-    '92 fotoserie',
-    report.totals.fotoserie === 92,
+    '90 fotoserie',
+    report.totals.fotoserie === 90,
     `got ${report.totals.fotoserie}`
   );
   check(

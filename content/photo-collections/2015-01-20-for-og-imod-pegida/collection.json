@@ -228,8 +228,8 @@
       "sortOrder": 12,
       "filename": "12-201501201017-7941-monsun-anders-pedersen.jpg",
       "originalFilename": "201501201017_7941_monsun_anders_pedersen.jpg",
-      "width": 940,
-      "height": 627,
+      "width": 2536,
+      "height": 1691,
       "credit": "Anders Pedersen",
       "caption": null,
       "captionSource": "title",
@@ -239,15 +239,17 @@
         "Demonstration",
         "København",
         "Pegida"
-      ]
+      ],
+      "hiresSource": "C:\\Users\\max\\Dropbox\\Monsun\\Monsun Foto Upload\\fotobase\\demo\\20150119_Pegidadk_demo\\IMG_7_ap.jpg",
+      "hiresAt": "2026-10-20T02:27:22.366Z"
     },
     {
       "id": "13",
       "sortOrder": 13,
       "filename": "13-201501201018-7937-monsun-anders-pedersen.jpg",
       "originalFilename": "201501201018_7937_monsun_anders_pedersen.jpg",
-      "width": 940,
-      "height": 627,
+      "width": 1726,
+      "height": 1151,
       "credit": "Anders Pedersen",
       "caption": null,
       "captionSource": "title",
@@ -257,15 +259,17 @@
         "Demonstration",
         "København",
         "Pegida"
-      ]
+      ],
+      "hiresSource": "C:\\Users\\max\\Dropbox\\Monsun\\Monsun Foto Upload\\fotobase\\demo\\20150119_Pegidadk_demo\\IMG_3red_ap.jpg",
+      "hiresAt": "2026-10-20T02:27:22.535Z"
     },
     {
       "id": "14",
       "sortOrder": 14,
       "filename": "14-201501201019-7935-monsun-anders-pedersen.jpg",
       "originalFilename": "201501201019_7935_monsun_anders_pedersen.jpg",
-      "width": 940,
-      "height": 627,
+      "width": 2967,
+      "height": 1977,
       "credit": "Anders Pedersen",
       "caption": null,
       "captionSource": "title",
@@ -275,15 +279,17 @@
         "Demonstration",
         "København",
         "Pegida"
-      ]
+      ],
+      "hiresSource": "C:\\Users\\max\\Dropbox\\Monsun\\Monsun Foto Upload\\fotobase\\demo\\20150119_Pegidadk_demo\\IMG_2_ap.jpg",
+      "hiresAt": "2026-10-20T02:27:22.872Z"
     },
     {
       "id": "15",
       "sortOrder": 15,
       "filename": "15-201501201021-7931-monsun-anders-pedersen.jpg",
       "originalFilename": "201501201021_7931_monsun_anders_pedersen.jpg",
-      "width": 940,
-      "height": 627,
+      "width": 3275,
+      "height": 2184,
       "credit": "Anders Pedersen",
       "caption": null,
       "captionSource": "title",
@@ -293,7 +299,9 @@
         "Demonstration",
         "København",
         "Pegida"
-      ]
+      ],
+      "hiresSource": "C:\\Users\\max\\Dropbox\\Monsun\\Monsun Foto Upload\\fotobase\\demo\\20150119_Pegidadk_demo\\IMG_10_ap.jpg",
+      "hiresAt": "2026-10-20T02:27:23.917Z"
     }
   ],
   "sourceUrl": "fotoserie/og-imod-pegida.html",

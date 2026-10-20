@@ -1,0 +1,1 @@
+[Se også linkbox om Roskilde Festival 2004-2012 på Modkraft.dk](../../spip.modkraft.dk/tidsskriftcentret/linkbox/article/roskilde-festival).

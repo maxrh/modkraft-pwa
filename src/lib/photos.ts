@@ -9,6 +9,7 @@ export interface Photo {
   href: string; // `/foto/${collectionId}/${imageId}`
   src: string;
   thumb: string;
+  filename: string;
   width: number;
   height: number;
   credit: string | null;
@@ -60,6 +61,19 @@ export function tagHref(tag: string): string {
   return `/t/${slugifyTag(tag)}`;
 }
 
+/**
+ * Prefer a stable display label when several tags share a slug
+ * (e.g. "Koncert" vs "koncert"). More photos wins; then da locale.
+ */
+export function preferTagLabel(a: string, b: string, countA = 0, countB = 0): string {
+  if (countA !== countB) return countA > countB ? a : b;
+  // Prefer any capital letter (Title/proper case) over all-lowercase
+  const aCap = /[A-ZÆØÅ]/.test(a);
+  const bCap = /[A-ZÆØÅ]/.test(b);
+  if (aCap !== bCap) return aCap ? a : b;
+  return a.localeCompare(b, 'da') <= 0 ? a : b;
+}
+
 export function collectionCoverUrl(collection: PhotoCollection): string | null {
   const coverId = collection.data.coverImage;
   const cover =
@@ -80,6 +94,7 @@ export function flattenCollectionPhotos(collection: PhotoCollection): Photo[] {
     href: photoHref(d.id, img.id),
     src: imageUrl(d.id, img.filename),
     thumb: thumbUrl(d.id, img.filename),
+    filename: img.filename,
     width: img.width ?? 940,
     height: img.height ?? 627,
     credit: img.credit || fallbackCredit,
@@ -125,16 +140,33 @@ export async function getAllPhotos(): Promise<Photo[]> {
 export async function getNavTags(limit = 10): Promise<string[]> {
   const load = async () => {
     const photos = await getAllPhotos();
-    const counts = new Map<string, number>();
+    /** slug → { label, count } */
+    const bySlug = new Map<string, { label: string; count: number; labelCounts: Map<string, number> }>();
     for (const photo of photos) {
+      const seen = new Set<string>();
       for (const tag of photo.tags) {
-        counts.set(tag, (counts.get(tag) ?? 0) + 1);
+        const slug = slugifyTag(tag);
+        if (!slug || seen.has(slug)) continue;
+        seen.add(slug);
+        let bucket = bySlug.get(slug);
+        if (!bucket) {
+          bucket = { label: tag, count: 0, labelCounts: new Map() };
+          bySlug.set(slug, bucket);
+        }
+        bucket.labelCounts.set(tag, (bucket.labelCounts.get(tag) ?? 0) + 1);
+        bucket.label = preferTagLabel(
+          bucket.label,
+          tag,
+          bucket.labelCounts.get(bucket.label) ?? 0,
+          bucket.labelCounts.get(tag) ?? 0,
+        );
+        bucket.count++;
       }
     }
-    return [...counts.entries()]
-      .sort((a, b) => b[1] - a[1] || a[0].localeCompare(b[0], 'da'))
+    return [...bySlug.values()]
+      .sort((a, b) => b.count - a.count || a.label.localeCompare(b.label, 'da'))
       .slice(0, limit)
-      .map(([tag]) => tag);
+      .map((b) => b.label);
   };
 
   if (!import.meta.env.PROD) return load();
@@ -150,14 +182,17 @@ export async function getArchiveStats(): Promise<ArchiveStats> {
   const load = async (): Promise<ArchiveStats> => {
     const collections = await getCollection('photoCollections');
     const photos = await getAllPhotos();
-    const tags = new Set<string>();
+    const tagSlugs = new Set<string>();
     for (const photo of photos) {
-      for (const tag of photo.tags) tags.add(tag);
+      for (const tag of photo.tags) {
+        const slug = slugifyTag(tag);
+        if (slug) tagSlugs.add(slug);
+      }
     }
     return {
       photoCount: photos.length,
       collectionCount: collections.length,
-      tagCount: tags.size,
+      tagCount: tagSlugs.size,
     };
   };
 
@@ -174,7 +209,6 @@ export function photoMatchesQuery(photo: Photo, query: string): boolean {
     photo.caption ?? '',
     photo.credit ?? '',
     photo.prefix ?? '',
-    photo.genre ?? '',
     ...photo.tags,
     ...photo.authors,
     ...photo.photographers,

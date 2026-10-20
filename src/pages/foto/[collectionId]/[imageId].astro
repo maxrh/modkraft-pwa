@@ -1,17 +1,19 @@
 ---
 import { getCollection } from 'astro:content';
+import { ArrowLeft, ArrowRight, Calendar, Camera, Scaling } from 'lucide-react';
 import BaseLayout from '@/layouts/BaseLayout.astro';
 import Container from '@/components/layout/Container.astro';
 import TagPills from '@/components/layout/TagPills.astro';
 import PhotoMosaic from '@/components/PhotoMosaic.astro';
-import { renderMarkdown } from '@/lib/markdown';
+import { buttonVariants } from '@/components/ui/button';
+import { readCameraModel } from '@/lib/exif';
 import {
-  byline,
   flattenCollectionPhotos,
   formatDate,
   sortCollectionsNewest,
   type Photo,
 } from '@/lib/photos';
+import { cn } from '@/lib/utils';
 
 export async function getStaticPaths() {
   const collections = (await getCollection('photoCollections')).sort(sortCollectionsNewest);
@@ -56,31 +58,39 @@ interface Props {
 }
 
 const { photo, siblings, prevPhoto, nextPhoto } = Astro.props;
-const manchetHtml = renderMarkdown(photo.manchet);
-const introHtml = renderMarkdown(photo.introMarkdown);
+const cameraModel = await readCameraModel(photo.collectionId, photo.filename);
 const pageTitle = photo.caption
   ? `${photo.caption.slice(0, 60)} — ${photo.collectionTitle}`
   : `${photo.collectionTitle} (${photo.sortOrder}/${photo.imageCount})`;
+
+const metaRows: Array<{ icon: 'calendar' | 'scaling' | 'camera'; value: string }> = [];
+if (photo.publishedAt) {
+  metaRows.push({ icon: 'calendar', value: `Publiceret ${formatDate(photo.publishedAt)}` });
+}
+if (photo.width && photo.height) {
+  metaRows.push({ icon: 'scaling', value: `${photo.width} × ${photo.height}` });
+}
+if (cameraModel) {
+  metaRows.push({ icon: 'camera', value: cameraModel });
+}
 ---
 
 <BaseLayout
   title={pageTitle}
-  description={photo.caption || photo.manchet?.slice(0, 160) || `Foto fra ${photo.collectionTitle}`}
+  description={photo.caption || `Foto fra ${photo.collectionTitle}`}
 >
   <Container size="stage" class="pt-8 pb-16">
     <article>
-      <!-- Top bar: back link, photographer, prev/next within series -->
-      <div class="mb-4 flex flex-wrap items-center justify-between gap-4 border-b border-border/70 pb-3">
-        <div class="flex flex-wrap items-center gap-2 text-sm">
-          <a href="/" class="font-medium text-muted-foreground no-underline hover:text-foreground">
-            ← Alle fotos
-          </a>
-          <span class="text-muted-foreground">/</span>
+      <!-- Top bar: back link, prev/next within series -->
+      <div class="mb-6 flex flex-wrap items-center justify-between gap-4 ">
+        <div class="flex flex-wrap items-center gap-1 text-lg">
+          Samling:
           <a
             href={`/samling/${photo.collectionId}`}
-            class="font-medium text-foreground no-underline hover:underline"
+            class="inline-flex items-center gap-1 font-semibold text-foreground no-underline hover:underline"
           >
             {photo.collectionTitle}
+            <ArrowRight className="size-3.5 shrink-0" aria-hidden="true" />
           </a>
           {
             photo.series && (
@@ -90,149 +100,146 @@ const pageTitle = photo.caption
                   href={`/serie/${photo.series}`}
                   class="rounded bg-secondary px-2 py-0.5 text-xs font-medium text-secondary-foreground no-underline hover:bg-accent"
                 >
-                  {photo.prefix || photo.series}
+                  Serie
                 </a>
               </>
             )
           }
         </div>
 
-        <div class="flex items-center gap-3 text-sm">
+        <div class="flex items-center gap-1">
+          <span
+            class={cn(
+              buttonVariants({ variant: 'ghost', size: 'sm' }),
+              'pointer-events-none text-muted-foreground tabular-nums hover:bg-muted',
+            )}
+          >
+            {photo.sortOrder} / {photo.imageCount}
+          </span>
           {
-            photo.credit && (
-              <span class="hidden text-muted-foreground sm:inline">
-                Foto: <strong class="font-medium text-foreground">{photo.credit}</strong>
+            prevPhoto ? (
+              <a
+                href={prevPhoto.href}
+                class={cn(buttonVariants({ variant: 'outline', size: 'sm' }), 'no-underline')}
+                title="Forrige foto i serien"
+              >
+                <ArrowLeft aria-hidden="true" />
+              </a>
+            ) : (
+              <span
+                class={cn(
+                  buttonVariants({ variant: 'outline', size: 'sm' }),
+                  'pointer-events-none opacity-40',
+                )}
+                aria-disabled="true"
+              >
+                <ArrowLeft aria-hidden="true" />
               </span>
             )
           }
-          <span class="rounded bg-muted px-2.5 py-1 text-xs font-medium tabular-nums text-muted-foreground">
-            {photo.sortOrder} / {photo.imageCount}
-          </span>
-          <div class="flex items-center gap-1">
-            {
-              prevPhoto ? (
-                <a
-                  href={prevPhoto.href}
-                  class="rounded-md border border-border px-2.5 py-1 text-xs font-medium text-foreground no-underline hover:bg-accent"
-                  title="Forrige foto i serien"
-                >
-                  ← Forrige
-                </a>
-              ) : (
-                <span class="rounded-md border border-border/50 px-2.5 py-1 text-xs text-muted-foreground/40">
-                  ← Forrige
-                </span>
-              )
-            }
-            {
-              nextPhoto ? (
-                <a
-                  href={nextPhoto.href}
-                  class="rounded-md border border-border px-2.5 py-1 text-xs font-medium text-foreground no-underline hover:bg-accent"
-                  title="Næste foto i serien"
-                >
-                  Næste →
-                </a>
-              ) : (
-                <span class="rounded-md border border-border/50 px-2.5 py-1 text-xs text-muted-foreground/40">
-                  Næste →
-                </span>
-              )
-            }
-          </div>
+          {
+            nextPhoto ? (
+              <a
+                href={nextPhoto.href}
+                class={cn(buttonVariants({ variant: 'outline', size: 'sm' }), 'no-underline')}
+                title="Næste foto i serien"
+              >
+                <ArrowRight aria-hidden="true" />
+              </a>
+            ) : (
+              <span
+                class={cn(
+                  buttonVariants({ variant: 'outline', size: 'sm' }),
+                  'pointer-events-none opacity-40',
+                )}
+                aria-disabled="true"
+              >
+                <ArrowRight aria-hidden="true" />
+              </span>
+            )
+          }
         </div>
       </div>
 
-      <!-- Main photo stage (true aspect ratio, uncropped) -->
-      <figure class="flex flex-col items-center">
-        <div class="flex w-full items-center justify-center rounded-md bg-neutral-950/95 p-2 sm:p-6">
-          <img
-            src={photo.src}
-            alt={photo.caption || photo.collectionTitle}
-            width={photo.width}
-            height={photo.height}
-            class="max-h-[82vh] w-auto max-w-full rounded-xs object-contain shadow-lg"
-          />
-        </div>
-
-        <figcaption class="mt-4 flex w-full max-w-4xl flex-wrap items-baseline justify-between gap-4 text-sm">
-          <div class="max-w-2xl space-y-1">
-            {
-              photo.caption ? (
-                <p class="text-base leading-relaxed text-foreground">{photo.caption}</p>
-              ) : (
-                <p class="text-muted-foreground italic">Uden billedtekst — fra »{photo.collectionTitle}«</p>
-              )
-            }
-          </div>
-          {
-            photo.credit && (
-              <p class="shrink-0 text-xs font-medium tracking-wide text-muted-foreground uppercase">
-                Foto: {photo.credit}
-              </p>
-            )
-          }
-        </figcaption>
+      <!-- Main photo stage -->
+      <figure class="mx-auto flex w-fit max-w-full flex-col">
+        <img
+          src={photo.src}
+          alt={photo.caption || photo.collectionTitle}
+          width={photo.width}
+          height={photo.height}
+          class="max-h-[82vh] w-auto max-w-full object-contain"
+        />
       </figure>
 
-      <!-- Story / collection metadata & tags connected to this image -->
-      <section class="mx-auto mt-10 max-w-4xl rounded-xl border border-border/80 bg-card p-6 shadow-xs sm:p-8">
-        <div class="flex flex-wrap items-start justify-between gap-4">
-          <div>
-            {
-              photo.prefix && (
-                <p class="mb-1 text-xs font-semibold tracking-wider text-muted-foreground uppercase">
-                  {photo.prefix}
-                </p>
-              )
-            }
-            <h1 class="font-display text-2xl font-bold tracking-tight sm:text-3xl">
-              <a href={`/samling/${photo.collectionId}`} class="no-underline hover:underline">
-                {photo.collectionTitle}
-              </a>
-            </h1>
-            <p class="mt-1.5 text-sm text-muted-foreground">
-              {formatDate(photo.publishedAt)}
-              {photo.authors.length ? ` · ${byline(photo.authors)}` : ''}
-              {photo.genre ? ` · ${photo.genre}` : ''}
-            </p>
-          </div>
-
-          <a
-            href={`/samling/${photo.collectionId}`}
-            class="rounded-md border border-border px-3 py-1.5 text-xs font-medium text-foreground no-underline hover:bg-accent"
-          >
-            Se hele samlingen ({photo.imageCount} fotos) →
-          </a>
-        </div>
-
-        {manchetHtml && <div class="prose prose-neutral mt-5 max-w-none" set:html={manchetHtml} />}
-        {introHtml && <div class="prose prose-neutral mt-4 max-w-none" set:html={introHtml} />}
-
+      <!-- Image details (no card / article body) -->
+      <section class="mt-14">
         {
-          photo.tags.length > 0 && (
-            <div class="mt-6 border-t border-border/60 pt-4">
-              <TagPills tags={photo.tags} />
-            </div>
+          photo.caption && (
+            <h1 class="font-display text-2xl font-bold tracking-normal sm:text-2xl">
+              {photo.caption}
+            </h1>
           )
         }
+
+        {
+          photo.credit && (
+            <p
+              class:list={[
+                'text-base font-medium text-foreground sm:text-base',
+                photo.caption ? 'mt-1' : undefined,
+              ]}
+            >
+              {photo.credit}
+            </p>
+          )
+        }
+
+        {
+          metaRows.length > 0 && (
+            <dl
+              class:list={[
+                'space-y-1.5',
+                photo.caption || photo.credit ? 'mt-3' : undefined,
+              ]}
+            >
+              {metaRows.map((row) => (
+                <div class="flex items-start gap-2.5">
+                  <dt class="mt-0.5 shrink-0 text-muted-foreground">
+                    {row.icon === 'calendar' ? (
+                      <Calendar className="size-4" aria-hidden="true" />
+                    ) : row.icon === 'scaling' ? (
+                      <Scaling className="size-4" aria-hidden="true" />
+                    ) : (
+                      <Camera className="size-4" aria-hidden="true" />
+                    )}
+                    <span class="sr-only">
+                      {row.icon === 'calendar'
+                        ? 'Publiceret'
+                        : row.icon === 'scaling'
+                          ? 'Dimensioner'
+                          : 'Kamera'}
+                    </span>
+                  </dt>
+                  <dd class="text-sm text-foreground font-light">{row.value}</dd>
+                </div>
+              ))}
+            </dl>
+          )
+        }
+
+        {photo.tags.length > 0 && <TagPills tags={photo.tags} class="mt-6" />}
+
+        
       </section>
 
-      <!-- Rest of images in this collection / series -->
+      <!-- Rest of images in this collection -->
       {
         siblings.length > 0 && (
           <section class="mt-14">
-            <div class="mb-5 flex items-baseline justify-between gap-4">
-              <h2 class="font-display text-xl font-semibold sm:text-2xl">
-                Flere fotos fra »{photo.collectionTitle}« ({siblings.length})
-              </h2>
-              <a
-                href={`/samling/${photo.collectionId}`}
-                class="text-sm text-muted-foreground no-underline hover:text-foreground"
-              >
-                Vis alle {photo.imageCount} fotos →
-              </a>
-            </div>
+            <h2 class="mb-5 font-display text-xl font-semibold sm:text-2xl">
+              Fotos fra samme serie
+            </h2>
             <PhotoMosaic photos={siblings} />
           </section>
         )

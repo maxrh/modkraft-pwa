@@ -1,0 +1,1 @@
+Tyve syriske kurdere har i over 12 dage sultestrejket i asyllejren Sigerslev. Kurderne har fået afvist deres sager om asyl og frygter nu hjemsendelse til Syrien, hvor de går en uvis fremtid med tortur og forfølgelse i møde. Sultestrejken er derfor en desperat kamp for at få deres sager genoptaget samt deres sidste middel til at opråbe det danske samfund.

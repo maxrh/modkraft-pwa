@@ -1,5 +1,731 @@
 [
   {
+    "id": "2012-03-02-intet-glemt-intet-tilgivet",
+    "slug": "intet-glemt-intet-tilgivet",
+    "title": "Intet glemt - intet tilgivet",
+    "publishedAt": "2012-03-02T07:19:34+01:00",
+    "authors": [
+      "Mark Knudsen"
+    ],
+    "photographers": [
+      "Mette Kramer Kristensen",
+      "Brian Berg"
+    ],
+    "prefix": null,
+    "series": null,
+    "tags": [
+      "1. marts",
+      "Demonstration",
+      "Jagtvej 69",
+      "Nørrebro",
+      "Rydning",
+      "Ungdomshuset"
+    ],
+    "genre": null,
+    "sourceType": "artikel-foto",
+    "imageCount": 22,
+    "coverImage": "images/01-jagtvej-69-5-a-r-efter-111303.jpg",
+    "manchet": "Op mod 600 mennesker gik torsdag den 1. marts 2012 på gaden for markere rydningen af Jagtvej 69 for fem år siden.\n\nFoto: Mette Kramer Kristensen."
+  },
+  {
+    "id": "2012-03-07-blokade-mod-vus-lokaler",
+    "slug": "blokade-mod-vus-lokaler",
+    "title": "Blokade mod VU's lokaler",
+    "publishedAt": "2012-03-07T11:25:52+01:00",
+    "authors": [
+      "Mark Knudsen"
+    ],
+    "photographers": [
+      "Tommi Rønnqvist",
+      "Mette Kramer Kristensen",
+      "Brian Berg"
+    ],
+    "prefix": null,
+    "series": null,
+    "tags": [
+      "Antifascisme",
+      "Antiracisme",
+      "Blokade",
+      "Demonstration",
+      "København"
+    ],
+    "genre": null,
+    "sourceType": "artikel-foto",
+    "imageCount": 15,
+    "coverImage": "images/01-mg-4581c48b.jpg",
+    "manchet": null
+  },
+  {
+    "id": "2012-03-09-8-marts",
+    "slug": "8-marts",
+    "title": "8. Marts",
+    "publishedAt": "2012-03-09T10:06:27+01:00",
+    "authors": [
+      "Mark Knudsen"
+    ],
+    "photographers": [
+      "Mette Kramer Kristensen"
+    ],
+    "prefix": null,
+    "series": null,
+    "tags": [
+      "8. marts",
+      "Demonstration",
+      "Feminisme",
+      "Kvindekamp"
+    ],
+    "genre": null,
+    "sourceType": "artikel-foto",
+    "imageCount": 22,
+    "coverImage": "images/01-8-marts-initiativet-sio-1099a5.jpg",
+    "manchet": null
+  },
+  {
+    "id": "2012-03-17-soelleroedgade-tyve-aar-efter",
+    "slug": "soelleroedgade-tyve-aar-efter",
+    "title": "Søllerødgade - tyve år efter",
+    "publishedAt": "2012-03-17T14:15:53+01:00",
+    "authors": [
+      "Mark Knudsen"
+    ],
+    "photographers": [
+      "Mette Kramer Kristensen"
+    ],
+    "prefix": "Venstrefløj",
+    "series": null,
+    "tags": [
+      "Antiracisme",
+      "Demonstration",
+      "Historie",
+      "Nørrebro",
+      "Venstrefløj"
+    ],
+    "genre": null,
+    "sourceType": "artikel-foto",
+    "imageCount": 12,
+    "coverImage": "images/01-demo-20-a-r-efter-bomben-i-soelleroedgade-1f839.jpg",
+    "manchet": null
+  },
+  {
+    "id": "2012-03-30-forandring-nu",
+    "slug": "forandring-nu",
+    "title": "Forandring Nu!",
+    "publishedAt": "2012-03-30T11:13:00+02:00",
+    "authors": [
+      "Mark Knudsen"
+    ],
+    "photographers": [
+      "Mette Kramer Kristensen"
+    ],
+    "prefix": "Demonstration",
+    "series": null,
+    "tags": [
+      "Demonstration",
+      "Fagbevægelse",
+      "Klima",
+      "Velfærd"
+    ],
+    "genre": null,
+    "sourceType": "artikel-foto",
+    "imageCount": 18,
+    "coverImage": "images/01-forandring-nu-3be25.jpg",
+    "manchet": null
+  },
+  {
+    "id": "2012-04-02-ingen-fascister-i-vores-gader",
+    "slug": "ingen-fascister-i-vores-gader",
+    "title": "»Ingen fascister i vores gader«",
+    "publishedAt": "2012-04-02T14:04:43+02:00",
+    "authors": [
+      "Mark Knudsen"
+    ],
+    "photographers": [
+      "Morten Rode",
+      "Brian Berg",
+      "Tommi Rønnqvist",
+      "Anders Pedersen"
+    ],
+    "prefix": null,
+    "series": null,
+    "tags": [
+      "Antifascisme",
+      "Antiracisme",
+      "Demonstration",
+      "Aarhus"
+    ],
+    "genre": null,
+    "sourceType": "artikel-foto",
+    "imageCount": 29,
+    "coverImage": "images/01-mg-46558923.jpg",
+    "manchet": "150 anti-islamister fra hele Europa blev mødt med protest og fejring af mangfoldigheden fra omkring 4000 demonstranter lørdag den 30. marts i Aarhus midtby."
+  },
+  {
+    "id": "2012-04-13-flere-frie-steder",
+    "slug": "flere-frie-steder",
+    "title": "Flere Frie Steder",
+    "publishedAt": "2012-04-13T14:14:58+02:00",
+    "authors": [
+      "Mark Knudsen"
+    ],
+    "photographers": [
+      "Mette Kramer Kristensen"
+    ],
+    "prefix": "Demonstration",
+    "series": null,
+    "tags": [
+      "BZ",
+      "Demonstration",
+      "Fristeder",
+      "Nørrebro"
+    ],
+    "genre": null,
+    "sourceType": "artikel-foto",
+    "imageCount": 16,
+    "coverImage": "images/01-demo-flere-fristeder-33e67.jpg",
+    "manchet": null
+  },
+  {
+    "id": "2012-05-02-fest-faner-og-fadoel",
+    "slug": "fest-faner-og-fadoel",
+    "title": "Fest, faner og fadøl",
+    "publishedAt": "2012-05-02T12:45:11+02:00",
+    "authors": [
+      "Anonymous"
+    ],
+    "photographers": [
+      "Anders Pedersen",
+      "Mark Knudsen",
+      "Mette Kramer Kristensen",
+      "Lars Kamp Mortensen"
+    ],
+    "prefix": "Stor fotoserie",
+    "series": null,
+    "tags": [
+      "1. maj",
+      "Antifascisme",
+      "Demonstration",
+      "Fagbevægelse",
+      "Fælledparken",
+      "København"
+    ],
+    "genre": null,
+    "sourceType": "artikel-foto",
+    "imageCount": 47,
+    "coverImage": "images/01-mg-1948680b.jpg",
+    "manchet": null
+  },
+  {
+    "id": "2012-05-07-helt-ude-i-hampen",
+    "slug": "helt-ude-i-hampen",
+    "title": "Helt ude i hampen",
+    "publishedAt": "2012-05-07T14:16:19+02:00",
+    "authors": [
+      "Mette Kramer Kristensen"
+    ],
+    "photographers": [
+      "Mette Kramer Kristensen"
+    ],
+    "prefix": "Hampemarch",
+    "series": null,
+    "tags": [
+      "Aktivisme",
+      "Demonstration",
+      "København",
+      "Rådhuspladsen"
+    ],
+    "genre": null,
+    "sourceType": "artikel-foto",
+    "imageCount": 24,
+    "coverImage": "images/01-marijuana-march-2012-4a63f.jpg",
+    "manchet": null
+  },
+  {
+    "id": "2012-05-08-tunge-toner",
+    "slug": "tunge-toner",
+    "title": "Tunge toner",
+    "publishedAt": "2012-05-08T12:50:38+02:00",
+    "authors": [
+      "Rune Eltard-Sørensen"
+    ],
+    "photographers": [
+      "Brian Berg"
+    ],
+    "prefix": null,
+    "series": null,
+    "tags": [
+      "Koncert",
+      "Kultur",
+      "Musik",
+      "Ungdomshuset"
+    ],
+    "genre": null,
+    "sourceType": "artikel-foto",
+    "imageCount": 20,
+    "coverImage": "images/01-a1-038fa.jpg",
+    "manchet": null
+  },
+  {
+    "id": "2012-05-14-out-of-the-camps",
+    "slug": "out-of-the-camps",
+    "title": "Out of the Camps",
+    "publishedAt": "2012-05-14T12:59:43+02:00",
+    "authors": [
+      "Mette Kramer Kristensen"
+    ],
+    "photographers": [
+      "Mette Kramer Kristensen"
+    ],
+    "prefix": null,
+    "series": null,
+    "tags": [
+      "Asyl",
+      "Demonstration",
+      "Flygtninge",
+      "København"
+    ],
+    "genre": null,
+    "sourceType": "artikel-foto",
+    "imageCount": 26,
+    "coverImage": "images/01-out-of-the-camps-1a90b.jpg",
+    "manchet": null
+  },
+  {
+    "id": "2012-05-18-sultestrejke-i-sigerslev",
+    "slug": "sultestrejke-i-sigerslev",
+    "title": "Sultestrejke i Sigerslev",
+    "publishedAt": "2012-05-18T15:50:59+02:00",
+    "authors": [
+      "Mette Kramer Kristensen"
+    ],
+    "photographers": [
+      "Mette Kramer Kristensen"
+    ],
+    "prefix": "Asyl",
+    "series": null,
+    "tags": [
+      "Asyl",
+      "Flygtninge",
+      "Kurdistan",
+      "Sultestrejke",
+      "Syrien"
+    ],
+    "genre": null,
+    "sourceType": "artikel-foto",
+    "imageCount": 9,
+    "coverImage": "images/01-mg-6131389b.jpg",
+    "manchet": null
+  },
+  {
+    "id": "2012-05-23-syrisk-soergeoptog",
+    "slug": "syrisk-soergeoptog",
+    "title": "Syrisk sørgeoptog",
+    "publishedAt": "2012-05-23T14:47:20+02:00",
+    "authors": [
+      "Mette Kramer Kristensen"
+    ],
+    "photographers": [
+      "Mette Kramer Kristensen"
+    ],
+    "prefix": "Amnesty",
+    "series": null,
+    "tags": [
+      "Amnesty",
+      "Demonstration",
+      "FN",
+      "Rusland",
+      "Solidaritet",
+      "Syrien"
+    ],
+    "genre": null,
+    "sourceType": "artikel-foto",
+    "imageCount": 16,
+    "coverImage": "images/01-demo-mod-volden-i-syrien-143f5.jpg",
+    "manchet": null
+  },
+  {
+    "id": "2012-06-25-glade-punks-fik-cykelkrig-og-veganske-hotdogs",
+    "slug": "glade-punks-fik-cykelkrig-og-veganske-hotdogs",
+    "title": "Glade punks fik cykelkrig og veganske hotdogs",
+    "publishedAt": "2012-06-25T22:35:02+02:00",
+    "authors": [
+      "Adrian Utzon Dietz"
+    ],
+    "photographers": [],
+    "prefix": "Punkfestival",
+    "series": null,
+    "tags": [
+      "Bike Wars",
+      "K-Town",
+      "Koncert",
+      "Musik",
+      "Punk",
+      "Ungdomshuset"
+    ],
+    "genre": null,
+    "sourceType": "artikel-foto",
+    "imageCount": 22,
+    "coverImage": "images/01-k-town-hardcore-fest-313eb.jpg",
+    "manchet": "Punkere fra nær og fjern trodsede i weekenden regnen og sluttede sig til den traditionsrige K-TOWN punk-festival på Nørrebro, hvor de kunne opleve bike-wars, frådse veganske hotdogs og nyde tidens tunge toner."
+  },
+  {
+    "id": "2012-07-12-roskilde-festival-2012",
+    "slug": "roskilde-festival-2012",
+    "title": "Roskilde Festival 2012",
+    "publishedAt": "2012-07-12T13:07:13+02:00",
+    "authors": [
+      "Anders Birger"
+    ],
+    "photographers": [],
+    "prefix": "Musikfoto",
+    "series": null,
+    "tags": [
+      "Koncert",
+      "Kultur",
+      "Musik",
+      "Roskilde Festival"
+    ],
+    "genre": null,
+    "sourceType": "artikel-foto",
+    "imageCount": 33,
+    "coverImage": "images/01-abs-ros-final-017ddd.jpg",
+    "manchet": "Koncerter og stemninger fra årets festival."
+  },
+  {
+    "id": "2012-07-27-jazz",
+    "slug": "jazz",
+    "title": "Jazz!",
+    "publishedAt": "2012-07-27T11:47:36+02:00",
+    "authors": [
+      "Mette Kramer Kristensen"
+    ],
+    "photographers": [
+      "Mette Kramer Kristensen"
+    ],
+    "prefix": "Jazz Festival",
+    "series": null,
+    "tags": [
+      "Jazz",
+      "Koncert",
+      "Kultur",
+      "København",
+      "Musik"
+    ],
+    "genre": null,
+    "sourceType": "artikel-foto",
+    "imageCount": 27,
+    "coverImage": "images/01-copenhagen-jazz-festival-dag-1-1dd1b.jpg",
+    "manchet": null
+  },
+  {
+    "id": "2012-08-02-turisme",
+    "slug": "turisme",
+    "title": "Turisme",
+    "publishedAt": "2012-08-02T12:46:21+02:00",
+    "authors": [
+      "Brian Berg"
+    ],
+    "photographers": [
+      "Brian Berg"
+    ],
+    "prefix": "Italien",
+    "series": null,
+    "tags": [
+      "Italien",
+      "Kultur",
+      "Turisme"
+    ],
+    "genre": null,
+    "sourceType": "artikel-foto",
+    "imageCount": 19,
+    "coverImage": "images/01-tur1-1273b.jpg",
+    "manchet": null
+  },
+  {
+    "id": "2012-08-21-pussy-riot",
+    "slug": "pussy-riot",
+    "title": "Pussy Riot",
+    "publishedAt": "2012-08-21T13:09:35+02:00",
+    "authors": [
+      "Rune Eltard-Sørensen"
+    ],
+    "photographers": [
+      "Mette Kramer Kristensen",
+      "Brian Berg",
+      "Anders Pedersen"
+    ],
+    "prefix": "Demonstration",
+    "series": null,
+    "tags": [
+      "Demonstration",
+      "København",
+      "LGBT+",
+      "Pussy Riot",
+      "Rusland",
+      "Solidaritet"
+    ],
+    "genre": null,
+    "sourceType": "artikel-foto",
+    "imageCount": 18,
+    "coverImage": "images/01-pussy-riot-21bc9.jpg",
+    "manchet": null
+  },
+  {
+    "id": "2012-08-27-save-fernanda",
+    "slug": "save-fernanda",
+    "title": "Save Fernanda",
+    "publishedAt": "2012-08-27T10:42:04+02:00",
+    "authors": [
+      "Mette Kramer Kristensen"
+    ],
+    "photographers": [
+      "Mette Kramer Kristensen"
+    ],
+    "prefix": "Demonstration",
+    "series": null,
+    "tags": [
+      "Asyl",
+      "Demonstration",
+      "København",
+      "LGBT+",
+      "Solidaritet"
+    ],
+    "genre": null,
+    "sourceType": "artikel-foto",
+    "imageCount": 17,
+    "coverImage": "images/01-demo-save-fernanda-milan-2d930.jpg",
+    "manchet": "Omkring 200 mennesker deltog lørdag den 25. august i en demonstration i København i protest mod udvisningen af den transkønnede kvinde Fernanda Milan."
+  },
+  {
+    "id": "2012-09-10-billeder-fra-en-sultestrejke",
+    "slug": "billeder-fra-en-sultestrejke",
+    "title": "Billeder fra en sultestrejke",
+    "publishedAt": "2012-09-10T15:41:41+02:00",
+    "authors": [
+      "Mark Knudsen"
+    ],
+    "photographers": [
+      "Mette Kramer Kristensen"
+    ],
+    "prefix": "Fotoudstilling",
+    "series": null,
+    "tags": [
+      "Asyl",
+      "Fotoudstilling",
+      "Nørrebro",
+      "Stefanskirken",
+      "Sultestrejke"
+    ],
+    "genre": null,
+    "sourceType": "artikel-foto",
+    "imageCount": 5,
+    "coverImage": "images/01-sultestrejke-57f53.jpg",
+    "manchet": null
+  },
+  {
+    "id": "2012-10-03-3f-og-vejlegaarden-i-arbejdsretten",
+    "slug": "3f-og-vejlegaarden-i-arbejdsretten",
+    "title": "3F og Vejlegården i arbejdsretten",
+    "publishedAt": "2012-10-03T12:11:25+02:00",
+    "authors": [
+      "Mark Knudsen"
+    ],
+    "photographers": [
+      "Mark Knudsen",
+      "Mette Kramer Kristensen"
+    ],
+    "prefix": "Konflikt",
+    "series": null,
+    "tags": [
+      "3F",
+      "Blokade",
+      "Demonstration",
+      "Fagbevægelse",
+      "Vejlegården"
+    ],
+    "genre": null,
+    "sourceType": "artikel-foto",
+    "imageCount": 17,
+    "coverImage": "images/01-3f-byretten20121002-001a492.jpg",
+    "manchet": null
+  },
+  {
+    "id": "2012-10-03-folketinget-aabner",
+    "slug": "folketinget-aabner",
+    "title": "Folketinget åbner",
+    "publishedAt": "2012-10-03T13:38:32+02:00",
+    "authors": [
+      "Mark Knudsen"
+    ],
+    "photographers": [
+      "Mark Knudsen",
+      "Anders Pedersen",
+      "Mette Kramer Kristensen"
+    ],
+    "prefix": "2. Oktober",
+    "series": null,
+    "tags": [
+      "Christiansborg",
+      "Demonstration",
+      "Folketingets åbning",
+      "København"
+    ],
+    "genre": null,
+    "sourceType": "artikel-foto",
+    "imageCount": 26,
+    "coverImage": "images/01-mg-99510f08.jpg",
+    "manchet": "Dagpengekrav, Daisy og dåsemad."
+  },
+  {
+    "id": "2012-10-18-hjemloesedag",
+    "slug": "hjemloesedag",
+    "title": "Hjemløsedag",
+    "publishedAt": "2012-10-18T09:40:13+02:00",
+    "authors": [
+      "Mette Kramer Kristensen"
+    ],
+    "photographers": [
+      "Mette Kramer Kristensen"
+    ],
+    "prefix": null,
+    "series": null,
+    "tags": [
+      "Hjemløse",
+      "Hus Forbi",
+      "København",
+      "Socialt"
+    ],
+    "genre": null,
+    "sourceType": "artikel-foto",
+    "imageCount": 22,
+    "coverImage": "images/01-hjemloesedagen-2012-2a8f5.jpg",
+    "manchet": null
+  },
+  {
+    "id": "2012-10-22-vaelt-regeringen",
+    "slug": "vaelt-regeringen",
+    "title": "Vælt regeringen",
+    "publishedAt": "2012-10-22T13:34:13+02:00",
+    "authors": [
+      "Mette Kramer Kristensen"
+    ],
+    "photographers": [
+      "Mette Kramer Kristensen"
+    ],
+    "prefix": "Demonstration",
+    "series": null,
+    "tags": [
+      "Aktivisme",
+      "Demonstration",
+      "København",
+      "Venstrefløj"
+    ],
+    "genre": null,
+    "sourceType": "artikel-foto",
+    "imageCount": 17,
+    "coverImage": "images/01-demo-ingen-regering-4d07f.jpg",
+    "manchet": null
+  },
+  {
+    "id": "2012-11-02-savage-rose-i-koncerthuset",
+    "slug": "savage-rose-i-koncerthuset",
+    "title": "Savage Rose i Koncerthuset",
+    "publishedAt": "2012-11-02T15:23:08+01:00",
+    "authors": [
+      "Mette Kramer Kristensen"
+    ],
+    "photographers": [
+      "Mette Kramer Kristensen"
+    ],
+    "prefix": "Koncert",
+    "series": null,
+    "tags": [
+      "Anisette",
+      "Koncert",
+      "Kultur",
+      "Musik",
+      "Savage Rose"
+    ],
+    "genre": null,
+    "sourceType": "artikel-foto",
+    "imageCount": 15,
+    "coverImage": "images/01-savage-rose-5-0a36e.jpg",
+    "manchet": null
+  },
+  {
+    "id": "2012-11-05-verdensmester-i-oekologi",
+    "slug": "verdensmester-i-oekologi",
+    "title": "Verdensmester i økologi",
+    "publishedAt": "2012-11-05T14:11:59+01:00",
+    "authors": [
+      "Brian Berg"
+    ],
+    "photographers": [
+      "Brian Berg"
+    ],
+    "prefix": "Fotoudstilling",
+    "series": null,
+    "tags": [
+      "Fotoudstilling",
+      "Kultur",
+      "København",
+      "Økologi"
+    ],
+    "genre": null,
+    "sourceType": "artikel-foto",
+    "imageCount": 21,
+    "coverImage": "images/01-bethlehems-sogns-menighedsboernehave-hidb8c.jpg",
+    "manchet": null
+  },
+  {
+    "id": "2012-11-21-stoette-til-kurdisk-sultestrejke",
+    "slug": "stoette-til-kurdisk-sultestrejke",
+    "title": "Støtte til kurdisk sultestrejke",
+    "publishedAt": "2012-11-21T15:47:17+01:00",
+    "authors": [
+      "Mette Kramer Kristensen"
+    ],
+    "photographers": [],
+    "prefix": "Demonstration",
+    "series": null,
+    "tags": [
+      "Demonstration",
+      "Kurdistan",
+      "København",
+      "Solidaritet",
+      "Sultestrejke",
+      "Tyrkiet"
+    ],
+    "genre": null,
+    "sourceType": "artikel-foto",
+    "imageCount": 10,
+    "coverImage": "images/01-kurder-demo-1-copy2a2b.jpg",
+    "manchet": null
+  },
+  {
+    "id": "2012-11-23-solidaritet-med-gaza",
+    "slug": "solidaritet-med-gaza",
+    "title": "Solidaritet med Gaza",
+    "publishedAt": "2012-11-23T13:47:29+01:00",
+    "authors": [
+      "Mark Knudsen"
+    ],
+    "photographers": [],
+    "prefix": "Demonstration",
+    "series": null,
+    "tags": [
+      "Christiansborg",
+      "Demonstration",
+      "Gaza",
+      "Palæstina",
+      "Solidaritet"
+    ],
+    "genre": null,
+    "sourceType": "artikel-foto",
+    "imageCount": 21,
+    "coverImage": "images/01-mg-552651d6.jpg",
+    "manchet": null
+  },
+  {
     "id": "2012-11-28-ataturk-lufthavn",
     "slug": "ataturk-lufthavn",
     "title": "Atatürk lufthavn",
@@ -563,7 +1289,8 @@
     "tags": [
       "Grundlovsdag",
       "Hjemløse",
-      "Socialt"
+      "Socialt",
+      "Velfærd"
     ],
     "genre": null,
     "sourceType": "fotoserie",
@@ -686,7 +1413,8 @@
       "Fest",
       "Hjemløse",
       "Hus Forbi",
-      "Socialt"
+      "Socialt",
+      "Velfærd"
     ],
     "genre": null,
     "sourceType": "fotoserie",
@@ -841,7 +1569,8 @@
     "tags": [
       "Hjemløse",
       "Hus Forbi",
-      "Socialt"
+      "Socialt",
+      "Velfærd"
     ],
     "genre": "Nyhed",
     "sourceType": "fotoserie",
@@ -1285,57 +2014,6 @@
     "manchet": "På fristaden Christiania fejrede man den 5. juni traditionen tro Minoriteternes Grundlovsdag med taler, underholdning og musik. Her var fokus på de samfundsgrupper det går ud over, når Grundloven tilsidesættes. Læs mere om begivenheden [her.](http://modkraft.dk/kalenderopslag/minoriteternes-grundlovsdag-0)"
   },
   {
-    "id": "2014-06-20-nordvest-hyldes-i-ny-bog-om-det-vilde-og-kaotiske-gadeliv",
-    "slug": "nordvest-hyldes-i-ny-bog-om-det-vilde-og-kaotiske-gadeliv",
-    "title": "Nordvest hyldes i ny bog om det vilde og kaotiske gadeliv",
-    "publishedAt": "2014-06-20T11:07:52+02:00",
-    "authors": [
-      "Simon Post",
-      "Line Simonsen"
-    ],
-    "photographers": [
-      "Postkort fra Nordvest"
-    ],
-    "prefix": null,
-    "series": null,
-    "tags": [
-      "Bøger",
-      "Kultur",
-      "København",
-      "Nordvest"
-    ],
-    "genre": "Kultur",
-    "sourceType": "fotoserie",
-    "imageCount": 8,
-    "coverImage": "images/01-img-0808-bypaany-rgb-0.jpg",
-    "manchet": "150 vildtvoksende butikker langs Frederikssundsvej i København udgør bydelen Nordvests ranglede rygrad. Ny fotodokumentarisk bo, »Postkort fra Nordvest« portrætterer kvarteret."
-  },
-  {
-    "id": "2014-06-27-elsker-fodbold-hader-fifa",
-    "slug": "elsker-fodbold-hader-fifa",
-    "title": "Elsker fodbold - hader FIFA",
-    "publishedAt": "2014-06-27T08:14:19+02:00",
-    "authors": [
-      "Mark Knudsen"
-    ],
-    "photographers": [
-      "Jesper Qvist"
-    ],
-    "prefix": null,
-    "series": null,
-    "tags": [
-      "Aktivisme",
-      "Demonstration",
-      "FIFA",
-      "Fodbold"
-    ],
-    "genre": "Nyhed",
-    "sourceType": "fotoserie",
-    "imageCount": 13,
-    "coverImage": "images/01-img-4521.jpg",
-    "manchet": "Farverige bolde med håndtegnede støtteerklæringer til den brasilianske befolkning blev torsdag eftermiddag den 27. juni kastet og sparket ind på den brasilianske ambassade i København, da aktivistnetværket ’Her er Oprøret’ samlede omkring 50 mennesker til demonstration i anledning af VM. Det skete under parolen »Fodbold er ingen undskyldning - Støt oprøret i Brasilien!«. Læs [mere her.](http://modkraft.dk/artikel/dansk-fodboldprotest-i-solidaritet-med-brasiliens-befolkning)Fotograf: Jesper Qvist."
-  },
-  {
     "id": "2014-07-05-roskilde-festival-koncertfotos",
     "slug": "roskilde-festival-koncertfotos",
     "title": "Roskilde Festival: Koncertfotos",
@@ -1453,7 +2131,8 @@
     "tags": [
       "Hjemløse",
       "Hus Forbi",
-      "Socialt"
+      "Socialt",
+      "Velfærd"
     ],
     "genre": "Nyhed",
     "sourceType": "fotoserie",
@@ -1524,7 +2203,7 @@
     "photographers": [
       "Mette Kramer Kristensen"
     ],
-    "prefix": "Demo",
+    "prefix": "Demonstration",
     "series": null,
     "tags": [
       "1. marts",
@@ -1663,6 +2342,7 @@
       "Bike Wars",
       "K-Town",
       "Kultur",
+      "Musik",
       "Punk",
       "Ungdomshuset"
     ],
@@ -1723,54 +2403,6 @@
     "manchet": "Vi ventede så længe, endelig blev sluserne åbnet. Nu skinner solen igen over festivalen og igen bliver der danset med os selv og de andre. I aften er der fællessang foran Orange og afslutningsfest på Grøn. Endnu en Roskilde præcis som Roskilde skal være."
   },
   {
-    "id": "2015-08-19-tillid-paa-tvaers",
-    "slug": "tillid-paa-tvaers",
-    "title": "Tillid på tværs!",
-    "publishedAt": "2015-08-19T17:41:29+02:00",
-    "authors": [
-      "Gitte Gry"
-    ],
-    "photographers": [],
-    "prefix": "Nørrebro",
-    "series": null,
-    "tags": [
-      "Antiracisme",
-      "Kultur",
-      "København",
-      "Nørrebro"
-    ],
-    "genre": "Nyhed",
-    "sourceType": "fotoserie",
-    "imageCount": 15,
-    "coverImage": "images/01-1-12.jpg",
-    "manchet": "Fotoserie om skabelsen af verdens største kridttegning."
-  },
-  {
-    "id": "2015-09-08-flygtninge-i-roedby-havn",
-    "slug": "flygtninge-i-roedby-havn",
-    "title": "Flygtninge i Rødby Havn",
-    "publishedAt": "2015-09-08T14:19:10+02:00",
-    "authors": [
-      "Peter Schwarz-Nielsen"
-    ],
-    "photographers": [],
-    "prefix": "Billedserie",
-    "series": null,
-    "tags": [
-      "Asyl",
-      "Flygtninge",
-      "Malmø",
-      "Refugees Welcome",
-      "Rødby",
-      "Syrien"
-    ],
-    "genre": "Nyhed",
-    "sourceType": "fotoserie",
-    "imageCount": 17,
-    "coverImage": "images/01-dsc-8635-0.jpg",
-    "manchet": "Modkraft var mandag den 7. september i Rødby Havn for at følge nogle af de grupper af flygtninge, der var ankommet med færge fra Tyskland. Du kan møde nogle af dem i denne billedserie."
-  },
-  {
     "id": "2015-09-14-refugeeswelcome",
     "slug": "refugeeswelcome",
     "title": "#RefugeesWelcome",
@@ -1799,32 +2431,6 @@
     "imageCount": 18,
     "coverImage": "images/01-mg-2966-a-demo-asyl-chrborg-120915-0.jpg",
     "manchet": "40.000 københavnere bød lørdag flygtninge velkommen i en demonstration på Christiansborg Slotsplads."
-  },
-  {
-    "id": "2015-09-25-demonstration-stop-undertrykkelsen-af-kurderne-i-tyrkiet",
-    "slug": "demonstration-stop-undertrykkelsen-af-kurderne-i-tyrkiet",
-    "title": "Demonstration: Stop undertrykkelsen af kurderne i Tyrkiet",
-    "publishedAt": "2015-09-25T19:39:24+02:00",
-    "authors": [
-      "Ole Garde"
-    ],
-    "photographers": [
-      "Ole Garde"
-    ],
-    "prefix": "Demonstration",
-    "series": null,
-    "tags": [
-      "Christiansborg",
-      "Demonstration",
-      "Kurdistan",
-      "Solidaritet",
-      "Tyrkiet"
-    ],
-    "genre": "Nyhed",
-    "sourceType": "fotoserie",
-    "imageCount": 19,
-    "coverImage": "images/01-aut-0325.jpg",
-    "manchet": "HDP, som står for Folkets Demokratiske Parti består af de pro-kurdiske og venstreorienterede kræfter i Tyrkiet. Demonstrationen fredag d. 25. september 2015 på Christiansborg Slotsplads havde til formål at udvise solidaritet med de demokratiske kræfter i Tyrkiet, der atter skal kæmpe for et frit og fair valg ved nyvalget 1. november i Tyrkiet. Selahattin Demirtas, formand for HDP, var trækplaster på folkemødet og uhyre populær blandt de mange fremmødte.\n\nSelahattin Demirtas mødtes også med udenrigsudvalget. [Læs på Modkraft.](http://modkraft.dk/artikel/tiden-er-kurdernes)"
   },
   {
     "id": "2015-10-03-spids-noegenhat-i-pumpehuset",
@@ -1947,7 +2553,8 @@
       "Malmø",
       "Romaer",
       "Rydning",
-      "Socialt"
+      "Socialt",
+      "Velfærd"
     ],
     "genre": "Nyhed",
     "sourceType": "fotoserie",
@@ -2097,7 +2704,9 @@
     "authors": [
       "Anna Geisler"
     ],
-    "photographers": [],
+    "photographers": [
+      "Charlotte Quitzau"
+    ],
     "prefix": null,
     "series": null,
     "tags": [
@@ -2244,113 +2853,6 @@
     "manchet": "Dette års 1. maj blev markeret af flere tusinde mennesker flere steder. Modkrafts fotografer var med til morgenmad i Folkets Park, Revolutionære Antifascisters demonstration fra Vesterbro Torv under parolen No Borders - No Nations og til Fagbevægelsens arrangement i Fælledparken."
   },
   {
-    "id": "2016-05-05-markering-af-danmarks-befrielse",
-    "slug": "markering-af-danmarks-befrielse",
-    "title": "Markering af Danmarks befrielse",
-    "publishedAt": "2016-05-05T22:11:08+02:00",
-    "authors": [
-      "Peter Schwarz-Nielsen"
-    ],
-    "photographers": [
-      "Demos",
-      "Rasmus Nielsen",
-      "Rasmusm Nielsen"
-    ],
-    "prefix": null,
-    "series": null,
-    "tags": [
-      "4. maj",
-      "Antifascisme",
-      "Antiracisme",
-      "København",
-      "Vesterbro"
-    ],
-    "genre": "Nyhed",
-    "sourceType": "fotoserie",
-    "imageCount": 8,
-    "coverImage": "images/01-istedgadevedmodstandsmuseetstjereneradio.jpg",
-    "manchet": null
-  },
-  {
-    "id": "2016-05-13-fotoserie-se-da-demoer-mod-nedskaeringer-ramte-hele-landet",
-    "slug": "fotoserie-se-da-demoer-mod-nedskaeringer-ramte-hele-landet",
-    "title": "Fotoserie: Se da demoer mod nedskæringer ramte hele landet",
-    "publishedAt": "2016-05-13T15:45:31+02:00",
-    "authors": [
-      "Peter Schwarz-Nielsen"
-    ],
-    "photographers": [
-      "Folkeklubben",
-      "Vibeke Genefke",
-      "Marianne Petersen",
-      "Anja Elizabeth Thomsen",
-      "Jonna Jul Gudmundsen",
-      "Anette Stage Burnning",
-      "Kristian F. Berner",
-      "Randi Angelica Christensen",
-      "FOA Nordsjælland",
-      "Carsten Larsen",
-      "Flemming Gade",
-      "FOA Frederikssund",
-      "Velfærdsalliancen Halsnæs",
-      "Sarah Hvidbjerg",
-      "Anne Angelsø",
-      "Mille Stockner",
-      "Enhedslisten i Favrskov",
-      "Bent Brams",
-      "Bo Jul Nielsen",
-      "Connie Maansson",
-      "Jakob Gislund",
-      "Karen Thestrup Clausen",
-      "Dan René Dahlin",
-      "Enhedslisten-København",
-      "Velfærdsalliancen",
-      "Velfærdsalliancen-DK",
-      "Tina Schack Jensen",
-      "Claus Vestergaard Madsen",
-      "Pia Boisen",
-      "Helle Andersen",
-      "FOA Sydsjælland",
-      "Sonja Marie Jensen",
-      "Alexander Drachmann",
-      "Nana Højlund Skjødt",
-      "Morten Riis",
-      "Hans Jørgen Hald",
-      "Ole Alex Larsen",
-      "Heidi Larsen",
-      "Mette G. Nielsen",
-      "Karsten Wohlgemut",
-      "Tina Jensen",
-      "Karin Strange Hargreave",
-      "Lene Kaldahl Laursen",
-      "Gitte Christensen",
-      "Marianne Myung Rosengren Pacarada",
-      "Ulla Eriksen",
-      "Jens Otto Madsen",
-      "Folkeskoleforældre",
-      "Louise Berg",
-      "Mette Tolstrup",
-      "Karina Lorentzen",
-      "Grethe Ørum Hauger",
-      "Johnny Gaardsdal",
-      "Lotte Berthelsen",
-      "Lasse Olsen"
-    ],
-    "prefix": null,
-    "series": null,
-    "tags": [
-      "Demonstration",
-      "Fagbevægelse",
-      "Nedskæringer",
-      "Velfærd"
-    ],
-    "genre": "Nyhed",
-    "sourceType": "fotoserie",
-    "imageCount": 62,
-    "coverImage": "images/01-a-rhus-1.jpg",
-    "manchet": "Torsdag den 12. maj demonstrerede græsrodsinitiativet Velfærdsalliancen i 74 kommuner landet over. Modkraft bringer her billeder fra størstedelen af demonstrationerne."
-  },
-  {
     "id": "2016-10-10-ja-til-velfaerd-nej-til-fattigdom",
     "slug": "ja-til-velfaerd-nej-til-fattigdom",
     "title": "»Ja til velfærd - Nej til fattigdom«",
@@ -2393,7 +2895,8 @@
       "Nedskæringer",
       "Studerende",
       "SU",
-      "Uddannelse"
+      "Uddannelse",
+      "Velfærd"
     ],
     "genre": "Nyhed",
     "sourceType": "fotoserie",
@@ -2435,7 +2938,9 @@
       "Alexander Zehntner",
       "Peter Schwarz-Nielsen"
     ],
-    "photographers": [],
+    "photographers": [
+      "Alexander Zehntner"
+    ],
     "prefix": "Foto og interview",
     "series": null,
     "tags": [
@@ -2484,7 +2989,9 @@
     "authors": [
       "Peter Schwarz-Nielsen"
     ],
-    "photographers": [],
+    "photographers": [
+      "Rasmus Nielsen"
+    ],
     "prefix": null,
     "series": null,
     "tags": [

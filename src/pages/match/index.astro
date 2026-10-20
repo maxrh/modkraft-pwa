@@ -1,0 +1,11 @@
+---
+import BaseLayout from '@/layouts/BaseLayout.astro';
+import Container from '@/components/layout/Container.astro';
+import MatchHome from '@/components/match/MatchHome';
+---
+
+<BaseLayout title="Photo match (local)" description="Local-only fotobase matching workbench">
+  <Container class="pt-8 pb-16">
+    <MatchHome client:load />
+  </Container>
+</BaseLayout>

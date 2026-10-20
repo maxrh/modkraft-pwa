@@ -8,7 +8,7 @@ interface Props {
 
 const { collection } = Astro.props;
 const cover = collectionCoverUrl(collection);
-const { title, publishedAt, authors, series, prefix, images } = collection.data;
+const { title, publishedAt, authors, images } = collection.data;
 ---
 
 <a
@@ -31,13 +31,6 @@ const { title, publishedAt, authors, series, prefix, images } = collection.data;
     }
   </div>
   <div class="flex flex-1 flex-col gap-2 p-4">
-    {
-      prefix || series ? (
-        <p class="text-xs font-medium tracking-wide text-muted-foreground uppercase">
-          {prefix || series}
-        </p>
-      ) : null
-    }
     <h2 class="font-display text-lg leading-snug font-semibold text-foreground group-hover:underline">
       {title}
     </h2>

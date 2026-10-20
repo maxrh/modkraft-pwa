@@ -1,0 +1,355 @@
+{
+  "id": "2012-10-03-3f-og-vejlegaarden-i-arbejdsretten",
+  "sourceNid": 19764,
+  "slug": "3f-og-vejlegaarden-i-arbejdsretten",
+  "title": "3F og Vejlegården i arbejdsretten",
+  "publishedAt": "2012-10-03T12:11:25+02:00",
+  "modifiedAt": "2012-10-03T13:09:36+02:00",
+  "authors": [
+    "Mark Knudsen"
+  ],
+  "photographers": [
+    "Mark Knudsen",
+    "Mette Kramer Kristensen"
+  ],
+  "prefix": "Konflikt",
+  "series": null,
+  "manchet": null,
+  "introMarkdown": "Flere hundrede mennesker var mødt op for at støtte 3F tirsdag den 2. oktober, da Arbejdsretten indledte behandlingen af sagen om 3F's blokade mod Vejlegården. Fremtidsfighters, aktivister og et orkester peppede op mellem seriøse faglige talere.\n\n[Læs også artiklen \"Blå himmel og røde faner\".](http://www.modkraft.dk/artikel/blå-himmel-og-røde-faner)\n\nFoto: Mark Knudsen og Mette Kramer Kristensen.",
+  "tags": [
+    "3F",
+    "Blokade",
+    "Demonstration",
+    "Fagbevægelse",
+    "Vejlegården"
+  ],
+  "genre": null,
+  "coverImage": "01",
+  "images": [
+    {
+      "id": "01",
+      "sortOrder": 1,
+      "filename": "01-3f-byretten20121002-001.jpg",
+      "originalFilename": "3f_byretten20121002_001.jpg",
+      "width": 940,
+      "height": 627,
+      "credit": "Mark Knudsen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "root-stripped-hash",
+      "tags": [
+        "3F",
+        "Blokade",
+        "Demonstration",
+        "Fagbevægelse",
+        "Vejlegården"
+      ]
+    },
+    {
+      "id": "02",
+      "sortOrder": 2,
+      "filename": "02-3f-byretten20121002-002.jpg",
+      "originalFilename": "3f_byretten20121002_002.jpg",
+      "width": 940,
+      "height": 627,
+      "credit": "Mette Kramer Kristensen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "root-stripped-hash",
+      "tags": [
+        "3F",
+        "Blokade",
+        "Demonstration",
+        "Fagbevægelse",
+        "Vejlegården"
+      ]
+    },
+    {
+      "id": "03",
+      "sortOrder": 3,
+      "filename": "03-3f-byretten20121002-003.jpg",
+      "originalFilename": "3f_byretten20121002_003.jpg",
+      "width": 940,
+      "height": 627,
+      "credit": "Mark Knudsen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "root-stripped-hash",
+      "tags": [
+        "3F",
+        "Blokade",
+        "Demonstration",
+        "Fagbevægelse",
+        "Vejlegården"
+      ]
+    },
+    {
+      "id": "04",
+      "sortOrder": 4,
+      "filename": "04-3f-byretten20121002-004.jpg",
+      "originalFilename": "3f_byretten20121002_004.jpg",
+      "width": 940,
+      "height": 627,
+      "credit": "Mark Knudsen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "root-stripped-hash",
+      "tags": [
+        "3F",
+        "Blokade",
+        "Demonstration",
+        "Fagbevægelse",
+        "Vejlegården"
+      ]
+    },
+    {
+      "id": "05",
+      "sortOrder": 5,
+      "filename": "05-3f-byretten20121002-005.jpg",
+      "originalFilename": "3f_byretten20121002_005.jpg",
+      "width": 940,
+      "height": 627,
+      "credit": "Mette Kramer Kristensen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "root-stripped-hash",
+      "tags": [
+        "3F",
+        "Blokade",
+        "Demonstration",
+        "Fagbevægelse",
+        "Vejlegården"
+      ]
+    },
+    {
+      "id": "06",
+      "sortOrder": 6,
+      "filename": "06-3f-byretten20121002-006.jpg",
+      "originalFilename": "3f_byretten20121002_006.jpg",
+      "width": 467,
+      "height": 700,
+      "credit": "Mette Kramer Kristensen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "root-stripped-hash",
+      "tags": [
+        "3F",
+        "Blokade",
+        "Demonstration",
+        "Fagbevægelse",
+        "Vejlegården"
+      ]
+    },
+    {
+      "id": "07",
+      "sortOrder": 7,
+      "filename": "07-3f-byretten20121002-007.jpg",
+      "originalFilename": "3f_byretten20121002_007.jpg",
+      "width": 940,
+      "height": 627,
+      "credit": "Mark Knudsen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "root-stripped-hash",
+      "tags": [
+        "3F",
+        "Blokade",
+        "Demonstration",
+        "Fagbevægelse",
+        "Vejlegården"
+      ]
+    },
+    {
+      "id": "08",
+      "sortOrder": 8,
+      "filename": "08-3f-byretten20121002-008.jpg",
+      "originalFilename": "3f_byretten20121002_008.jpg",
+      "width": 940,
+      "height": 627,
+      "credit": "Mette Kramer Kristensen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "root-stripped-hash",
+      "tags": [
+        "3F",
+        "Blokade",
+        "Demonstration",
+        "Fagbevægelse",
+        "Vejlegården"
+      ]
+    },
+    {
+      "id": "09",
+      "sortOrder": 9,
+      "filename": "09-3f-byretten20121002-009.jpg",
+      "originalFilename": "3f_byretten20121002_009.jpg",
+      "width": 940,
+      "height": 627,
+      "credit": "Mark Knudsen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "root-stripped-hash",
+      "tags": [
+        "3F",
+        "Blokade",
+        "Demonstration",
+        "Fagbevægelse",
+        "Vejlegården"
+      ]
+    },
+    {
+      "id": "10",
+      "sortOrder": 10,
+      "filename": "10-3f-byretten20121002-010.jpg",
+      "originalFilename": "3f_byretten20121002_010.jpg",
+      "width": 940,
+      "height": 627,
+      "credit": "Mark Knudsen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "root-stripped-hash",
+      "tags": [
+        "3F",
+        "Blokade",
+        "Demonstration",
+        "Fagbevægelse",
+        "Vejlegården"
+      ]
+    },
+    {
+      "id": "11",
+      "sortOrder": 11,
+      "filename": "11-mg-0065-farve.jpg",
+      "originalFilename": "_MG_0065_farve.jpg",
+      "width": 940,
+      "height": 627,
+      "credit": "Mark Knudsen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "root-stripped-hash",
+      "tags": [
+        "3F",
+        "Blokade",
+        "Demonstration",
+        "Fagbevægelse",
+        "Vejlegården"
+      ]
+    },
+    {
+      "id": "12",
+      "sortOrder": 12,
+      "filename": "12-3f-byretten20121002-011.jpg",
+      "originalFilename": "3f_byretten20121002_011.jpg",
+      "width": 940,
+      "height": 627,
+      "credit": "Mark Knudsen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "root-stripped-hash",
+      "tags": [
+        "3F",
+        "Blokade",
+        "Demonstration",
+        "Fagbevægelse",
+        "Vejlegården"
+      ]
+    },
+    {
+      "id": "13",
+      "sortOrder": 13,
+      "filename": "13-3f-byretten20121002-012.jpg",
+      "originalFilename": "3f_byretten20121002_012.jpg",
+      "width": 467,
+      "height": 700,
+      "credit": "Mette Kramer Kristensen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "root-stripped-hash",
+      "tags": [
+        "3F",
+        "Blokade",
+        "Demonstration",
+        "Fagbevægelse",
+        "Vejlegården"
+      ]
+    },
+    {
+      "id": "14",
+      "sortOrder": 14,
+      "filename": "14-3f-byretten20121002-013.jpg",
+      "originalFilename": "3f_byretten20121002_013.jpg",
+      "width": 940,
+      "height": 627,
+      "credit": "Mette Kramer Kristensen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "root-stripped-hash",
+      "tags": [
+        "3F",
+        "Blokade",
+        "Demonstration",
+        "Fagbevægelse",
+        "Vejlegården"
+      ]
+    },
+    {
+      "id": "15",
+      "sortOrder": 15,
+      "filename": "15-3f-byretten20121002-014.jpg",
+      "originalFilename": "3f_byretten20121002_014.jpg",
+      "width": 940,
+      "height": 627,
+      "credit": "Mark Knudsen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "root-stripped-hash",
+      "tags": [
+        "3F",
+        "Blokade",
+        "Demonstration",
+        "Fagbevægelse",
+        "Vejlegården"
+      ]
+    },
+    {
+      "id": "16",
+      "sortOrder": 16,
+      "filename": "16-3f-byretten20121002-015.jpg",
+      "originalFilename": "3f_byretten20121002_015.jpg",
+      "width": 940,
+      "height": 627,
+      "credit": "Mette Kramer Kristensen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "root-stripped-hash",
+      "tags": [
+        "3F",
+        "Blokade",
+        "Demonstration",
+        "Fagbevægelse",
+        "Vejlegården"
+      ]
+    },
+    {
+      "id": "17",
+      "sortOrder": 17,
+      "filename": "17-3f-byretten20121002-016.jpg",
+      "originalFilename": "3f_byretten20121002_016.jpg",
+      "width": 940,
+      "height": 627,
+      "credit": "Mette Kramer Kristensen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "root-stripped-hash",
+      "tags": [
+        "3F",
+        "Blokade",
+        "Demonstration",
+        "Fagbevægelse",
+        "Vejlegården"
+      ]
+    }
+  ],
+  "sourceUrl": "artikel/3f-og-vejlegården-i-arbejdsretten.html",
+  "sourceType": "artikel-foto"
+}

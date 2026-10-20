@@ -4,13 +4,15 @@ import BaseLayout from '@/layouts/BaseLayout.astro';
 import Container from '@/components/layout/Container.astro';
 import PageHeader from '@/components/layout/PageHeader.astro';
 import CollectionCard from '@/components/CollectionCard.astro';
-import { sortCollectionsNewest } from '@/lib/photos';
+import { getArchiveStats, sortCollectionsNewest } from '@/lib/photos';
 
 const collections = (await getCollection('photoCollections')).sort(sortCollectionsNewest);
 const series = await getCollection('photoSeries');
+const { collectionCount } = await getArchiveStats();
+const description = `Alle ${collectionCount} fotoseries og fotoblogs i Modkraft-arkivet.`;
 ---
 
-<BaseLayout title="Samlinger" description="Alle 99 fotoseries og fotoblogs i Modkraft-arkivet.">
+<BaseLayout title="Samlinger" description={description}>
   <Container class="pt-8 pb-6">
     <PageHeader
       title="Samlinger"

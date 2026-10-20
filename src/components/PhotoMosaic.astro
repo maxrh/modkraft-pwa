@@ -28,8 +28,6 @@ const restPayload = restPhotos.map((photo) => ({
   collectionTitle: photo.collectionTitle,
   sortOrder: photo.sortOrder,
   imageCount: photo.imageCount,
-  prefix: photo.prefix,
-  series: photo.series,
   credit: photo.credit,
 }));
 
@@ -72,6 +70,9 @@ const restJson = JSON.stringify(restPayload).replace(/</g, '\\u003c');
     restPayload.length > 0 && (
       <>
         <script type="application/json" data-mosaic-rest set:html={restJson} />
+        <template data-card-template>
+          <PhotoCard photo={restPhotos[0]} />
+        </template>
         <div data-mosaic-more class="mt-8 flex flex-col items-center gap-3">
           <button
             type="button"
@@ -205,13 +206,11 @@ const restJson = JSON.stringify(restPayload).replace(/</g, '\\u003c');
       markHighPriority(columns);
     }
 
-    function escapeHtml(value) {
-      return String(value == null ? '' : value)
-        .replace(/&/g, '&amp;')
-        .replace(/</g, '&lt;')
-        .replace(/>/g, '&gt;')
-        .replace(/"/g, '&quot;');
-    }
+    var cardTemplateEl = root.querySelector('[data-card-template]');
+    var cardPrototype =
+      cardTemplateEl && cardTemplateEl.content
+        ? cardTemplateEl.content.firstElementChild
+        : null;
 
     function buildCard(photo, globalIndex) {
       var ratio = (photo.height / photo.width).toFixed(4);
@@ -220,55 +219,50 @@ const restJson = JSON.stringify(restPayload).replace(/</g, '\\u003c');
       wrap.setAttribute('data-ratio', ratio);
       wrap.className = 'min-w-0';
 
-      var alt = photo.caption || photo.collectionTitle + ' (' + photo.sortOrder + '/' + photo.imageCount + ')';
-      var badge =
-        photo.prefix || photo.series
-          ? '<span class="truncate rounded bg-black/70 px-2 py-0.5 uppercase">' +
-            escapeHtml(photo.prefix || photo.series) +
-            '</span>'
-          : '<span></span>';
+      if (!cardPrototype) return wrap;
 
-      var captionHtml = photo.caption
-        ? '<p class="line-clamp-2 text-xs leading-relaxed text-white/85">' + escapeHtml(photo.caption) + '</p>'
-        : '';
-      var creditHtml = photo.credit
-        ? '<p class="pt-0.5 text-[11px] font-medium tracking-wide text-white/75 uppercase">Foto: ' +
-          escapeHtml(photo.credit) +
-          '</p>'
-        : '';
+      var card = cardPrototype.cloneNode(true);
+      var link = card.matches('[data-card-link]')
+        ? card
+        : card.querySelector('[data-card-link]');
+      var img = card.querySelector('[data-card-img]');
+      var count = card.querySelector('[data-card-count]');
+      var title = card.querySelector('[data-card-title]');
+      var creditRow = card.querySelector('[data-card-credit-row]');
+      var credit = card.querySelector('[data-card-credit]');
 
-      wrap.innerHTML =
-        '<a href="' +
-        escapeHtml(photo.href) +
-        '" class="group relative block w-full overflow-hidden rounded-sm bg-muted no-underline focus-visible:ring-2 focus-visible:ring-ring focus-visible:outline-none" style="aspect-ratio: ' +
-        photo.width +
-        ' / ' +
-        photo.height +
-        ';">' +
-        '<img src="' +
-        escapeHtml(photo.thumb) +
-        '" alt="' +
-        escapeHtml(alt) +
-        '" width="' +
-        photo.width +
-        '" height="' +
-        photo.height +
-        '" loading="lazy" decoding="async" sizes="(max-width: 40rem) 100vw, (max-width: 64rem) 50vw, 33vw" class="photo-img absolute inset-0 block h-full w-full object-cover text-transparent transition-transform duration-300 group-hover:scale-[1.015]" />' +
-        '<div class="pointer-events-none absolute inset-0 flex flex-col justify-between bg-gradient-to-t from-black/80 via-black/20 to-black/30 p-3.5 text-white opacity-0 transition-opacity duration-200 group-hover:opacity-100 group-focus-visible:opacity-100">' +
-        '<div class="flex items-start justify-between gap-2 text-[11px] font-medium tracking-wide">' +
-        badge +
-        '<span class="shrink-0 rounded bg-black/70 px-1.5 py-0.5 tabular-nums">' +
-        photo.sortOrder +
-        '/' +
-        photo.imageCount +
-        '</span></div>' +
-        '<div class="space-y-1"><p class="font-display line-clamp-2 text-sm leading-snug font-semibold text-white drop-shadow-xs">' +
-        escapeHtml(photo.collectionTitle) +
-        '</p>' +
-        captionHtml +
-        creditHtml +
-        '</div></div></a>';
+      if (link) {
+        link.setAttribute('href', photo.href);
+        link.style.aspectRatio = photo.width + ' / ' + photo.height;
+      }
 
+      if (img) {
+        img.setAttribute('src', photo.thumb);
+        img.setAttribute(
+          'alt',
+          photo.caption ||
+            photo.collectionTitle + ' (' + photo.sortOrder + '/' + photo.imageCount + ')',
+        );
+        img.setAttribute('width', String(photo.width));
+        img.setAttribute('height', String(photo.height));
+        img.setAttribute('loading', 'lazy');
+        img.removeAttribute('fetchpriority');
+      }
+
+      if (count) count.textContent = photo.sortOrder + '/' + photo.imageCount;
+      if (title) title.textContent = photo.collectionTitle;
+
+      if (creditRow && credit) {
+        if (photo.credit) {
+          credit.textContent = photo.credit;
+          creditRow.hidden = false;
+        } else {
+          credit.textContent = '';
+          creditRow.hidden = true;
+        }
+      }
+
+      wrap.appendChild(card);
       return wrap;
     }
 
@@ -304,6 +298,7 @@ const restJson = JSON.stringify(restPayload).replace(/</g, '\\u003c');
       if (observer && sentinel) observer.unobserve(sentinel);
       if (moreEl) moreEl.remove();
       if (restScript) restScript.remove();
+      if (cardTemplateEl) cardTemplateEl.remove();
     }
 
     function layout() {
