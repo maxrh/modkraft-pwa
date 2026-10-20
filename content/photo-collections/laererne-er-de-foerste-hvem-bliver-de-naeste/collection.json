@@ -1,0 +1,398 @@
+{
+  "id": "laererne-er-de-foerste-hvem-bliver-de-naeste",
+  "sourceNid": 21380,
+  "slug": "laererne-er-de-foerste-hvem-bliver-de-naeste",
+  "title": "Lærerne er de første. Hvem bliver de næste?",
+  "publishedAt": "2013-03-20T20:29:21+01:00",
+  "modifiedAt": "2013-03-22T15:44:01+01:00",
+  "authors": [
+    "Mark Knudsen"
+  ],
+  "photographers": [
+    "Brian Berg",
+    "Mark Knudsen",
+    "Anders Pedersen"
+  ],
+  "prefix": null,
+  "series": null,
+  "manchet": "Spørgsmålet rungede ud over en fyldt slotsplads foran Christiansborg onsdag den 20. marts. Tusindvis af lærere og sympatisører mødte op for at vise deres støtte til Danmarks Lærerforening og for at protestere imod regeringens indbladning i deres overenskomstforhandlinger med Kommunernes Landsforening.",
+  "introMarkdown": "",
+  "tags": [
+    "Demonstration",
+    "Fagbevægelse",
+    "Lockout",
+    "Uddannelse"
+  ],
+  "genre": null,
+  "coverImage": "01",
+  "images": [
+    {
+      "id": "01",
+      "sortOrder": 1,
+      "filename": "01-a111.jpg",
+      "originalFilename": "a111,.jpg",
+      "width": 940,
+      "height": 627,
+      "credit": "Brian Berg",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "Demonstration",
+        "Fagbevægelse",
+        "Lockout",
+        "Uddannelse"
+      ]
+    },
+    {
+      "id": "02",
+      "sortOrder": 2,
+      "filename": "02-a101.jpg",
+      "originalFilename": "a101,.jpg",
+      "width": 940,
+      "height": 627,
+      "credit": "Brian Berg",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "Demonstration",
+        "Fagbevægelse",
+        "Lockout",
+        "Uddannelse"
+      ]
+    },
+    {
+      "id": "03",
+      "sortOrder": 3,
+      "filename": "03-a121.jpg",
+      "originalFilename": "a121,.jpg",
+      "width": 940,
+      "height": 627,
+      "credit": "Brian Berg",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "Demonstration",
+        "Fagbevægelse",
+        "Lockout",
+        "Uddannelse"
+      ]
+    },
+    {
+      "id": "04",
+      "sortOrder": 4,
+      "filename": "04-mg-4690.jpg",
+      "originalFilename": "_MG_4690.jpg",
+      "width": 940,
+      "height": 627,
+      "credit": "Brian Berg",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "Demonstration",
+        "Fagbevægelse",
+        "Lockout",
+        "Uddannelse"
+      ]
+    },
+    {
+      "id": "05",
+      "sortOrder": 5,
+      "filename": "05-mg-4702.jpg",
+      "originalFilename": "_MG_4702.jpg",
+      "width": 940,
+      "height": 627,
+      "credit": "Mark Knudsen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "Demonstration",
+        "Fagbevægelse",
+        "Lockout",
+        "Uddannelse"
+      ]
+    },
+    {
+      "id": "06",
+      "sortOrder": 6,
+      "filename": "06-img-8606-ap.jpg",
+      "originalFilename": "IMG_8606_ap.jpg",
+      "width": 3194,
+      "height": 2130,
+      "credit": "Anders Pedersen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "Demonstration",
+        "Fagbevægelse",
+        "Lockout",
+        "Uddannelse"
+      ],
+      "hiresSource": "C:\\Users\\max\\Dropbox\\Monsun\\Monsun Foto Upload\\fotobase\\demo\\20130320_Lærer demonstration\\IMG_8606_ap.jpg",
+      "hiresAt": "2026-10-20T02:27:43.859Z"
+    },
+    {
+      "id": "07",
+      "sortOrder": 7,
+      "filename": "07-mg-4727.jpg",
+      "originalFilename": "_MG_4727.jpg",
+      "width": 940,
+      "height": 627,
+      "credit": "Mark Knudsen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "Demonstration",
+        "Fagbevægelse",
+        "Lockout",
+        "Uddannelse"
+      ]
+    },
+    {
+      "id": "08",
+      "sortOrder": 8,
+      "filename": "08-mg-4736.jpg",
+      "originalFilename": "_MG_4736.jpg",
+      "width": 940,
+      "height": 627,
+      "credit": "Mark Knudsen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "Demonstration",
+        "Fagbevægelse",
+        "Lockout",
+        "Uddannelse"
+      ]
+    },
+    {
+      "id": "09",
+      "sortOrder": 9,
+      "filename": "09-a201.jpg",
+      "originalFilename": "a201.jpg",
+      "width": 940,
+      "height": 627,
+      "credit": "Brian Berg",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "Demonstration",
+        "Fagbevægelse",
+        "Lockout",
+        "Uddannelse"
+      ]
+    },
+    {
+      "id": "10",
+      "sortOrder": 10,
+      "filename": "10-mg-4741.jpg",
+      "originalFilename": "_MG_4741.jpg",
+      "width": 940,
+      "height": 627,
+      "credit": "Mark Knudsen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "Demonstration",
+        "Fagbevægelse",
+        "Lockout",
+        "Uddannelse"
+      ]
+    },
+    {
+      "id": "11",
+      "sortOrder": 11,
+      "filename": "11-mg-4762.jpg",
+      "originalFilename": "_MG_4762.jpg",
+      "width": 940,
+      "height": 627,
+      "credit": "Mark Knudsen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "Demonstration",
+        "Fagbevægelse",
+        "Lockout",
+        "Uddannelse"
+      ]
+    },
+    {
+      "id": "12",
+      "sortOrder": 12,
+      "filename": "12-mg-4780.jpg",
+      "originalFilename": "_MG_4780.jpg",
+      "width": 940,
+      "height": 627,
+      "credit": "Mark Knudsen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "Demonstration",
+        "Fagbevægelse",
+        "Lockout",
+        "Uddannelse"
+      ]
+    },
+    {
+      "id": "13",
+      "sortOrder": 13,
+      "filename": "13-mg-4787.jpg",
+      "originalFilename": "_MG_4787.jpg",
+      "width": 940,
+      "height": 627,
+      "credit": "Mark Knudsen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "Demonstration",
+        "Fagbevægelse",
+        "Lockout",
+        "Uddannelse"
+      ]
+    },
+    {
+      "id": "14",
+      "sortOrder": 14,
+      "filename": "14-mg-4800.jpg",
+      "originalFilename": "_MG_4800.jpg",
+      "width": 940,
+      "height": 627,
+      "credit": "Mark Knudsen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "Demonstration",
+        "Fagbevægelse",
+        "Lockout",
+        "Uddannelse"
+      ]
+    },
+    {
+      "id": "15",
+      "sortOrder": 15,
+      "filename": "15-mg-4824.jpg",
+      "originalFilename": "_MG_4824.jpg",
+      "width": 940,
+      "height": 627,
+      "credit": "Mark Knudsen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "Demonstration",
+        "Fagbevægelse",
+        "Lockout",
+        "Uddannelse"
+      ]
+    },
+    {
+      "id": "16",
+      "sortOrder": 16,
+      "filename": "16-mg-4829.jpg",
+      "originalFilename": "_MG_4829.jpg",
+      "width": 940,
+      "height": 627,
+      "credit": "Mark Knudsen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "Demonstration",
+        "Fagbevægelse",
+        "Lockout",
+        "Uddannelse"
+      ]
+    },
+    {
+      "id": "17",
+      "sortOrder": 17,
+      "filename": "17-img-8798-ap.jpg",
+      "originalFilename": "IMG_8798_ap.jpg",
+      "width": 3861,
+      "height": 2574,
+      "credit": "Anders Pedersen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "Demonstration",
+        "Fagbevægelse",
+        "Lockout",
+        "Uddannelse"
+      ],
+      "hiresSource": "C:\\Users\\max\\Dropbox\\Monsun\\Monsun Foto Upload\\fotobase\\demo\\20130320_Lærer demonstration\\IMG_8798_ap.jpg",
+      "hiresAt": "2026-10-20T02:27:44.575Z"
+    },
+    {
+      "id": "18",
+      "sortOrder": 18,
+      "filename": "18-img-8828-ap.jpg",
+      "originalFilename": "IMG_8828_ap.jpg",
+      "width": 3861,
+      "height": 2574,
+      "credit": "Anders Pedersen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "Demonstration",
+        "Fagbevægelse",
+        "Lockout",
+        "Uddannelse"
+      ],
+      "hiresSource": "C:\\Users\\max\\Dropbox\\Monsun\\Monsun Foto Upload\\fotobase\\demo\\20130320_Lærer demonstration\\IMG_8828_ap.jpg",
+      "hiresAt": "2026-10-20T02:27:45.452Z"
+    },
+    {
+      "id": "19",
+      "sortOrder": 19,
+      "filename": "19-mg-4836-0.jpg",
+      "originalFilename": "_MG_4836_0.jpg",
+      "width": 940,
+      "height": 627,
+      "credit": "Mark Knudsen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "Demonstration",
+        "Fagbevægelse",
+        "Lockout",
+        "Uddannelse"
+      ]
+    },
+    {
+      "id": "20",
+      "sortOrder": 20,
+      "filename": "20-mg-4899.jpg",
+      "originalFilename": "_MG_4899.jpg",
+      "width": 940,
+      "height": 627,
+      "credit": "Mark Knudsen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "Demonstration",
+        "Fagbevægelse",
+        "Lockout",
+        "Uddannelse"
+      ]
+    }
+  ],
+  "sourceUrl": "fotoserie/lærerne-er-de-første-hvem-bliver-de-næste.html",
+  "sourceType": "fotoserie"
+}

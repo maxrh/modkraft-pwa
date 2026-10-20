@@ -1,0 +1,264 @@
+{
+  "id": "ja-til-velfaerd-nej-til-fattigdom",
+  "sourceNid": 28573,
+  "slug": "ja-til-velfaerd-nej-til-fattigdom",
+  "title": "»Ja til velfærd - Nej til fattigdom«",
+  "publishedAt": "2016-10-10T14:36:14+02:00",
+  "modifiedAt": "2016-10-10T14:55:18+02:00",
+  "authors": [
+    "Mette Kramer Kristensen"
+  ],
+  "photographers": [
+    "Mette Kramer Kristensen"
+  ],
+  "prefix": "Demonstration",
+  "series": null,
+  "manchet": "Flere tusinde mennesker var under parolen »Ja til vefærd - Nej til Fattigdom« mødt op til demonstration på Christiansborg Slotsplads tirsdag den 4. oktober i andledning af Folketingets åbning",
+  "introMarkdown": "",
+  "tags": [
+    "Demonstration",
+    "Nedskæringer",
+    "Socialt",
+    "Velfærd"
+  ],
+  "genre": "Nyhed",
+  "coverImage": "01",
+  "images": [
+    {
+      "id": "01",
+      "sortOrder": 1,
+      "filename": "01-demo-velfaerd-8377.jpg",
+      "originalFilename": "demo_velfærd-8377.JPG",
+      "width": 940,
+      "height": 627,
+      "credit": "Mette Kramer Kristensen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "Demonstration",
+        "Nedskæringer",
+        "Socialt",
+        "Velfærd"
+      ]
+    },
+    {
+      "id": "02",
+      "sortOrder": 2,
+      "filename": "02-demo-velfaerd-8394.jpg",
+      "originalFilename": "demo_velfærd-8394.JPG",
+      "width": 627,
+      "height": 940,
+      "credit": "Mette Kramer Kristensen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "Demonstration",
+        "Nedskæringer",
+        "Socialt",
+        "Velfærd"
+      ]
+    },
+    {
+      "id": "03",
+      "sortOrder": 3,
+      "filename": "03-demo-velfaerd-8404.jpg",
+      "originalFilename": "demo_velfærd-8404.JPG",
+      "width": 940,
+      "height": 627,
+      "credit": "Mette Kramer Kristensen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "Demonstration",
+        "Nedskæringer",
+        "Socialt",
+        "Velfærd"
+      ]
+    },
+    {
+      "id": "04",
+      "sortOrder": 4,
+      "filename": "04-demo-velfaerd-8441-0.jpg",
+      "originalFilename": "demo_velfærd-8441_0.JPG",
+      "width": 940,
+      "height": 627,
+      "credit": "Mette Kramer Kristensen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "Demonstration",
+        "Nedskæringer",
+        "Socialt",
+        "Velfærd"
+      ]
+    },
+    {
+      "id": "05",
+      "sortOrder": 5,
+      "filename": "05-demo-velfaerd-8461.jpg",
+      "originalFilename": "demo_velfærd-8461.JPG",
+      "width": 940,
+      "height": 627,
+      "credit": "Mette Kramer Kristensen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "Demonstration",
+        "Nedskæringer",
+        "Socialt",
+        "Velfærd"
+      ]
+    },
+    {
+      "id": "06",
+      "sortOrder": 6,
+      "filename": "06-demo-velfaerd-8466.jpg",
+      "originalFilename": "demo_velfærd-8466.JPG",
+      "width": 940,
+      "height": 627,
+      "credit": "Mette Kramer Kristensen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "Demonstration",
+        "Nedskæringer",
+        "Socialt",
+        "Velfærd"
+      ]
+    },
+    {
+      "id": "07",
+      "sortOrder": 7,
+      "filename": "07-demo-velfaerd-8494.jpg",
+      "originalFilename": "demo_velfærd-8494.JPG",
+      "width": 940,
+      "height": 627,
+      "credit": "Mette Kramer Kristensen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "Demonstration",
+        "Nedskæringer",
+        "Socialt",
+        "Velfærd"
+      ]
+    },
+    {
+      "id": "08",
+      "sortOrder": 8,
+      "filename": "08-demo-velfaerd-8505.jpg",
+      "originalFilename": "demo_velfærd-8505.JPG",
+      "width": 940,
+      "height": 627,
+      "credit": "Mette Kramer Kristensen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "Demonstration",
+        "Nedskæringer",
+        "Socialt",
+        "Velfærd"
+      ]
+    },
+    {
+      "id": "09",
+      "sortOrder": 9,
+      "filename": "09-demo-velfaerd-8510.jpg",
+      "originalFilename": "demo_velfærd-8510.JPG",
+      "width": 940,
+      "height": 627,
+      "credit": "Mette Kramer Kristensen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "Demonstration",
+        "Nedskæringer",
+        "Socialt",
+        "Velfærd"
+      ]
+    },
+    {
+      "id": "10",
+      "sortOrder": 10,
+      "filename": "10-demo-velfaerd-8514.jpg",
+      "originalFilename": "demo_velfærd-8514.JPG",
+      "width": 940,
+      "height": 627,
+      "credit": "Mette Kramer Kristensen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "Demonstration",
+        "Nedskæringer",
+        "Socialt",
+        "Velfærd"
+      ]
+    },
+    {
+      "id": "11",
+      "sortOrder": 11,
+      "filename": "11-demo-velfaerd-8528.jpg",
+      "originalFilename": "demo_velfærd-8528.JPG",
+      "width": 940,
+      "height": 627,
+      "credit": "Mette Kramer Kristensen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "Demonstration",
+        "Nedskæringer",
+        "Socialt",
+        "Velfærd"
+      ]
+    },
+    {
+      "id": "12",
+      "sortOrder": 12,
+      "filename": "12-demo-velfaerd-8531.jpg",
+      "originalFilename": "demo_velfærd-8531.JPG",
+      "width": 940,
+      "height": 627,
+      "credit": "Mette Kramer Kristensen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "Demonstration",
+        "Nedskæringer",
+        "Socialt",
+        "Velfærd"
+      ]
+    },
+    {
+      "id": "13",
+      "sortOrder": 13,
+      "filename": "13-demo-velfaerd-8555.jpg",
+      "originalFilename": "demo_velfærd-8555.JPG",
+      "width": 940,
+      "height": 627,
+      "credit": "Mette Kramer Kristensen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "Demonstration",
+        "Nedskæringer",
+        "Socialt",
+        "Velfærd"
+      ]
+    }
+  ],
+  "sourceUrl": "fotoserie/ja-til-velf-rd-nej-til-fattigdom.html",
+  "sourceType": "fotoserie"
+}

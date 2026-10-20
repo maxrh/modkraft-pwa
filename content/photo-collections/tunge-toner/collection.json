@@ -1,0 +1,390 @@
+{
+  "id": "tunge-toner",
+  "sourceNid": 18441,
+  "slug": "tunge-toner",
+  "title": "Tunge toner",
+  "publishedAt": "2012-05-08T12:50:38+02:00",
+  "modifiedAt": "2012-05-08T13:06:30+02:00",
+  "authors": [
+    "Rune Eltard-Sørensen"
+  ],
+  "photographers": [
+    "Brian Berg"
+  ],
+  "prefix": null,
+  "series": null,
+  "manchet": null,
+  "introMarkdown": "Musikfestivalen »Heavy Days in Doomtown«, der fandt sted den 3.-6. maj, bød på fire dage med musik fra den tunge ende af metal-genren.\n\n25 bands fra Europa og Amerika samt fem fra Danmark deltog i festivalen, som fandt sted på spillestedet Stengade, Ungdomshuset på Dortheavej og Loppen på Christiania.\n\nArrangemntet er 100% ikke-kommercielt og havde fokus på bands og musikken – ikke penge og prestige.\n\nFoto: Brian Berg.\n\n[Besøg festivalens hjemmeside her.](http://www.heavydaysindoomtown.com/)",
+  "tags": [
+    "Koncert",
+    "Kultur",
+    "Musik",
+    "Ungdomshuset"
+  ],
+  "genre": null,
+  "coverImage": "01",
+  "images": [
+    {
+      "id": "01",
+      "sortOrder": 1,
+      "filename": "01-a1-0.jpg",
+      "originalFilename": "a1_0.jpg",
+      "width": 480,
+      "height": 720,
+      "credit": "Brian Berg",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "root-stripped-hash",
+      "tags": [
+        "Koncert",
+        "Kultur",
+        "Musik",
+        "Ungdomshuset"
+      ]
+    },
+    {
+      "id": "02",
+      "sortOrder": 2,
+      "filename": "02-a2-0.jpg",
+      "originalFilename": "a2_0.jpg",
+      "width": 940,
+      "height": 627,
+      "credit": "Brian Berg",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "root-stripped-hash",
+      "tags": [
+        "Koncert",
+        "Kultur",
+        "Musik",
+        "Ungdomshuset"
+      ]
+    },
+    {
+      "id": "03",
+      "sortOrder": 3,
+      "filename": "03-a3.jpg",
+      "originalFilename": "a3.jpg",
+      "width": 940,
+      "height": 627,
+      "credit": "Brian Berg",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "root-stripped-hash",
+      "tags": [
+        "Koncert",
+        "Kultur",
+        "Musik",
+        "Ungdomshuset"
+      ]
+    },
+    {
+      "id": "04",
+      "sortOrder": 4,
+      "filename": "04-a4.jpg",
+      "originalFilename": "a4.jpg",
+      "width": 480,
+      "height": 720,
+      "credit": "Brian Berg",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "root-stripped-hash",
+      "tags": [
+        "Koncert",
+        "Kultur",
+        "Musik",
+        "Ungdomshuset"
+      ]
+    },
+    {
+      "id": "05",
+      "sortOrder": 5,
+      "filename": "05-a5.jpg",
+      "originalFilename": "a5.jpg",
+      "width": 940,
+      "height": 627,
+      "credit": "Brian Berg",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "root-stripped-hash",
+      "tags": [
+        "Koncert",
+        "Kultur",
+        "Musik",
+        "Ungdomshuset"
+      ]
+    },
+    {
+      "id": "06",
+      "sortOrder": 6,
+      "filename": "06-a6.jpg",
+      "originalFilename": "a6.jpg",
+      "width": 940,
+      "height": 627,
+      "credit": "Brian Berg",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "root-stripped-hash",
+      "tags": [
+        "Koncert",
+        "Kultur",
+        "Musik",
+        "Ungdomshuset"
+      ]
+    },
+    {
+      "id": "07",
+      "sortOrder": 7,
+      "filename": "07-a7.jpg",
+      "originalFilename": "a7.jpg",
+      "width": 940,
+      "height": 627,
+      "credit": "Brian Berg",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "root-stripped-hash",
+      "tags": [
+        "Koncert",
+        "Kultur",
+        "Musik",
+        "Ungdomshuset"
+      ]
+    },
+    {
+      "id": "08",
+      "sortOrder": 8,
+      "filename": "08-a8.jpg",
+      "originalFilename": "a8.jpg",
+      "width": 940,
+      "height": 627,
+      "credit": "Brian Berg",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "root-stripped-hash",
+      "tags": [
+        "Koncert",
+        "Kultur",
+        "Musik",
+        "Ungdomshuset"
+      ]
+    },
+    {
+      "id": "09",
+      "sortOrder": 9,
+      "filename": "09-a9.jpg",
+      "originalFilename": "a9.jpg",
+      "width": 480,
+      "height": 720,
+      "credit": "Brian Berg",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "root-stripped-hash",
+      "tags": [
+        "Koncert",
+        "Kultur",
+        "Musik",
+        "Ungdomshuset"
+      ]
+    },
+    {
+      "id": "10",
+      "sortOrder": 10,
+      "filename": "10-a10.jpg",
+      "originalFilename": "a10.jpg",
+      "width": 940,
+      "height": 626,
+      "credit": "Brian Berg",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "root-stripped-hash",
+      "tags": [
+        "Koncert",
+        "Kultur",
+        "Musik",
+        "Ungdomshuset"
+      ]
+    },
+    {
+      "id": "11",
+      "sortOrder": 11,
+      "filename": "11-a11-0.jpg",
+      "originalFilename": "a11_0.jpg",
+      "width": 940,
+      "height": 627,
+      "credit": "Brian Berg",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "root-stripped-hash",
+      "tags": [
+        "Koncert",
+        "Kultur",
+        "Musik",
+        "Ungdomshuset"
+      ]
+    },
+    {
+      "id": "12",
+      "sortOrder": 12,
+      "filename": "12-a13.jpg",
+      "originalFilename": "a13.jpg",
+      "width": 480,
+      "height": 720,
+      "credit": "Brian Berg",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "root-stripped-hash",
+      "tags": [
+        "Koncert",
+        "Kultur",
+        "Musik",
+        "Ungdomshuset"
+      ]
+    },
+    {
+      "id": "13",
+      "sortOrder": 13,
+      "filename": "13-a14.jpg",
+      "originalFilename": "a14.jpg",
+      "width": 940,
+      "height": 627,
+      "credit": "Brian Berg",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "root-stripped-hash",
+      "tags": [
+        "Koncert",
+        "Kultur",
+        "Musik",
+        "Ungdomshuset"
+      ]
+    },
+    {
+      "id": "14",
+      "sortOrder": 14,
+      "filename": "14-a15.jpg",
+      "originalFilename": "a15.jpg",
+      "width": 940,
+      "height": 627,
+      "credit": "Brian Berg",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "root-stripped-hash",
+      "tags": [
+        "Koncert",
+        "Kultur",
+        "Musik",
+        "Ungdomshuset"
+      ]
+    },
+    {
+      "id": "15",
+      "sortOrder": 15,
+      "filename": "15-a16.jpg",
+      "originalFilename": "a16.jpg",
+      "width": 940,
+      "height": 627,
+      "credit": "Brian Berg",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "root-stripped-hash",
+      "tags": [
+        "Koncert",
+        "Kultur",
+        "Musik",
+        "Ungdomshuset"
+      ]
+    },
+    {
+      "id": "16",
+      "sortOrder": 16,
+      "filename": "16-a17.jpg",
+      "originalFilename": "a17.jpg",
+      "width": 940,
+      "height": 627,
+      "credit": "Brian Berg",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "root-stripped-hash",
+      "tags": [
+        "Koncert",
+        "Kultur",
+        "Musik",
+        "Ungdomshuset"
+      ]
+    },
+    {
+      "id": "17",
+      "sortOrder": 17,
+      "filename": "17-a18.jpg",
+      "originalFilename": "a18.jpg",
+      "width": 940,
+      "height": 627,
+      "credit": "Brian Berg",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "root-stripped-hash",
+      "tags": [
+        "Koncert",
+        "Kultur",
+        "Musik",
+        "Ungdomshuset"
+      ]
+    },
+    {
+      "id": "18",
+      "sortOrder": 18,
+      "filename": "18-a19.jpg",
+      "originalFilename": "a19.jpg",
+      "width": 480,
+      "height": 720,
+      "credit": "Brian Berg",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "root-stripped-hash",
+      "tags": [
+        "Koncert",
+        "Kultur",
+        "Musik",
+        "Ungdomshuset"
+      ]
+    },
+    {
+      "id": "19",
+      "sortOrder": 19,
+      "filename": "19-a20.jpg",
+      "originalFilename": "a20.jpg",
+      "width": 480,
+      "height": 720,
+      "credit": "Brian Berg",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "root-stripped-hash",
+      "tags": [
+        "Koncert",
+        "Kultur",
+        "Musik",
+        "Ungdomshuset"
+      ]
+    },
+    {
+      "id": "20",
+      "sortOrder": 20,
+      "filename": "20-a21.jpg",
+      "originalFilename": "a21.jpg",
+      "width": 940,
+      "height": 627,
+      "credit": "Brian Berg",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "root-stripped-hash",
+      "tags": [
+        "Koncert",
+        "Kultur",
+        "Musik",
+        "Ungdomshuset"
+      ]
+    }
+  ],
+  "sourceUrl": "artikel/tunge-toner.html",
+  "sourceType": "artikel-foto"
+}

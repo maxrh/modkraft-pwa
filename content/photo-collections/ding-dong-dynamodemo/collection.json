@@ -1,0 +1,427 @@
+{
+  "id": "ding-dong-dynamodemo",
+  "sourceNid": 23654,
+  "slug": "ding-dong-dynamodemo",
+  "title": "Ding dong dynamodemo",
+  "publishedAt": "2014-01-29T18:08:39+01:00",
+  "modifiedAt": "2014-01-30T12:31:43+01:00",
+  "authors": [
+    "Ole Wugge Christiansen"
+  ],
+  "photographers": [
+    "Mark Knudsen",
+    "Mette Kramer Kristensen"
+  ],
+  "prefix": "Aktivisme",
+  "series": null,
+  "manchet": "Demonstranter fylder Christiansborg Slotsplads halvt op i protest mod salg af Dong-aktier til Goldman Sachs – også selv om interne uenigheder blusser op umiddelbart op til demonstrationens afvikling.",
+  "introMarkdown": "Op mod 5.000 mennesker trodsede onsdag den 29. januar vinterkulder og deltog i en demonstration på Christiansborg Slotsplads imod salg af Dong-aktier til den amerikanske bank Goldman Sachs.\n\nDemonstrationen forløb overvejende roligt og traditionelt, som Modkrafts fotograf dokumenter herunder.\n\n### Moddemonstration\n\nMen der opstod lidt skubben og mundhuggeri mellem enkelte demonstranter og tre moddemonstranter, der var mødt op med et banner, der gik ind for salg af Dong-aktier til Goldman Sachs.\n\nIfølge Rasmus Jarlov, konservativ borgerrepræsentant i København, der var en af moddemonstranterne, blev et banner stjålet, og han selv slået i hovedet og ramt af en snebold.\n\n[Læs også Erik Storuds blog: »Jarlovs offerrolle« på Modkraft](http://modkraft.dk/blog/erik-storrud/jarlovs-offerrolle)\n\n### Nynazister ledsaget bort af politi\n\nOp til demonstrationen havde nynazistiske sympatisører desuden meldt deres ankomst. De var af arrangørerne ellers blevet bedt om at holde sig borte, men en lille gruppe blev i et hjørne af Slotpladsen omringet af betjente, der også ledsagede dem væk fra Slotpladsen.\n\nEnkelte demonstranter havde medbragt bannere, der stemplede aktiesalget som landsforræderi, men så vidt Modkraft kunne vurdere var der ikke her tale om højreekstremistiske indslag.\n\n### Uenighed om Dansk Folkeparti-deltagelse\n\nOp til demonstrationen opstod der på blandt andet de sociale medier en ophidset diskussion om demonstrationens politiske grundlag.\n\nDet skyldes, at de enkeltpersoner, der havde taget initiativ til demonstrationen, i løbet af tirsdag besluttede at udelukke repræsentanter for Dansk Folkeparti som talere ved demonstrationen.\n\nDet resulterede onsdag i, at to miljøorganisationer, Omstilling Nu og Noah, trak deres støtte i sidste øjeblik. Også Facebooksiden »Stop salg af DONG til Goldman Sachs« kritiserede i løbet at onsdag beslutningen.\n\nPå flere debatfora har beslutningen været diskuteret heftigt dagen igennem.",
+  "tags": [
+    "Aktivisme",
+    "Demonstration",
+    "DONG Energy",
+    "Goldman Sachs"
+  ],
+  "genre": "Nyhed",
+  "coverImage": "01",
+  "images": [
+    {
+      "id": "01",
+      "sortOrder": 1,
+      "filename": "01-mg-4204.jpg",
+      "originalFilename": "_MG_4204.jpg",
+      "width": 900,
+      "height": 600,
+      "credit": "Mark Knudsen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "Aktivisme",
+        "Demonstration",
+        "DONG Energy",
+        "Goldman Sachs"
+      ]
+    },
+    {
+      "id": "02",
+      "sortOrder": 2,
+      "filename": "02-mg-4211.jpg",
+      "originalFilename": "_MG_4211.jpg",
+      "width": 900,
+      "height": 600,
+      "credit": "Mark Knudsen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "Aktivisme",
+        "Demonstration",
+        "DONG Energy",
+        "Goldman Sachs"
+      ]
+    },
+    {
+      "id": "03",
+      "sortOrder": 3,
+      "filename": "03-mg-4214.jpg",
+      "originalFilename": "_MG_4214.jpg",
+      "width": 900,
+      "height": 600,
+      "credit": "Mark Knudsen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "Aktivisme",
+        "Demonstration",
+        "DONG Energy",
+        "Goldman Sachs"
+      ]
+    },
+    {
+      "id": "04",
+      "sortOrder": 4,
+      "filename": "04-mg-4219-0.jpg",
+      "originalFilename": "_MG_4219_0.jpg",
+      "width": 900,
+      "height": 600,
+      "credit": "Mark Knudsen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "Aktivisme",
+        "Demonstration",
+        "DONG Energy",
+        "Goldman Sachs"
+      ]
+    },
+    {
+      "id": "05",
+      "sortOrder": 5,
+      "filename": "05-dong-demo-8587.jpg",
+      "originalFilename": "DONG_demo-8587.JPG",
+      "width": 940,
+      "height": 627,
+      "credit": "Mette Kramer Kristensen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "Aktivisme",
+        "Demonstration",
+        "DONG Energy",
+        "Goldman Sachs"
+      ]
+    },
+    {
+      "id": "06",
+      "sortOrder": 6,
+      "filename": "06-mg-4222.jpg",
+      "originalFilename": "_MG_4222.jpg",
+      "width": 900,
+      "height": 600,
+      "credit": "Mark Knudsen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "Aktivisme",
+        "Demonstration",
+        "DONG Energy",
+        "Goldman Sachs"
+      ]
+    },
+    {
+      "id": "07",
+      "sortOrder": 7,
+      "filename": "07-mg-4265.jpg",
+      "originalFilename": "_MG_4265.jpg",
+      "width": 900,
+      "height": 600,
+      "credit": "Mark Knudsen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "Aktivisme",
+        "Demonstration",
+        "DONG Energy",
+        "Goldman Sachs"
+      ]
+    },
+    {
+      "id": "08",
+      "sortOrder": 8,
+      "filename": "08-dong-demo-8596.jpg",
+      "originalFilename": "DONG_demo-8596.JPG",
+      "width": 940,
+      "height": 627,
+      "credit": "Mette Kramer Kristensen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "Aktivisme",
+        "Demonstration",
+        "DONG Energy",
+        "Goldman Sachs"
+      ]
+    },
+    {
+      "id": "09",
+      "sortOrder": 9,
+      "filename": "09-dong-demo-8560.jpg",
+      "originalFilename": "DONG_demo-8560.JPG",
+      "width": 940,
+      "height": 627,
+      "credit": "Mette Kramer Kristensen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "Aktivisme",
+        "Demonstration",
+        "DONG Energy",
+        "Goldman Sachs"
+      ]
+    },
+    {
+      "id": "10",
+      "sortOrder": 10,
+      "filename": "10-mg-4227.jpg",
+      "originalFilename": "_MG_4227.jpg",
+      "width": 900,
+      "height": 1350,
+      "credit": "Mark Knudsen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "Aktivisme",
+        "Demonstration",
+        "DONG Energy",
+        "Goldman Sachs"
+      ]
+    },
+    {
+      "id": "11",
+      "sortOrder": 11,
+      "filename": "11-mg-4288.jpg",
+      "originalFilename": "_MG_4288.jpg",
+      "width": 900,
+      "height": 600,
+      "credit": "Mark Knudsen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "Aktivisme",
+        "Demonstration",
+        "DONG Energy",
+        "Goldman Sachs"
+      ]
+    },
+    {
+      "id": "12",
+      "sortOrder": 12,
+      "filename": "12-mg-4287.jpg",
+      "originalFilename": "_MG_4287.jpg",
+      "width": 900,
+      "height": 600,
+      "credit": "Mark Knudsen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "Aktivisme",
+        "Demonstration",
+        "DONG Energy",
+        "Goldman Sachs"
+      ]
+    },
+    {
+      "id": "13",
+      "sortOrder": 13,
+      "filename": "13-dong-demo-8564.jpg",
+      "originalFilename": "DONG_demo-8564.JPG",
+      "width": 940,
+      "height": 627,
+      "credit": "Mette Kramer Kristensen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "Aktivisme",
+        "Demonstration",
+        "DONG Energy",
+        "Goldman Sachs"
+      ]
+    },
+    {
+      "id": "14",
+      "sortOrder": 14,
+      "filename": "14-dong-demo-8581.jpg",
+      "originalFilename": "DONG_demo-8581.JPG",
+      "width": 940,
+      "height": 627,
+      "credit": "Mette Kramer Kristensen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "Aktivisme",
+        "Demonstration",
+        "DONG Energy",
+        "Goldman Sachs"
+      ]
+    },
+    {
+      "id": "15",
+      "sortOrder": 15,
+      "filename": "15-dong-demo-8603.jpg",
+      "originalFilename": "DONG_demo-8603.JPG",
+      "width": 940,
+      "height": 627,
+      "credit": "Mette Kramer Kristensen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "Aktivisme",
+        "Demonstration",
+        "DONG Energy",
+        "Goldman Sachs"
+      ]
+    },
+    {
+      "id": "16",
+      "sortOrder": 16,
+      "filename": "16-dong-demo-8606.jpg",
+      "originalFilename": "DONG_demo-8606.JPG",
+      "width": 940,
+      "height": 627,
+      "credit": "Mette Kramer Kristensen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "Aktivisme",
+        "Demonstration",
+        "DONG Energy",
+        "Goldman Sachs"
+      ]
+    },
+    {
+      "id": "17",
+      "sortOrder": 17,
+      "filename": "17-dong-demo-8628.jpg",
+      "originalFilename": "DONG_demo-8628.JPG",
+      "width": 940,
+      "height": 627,
+      "credit": "Mette Kramer Kristensen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "Aktivisme",
+        "Demonstration",
+        "DONG Energy",
+        "Goldman Sachs"
+      ]
+    },
+    {
+      "id": "18",
+      "sortOrder": 18,
+      "filename": "18-dong-demo-8645.jpg",
+      "originalFilename": "DONG_demo-8645.JPG",
+      "width": 940,
+      "height": 627,
+      "credit": "Mette Kramer Kristensen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "Aktivisme",
+        "Demonstration",
+        "DONG Energy",
+        "Goldman Sachs"
+      ]
+    },
+    {
+      "id": "19",
+      "sortOrder": 19,
+      "filename": "19-dong-demo-8646.jpg",
+      "originalFilename": "DONG_demo-8646.JPG",
+      "width": 940,
+      "height": 627,
+      "credit": "Mette Kramer Kristensen",
+      "caption": null,
+      "captionSource": "none",
+      "sourceResolve": "relative",
+      "tags": [
+        "Aktivisme",
+        "Demonstration",
+        "DONG Energy",
+        "Goldman Sachs"
+      ]
+    },
+    {
+      "id": "20",
+      "sortOrder": 20,
+      "filename": "20-dong-demo-8673.jpg",
+      "originalFilename": "DONG_demo-8673.JPG",
+      "width": 940,
+      "height": 627,
+      "credit": "Mette Kramer Kristensen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "Aktivisme",
+        "Demonstration",
+        "DONG Energy",
+        "Goldman Sachs"
+      ]
+    },
+    {
+      "id": "21",
+      "sortOrder": 21,
+      "filename": "21-dong-demo-8738.jpg",
+      "originalFilename": "DONG_demo-8738.JPG",
+      "width": 940,
+      "height": 627,
+      "credit": "Mette Kramer Kristensen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "Aktivisme",
+        "Demonstration",
+        "DONG Energy",
+        "Goldman Sachs"
+      ]
+    },
+    {
+      "id": "22",
+      "sortOrder": 22,
+      "filename": "22-dong-demo-8767.jpg",
+      "originalFilename": "DONG_demo-8767.JPG",
+      "width": 940,
+      "height": 627,
+      "credit": "Mette Kramer Kristensen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "Aktivisme",
+        "Demonstration",
+        "DONG Energy",
+        "Goldman Sachs"
+      ]
+    }
+  ],
+  "sourceUrl": "fotoserie/ding-dong-dynamodemo.html",
+  "sourceType": "fotoserie"
+}

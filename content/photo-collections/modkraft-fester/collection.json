@@ -1,0 +1,267 @@
+{
+  "id": "modkraft-fester",
+  "sourceNid": 25026,
+  "slug": "modkraft-fester",
+  "title": "Modkraft fester",
+  "publishedAt": "2014-09-17T11:23:19+02:00",
+  "modifiedAt": "2014-09-17T11:54:49+02:00",
+  "authors": [
+    "Mette Kramer Kristensen"
+  ],
+  "photographers": [
+    "Mette Kramer Kristensen"
+  ],
+  "prefix": "Fest",
+  "series": null,
+  "manchet": "Modkraft holdt støttefest lørdag den 13. september på Bolsjefabrikken i København. Her spillede blandt andre KaPow Collective, rapperen Vakili og dj Esben Weile Kjær, mens bloggere og aktivister stod i baren. Vores fotograf Mette Kramer Kristensen var med.",
+  "introMarkdown": "",
+  "tags": [
+    "Fest",
+    "Kultur",
+    "Modkraft"
+  ],
+  "genre": "Nyhed",
+  "coverImage": "01",
+  "images": [
+    {
+      "id": "01",
+      "sortOrder": 1,
+      "filename": "01-modkraftfest-2025.jpg",
+      "originalFilename": "modkraftfest-2025.JPG",
+      "width": 940,
+      "height": 627,
+      "credit": "Mette Kramer Kristensen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "Fest",
+        "Kultur",
+        "Modkraft"
+      ]
+    },
+    {
+      "id": "02",
+      "sortOrder": 2,
+      "filename": "02-modkraftfest-2024.jpg",
+      "originalFilename": "modkraftfest-2024.JPG",
+      "width": 940,
+      "height": 627,
+      "credit": "Mette Kramer Kristensen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "Fest",
+        "Kultur",
+        "Modkraft"
+      ]
+    },
+    {
+      "id": "03",
+      "sortOrder": 3,
+      "filename": "03-modkraftfest-2031.jpg",
+      "originalFilename": "modkraftfest-2031.JPG",
+      "width": 940,
+      "height": 627,
+      "credit": "Mette Kramer Kristensen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "Fest",
+        "Kultur",
+        "Modkraft"
+      ]
+    },
+    {
+      "id": "04",
+      "sortOrder": 4,
+      "filename": "04-modkraftfest-2051.jpg",
+      "originalFilename": "modkraftfest-2051.JPG",
+      "width": 940,
+      "height": 627,
+      "credit": "Mette Kramer Kristensen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "Fest",
+        "Kultur",
+        "Modkraft"
+      ]
+    },
+    {
+      "id": "05",
+      "sortOrder": 5,
+      "filename": "05-modkraftfest-2052.jpg",
+      "originalFilename": "modkraftfest-2052.JPG",
+      "width": 940,
+      "height": 627,
+      "credit": "Mette Kramer Kristensen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "Fest",
+        "Kultur",
+        "Modkraft"
+      ]
+    },
+    {
+      "id": "06",
+      "sortOrder": 6,
+      "filename": "06-modkraftfest-2081.jpg",
+      "originalFilename": "modkraftfest-2081.JPG",
+      "width": 940,
+      "height": 627,
+      "credit": "Mette Kramer Kristensen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "Fest",
+        "Kultur",
+        "Modkraft"
+      ]
+    },
+    {
+      "id": "07",
+      "sortOrder": 7,
+      "filename": "07-modkraftfest-2087-0.jpg",
+      "originalFilename": "modkraftfest-2087_0.JPG",
+      "width": 940,
+      "height": 627,
+      "credit": "Mette Kramer Kristensen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "Fest",
+        "Kultur",
+        "Modkraft"
+      ]
+    },
+    {
+      "id": "08",
+      "sortOrder": 8,
+      "filename": "08-modkraftfest-2103.jpg",
+      "originalFilename": "modkraftfest-2103.JPG",
+      "width": 627,
+      "height": 940,
+      "credit": "Mette Kramer Kristensen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "Fest",
+        "Kultur",
+        "Modkraft"
+      ]
+    },
+    {
+      "id": "09",
+      "sortOrder": 9,
+      "filename": "09-modkraftfest-2107.jpg",
+      "originalFilename": "modkraftfest-2107.JPG",
+      "width": 940,
+      "height": 627,
+      "credit": "Mette Kramer Kristensen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "Fest",
+        "Kultur",
+        "Modkraft"
+      ]
+    },
+    {
+      "id": "10",
+      "sortOrder": 10,
+      "filename": "10-modkraftfest-2110.jpg",
+      "originalFilename": "modkraftfest-2110.JPG",
+      "width": 940,
+      "height": 627,
+      "credit": "Mette Kramer Kristensen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "Fest",
+        "Kultur",
+        "Modkraft"
+      ]
+    },
+    {
+      "id": "11",
+      "sortOrder": 11,
+      "filename": "11-modkraftfest-2120.jpg",
+      "originalFilename": "modkraftfest-2120.JPG",
+      "width": 627,
+      "height": 940,
+      "credit": "Mette Kramer Kristensen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "Fest",
+        "Kultur",
+        "Modkraft"
+      ]
+    },
+    {
+      "id": "12",
+      "sortOrder": 12,
+      "filename": "12-modkraftfest-2132.jpg",
+      "originalFilename": "modkraftfest-2132.JPG",
+      "width": 940,
+      "height": 627,
+      "credit": "Mette Kramer Kristensen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "Fest",
+        "Kultur",
+        "Modkraft"
+      ]
+    },
+    {
+      "id": "13",
+      "sortOrder": 13,
+      "filename": "13-modkraftfest-2143.jpg",
+      "originalFilename": "modkraftfest-2143.JPG",
+      "width": 940,
+      "height": 627,
+      "credit": "Mette Kramer Kristensen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "Fest",
+        "Kultur",
+        "Modkraft"
+      ]
+    },
+    {
+      "id": "14",
+      "sortOrder": 14,
+      "filename": "14-modkraftfest-2151.jpg",
+      "originalFilename": "modkraftfest-2151.JPG",
+      "width": 940,
+      "height": 627,
+      "credit": "Mette Kramer Kristensen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "Fest",
+        "Kultur",
+        "Modkraft"
+      ]
+    }
+  ],
+  "sourceUrl": "fotoserie/modkraft-fester.html",
+  "sourceType": "fotoserie"
+}

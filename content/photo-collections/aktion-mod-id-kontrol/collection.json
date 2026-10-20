@@ -1,0 +1,316 @@
+{
+  "id": "aktion-mod-id-kontrol",
+  "sourceNid": 27512,
+  "slug": "aktion-mod-id-kontrol",
+  "title": "Aktion mod ID-kontrol",
+  "publishedAt": "2016-01-09T20:16:14+01:00",
+  "modifiedAt": "2016-01-09T20:31:36+01:00",
+  "authors": [
+    "Mark Knudsen"
+  ],
+  "photographers": [
+    "Mark Knudsen"
+  ],
+  "prefix": null,
+  "series": null,
+  "manchet": "Op mod 500 aktivister fra Sverige og Danmark mødtes i Københavns Lufthavn, hvor de protesterede mod det nyindførte krav om fremvisning af ID, som nu kræves, hvis man skal med toget til Sverige.",
+  "introMarkdown": "",
+  "tags": [
+    "Aktivisme",
+    "Asyl",
+    "Demonstration",
+    "Flygtninge",
+    "København"
+  ],
+  "genre": "Nyhed",
+  "coverImage": "01",
+  "images": [
+    {
+      "id": "01",
+      "sortOrder": 1,
+      "filename": "01-mg-2804.jpg",
+      "originalFilename": "_MG_2804.jpg",
+      "width": 940,
+      "height": 627,
+      "credit": "Mark Knudsen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "Aktivisme",
+        "Asyl",
+        "Demonstration",
+        "Flygtninge",
+        "København"
+      ]
+    },
+    {
+      "id": "02",
+      "sortOrder": 2,
+      "filename": "02-mg-2832.jpg",
+      "originalFilename": "_MG_2832.jpg",
+      "width": 940,
+      "height": 627,
+      "credit": "Mark Knudsen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "Aktivisme",
+        "Asyl",
+        "Demonstration",
+        "Flygtninge",
+        "København"
+      ]
+    },
+    {
+      "id": "03",
+      "sortOrder": 3,
+      "filename": "03-mg-2846.jpg",
+      "originalFilename": "_MG_2846.jpg",
+      "width": 940,
+      "height": 627,
+      "credit": "Mark Knudsen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "Aktivisme",
+        "Asyl",
+        "Demonstration",
+        "Flygtninge",
+        "København"
+      ]
+    },
+    {
+      "id": "04",
+      "sortOrder": 4,
+      "filename": "04-mg-2852-0.jpg",
+      "originalFilename": "_MG_2852_0.jpg",
+      "width": 940,
+      "height": 627,
+      "credit": "Mark Knudsen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "Aktivisme",
+        "Asyl",
+        "Demonstration",
+        "Flygtninge",
+        "København"
+      ]
+    },
+    {
+      "id": "05",
+      "sortOrder": 5,
+      "filename": "05-mg-2855.jpg",
+      "originalFilename": "_MG_2855.jpg",
+      "width": 940,
+      "height": 627,
+      "credit": "Mark Knudsen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "Aktivisme",
+        "Asyl",
+        "Demonstration",
+        "Flygtninge",
+        "København"
+      ]
+    },
+    {
+      "id": "06",
+      "sortOrder": 6,
+      "filename": "06-mg-3022.jpg",
+      "originalFilename": "_MG_3022.jpg",
+      "width": 940,
+      "height": 627,
+      "credit": "Mark Knudsen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "Aktivisme",
+        "Asyl",
+        "Demonstration",
+        "Flygtninge",
+        "København"
+      ]
+    },
+    {
+      "id": "07",
+      "sortOrder": 7,
+      "filename": "07-mg-3006.jpg",
+      "originalFilename": "_MG_3006.jpg",
+      "width": 940,
+      "height": 627,
+      "credit": "Mark Knudsen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "Aktivisme",
+        "Asyl",
+        "Demonstration",
+        "Flygtninge",
+        "København"
+      ]
+    },
+    {
+      "id": "08",
+      "sortOrder": 8,
+      "filename": "08-mg-3067.jpg",
+      "originalFilename": "_MG_3067.jpg",
+      "width": 940,
+      "height": 1410,
+      "credit": "Mark Knudsen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "Aktivisme",
+        "Asyl",
+        "Demonstration",
+        "Flygtninge",
+        "København"
+      ]
+    },
+    {
+      "id": "09",
+      "sortOrder": 9,
+      "filename": "09-mg-3087.jpg",
+      "originalFilename": "_MG_3087.jpg",
+      "width": 940,
+      "height": 627,
+      "credit": "Mark Knudsen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "Aktivisme",
+        "Asyl",
+        "Demonstration",
+        "Flygtninge",
+        "København"
+      ]
+    },
+    {
+      "id": "10",
+      "sortOrder": 10,
+      "filename": "10-mg-3089-0.jpg",
+      "originalFilename": "_MG_3089_0.jpg",
+      "width": 940,
+      "height": 627,
+      "credit": "Mark Knudsen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "Aktivisme",
+        "Asyl",
+        "Demonstration",
+        "Flygtninge",
+        "København"
+      ]
+    },
+    {
+      "id": "11",
+      "sortOrder": 11,
+      "filename": "11-mg-3164.jpg",
+      "originalFilename": "_MG_3164.jpg",
+      "width": 940,
+      "height": 627,
+      "credit": "Mark Knudsen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "Aktivisme",
+        "Asyl",
+        "Demonstration",
+        "Flygtninge",
+        "København"
+      ]
+    },
+    {
+      "id": "12",
+      "sortOrder": 12,
+      "filename": "12-mg-3193.jpg",
+      "originalFilename": "_MG_3193.jpg",
+      "width": 940,
+      "height": 627,
+      "credit": "Mark Knudsen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "Aktivisme",
+        "Asyl",
+        "Demonstration",
+        "Flygtninge",
+        "København"
+      ]
+    },
+    {
+      "id": "13",
+      "sortOrder": 13,
+      "filename": "13-mg-3203.jpg",
+      "originalFilename": "_MG_3203.jpg",
+      "width": 940,
+      "height": 627,
+      "credit": "Mark Knudsen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "Aktivisme",
+        "Asyl",
+        "Demonstration",
+        "Flygtninge",
+        "København"
+      ]
+    },
+    {
+      "id": "14",
+      "sortOrder": 14,
+      "filename": "14-mg-3228.jpg",
+      "originalFilename": "_MG_3228.jpg",
+      "width": 940,
+      "height": 627,
+      "credit": "Mark Knudsen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "Aktivisme",
+        "Asyl",
+        "Demonstration",
+        "Flygtninge",
+        "København"
+      ]
+    },
+    {
+      "id": "15",
+      "sortOrder": 15,
+      "filename": "15-mg-3217.jpg",
+      "originalFilename": "_MG_3217.jpg",
+      "width": 940,
+      "height": 627,
+      "credit": "Mark Knudsen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "Aktivisme",
+        "Asyl",
+        "Demonstration",
+        "Flygtninge",
+        "København"
+      ]
+    }
+  ],
+  "sourceUrl": "fotoserie/aktion-mod-id-kontrol.html",
+  "sourceType": "fotoserie"
+}

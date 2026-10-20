@@ -1,0 +1,316 @@
+{
+  "id": "savage-rose-i-koncerthuset",
+  "sourceNid": 20074,
+  "slug": "savage-rose-i-koncerthuset",
+  "title": "Savage Rose i Koncerthuset",
+  "publishedAt": "2012-11-02T15:23:08+01:00",
+  "modifiedAt": "2012-11-02T15:27:23+01:00",
+  "authors": [
+    "Mette Kramer Kristensen"
+  ],
+  "photographers": [
+    "Mette Kramer Kristensen"
+  ],
+  "prefix": "Koncert",
+  "series": null,
+  "manchet": null,
+  "introMarkdown": "Savage Rose i Koncerthuset var en stemningsfuld og insisterende skøn oplevelse af et band i fuld kreativ udfoldelse.\n\nFoto: Mette Kramer Kristensen/Monsun.\n\n[Læs Modkrafts anmeldelse af koncerten her](http://www.modkraft.dk/artikel/savage-rose-og-de-nye-muligheder).",
+  "tags": [
+    "Anisette",
+    "Koncert",
+    "Kultur",
+    "Musik",
+    "Savage Rose"
+  ],
+  "genre": null,
+  "coverImage": "01",
+  "images": [
+    {
+      "id": "01",
+      "sortOrder": 1,
+      "filename": "01-savage-rose-5-0.jpg",
+      "originalFilename": "Savage Rose-5_0.jpg",
+      "width": 467,
+      "height": 700,
+      "credit": "Mette Kramer Kristensen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "root-stripped-hash",
+      "tags": [
+        "Anisette",
+        "Koncert",
+        "Kultur",
+        "Musik",
+        "Savage Rose"
+      ]
+    },
+    {
+      "id": "02",
+      "sortOrder": 2,
+      "filename": "02-savage-rose-7.jpg",
+      "originalFilename": "Savage Rose-7.jpg",
+      "width": 467,
+      "height": 700,
+      "credit": "Mette Kramer Kristensen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "root-stripped-hash",
+      "tags": [
+        "Anisette",
+        "Koncert",
+        "Kultur",
+        "Musik",
+        "Savage Rose"
+      ]
+    },
+    {
+      "id": "03",
+      "sortOrder": 3,
+      "filename": "03-savage-rose-9.jpg",
+      "originalFilename": "Savage Rose-9.jpg",
+      "width": 940,
+      "height": 627,
+      "credit": "Mette Kramer Kristensen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "root-stripped-hash",
+      "tags": [
+        "Anisette",
+        "Koncert",
+        "Kultur",
+        "Musik",
+        "Savage Rose"
+      ]
+    },
+    {
+      "id": "04",
+      "sortOrder": 4,
+      "filename": "04-savage-rose-12.jpg",
+      "originalFilename": "Savage Rose-12.jpg",
+      "width": 467,
+      "height": 700,
+      "credit": "Mette Kramer Kristensen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "root-stripped-hash",
+      "tags": [
+        "Anisette",
+        "Koncert",
+        "Kultur",
+        "Musik",
+        "Savage Rose"
+      ]
+    },
+    {
+      "id": "05",
+      "sortOrder": 5,
+      "filename": "05-savage-rose-15.jpg",
+      "originalFilename": "Savage Rose-15.jpg",
+      "width": 940,
+      "height": 627,
+      "credit": "Mette Kramer Kristensen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "root-stripped-hash",
+      "tags": [
+        "Anisette",
+        "Koncert",
+        "Kultur",
+        "Musik",
+        "Savage Rose"
+      ]
+    },
+    {
+      "id": "06",
+      "sortOrder": 6,
+      "filename": "06-savage-rose-23.jpg",
+      "originalFilename": "Savage Rose-23.jpg",
+      "width": 940,
+      "height": 627,
+      "credit": "Mette Kramer Kristensen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "root-stripped-hash",
+      "tags": [
+        "Anisette",
+        "Koncert",
+        "Kultur",
+        "Musik",
+        "Savage Rose"
+      ]
+    },
+    {
+      "id": "07",
+      "sortOrder": 7,
+      "filename": "07-savage-rose-34.jpg",
+      "originalFilename": "Savage Rose-34.jpg",
+      "width": 940,
+      "height": 627,
+      "credit": "Mette Kramer Kristensen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "root-stripped-hash",
+      "tags": [
+        "Anisette",
+        "Koncert",
+        "Kultur",
+        "Musik",
+        "Savage Rose"
+      ]
+    },
+    {
+      "id": "08",
+      "sortOrder": 8,
+      "filename": "08-savage-rose-37.jpg",
+      "originalFilename": "Savage Rose-37.jpg",
+      "width": 467,
+      "height": 700,
+      "credit": "Mette Kramer Kristensen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "root-stripped-hash",
+      "tags": [
+        "Anisette",
+        "Koncert",
+        "Kultur",
+        "Musik",
+        "Savage Rose"
+      ]
+    },
+    {
+      "id": "09",
+      "sortOrder": 9,
+      "filename": "09-savage-rose-38.jpg",
+      "originalFilename": "Savage Rose-38.jpg",
+      "width": 940,
+      "height": 627,
+      "credit": "Mette Kramer Kristensen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "root-stripped-hash",
+      "tags": [
+        "Anisette",
+        "Koncert",
+        "Kultur",
+        "Musik",
+        "Savage Rose"
+      ]
+    },
+    {
+      "id": "10",
+      "sortOrder": 10,
+      "filename": "10-savage-rose-40.jpg",
+      "originalFilename": "Savage Rose-40.jpg",
+      "width": 940,
+      "height": 627,
+      "credit": "Mette Kramer Kristensen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "root-stripped-hash",
+      "tags": [
+        "Anisette",
+        "Koncert",
+        "Kultur",
+        "Musik",
+        "Savage Rose"
+      ]
+    },
+    {
+      "id": "11",
+      "sortOrder": 11,
+      "filename": "11-savage-rose-44-0.jpg",
+      "originalFilename": "Savage Rose-44_0.jpg",
+      "width": 940,
+      "height": 627,
+      "credit": "Mette Kramer Kristensen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "root-stripped-hash",
+      "tags": [
+        "Anisette",
+        "Koncert",
+        "Kultur",
+        "Musik",
+        "Savage Rose"
+      ]
+    },
+    {
+      "id": "12",
+      "sortOrder": 12,
+      "filename": "12-savage-rose-52.jpg",
+      "originalFilename": "Savage Rose-52.jpg",
+      "width": 467,
+      "height": 700,
+      "credit": "Mette Kramer Kristensen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "root-stripped-hash",
+      "tags": [
+        "Anisette",
+        "Koncert",
+        "Kultur",
+        "Musik",
+        "Savage Rose"
+      ]
+    },
+    {
+      "id": "13",
+      "sortOrder": 13,
+      "filename": "13-savage-rose-55.jpg",
+      "originalFilename": "Savage Rose-55.jpg",
+      "width": 940,
+      "height": 627,
+      "credit": "Mette Kramer Kristensen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "root-stripped-hash",
+      "tags": [
+        "Anisette",
+        "Koncert",
+        "Kultur",
+        "Musik",
+        "Savage Rose"
+      ]
+    },
+    {
+      "id": "14",
+      "sortOrder": 14,
+      "filename": "14-savage-rose-65.jpg",
+      "originalFilename": "Savage Rose-65.jpg",
+      "width": 467,
+      "height": 700,
+      "credit": "Mette Kramer Kristensen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "root-stripped-hash",
+      "tags": [
+        "Anisette",
+        "Koncert",
+        "Kultur",
+        "Musik",
+        "Savage Rose"
+      ]
+    },
+    {
+      "id": "15",
+      "sortOrder": 15,
+      "filename": "15-savage-rose-70.jpg",
+      "originalFilename": "Savage Rose-70.jpg",
+      "width": 467,
+      "height": 700,
+      "credit": "Mette Kramer Kristensen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "root-stripped-hash",
+      "tags": [
+        "Anisette",
+        "Koncert",
+        "Kultur",
+        "Musik",
+        "Savage Rose"
+      ]
+    }
+  ],
+  "sourceUrl": "artikel/savage-rose-i-koncerthuset.html",
+  "sourceType": "artikel-foto"
+}

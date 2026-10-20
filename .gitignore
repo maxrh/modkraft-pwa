@@ -19,6 +19,7 @@ public/media/
 
 # Generated survey/import reports (keep fotobase-match-decisions.json)
 content/photo-collections/*-report.json
+content/photo-collections/id-rename-map.json
 
 # OS / editor
 .DS_Store

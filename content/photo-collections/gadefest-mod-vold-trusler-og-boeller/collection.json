@@ -1,0 +1,297 @@
+{
+  "id": "gadefest-mod-vold-trusler-og-boeller",
+  "sourceNid": 22621,
+  "slug": "gadefest-mod-vold-trusler-og-boeller",
+  "title": "Gadefest mod vold, trusler og bøller",
+  "publishedAt": "2013-08-26T12:53:05+02:00",
+  "modifiedAt": "2013-08-26T14:18:03+02:00",
+  "authors": [
+    "Mette Kramer Kristensen"
+  ],
+  "photographers": [
+    "Mette Kramer Kristensen"
+  ],
+  "prefix": "Byliv",
+  "series": null,
+  "manchet": "Den røde Plads på Nørrebro lagde lørdag den 23. august asfalt til en gadefest mod vold, trusler og bøller. Bag festen stod Jane Pedersen fra Café Viking, der i efteråret 2012 var udsat for afpresning under trusler om hærværk, og overskuddet gik til oprettelsen af en »hærværksfond«. Festen blev åbnet af et hjemløsekor - og en stor del af det praktiske arbejde blev udført af hjemløse fra miljøet omkring bladet Hus Forbi.",
+  "introMarkdown": "",
+  "tags": [
+    "Fest",
+    "Hjemløse",
+    "Hus Forbi",
+    "Socialt",
+    "Velfærd"
+  ],
+  "genre": null,
+  "coverImage": "01",
+  "images": [
+    {
+      "id": "01",
+      "sortOrder": 1,
+      "filename": "01-hus-forbi-4.jpg",
+      "originalFilename": "Hus Forbi-4.JPG",
+      "width": 940,
+      "height": 627,
+      "credit": "Mette Kramer Kristensen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "Fest",
+        "Hjemløse",
+        "Hus Forbi",
+        "Socialt",
+        "Velfærd"
+      ]
+    },
+    {
+      "id": "02",
+      "sortOrder": 2,
+      "filename": "02-hus-forbi-1.jpg",
+      "originalFilename": "Hus Forbi-1.JPG",
+      "width": 627,
+      "height": 940,
+      "credit": "Mette Kramer Kristensen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "Fest",
+        "Hjemløse",
+        "Hus Forbi",
+        "Socialt",
+        "Velfærd"
+      ]
+    },
+    {
+      "id": "03",
+      "sortOrder": 3,
+      "filename": "03-hus-forbi-8.jpg",
+      "originalFilename": "Hus Forbi-8.JPG",
+      "width": 940,
+      "height": 627,
+      "credit": "Mette Kramer Kristensen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "Fest",
+        "Hjemløse",
+        "Hus Forbi",
+        "Socialt",
+        "Velfærd"
+      ]
+    },
+    {
+      "id": "04",
+      "sortOrder": 4,
+      "filename": "04-hus-forbi-11.jpg",
+      "originalFilename": "Hus Forbi-11.JPG",
+      "width": 940,
+      "height": 627,
+      "credit": "Mette Kramer Kristensen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "Fest",
+        "Hjemløse",
+        "Hus Forbi",
+        "Socialt",
+        "Velfærd"
+      ]
+    },
+    {
+      "id": "05",
+      "sortOrder": 5,
+      "filename": "05-hus-forbi-12.jpg",
+      "originalFilename": "Hus Forbi-12.JPG",
+      "width": 940,
+      "height": 627,
+      "credit": "Mette Kramer Kristensen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "Fest",
+        "Hjemløse",
+        "Hus Forbi",
+        "Socialt",
+        "Velfærd"
+      ]
+    },
+    {
+      "id": "06",
+      "sortOrder": 6,
+      "filename": "06-hus-forbi-14.jpg",
+      "originalFilename": "Hus Forbi-14.JPG",
+      "width": 940,
+      "height": 627,
+      "credit": "Mette Kramer Kristensen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "Fest",
+        "Hjemløse",
+        "Hus Forbi",
+        "Socialt",
+        "Velfærd"
+      ]
+    },
+    {
+      "id": "07",
+      "sortOrder": 7,
+      "filename": "07-hus-forbi-15.jpg",
+      "originalFilename": "Hus Forbi-15.JPG",
+      "width": 940,
+      "height": 627,
+      "credit": "Mette Kramer Kristensen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "Fest",
+        "Hjemløse",
+        "Hus Forbi",
+        "Socialt",
+        "Velfærd"
+      ]
+    },
+    {
+      "id": "08",
+      "sortOrder": 8,
+      "filename": "08-hus-forbi-19-0.jpg",
+      "originalFilename": "Hus Forbi-19_0.JPG",
+      "width": 940,
+      "height": 627,
+      "credit": "Mette Kramer Kristensen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "Fest",
+        "Hjemløse",
+        "Hus Forbi",
+        "Socialt",
+        "Velfærd"
+      ]
+    },
+    {
+      "id": "09",
+      "sortOrder": 9,
+      "filename": "09-hus-forbi-28.jpg",
+      "originalFilename": "Hus Forbi-28.JPG",
+      "width": 940,
+      "height": 627,
+      "credit": "Mette Kramer Kristensen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "Fest",
+        "Hjemløse",
+        "Hus Forbi",
+        "Socialt",
+        "Velfærd"
+      ]
+    },
+    {
+      "id": "10",
+      "sortOrder": 10,
+      "filename": "10-hus-forbi-31.jpg",
+      "originalFilename": "Hus Forbi-31.JPG",
+      "width": 940,
+      "height": 627,
+      "credit": "Mette Kramer Kristensen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "Fest",
+        "Hjemløse",
+        "Hus Forbi",
+        "Socialt",
+        "Velfærd"
+      ]
+    },
+    {
+      "id": "11",
+      "sortOrder": 11,
+      "filename": "11-hus-forbi-32.jpg",
+      "originalFilename": "Hus Forbi-32.JPG",
+      "width": 940,
+      "height": 627,
+      "credit": "Mette Kramer Kristensen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "Fest",
+        "Hjemløse",
+        "Hus Forbi",
+        "Socialt",
+        "Velfærd"
+      ]
+    },
+    {
+      "id": "12",
+      "sortOrder": 12,
+      "filename": "12-hus-forbi-33.jpg",
+      "originalFilename": "Hus Forbi-33.JPG",
+      "width": 940,
+      "height": 627,
+      "credit": "Mette Kramer Kristensen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "Fest",
+        "Hjemløse",
+        "Hus Forbi",
+        "Socialt",
+        "Velfærd"
+      ]
+    },
+    {
+      "id": "13",
+      "sortOrder": 13,
+      "filename": "13-hus-forbi-34.jpg",
+      "originalFilename": "Hus Forbi-34.JPG",
+      "width": 627,
+      "height": 940,
+      "credit": "Mette Kramer Kristensen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "Fest",
+        "Hjemløse",
+        "Hus Forbi",
+        "Socialt",
+        "Velfærd"
+      ]
+    },
+    {
+      "id": "14",
+      "sortOrder": 14,
+      "filename": "14-hus-forbi-41.jpg",
+      "originalFilename": "Hus Forbi-41.JPG",
+      "width": 940,
+      "height": 627,
+      "credit": "Mette Kramer Kristensen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "Fest",
+        "Hjemløse",
+        "Hus Forbi",
+        "Socialt",
+        "Velfærd"
+      ]
+    }
+  ],
+  "sourceUrl": "fotoserie/gadefest-mod-vold-trusler-og-b-ller.html",
+  "sourceType": "fotoserie"
+}

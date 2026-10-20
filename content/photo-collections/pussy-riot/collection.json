@@ -1,0 +1,406 @@
+{
+  "id": "pussy-riot",
+  "sourceNid": 19293,
+  "slug": "pussy-riot",
+  "title": "Pussy Riot",
+  "publishedAt": "2012-08-21T13:09:35+02:00",
+  "modifiedAt": "2012-08-23T10:04:56+02:00",
+  "authors": [
+    "Rune Eltard-Sørensen"
+  ],
+  "photographers": [
+    "Mette Kramer Kristensen",
+    "Brian Berg",
+    "Anders Pedersen"
+  ],
+  "prefix": "Demonstration",
+  "series": null,
+  "manchet": null,
+  "introMarkdown": "300 danske sympatisører med den russiske performance-punk gruppe Pussy Riot gik den 17. august fra Ruslands ambassade til en russisk-ortodoks kirke i København.\n\nFormålet var at protestere mod en fængselsdom på 2 år, som tre medlemmer af gruppen blev idømt samme dag ved retten i Moskva. De tre russiske feminister blev dømt for »hooliganisme, motiveret af religiøst had« efter en regeringskritisk happening i en kirke Moskva i februar.\n\n[Læs artiklen »Pussy Riot-dom mødt med dansende protest« om demonstrationen hos Modkraft.](http://www.modkraft.dk/artikel/pussy-riot-dom-mødt-med-dansende-protest)\n\nFoto: Mette Kramer Kristensen, Anders Petersen og Brian Berg.",
+  "tags": [
+    "Demonstration",
+    "København",
+    "LGBT+",
+    "Pussy Riot",
+    "Rusland",
+    "Solidaritet"
+  ],
+  "genre": null,
+  "coverImage": "01",
+  "images": [
+    {
+      "id": "01",
+      "sortOrder": 1,
+      "filename": "01-pussy-riot-2.jpg",
+      "originalFilename": "Pussy Riot-2.jpg",
+      "width": 940,
+      "height": 627,
+      "credit": "Mette Kramer Kristensen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "root-stripped-hash",
+      "tags": [
+        "Demonstration",
+        "København",
+        "LGBT+",
+        "Pussy Riot",
+        "Rusland",
+        "Solidaritet"
+      ]
+    },
+    {
+      "id": "02",
+      "sortOrder": 2,
+      "filename": "02-pussy-riot-10-0.jpg",
+      "originalFilename": "Pussy Riot-10_0.jpg",
+      "width": 940,
+      "height": 627,
+      "credit": "Mette Kramer Kristensen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "root-stripped-hash",
+      "tags": [
+        "Demonstration",
+        "København",
+        "LGBT+",
+        "Pussy Riot",
+        "Rusland",
+        "Solidaritet"
+      ]
+    },
+    {
+      "id": "03",
+      "sortOrder": 3,
+      "filename": "03-pussy-riot-21.jpg",
+      "originalFilename": "Pussy Riot-21.jpg",
+      "width": 940,
+      "height": 627,
+      "credit": "Mette Kramer Kristensen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "root-stripped-hash",
+      "tags": [
+        "Demonstration",
+        "København",
+        "LGBT+",
+        "Pussy Riot",
+        "Rusland",
+        "Solidaritet"
+      ]
+    },
+    {
+      "id": "04",
+      "sortOrder": 4,
+      "filename": "04-pussy-riot-26.jpg",
+      "originalFilename": "Pussy Riot-26.jpg",
+      "width": 940,
+      "height": 627,
+      "credit": "Mette Kramer Kristensen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "root-stripped-hash",
+      "tags": [
+        "Demonstration",
+        "København",
+        "LGBT+",
+        "Pussy Riot",
+        "Rusland",
+        "Solidaritet"
+      ]
+    },
+    {
+      "id": "05",
+      "sortOrder": 5,
+      "filename": "05-pussy-riot-30.jpg",
+      "originalFilename": "Pussy Riot-30.jpg",
+      "width": 940,
+      "height": 627,
+      "credit": "Mette Kramer Kristensen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "root-stripped-hash",
+      "tags": [
+        "Demonstration",
+        "København",
+        "LGBT+",
+        "Pussy Riot",
+        "Rusland",
+        "Solidaritet"
+      ]
+    },
+    {
+      "id": "06",
+      "sortOrder": 6,
+      "filename": "06-pussy-riot-33.jpg",
+      "originalFilename": "Pussy Riot-33.jpg",
+      "width": 940,
+      "height": 627,
+      "credit": "Mette Kramer Kristensen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "root-stripped-hash",
+      "tags": [
+        "Demonstration",
+        "København",
+        "LGBT+",
+        "Pussy Riot",
+        "Rusland",
+        "Solidaritet"
+      ]
+    },
+    {
+      "id": "07",
+      "sortOrder": 7,
+      "filename": "07-pussy-riot-36.jpg",
+      "originalFilename": "Pussy Riot-36.jpg",
+      "width": 940,
+      "height": 627,
+      "credit": "Mette Kramer Kristensen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "root-stripped-hash",
+      "tags": [
+        "Demonstration",
+        "København",
+        "LGBT+",
+        "Pussy Riot",
+        "Rusland",
+        "Solidaritet"
+      ]
+    },
+    {
+      "id": "08",
+      "sortOrder": 8,
+      "filename": "08-pussy-riot-40.jpg",
+      "originalFilename": "Pussy Riot-40.jpg",
+      "width": 940,
+      "height": 627,
+      "credit": "Mette Kramer Kristensen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "root-stripped-hash",
+      "tags": [
+        "Demonstration",
+        "København",
+        "LGBT+",
+        "Pussy Riot",
+        "Rusland",
+        "Solidaritet"
+      ]
+    },
+    {
+      "id": "09",
+      "sortOrder": 9,
+      "filename": "09-pussy-riot-43.jpg",
+      "originalFilename": "Pussy Riot-43.jpg",
+      "width": 940,
+      "height": 627,
+      "credit": "Mette Kramer Kristensen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "root-stripped-hash",
+      "tags": [
+        "Demonstration",
+        "København",
+        "LGBT+",
+        "Pussy Riot",
+        "Rusland",
+        "Solidaritet"
+      ]
+    },
+    {
+      "id": "10",
+      "sortOrder": 10,
+      "filename": "10-pussy-riot-58.jpg",
+      "originalFilename": "Pussy Riot-58.jpg",
+      "width": 940,
+      "height": 627,
+      "credit": "Mette Kramer Kristensen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "root-stripped-hash",
+      "tags": [
+        "Demonstration",
+        "København",
+        "LGBT+",
+        "Pussy Riot",
+        "Rusland",
+        "Solidaritet"
+      ]
+    },
+    {
+      "id": "11",
+      "sortOrder": 11,
+      "filename": "11-pussy-riot-63.jpg",
+      "originalFilename": "Pussy Riot-63.jpg",
+      "width": 940,
+      "height": 627,
+      "credit": "Mette Kramer Kristensen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "root-stripped-hash",
+      "tags": [
+        "Demonstration",
+        "København",
+        "LGBT+",
+        "Pussy Riot",
+        "Rusland",
+        "Solidaritet"
+      ]
+    },
+    {
+      "id": "12",
+      "sortOrder": 12,
+      "filename": "12-pussy7-bb.jpg",
+      "originalFilename": "pussy7_bb.jpg",
+      "width": 5616,
+      "height": 3744,
+      "credit": "Brian Berg",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "root-stripped-hash",
+      "tags": [
+        "Demonstration",
+        "København",
+        "LGBT+",
+        "Pussy Riot",
+        "Rusland",
+        "Solidaritet"
+      ],
+      "hiresSource": "C:\\Users\\max\\Dropbox\\Monsun\\Monsun Foto Upload\\fotobase\\demo\\20120818_Pussy Riot\\pussy7_bb.jpg",
+      "hiresAt": "2026-10-20T02:30:03.487Z"
+    },
+    {
+      "id": "13",
+      "sortOrder": 13,
+      "filename": "13-mg-4590-ap.jpg",
+      "originalFilename": "_MG_4590_ap.jpg",
+      "width": 3936,
+      "height": 2768,
+      "credit": "Anders Pedersen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "root-stripped-hash",
+      "tags": [
+        "Demonstration",
+        "København",
+        "LGBT+",
+        "Pussy Riot",
+        "Rusland",
+        "Solidaritet"
+      ],
+      "hiresSource": "C:\\Users\\max\\Dropbox\\Monsun\\Monsun Foto Upload\\fotobase\\demo\\20120817_Pussy_ Riot_Demo\\_MG_4590_ap.jpg",
+      "hiresAt": "2026-10-20T02:30:04.085Z"
+    },
+    {
+      "id": "14",
+      "sortOrder": 14,
+      "filename": "14-201208211305-5602-monsun-anders-pedersen.jpg",
+      "originalFilename": "201208211305_5602_monsun_anders_pedersen.jpg",
+      "width": 4368,
+      "height": 2912,
+      "credit": "Anders Pedersen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "root-stripped-hash",
+      "tags": [
+        "Demonstration",
+        "København",
+        "LGBT+",
+        "Pussy Riot",
+        "Rusland",
+        "Solidaritet"
+      ],
+      "hiresSource": "C:\\Users\\max\\Dropbox\\Monsun\\Monsun Foto Upload\\fotobase\\demo\\20120817_Pussy_ Riot_Demo\\_MG_4502_ap.jpg",
+      "hiresAt": "2026-10-20T02:30:04.915Z"
+    },
+    {
+      "id": "15",
+      "sortOrder": 15,
+      "filename": "15-201208211306-5601-monsun-anders-pedersen.jpg",
+      "originalFilename": "201208211306_5601_monsun_anders_pedersen.jpg",
+      "width": 4368,
+      "height": 2912,
+      "credit": "Anders Pedersen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "root-stripped-hash",
+      "tags": [
+        "Demonstration",
+        "København",
+        "LGBT+",
+        "Pussy Riot",
+        "Rusland",
+        "Solidaritet"
+      ],
+      "hiresSource": "C:\\Users\\max\\Dropbox\\Monsun\\Monsun Foto Upload\\fotobase\\demo\\20120817_Pussy_ Riot_Demo\\_MG_4456_ap.jpg",
+      "hiresAt": "2026-10-20T02:30:05.844Z"
+    },
+    {
+      "id": "16",
+      "sortOrder": 16,
+      "filename": "16-201208211306-5603-monsun-anders-pedersen.jpg",
+      "originalFilename": "201208211306_5603_monsun_anders_pedersen.jpg",
+      "width": 4368,
+      "height": 2912,
+      "credit": "Anders Pedersen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "root-stripped-hash",
+      "tags": [
+        "Demonstration",
+        "København",
+        "LGBT+",
+        "Pussy Riot",
+        "Rusland",
+        "Solidaritet"
+      ],
+      "hiresSource": "C:\\Users\\max\\Dropbox\\Monsun\\Monsun Foto Upload\\fotobase\\demo\\20120817_Pussy_ Riot_Demo\\_MG_4523_ap.jpg",
+      "hiresAt": "2026-10-20T02:30:06.690Z"
+    },
+    {
+      "id": "17",
+      "sortOrder": 17,
+      "filename": "17-201208211307-5585-monsun-brian-berg.jpg",
+      "originalFilename": "201208211307_5585_monsun_brian_berg.jpg",
+      "width": 5616,
+      "height": 3744,
+      "credit": "Brian Berg",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "root-stripped-hash",
+      "tags": [
+        "Demonstration",
+        "København",
+        "LGBT+",
+        "Pussy Riot",
+        "Rusland",
+        "Solidaritet"
+      ],
+      "hiresSource": "C:\\Users\\max\\Dropbox\\Monsun\\Monsun Foto Upload\\fotobase\\demo\\20120818_Pussy Riot\\pussy14_bb.jpg",
+      "hiresAt": "2026-10-20T02:30:07.706Z"
+    },
+    {
+      "id": "18",
+      "sortOrder": 18,
+      "filename": "18-201208211307-5586-monsun-brian-berg.jpg",
+      "originalFilename": "201208211307_5586_monsun_brian_berg.jpg",
+      "width": 940,
+      "height": 627,
+      "credit": "Brian Berg",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "root-stripped-hash",
+      "tags": [
+        "Demonstration",
+        "København",
+        "LGBT+",
+        "Pussy Riot",
+        "Rusland",
+        "Solidaritet"
+      ]
+    }
+  ],
+  "sourceUrl": "artikel/pussy-riot.html",
+  "sourceType": "artikel-foto"
+}

@@ -1,0 +1,124 @@
+{
+  "id": "vanessa",
+  "sourceNid": 27830,
+  "slug": "vanessa",
+  "title": "Vanessa",
+  "publishedAt": "2016-03-08T00:20:00+01:00",
+  "modifiedAt": "2016-03-08T00:31:25+01:00",
+  "authors": [
+    "Anna Geisler"
+  ],
+  "photographers": [
+    "Charlotte Quitzau"
+  ],
+  "prefix": null,
+  "series": null,
+  "manchet": "Nøgen og nøgtern skildring af et parisisk liv. Vanessa er en fotoserie af Charlotte Quitzau, som er uddannet i fotografisk kommunikation i Sydafrika, Paris og på Danmarks Medie- og Journalisthøjskole.",
+  "introMarkdown": "Nøgen og nøgtern skildring af et parisisk liv. Vanessa er en fotoserie af Charlotte Quitzau, som er uddannet i fotografisk kommunikation i Sydafrika, Paris og på Danmarks Medie- og Journalisthøjskole.",
+  "tags": [
+    "Kultur",
+    "Portræt"
+  ],
+  "genre": "Nyhed",
+  "coverImage": "01",
+  "images": [
+    {
+      "id": "01",
+      "sortOrder": 1,
+      "filename": "01-12030452-10206258258921021-935275138668967341-o.jpg",
+      "originalFilename": "12030452_10206258258921021_935275138668967341_o.jpg",
+      "width": 940,
+      "height": 1415,
+      "credit": "Charlotte Quitzau",
+      "caption": null,
+      "captionSource": "none",
+      "sourceResolve": "relative",
+      "tags": [
+        "Kultur",
+        "Portræt"
+      ]
+    },
+    {
+      "id": "02",
+      "sortOrder": 2,
+      "filename": "02-10397054-10206258261241079-6091729593315050310-o.jpg",
+      "originalFilename": "10397054_10206258261241079_6091729593315050310_o.jpg",
+      "width": 940,
+      "height": 1415,
+      "credit": "Charlotte Quitzau",
+      "caption": null,
+      "captionSource": "none",
+      "sourceResolve": "relative",
+      "tags": [
+        "Kultur",
+        "Portræt"
+      ]
+    },
+    {
+      "id": "03",
+      "sortOrder": 3,
+      "filename": "03-980804-10206258261761092-356661249367421896-o.jpg",
+      "originalFilename": "980804_10206258261761092_356661249367421896_o.jpg",
+      "width": 940,
+      "height": 1415,
+      "credit": "Charlotte Quitzau",
+      "caption": null,
+      "captionSource": "none",
+      "sourceResolve": "relative",
+      "tags": [
+        "Kultur",
+        "Portræt"
+      ]
+    },
+    {
+      "id": "04",
+      "sortOrder": 4,
+      "filename": "04-12698133-10206258263441134-3790572923072912049-o.jpg",
+      "originalFilename": "12698133_10206258263441134_3790572923072912049_o.jpg",
+      "width": 940,
+      "height": 1414,
+      "credit": "Charlotte Quitzau",
+      "caption": null,
+      "captionSource": "none",
+      "sourceResolve": "relative",
+      "tags": [
+        "Kultur",
+        "Portræt"
+      ]
+    },
+    {
+      "id": "05",
+      "sortOrder": 5,
+      "filename": "05-12794712-10206258264321156-460453162420665217-o-1.jpg",
+      "originalFilename": "12794712_10206258264321156_460453162420665217_o(1).jpg",
+      "width": 940,
+      "height": 1415,
+      "credit": "Charlotte Quitzau",
+      "caption": null,
+      "captionSource": "none",
+      "sourceResolve": "relative",
+      "tags": [
+        "Kultur",
+        "Portræt"
+      ]
+    },
+    {
+      "id": "06",
+      "sortOrder": 6,
+      "filename": "06-773731-10206258267601238-3973611386042934447-o.jpg",
+      "originalFilename": "773731_10206258267601238_3973611386042934447_o.jpg",
+      "width": 940,
+      "height": 1415,
+      "credit": "Charlotte Quitzau",
+      "caption": null,
+      "captionSource": "none",
+      "sourceResolve": "relative",
+      "tags": [
+        "Kultur",
+        "Portræt"
+      ]
+    }
+  ],
+  "sourceUrl": "fotoserie/vanessa.html",
+  "sourceType": "fotoserie"
+}

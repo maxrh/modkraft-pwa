@@ -1,0 +1,577 @@
+{
+  "id": "ingen-fascister-i-vores-gader",
+  "sourceNid": 18048,
+  "slug": "ingen-fascister-i-vores-gader",
+  "title": "»Ingen fascister i vores gader«",
+  "publishedAt": "2012-04-02T14:04:43+02:00",
+  "modifiedAt": "2012-04-03T12:35:39+02:00",
+  "authors": [
+    "Mark Knudsen"
+  ],
+  "photographers": [
+    "Morten Rode",
+    "Brian Berg",
+    "Tommi Rønnqvist",
+    "Anders Pedersen"
+  ],
+  "prefix": null,
+  "series": null,
+  "manchet": "150 anti-islamister fra hele Europa blev mødt med protest og fejring af mangfoldigheden fra omkring 4000 demonstranter lørdag den 30. marts i Aarhus midtby.",
+  "introMarkdown": "Trods 89 anholdte og fem fængslede aktivister betegner både arrangører og deltagere overordnet demonstrationen som en succes.\n\n– Vores mål var at samle mennesker vidt og bredt for at sende et klart, positivt og umisforståeligt signal: Racismen er ikke velkommen i vores by, og Århus er et mangfoldigt og inkluderende sted, udtalte demonstrationens talsmand Per Jensen.\n\nSe billeder fra dagen her.",
+  "tags": [
+    "Antifascisme",
+    "Antiracisme",
+    "Demonstration",
+    "Aarhus"
+  ],
+  "genre": null,
+  "coverImage": "01",
+  "images": [
+    {
+      "id": "01",
+      "sortOrder": 1,
+      "filename": "01-mg-4655.jpg",
+      "originalFilename": "_MG_4655.jpg",
+      "width": 940,
+      "height": 627,
+      "credit": "Morten Rode",
+      "caption": "4000 mødte op til  Århus for mangfoldigheds demonstration",
+      "captionSource": "title",
+      "sourceResolve": "root-stripped-hash",
+      "tags": [
+        "Antifascisme",
+        "Antiracisme",
+        "Demonstration",
+        "Aarhus"
+      ]
+    },
+    {
+      "id": "02",
+      "sortOrder": 2,
+      "filename": "02-mg-4673.jpg",
+      "originalFilename": "_MG_4673.jpg",
+      "width": 940,
+      "height": 627,
+      "credit": "Morten Rode",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "root-stripped-hash",
+      "tags": [
+        "Antifascisme",
+        "Antiracisme",
+        "Demonstration",
+        "Aarhus"
+      ]
+    },
+    {
+      "id": "03",
+      "sortOrder": 3,
+      "filename": "03-mg-4692.jpg",
+      "originalFilename": "_MG_4692.jpg",
+      "width": 940,
+      "height": 627,
+      "credit": "Morten Rode",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "root-stripped-hash",
+      "tags": [
+        "Antifascisme",
+        "Antiracisme",
+        "Demonstration",
+        "Aarhus"
+      ]
+    },
+    {
+      "id": "04",
+      "sortOrder": 4,
+      "filename": "04-mg-4726.jpg",
+      "originalFilename": "_MG_4726.jpg",
+      "width": 940,
+      "height": 627,
+      "credit": "Morten Rode",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "root-stripped-hash",
+      "tags": [
+        "Antifascisme",
+        "Antiracisme",
+        "Demonstration",
+        "Aarhus"
+      ]
+    },
+    {
+      "id": "05",
+      "sortOrder": 5,
+      "filename": "05-mg-4750.jpg",
+      "originalFilename": "_MG_4750.jpg",
+      "width": 940,
+      "height": 627,
+      "credit": "Morten Rode",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "root-stripped-hash",
+      "tags": [
+        "Antifascisme",
+        "Antiracisme",
+        "Demonstration",
+        "Aarhus"
+      ]
+    },
+    {
+      "id": "06",
+      "sortOrder": 6,
+      "filename": "06-mg-4794.jpg",
+      "originalFilename": "_MG_4794.jpg",
+      "width": 940,
+      "height": 627,
+      "credit": "Morten Rode",
+      "caption": "Bubber!",
+      "captionSource": "title",
+      "sourceResolve": "root-stripped-hash",
+      "tags": [
+        "Antifascisme",
+        "Antiracisme",
+        "Demonstration",
+        "Aarhus"
+      ]
+    },
+    {
+      "id": "07",
+      "sortOrder": 7,
+      "filename": "07-mg-4868.jpg",
+      "originalFilename": "_MG_4868.jpg",
+      "width": 467,
+      "height": 700,
+      "credit": "Morten Rode",
+      "caption": "Danish Defence holder tale",
+      "captionSource": "title",
+      "sourceResolve": "root-stripped-hash",
+      "tags": [
+        "Antifascisme",
+        "Antiracisme",
+        "Demonstration",
+        "Aarhus"
+      ]
+    },
+    {
+      "id": "08",
+      "sortOrder": 8,
+      "filename": "08-mg-4959.jpg",
+      "originalFilename": "_MG_4959.jpg",
+      "width": 940,
+      "height": 627,
+      "credit": "Morten Rode",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "root-stripped-hash",
+      "tags": [
+        "Antifascisme",
+        "Antiracisme",
+        "Demonstration",
+        "Aarhus"
+      ]
+    },
+    {
+      "id": "09",
+      "sortOrder": 9,
+      "filename": "09-mg-5004.jpg",
+      "originalFilename": "_MG_5004.jpg",
+      "width": 940,
+      "height": 627,
+      "credit": "Morten Rode",
+      "caption": "Gæster fra Norden til DDL's demo",
+      "captionSource": "title",
+      "sourceResolve": "root-stripped-hash",
+      "tags": [
+        "Antifascisme",
+        "Antiracisme",
+        "Demonstration",
+        "Aarhus"
+      ]
+    },
+    {
+      "id": "10",
+      "sortOrder": 10,
+      "filename": "10-mg-5029.jpg",
+      "originalFilename": "_MG_5029.jpg",
+      "width": 940,
+      "height": 627,
+      "credit": "Morten Rode",
+      "caption": "Civilbetjente i aktion",
+      "captionSource": "title",
+      "sourceResolve": "root-stripped-hash",
+      "tags": [
+        "Antifascisme",
+        "Antiracisme",
+        "Demonstration",
+        "Aarhus"
+      ]
+    },
+    {
+      "id": "11",
+      "sortOrder": 11,
+      "filename": "11-aarhus1.jpg",
+      "originalFilename": "århus1,.jpg",
+      "width": 5184,
+      "height": 3456,
+      "credit": "Brian Berg",
+      "caption": "En betjent bliver ramt af en genstand i baghovedet da urolighederne starter ved Åen i centrum af Århus",
+      "captionSource": "title",
+      "sourceResolve": "root-stripped-hash",
+      "tags": [
+        "Antifascisme",
+        "Antiracisme",
+        "Demonstration",
+        "Aarhus"
+      ],
+      "hiresSource": "C:\\Users\\max\\Dropbox\\Monsun\\Monsun Foto Upload\\fotobase\\demo\\20120405_aarhus\\arhus1_bb.jpg",
+      "hiresAt": "2026-10-20T02:30:09.286Z"
+    },
+    {
+      "id": "12",
+      "sortOrder": 12,
+      "filename": "12-aarhus2.jpg",
+      "originalFilename": "århus2,.jpg",
+      "width": 5184,
+      "height": 3456,
+      "credit": "Brian Berg",
+      "caption": "Efter anti-islamisterne er kørt benytter 2 mænd sig af pladsen foran biblioteket til en bøn",
+      "captionSource": "title",
+      "sourceResolve": "root-stripped-hash",
+      "tags": [
+        "Antifascisme",
+        "Antiracisme",
+        "Demonstration",
+        "Aarhus"
+      ],
+      "hiresSource": "C:\\Users\\max\\Dropbox\\Monsun\\Monsun Foto Upload\\fotobase\\demo\\20120405_aarhus\\arhus2_bb.jpg",
+      "hiresAt": "2026-10-20T02:30:10.368Z"
+    },
+    {
+      "id": "13",
+      "sortOrder": 13,
+      "filename": "13-aarhus3.jpg",
+      "originalFilename": "århus3,.jpg",
+      "width": 5184,
+      "height": 3456,
+      "credit": "Brian Berg",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "root-stripped-hash",
+      "tags": [
+        "Antifascisme",
+        "Antiracisme",
+        "Demonstration",
+        "Aarhus"
+      ],
+      "hiresSource": "C:\\Users\\max\\Dropbox\\Monsun\\Monsun Foto Upload\\fotobase\\demo\\20120405_aarhus\\arhus3_bb.jpg",
+      "hiresAt": "2026-10-20T02:30:12.805Z"
+    },
+    {
+      "id": "14",
+      "sortOrder": 14,
+      "filename": "14-aarhus5.jpg",
+      "originalFilename": "århus5,.jpg",
+      "width": 5184,
+      "height": 3456,
+      "credit": "Brian Berg",
+      "caption": "Barrikader og stenkast i Grønnegade, i det centrale Århus",
+      "captionSource": "title",
+      "sourceResolve": "root-stripped-hash",
+      "tags": [
+        "Antifascisme",
+        "Antiracisme",
+        "Demonstration",
+        "Aarhus"
+      ],
+      "hiresSource": "C:\\Users\\max\\Dropbox\\Monsun\\Monsun Foto Upload\\fotobase\\demo\\20120405_aarhus\\arhus5_bb.jpg",
+      "hiresAt": "2026-10-20T02:30:14.469Z"
+    },
+    {
+      "id": "15",
+      "sortOrder": 15,
+      "filename": "15-aarhus7.jpg",
+      "originalFilename": "århus7,.jpg",
+      "width": 5184,
+      "height": 3456,
+      "credit": "Brian Berg",
+      "caption": "Civilbetjente indentificerer nogle af de unge på sko og tøj fra uroen i Grønnegade, og foretager plukvise anholdelser",
+      "captionSource": "title",
+      "sourceResolve": "root-stripped-hash",
+      "tags": [
+        "Antifascisme",
+        "Antiracisme",
+        "Demonstration",
+        "Aarhus"
+      ],
+      "hiresSource": "C:\\Users\\max\\Dropbox\\Monsun\\Monsun Foto Upload\\fotobase\\demo\\20120405_aarhus\\arhus7_bb.jpg",
+      "hiresAt": "2026-10-20T02:30:15.764Z"
+    },
+    {
+      "id": "16",
+      "sortOrder": 16,
+      "filename": "16-aarhus9.jpg",
+      "originalFilename": "århus9,.jpg",
+      "width": 5184,
+      "height": 3456,
+      "credit": "Brian Berg",
+      "caption": "Ung mand prøver at slippe væk fra politiet, men bliver fældet ved Domkirken",
+      "captionSource": "title",
+      "sourceResolve": "root-stripped-hash",
+      "tags": [
+        "Antifascisme",
+        "Antiracisme",
+        "Demonstration",
+        "Aarhus"
+      ],
+      "hiresSource": "C:\\Users\\max\\Dropbox\\Monsun\\Monsun Foto Upload\\fotobase\\demo\\20120405_aarhus\\arhus9_bb.jpg",
+      "hiresAt": "2026-10-20T02:30:17.195Z"
+    },
+    {
+      "id": "17",
+      "sortOrder": 17,
+      "filename": "17-aarhus11.jpg",
+      "originalFilename": "århus11,.jpg",
+      "width": 5184,
+      "height": 3456,
+      "credit": "Brian Berg",
+      "caption": "Barrikadebyggeri i Grønnegade",
+      "captionSource": "title",
+      "sourceResolve": "root-stripped-hash",
+      "tags": [
+        "Antifascisme",
+        "Antiracisme",
+        "Demonstration",
+        "Aarhus"
+      ],
+      "hiresSource": "C:\\Users\\max\\Dropbox\\Monsun\\Monsun Foto Upload\\fotobase\\demo\\20120405_aarhus\\arhus11_bb.jpg",
+      "hiresAt": "2026-10-20T02:30:19.572Z"
+    },
+    {
+      "id": "18",
+      "sortOrder": 18,
+      "filename": "18-t-mg-5166.jpg",
+      "originalFilename": "t_MG_5166.jpg",
+      "width": 940,
+      "height": 627,
+      "credit": "Tommi Rønnqvist",
+      "caption": "Moddemonstranter i sidegaderne",
+      "captionSource": "title",
+      "sourceResolve": "root-stripped-hash",
+      "tags": [
+        "Antifascisme",
+        "Antiracisme",
+        "Demonstration",
+        "Aarhus"
+      ]
+    },
+    {
+      "id": "19",
+      "sortOrder": 19,
+      "filename": "19-t-mg-5177.jpg",
+      "originalFilename": "t_MG_5177.jpg",
+      "width": 940,
+      "height": 627,
+      "credit": "Tommi Rønnqvist",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "root-stripped-hash",
+      "tags": [
+        "Antifascisme",
+        "Antiracisme",
+        "Demonstration",
+        "Aarhus"
+      ]
+    },
+    {
+      "id": "20",
+      "sortOrder": 20,
+      "filename": "20-t-mg-5264.jpg",
+      "originalFilename": "t_MG_5264.jpg",
+      "width": 940,
+      "height": 627,
+      "credit": "Tommi Rønnqvist",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "root-stripped-hash",
+      "tags": [
+        "Antifascisme",
+        "Antiracisme",
+        "Demonstration",
+        "Aarhus"
+      ]
+    },
+    {
+      "id": "21",
+      "sortOrder": 21,
+      "filename": "21-t-mg-5281.jpg",
+      "originalFilename": "t_MG_5281.jpg",
+      "width": 940,
+      "height": 627,
+      "credit": "Tommi Rønnqvist",
+      "caption": "Stort politiopbud i det centrale Århus",
+      "captionSource": "title",
+      "sourceResolve": "root-stripped-hash",
+      "tags": [
+        "Antifascisme",
+        "Antiracisme",
+        "Demonstration",
+        "Aarhus"
+      ]
+    },
+    {
+      "id": "22",
+      "sortOrder": 22,
+      "filename": "22-t5-0.jpg",
+      "originalFilename": "t5_0.jpg",
+      "width": 940,
+      "height": 627,
+      "credit": "Tommi Rønnqvist",
+      "caption": "Århus for mangfoldighed",
+      "captionSource": "title",
+      "sourceResolve": "root-stripped-hash",
+      "tags": [
+        "Antifascisme",
+        "Antiracisme",
+        "Demonstration",
+        "Aarhus"
+      ]
+    },
+    {
+      "id": "23",
+      "sortOrder": 23,
+      "filename": "23-t3.jpg",
+      "originalFilename": "t3.jpg",
+      "width": 940,
+      "height": 627,
+      "credit": "Tommi Rønnqvist",
+      "caption": "Uro ved Mølleparken",
+      "captionSource": "title",
+      "sourceResolve": "root-stripped-hash",
+      "tags": [
+        "Antifascisme",
+        "Antiracisme",
+        "Demonstration",
+        "Aarhus"
+      ]
+    },
+    {
+      "id": "24",
+      "sortOrder": 24,
+      "filename": "24-t6.jpg",
+      "originalFilename": "t6.jpg",
+      "width": 940,
+      "height": 627,
+      "credit": "Tommi Rønnqvist",
+      "caption": "Antiislamisterne kører væk under stort politiopbud",
+      "captionSource": "title",
+      "sourceResolve": "root-stripped-hash",
+      "tags": [
+        "Antifascisme",
+        "Antiracisme",
+        "Demonstration",
+        "Aarhus"
+      ]
+    },
+    {
+      "id": "25",
+      "sortOrder": 25,
+      "filename": "25-aarhus-03-ap.jpg",
+      "originalFilename": "århus_03_ap.jpg",
+      "width": 940,
+      "height": 627,
+      "credit": "Anders Pedersen",
+      "caption": "Tumult i Mølleparken",
+      "captionSource": "title",
+      "sourceResolve": "root-stripped-hash",
+      "tags": [
+        "Antifascisme",
+        "Antiracisme",
+        "Demonstration",
+        "Aarhus"
+      ]
+    },
+    {
+      "id": "26",
+      "sortOrder": 26,
+      "filename": "26-aarhus-09-ap.jpg",
+      "originalFilename": "Aarhus_09_ap.jpg",
+      "width": 3504,
+      "height": 2336,
+      "credit": "Anders Pedersen",
+      "caption": "DDL prøver at fikse generatoren",
+      "captionSource": "title",
+      "sourceResolve": "root-stripped-hash",
+      "tags": [
+        "Antifascisme",
+        "Antiracisme",
+        "Demonstration",
+        "Aarhus"
+      ],
+      "hiresSource": "C:\\Users\\max\\Dropbox\\Monsun\\Monsun Foto Upload\\fotobase\\demo\\20120331_EDL_demo_Aarhus\\Aarhus_09_ap.jpg",
+      "hiresAt": "2026-10-20T02:30:20.153Z"
+    },
+    {
+      "id": "27",
+      "sortOrder": 27,
+      "filename": "27-aarhus01-ap.jpg",
+      "originalFilename": "Aarhus01_ap.jpg",
+      "width": 3504,
+      "height": 2336,
+      "credit": "Anders Pedersen",
+      "caption": "Frontbanner",
+      "captionSource": "title",
+      "sourceResolve": "root-stripped-hash",
+      "tags": [
+        "Antifascisme",
+        "Antiracisme",
+        "Demonstration",
+        "Aarhus"
+      ],
+      "hiresSource": "C:\\Users\\max\\Dropbox\\Monsun\\Monsun Foto Upload\\fotobase\\demo\\20120331_EDL_demo_Aarhus\\Aarhus01_ap.jpg",
+      "hiresAt": "2026-10-20T02:30:20.902Z"
+    },
+    {
+      "id": "28",
+      "sortOrder": 28,
+      "filename": "28-aarhus07-ap.jpg",
+      "originalFilename": "Aarhus07_ap.jpg",
+      "width": 3504,
+      "height": 2336,
+      "credit": "Anders Pedersen",
+      "caption": "German Defence League",
+      "captionSource": "title",
+      "sourceResolve": "root-stripped-hash",
+      "tags": [
+        "Antifascisme",
+        "Antiracisme",
+        "Demonstration",
+        "Aarhus"
+      ],
+      "hiresSource": "C:\\Users\\max\\Dropbox\\Monsun\\Monsun Foto Upload\\fotobase\\demo\\20120331_EDL_demo_Aarhus\\Aarhus07_ap.jpg",
+      "hiresAt": "2026-10-20T02:30:21.340Z"
+    },
+    {
+      "id": "29",
+      "sortOrder": 29,
+      "filename": "29-aarhus11-ap.jpg",
+      "originalFilename": "Aarhus11_ap.jpg",
+      "width": 3504,
+      "height": 2336,
+      "credit": "Anders Pedersen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "root-stripped-hash",
+      "tags": [
+        "Antifascisme",
+        "Antiracisme",
+        "Demonstration",
+        "Aarhus"
+      ],
+      "hiresSource": "C:\\Users\\max\\Dropbox\\Monsun\\Monsun Foto Upload\\fotobase\\demo\\20120331_EDL_demo_Aarhus\\Aarhus11_ap.tif",
+      "hiresAt": "2026-10-20T02:30:22.159Z"
+    }
+  ],
+  "sourceUrl": "artikel/»ingen-fascister-i-vores-gader«.html",
+  "sourceType": "artikel-foto"
+}

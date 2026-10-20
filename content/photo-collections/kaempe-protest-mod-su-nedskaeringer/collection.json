@@ -1,0 +1,372 @@
+{
+  "id": "kaempe-protest-mod-su-nedskaeringer",
+  "sourceNid": 28588,
+  "slug": "kaempe-protest-mod-su-nedskaeringer",
+  "title": "Kæmpe protest mod SU-nedskæringer",
+  "publishedAt": "2016-10-14T11:52:26+02:00",
+  "modifiedAt": "2016-10-14T12:52:45+02:00",
+  "authors": [
+    "Mark Knudsen"
+  ],
+  "photographers": [
+    "Mette Kramer Kristensen"
+  ],
+  "prefix": null,
+  "series": null,
+  "manchet": "43.000 mennesker var på gaden for at demonstrere mod forringelser af SU'en. Se billederne fra København hvor der torsdag d. 13. oktober var samlet 30.000 i protest på Christiansborg Slotsplads.",
+  "introMarkdown": "",
+  "tags": [
+    "Demonstration",
+    "Nedskæringer",
+    "Studerende",
+    "SU",
+    "Uddannelse",
+    "Velfærd"
+  ],
+  "genre": "Nyhed",
+  "coverImage": "01",
+  "images": [
+    {
+      "id": "01",
+      "sortOrder": 1,
+      "filename": "01-su-demo-8904.jpg",
+      "originalFilename": "SU_demo-8904.JPG",
+      "width": 940,
+      "height": 627,
+      "credit": "Mette Kramer Kristensen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "Demonstration",
+        "Nedskæringer",
+        "Studerende",
+        "SU",
+        "Uddannelse",
+        "Velfærd"
+      ]
+    },
+    {
+      "id": "02",
+      "sortOrder": 2,
+      "filename": "02-su-demo-8906.jpg",
+      "originalFilename": "SU_demo-8906.JPG",
+      "width": 940,
+      "height": 627,
+      "credit": "Mette Kramer Kristensen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "Demonstration",
+        "Nedskæringer",
+        "Studerende",
+        "SU",
+        "Uddannelse",
+        "Velfærd"
+      ]
+    },
+    {
+      "id": "03",
+      "sortOrder": 3,
+      "filename": "03-su-demo-8910-0.jpg",
+      "originalFilename": "SU_demo-8910_0.JPG",
+      "width": 940,
+      "height": 627,
+      "credit": "Mette Kramer Kristensen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "Demonstration",
+        "Nedskæringer",
+        "Studerende",
+        "SU",
+        "Uddannelse",
+        "Velfærd"
+      ]
+    },
+    {
+      "id": "04",
+      "sortOrder": 4,
+      "filename": "04-su-demo-8920-0.jpg",
+      "originalFilename": "SU_demo-8920_0.JPG",
+      "width": 940,
+      "height": 627,
+      "credit": "Mette Kramer Kristensen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "Demonstration",
+        "Nedskæringer",
+        "Studerende",
+        "SU",
+        "Uddannelse",
+        "Velfærd"
+      ]
+    },
+    {
+      "id": "05",
+      "sortOrder": 5,
+      "filename": "05-su-demo-8943.jpg",
+      "originalFilename": "SU_demo-8943.JPG",
+      "width": 940,
+      "height": 627,
+      "credit": "Mette Kramer Kristensen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "Demonstration",
+        "Nedskæringer",
+        "Studerende",
+        "SU",
+        "Uddannelse",
+        "Velfærd"
+      ]
+    },
+    {
+      "id": "06",
+      "sortOrder": 6,
+      "filename": "06-su-demo-8944.jpg",
+      "originalFilename": "SU_demo-8944.JPG",
+      "width": 940,
+      "height": 627,
+      "credit": "Mette Kramer Kristensen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "Demonstration",
+        "Nedskæringer",
+        "Studerende",
+        "SU",
+        "Uddannelse",
+        "Velfærd"
+      ]
+    },
+    {
+      "id": "07",
+      "sortOrder": 7,
+      "filename": "07-su-demo-8945.jpg",
+      "originalFilename": "SU_demo-8945.JPG",
+      "width": 940,
+      "height": 627,
+      "credit": "Mette Kramer Kristensen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "Demonstration",
+        "Nedskæringer",
+        "Studerende",
+        "SU",
+        "Uddannelse",
+        "Velfærd"
+      ]
+    },
+    {
+      "id": "08",
+      "sortOrder": 8,
+      "filename": "08-su-demo-8963.jpg",
+      "originalFilename": "SU_demo-8963.JPG",
+      "width": 940,
+      "height": 627,
+      "credit": "Mette Kramer Kristensen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "Demonstration",
+        "Nedskæringer",
+        "Studerende",
+        "SU",
+        "Uddannelse",
+        "Velfærd"
+      ]
+    },
+    {
+      "id": "09",
+      "sortOrder": 9,
+      "filename": "09-su-demo-8981.jpg",
+      "originalFilename": "SU_demo-8981.JPG",
+      "width": 940,
+      "height": 627,
+      "credit": "Mette Kramer Kristensen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "Demonstration",
+        "Nedskæringer",
+        "Studerende",
+        "SU",
+        "Uddannelse",
+        "Velfærd"
+      ]
+    },
+    {
+      "id": "10",
+      "sortOrder": 10,
+      "filename": "10-su-demo-9013.jpg",
+      "originalFilename": "SU_demo-9013.JPG",
+      "width": 940,
+      "height": 627,
+      "credit": "Mette Kramer Kristensen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "Demonstration",
+        "Nedskæringer",
+        "Studerende",
+        "SU",
+        "Uddannelse",
+        "Velfærd"
+      ]
+    },
+    {
+      "id": "11",
+      "sortOrder": 11,
+      "filename": "11-su-demo-9018.jpg",
+      "originalFilename": "SU_demo-9018.JPG",
+      "width": 940,
+      "height": 627,
+      "credit": "Mette Kramer Kristensen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "Demonstration",
+        "Nedskæringer",
+        "Studerende",
+        "SU",
+        "Uddannelse",
+        "Velfærd"
+      ]
+    },
+    {
+      "id": "12",
+      "sortOrder": 12,
+      "filename": "12-su-demo-9041.jpg",
+      "originalFilename": "SU_demo-9041.JPG",
+      "width": 940,
+      "height": 627,
+      "credit": "Mette Kramer Kristensen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "Demonstration",
+        "Nedskæringer",
+        "Studerende",
+        "SU",
+        "Uddannelse",
+        "Velfærd"
+      ]
+    },
+    {
+      "id": "13",
+      "sortOrder": 13,
+      "filename": "13-su-demo-9058.jpg",
+      "originalFilename": "SU_demo-9058.JPG",
+      "width": 940,
+      "height": 627,
+      "credit": "Mette Kramer Kristensen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "Demonstration",
+        "Nedskæringer",
+        "Studerende",
+        "SU",
+        "Uddannelse",
+        "Velfærd"
+      ]
+    },
+    {
+      "id": "14",
+      "sortOrder": 14,
+      "filename": "14-su-demo-9089.jpg",
+      "originalFilename": "SU_demo-9089.JPG",
+      "width": 940,
+      "height": 627,
+      "credit": "Mette Kramer Kristensen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "Demonstration",
+        "Nedskæringer",
+        "Studerende",
+        "SU",
+        "Uddannelse",
+        "Velfærd"
+      ]
+    },
+    {
+      "id": "15",
+      "sortOrder": 15,
+      "filename": "15-su-demo-9095.jpg",
+      "originalFilename": "SU_demo-9095.JPG",
+      "width": 940,
+      "height": 627,
+      "credit": "Mette Kramer Kristensen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "Demonstration",
+        "Nedskæringer",
+        "Studerende",
+        "SU",
+        "Uddannelse",
+        "Velfærd"
+      ]
+    },
+    {
+      "id": "16",
+      "sortOrder": 16,
+      "filename": "16-su-demo-9108.jpg",
+      "originalFilename": "SU_demo-9108.JPG",
+      "width": 940,
+      "height": 627,
+      "credit": "Mette Kramer Kristensen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "Demonstration",
+        "Nedskæringer",
+        "Studerende",
+        "SU",
+        "Uddannelse",
+        "Velfærd"
+      ]
+    },
+    {
+      "id": "17",
+      "sortOrder": 17,
+      "filename": "17-su-demo-9131.jpg",
+      "originalFilename": "SU_demo-9131.JPG",
+      "width": 940,
+      "height": 627,
+      "credit": "Mette Kramer Kristensen",
+      "caption": null,
+      "captionSource": "title",
+      "sourceResolve": "relative",
+      "tags": [
+        "Demonstration",
+        "Nedskæringer",
+        "Studerende",
+        "SU",
+        "Uddannelse",
+        "Velfærd"
+      ]
+    }
+  ],
+  "sourceUrl": "fotoserie/k-mpe-protest-mod-su-nedsk-ringer.html",
+  "sourceType": "fotoserie"
+}

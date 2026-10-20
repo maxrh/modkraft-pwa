@@ -1,0 +1,72 @@
+---
+import { getCollection, type CollectionEntry } from 'astro:content';
+import BaseLayout from '@/layouts/BaseLayout.astro';
+import Container from '@/components/layout/Container.astro';
+import PageHeader from '@/components/layout/PageHeader.astro';
+import PhotoMosaic from '@/components/PhotoMosaic.astro';
+import { renderMarkdown } from '@/lib/markdown';
+import {
+  byline,
+  collectionKindLabel,
+  flattenCollectionPhotos,
+  formatDate,
+} from '@/lib/photos';
+
+export async function getStaticPaths() {
+  const collections = await getCollection('photoCollections');
+  return collections.map((collection) => ({
+    params: { id: collection.id },
+    props: { collection },
+  }));
+}
+
+interface Props {
+  collection: CollectionEntry<'photoCollections'>;
+}
+
+const { collection } = Astro.props;
+const data = collection.data;
+const photos = flattenCollectionPhotos(collection);
+const manchetHtml = renderMarkdown(data.manchet);
+const introHtml = renderMarkdown(data.introMarkdown);
+
+const crumbs = [
+  { label: '← Alle fotos', href: '/' },
+  { label: 'Fotoserier', href: '/fotoserie' },
+  ...(data.series
+    ? [{ label: `Fotoblog: ${data.prefix || data.series}`, href: `/fotoblog/${data.series}` }]
+    : []),
+];
+
+const meta = [
+  formatDate(data.publishedAt),
+  data.authors.length ? byline(data.authors) : null,
+  `${photos.length} fotos`,
+]
+  .filter(Boolean)
+  .join(' · ');
+---
+
+<BaseLayout
+  title={data.title}
+  description={data.manchet?.slice(0, 160) || `${collectionKindLabel(data.sourceType)}: ${data.title}`}
+>
+  <Container class="pt-8 pb-16">
+    <article>
+      <PageHeader
+        title={data.title}
+        kicker={data.prefix}
+        meta={meta}
+        crumbs={crumbs}
+        tags={data.tags}
+      >
+        {manchetHtml && <div class="prose prose-neutral mt-6 max-w-none" set:html={manchetHtml} />}
+        {introHtml && <div class="prose prose-neutral mt-4 max-w-none" set:html={introHtml} />}
+      </PageHeader>
+
+      <section class="mt-10">
+        <PhotoMosaic photos={photos} />
+      </section>
+    </article>
+  </Container>
+</BaseLayout>
