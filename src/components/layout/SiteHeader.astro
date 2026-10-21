@@ -1,5 +1,6 @@
 ---
 import TagNav from './TagNav.astro';
+import { getAllTags } from '@/lib/photos';
 
 interface Props {
   activeTag?: string | null;
@@ -7,18 +8,29 @@ interface Props {
 }
 
 const { activeTag = null, searchQuery = '' } = Astro.props;
+
+const tags = await getAllTags();
+const tagsJson = JSON.stringify(
+  tags.map((t) => ({ label: t.label, slug: t.slug, count: t.count })),
+).replace(/</g, '\\u003c');
 ---
 
 <header
   id="site-header"
-  class="sticky top-0 z-50 border-b border-border bg-white"
+  class="sticky top-0 z-50 bg-white"
   transition:persist="site-header"
 >
   <div class="flex items-center gap-6 px-4 py-4 sm:gap-8 sm:px-6">
-    <form action="/soeg" method="get" class="min-w-0 flex-1" role="search">
+    <form
+      action="/soeg"
+      method="get"
+      class="relative min-w-0 flex-1"
+      role="search"
+      data-search-root
+    >
       <label class="sr-only" for="site-search">Søg fotos</label>
       <div
-        class="flex h-12 items-center gap-3 rounded-lg bg-muted/80 px-4 transition-shadow focus-within:bg-muted focus-within:ring-2 focus-within:ring-ring/40"
+        class="flex h-12 items-center gap-3 rounded-lg bg-muted/80 px-4 focus-within:bg-muted"
       >
         <svg
           class="size-5 shrink-0 text-muted-foreground"
@@ -38,9 +50,50 @@ const { activeTag = null, searchQuery = '' } = Astro.props;
           value={searchQuery}
           placeholder="Søg efter fotos, tags, fotografer…"
           autocomplete="off"
+          role="combobox"
+          aria-autocomplete="list"
+          aria-controls="search-suggestions"
+          aria-expanded="false"
+          aria-haspopup="listbox"
           class="h-full w-full min-w-0 border-0 bg-transparent text-[15px] text-foreground outline-none placeholder:text-muted-foreground"
         />
+        <button
+          type="button"
+          data-search-clear
+          class="hidden shrink-0 text-muted-foreground hover:text-foreground"
+          aria-label="Ryd søgning"
+        >
+          <svg
+            class="size-5"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            aria-hidden="true"
+          >
+            <path d="M18 6 6 18" stroke-linecap="round"></path>
+            <path d="m6 6 12 12" stroke-linecap="round"></path>
+          </svg>
+        </button>
       </div>
+      <ul
+        id="search-suggestions"
+        data-search-suggestions
+        role="listbox"
+        hidden
+        class="absolute top-full left-0 z-50 mt-2 max-h-72 w-full overflow-auto rounded-lg border border-border bg-white py-1 shadow-md"
+      >
+      </ul>
+      <template data-search-option-template>
+        <a
+          role="option"
+          class="flex items-center justify-between gap-3 px-4 py-2 text-sm text-foreground no-underline hover:bg-accent hover:text-accent-foreground aria-selected:bg-accent aria-selected:text-accent-foreground"
+        >
+          <span data-label></span>
+          <span class="text-sm tabular-nums text-muted-foreground" data-count></span>
+        </a>
+      </template>
+      <script type="application/json" data-search-tags set:html={tagsJson} />
     </form>
 
     <a
@@ -54,6 +107,13 @@ const { activeTag = null, searchQuery = '' } = Astro.props;
   <TagNav activeTag={activeTag} searchQuery={searchQuery} />
 </header>
 
+<style>
+  #site-search::-webkit-search-cancel-button {
+    -webkit-appearance: none;
+    appearance: none;
+  }
+</style>
+
 {/* Persisted header keeps DOM across navigations — sync active tag + search from the URL. */}
 <script is:inline>
   (function () {
@@ -62,6 +122,7 @@ const { activeTag = null, searchQuery = '' } = Astro.props;
 
     var SELECTED = ['border-foreground', 'font-semibold', 'text-foreground'];
     var IDLE = ['border-transparent', 'text-muted-foreground', 'hover:text-foreground'];
+    var MAX_SUGGESTIONS = 8;
 
     function setSelected(el, on) {
       SELECTED.forEach(function (c) {
@@ -74,6 +135,123 @@ const { activeTag = null, searchQuery = '' } = Astro.props;
       else el.removeAttribute('aria-current');
     }
 
+    function searchRoot() {
+      return document.querySelector('#site-header [data-search-root]');
+    }
+
+    function searchInput() {
+      return document.getElementById('site-search');
+    }
+
+    function clearBtn() {
+      var root = searchRoot();
+      return root ? root.querySelector('[data-search-clear]') : null;
+    }
+
+    function suggestionsEl() {
+      var root = searchRoot();
+      return root ? root.querySelector('[data-search-suggestions]') : null;
+    }
+
+    function loadTags() {
+      var root = searchRoot();
+      var script = root && root.querySelector('[data-search-tags]');
+      if (!script || !script.textContent) return [];
+      try {
+        return JSON.parse(script.textContent);
+      } catch (e) {
+        return [];
+      }
+    }
+
+    var tags = [];
+    var activeIndex = -1;
+
+    function syncClear() {
+      var input = searchInput();
+      var btn = clearBtn();
+      if (!input || !btn) return;
+      btn.classList.toggle('hidden', !input.value);
+    }
+
+    function closeSuggestions() {
+      var list = suggestionsEl();
+      var input = searchInput();
+      if (list) {
+        list.hidden = true;
+        list.innerHTML = '';
+      }
+      if (input) input.setAttribute('aria-expanded', 'false');
+      activeIndex = -1;
+    }
+
+    function filterTags(q) {
+      var needle = q.trim().toLowerCase();
+      if (!needle) return [];
+      var out = [];
+      for (var i = 0; i < tags.length; i++) {
+        var t = tags[i];
+        if (
+          t.label.toLowerCase().indexOf(needle) !== -1 ||
+          (t.slug && t.slug.indexOf(needle) !== -1)
+        ) {
+          out.push(t);
+          if (out.length >= MAX_SUGGESTIONS) break;
+        }
+      }
+      return out;
+    }
+
+    function optionTemplate() {
+      var root = searchRoot();
+      return root ? root.querySelector('[data-search-option-template]') : null;
+    }
+
+    function renderSuggestions(matches) {
+      var list = suggestionsEl();
+      var input = searchInput();
+      var tpl = optionTemplate();
+      if (!list || !input || !tpl) return;
+      activeIndex = -1;
+      if (!matches.length) {
+        closeSuggestions();
+        return;
+      }
+      list.innerHTML = '';
+      for (var i = 0; i < matches.length; i++) {
+        var t = matches[i];
+        var a = tpl.content.firstElementChild.cloneNode(true);
+        a.href = '/t/' + encodeURIComponent(t.slug);
+        a.id = 'search-opt-' + i;
+        a.querySelector('[data-label]').textContent = t.label;
+        a.querySelector('[data-count]').textContent = Number(t.count).toLocaleString('da-DK');
+        list.appendChild(a);
+      }
+      list.hidden = false;
+      input.setAttribute('aria-expanded', 'true');
+    }
+
+    function highlightActive() {
+      var list = suggestionsEl();
+      if (!list) return;
+      var opts = list.querySelectorAll('[role="option"]');
+      for (var i = 0; i < opts.length; i++) {
+        if (i === activeIndex) opts[i].setAttribute('aria-selected', 'true');
+        else opts[i].removeAttribute('aria-selected');
+      }
+      var input = searchInput();
+      if (input) {
+        if (activeIndex >= 0) input.setAttribute('aria-activedescendant', 'search-opt-' + activeIndex);
+        else input.removeAttribute('aria-activedescendant');
+      }
+    }
+
+    function updateSuggestions() {
+      var input = searchInput();
+      if (!input) return;
+      renderSuggestions(filterTags(input.value));
+    }
+
     function syncHeader() {
       var path = location.pathname;
       var q = new URLSearchParams(location.search).get('q') || '';
@@ -82,10 +260,12 @@ const { activeTag = null, searchQuery = '' } = Astro.props;
       var activeSlug = tagMatch ? decodeURIComponent(tagMatch[1]) : null;
       var onSearch = path === '/soeg' || path === '/soeg/';
 
-      var input = document.getElementById('site-search');
+      var input = searchInput();
       if (input && document.activeElement !== input) {
         input.value = onSearch ? q : '';
       }
+      syncClear();
+      closeSuggestions();
 
       var nav = document.querySelector('#site-header nav[aria-label="Filtrer efter emne"]');
       if (!nav) return;
@@ -108,6 +288,62 @@ const { activeTag = null, searchQuery = '' } = Astro.props;
       window.scrollTo({ left: 0, top: 0, behavior: 'instant' });
     }
 
+    function bindSearch() {
+      tags = loadTags();
+      var root = searchRoot();
+      var input = searchInput();
+      var btn = clearBtn();
+      var list = suggestionsEl();
+      if (!root || !input || root.hasAttribute('data-search-bound')) return;
+      root.setAttribute('data-search-bound', '');
+
+      input.addEventListener('input', function () {
+        syncClear();
+        updateSuggestions();
+      });
+
+      input.addEventListener('focus', function () {
+        if (input.value.trim()) updateSuggestions();
+      });
+
+      input.addEventListener('keydown', function (e) {
+        var open = list && !list.hidden;
+        var opts = open ? list.querySelectorAll('[role="option"]') : [];
+        if (e.key === 'ArrowDown' && opts.length) {
+          e.preventDefault();
+          activeIndex = (activeIndex + 1) % opts.length;
+          highlightActive();
+        } else if (e.key === 'ArrowUp' && opts.length) {
+          e.preventDefault();
+          activeIndex = activeIndex <= 0 ? opts.length - 1 : activeIndex - 1;
+          highlightActive();
+        } else if (e.key === 'Enter' && activeIndex >= 0 && opts[activeIndex]) {
+          e.preventDefault();
+          opts[activeIndex].click();
+        } else if (e.key === 'Escape') {
+          if (open) {
+            e.preventDefault();
+            closeSuggestions();
+          }
+        }
+      });
+
+      if (btn) {
+        btn.addEventListener('click', function () {
+          input.value = '';
+          syncClear();
+          closeSuggestions();
+          input.focus();
+        });
+      }
+
+      document.addEventListener('click', function (e) {
+        if (!root.contains(e.target)) closeSuggestions();
+      });
+
+      syncClear();
+    }
+
     // Scroll after fetch, just before VT snapshot — avoids old-page jump during load.
     var scrollToTop = false;
     document.addEventListener('astro:before-preparation', function (event) {
@@ -124,7 +360,11 @@ const { activeTag = null, searchQuery = '' } = Astro.props;
         mosaics[i].setAttribute('data-revealed', '');
       }
       syncHeader();
+      bindSearch();
     });
-    document.addEventListener('astro:page-load', syncHeader);
+    document.addEventListener('astro:page-load', function () {
+      syncHeader();
+      bindSearch();
+    });
   })();
 </script>

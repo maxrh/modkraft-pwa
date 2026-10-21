@@ -55,7 +55,7 @@ const templatePhoto = photos[0];
   <div
     data-mosaic
     data-ssr-cols={sortable ? '0' : String(ssrColumnCount)}
-    class="grid grid-cols-1 items-start gap-4 sm:grid-cols-2 lg:grid-cols-3"
+    class="grid grid-cols-2 items-start gap-4 lg:grid-cols-3"
   >
     {
       ssrColumns.map((column) => (
@@ -135,10 +135,7 @@ const templatePhoto = photos[0];
       // Show SSR columns immediately; packing below may still reflow breakpoints.
       root.setAttribute('data-revealed', '');
     }
-    var queries = [
-      window.matchMedia('(min-width: 64rem)'),
-      window.matchMedia('(min-width: 40rem)'),
-    ];
+    var queries = [window.matchMedia('(min-width: 64rem)')];
     var current = 0;
     var heights = [];
     var rest = [];
@@ -169,9 +166,7 @@ const templatePhoto = photos[0];
     var sentinel = root.querySelector('[data-mosaic-sentinel]');
 
     function columnCount() {
-      if (queries[0].matches) return 3;
-      if (queries[1].matches) return 2;
-      return 1;
+      return queries[0].matches ? 3 : 2;
     }
 
     function getColumns() {
