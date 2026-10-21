@@ -1,4 +1,5 @@
 ---
+import { X } from 'lucide-react';
 import '@/styles/global.css';
 import Head from '@/components/layout/Head.astro';
 import SiteHeader from '@/components/layout/SiteHeader.astro';
@@ -47,5 +48,290 @@ const {
       <slot />
     </main>
     <SiteFooter />
+    <dialog
+      data-photo-modal
+      aria-label="Foto"
+      class="m-0 h-dvh max-h-none w-screen max-w-none cursor-zoom-out overflow-y-auto overscroll-contain border-0 bg-transparent p-0 backdrop:bg-black/80"
+    >
+      <button
+        type="button"
+        data-photo-modal-close
+        aria-label="Luk"
+        class="fixed z-10 cursor-pointer p-0 leading-none text-white drop-shadow"
+      >
+        <X className="size-6" aria-hidden="true" />
+      </button>
+      <div
+        data-photo-modal-panel
+        class="mx-auto w-full max-w-[1600px] cursor-auto overflow-hidden bg-background sm:rounded-lg"
+      >
+        <div data-photo-modal-body></div>
+      </div>
+    </dialog>
+    <script is:inline>
+      (function () {
+        if (window.__photoModalBound) return;
+        window.__photoModalBound = true;
+
+        var requestId = 0;
+
+        function modalDialog() {
+          return document.querySelector('[data-photo-modal]');
+        }
+
+        function isOpen() {
+          var dialog = modalDialog();
+          return !!(dialog && dialog.open);
+        }
+
+        function fotoHref(href) {
+          try {
+            var url = new URL(href, location.href);
+            if (url.origin !== location.origin) return null;
+            if (url.pathname.indexOf('/foto/') !== 0) return null;
+            return url.pathname + url.search + url.hash;
+          } catch (e) {
+            return null;
+          }
+        }
+
+        function lockScroll() {
+          if (document.documentElement.hasAttribute('data-photo-modal-lock')) return;
+          var sb = window.innerWidth - document.documentElement.clientWidth;
+          document.documentElement.setAttribute('data-photo-modal-lock', '');
+          if (sb > 0) document.body.style.paddingRight = sb + 'px';
+          document.body.style.overflow = 'hidden';
+        }
+
+        function unlockScroll() {
+          document.documentElement.removeAttribute('data-photo-modal-lock');
+          document.body.style.paddingRight = '';
+          document.body.style.overflow = '';
+          var y = window.__photoModalScroll || 0;
+          window.scrollTo(0, y);
+        }
+
+        function syncPhotoCaption(img) {
+          if (!img) return;
+          var open = img.closest('[data-photo-open]');
+          var figure = img.closest('figure');
+          var cap = figure && figure.querySelector('[data-photo-caption]');
+          if (open) open.style.width = '';
+          var w = img.clientWidth;
+          if (!w) return;
+          if (open) open.style.width = w + 'px';
+          if (cap) cap.style.width = w + 'px';
+        }
+        window.__syncPhotoCaption = syncPhotoCaption;
+
+        function syncPhotoCaptions(root) {
+          var scope = root || document;
+          var imgs = scope.querySelectorAll('[data-photo-open] img');
+          for (var i = 0; i < imgs.length; i++) syncPhotoCaption(imgs[i]);
+        }
+
+        function revealSlides(root) {
+          var imgs = root.querySelectorAll('[data-photo-slide] [data-photo-open] img');
+          for (var i = 0; i < imgs.length; i++) {
+            if (imgs[i].complete && imgs[i].naturalWidth) imgs[i].dataset.loaded = '';
+            syncPhotoCaption(imgs[i]);
+          }
+        }
+
+        function syncModalScrollbar() {
+          var dialog = modalDialog();
+          if (!dialog) return;
+          var sb = dialog.offsetWidth - dialog.clientWidth;
+          if (sb < 0) sb = 0;
+          dialog.style.setProperty('--modal-sb', sb + 'px');
+        }
+
+        window.addEventListener('resize', function () {
+          syncPhotoCaptions(document);
+          syncModalScrollbar();
+        });
+
+        function wireLightbox(root) {
+          var lightbox = root.querySelector('[data-photo-lightbox]');
+          var openEl = root.querySelector('[data-photo-open]');
+          if (!lightbox || !openEl) return;
+          var lightboxImg = lightbox.querySelector('[data-photo-lightbox-img]');
+          if (!lightboxImg) return;
+
+          openEl.onclick = function () {
+            var fullSrc = lightboxImg.getAttribute('data-full-src');
+            if (fullSrc && lightboxImg.getAttribute('src') !== fullSrc) {
+              lightboxImg.setAttribute('src', fullSrc);
+            }
+            if (typeof lightbox.showModal === 'function' && !lightbox.open) lightbox.showModal();
+          };
+          lightbox.onclick = function () {
+            if (lightbox.open) lightbox.close();
+          };
+        }
+
+        function initModalMosaics(root) {
+          if (typeof window.__initMosaic !== 'function') return;
+          var mosaics = root.querySelectorAll('[data-mosaic-root]:not([data-ready])');
+          for (var i = 0; i < mosaics.length; i++) window.__initMosaic(mosaics[i]);
+        }
+
+        function hideModal() {
+          var dialog = modalDialog();
+          if (!dialog || !dialog.open) return;
+          requestId++;
+          var body = dialog.querySelector('[data-photo-modal-body]');
+          if (body) body.replaceChildren();
+          dialog.close();
+          document.documentElement.removeAttribute('data-photo-modal-open');
+          if (window.__photoModalTitle) document.title = window.__photoModalTitle;
+          unlockScroll();
+        }
+
+        function openPhoto(href, replace) {
+          var dialog = modalDialog();
+          if (!dialog) {
+            location.assign(href);
+            return;
+          }
+
+          var first = !dialog.open;
+          if (first) {
+            window.__photoModalTitle = document.title;
+            window.__photoModalScroll = window.scrollY || 0;
+          }
+
+          // Don't carry the grid's scrollY onto the foto URL. A full load of that
+          // address (Enter in the address bar) would otherwise scroll the photo page.
+          var state = Object.assign({}, history.state || {}, {
+            photoModal: true,
+            scrollX: 0,
+            scrollY: 0,
+          });
+          if (replace && dialog.open) history.replaceState(state, '', href);
+          else history.pushState(state, '', href);
+
+          var opening = !dialog.open;
+          document.documentElement.setAttribute('data-photo-modal-open', '');
+
+          var id = ++requestId;
+          fetch(href, { headers: { Accept: 'text/html' } })
+            .then(function (res) {
+              if (!res.ok) throw new Error('bad status');
+              return res.text();
+            })
+            .then(function (html) {
+              if (id !== requestId) return;
+              var parsed = new DOMParser().parseFromString(html, 'text/html');
+              var main = parsed.querySelector('main');
+              var body = dialog.querySelector('[data-photo-modal-body]');
+              if (!main || !body) throw new Error('no main');
+              main.querySelectorAll('script').forEach(function (script) {
+                script.remove();
+              });
+              body.replaceChildren();
+              while (main.firstChild) body.appendChild(document.adoptNode(main.firstChild));
+              var title = parsed.querySelector('title');
+              if (title && title.textContent) document.title = title.textContent;
+              dialog.scrollTop = 0;
+              if (opening && !dialog.open) {
+                dialog.showModal();
+                lockScroll();
+              }
+              syncModalScrollbar();
+              revealSlides(body);
+              wireLightbox(body);
+              initModalMosaics(body);
+            })
+            .catch(function () {
+              if (id !== requestId) return;
+              location.assign(href);
+            });
+        }
+
+        function requestClose() {
+          if (history.state && history.state.photoModal) history.back();
+          else hideModal();
+        }
+
+        document.addEventListener(
+          'click',
+          function (event) {
+            if (event.defaultPrevented) return;
+            if (event.button !== 0 || event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) {
+              return;
+            }
+            var dialog = modalDialog();
+            if (!dialog) return;
+
+            var closeBtn = event.target.closest('[data-photo-modal-close]');
+            if (closeBtn && dialog.contains(closeBtn)) {
+              event.preventDefault();
+              requestClose();
+              return;
+            }
+
+            if (event.target === dialog) {
+              event.preventDefault();
+              requestClose();
+              return;
+            }
+
+            var link = event.target.closest('a[href]');
+            if (!link) return;
+            var href = fotoHref(link.getAttribute('href'));
+            if (!href) return;
+
+            var inModal = dialog.contains(link);
+            var isCard = link.hasAttribute('data-card-link');
+            if (!inModal && !isCard) return;
+            if (!dialog.open && location.pathname.indexOf('/foto/') === 0) return;
+
+            event.preventDefault();
+            event.stopPropagation();
+            openPhoto(href, dialog.open);
+          },
+          true,
+        );
+
+        document.addEventListener(
+          'cancel',
+          function (event) {
+            var dialog = event.target;
+            if (!dialog || !dialog.hasAttribute || !dialog.hasAttribute('data-photo-modal')) return;
+            event.preventDefault();
+            requestClose();
+          },
+          true,
+        );
+
+        window.addEventListener(
+          'popstate',
+          function (event) {
+            if (!isOpen()) return;
+            event.stopImmediatePropagation();
+            hideModal();
+          },
+          true,
+        );
+
+        document.addEventListener('astro:before-preparation', function () {
+          if (!isOpen()) return;
+          hideModal();
+        });
+
+        // Full load of the foto URL (Enter in the address bar) should start at the top.
+        // Don't move the grid while the modal is open.
+        window.addEventListener('pagehide', function () {
+          if (!isOpen() || !history.state) return;
+          history.replaceState(
+            Object.assign({}, history.state, { scrollX: 0, scrollY: 0 }),
+            '',
+          );
+        });
+
+        syncPhotoCaptions(document);
+      })();
+    </script>
   </body>
 </html>
