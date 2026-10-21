@@ -18,7 +18,7 @@ const seriesCount = new Set(photos.map((photo) => photo.collectionId)).size;
   description={q ? `Søgeresultater for “${q}”.` : 'Søg i Modkraft-fotoarkivet.'}
   searchQuery={q}
 >
-  <Container class="pt-8 pb-16">
+  <Container size="stage" class="pt-8 pb-16">
     {
       q && (
         <ContentHeader title={q} count={photos.length} seriesCount={seriesCount} />

@@ -40,6 +40,7 @@
 }
 
 :root {
+  --site-header-h: 8rem;
   --radius: 0.5rem;
   --background: #fff;
   --foreground: oklch(0.22 0.02 55);
@@ -93,5 +94,55 @@
 }
 
 ::view-transition-group(site-header) {
-  z-index: 50;
+  z-index: 1000;
 }
+
+/* Jump, don't glide, while a ClientRouter transition is live. */
+html[data-astro-transition] {
+  scroll-behavior: auto;
+}
+
+/* Hide main until mosaic scroll restore finishes — avoids flash of page top on back. */
+html[data-scroll-pending] main {
+  visibility: hidden;
+}
+
+/* Beat the user-agent dialog inset so top and side gaps match. */
+[data-photo-modal] {
+  /* Slide height uses this instead of --site-header-h (no header in the modal). */
+  --photo-slide-chrome: 2.5rem;
+  margin: 0;
+  /* Room for the close icon above the panel. Sides flush on small screens. */
+  padding: 2.5rem 0 2rem;
+  width: 100%;
+  max-width: none;
+  height: 100dvh;
+  max-height: none;
+  border: 0;
+}
+
+[data-photo-modal]::backdrop {
+  cursor: zoom-out;
+}
+
+[data-photo-modal] [data-photo-modal-close] {
+  top: 0.5rem;
+  left: 0.5rem;
+}
+
+[data-photo-modal-panel] {
+  min-height: calc(100dvh - var(--photo-slide-chrome));
+}
+
+@media (min-width: 40rem) {
+  [data-photo-modal] {
+    --photo-slide-chrome: 1.5rem;
+    padding: 1.5rem 3rem 2rem;
+  }
+
+  [data-photo-modal] [data-photo-modal-close] {
+    top: 0.75rem;
+    left: 0.75rem;
+  }
+}
+

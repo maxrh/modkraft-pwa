@@ -4,15 +4,36 @@ import { ClientRouter } from 'astro:transitions';
 interface Props {
   title: string;
   description: string;
+  canonical?: string;
+  image?: string;
+  imageAlt?: string;
+  jsonLd?: Record<string, unknown>;
 }
 
-const { title, description } = Astro.props;
+const { title, description, canonical, image, imageAlt, jsonLd } = Astro.props;
 const pageTitle = title === 'Modkraft Fotoarkiv' ? title : `${title} · Modkraft Fotoarkiv`;
+const jsonLdHtml = jsonLd ? JSON.stringify(jsonLd).replace(/</g, '\\u003c') : '';
 ---
 
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <meta name="description" content={description} />
+{canonical && <link rel="canonical" href={canonical} />}
+<meta property="og:title" content={pageTitle} />
+<meta property="og:description" content={description} />
+<meta property="og:type" content={image ? 'article' : 'website'} />
+<meta property="og:locale" content="da_DK" />
+{canonical && <meta property="og:url" content={canonical} />}
+{
+  image && (
+    <>
+      <meta property="og:image" content={image} />
+      <meta property="og:image:alt" content={imageAlt || title} />
+      <meta name="twitter:card" content="summary_large_image" />
+      <meta name="twitter:image" content={image} />
+    </>
+  )
+}
 <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -21,6 +42,7 @@ const pageTitle = title === 'Modkraft Fotoarkiv' ? title : `${title} · Modkraft
   rel="stylesheet"
 />
 <title>{pageTitle}</title>
+{jsonLdHtml && <script type="application/ld+json" set:html={jsonLdHtml} />}
 <ClientRouter fallback="swap" />
 <style>
   /* Hide until revealed — set at start of mosaic init / after client navigations. */

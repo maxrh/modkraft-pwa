@@ -1,6 +1,6 @@
 ---
 import { getCollection } from 'astro:content';
-import { ArrowLeft, ArrowRight, Calendar, Camera, Scaling } from 'lucide-react';
+import { ArrowLeft, ArrowRight, Calendar, Camera, Maximize2, Minimize2, Scaling } from 'lucide-react';
 import BaseLayout from '@/layouts/BaseLayout.astro';
 import Container from '@/components/layout/Container.astro';
 import TagPills from '@/components/layout/TagPills.astro';
@@ -12,6 +12,7 @@ import {
   collectionKindLabel,
   flattenCollectionPhotos,
   formatDate,
+  photoPageSeo,
   sortCollectionsNewest,
   type Photo,
 } from '@/lib/photos';
@@ -63,9 +64,30 @@ const { photo, siblings, prevPhoto, nextPhoto } = Astro.props;
 const kind = collectionKind(photo.sourceType);
 const kindLabel = collectionKindLabel(photo.sourceType);
 const cameraModel = await readCameraModel(photo.collectionId, photo.filename);
-const pageTitle = photo.caption
-  ? `${photo.caption.slice(0, 60)} — ${photo.collectionTitle}`
-  : `${photo.collectionTitle} (${photo.sortOrder}/${photo.imageCount})`;
+const seo = photoPageSeo(photo);
+const configuredSite = import.meta.env.PUBLIC_SITE || Astro.site?.origin;
+const siteOrigin = String(configuredSite || Astro.url.origin).replace(/\/$/, '');
+const pageUrl = new URL(photo.href, siteOrigin).href;
+const imageUrlAbs = new URL(photo.display, siteOrigin).href;
+const seriesUrl = new URL(`/fotoserie/${photo.collectionId}`, siteOrigin).href;
+const jsonLd: Record<string, unknown> = {
+  '@context': 'https://schema.org',
+  '@type': 'ImageObject',
+  contentUrl: imageUrlAbs,
+  url: pageUrl,
+  name: seo.title,
+  description: seo.description,
+  width: photo.width,
+  height: photo.height,
+  datePublished: photo.publishedAt,
+  isPartOf: {
+    '@type': 'CollectionPage',
+    name: photo.collectionTitle,
+    url: seriesUrl,
+  },
+};
+if (photo.caption) jsonLd.caption = photo.caption;
+if (photo.credit) jsonLd.creator = { '@type': 'Person', name: photo.credit };
 
 const metaRows: Array<{ icon: 'calendar' | 'scaling' | 'camera'; value: string }> = [];
 if (photo.publishedAt) {
@@ -80,35 +102,40 @@ if (cameraModel) {
 ---
 
 <BaseLayout
-  title={pageTitle}
-  description={photo.caption || `Foto fra ${photo.collectionTitle}`}
+  title={seo.title}
+  description={seo.description}
+  canonical={pageUrl}
+  image={imageUrlAbs}
+  imageAlt={seo.alt}
+  jsonLd={jsonLd}
 >
-  <Container class="pt-8 pb-16">
-    <article>
-      <!-- Top bar: back link, prev/next within series -->
-      <div class="mb-6 flex flex-wrap items-center justify-between gap-4 ">
-        <div class="flex flex-wrap items-center gap-1 text-lg">
+  {prevPhoto && <link rel="preload" as="image" href={prevPhoto.display} />}
+  {nextPhoto && <link rel="preload" as="image" href={nextPhoto.display} />}
+  <noscript>
+    <style is:inline>
+      [data-photo-slide] img {
+        opacity: 1 !important;
+      }
+    </style>
+  </noscript>
+
+  <article>
+  {!photo.caption && <h1 class="sr-only">{seo.title}</h1>}
+  <section
+    class="flex h-[calc(100dvh-var(--photo-slide-chrome,var(--site-header-h)))] flex-col"
+    data-photo-slide
+  >
+    <Container size="full" class="flex w-full min-h-0 flex-1 flex-col pt-4 sm:pt-6">
+      <nav aria-label="Foto" class="mb-4 flex shrink-0 flex-wrap items-center justify-between gap-4">
+        <div class="flex flex-wrap items-center gap-1 text-base">
           {kindLabel}:
           <a
             href={`/fotoserie/${photo.collectionId}`}
-            class="inline-flex items-center gap-1 font-semibold text-foreground no-underline hover:underline"
+            class="inline-flex items-center gap-1 font-semibold text-foreground leading-tight no-underline hover:underline"
           >
             {photo.collectionTitle}
             <ArrowRight className="size-3.5 shrink-0" aria-hidden="true" />
           </a>
-          {
-            photo.series && (
-              <>
-                <span class="text-muted-foreground">·</span>
-                <a
-                  href={`/fotoblog/${photo.series}`}
-                  class="rounded bg-secondary px-2 py-0.5 text-xs font-medium text-secondary-foreground no-underline hover:bg-accent"
-                >
-                  Fotoblog
-                </a>
-              </>
-            )
-          }
         </div>
 
         <div class="flex items-center gap-1">
@@ -124,7 +151,10 @@ if (cameraModel) {
             prevPhoto ? (
               <a
                 href={prevPhoto.href}
-                class={cn(buttonVariants({ variant: 'outline', size: 'sm' }), 'no-underline')}
+                class={cn(
+                  buttonVariants({ variant: 'ghost', size: 'icon' }),
+                  'bg-accent no-underline shadow-none hover:bg-muted',
+                )}
                 title={`Forrige foto i ${kind === 'fotoblog' ? 'fotobloggen' : 'fotoserien'}`}
               >
                 <ArrowLeft aria-hidden="true" />
@@ -132,8 +162,8 @@ if (cameraModel) {
             ) : (
               <span
                 class={cn(
-                  buttonVariants({ variant: 'outline', size: 'sm' }),
-                  'pointer-events-none opacity-40',
+                  buttonVariants({ variant: 'ghost', size: 'icon' }),
+                  'pointer-events-none bg-accent opacity-40 shadow-none',
                 )}
                 aria-disabled="true"
               >
@@ -145,7 +175,10 @@ if (cameraModel) {
             nextPhoto ? (
               <a
                 href={nextPhoto.href}
-                class={cn(buttonVariants({ variant: 'outline', size: 'sm' }), 'no-underline')}
+                class={cn(
+                  buttonVariants({ variant: 'ghost', size: 'icon' }),
+                  'bg-accent no-underline shadow-none hover:bg-muted',
+                )}
                 title={`Næste foto i ${kind === 'fotoblog' ? 'fotobloggen' : 'fotoserien'}`}
               >
                 <ArrowRight aria-hidden="true" />
@@ -153,8 +186,8 @@ if (cameraModel) {
             ) : (
               <span
                 class={cn(
-                  buttonVariants({ variant: 'outline', size: 'sm' }),
-                  'pointer-events-none opacity-40',
+                  buttonVariants({ variant: 'ghost', size: 'icon' }),
+                  'pointer-events-none bg-accent opacity-40 shadow-none',
                 )}
                 aria-disabled="true"
               >
@@ -163,91 +196,164 @@ if (cameraModel) {
             )
           }
         </div>
-      </div>
+      </nav>
 
-      <!-- Main photo stage -->
-      <figure class="mx-auto flex w-fit max-w-full flex-col">
-        <img
-          src={photo.src}
-          alt={photo.caption || photo.collectionTitle}
-          width={photo.width}
-          height={photo.height}
-          class="max-h-[76vh] w-auto max-w-full object-contain"
-        />
-      </figure>
-
-      <!-- Image details (no card / article body) -->
-      <section class="mt-8">
+      <figure class="flex w-full min-h-0 flex-1 flex-col items-center justify-center overflow-hidden">
+        <div
+          data-photo-open
+          class:list={[
+            'group relative min-h-0 max-w-full cursor-zoom-in',
+            photo.caption ? 'max-h-[calc(100%-2.25rem)]' : 'max-h-full',
+          ]}
+        >
+          <img
+            src={photo.display}
+            alt={seo.alt}
+            width={photo.width}
+            height={photo.height}
+            class="block min-h-0 w-auto max-h-full max-w-full object-contain opacity-0 transition-opacity duration-300 data-[loaded]:opacity-100"
+            onload="this.dataset.loaded=''; var mk=window.__mk; if(mk&&mk.syncPhotoCaption) mk.syncPhotoCaption(this)"
+          />
+          <Maximize2
+            aria-hidden="true"
+            className="pointer-events-none absolute top-5 right-5 size-6 text-white opacity-0 drop-shadow transition-opacity duration-200 group-hover:opacity-100 sm:top-6 sm:right-6"
+          />
+        </div>
         {
           photo.caption && (
-            <h1 class="font-display text-2xl font-bold tracking-normal sm:text-2xl">
-              {photo.caption}
-            </h1>
-          )
-        }
-
-        {
-          photo.credit && (
-            <p
-              class:list={[
-                'text-base font-medium text-foreground sm:text-base',
-                photo.caption ? 'mt-1' : undefined,
-              ]}
+            <figcaption
+              data-photo-caption
+              class="mt-2 max-w-full text-left text-sm leading-snug text-foreground"
             >
-              {photo.credit}
-            </p>
+              <h1 class="font-normal leading-snug">{photo.caption}</h1>
+            </figcaption>
           )
         }
+      </figure>
 
-        {
-          metaRows.length > 0 && (
-            <dl
-              class:list={[
-                'space-y-1.5',
-                photo.caption || photo.credit ? 'mt-3' : undefined,
-              ]}
-            >
-              {metaRows.map((row) => (
-                <div class="flex items-start gap-2.5">
-                  <dt class="mt-0.5 shrink-0 text-muted-foreground">
-                    {row.icon === 'calendar' ? (
-                      <Calendar className="size-4" aria-hidden="true" />
-                    ) : row.icon === 'scaling' ? (
-                      <Scaling className="size-4" aria-hidden="true" />
-                    ) : (
-                      <Camera className="size-4" aria-hidden="true" />
-                    )}
-                    <span class="sr-only">
-                      {row.icon === 'calendar'
-                        ? 'Publiceret'
-                        : row.icon === 'scaling'
-                          ? 'Dimensioner'
-                          : 'Kamera'}
-                    </span>
-                  </dt>
-                  <dd class="text-sm text-foreground font-light">{row.value}</dd>
-                </div>
-              ))}
-            </dl>
-          )
-        }
+      <div class="h-10 shrink-0 bg-white" aria-hidden="true"></div>
+    </Container>
+  </section>
 
-        {photo.tags.length > 0 && <TagPills tags={photo.tags} class="mt-6" />}
+  <dialog
+    data-photo-lightbox
+    aria-label="Luk fuld størrelse"
+    class="m-0 h-dvh max-h-none w-screen max-w-none cursor-zoom-out overflow-auto border-0 bg-transparent p-0 open:grid open:place-items-center backdrop:bg-black/80"
+  >
+    <Minimize2
+      aria-hidden="true"
+      className="pointer-events-none fixed top-5 right-5 z-10 size-6 text-white drop-shadow sm:top-6 sm:right-6"
+    />
+    <img
+      data-photo-lightbox-img
+      data-full-src={photo.src}
+      alt={seo.alt}
+      width={photo.width}
+      height={photo.height}
+      class="h-auto w-auto max-w-[100vw] cursor-zoom-out"
+    />
+  </dialog>
 
-        
-      </section>
+  <Container size="full" class:list={['pt-8', siblings.length > 0 ? 'pb-0' : 'pb-16']}>
+    {
+      photo.credit && (
+        <p class="text-base font-medium text-foreground">
+          {photo.credit}
+        </p>
+      )
+    }
 
-      <!-- Rest of images in this collection -->
-      {
-        siblings.length > 0 && (
-          <section class="mt-14">
-            <h2 class="mb-5 font-display text-xl font-semibold sm:text-2xl">
-              Fotos fra samme {kind}
-            </h2>
-            <PhotoMosaic photos={siblings} />
-          </section>
-        )
-      }
-    </article>
+    {
+      metaRows.length > 0 && (
+        <dl class:list={['space-y-1.5', photo.credit ? 'mt-3' : undefined]}>
+          {metaRows.map((row) => (
+            <div class="flex items-start gap-2.5">
+              <dt class="mt-0.5 shrink-0 text-muted-foreground">
+                {row.icon === 'calendar' ? (
+                  <Calendar className="size-4" aria-hidden="true" />
+                ) : row.icon === 'scaling' ? (
+                  <Scaling className="size-4" aria-hidden="true" />
+                ) : (
+                  <Camera className="size-4" aria-hidden="true" />
+                )}
+                <span class="sr-only">
+                  {row.icon === 'calendar'
+                    ? 'Publiceret'
+                    : row.icon === 'scaling'
+                      ? 'Dimensioner'
+                      : 'Kamera'}
+                </span>
+              </dt>
+              <dd class="text-sm text-foreground font-light">{row.value}</dd>
+            </div>
+          ))}
+        </dl>
+      )
+    }
+
+    {photo.tags.length > 0 && <TagPills tags={photo.tags} class="mt-6" />}
   </Container>
+  </article>
+
+  {
+    siblings.length > 0 && (
+      <Container size="stage" class="py-20">
+        <section>
+          <h2 class="mb-5 font-display text-xl font-semibold sm:text-2xl">
+            Fra samme {kind}
+          </h2>
+          <PhotoMosaic photos={siblings} />
+        </section>
+      </Container>
+    )
+  }
+  <script is:inline>
+    (function () {
+      var mk = (window.__mk = window.__mk || {});
+
+      function revealPhotoSlides() {
+        var imgs = document.querySelectorAll('[data-photo-slide] [data-photo-open] img');
+        for (var i = 0; i < imgs.length; i++) {
+          if (imgs[i].complete && imgs[i].naturalWidth) imgs[i].dataset.loaded = '';
+          if (mk.syncPhotoCaption) mk.syncPhotoCaption(imgs[i]);
+        }
+      }
+
+      function wirePhotoLightbox() {
+        var dialog = document.querySelector('[data-photo-lightbox]');
+        if (!dialog) return;
+
+        var openEl = document.querySelector('[data-photo-open]');
+        var lightboxImg = dialog.querySelector('[data-photo-lightbox-img]');
+        if (!openEl || !lightboxImg) return;
+
+        function openLightbox() {
+          var fullSrc = lightboxImg.getAttribute('data-full-src');
+          if (fullSrc && lightboxImg.getAttribute('src') !== fullSrc) {
+            lightboxImg.setAttribute('src', fullSrc);
+          }
+          if (typeof dialog.showModal === 'function' && !dialog.open) dialog.showModal();
+        }
+
+        function closeLightbox() {
+          if (dialog.open) dialog.close();
+        }
+
+        // onclick so ClientRouter rebinds cleanly without stacking listeners
+        openEl.onclick = openLightbox;
+        dialog.onclick = closeLightbox;
+      }
+
+      function onPhotoPageLoad() {
+        revealPhotoSlides();
+        wirePhotoLightbox();
+      }
+
+      onPhotoPageLoad();
+      if (!mk.photoSlideReveal) {
+        mk.photoSlideReveal = true;
+        document.addEventListener('astro:page-load', onPhotoPageLoad);
+      }
+    })();
+  </script>
 </BaseLayout>

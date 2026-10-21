@@ -29,6 +29,7 @@ if (sanityEnabled) {
 
 // https://astro.build/config
 export default defineConfig({
+  ...(process.env.PUBLIC_SITE ? { site: process.env.PUBLIC_SITE } : {}),
   output: 'static',
   prefetch: {
     prefetchAll: true,

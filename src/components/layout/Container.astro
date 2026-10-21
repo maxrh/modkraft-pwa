@@ -1,11 +1,12 @@
 ---
 interface Props {
-  size?: 'wide' | 'stage';
+  size?: 'wide' | 'stage' | 'full';
   class?: string;
 }
 
 const { size = 'wide', class: className } = Astro.props;
-const maxWidth = size === 'stage' ? 'max-w-[1400px]' : 'max-w-[1600px]';
+const maxWidth =
+  size === 'full' ? undefined : size === 'stage' ? 'max-w-[1400px]' : 'max-w-[1600px]';
 ---
 
 <div class:list={['mx-auto px-4 sm:px-6', maxWidth, className]}>
