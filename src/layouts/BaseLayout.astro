@@ -11,6 +11,10 @@ interface Props {
   activeTag?: string | null;
   /** Prefill the header search field. */
   searchQuery?: string;
+  canonical?: string;
+  image?: string;
+  imageAlt?: string;
+  jsonLd?: Record<string, unknown>;
 }
 
 const {
@@ -18,13 +22,24 @@ const {
   description = 'Fotoarkiv fra Modkraft — dokumentariske fotoserier og fotoblogs.',
   activeTag = null,
   searchQuery = '',
+  canonical,
+  image,
+  imageAlt,
+  jsonLd,
 } = Astro.props;
 ---
 
 <!doctype html>
 <html lang="da">
   <head>
-    <Head title={title} description={description} />
+    <Head
+      title={title}
+      description={description}
+      canonical={canonical}
+      image={image}
+      imageAlt={imageAlt}
+      jsonLd={jsonLd}
+    />
   </head>
   <body class="flex min-h-dvh flex-col">
     <SiteHeader activeTag={activeTag} searchQuery={searchQuery} />

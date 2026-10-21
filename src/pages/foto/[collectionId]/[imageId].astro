@@ -1,6 +1,6 @@
 ---
 import { getCollection } from 'astro:content';
-import { ArrowLeft, ArrowRight, Calendar, Camera, Scaling } from 'lucide-react';
+import { ArrowLeft, ArrowRight, Calendar, Camera, Maximize2, Minimize2, Scaling } from 'lucide-react';
 import BaseLayout from '@/layouts/BaseLayout.astro';
 import Container from '@/components/layout/Container.astro';
 import TagPills from '@/components/layout/TagPills.astro';
@@ -12,6 +12,7 @@ import {
   collectionKindLabel,
   flattenCollectionPhotos,
   formatDate,
+  photoPageSeo,
   sortCollectionsNewest,
   type Photo,
 } from '@/lib/photos';
@@ -63,9 +64,30 @@ const { photo, siblings, prevPhoto, nextPhoto } = Astro.props;
 const kind = collectionKind(photo.sourceType);
 const kindLabel = collectionKindLabel(photo.sourceType);
 const cameraModel = await readCameraModel(photo.collectionId, photo.filename);
-const pageTitle = photo.caption
-  ? `${photo.caption.slice(0, 60)} — ${photo.collectionTitle}`
-  : `${photo.collectionTitle} (${photo.sortOrder}/${photo.imageCount})`;
+const seo = photoPageSeo(photo);
+const configuredSite = import.meta.env.PUBLIC_SITE || Astro.site?.origin;
+const siteOrigin = String(configuredSite || Astro.url.origin).replace(/\/$/, '');
+const pageUrl = new URL(photo.href, siteOrigin).href;
+const imageUrlAbs = new URL(photo.display, siteOrigin).href;
+const seriesUrl = new URL(`/fotoserie/${photo.collectionId}`, siteOrigin).href;
+const jsonLd: Record<string, unknown> = {
+  '@context': 'https://schema.org',
+  '@type': 'ImageObject',
+  contentUrl: imageUrlAbs,
+  url: pageUrl,
+  name: seo.title,
+  description: seo.description,
+  width: photo.width,
+  height: photo.height,
+  datePublished: photo.publishedAt,
+  isPartOf: {
+    '@type': 'CollectionPage',
+    name: photo.collectionTitle,
+    url: seriesUrl,
+  },
+};
+if (photo.caption) jsonLd.caption = photo.caption;
+if (photo.credit) jsonLd.creator = { '@type': 'Person', name: photo.credit };
 
 const metaRows: Array<{ icon: 'calendar' | 'scaling' | 'camera'; value: string }> = [];
 if (photo.publishedAt) {
@@ -80,11 +102,15 @@ if (cameraModel) {
 ---
 
 <BaseLayout
-  title={pageTitle}
-  description={photo.caption || `Foto fra ${photo.collectionTitle}`}
+  title={seo.title}
+  description={seo.description}
+  canonical={pageUrl}
+  image={imageUrlAbs}
+  imageAlt={seo.alt}
+  jsonLd={jsonLd}
 >
-  {prevPhoto && <link rel="preload" as="image" href={prevPhoto.src} />}
-  {nextPhoto && <link rel="preload" as="image" href={nextPhoto.src} />}
+  {prevPhoto && <link rel="preload" as="image" href={prevPhoto.display} />}
+  {nextPhoto && <link rel="preload" as="image" href={nextPhoto.display} />}
   <noscript>
     <style is:inline>
       [data-photo-slide] img {
@@ -97,8 +123,8 @@ if (cameraModel) {
     class="flex h-[calc(100dvh-var(--site-header-h))] flex-col"
     data-photo-slide
   >
-    <Container class="flex w-full min-h-0 flex-1 flex-col pt-8">
-      <header class="mb-6 flex shrink-0 flex-wrap items-center justify-between gap-4">
+    <Container size="stage" class="flex w-full min-h-0 flex-1 flex-col pt-8">
+      <header class="mb-4 flex shrink-0 flex-wrap items-center justify-between gap-4">
         <div class="flex flex-wrap items-center gap-1 text-base">
           {kindLabel}:
           <a
@@ -108,19 +134,6 @@ if (cameraModel) {
             {photo.collectionTitle}
             <ArrowRight className="size-3.5 shrink-0" aria-hidden="true" />
           </a>
-          {
-            photo.series && (
-              <>
-                <span class="text-muted-foreground">·</span>
-                <a
-                  href={`/fotoblog/${photo.series}`}
-                  class="rounded bg-secondary px-2 py-0.5 text-xs font-medium text-secondary-foreground no-underline hover:bg-accent"
-                >
-                  Fotoblog
-                </a>
-              </>
-            )
-          }
         </div>
 
         <div class="flex items-center gap-1">
@@ -183,40 +196,67 @@ if (cameraModel) {
         </div>
       </header>
 
-      <figure class="relative flex w-full min-h-0 flex-1 items-center justify-center">
-        <img
-          src={photo.src}
-          alt={photo.caption || photo.collectionTitle}
-          width={photo.width}
-          height={photo.height}
-          class="max-h-full min-h-0 max-w-full object-contain opacity-0 transition-opacity duration-300 data-[loaded]:opacity-100"
-          onload="this.dataset.loaded = ''"
-        />
+      <figure class="flex w-full min-h-0 flex-1 items-center justify-center overflow-hidden">
+        <div class="flex h-full min-h-0 max-w-full flex-col items-center justify-center">
+          <div
+            data-photo-open
+            class:list={[
+              'group relative flex min-h-0 w-auto max-w-full cursor-zoom-in',
+              photo.caption ? 'max-h-[calc(100%-2.25rem)]' : 'max-h-full',
+            ]}
+          >
+            <img
+              src={photo.display}
+              alt={seo.alt}
+              width={photo.width}
+              height={photo.height}
+              class="min-h-0 w-auto max-h-full max-w-full object-contain opacity-0 transition-opacity duration-300 data-[loaded]:opacity-100"
+              onload="this.dataset.loaded = ''"
+            />
+            <Maximize2
+              aria-hidden="true"
+              className="pointer-events-none absolute top-5 right-5 size-6 text-white opacity-0 drop-shadow transition-opacity duration-200 group-hover:opacity-100 sm:top-6 sm:right-6"
+            />
+          </div>
+          {
+            photo.caption && (
+              <h1 class="mt-2 w-0 min-w-full shrink-0 text-sm leading-snug font-normal text-foreground">
+                {photo.caption}
+              </h1>
+            )
+          }
+        </div>
       </figure>
 
       <div class="h-12 shrink-0 bg-white" aria-hidden="true"></div>
     </Container>
   </section>
 
-  <Container class="pt-8 pb-16">
+  <dialog
+    data-photo-lightbox
+    aria-label="Luk fuld størrelse"
+    class="m-0 h-dvh max-h-none w-screen max-w-none cursor-zoom-out overflow-auto border-0 bg-transparent p-0 open:grid open:place-items-center backdrop:bg-black/80"
+  >
+    <Minimize2
+      aria-hidden="true"
+      className="pointer-events-none fixed top-5 right-5 z-10 size-6 text-white drop-shadow sm:top-6 sm:right-6"
+    />
+    <img
+      data-photo-lightbox-img
+      data-full-src={photo.src}
+      alt={seo.alt}
+      width={photo.width}
+      height={photo.height}
+      class="h-auto w-auto max-w-[100vw] cursor-zoom-out"
+    />
+  </dialog>
+
+  <Container size="stage" class="pt-8 pb-16">
     <article>
       <section>
         {
-          photo.caption && (
-            <h1 class="font-display text-2xl font-bold tracking-normal sm:text-2xl">
-              {photo.caption}
-            </h1>
-          )
-        }
-
-        {
           photo.credit && (
-            <p
-              class:list={[
-                'text-base font-medium text-foreground sm:text-base',
-                photo.caption ? 'mt-1' : undefined,
-              ]}
-            >
+            <p class="text-base font-medium text-foreground">
               {photo.credit}
             </p>
           )
@@ -225,10 +265,7 @@ if (cameraModel) {
         {
           metaRows.length > 0 && (
             <dl
-              class:list={[
-                'space-y-1.5',
-                photo.caption || photo.credit ? 'mt-3' : undefined,
-              ]}
+              class:list={['space-y-1.5', photo.credit ? 'mt-3' : undefined]}
             >
               {metaRows.map((row) => (
                 <div class="flex items-start gap-2.5">
@@ -276,15 +313,46 @@ if (cameraModel) {
   <script is:inline>
     (function () {
       function revealPhotoSlides() {
-        var imgs = document.querySelectorAll('[data-photo-slide] img');
+        var imgs = document.querySelectorAll('[data-photo-slide] [data-photo-open] img');
         for (var i = 0; i < imgs.length; i++) {
           if (imgs[i].complete && imgs[i].naturalWidth) imgs[i].dataset.loaded = '';
         }
       }
-      revealPhotoSlides();
+
+      function wirePhotoLightbox() {
+        var dialog = document.querySelector('[data-photo-lightbox]');
+        if (!dialog) return;
+
+        var openEl = document.querySelector('[data-photo-open]');
+        var lightboxImg = dialog.querySelector('[data-photo-lightbox-img]');
+        if (!openEl || !lightboxImg) return;
+
+        function openLightbox() {
+          var fullSrc = lightboxImg.getAttribute('data-full-src');
+          if (fullSrc && lightboxImg.getAttribute('src') !== fullSrc) {
+            lightboxImg.setAttribute('src', fullSrc);
+          }
+          if (typeof dialog.showModal === 'function' && !dialog.open) dialog.showModal();
+        }
+
+        function closeLightbox() {
+          if (dialog.open) dialog.close();
+        }
+
+        // onclick so ClientRouter rebinds cleanly without stacking listeners
+        openEl.onclick = openLightbox;
+        dialog.onclick = closeLightbox;
+      }
+
+      function onPhotoPageLoad() {
+        revealPhotoSlides();
+        wirePhotoLightbox();
+      }
+
+      onPhotoPageLoad();
       if (!window.__photoSlideReveal) {
         window.__photoSlideReveal = true;
-        document.addEventListener('astro:page-load', revealPhotoSlides);
+        document.addEventListener('astro:page-load', onPhotoPageLoad);
       }
     })();
   </script>

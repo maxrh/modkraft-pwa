@@ -112,7 +112,7 @@ export default function SortMenu() {
             className={cn(
               buttonVariants({ variant: 'ghost', size: 'icon' }),
               'shadow-none',
-              selected && 'bg-muted hover:bg-muted',
+              selected && 'bg-accent hover:bg-muted',
             )}
             onClick={() => choose(item.id)}
           >
