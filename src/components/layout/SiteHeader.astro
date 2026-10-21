@@ -449,24 +449,120 @@ const collectionsJson = JSON.stringify(collections).replace(/</g, '\\u003c');
       syncClear();
     }
 
-    // Scroll after fetch, just before VT snapshot — avoids old-page jump during load.
+    // Persist scrollY on leave. On back to a mosaic page, hide main until VT ends
+    // and the mosaic has enough height, then jump — never scroll mid-transition.
     var scrollToTop = false;
-    document.addEventListener('astro:before-preparation', function (event) {
-      scrollToTop = event.navigationType !== 'traverse';
-    });
-    document.addEventListener('astro:after-preparation', function () {
-      if (scrollToTop) jumpTop();
-    });
-    document.addEventListener('astro:after-swap', function () {
-      if (scrollToTop) jumpTop();
-      // Reveal mosaics immediately so content isn't blank until init scripts run.
+    var scrollWaitObs = null;
+    var scrollWaitTimer = null;
+
+    function scrollKey() {
+      return 'page-scroll:' + location.pathname + location.search;
+    }
+
+    function readSavedScrollY() {
+      try {
+        var raw = sessionStorage.getItem(scrollKey());
+        if (raw != null) return Number(raw) || 0;
+      } catch (e) {}
+      return 0;
+    }
+
+    function mosaicsReady() {
+      var roots = document.querySelectorAll('[data-mosaic-root]');
+      if (!roots.length) return true;
+      for (var i = 0; i < roots.length; i++) {
+        if (!roots[i].hasAttribute('data-mosaic-ready')) return false;
+      }
+      return true;
+    }
+
+    function clearScrollWait() {
+      if (scrollWaitObs) {
+        scrollWaitObs.disconnect();
+        scrollWaitObs = null;
+      }
+      if (scrollWaitTimer) {
+        clearTimeout(scrollWaitTimer);
+        scrollWaitTimer = null;
+      }
+    }
+
+    function finishScrollRestore() {
+      if (!document.documentElement.hasAttribute('data-scroll-pending')) return;
+      clearScrollWait();
+      var y = readSavedScrollY();
+      if (y > 0) {
+        window.scrollTo({ left: 0, top: y, behavior: 'instant' });
+        if (history.state) {
+          try {
+            history.replaceState(
+              Object.assign({}, history.state, { scrollX: 0, scrollY: y }),
+              '',
+            );
+          } catch (e) {}
+        }
+      }
       var mosaics = document.querySelectorAll('[data-mosaic-root]');
       for (var i = 0; i < mosaics.length; i++) {
         mosaics[i].setAttribute('data-revealed', '');
       }
+      document.documentElement.removeAttribute('data-scroll-pending');
+    }
+
+    function tryFinishScrollRestore() {
+      if (!document.documentElement.hasAttribute('data-scroll-pending')) return;
+      if (document.documentElement.hasAttribute('data-astro-transition')) return;
+      if (!mosaicsReady()) return;
+      finishScrollRestore();
+    }
+
+    function startScrollRestoreWait() {
+      clearScrollWait();
+      tryFinishScrollRestore();
+      if (!document.documentElement.hasAttribute('data-scroll-pending')) return;
+
+      scrollWaitObs = new MutationObserver(tryFinishScrollRestore);
+      scrollWaitObs.observe(document.documentElement, {
+        attributes: true,
+        attributeFilter: ['data-astro-transition', 'data-scroll-pending'],
+      });
+      if (document.body) {
+        scrollWaitObs.observe(document.body, {
+          subtree: true,
+          attributes: true,
+          attributeFilter: ['data-mosaic-ready'],
+        });
+      }
+      // Never leave main hidden if mosaic/VT signals stall.
+      scrollWaitTimer = setTimeout(finishScrollRestore, 600);
+    }
+
+    document.addEventListener('astro:before-preparation', function (event) {
+      var traverse = event.navigationType === 'traverse';
+      scrollToTop = !traverse;
+      if (!traverse) {
+        try {
+          sessionStorage.setItem(scrollKey(), String(Math.round(window.scrollY || 0)));
+        } catch (e) {}
+      }
+    });
+
+    document.addEventListener('astro:after-swap', function () {
+      clearScrollWait();
+      if (scrollToTop) {
+        jumpTop();
+        var mosaics = document.querySelectorAll('[data-mosaic-root]');
+        for (var i = 0; i < mosaics.length; i++) {
+          mosaics[i].setAttribute('data-revealed', '');
+        }
+      } else if (document.querySelector('[data-mosaic-root]')) {
+        document.documentElement.setAttribute('data-scroll-pending', '');
+        startScrollRestoreWait();
+      }
       syncHeader();
       bindSearch();
     });
+
     document.addEventListener('astro:page-load', function () {
       syncHeader();
       bindSearch();

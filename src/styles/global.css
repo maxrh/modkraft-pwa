@@ -94,5 +94,15 @@
 }
 
 ::view-transition-group(site-header) {
-  z-index: 50;
+  z-index: 1000;
+}
+
+/* Jump, don't glide, while a ClientRouter transition is live. */
+html[data-astro-transition] {
+  scroll-behavior: auto;
+}
+
+/* Hide main until mosaic scroll restore finishes — avoids flash of page top on back. */
+html[data-scroll-pending] main {
+  visibility: hidden;
 }
