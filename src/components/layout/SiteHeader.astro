@@ -1,5 +1,6 @@
 ---
 import TagNav from './TagNav.astro';
+import { getAllTags, getPhotographers, getSearchCollections } from '@/lib/photos';
 
 interface Props {
   activeTag?: string | null;
@@ -7,18 +8,33 @@ interface Props {
 }
 
 const { activeTag = null, searchQuery = '' } = Astro.props;
+
+const tags = await getAllTags();
+const photographers = await getPhotographers();
+const collections = await getSearchCollections();
+const tagsJson = JSON.stringify(
+  tags.map((t) => ({ label: t.label, slug: t.slug, count: t.count })),
+).replace(/</g, '\\u003c');
+const photographersJson = JSON.stringify(photographers).replace(/</g, '\\u003c');
+const collectionsJson = JSON.stringify(collections).replace(/</g, '\\u003c');
 ---
 
 <header
   id="site-header"
-  class="sticky top-0 z-50 border-b border-border bg-white"
+  class="sticky top-0 z-50 bg-white"
   transition:persist="site-header"
 >
   <div class="flex items-center gap-6 px-4 py-4 sm:gap-8 sm:px-6">
-    <form action="/soeg" method="get" class="min-w-0 flex-1" role="search">
+    <form
+      action="/soeg"
+      method="get"
+      class="relative min-w-0 flex-1"
+      role="search"
+      data-search-root
+    >
       <label class="sr-only" for="site-search">Søg fotos</label>
       <div
-        class="flex h-12 items-center gap-3 rounded-lg bg-muted/80 px-4 transition-shadow focus-within:bg-muted focus-within:ring-2 focus-within:ring-ring/40"
+        class="flex h-12 items-center gap-3 rounded-lg bg-muted/80 px-4 focus-within:bg-muted"
       >
         <svg
           class="size-5 shrink-0 text-muted-foreground"
@@ -36,11 +52,60 @@ const { activeTag = null, searchQuery = '' } = Astro.props;
           name="q"
           type="search"
           value={searchQuery}
-          placeholder="Søg efter fotos, tags, fotografer…"
+          placeholder="Søg efter tags, fotoserier og fotografer…"
           autocomplete="off"
+          role="combobox"
+          aria-autocomplete="list"
+          aria-controls="search-suggestions"
+          aria-expanded="false"
+          aria-haspopup="listbox"
           class="h-full w-full min-w-0 border-0 bg-transparent text-[15px] text-foreground outline-none placeholder:text-muted-foreground"
         />
+        <button
+          type="button"
+          data-search-clear
+          class="hidden shrink-0 text-muted-foreground hover:text-foreground"
+          aria-label="Ryd søgning"
+        >
+          <svg
+            class="size-5"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            aria-hidden="true"
+          >
+            <path d="M18 6 6 18" stroke-linecap="round"></path>
+            <path d="m6 6 12 12" stroke-linecap="round"></path>
+          </svg>
+        </button>
       </div>
+      <ul
+        id="search-suggestions"
+        data-search-suggestions
+        role="listbox"
+        hidden
+        class="absolute top-full left-0 z-50 mt-2 max-h-72 w-full overflow-auto rounded-lg border border-border bg-white py-1 shadow-md"
+      >
+      </ul>
+      <template data-search-option-template>
+        <a
+          role="option"
+          class="flex items-center justify-between gap-3 px-4 py-2 text-sm text-foreground no-underline hover:bg-accent hover:text-accent-foreground aria-selected:bg-accent aria-selected:text-accent-foreground"
+        >
+          <span class="min-w-0 truncate" data-label></span>
+          <span class="shrink-0 text-sm tabular-nums text-muted-foreground" data-count></span>
+        </a>
+      </template>
+      <template data-search-section-template>
+        <div role="presentation">
+          <div class="mt-1 border-t border-border" data-section-rule></div>
+          <p class="px-4 pt-2 pb-0.5 text-xs font-light text-muted-foreground" data-section-label></p>
+        </div>
+      </template>
+      <script type="application/json" data-search-tags set:html={tagsJson} />
+      <script type="application/json" data-search-photographers set:html={photographersJson} />
+      <script type="application/json" data-search-collections set:html={collectionsJson} />
     </form>
 
     <a
@@ -54,6 +119,13 @@ const { activeTag = null, searchQuery = '' } = Astro.props;
   <TagNav activeTag={activeTag} searchQuery={searchQuery} />
 </header>
 
+<style>
+  #site-search::-webkit-search-cancel-button {
+    -webkit-appearance: none;
+    appearance: none;
+  }
+</style>
+
 {/* Persisted header keeps DOM across navigations — sync active tag + search from the URL. */}
 <script is:inline>
   (function () {
@@ -62,6 +134,9 @@ const { activeTag = null, searchQuery = '' } = Astro.props;
 
     var SELECTED = ['border-foreground', 'font-semibold', 'text-foreground'];
     var IDLE = ['border-transparent', 'text-muted-foreground', 'hover:text-foreground'];
+    var MAX_SUGGESTIONS = 8;
+    var MAX_PHOTOGRAPHERS = 3;
+    var MAX_SERIES = 3;
 
     function setSelected(el, on) {
       SELECTED.forEach(function (c) {
@@ -74,6 +149,205 @@ const { activeTag = null, searchQuery = '' } = Astro.props;
       else el.removeAttribute('aria-current');
     }
 
+    function searchRoot() {
+      return document.querySelector('#site-header [data-search-root]');
+    }
+
+    function searchInput() {
+      return document.getElementById('site-search');
+    }
+
+    function clearBtn() {
+      var root = searchRoot();
+      return root ? root.querySelector('[data-search-clear]') : null;
+    }
+
+    function suggestionsEl() {
+      var root = searchRoot();
+      return root ? root.querySelector('[data-search-suggestions]') : null;
+    }
+
+    function loadJson(selector) {
+      var root = searchRoot();
+      var script = root && root.querySelector(selector);
+      if (!script || !script.textContent) return [];
+      try {
+        return JSON.parse(script.textContent);
+      } catch (e) {
+        return [];
+      }
+    }
+
+    var tags = [];
+    var photographers = [];
+    var collections = [];
+    var activeIndex = -1;
+
+    function syncClear() {
+      var input = searchInput();
+      var btn = clearBtn();
+      if (!input || !btn) return;
+      btn.classList.toggle('hidden', !input.value);
+    }
+
+    function closeSuggestions() {
+      var list = suggestionsEl();
+      var input = searchInput();
+      if (list) {
+        list.hidden = true;
+        list.innerHTML = '';
+      }
+      if (input) input.setAttribute('aria-expanded', 'false');
+      activeIndex = -1;
+    }
+
+    function takeMatches(items, needle, limit, labelOf) {
+      var hits = [];
+      for (var i = 0; i < items.length; i++) {
+        var label = labelOf(items[i]);
+        var at = label.toLowerCase().indexOf(needle);
+        if (at < 0) continue;
+        hits.push({ item: items[i], starts: at === 0 ? 0 : 1, label: label });
+      }
+      hits.sort(function (a, b) {
+        if (a.starts !== b.starts) return a.starts - b.starts;
+        if (a.item.count !== b.item.count) return b.item.count - a.item.count;
+        return a.label.localeCompare(b.label, 'da');
+      });
+      return hits.slice(0, limit);
+    }
+
+    function filterSuggestions(q) {
+      var needle = q.trim().toLowerCase();
+      if (!needle) return [];
+
+      var people = takeMatches(photographers, needle, MAX_PHOTOGRAPHERS, function (item) {
+        return item.label;
+      });
+      var series = takeMatches(collections, needle, MAX_SERIES, function (item) {
+        return item.title;
+      });
+
+      var tagHits = [];
+      for (var i = 0; i < tags.length; i++) {
+        var tag = tags[i];
+        var at = tag.label.toLowerCase().indexOf(needle);
+        var starts = at === 0 ? 0 : 1;
+        if (at < 0) {
+          if (!tag.slug || tag.slug.indexOf(needle) < 0) continue;
+          starts = 1;
+        }
+        tagHits.push({ item: tag, starts: starts, label: tag.label });
+      }
+      tagHits.sort(function (a, b) {
+        if (a.starts !== b.starts) return a.starts - b.starts;
+        if (a.item.count !== b.item.count) return b.item.count - a.item.count;
+        return a.label.localeCompare(b.label, 'da');
+      });
+
+      var room = MAX_SUGGESTIONS - people.length - series.length;
+      if (room < 0) room = 0;
+      tagHits = tagHits.slice(0, room);
+
+      var out = [];
+      for (var t = 0; t < tagHits.length; t++) {
+        var hit = tagHits[t].item;
+        out.push({
+          label: hit.label,
+          href: '/t/' + encodeURIComponent(hit.slug),
+          count: hit.count,
+          group: 'tag',
+        });
+      }
+      var fotoSeries = [];
+      var fotoBlogs = [];
+      for (var s = 0; s < series.length; s++) {
+        var serie = series[s].item;
+        var row = {
+          label: serie.title,
+          href: serie.href,
+          count: serie.count,
+          group: serie.kind,
+        };
+        if (serie.kind === 'Fotoblog') fotoBlogs.push(row);
+        else fotoSeries.push(row);
+      }
+      for (var fs = 0; fs < fotoSeries.length; fs++) out.push(fotoSeries[fs]);
+      for (var fb = 0; fb < fotoBlogs.length; fb++) out.push(fotoBlogs[fb]);
+      for (var p = 0; p < people.length; p++) {
+        var person = people[p].item;
+        out.push({
+          label: person.label,
+          href: '/soeg?q=' + encodeURIComponent(person.label),
+          count: person.count,
+          group: 'Fotograf',
+        });
+      }
+      return out;
+    }
+
+    function optionTemplate() {
+      var root = searchRoot();
+      return root ? root.querySelector('[data-search-option-template]') : null;
+    }
+
+    function renderSuggestions(matches) {
+      var list = suggestionsEl();
+      var input = searchInput();
+      var tpl = optionTemplate();
+      if (!list || !input || !tpl) return;
+      activeIndex = -1;
+      if (!matches.length) {
+        closeSuggestions();
+        return;
+      }
+      list.innerHTML = '';
+      var search = searchRoot();
+      var sectionTpl = search && search.querySelector('[data-search-section-template]');
+      var prevGroup = '';
+      for (var i = 0; i < matches.length; i++) {
+        var t = matches[i];
+        if (sectionTpl && t.group && t.group !== 'tag' && t.group !== prevGroup) {
+          var section = sectionTpl.content.firstElementChild.cloneNode(true);
+          var rule = section.querySelector('[data-section-rule]');
+          if (rule) rule.hidden = !prevGroup;
+          section.querySelector('[data-section-label]').textContent =
+            t.group === 'Fotoserie' ? 'Fotoserier' : t.group === 'Fotograf' ? 'Fotografer' : 'Fotoblogs';
+          list.appendChild(section);
+        }
+        prevGroup = t.group || '';
+        var a = tpl.content.firstElementChild.cloneNode(true);
+        a.href = t.href;
+        a.id = 'search-opt-' + i;
+        a.querySelector('[data-label]').textContent = t.label;
+        a.querySelector('[data-count]').textContent = Number(t.count).toLocaleString('da-DK');
+        list.appendChild(a);
+      }
+      list.hidden = false;
+      input.setAttribute('aria-expanded', 'true');
+    }
+
+    function highlightActive() {
+      var list = suggestionsEl();
+      if (!list) return;
+      var opts = list.querySelectorAll('[role="option"]');
+      for (var i = 0; i < opts.length; i++) {
+        if (i === activeIndex) opts[i].setAttribute('aria-selected', 'true');
+        else opts[i].removeAttribute('aria-selected');
+      }
+      var input = searchInput();
+      if (input) {
+        if (activeIndex >= 0) input.setAttribute('aria-activedescendant', 'search-opt-' + activeIndex);
+        else input.removeAttribute('aria-activedescendant');
+      }
+    }
+
+    function updateSuggestions() {
+      var input = searchInput();
+      if (!input) return;
+      renderSuggestions(filterSuggestions(input.value));
+    }
+
     function syncHeader() {
       var path = location.pathname;
       var q = new URLSearchParams(location.search).get('q') || '';
@@ -82,10 +356,12 @@ const { activeTag = null, searchQuery = '' } = Astro.props;
       var activeSlug = tagMatch ? decodeURIComponent(tagMatch[1]) : null;
       var onSearch = path === '/soeg' || path === '/soeg/';
 
-      var input = document.getElementById('site-search');
+      var input = searchInput();
       if (input && document.activeElement !== input) {
         input.value = onSearch ? q : '';
       }
+      syncClear();
+      closeSuggestions();
 
       var nav = document.querySelector('#site-header nav[aria-label="Filtrer efter emne"]');
       if (!nav) return;
@@ -108,6 +384,64 @@ const { activeTag = null, searchQuery = '' } = Astro.props;
       window.scrollTo({ left: 0, top: 0, behavior: 'instant' });
     }
 
+    function bindSearch() {
+      tags = loadJson('[data-search-tags]');
+      photographers = loadJson('[data-search-photographers]');
+      collections = loadJson('[data-search-collections]');
+      var root = searchRoot();
+      var input = searchInput();
+      var btn = clearBtn();
+      var list = suggestionsEl();
+      if (!root || !input || root.hasAttribute('data-search-bound')) return;
+      root.setAttribute('data-search-bound', '');
+
+      input.addEventListener('input', function () {
+        syncClear();
+        updateSuggestions();
+      });
+
+      input.addEventListener('focus', function () {
+        if (input.value.trim()) updateSuggestions();
+      });
+
+      input.addEventListener('keydown', function (e) {
+        var open = list && !list.hidden;
+        var opts = open ? list.querySelectorAll('[role="option"]') : [];
+        if (e.key === 'ArrowDown' && opts.length) {
+          e.preventDefault();
+          activeIndex = (activeIndex + 1) % opts.length;
+          highlightActive();
+        } else if (e.key === 'ArrowUp' && opts.length) {
+          e.preventDefault();
+          activeIndex = activeIndex <= 0 ? opts.length - 1 : activeIndex - 1;
+          highlightActive();
+        } else if (e.key === 'Enter' && activeIndex >= 0 && opts[activeIndex]) {
+          e.preventDefault();
+          opts[activeIndex].click();
+        } else if (e.key === 'Escape') {
+          if (open) {
+            e.preventDefault();
+            closeSuggestions();
+          }
+        }
+      });
+
+      if (btn) {
+        btn.addEventListener('click', function () {
+          input.value = '';
+          syncClear();
+          closeSuggestions();
+          input.focus();
+        });
+      }
+
+      document.addEventListener('click', function (e) {
+        if (!root.contains(e.target)) closeSuggestions();
+      });
+
+      syncClear();
+    }
+
     // Scroll after fetch, just before VT snapshot — avoids old-page jump during load.
     var scrollToTop = false;
     document.addEventListener('astro:before-preparation', function (event) {
@@ -124,7 +458,11 @@ const { activeTag = null, searchQuery = '' } = Astro.props;
         mosaics[i].setAttribute('data-revealed', '');
       }
       syncHeader();
+      bindSearch();
     });
-    document.addEventListener('astro:page-load', syncHeader);
+    document.addEventListener('astro:page-load', function () {
+      syncHeader();
+      bindSearch();
+    });
   })();
 </script>

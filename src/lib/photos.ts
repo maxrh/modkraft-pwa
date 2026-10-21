@@ -134,8 +134,36 @@ export function flattenCollectionPhotos(collection: PhotoCollection): Photo[] {
 
 /** Prod-only caches so ~2k prerendered pages share one scan; dev stays fresh. */
 let photosCache: Promise<Photo[]> | null = null;
-let navTagsCache = new Map<number, Promise<string[]>>();
+let tagBucketsCache: Promise<TagBucket[]> | null = null;
+let photographersCache: Promise<PhotographerInfo[]> | null = null;
+let searchCollectionsCache: Promise<SearchCollection[]> | null = null;
+const navTagsCache = new Map<number, Promise<string[]>>();
 let archiveStatsCache: Promise<ArchiveStats> | null = null;
+
+/** Skip a nav candidate when it nearly duplicates an already chosen tag. */
+const NAV_JACCARD_MAX = 0.6;
+
+export interface TagInfo {
+  label: string;
+  slug: string;
+  count: number;
+}
+
+interface TagBucket extends TagInfo {
+  photoIds: Set<string>;
+}
+
+export interface PhotographerInfo {
+  label: string;
+  count: number;
+}
+
+export interface SearchCollection {
+  title: string;
+  href: string;
+  kind: 'Fotoserie' | 'Fotoblog';
+  count: number;
+}
 
 export interface ArchiveStats {
   photoCount: number;
@@ -154,12 +182,21 @@ export async function getAllPhotos(): Promise<Photo[]> {
   return photosCache;
 }
 
-/** Top tags for the Unsplash-style header filter row (by photo count). */
-export async function getNavTags(limit = 10): Promise<string[]> {
-  const load = async () => {
+function jaccard(a: Set<string>, b: Set<string>): number {
+  const [small, large] = a.size <= b.size ? [a, b] : [b, a];
+  let intersection = 0;
+  for (const id of small) if (large.has(id)) intersection++;
+  const union = a.size + b.size - intersection;
+  return union === 0 ? 0 : intersection / union;
+}
+
+let loggedNavSkips = false;
+
+/** Tags by photo count, each with the photo ids it covers. */
+async function getTagBuckets(): Promise<TagBucket[]> {
+  const load = async (): Promise<TagBucket[]> => {
     const photos = await getAllPhotos();
-    /** slug → { label, count } */
-    const bySlug = new Map<string, { label: string; count: number; labelCounts: Map<string, number> }>();
+    const bySlug = new Map<string, TagBucket & { labelCounts: Map<string, number> }>();
     for (const photo of photos) {
       const seen = new Set<string>();
       for (const tag of photo.tags) {
@@ -168,7 +205,7 @@ export async function getNavTags(limit = 10): Promise<string[]> {
         seen.add(slug);
         let bucket = bySlug.get(slug);
         if (!bucket) {
-          bucket = { label: tag, count: 0, labelCounts: new Map() };
+          bucket = { label: tag, slug, count: 0, photoIds: new Set(), labelCounts: new Map() };
           bySlug.set(slug, bucket);
         }
         bucket.labelCounts.set(tag, (bucket.labelCounts.get(tag) ?? 0) + 1);
@@ -178,13 +215,58 @@ export async function getNavTags(limit = 10): Promise<string[]> {
           bucket.labelCounts.get(bucket.label) ?? 0,
           bucket.labelCounts.get(tag) ?? 0,
         );
+        bucket.photoIds.add(photo.id);
         bucket.count++;
       }
     }
     return [...bySlug.values()]
-      .sort((a, b) => b.count - a.count || a.label.localeCompare(b.label, 'da'))
-      .slice(0, limit)
-      .map((b) => b.label);
+      .map(({ label, slug, count, photoIds }) => ({ label, slug, count, photoIds }))
+      .sort((a, b) => b.count - a.count || a.label.localeCompare(b.label, 'da'));
+  };
+
+  if (!import.meta.env.PROD) return load();
+  tagBucketsCache ??= load();
+  return tagBucketsCache;
+}
+
+/** All unique tags sorted by photo count (for search autocomplete). */
+export async function getAllTags(): Promise<TagInfo[]> {
+  const buckets = await getTagBuckets();
+  return buckets.map(({ label, slug, count }) => ({ label, slug, count }));
+}
+
+/**
+ * Header filter row: top tags by photo count, skipping near-duplicates
+ * (Jaccard >= 0.6 against an already chosen tag). Larger tag wins.
+ */
+export async function getNavTags(limit = 10): Promise<string[]> {
+  const load = async () => {
+    const buckets = await getTagBuckets();
+    const selected: TagBucket[] = [];
+    const skips: string[] = [];
+    for (const candidate of buckets) {
+      let clash: { label: string; score: number } | null = null;
+      for (const chosen of selected) {
+        const score = jaccard(candidate.photoIds, chosen.photoIds);
+        if (score >= NAV_JACCARD_MAX) {
+          clash = { label: chosen.label, score };
+          break;
+        }
+      }
+      if (clash) {
+        skips.push(
+          `[nav] skip ${candidate.label} (${candidate.count}) ~ ${clash.label} jaccard=${clash.score.toFixed(2)}`,
+        );
+        continue;
+      }
+      selected.push(candidate);
+      if (selected.length >= limit) break;
+    }
+    if (import.meta.env.DEV && !loggedNavSkips) {
+      loggedNavSkips = true;
+      for (const line of skips) console.info(line);
+    }
+    return selected.map((tag) => tag.label);
   };
 
   if (!import.meta.env.PROD) return load();
@@ -194,6 +276,85 @@ export async function getNavTags(limit = 10): Promise<string[]> {
     navTagsCache.set(limit, cached);
   }
   return cached;
+}
+
+const PHOTOGRAPHER_JUNK = new Set(['privat']);
+
+/** Split a credit into person names. Drops empty, "Privat", and domain fragments. */
+function splitCreditNames(raw: string): string[] {
+  return raw
+    .split(/\s*(?:,|\/| og )\s*/i)
+    .map((part) => part.trim())
+    .filter((part) => part.length > 0 && !part.includes('.') && !PHOTOGRAPHER_JUNK.has(part.toLowerCase()));
+}
+
+/** Photographers by photo count. Case variants share one label (most common casing). */
+export async function getPhotographers(): Promise<PhotographerInfo[]> {
+  const load = async (): Promise<PhotographerInfo[]> => {
+    const photos = await getAllPhotos();
+    const byKey = new Map<string, { label: string; labelCounts: Map<string, number>; photoIds: Set<string> }>();
+    for (const photo of photos) {
+      const raw = photo.credit ? [...photo.photographers, photo.credit] : [...photo.photographers];
+      const seen = new Map<string, string>();
+      for (const piece of raw) {
+        for (const name of splitCreditNames(piece)) {
+          const key = name.toLocaleLowerCase('da');
+          if (!seen.has(key)) seen.set(key, name);
+        }
+      }
+      for (const [key, name] of seen) {
+        let bucket = byKey.get(key);
+        if (!bucket) {
+          bucket = { label: name, labelCounts: new Map(), photoIds: new Set() };
+          byKey.set(key, bucket);
+        }
+        bucket.labelCounts.set(name, (bucket.labelCounts.get(name) ?? 0) + 1);
+        bucket.label = preferTagLabel(
+          bucket.label,
+          name,
+          bucket.labelCounts.get(bucket.label) ?? 0,
+          bucket.labelCounts.get(name) ?? 0,
+        );
+        bucket.photoIds.add(photo.id);
+      }
+    }
+    return [...byKey.values()]
+      .map(({ label, photoIds }) => ({ label, count: photoIds.size }))
+      .sort((a, b) => b.count - a.count || a.label.localeCompare(b.label, 'da'));
+  };
+
+  if (!import.meta.env.PROD) return load();
+  photographersCache ??= load();
+  return photographersCache;
+}
+
+/** Collection and parent-fotoblog titles for search suggestions. */
+export async function getSearchCollections(): Promise<SearchCollection[]> {
+  const load = async (): Promise<SearchCollection[]> => {
+    const collections = await getCollection('photoCollections');
+    const seriesList = await getCollection('photoSeries');
+    const rows: SearchCollection[] = collections.map((collection) => ({
+      title: collection.data.title,
+      href: `/fotoserie/${collection.id}`,
+      kind: 'Fotoserie',
+      count: collection.data.images.length,
+    }));
+    for (const series of seriesList) {
+      const chapters = collections.filter((collection) => collection.data.series === series.data.id);
+      const count = chapters.reduce((sum, collection) => sum + collection.data.images.length, 0);
+      rows.push({
+        title: series.data.title,
+        href: `/fotoblog/${series.data.id}`,
+        kind: 'Fotoblog',
+        count,
+      });
+    }
+    return rows.sort((a, b) => b.count - a.count || a.title.localeCompare(b.title, 'da'));
+  };
+
+  if (!import.meta.env.PROD) return load();
+  searchCollectionsCache ??= load();
+  return searchCollectionsCache;
 }
 
 export async function getArchiveStats(): Promise<ArchiveStats> {

@@ -11,41 +11,41 @@ const navTags = await getNavTags(10);
 const isHome = Astro.url.pathname === '/' || Astro.url.pathname === '';
 ---
 
-<nav
-  class="flex gap-5 overflow-x-auto px-4 sm:gap-6 sm:px-6"
-  aria-label="Filtrer efter emne"
->
-  <a
-    href="/"
-    data-astro-prefetch="viewport"
-    class:list={[
-      'shrink-0 border-b-2 py-3 text-sm whitespace-nowrap no-underline transition-colors',
-      isHome && !activeTag && !searchQuery
-        ? 'border-foreground font-semibold text-foreground'
-        : 'border-transparent text-muted-foreground hover:text-foreground',
-    ]}
-    aria-current={isHome && !activeTag && !searchQuery ? 'page' : undefined}
-  >
-    Alle
-  </a>
-  {
-    navTags.map((tag) => {
-      const selected = activeTag === tag;
-      return (
-        <a
-          href={tagHref(tag)}
-          data-astro-prefetch="viewport"
-          class:list={[
-            'shrink-0 border-b-2 py-3 text-sm whitespace-nowrap no-underline transition-colors',
-            selected
-              ? 'border-foreground font-semibold text-foreground'
-              : 'border-transparent text-muted-foreground hover:text-foreground',
-          ]}
-          aria-current={selected ? 'page' : undefined}
-        >
-          {tag}
-        </a>
-      );
-    })
-  }
+<nav class="border-b border-border" aria-label="Filtrer efter emne">
+  {/* -mb-px pulls the row onto the nav border so underlines overlay it; overflow stays on this inner scroller. */}
+  <div class="-mb-px flex gap-5 overflow-x-auto px-4 sm:gap-6 sm:px-6">
+    <a
+      href="/"
+      data-astro-prefetch="viewport"
+      class:list={[
+        'shrink-0 border-b-2 py-3 text-sm whitespace-nowrap no-underline transition-colors',
+        isHome && !activeTag && !searchQuery
+          ? 'border-foreground font-semibold text-foreground'
+          : 'border-transparent text-muted-foreground hover:text-foreground',
+      ]}
+      aria-current={isHome && !activeTag && !searchQuery ? 'page' : undefined}
+    >
+      Alle
+    </a>
+    {
+      navTags.map((tag) => {
+        const selected = activeTag === tag;
+        return (
+          <a
+            href={tagHref(tag)}
+            data-astro-prefetch="viewport"
+            class:list={[
+              'shrink-0 border-b-2 py-3 text-sm whitespace-nowrap no-underline transition-colors',
+              selected
+                ? 'border-foreground font-semibold text-foreground'
+                : 'border-transparent text-muted-foreground hover:text-foreground',
+            ]}
+            aria-current={selected ? 'page' : undefined}
+          >
+            {tag}
+          </a>
+        );
+      })
+    }
+  </div>
 </nav>
