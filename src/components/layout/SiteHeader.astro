@@ -132,6 +132,13 @@ const collectionsJson = JSON.stringify(collections).replace(/</g, '\\u003c');
     if (window.__modkraftHeaderSync) return;
     window.__modkraftHeaderSync = true;
 
+    var headerEl = document.getElementById('site-header');
+    if (headerEl && window.ResizeObserver) {
+      new ResizeObserver(function () {
+        document.documentElement.style.setProperty('--site-header-h', headerEl.offsetHeight + 'px');
+      }).observe(headerEl);
+    }
+
     var SELECTED = ['border-foreground', 'font-semibold', 'text-foreground'];
     var IDLE = ['border-transparent', 'text-muted-foreground', 'hover:text-foreground'];
     var MAX_SUGGESTIONS = 8;

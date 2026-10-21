@@ -83,11 +83,23 @@ if (cameraModel) {
   title={pageTitle}
   description={photo.caption || `Foto fra ${photo.collectionTitle}`}
 >
-  <Container class="pt-8 pb-16">
-    <article>
-      <!-- Top bar: back link, prev/next within series -->
-      <div class="mb-6 flex flex-wrap items-center justify-between gap-4 ">
-        <div class="flex flex-wrap items-center gap-1 text-lg">
+  {prevPhoto && <link rel="preload" as="image" href={prevPhoto.src} />}
+  {nextPhoto && <link rel="preload" as="image" href={nextPhoto.src} />}
+  <noscript>
+    <style is:inline>
+      [data-photo-slide] img {
+        opacity: 1 !important;
+      }
+    </style>
+  </noscript>
+
+  <section
+    class="flex h-[calc(100dvh-var(--site-header-h))] flex-col"
+    data-photo-slide
+  >
+    <Container class="flex w-full min-h-0 flex-1 flex-col pt-8">
+      <header class="mb-6 flex shrink-0 flex-wrap items-center justify-between gap-4">
+        <div class="flex flex-wrap items-center gap-1 text-base">
           {kindLabel}:
           <a
             href={`/fotoserie/${photo.collectionId}`}
@@ -124,7 +136,10 @@ if (cameraModel) {
             prevPhoto ? (
               <a
                 href={prevPhoto.href}
-                class={cn(buttonVariants({ variant: 'outline', size: 'sm' }), 'no-underline')}
+                class={cn(
+                  buttonVariants({ variant: 'ghost', size: 'icon' }),
+                  'bg-accent no-underline shadow-none hover:bg-muted',
+                )}
                 title={`Forrige foto i ${kind === 'fotoblog' ? 'fotobloggen' : 'fotoserien'}`}
               >
                 <ArrowLeft aria-hidden="true" />
@@ -132,8 +147,8 @@ if (cameraModel) {
             ) : (
               <span
                 class={cn(
-                  buttonVariants({ variant: 'outline', size: 'sm' }),
-                  'pointer-events-none opacity-40',
+                  buttonVariants({ variant: 'ghost', size: 'icon' }),
+                  'pointer-events-none bg-accent opacity-40 shadow-none',
                 )}
                 aria-disabled="true"
               >
@@ -145,7 +160,10 @@ if (cameraModel) {
             nextPhoto ? (
               <a
                 href={nextPhoto.href}
-                class={cn(buttonVariants({ variant: 'outline', size: 'sm' }), 'no-underline')}
+                class={cn(
+                  buttonVariants({ variant: 'ghost', size: 'icon' }),
+                  'bg-accent no-underline shadow-none hover:bg-muted',
+                )}
                 title={`Næste foto i ${kind === 'fotoblog' ? 'fotobloggen' : 'fotoserien'}`}
               >
                 <ArrowRight aria-hidden="true" />
@@ -153,8 +171,8 @@ if (cameraModel) {
             ) : (
               <span
                 class={cn(
-                  buttonVariants({ variant: 'outline', size: 'sm' }),
-                  'pointer-events-none opacity-40',
+                  buttonVariants({ variant: 'ghost', size: 'icon' }),
+                  'pointer-events-none bg-accent opacity-40 shadow-none',
                 )}
                 aria-disabled="true"
               >
@@ -163,21 +181,26 @@ if (cameraModel) {
             )
           }
         </div>
-      </div>
+      </header>
 
-      <!-- Main photo stage -->
-      <figure class="mx-auto flex w-fit max-w-full flex-col">
+      <figure class="relative flex w-full min-h-0 flex-1 items-center justify-center">
         <img
           src={photo.src}
           alt={photo.caption || photo.collectionTitle}
           width={photo.width}
           height={photo.height}
-          class="max-h-[76vh] w-auto max-w-full object-contain"
+          class="max-h-full min-h-0 max-w-full object-contain opacity-0 transition-opacity duration-300 data-[loaded]:opacity-100"
+          onload="this.dataset.loaded = ''"
         />
       </figure>
 
-      <!-- Image details (no card / article body) -->
-      <section class="mt-8">
+      <div class="h-12 shrink-0 bg-white" aria-hidden="true"></div>
+    </Container>
+  </section>
+
+  <Container class="pt-8 pb-16">
+    <article>
+      <section>
         {
           photo.caption && (
             <h1 class="font-display text-2xl font-bold tracking-normal sm:text-2xl">
@@ -250,4 +273,19 @@ if (cameraModel) {
       }
     </article>
   </Container>
+  <script is:inline>
+    (function () {
+      function revealPhotoSlides() {
+        var imgs = document.querySelectorAll('[data-photo-slide] img');
+        for (var i = 0; i < imgs.length; i++) {
+          if (imgs[i].complete && imgs[i].naturalWidth) imgs[i].dataset.loaded = '';
+        }
+      }
+      revealPhotoSlides();
+      if (!window.__photoSlideReveal) {
+        window.__photoSlideReveal = true;
+        document.addEventListener('astro:page-load', revealPhotoSlides);
+      }
+    })();
+  </script>
 </BaseLayout>
