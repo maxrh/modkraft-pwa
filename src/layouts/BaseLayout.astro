@@ -70,8 +70,9 @@ const {
     </dialog>
     <script is:inline>
       (function () {
-        if (window.__photoModalBound) return;
-        window.__photoModalBound = true;
+        var mk = (window.__mk = window.__mk || {});
+        if (mk.photoModalBound) return;
+        mk.photoModalBound = true;
 
         var requestId = 0;
 
@@ -107,8 +108,7 @@ const {
           document.documentElement.removeAttribute('data-photo-modal-lock');
           document.body.style.paddingRight = '';
           document.body.style.overflow = '';
-          var y = window.__photoModalScroll || 0;
-          window.scrollTo(0, y);
+          window.scrollTo(0, mk.photoModalScroll || 0);
         }
 
         function syncPhotoCaption(img) {
@@ -122,7 +122,7 @@ const {
           if (open) open.style.width = w + 'px';
           if (cap) cap.style.width = w + 'px';
         }
-        window.__syncPhotoCaption = syncPhotoCaption;
+        mk.syncPhotoCaption = syncPhotoCaption;
 
         function syncPhotoCaptions(root) {
           var scope = root || document;
@@ -171,9 +171,9 @@ const {
         }
 
         function initModalMosaics(root) {
-          if (typeof window.__initMosaic !== 'function') return;
+          if (typeof mk.initMosaic !== 'function') return;
           var mosaics = root.querySelectorAll('[data-mosaic-root]:not([data-ready])');
-          for (var i = 0; i < mosaics.length; i++) window.__initMosaic(mosaics[i]);
+          for (var i = 0; i < mosaics.length; i++) mk.initMosaic(mosaics[i]);
         }
 
         function hideModal() {
@@ -184,7 +184,7 @@ const {
           if (body) body.replaceChildren();
           dialog.close();
           document.documentElement.removeAttribute('data-photo-modal-open');
-          if (window.__photoModalTitle) document.title = window.__photoModalTitle;
+          if (mk.photoModalTitle) document.title = mk.photoModalTitle;
           unlockScroll();
         }
 
@@ -197,8 +197,8 @@ const {
 
           var first = !dialog.open;
           if (first) {
-            window.__photoModalTitle = document.title;
-            window.__photoModalScroll = window.scrollY || 0;
+            mk.photoModalTitle = document.title;
+            mk.photoModalScroll = window.scrollY || 0;
           }
 
           // Don't carry the grid's scrollY onto the foto URL. A full load of that

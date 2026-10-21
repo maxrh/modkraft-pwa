@@ -62,7 +62,7 @@ const seriesCount = new Set(photos.map((photo) => photo.collectionId)).size;
   description={`${photos.length} fotos med tagget "${tag}".`}
   activeTag={tag}
 >
-  <Container class="pt-8 pb-16">
+  <Container size="stage" class="pt-8 pb-16">
     <ContentHeader title={tag} count={photos.length} seriesCount={seriesCount} />
     <PhotoMosaic photos={photos} sortable />
   </Container>

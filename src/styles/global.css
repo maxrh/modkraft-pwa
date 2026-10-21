@@ -109,6 +109,8 @@ html[data-scroll-pending] main {
 
 /* Beat the user-agent dialog inset so top and side gaps match. */
 [data-photo-modal] {
+  /* Slide height uses this instead of --site-header-h (no header in the modal). */
+  --photo-slide-chrome: 2.5rem;
   margin: 0;
   /* Room for the close icon above the panel. Sides flush on small screens. */
   padding: 2.5rem 0 2rem;
@@ -128,8 +130,13 @@ html[data-scroll-pending] main {
   left: 0.5rem;
 }
 
+[data-photo-modal-panel] {
+  min-height: calc(100dvh - var(--photo-slide-chrome));
+}
+
 @media (min-width: 40rem) {
   [data-photo-modal] {
+    --photo-slide-chrome: 1.5rem;
     padding: 1.5rem 3rem 2rem;
   }
 
@@ -139,45 +146,3 @@ html[data-scroll-pending] main {
   }
 }
 
-/* The slide markup uses the site header height. There is no site header in the
-   modal. Height is the viewport minus only the dialog's top padding, so the
-   details block starts at the bottom edge instead of peeking into the viewport. */
-[data-photo-modal] [data-photo-slide] {
-  height: calc(100dvh - 2.5rem) !important;
-}
-
-[data-photo-modal-panel] {
-  min-height: calc(100dvh - 2.5rem);
-}
-
-@media (min-width: 40rem) {
-  [data-photo-modal] [data-photo-slide] {
-    height: calc(100dvh - 1.5rem) !important;
-  }
-
-  [data-photo-modal-panel] {
-    min-height: calc(100dvh - 1.5rem);
-  }
-}
-
-/* Stage containers are capped at 1400px. Inside the modal they fill the 1600px panel. */
-[data-photo-modal-body] .mx-auto {
-  max-width: none;
-}
-
-[data-photo-modal] [data-photo-slide] > .mx-auto {
-  padding-top: 1rem;
-}
-
-/* Sibling mosaic and its title stay at 1400px. */
-[data-photo-modal-body] section:has([data-mosaic-root]) {
-  max-width: 1400px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-@media (min-width: 40rem) {
-  [data-photo-modal] [data-photo-slide] > .mx-auto {
-    padding-top: 1.5rem;
-  }
-}

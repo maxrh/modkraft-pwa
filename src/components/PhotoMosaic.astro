@@ -501,8 +501,9 @@ const templatePhoto = photos[0];
     if (sortable) {
       renderSorted(readSortToken(), false);
       root._renderSorted = renderSorted;
-      if (!window.__mosaicSortBound) {
-        window.__mosaicSortBound = true;
+      var mk = (window.__mk = window.__mk || {});
+      if (!mk.mosaicSortBound) {
+        mk.mosaicSortBound = true;
         window.addEventListener('mosaic:sort', function (event) {
           var mode = event && event.detail;
           var reshuffle = mode === 'shuffle';
@@ -544,6 +545,6 @@ const templatePhoto = photos[0];
       observer.observe(sentinel);
     }
     } // initMosaic
-    window.__initMosaic = initMosaic;
+    (window.__mk = window.__mk || {}).initMosaic = initMosaic;
   })();
 </script>

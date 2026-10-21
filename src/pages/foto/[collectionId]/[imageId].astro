@@ -120,11 +120,12 @@ if (cameraModel) {
   </noscript>
 
   <article>
+  {!photo.caption && <h1 class="sr-only">{seo.title}</h1>}
   <section
-    class="flex h-[calc(100dvh-var(--site-header-h))] flex-col"
+    class="flex h-[calc(100dvh-var(--photo-slide-chrome,var(--site-header-h)))] flex-col"
     data-photo-slide
   >
-    <Container size="stage" class="flex w-full min-h-0 flex-1 flex-col pt-8">
+    <Container size="full" class="flex w-full min-h-0 flex-1 flex-col pt-4 sm:pt-6">
       <nav aria-label="Foto" class="mb-4 flex shrink-0 flex-wrap items-center justify-between gap-4">
         <div class="flex flex-wrap items-center gap-1 text-base">
           {kindLabel}:
@@ -197,41 +198,40 @@ if (cameraModel) {
         </div>
       </nav>
 
-      <figure class="flex w-full min-h-0 flex-1 items-center justify-center overflow-hidden">
-        <div class="flex h-full min-h-0 w-full max-w-full flex-col items-center justify-center">
-          <div
-            data-photo-open
-            class:list={[
-              'group relative min-h-0 max-w-full cursor-zoom-in',
-              photo.caption ? 'max-h-[calc(100%-2.25rem)]' : 'max-h-full',
-            ]}
-          >
-            <img
-              src={photo.display}
-              alt={seo.alt}
-              width={photo.width}
-              height={photo.height}
-              class="block min-h-0 w-auto max-h-full max-w-full object-contain opacity-0 transition-opacity duration-300 data-[loaded]:opacity-100"
-              onload="this.dataset.loaded=''; if (window.__syncPhotoCaption) window.__syncPhotoCaption(this)"
-            />
-            <Maximize2
-              aria-hidden="true"
-              className="pointer-events-none absolute top-5 right-5 size-6 text-white opacity-0 drop-shadow transition-opacity duration-200 group-hover:opacity-100 sm:top-6 sm:right-6"
-            />
-          </div>
-          {
-            photo.caption && (
-              <figcaption class="mt-2 max-w-full text-left text-sm leading-snug text-foreground">
-                <h1 data-photo-caption class="font-normal leading-snug">
-                  {photo.caption}
-                </h1>
-              </figcaption>
-            )
-          }
+      <figure class="flex w-full min-h-0 flex-1 flex-col items-center justify-center overflow-hidden">
+        <div
+          data-photo-open
+          class:list={[
+            'group relative min-h-0 max-w-full cursor-zoom-in',
+            photo.caption ? 'max-h-[calc(100%-2.25rem)]' : 'max-h-full',
+          ]}
+        >
+          <img
+            src={photo.display}
+            alt={seo.alt}
+            width={photo.width}
+            height={photo.height}
+            class="block min-h-0 w-auto max-h-full max-w-full object-contain opacity-0 transition-opacity duration-300 data-[loaded]:opacity-100"
+            onload="this.dataset.loaded=''; var mk=window.__mk; if(mk&&mk.syncPhotoCaption) mk.syncPhotoCaption(this)"
+          />
+          <Maximize2
+            aria-hidden="true"
+            className="pointer-events-none absolute top-5 right-5 size-6 text-white opacity-0 drop-shadow transition-opacity duration-200 group-hover:opacity-100 sm:top-6 sm:right-6"
+          />
         </div>
+        {
+          photo.caption && (
+            <figcaption
+              data-photo-caption
+              class="mt-2 max-w-full text-left text-sm leading-snug text-foreground"
+            >
+              <h1 class="font-normal leading-snug">{photo.caption}</h1>
+            </figcaption>
+          )
+        }
       </figure>
 
-      <div class="h-12 shrink-0 bg-white" aria-hidden="true"></div>
+      <div class="h-10 shrink-0 bg-white" aria-hidden="true"></div>
     </Container>
   </section>
 
@@ -254,7 +254,7 @@ if (cameraModel) {
     />
   </dialog>
 
-  <Container size="stage" class:list={['pt-8', siblings.length > 0 ? 'pb-0' : 'pb-16']}>
+  <Container size="full" class:list={['pt-8', siblings.length > 0 ? 'pb-0' : 'pb-16']}>
     {
       photo.credit && (
         <p class="text-base font-medium text-foreground">
@@ -309,11 +309,13 @@ if (cameraModel) {
   }
   <script is:inline>
     (function () {
+      var mk = (window.__mk = window.__mk || {});
+
       function revealPhotoSlides() {
         var imgs = document.querySelectorAll('[data-photo-slide] [data-photo-open] img');
         for (var i = 0; i < imgs.length; i++) {
           if (imgs[i].complete && imgs[i].naturalWidth) imgs[i].dataset.loaded = '';
-          if (window.__syncPhotoCaption) window.__syncPhotoCaption(imgs[i]);
+          if (mk.syncPhotoCaption) mk.syncPhotoCaption(imgs[i]);
         }
       }
 
@@ -348,8 +350,8 @@ if (cameraModel) {
       }
 
       onPhotoPageLoad();
-      if (!window.__photoSlideReveal) {
-        window.__photoSlideReveal = true;
+      if (!mk.photoSlideReveal) {
+        mk.photoSlideReveal = true;
         document.addEventListener('astro:page-load', onPhotoPageLoad);
       }
     })();
