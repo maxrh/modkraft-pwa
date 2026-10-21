@@ -83,7 +83,7 @@ if (cameraModel) {
   title={pageTitle}
   description={photo.caption || `Foto fra ${photo.collectionTitle}`}
 >
-  <Container size="stage" class="pt-8 pb-16">
+  <Container class="pt-8 pb-16">
     <article>
       <!-- Top bar: back link, prev/next within series -->
       <div class="mb-6 flex flex-wrap items-center justify-between gap-4 ">
@@ -172,12 +172,12 @@ if (cameraModel) {
           alt={photo.caption || photo.collectionTitle}
           width={photo.width}
           height={photo.height}
-          class="max-h-[82vh] w-auto max-w-full object-contain"
+          class="max-h-[76vh] w-auto max-w-full object-contain"
         />
       </figure>
 
       <!-- Image details (no card / article body) -->
-      <section class="mt-14">
+      <section class="mt-8">
         {
           photo.caption && (
             <h1 class="font-display text-2xl font-bold tracking-normal sm:text-2xl">
