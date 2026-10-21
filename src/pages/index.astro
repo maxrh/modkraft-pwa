@@ -1,16 +1,23 @@
 ---
 import BaseLayout from '@/layouts/BaseLayout.astro';
 import Container from '@/components/layout/Container.astro';
+import ContentHeader from '@/components/layout/ContentHeader.astro';
 import PhotoMosaic from '@/components/PhotoMosaic.astro';
 import { getAllPhotos, getArchiveStats } from '@/lib/photos';
 
 const photos = await getAllPhotos();
-const { photoCount } = await getArchiveStats();
-const description = `${photoCount.toLocaleString('da-DK')} dokumentariske fotografier fra Modkrafts fotoserier og fotoblogs.`;
+const { collectionCount } = await getArchiveStats();
+const description = 'Dokumentariske fotografier fra Modkrafts fotoserier og fotoblogs 2012 - 2017';
 ---
 
-<BaseLayout title="Modkraft Arkiv" description={description}>
+<BaseLayout title="Modkraft Fotoarkiv" description={description}>
   <Container class="pt-8 pb-16">
-    <PhotoMosaic photos={photos} />
+    <ContentHeader
+      title="Modkraft Fotoarkiv"
+      description={description}
+      count={photos.length}
+      seriesCount={collectionCount}
+    />
+    <PhotoMosaic photos={photos} sortable />
   </Container>
 </BaseLayout>

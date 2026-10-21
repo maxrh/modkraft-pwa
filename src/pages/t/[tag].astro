@@ -1,6 +1,7 @@
 ---
 import BaseLayout from '@/layouts/BaseLayout.astro';
 import Container from '@/components/layout/Container.astro';
+import ContentHeader from '@/components/layout/ContentHeader.astro';
 import PhotoMosaic from '@/components/PhotoMosaic.astro';
 import { getAllPhotos, preferTagLabel, slugifyTag, type Photo } from '@/lib/photos';
 
@@ -53,6 +54,7 @@ interface Props {
 }
 
 const { tag, photos } = Astro.props;
+const seriesCount = new Set(photos.map((photo) => photo.collectionId)).size;
 ---
 
 <BaseLayout
@@ -61,6 +63,7 @@ const { tag, photos } = Astro.props;
   activeTag={tag}
 >
   <Container class="pt-8 pb-16">
-    <PhotoMosaic photos={photos} />
+    <ContentHeader title={tag} count={photos.length} seriesCount={seriesCount} />
+    <PhotoMosaic photos={photos} sortable />
   </Container>
 </BaseLayout>

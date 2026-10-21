@@ -5,45 +5,56 @@ import PhotoCard from '@/components/PhotoCard.astro';
 
 interface Props {
   photos: Photo[];
+  /** Client-side shuffle / alpha / date. Skips SSR cards and ships one JSON list. */
+  sortable?: boolean;
 }
 
-const { photos } = Astro.props;
+const { photos, sortable = false } = Astro.props;
 
 const INITIAL_COUNT = 48;
 const BATCH_SIZE = 48;
 const ssrColumnCount = 3;
 
-const initialPhotos = photos.slice(0, INITIAL_COUNT);
-const restPhotos = photos.slice(INITIAL_COUNT);
+function cardPayload(photo: Photo) {
+  return {
+    href: photo.href,
+    thumb: photo.thumb,
+    width: photo.width,
+    height: photo.height,
+    caption: photo.caption,
+    collectionTitle: photo.collectionTitle,
+    sortOrder: photo.sortOrder,
+    imageCount: photo.imageCount,
+    credit: photo.credit,
+    publishedAt: photo.publishedAt,
+  };
+}
+
+const initialPhotos = sortable ? [] : photos.slice(0, INITIAL_COUNT);
+const restPhotos = sortable ? [] : photos.slice(INITIAL_COUNT);
 const ssrColumns = packIntoColumns(initialPhotos, ssrColumnCount);
 const indexById = new Map(initialPhotos.map((photo, index) => [photo.id, index]));
 
 /** Compact payload for client-side card construction (mirrors PhotoCard fields). */
-const restPayload = restPhotos.map((photo) => ({
-  href: photo.href,
-  thumb: photo.thumb,
-  width: photo.width,
-  height: photo.height,
-  caption: photo.caption,
-  collectionTitle: photo.collectionTitle,
-  sortOrder: photo.sortOrder,
-  imageCount: photo.imageCount,
-  credit: photo.credit,
-}));
+const restPayload = restPhotos.map(cardPayload);
+const allPayload = sortable ? photos.map(cardPayload) : [];
 
 // Prevent </script> in captions from breaking the inline JSON payload.
 const restJson = JSON.stringify(restPayload).replace(/</g, '\\u003c');
+const allJson = JSON.stringify(allPayload).replace(/</g, '\\u003c');
+const templatePhoto = photos[0];
 ---
 
 <div
   data-mosaic-root
+  data-sortable={sortable ? '' : undefined}
   data-batch-size={String(BATCH_SIZE)}
   data-initial-count={String(INITIAL_COUNT)}
   data-total={String(photos.length)}
 >
   <div
     data-mosaic
-    data-ssr-cols={String(ssrColumnCount)}
+    data-ssr-cols={sortable ? '0' : String(ssrColumnCount)}
     class="grid grid-cols-1 items-start gap-4 sm:grid-cols-2 lg:grid-cols-3"
   >
     {
@@ -67,23 +78,37 @@ const restJson = JSON.stringify(restPayload).replace(/</g, '\\u003c');
   </div>
 
   {
-    restPayload.length > 0 && (
+    sortable && templatePhoto && (
+      <>
+        <script type="application/json" data-mosaic-all set:html={allJson} />
+        <template data-card-template>
+          <PhotoCard photo={templatePhoto} />
+        </template>
+      </>
+    )
+  }
+  {
+    !sortable && restPayload.length > 0 && (
       <>
         <script type="application/json" data-mosaic-rest set:html={restJson} />
         <template data-card-template>
           <PhotoCard photo={restPhotos[0]} />
         </template>
-        <div data-mosaic-more class="mt-8 flex flex-col items-center gap-3">
-          <button
-            type="button"
-            data-mosaic-load
-            class="rounded-md border border-border bg-background px-4 py-2 text-sm font-medium text-foreground hover:bg-accent"
-          >
-            Vis flere fotos
-          </button>
-          <div data-mosaic-sentinel class="h-px w-full" aria-hidden="true" />
-        </div>
       </>
+    )
+  }
+  {
+    ((sortable && photos.length > INITIAL_COUNT) || (!sortable && restPayload.length > 0)) && (
+      <div data-mosaic-more class="mt-8 flex flex-col items-center gap-3">
+        <button
+          type="button"
+          data-mosaic-load
+          class="rounded-md border border-border bg-background px-4 py-2 text-sm font-medium text-foreground hover:bg-accent"
+        >
+          Vis flere fotos
+        </button>
+        <div data-mosaic-sentinel class="h-px w-full" aria-hidden="true" />
+      </div>
     )
   }
 </div>
@@ -97,16 +122,19 @@ const restJson = JSON.stringify(restPayload).replace(/</g, '\\u003c');
     function initMosaic(root) {
     if (!root || root.hasAttribute('data-ready')) return;
     root.setAttribute('data-ready', '');
-    // Show SSR columns immediately; packing below may still reflow breakpoints.
-    root.setAttribute('data-revealed', '');
 
     var GAP = 16;
     var mosaic = root.querySelector('[data-mosaic]');
     if (!mosaic) return;
 
+    var sortable = root.hasAttribute('data-sortable');
     var ssrCols = Number(mosaic.getAttribute('data-ssr-cols') || 3);
     var batchSize = Number(root.getAttribute('data-batch-size') || 48);
     var initialCount = Number(root.getAttribute('data-initial-count') || 48);
+    if (!sortable) {
+      // Show SSR columns immediately; packing below may still reflow breakpoints.
+      root.setAttribute('data-revealed', '');
+    }
     var queries = [
       window.matchMedia('(min-width: 64rem)'),
       window.matchMedia('(min-width: 40rem)'),
@@ -114,6 +142,7 @@ const restJson = JSON.stringify(restPayload).replace(/</g, '\\u003c');
     var current = 0;
     var heights = [];
     var rest = [];
+    var allPhotos = [];
     var nextIndex = initialCount;
     var observer = null;
 
@@ -123,6 +152,15 @@ const restJson = JSON.stringify(restPayload).replace(/</g, '\\u003c');
         rest = JSON.parse(restScript.textContent);
       } catch (e) {
         rest = [];
+      }
+    }
+
+    var allScript = root.querySelector('[data-mosaic-all]');
+    if (allScript && allScript.textContent) {
+      try {
+        allPhotos = JSON.parse(allScript.textContent);
+      } catch (e) {
+        allPhotos = [];
       }
     }
 
@@ -296,9 +334,100 @@ const restJson = JSON.stringify(restPayload).replace(/</g, '\\u003c');
 
     function cleanupMore() {
       if (observer && sentinel) observer.unobserve(sentinel);
+      if (sortable) {
+        if (moreEl) moreEl.hidden = true;
+        return;
+      }
       if (moreEl) moreEl.remove();
       if (restScript) restScript.remove();
       if (cardTemplateEl) cardTemplateEl.remove();
+    }
+
+    function readSortToken() {
+      try {
+        var token = sessionStorage.getItem('mosaic-sort');
+        if (token === 'shuffle' || token === 'alpha' || token === 'date') return token;
+        if (token === 'alpha:asc' || token === 'alpha:desc' || token === 'date:asc' || token === 'date:desc') {
+          return token;
+        }
+      } catch (e) {}
+      return 'shuffle';
+    }
+
+    function orderPhotos(list, token) {
+      var copy = list.slice();
+      var desc = token === 'alpha:desc' || token === 'date' || token === 'date:desc';
+      var sign = desc ? -1 : 1;
+      if (token === 'alpha' || token === 'alpha:asc' || token === 'alpha:desc') {
+        copy.sort(function (a, b) {
+          var title = String(a.collectionTitle || '').localeCompare(
+            String(b.collectionTitle || ''),
+            'da',
+          );
+          if (title) return title * sign;
+          return ((a.sortOrder || 0) - (b.sortOrder || 0)) * sign;
+        });
+      } else if (token === 'date' || token === 'date:asc' || token === 'date:desc') {
+        copy.sort(function (a, b) {
+          var date = String(a.publishedAt || '').localeCompare(String(b.publishedAt || ''));
+          if (date) return date * sign;
+          return ((a.sortOrder || 0) - (b.sortOrder || 0)) * sign;
+        });
+      } else {
+        for (var i = copy.length - 1; i > 0; i--) {
+          var j = Math.floor(Math.random() * (i + 1));
+          var tmp = copy[i];
+          copy[i] = copy[j];
+          copy[j] = tmp;
+        }
+      }
+      return copy;
+    }
+
+    function syncMore() {
+      if (!moreEl) return;
+      if (rest.length) {
+        moreEl.hidden = false;
+        if (loadBtn) loadBtn.textContent = 'Vis flere fotos (' + rest.length + ' tilbage)';
+        if (observer && sentinel) observer.observe(sentinel);
+      } else {
+        moreEl.hidden = true;
+        if (observer && sentinel) observer.unobserve(sentinel);
+      }
+    }
+
+    function renderSorted(token) {
+      if (
+        token !== 'shuffle' &&
+        token !== 'alpha' &&
+        token !== 'date' &&
+        token !== 'alpha:asc' &&
+        token !== 'alpha:desc' &&
+        token !== 'date:asc' &&
+        token !== 'date:desc'
+      ) {
+        token = 'shuffle';
+      }
+      try {
+        sessionStorage.setItem('mosaic-sort', token);
+      } catch (e) {}
+      var ordered = orderPhotos(allPhotos, token);
+      var n = columnCount();
+      var initial = ordered.slice(0, initialCount);
+      rest = ordered.slice(initialCount);
+      nextIndex = 0;
+
+      var holder = document.createElement('div');
+      holder.setAttribute('data-mosaic-col', '');
+      for (var i = 0; i < initial.length; i++) {
+        holder.appendChild(buildCard(initial[i], nextIndex++));
+      }
+      mosaic.replaceChildren(holder);
+      current = 0;
+      pack(n);
+      current = n;
+      syncMore();
+      root.setAttribute('data-revealed', '');
     }
 
     function layout() {
@@ -318,7 +447,22 @@ const restJson = JSON.stringify(restPayload).replace(/</g, '\\u003c');
       pack(n);
     }
 
-    layout();
+    if (sortable) {
+      renderSorted(readSortToken());
+      root._renderSorted = renderSorted;
+      if (!window.__mosaicSortBound) {
+        window.__mosaicSortBound = true;
+        window.addEventListener('mosaic:sort', function (event) {
+          var mode = event && event.detail;
+          var roots = document.querySelectorAll('[data-mosaic-root][data-sortable]');
+          for (var i = 0; i < roots.length; i++) {
+            if (typeof roots[i]._renderSorted === 'function') roots[i]._renderSorted(mode);
+          }
+        });
+      }
+    } else {
+      layout();
+    }
     queries.forEach(function (q) {
       q.addEventListener('change', layout);
     });
