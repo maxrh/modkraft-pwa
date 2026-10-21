@@ -135,6 +135,8 @@ export function flattenCollectionPhotos(collection: PhotoCollection): Photo[] {
 /** Prod-only caches so ~2k prerendered pages share one scan; dev stays fresh. */
 let photosCache: Promise<Photo[]> | null = null;
 let tagBucketsCache: Promise<TagBucket[]> | null = null;
+let photographersCache: Promise<PhotographerInfo[]> | null = null;
+let searchCollectionsCache: Promise<SearchCollection[]> | null = null;
 const navTagsCache = new Map<number, Promise<string[]>>();
 let archiveStatsCache: Promise<ArchiveStats> | null = null;
 
@@ -149,6 +151,18 @@ export interface TagInfo {
 
 interface TagBucket extends TagInfo {
   photoIds: Set<string>;
+}
+
+export interface PhotographerInfo {
+  label: string;
+  count: number;
+}
+
+export interface SearchCollection {
+  title: string;
+  href: string;
+  kind: 'Fotoserie' | 'Fotoblog';
+  count: number;
 }
 
 export interface ArchiveStats {
@@ -262,6 +276,85 @@ export async function getNavTags(limit = 10): Promise<string[]> {
     navTagsCache.set(limit, cached);
   }
   return cached;
+}
+
+const PHOTOGRAPHER_JUNK = new Set(['privat']);
+
+/** Split a credit into person names. Drops empty, "Privat", and domain fragments. */
+function splitCreditNames(raw: string): string[] {
+  return raw
+    .split(/\s*(?:,|\/| og )\s*/i)
+    .map((part) => part.trim())
+    .filter((part) => part.length > 0 && !part.includes('.') && !PHOTOGRAPHER_JUNK.has(part.toLowerCase()));
+}
+
+/** Photographers by photo count. Case variants share one label (most common casing). */
+export async function getPhotographers(): Promise<PhotographerInfo[]> {
+  const load = async (): Promise<PhotographerInfo[]> => {
+    const photos = await getAllPhotos();
+    const byKey = new Map<string, { label: string; labelCounts: Map<string, number>; photoIds: Set<string> }>();
+    for (const photo of photos) {
+      const raw = photo.credit ? [...photo.photographers, photo.credit] : [...photo.photographers];
+      const seen = new Map<string, string>();
+      for (const piece of raw) {
+        for (const name of splitCreditNames(piece)) {
+          const key = name.toLocaleLowerCase('da');
+          if (!seen.has(key)) seen.set(key, name);
+        }
+      }
+      for (const [key, name] of seen) {
+        let bucket = byKey.get(key);
+        if (!bucket) {
+          bucket = { label: name, labelCounts: new Map(), photoIds: new Set() };
+          byKey.set(key, bucket);
+        }
+        bucket.labelCounts.set(name, (bucket.labelCounts.get(name) ?? 0) + 1);
+        bucket.label = preferTagLabel(
+          bucket.label,
+          name,
+          bucket.labelCounts.get(bucket.label) ?? 0,
+          bucket.labelCounts.get(name) ?? 0,
+        );
+        bucket.photoIds.add(photo.id);
+      }
+    }
+    return [...byKey.values()]
+      .map(({ label, photoIds }) => ({ label, count: photoIds.size }))
+      .sort((a, b) => b.count - a.count || a.label.localeCompare(b.label, 'da'));
+  };
+
+  if (!import.meta.env.PROD) return load();
+  photographersCache ??= load();
+  return photographersCache;
+}
+
+/** Collection and parent-fotoblog titles for search suggestions. */
+export async function getSearchCollections(): Promise<SearchCollection[]> {
+  const load = async (): Promise<SearchCollection[]> => {
+    const collections = await getCollection('photoCollections');
+    const seriesList = await getCollection('photoSeries');
+    const rows: SearchCollection[] = collections.map((collection) => ({
+      title: collection.data.title,
+      href: `/fotoserie/${collection.id}`,
+      kind: 'Fotoserie',
+      count: collection.data.images.length,
+    }));
+    for (const series of seriesList) {
+      const chapters = collections.filter((collection) => collection.data.series === series.data.id);
+      const count = chapters.reduce((sum, collection) => sum + collection.data.images.length, 0);
+      rows.push({
+        title: series.data.title,
+        href: `/fotoblog/${series.data.id}`,
+        kind: 'Fotoblog',
+        count,
+      });
+    }
+    return rows.sort((a, b) => b.count - a.count || a.title.localeCompare(b.title, 'da'));
+  };
+
+  if (!import.meta.env.PROD) return load();
+  searchCollectionsCache ??= load();
+  return searchCollectionsCache;
 }
 
 export async function getArchiveStats(): Promise<ArchiveStats> {
