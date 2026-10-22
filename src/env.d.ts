@@ -1,5 +1,7 @@
 /// <reference path="../.astro/types.d.ts" />
 /// <reference types="astro/client" />
+/// <reference types="vite-plugin-pwa/vanillajs" />
+/// <reference types="vite-plugin-pwa/info" />
 
 interface ImportMetaEnv {
   readonly PUBLIC_SANITY_PROJECT_ID?: string;

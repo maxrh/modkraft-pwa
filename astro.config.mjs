@@ -4,6 +4,7 @@ import { fileURLToPath } from 'node:url';
 import { defineConfig } from 'astro/config';
 import cloudflare from '@astrojs/cloudflare';
 import react from '@astrojs/react';
+import AstroPWA from '@vite-pwa/astro';
 import tailwindcss from '@tailwindcss/vite';
 import sanity from '@sanity/astro';
 // Local match workbench (dev): starts API on :4322 — see scripts/match/
@@ -14,7 +15,59 @@ const sanityProjectId = process.env.PUBLIC_SANITY_PROJECT_ID?.trim();
 const sanityEnabled = Boolean(sanityProjectId);
 
 /** @type {import('astro').AstroIntegration[]} */
-const integrations = [react(), matchWorkbenchIntegration(rootDir)];
+const integrations = [
+  react(),
+  matchWorkbenchIntegration(rootDir),
+  AstroPWA({
+    registerType: 'autoUpdate',
+    includeAssets: ['favicon.svg', 'icons/*.png'],
+    manifest: {
+      name: 'Modkraft Fotoarkiv',
+      short_name: 'Modkraft',
+      description:
+        'Dokumentariske fotografier fra Modkrafts fotoserier og fotoblogs 2012 - 2017',
+      lang: 'da',
+      dir: 'ltr',
+      display: 'standalone',
+      orientation: 'any',
+      start_url: '/',
+      scope: '/',
+      theme_color: '#c9505b',
+      background_color: '#c9505b',
+      icons: [
+        {
+          src: 'icons/icon-192.png',
+          sizes: '192x192',
+          type: 'image/png',
+        },
+        {
+          src: 'icons/icon-512.png',
+          sizes: '512x512',
+          type: 'image/png',
+        },
+        {
+          src: 'icons/maskable-512.png',
+          sizes: '512x512',
+          type: 'image/png',
+          purpose: 'maskable',
+        },
+      ],
+    },
+    workbox: {
+      globDirectory: 'dist',
+      // Installable shell only — never precache the photo archive or HTML corpus.
+      globPatterns: ['favicon.svg', 'icons/**/*.{png,svg}', '**/*.{js,css}'],
+      globIgnores: ['**/media/**', '**/_worker.js', '**/_worker.js/**'],
+      navigateFallback: null,
+    },
+    experimental: {
+      directoryAndTrailingSlashHandler: true,
+    },
+    devOptions: {
+      enabled: false,
+    },
+  }),
+];
 
 if (sanityEnabled) {
   integrations.push(
