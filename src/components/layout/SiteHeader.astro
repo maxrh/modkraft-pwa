@@ -25,17 +25,42 @@ const collectionsJson = JSON.stringify(collections).replace(/</g, '\\u003c');
   class="sticky top-0 z-50 bg-white"
   transition:persist="site-header"
 >
-  <div class="flex flex-col gap-3 px-4 py-4 sm:flex-row sm:items-center sm:gap-8 sm:px-6">
+  <div class="flex flex-wrap items-center gap-y-3 px-4 py-4 sm:flex-nowrap sm:px-6">
+    <a
+      href="/"
+      class="order-1 shrink-0 no-underline hover:opacity-80 focus-visible:ring-2 focus-visible:ring-ring focus-visible:outline-none"
+      aria-label="Modkraft Fotoarkiv"
+    >
+      <img
+        src="/logos/modkraft_m.svg"
+        alt=""
+        width="425"
+        height="425"
+        class="size-10 rounded-md"
+        decoding="async"
+      />
+    </a>
+
+    <div
+      class="order-2 mx-3 hidden h-10 w-px shrink-0 bg-border sm:block"
+      aria-hidden="true"
+    >
+    </div>
+
+    <div class="order-2 ml-auto shrink-0 sm:order-5 sm:ml-0">
+      <SiteNavMenu client:load />
+    </div>
+
     <form
       action="/soeg"
       method="get"
-      class="relative order-2 w-full sm:order-1 sm:min-w-0 sm:flex-1"
+      class="relative order-3 w-full sm:min-w-0 sm:flex-1"
       role="search"
       data-search-root
     >
       <label class="sr-only" for="site-search">Søg fotos</label>
       <div
-        class="flex h-12 items-center gap-3 rounded-lg bg-muted/80 px-4 focus-within:bg-muted"
+        class="flex h-10 items-center gap-3 rounded-md bg-input px-3 focus-within:bg-input"
       >
         <svg
           class="size-5 shrink-0 text-muted-foreground"
@@ -109,14 +134,10 @@ const collectionsJson = JSON.stringify(collections).replace(/</g, '\\u003c');
       <script type="application/json" data-search-collections set:html={collectionsJson} />
     </form>
 
-    <div class="order-1 flex w-full items-center justify-between sm:order-2 sm:w-auto sm:justify-start sm:gap-3">
-      <a
-        href="/"
-        class="font-display shrink-0 text-lg !font-extrabold tracking-tight text-foreground no-underline hover:opacity-80 sm:text-xl"
-      >
-        Modkraft
-      </a>
-      <SiteNavMenu client:load />
+    <div
+      class="order-4 mx-3 hidden h-10 w-px shrink-0 bg-border sm:block"
+      aria-hidden="true"
+    >
     </div>
   </div>
 

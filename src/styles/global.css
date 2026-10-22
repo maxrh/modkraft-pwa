@@ -61,8 +61,8 @@
   --accent: oklch(0.97 0 0);
   --accent-foreground: oklch(0.22 0 0);
   --destructive: oklch(0.55 0.2 25);
-  --border: var(--accent);
-  --input: oklch(0.88 0.01 90);
+  --border: var(--muted);
+  --input: var(--muted);
   --ring: var(--brand);
 }
 
