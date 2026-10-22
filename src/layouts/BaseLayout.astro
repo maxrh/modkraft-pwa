@@ -4,6 +4,7 @@ import '@/styles/global.css';
 import Head from '@/components/layout/Head.astro';
 import SiteHeader from '@/components/layout/SiteHeader.astro';
 import SiteFooter from '@/components/layout/SiteFooter.astro';
+import { SITE_DESCRIPTION, SITE_TITLE } from '@/lib/site';
 
 interface Props {
   title?: string;
@@ -19,8 +20,8 @@ interface Props {
 }
 
 const {
-  title = 'Modkraft Fotoarkiv',
-  description = 'Fotoarkiv fra Modkraft — dokumentariske fotoserier og fotoblogs.',
+  title = SITE_TITLE,
+  description = SITE_DESCRIPTION,
   activeTag = null,
   searchQuery = '',
   canonical,
@@ -63,7 +64,7 @@ const {
       </button>
       <div
         data-photo-modal-panel
-        class="mx-auto w-full max-w-[1600px] cursor-auto overflow-hidden bg-background sm:rounded-lg"
+        class="mx-auto w-full max-w-[var(--modal-panel-max)] cursor-auto overflow-hidden bg-background sm:rounded-lg"
       >
         <div data-photo-modal-body></div>
       </div>

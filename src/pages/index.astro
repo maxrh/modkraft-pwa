@@ -4,17 +4,17 @@ import Container from '@/components/layout/Container.astro';
 import ContentHeader from '@/components/layout/ContentHeader.astro';
 import PhotoMosaic from '@/components/PhotoMosaic.astro';
 import { getAllPhotos, getArchiveStats } from '@/lib/photos';
+import { SITE_DESCRIPTION, SITE_TITLE } from '@/lib/site';
 
 const photos = await getAllPhotos();
 const { collectionCount } = await getArchiveStats();
-const description = 'Dokumentariske fotografier fra Modkrafts fotoserier og fotoblogs 2012 - 2017';
 ---
 
-<BaseLayout title="Modkraft Fotoarkiv" description={description}>
-  <Container size="stage" class="pt-8 pb-16">
+<BaseLayout title={SITE_TITLE}>
+  <Container class="pt-8 pb-16">
     <ContentHeader
-      title="Modkraft Fotoarkiv"
-      description={description}
+      title={SITE_TITLE}
+      description={SITE_DESCRIPTION}
       count={photos.length}
       seriesCount={collectionCount}
     />
