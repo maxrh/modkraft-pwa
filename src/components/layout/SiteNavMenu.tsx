@@ -6,16 +6,11 @@ import {
   DropdownMenuItem,
   DropdownMenuTrigger,
 } from '@/components/ui/dropdown-menu';
-
-const LINKS = [
-  { href: '/om', label: 'Om' },
-  { href: '/kontakt', label: 'Kontakt' },
-  { href: '/privatlivspolitik', label: 'Privatlivspolitik' },
-] as const;
+import { SITE_LINKS } from '@/lib/site';
 
 export default function SiteNavMenu() {
   return (
-    <DropdownMenu>
+    <DropdownMenu modal={false}>
       <DropdownMenuTrigger asChild>
         <Button
           type="button"
@@ -32,7 +27,7 @@ export default function SiteNavMenu() {
         sideOffset={14}
         className="min-w-48 rounded-lg border-border bg-white p-0 py-1 text-foreground shadow-md"
       >
-        {LINKS.map((link) => (
+        {SITE_LINKS.map((link) => (
           <DropdownMenuItem
             key={link.href}
             asChild

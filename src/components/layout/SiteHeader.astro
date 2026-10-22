@@ -547,6 +547,8 @@ const collectionsJson = JSON.stringify(collections).replace(/</g, '\\u003c');
     document.addEventListener('astro:after-swap', function () {
       clearScrollWait();
       if (scrollToTop) {
+        // Forward nav: clear leftover pending or main stays visibility:hidden.
+        document.documentElement.removeAttribute('data-scroll-pending');
         jumpTop();
         var mosaics = document.querySelectorAll('[data-mosaic-root]');
         for (var i = 0; i < mosaics.length; i++) {
@@ -555,6 +557,8 @@ const collectionsJson = JSON.stringify(collections).replace(/</g, '\\u003c');
       } else if (document.querySelector('[data-mosaic-root]')) {
         document.documentElement.setAttribute('data-scroll-pending', '');
         startScrollRestoreWait();
+      } else {
+        document.documentElement.removeAttribute('data-scroll-pending');
       }
       syncHeader();
       bindSearch();
