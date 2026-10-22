@@ -1,40 +1,124 @@
 ---
-import { getCollection } from 'astro:content';
-import { getArchiveStats } from '@/lib/photos';
+import { ArrowRight } from 'lucide-react';
+import {
+  MODKRAFT_ARCHIVE,
+  MONSUN,
+  SITE_DESCRIPTION,
+  SITE_LINKS,
+  SITE_TITLE,
+} from '@/lib/site';
+import MonsunAd from '@/components/MonsunAd.astro';
 import Container from './Container.astro';
 
-const stats = await getArchiveStats();
-const series = await getCollection('photoSeries');
-const photoCount = stats.photoCount.toLocaleString('da-DK');
-const collectionCount = stats.collectionCount.toLocaleString('da-DK');
+const year = new Date().getFullYear();
 ---
 
-<footer class="mt-16 border-t border-border/70" transition:animate="none">
-  <Container class="py-8 text-sm text-muted-foreground">
-    <p>
-      Modkraft Fotoarkiv — {photoCount} dokumentariske fotografier fra {collectionCount} fotoserier og
-      fotoblogs (2012–2017).
-    </p>
-    <nav class="mt-3 flex flex-wrap gap-x-4 gap-y-1" aria-label="Arkivnavigation">
-      <a href="/" class="text-foreground underline-offset-2 hover:underline">Alle fotos</a>
-      <a href="/?view=collections" class="text-foreground underline-offset-2 hover:underline">Fotoserier</a>
-      {
-        series.map((s) => (
-          <a
-            href={`/fotoblog/${s.data.id}`}
-            class="text-foreground underline-offset-2 hover:underline"
-          >
-            Fotoblog: {s.data.title}
-          </a>
-        ))
-      }
-      {
-        import.meta.env.DEV && (
-          <a href="/match" class="text-foreground underline-offset-2 hover:underline">
-            Match (local)
-          </a>
-        )
-      }
-    </nav>
+<footer class="mt-32" transition:animate="none">
+  <Container class="pb-16 text-sm text-muted-foreground">
+    <div class="border-t border-border pt-32 pb-32">
+      <div class="grid items-center gap-10 lg:grid-cols-3 lg:gap-24">
+        <div class="divide-y divide-border lg:col-span-1">
+          <div class="space-y-6 py-4 first:pt-0">
+            <a
+              href="/"
+              class="font-display block text-4xl leading-13 font-extrabold text-foreground no-underline hover:opacity-80 sm:text-6xl"
+            >
+              {SITE_TITLE}
+            </a>
+            <p class="text-lg leading-normal">{SITE_DESCRIPTION}</p>
+          </div>
+          <div class="divide-y divide-border">
+            <p class="py-4 text-base">
+              Site udviklet og drevet af{' '}
+              <a
+                href={MONSUN.url}
+                class="font-display font-extrabold uppercase text-foreground no-underline hover:opacity-80 focus-visible:ring-2 focus-visible:ring-ring focus-visible:outline-none"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                Monsun
+              </a>
+            </p>
+            <p class="py-4 text-base">
+              <a
+                href={`mailto:${MONSUN.email}`}
+                class="text-foreground no-underline hover:underline"
+              >
+                {MONSUN.email}
+              </a>
+              <span class="mx-1.5 text-border" aria-hidden="true">/</span>
+              <a
+                href={MONSUN.phoneHref}
+                class="text-foreground no-underline hover:underline"
+              >
+                {MONSUN.phone}
+              </a>
+            </p>
+          </div>
+          <div class="space-y-4 py-4">
+            <p class="leading-normal">{MODKRAFT_ARCHIVE.blurb}</p>
+            <a
+              href={MODKRAFT_ARCHIVE.url}
+              class="inline-flex mt-4 items-center gap-2 no-underline focus-visible:ring-2 focus-visible:ring-ring focus-visible:outline-none"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              <img
+                src="/logos/modkraft.svg"
+                alt={MODKRAFT_ARCHIVE.name}
+                width="321"
+                height="83"
+                class="h-9 w-auto rounded-sm"
+                loading="lazy"
+                decoding="async"
+              />
+            </a>
+          </div>
+        </div>
+
+        <div class="lg:col-span-2">
+          <MonsunAd />
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="flex flex-col gap-3 border-t border-border pt-6 text-xs leading-relaxed sm:flex-row sm:items-end sm:justify-between sm:gap-6"
+    >
+      <p>
+        © {year} {MONSUN.name}
+      </p>
+      <nav
+        aria-label="Side"
+        class="flex shrink-0 flex-wrap gap-x-4 gap-y-1 sm:justify-end"
+      >
+        {
+          SITE_LINKS.map((link) => (
+            <a
+              href={link.href}
+              class="text-muted-foreground no-underline underline-offset-2 hover:text-foreground hover:underline"
+            >
+              {link.label}
+            </a>
+          ))
+        }
+        <a
+          href="/privatlivspolitik"
+          class="text-muted-foreground no-underline underline-offset-2 hover:text-foreground hover:underline"
+        >
+          Privatlivspolitik
+        </a>
+        {
+          import.meta.env.DEV && (
+            <a
+              href="/match"
+              class="text-muted-foreground no-underline underline-offset-2 hover:text-foreground hover:underline"
+            >
+              Match (local)
+            </a>
+          )
+        }
+      </nav>
+    </div>
   </Container>
 </footer>

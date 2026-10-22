@@ -120,10 +120,16 @@ const {
           document.body.style.overflow = 'hidden';
         }
 
-        function unlockScroll() {
+        function clearScrollLock() {
           document.documentElement.removeAttribute('data-photo-modal-lock');
+          document.documentElement.removeAttribute('data-photo-modal-open');
+          document.body.removeAttribute('data-scroll-locked');
           document.body.style.paddingRight = '';
           document.body.style.overflow = '';
+        }
+
+        function unlockScroll() {
+          clearScrollLock();
           window.scrollTo(0, mk.photoModalScroll || 0);
         }
 
@@ -201,12 +207,15 @@ const {
 
         function hideModal() {
           var dialog = modalDialog();
-          if (!dialog || !dialog.open) return;
+          if (!dialog || !dialog.open) {
+            clearScrollLock();
+            return;
+          }
           requestId++;
           var body = dialog.querySelector('[data-photo-modal-body]');
           if (body) body.replaceChildren();
+          dialog.scrollTop = 0;
           dialog.close();
-          document.documentElement.removeAttribute('data-photo-modal-open');
           if (mk.photoModalTitle) document.title = mk.photoModalTitle;
           mk.photoModalDepth = 0;
           mk.photoModalStack = [];
@@ -287,11 +296,12 @@ const {
               while (main.firstChild) body.appendChild(document.adoptNode(main.firstChild));
               var title = parsed.querySelector('title');
               if (title && title.textContent) document.title = title.textContent;
-              dialog.scrollTop = 0;
               if (opening && !dialog.open) {
                 dialog.showModal();
                 lockScroll();
               }
+              // Reset after showModal — closed dialogs often ignore scrollTop.
+              dialog.scrollTop = 0;
               syncModalScrollbar();
               revealSlides(body);
               wireLightbox(body);
@@ -393,9 +403,11 @@ const {
         );
 
         document.addEventListener('astro:before-preparation', function () {
-          if (!isOpen()) return;
           hideModal();
         });
+
+        // Body lock attrs persist across ClientRouter swaps.
+        document.addEventListener('astro:after-swap', clearScrollLock);
 
         // Full load of the photo URL (Enter in the address bar) should start at the top.
         // Don't move the grid while the modal is open.
