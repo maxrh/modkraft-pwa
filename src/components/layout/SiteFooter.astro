@@ -18,7 +18,7 @@ const year = new Date().getFullYear();
     <div class="border-t border-border pt-32 pb-32">
       <div class="grid items-center gap-10 lg:grid-cols-3 lg:gap-24">
         <div class="divide-y divide-border lg:col-span-1">
-          <div class="space-y-6 py-4 first:pt-0">
+          <div class="space-y-4 py-4 first:pt-0">
             <a
               href="/"
               class="font-display block text-4xl leading-13 font-extrabold text-foreground no-underline hover:opacity-80 sm:text-6xl"
@@ -28,7 +28,7 @@ const year = new Date().getFullYear();
             <p class="text-lg leading-normal">{SITE_DESCRIPTION}</p>
           </div>
           <div class="divide-y divide-border">
-            <p class="py-4 text-base">
+            <p class="py-4 text-sm">
               Site udviklet og drevet af{' '}
               <a
                 href={MONSUN.url}
@@ -39,17 +39,17 @@ const year = new Date().getFullYear();
                 Monsun
               </a>
             </p>
-            <p class="py-4 text-base">
+            <p class="py-4 text-sm">
               <a
                 href={`mailto:${MONSUN.email}`}
-                class="text-foreground no-underline hover:underline"
+                class="no-underline hover:underline"
               >
                 {MONSUN.email}
               </a>
               <span class="mx-1.5 text-border" aria-hidden="true">/</span>
               <a
                 href={MONSUN.phoneHref}
-                class="text-foreground no-underline hover:underline"
+                class="no-underline hover:underline"
               >
                 {MONSUN.phone}
               </a>
