@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import { Images, LayoutGrid } from 'lucide-react';
+import { Image, Images } from 'lucide-react';
 import { buttonVariants } from '@/components/ui/button';
 import { cn } from '@/lib/utils';
 
@@ -41,9 +41,9 @@ export function writeView(view: MosaicView, persist = true) {
   window.dispatchEvent(new CustomEvent('mosaic:view', { detail: view }));
 }
 
-const VIEWS: { id: MosaicView; label: string; Icon: typeof Images }[] = [
-  { id: 'photos', label: 'Fotos', Icon: Images },
-  { id: 'collections', label: 'Fotoserier', Icon: LayoutGrid },
+const VIEWS: { id: MosaicView; label: string; Icon: typeof Image }[] = [
+  { id: 'photos', label: 'Fotos', Icon: Image },
+  { id: 'collections', label: 'Fotoserier', Icon: Images },
 ];
 
 interface Props {

@@ -132,9 +132,13 @@ if (cameraModel) {
         parentTitle={photo.collectionTitle}
         index={photo.sortOrder}
         total={photo.imageCount}
-        prevHref={prevPhoto?.href}
+        prevHref={prevPhoto?.href ?? `/fotoserie/${photo.collectionId}`}
         nextHref={nextPhoto?.href}
-        prevTitle={`Forrige foto i ${kind === 'fotoblog' ? 'fotobloggen' : 'fotoserien'}`}
+        prevTitle={
+          prevPhoto
+            ? `Forrige foto i ${kind === 'fotoblog' ? 'fotobloggen' : 'fotoserien'}`
+            : `Tilbage til ${kind === 'fotoblog' ? 'fotobloggen' : 'fotoserien'}`
+        }
         nextTitle={`Næste foto i ${kind === 'fotoblog' ? 'fotobloggen' : 'fotoserien'}`}
       />
 

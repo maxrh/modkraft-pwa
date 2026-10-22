@@ -4,9 +4,11 @@ import { buttonVariants } from '@/components/ui/button';
 import { cn } from '@/lib/utils';
 
 interface Props {
-  label: string;
-  parentHref: string;
-  parentTitle: string;
+  /** When set with parentTitle, shows the left-side parent chrome. */
+  label?: string;
+  parentTitle?: string;
+  /** When omitted, the parent title is plain text (no link). */
+  parentHref?: string | null;
   index: number;
   total: number;
   prevHref?: string | null;
@@ -19,8 +21,8 @@ interface Props {
 
 const {
   label,
-  parentHref,
   parentTitle,
+  parentHref = null,
   index,
   total,
   prevHref = null,
@@ -30,22 +32,36 @@ const {
   ariaLabel = 'Serie',
   class: className,
 } = Astro.props;
+
+const showParent = Boolean(parentTitle);
 ---
 
 <nav
   aria-label={ariaLabel}
-  class:list={['mb-4 flex shrink-0 flex-wrap items-center justify-between gap-4', className]}
+  class:list={[
+    'mb-4 flex shrink-0 flex-wrap items-center gap-4',
+    showParent ? 'justify-between' : 'justify-end',
+    className,
+  ]}
 >
-  <div class="flex flex-wrap items-center gap-1 text-base">
-    {label}:
-    <a
-      href={parentHref}
-      class="inline-flex items-center gap-1 font-semibold text-foreground leading-tight no-underline hover:underline"
-    >
-      {parentTitle}
-      <ArrowRight className="size-3.5 shrink-0" aria-hidden="true" />
-    </a>
-  </div>
+  {
+    showParent && (
+      <div class="flex flex-wrap items-center gap-1 text-base">
+        {label ? <>{label}:</> : null}
+        {parentHref ? (
+          <a
+            href={parentHref}
+            class="inline-flex items-center gap-1 font-semibold text-foreground leading-tight no-underline hover:underline"
+          >
+            {parentTitle}
+            <ArrowRight className="size-3.5 shrink-0" aria-hidden="true" />
+          </a>
+        ) : (
+          <span class="font-semibold text-foreground leading-tight">{parentTitle}</span>
+        )}
+      </div>
+    )
+  }
 
   <div class="flex items-center gap-1">
     <span

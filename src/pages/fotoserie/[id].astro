@@ -12,6 +12,7 @@ import { renderMarkdown } from '@/lib/markdown';
 import {
   byline,
   collectionCardData,
+  collectionKind,
   collectionKindLabel,
   flattenCollectionPhotos,
   formatDate,
@@ -36,6 +37,8 @@ const data = collection.data;
 const photos = flattenCollectionPhotos(collection);
 const manchetHtml = renderMarkdown(data.manchet);
 const introHtml = renderMarkdown(data.introMarkdown);
+const kind = collectionKind(data.sourceType);
+const kindLabel = collectionKindLabel(data.sourceType);
 
 const meta = [
   data.authors.length ? byline(data.authors) : null,
@@ -53,13 +56,6 @@ const seriesChapters = seriesId
       .sort(sortCollectionsOldest)
   : [];
 
-const chapterIndex = seriesChapters.findIndex((c) => c.data.id === data.id);
-const prevChapter = chapterIndex > 0 ? seriesChapters[chapterIndex - 1] : null;
-const nextChapter =
-  chapterIndex >= 0 && chapterIndex < seriesChapters.length - 1
-    ? seriesChapters[chapterIndex + 1]
-    : null;
-
 const siblingCards: CollectionCardData[] = seriesChapters
   .filter((c) => c.data.id !== data.id)
   .map((c) => collectionCardData(c))
@@ -69,45 +65,31 @@ const seriesEntry = seriesId
   ? (await getCollection('photoSeries')).find((s) => s.data.id === seriesId)
   : null;
 
-const showSeriesNav = Boolean(seriesEntry && seriesChapters.length > 0 && chapterIndex >= 0);
+const firstPhoto = photos[0] ?? null;
+const slideScope = kind === 'fotoblog' ? 'fotobloggen' : 'fotoserien';
 ---
 
 <BaseLayout
   title={data.title}
-  description={data.manchet?.slice(0, 160) || `${collectionKindLabel(data.sourceType)}: ${data.title}`}
+  description={data.manchet?.slice(0, 160) || `${kindLabel}: ${data.title}`}
 >
   <article>
-    {
-      showSeriesNav && seriesEntry ? (
-        <>
-          <Container size="full" class="pt-4 sm:pt-6">
-            <SeriesNav
-              ariaLabel="Fotoserie"
-              label="Fotoblog"
-              parentHref={`/fotoblog/${seriesEntry.data.id}`}
-              parentTitle={seriesEntry.data.title}
-              index={chapterIndex + 1}
-              total={seriesChapters.length}
-              prevHref={prevChapter ? `/fotoserie/${prevChapter.data.id}` : null}
-              nextHref={nextChapter ? `/fotoserie/${nextChapter.data.id}` : null}
-              prevTitle="Forrige fotoserie i fotobloggen"
-              nextTitle="Næste fotoserie i fotobloggen"
-            />
-          </Container>
-          <Container>
-            <ContentHero title={data.title} kicker="Fotoserie" meta={meta || null}>
-              {data.tags.length > 0 && <TagPills tags={data.tags} class="mt-6 justify-center" />}
-            </ContentHero>
-          </Container>
-        </>
-      ) : (
-        <Container class="pt-8">
-          <ContentHero title={data.title} kicker="Fotoserie" meta={meta || null}>
-            {data.tags.length > 0 && <TagPills tags={data.tags} class="mt-6 justify-center" />}
-          </ContentHero>
-        </Container>
-      )
-    }
+    <Container size="full" class="pt-4 sm:pt-6">
+      <SeriesNav
+        ariaLabel="Fotoserie"
+        index={0}
+        total={photos.length}
+        prevHref={null}
+        nextHref={firstPhoto?.href ?? null}
+        nextTitle={`Næste foto i ${slideScope}`}
+      />
+    </Container>
+
+    <Container>
+      <ContentHero title={data.title} kicker="Fotoserie" meta={meta || null}>
+        {data.tags.length > 0 && <TagPills tags={data.tags} class="mt-6 justify-center" />}
+      </ContentHero>
+    </Container>
 
     {
       hasProse && (

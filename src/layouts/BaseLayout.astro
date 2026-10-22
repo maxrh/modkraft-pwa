@@ -209,6 +209,7 @@ const {
           document.documentElement.removeAttribute('data-photo-modal-open');
           if (mk.photoModalTitle) document.title = mk.photoModalTitle;
           mk.photoModalDepth = 0;
+          mk.photoModalStack = [];
           mk.photoModalClosing = false;
           unlockScroll();
         }
@@ -228,6 +229,7 @@ const {
             mk.photoModalTitle = document.title;
             mk.photoModalScroll = window.scrollY || 0;
             mk.photoModalDepth = 0;
+            mk.photoModalStack = [];
             mk.photoModalClosing = false;
           }
 
@@ -239,17 +241,27 @@ const {
               scrollX: 0,
               scrollY: 0,
             });
+            var stack = mk.photoModalStack || [];
             var replace = false;
             if (dialog.open) {
               var fromKind = modalKind(location.href);
               var toKind = modalKind(href);
               replace = Boolean(fromKind && toKind && fromKind === toKind);
             }
-            if (replace) history.replaceState(state, '', href);
-            else {
+            if (replace) {
+              history.replaceState(state, '', href);
+              if (stack.length) stack[stack.length - 1] = href;
+              else stack.push(href);
+            } else if (stack.length >= 2 && stack[stack.length - 2] === href) {
+              // Prev/next back to the previous modal entry — pop history instead of stacking.
+              history.back();
+              return;
+            } else {
               history.pushState(state, '', href);
-              mk.photoModalDepth = (mk.photoModalDepth || 0) + 1;
+              stack.push(href);
+              mk.photoModalDepth = stack.length;
             }
+            mk.photoModalStack = stack;
           }
 
           document.documentElement.setAttribute('data-photo-modal-open', '');
@@ -368,7 +380,10 @@ const {
             }
             var href = modalHref(location.href);
             if (href) {
-              if (mk.photoModalDepth > 0) mk.photoModalDepth -= 1;
+              var stack = mk.photoModalStack || [];
+              if (stack.length) stack.pop();
+              mk.photoModalStack = stack;
+              mk.photoModalDepth = stack.length;
               loadModalContent(href, { writeHistory: false });
               return;
             }
