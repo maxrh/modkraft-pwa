@@ -83,7 +83,7 @@ export default function ViewMenu({ defaultView = 'photos', persist = true }: Pro
             className={cn(
               buttonVariants({ variant: 'ghost', size: 'icon' }),
               'shadow-none',
-              selected && 'bg-accent hover:bg-muted',
+              selected && 'bg-muted hover:bg-accent',
             )}
             onClick={() => choose(id)}
           >

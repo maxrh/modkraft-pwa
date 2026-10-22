@@ -17,7 +17,7 @@ export default function SiteNavMenu() {
           variant="ghost"
           size="icon"
           aria-label="Menu"
-          className="shadow-none data-[state=open]:bg-accent [&_svg]:size-5"
+          className="h-10 w-10 shrink-0 bg-muted shadow-none hover:bg-accent data-[state=open]:bg-muted [&_svg]:size-5"
         >
           <Menu aria-hidden="true" />
         </Button>
