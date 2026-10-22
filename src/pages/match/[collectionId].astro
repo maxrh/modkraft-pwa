@@ -21,7 +21,7 @@ const { collectionId } = Astro.params;
   title={`Match · ${collectionId}`}
   description="Local-only fotobase matching workbench"
 >
-  <Container size="stage" class="pt-6 pb-16">
+  <Container class="pt-6 pb-16">
     <MatchWorkbench client:load collectionId={collectionId!} />
   </Container>
 </BaseLayout>

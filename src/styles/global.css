@@ -41,6 +41,8 @@
 
 :root {
   --site-header-h: 8rem;
+  --content-max: 1400px;
+  --modal-panel-max: 1600px;
   --radius: 0.5rem;
   --background: #fff;
   --foreground: oklch(0.22 0.02 55);
@@ -145,6 +147,4 @@ html[data-scroll-pending] main {
     left: 0.75rem;
   }
 }
-
-/* rebuild nudge */
 
