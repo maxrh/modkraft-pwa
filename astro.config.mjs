@@ -31,6 +31,9 @@ if (sanityEnabled) {
 export default defineConfig({
   ...(process.env.PUBLIC_SITE ? { site: process.env.PUBLIC_SITE } : {}),
   output: 'static',
+  redirects: {
+    '/fotoserie': '/?view=collections',
+  },
   prefetch: {
     prefetchAll: true,
     // hover never fires on touch; tap covers mobile tag-nav clicks

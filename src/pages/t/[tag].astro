@@ -1,9 +1,16 @@
 ---
+import { getCollection } from 'astro:content';
 import BaseLayout from '@/layouts/BaseLayout.astro';
 import Container from '@/components/layout/Container.astro';
 import ContentHeader from '@/components/layout/ContentHeader.astro';
-import PhotoMosaic from '@/components/PhotoMosaic.astro';
-import { getAllPhotos, preferTagLabel, slugifyTag, type Photo } from '@/lib/photos';
+import ArchiveMosaics from '@/components/layout/ArchiveMosaics.astro';
+import {
+  collectionCardsFromPhotos,
+  getAllPhotos,
+  preferTagLabel,
+  slugifyTag,
+  type Photo,
+} from '@/lib/photos';
 
 export async function getStaticPaths() {
   const photos = await getAllPhotos();
@@ -54,7 +61,9 @@ interface Props {
 }
 
 const { tag, photos } = Astro.props;
-const seriesCount = new Set(photos.map((photo) => photo.collectionId)).size;
+const allCollections = await getCollection('photoCollections');
+const collectionCards = collectionCardsFromPhotos(photos, allCollections);
+const seriesCount = collectionCards.length;
 ---
 
 <BaseLayout
@@ -63,7 +72,7 @@ const seriesCount = new Set(photos.map((photo) => photo.collectionId)).size;
   activeTag={tag}
 >
   <Container class="pt-8 pb-16">
-    <ContentHeader title={tag} count={photos.length} seriesCount={seriesCount} />
-    <PhotoMosaic photos={photos} sortable />
+    <ContentHeader title={tag} count={photos.length} seriesCount={seriesCount} showView />
+    <ArchiveMosaics photos={photos} collections={collectionCards} />
   </Container>
 </BaseLayout>

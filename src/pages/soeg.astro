@@ -1,16 +1,20 @@
 ---
+import { getCollection } from 'astro:content';
 import BaseLayout from '@/layouts/BaseLayout.astro';
 import Container from '@/components/layout/Container.astro';
 import ContentHeader from '@/components/layout/ContentHeader.astro';
+import ArchiveMosaics from '@/components/layout/ArchiveMosaics.astro';
 import PhotoMosaic from '@/components/PhotoMosaic.astro';
-import { getAllPhotos, photoMatchesQuery } from '@/lib/photos';
+import { collectionCardsFromPhotos, getAllPhotos, photoMatchesQuery } from '@/lib/photos';
 
 export const prerender = false;
 
 const q = Astro.url.searchParams.get('q')?.trim() ?? '';
 const all = await getAllPhotos();
 const photos = q ? all.filter((photo) => photoMatchesQuery(photo, q)) : all;
-const seriesCount = new Set(photos.map((photo) => photo.collectionId)).size;
+const allCollections = q ? await getCollection('photoCollections') : [];
+const collectionCards = q ? collectionCardsFromPhotos(photos, allCollections) : [];
+const seriesCount = collectionCards.length;
 ---
 
 <BaseLayout
@@ -21,12 +25,16 @@ const seriesCount = new Set(photos.map((photo) => photo.collectionId)).size;
   <Container class="pt-8 pb-16">
     {
       q && (
-        <ContentHeader title={q} count={photos.length} seriesCount={seriesCount} />
+        <ContentHeader title={q} count={photos.length} seriesCount={seriesCount} showView />
       )
     }
     {
       photos.length > 0 ? (
-        <PhotoMosaic photos={photos} sortable={Boolean(q)} />
+        q ? (
+          <ArchiveMosaics photos={photos} collections={collectionCards} />
+        ) : (
+          <PhotoMosaic photos={photos} />
+        )
       ) : (
         <p class="py-16 text-center text-muted-foreground">Ingen fotos matchede din søgning.</p>
       )

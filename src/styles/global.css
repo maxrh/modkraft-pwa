@@ -42,6 +42,7 @@
 :root {
   --site-header-h: 8rem;
   --content-max: 1400px;
+  --prose-max: 680px;
   --modal-panel-max: 1600px;
   --radius: 0.5rem;
   --background: #fff;

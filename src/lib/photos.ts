@@ -105,6 +105,70 @@ export function collectionCoverUrl(collection: PhotoCollection): string | null {
   return imageUrl(collection.data.id, cover.filename);
 }
 
+/** Compact card payload for mosaic tiles linking to a fotoserie. */
+export interface CollectionCardData {
+  id: string;
+  href: string;
+  thumb: string;
+  width: number;
+  height: number;
+  title: string;
+  badge: string;
+  meta: string;
+  publishedAt: string;
+  alt: string;
+}
+
+export function collectionCardData(collection: PhotoCollection): CollectionCardData | null {
+  const d = collection.data;
+  const coverId = d.coverImage;
+  const cover = d.images.find((img) => img.id === coverId) ?? d.images[0];
+  if (!cover) return null;
+
+  const imageCount = d.images.length;
+  const fotoWord = imageCount === 1 ? 'foto' : 'fotos';
+  const credit =
+    d.photographers.length > 0
+      ? d.photographers.join(', ')
+      : d.authors.length > 0
+        ? byline(d.authors)
+        : '';
+  const date = formatDate(d.publishedAt);
+  const meta = [date, credit].filter(Boolean).join(' · ');
+
+  return {
+    id: d.id,
+    href: `/fotoserie/${d.id}`,
+    thumb: thumbUrl(d.id, cover.filename),
+    width: cover.width ?? 940,
+    height: cover.height ?? 627,
+    title: d.title,
+    badge: `${imageCount} ${fotoWord}`,
+    meta,
+    publishedAt: d.publishedAt,
+    alt: d.title,
+  };
+}
+
+/** Unique series from a photo set, preserving first-seen order. */
+export function collectionCardsFromPhotos(
+  photos: Photo[],
+  collections: PhotoCollection[],
+): CollectionCardData[] {
+  const byId = new Map(collections.map((c) => [c.data.id, c]));
+  const seen = new Set<string>();
+  const out: CollectionCardData[] = [];
+  for (const photo of photos) {
+    if (seen.has(photo.collectionId)) continue;
+    seen.add(photo.collectionId);
+    const collection = byId.get(photo.collectionId);
+    if (!collection) continue;
+    const card = collectionCardData(collection);
+    if (card) out.push(card);
+  }
+  return out;
+}
+
 export function flattenCollectionPhotos(collection: PhotoCollection): Photo[] {
   const d = collection.data;
   const sortedImages = [...d.images].sort((a, b) => a.sortOrder - b.sortOrder);
@@ -458,19 +522,22 @@ export function sortCollectionsOldest(a: PhotoCollection, b: PhotoCollection) {
   return +new Date(a.data.publishedAt) - +new Date(b.data.publishedAt);
 }
 
-/** Pack photos into N columns (shortest-column-first) for masonry layout. */
-export function packIntoColumns(photos: Photo[], columnCount: number): Photo[][] {
+/** Pack items into N columns (shortest-column-first) for masonry layout. */
+export function packIntoColumns<T extends { width: number; height: number }>(
+  items: T[],
+  columnCount: number,
+): T[][] {
   const n = Math.max(1, columnCount);
-  const columns: Photo[][] = Array.from({ length: n }, () => []);
+  const columns: T[][] = Array.from({ length: n }, () => []);
   const heights = Array.from({ length: n }, () => 0);
 
-  for (const photo of photos) {
+  for (const item of items) {
     let shortest = 0;
     for (let k = 1; k < n; k++) {
       if (heights[k] < heights[shortest]) shortest = k;
     }
-    columns[shortest].push(photo);
-    heights[shortest] += photo.height / photo.width;
+    columns[shortest].push(item);
+    heights[shortest] += item.height / item.width;
   }
 
   return columns;

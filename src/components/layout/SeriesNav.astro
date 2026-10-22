@@ -1,0 +1,110 @@
+---
+import { ArrowLeft, ArrowRight } from 'lucide-react';
+import { buttonVariants } from '@/components/ui/button';
+import { cn } from '@/lib/utils';
+
+interface Props {
+  label: string;
+  parentHref: string;
+  parentTitle: string;
+  index: number;
+  total: number;
+  prevHref?: string | null;
+  nextHref?: string | null;
+  prevTitle?: string;
+  nextTitle?: string;
+  ariaLabel?: string;
+  class?: string;
+}
+
+const {
+  label,
+  parentHref,
+  parentTitle,
+  index,
+  total,
+  prevHref = null,
+  nextHref = null,
+  prevTitle = 'Forrige',
+  nextTitle = 'Næste',
+  ariaLabel = 'Serie',
+  class: className,
+} = Astro.props;
+---
+
+<nav
+  aria-label={ariaLabel}
+  class:list={['mb-4 flex shrink-0 flex-wrap items-center justify-between gap-4', className]}
+>
+  <div class="flex flex-wrap items-center gap-1 text-base">
+    {label}:
+    <a
+      href={parentHref}
+      class="inline-flex items-center gap-1 font-semibold text-foreground leading-tight no-underline hover:underline"
+    >
+      {parentTitle}
+      <ArrowRight className="size-3.5 shrink-0" aria-hidden="true" />
+    </a>
+  </div>
+
+  <div class="flex items-center gap-1">
+    <span
+      class={cn(
+        buttonVariants({ variant: 'ghost', size: 'sm' }),
+        'pointer-events-none text-muted-foreground tabular-nums hover:bg-muted',
+      )}
+    >
+      {index} / {total}
+    </span>
+    {
+      prevHref ? (
+        <a
+          data-modal-link
+          href={prevHref}
+          class={cn(
+            buttonVariants({ variant: 'ghost', size: 'icon' }),
+            'bg-accent no-underline shadow-none hover:bg-muted',
+          )}
+          title={prevTitle}
+        >
+          <ArrowLeft aria-hidden="true" />
+        </a>
+      ) : (
+        <span
+          class={cn(
+            buttonVariants({ variant: 'ghost', size: 'icon' }),
+            'pointer-events-none bg-accent opacity-40 shadow-none',
+          )}
+          aria-disabled="true"
+        >
+          <ArrowLeft aria-hidden="true" />
+        </span>
+      )
+    }
+    {
+      nextHref ? (
+        <a
+          data-modal-link
+          href={nextHref}
+          class={cn(
+            buttonVariants({ variant: 'ghost', size: 'icon' }),
+            'bg-accent no-underline shadow-none hover:bg-muted',
+          )}
+          title={nextTitle}
+        >
+          <ArrowRight aria-hidden="true" />
+        </a>
+      ) : (
+        <span
+          class={cn(
+            buttonVariants({ variant: 'ghost', size: 'icon' }),
+            'pointer-events-none bg-accent opacity-40 shadow-none',
+          )}
+          aria-disabled="true"
+        >
+          <ArrowRight aria-hidden="true" />
+        </span>
+      )
+    }
+  </div>
+</nav>

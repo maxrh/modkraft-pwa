@@ -1,0 +1,108 @@
+---
+import type { CollectionCardData, Photo } from '@/lib/photos';
+import type { MosaicView } from '@/components/ViewMenu';
+import PhotoMosaic from '@/components/PhotoMosaic.astro';
+import CollectionMosaic from '@/components/CollectionMosaic.astro';
+
+interface Props {
+  photos: Photo[];
+  collections: CollectionCardData[];
+  defaultView?: MosaicView;
+  /** Client sort; false = SSR array order (fotoserie / fotoblog). */
+  sortable?: boolean;
+  defaultSort?: string;
+  persistSort?: boolean;
+}
+
+const {
+  photos,
+  collections,
+  defaultView = 'photos',
+  sortable = true,
+  defaultSort = 'shuffle',
+  persistSort = true,
+} = Astro.props;
+const startCollections = defaultView === 'collections';
+---
+
+<div data-archive-mosaics data-default-view={defaultView}>
+  <div data-archive-photos hidden={startCollections}>
+    <PhotoMosaic
+      photos={photos}
+      sortable={sortable}
+      defaultSort={defaultSort}
+      persistSort={persistSort}
+    />
+  </div>
+  <div data-archive-collections hidden={!startCollections}>
+    {
+      collections.length > 0 ? (
+        <CollectionMosaic
+          collections={collections}
+          sortable={sortable}
+          defaultSort={defaultSort}
+          persistSort={persistSort}
+        />
+      ) : (
+        <p class="py-16 text-center text-muted-foreground">Ingen fotoserier i dette udsnit.</p>
+      )
+    }
+  </div>
+</div>
+
+<script is:inline data-astro-rerun>
+  (function () {
+    function readView(pageDefault) {
+      try {
+        var param = new URLSearchParams(location.search).get('view');
+        if (param === 'collections' || param === 'photos') {
+          // Only persist archive deep-links; fotoblog defaults stay page-local.
+          if (pageDefault !== 'collections') {
+            try {
+              sessionStorage.setItem('mosaic-view', param);
+            } catch (e) {}
+          }
+          return param;
+        }
+        if (pageDefault === 'collections') return 'collections';
+        var stored = sessionStorage.getItem('mosaic-view');
+        if (stored === 'collections') return 'collections';
+      } catch (e) {}
+      return pageDefault === 'collections' ? 'collections' : 'photos';
+    }
+
+    function applyView(root, view) {
+      var photos = root.querySelector('[data-archive-photos]');
+      var collections = root.querySelector('[data-archive-collections]');
+      if (!photos || !collections) return;
+      var showCollections = view === 'collections';
+      photos.hidden = showCollections;
+      collections.hidden = !showCollections;
+      var mosaic = collections.querySelector('[data-collection-mosaic]');
+      if (mosaic) {
+        mosaic.hidden = !showCollections;
+        if (showCollections && typeof mosaic._ensureVisible === 'function') {
+          mosaic._ensureVisible();
+        }
+      }
+    }
+
+    var roots = document.querySelectorAll('[data-archive-mosaics]:not([data-view-bound])');
+    for (var i = 0; i < roots.length; i++) {
+      var root = roots[i];
+      root.setAttribute('data-view-bound', '');
+      var pageDefault = root.getAttribute('data-default-view') || 'photos';
+      applyView(root, readView(pageDefault));
+    }
+
+    var mk = (window.__mk = window.__mk || {});
+    if (!mk.archiveViewBound) {
+      mk.archiveViewBound = true;
+      window.addEventListener('mosaic:view', function (event) {
+        var view = event && event.detail === 'collections' ? 'collections' : 'photos';
+        var all = document.querySelectorAll('[data-archive-mosaics]');
+        for (var j = 0; j < all.length; j++) applyView(all[j], view);
+      });
+    }
+  })();
+</script>

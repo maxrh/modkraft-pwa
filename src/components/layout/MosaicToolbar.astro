@@ -1,0 +1,99 @@
+---
+import SortMenu, { SortLabel } from '@/components/SortMenu';
+import ViewMenu, { type MosaicView } from '@/components/ViewMenu';
+import MosaicCountLabel from './MosaicCountLabel';
+
+interface Props {
+  count: number;
+  seriesCount: number;
+  /** Show Fotos / Fotoserier view toggle. */
+  showView?: boolean;
+  /** Initial view when no ?view= is set (fotoblog uses collections). */
+  defaultView?: MosaicView;
+  /** Persist view to sessionStorage (off on fotoblog so archive stays independent). */
+  persistView?: boolean;
+  /** Show sort label + SortMenu (off on fotoserie / fotoblog). */
+  showSort?: boolean;
+  /** Initial sort token when showSort is on. */
+  defaultSort?: string;
+  /** Persist sort to sessionStorage. */
+  persistSort?: boolean;
+  class?: string;
+}
+
+const {
+  count,
+  seriesCount,
+  showView = false,
+  defaultView = 'photos',
+  persistView = true,
+  showSort = true,
+  defaultSort = 'shuffle',
+  persistSort = true,
+  class: className,
+} = Astro.props;
+
+const showControls = showSort || showView;
+
+const fotoWord = count === 1 ? 'foto' : 'fotos';
+const seriesWord = seriesCount === 1 ? 'fotoserie' : 'fotoserier';
+const staticCountLabel =
+  defaultView === 'collections'
+    ? `${seriesCount.toLocaleString('da-DK')} ${seriesWord}`
+    : `${count.toLocaleString('da-DK')} ${fotoWord} fra ${seriesCount.toLocaleString('da-DK')} ${seriesWord}`;
+---
+
+<div
+  class:list={[
+    'flex min-h-9 shrink-0 flex-wrap items-center gap-x-4 gap-y-2',
+    showControls ? 'justify-between' : '',
+    className,
+  ]}
+>
+  <p class="text-sm text-muted-foreground">
+    {
+      showView ? (
+        <MosaicCountLabel
+          client:only="react"
+          count={count}
+          seriesCount={seriesCount}
+          showView={showView}
+          defaultView={defaultView}
+        />
+      ) : (
+        <span class="tabular-nums">{staticCountLabel}</span>
+      )
+    }
+  </p>
+  {
+    showControls && (
+      <div class="flex items-center gap-3">
+        {
+          showSort && (
+            <>
+              <p class="text-sm text-muted-foreground">
+                <SortLabel client:only="react" defaultSort={defaultSort} persist={persistSort} />
+              </p>
+              <div class="flex items-center gap-2">
+                <SortMenu client:only="react" defaultSort={defaultSort} persist={persistSort} />
+                {
+                  showView && (
+                    <>
+                      <span class="mx-0.5 h-5 w-px shrink-0 bg-border" aria-hidden="true" />
+                      <ViewMenu client:only="react" defaultView={defaultView} persist={persistView} />
+                    </>
+                  )
+                }
+              </div>
+            </>
+          )
+        }
+        {
+          !showSort && showView && (
+            <ViewMenu client:only="react" defaultView={defaultView} persist={persistView} />
+          )
+        }
+      </div>
+    )
+  }
+</div>

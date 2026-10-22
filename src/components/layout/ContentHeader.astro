@@ -1,33 +1,37 @@
 ---
-import SortMenu, { SortLabel } from '@/components/SortMenu';
+import type { MosaicView } from '@/components/ViewMenu';
+import ContentHero from './ContentHero.astro';
+import MosaicToolbar from './MosaicToolbar.astro';
 
 interface Props {
   title: string;
   description?: string;
+  kicker?: string | null;
+  meta?: string | null;
   count: number;
   seriesCount: number;
+  showView?: boolean;
+  defaultView?: MosaicView;
 }
 
-const { title, description, count, seriesCount } = Astro.props;
-const countLabel = `${count.toLocaleString('da-DK')} ${count === 1 ? 'foto' : 'fotos'} fra ${seriesCount.toLocaleString('da-DK')} ${seriesCount === 1 ? 'fotoserie' : 'fotoserier'}`;
+const {
+  title,
+  description,
+  kicker = null,
+  meta = null,
+  count,
+  seriesCount,
+  showView = false,
+  defaultView = 'photos',
+} = Astro.props;
 ---
 
 <header class="mb-4 flex min-h-64 flex-col">
-  <div class="flex flex-1 flex-col items-center justify-center px-4 py-10 text-center">
-    <h1 class="font-display text-3xl font-extrabold tracking-tight sm:text-8xl/20">{title}</h1>
-    {
-      description && (
-        <p class="mt-6 max-w-3xl text-xl leading-tight text-muted-foreground">{description}</p>
-      )
-    }
-  </div>
-  <div class="flex h-9 shrink-0 items-center justify-between gap-4">
-    <p class="text-sm text-muted-foreground tabular-nums">{countLabel}</p>
-    <div class="flex items-center gap-4">
-      <p class="text-sm text-muted-foreground">
-        <SortLabel client:only="react" />
-      </p>
-      <SortMenu client:only="react" />
-    </div>
-  </div>
+  <ContentHero title={title} description={description} kicker={kicker} meta={meta} />
+  <MosaicToolbar
+    count={count}
+    seriesCount={seriesCount}
+    showView={showView}
+    defaultView={defaultView}
+  />
 </header>
