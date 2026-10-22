@@ -38,12 +38,16 @@ export function parseSort(value: string | null | undefined): SortState {
   return { mode: 'shuffle', dir: 'asc' };
 }
 
-function readSort(): SortState {
+/** Page default (e.g. fotoblog date:asc) wins when persist is off; else sessionStorage. */
+export function readSort(defaultSort = 'shuffle', persist = true): SortState {
+  if (!persist) return parseSort(defaultSort);
   try {
-    return parseSort(sessionStorage.getItem(MOSAIC_SORT_KEY));
+    const stored = sessionStorage.getItem(MOSAIC_SORT_KEY);
+    if (stored) return parseSort(stored);
   } catch {
-    return { mode: 'shuffle', dir: 'asc' };
+    /* private mode */
   }
+  return parseSort(defaultSort);
 }
 
 function iconFor(id: SortMode, state: SortState): LucideIcon {
@@ -62,8 +66,13 @@ function labelFor(id: SortMode, state: SortState): string {
   return 'Bland';
 }
 
-export function SortLabel() {
-  const [sort, setSort] = useState<SortState>(readSort);
+interface SortUiProps {
+  defaultSort?: string;
+  persist?: boolean;
+}
+
+export function SortLabel({ defaultSort = 'shuffle', persist = true }: SortUiProps) {
+  const [sort, setSort] = useState<SortState>(() => readSort(defaultSort, persist));
 
   useEffect(() => {
     function onSort(event: Event) {
@@ -76,8 +85,8 @@ export function SortLabel() {
   return <span>{labelFor(sort.mode, sort)}</span>;
 }
 
-export default function SortMenu() {
-  const [sort, setSort] = useState<SortState>(readSort);
+export default function SortMenu({ defaultSort = 'shuffle', persist = true }: SortUiProps) {
+  const [sort, setSort] = useState<SortState>(() => readSort(defaultSort, persist));
 
   function choose(id: SortMode) {
     const next: SortState =
@@ -88,10 +97,12 @@ export default function SortMenu() {
           : { mode: id, dir: id === 'date' ? 'desc' : 'asc' };
     setSort(next);
     const token = sortToken(next);
-    try {
-      sessionStorage.setItem(MOSAIC_SORT_KEY, token);
-    } catch {
-      /* private mode */
+    if (persist) {
+      try {
+        sessionStorage.setItem(MOSAIC_SORT_KEY, token);
+      } catch {
+        /* private mode */
+      }
     }
     window.dispatchEvent(new CustomEvent('mosaic:sort', { detail: token }));
   }

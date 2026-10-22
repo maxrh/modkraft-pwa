@@ -2,11 +2,17 @@
 import { getCollection, type CollectionEntry } from 'astro:content';
 import BaseLayout from '@/layouts/BaseLayout.astro';
 import Container from '@/components/layout/Container.astro';
-import PageHeader from '@/components/layout/PageHeader.astro';
-import CollectionCard from '@/components/CollectionCard.astro';
-import PhotoMosaic from '@/components/PhotoMosaic.astro';
+import ContentHero from '@/components/layout/ContentHero.astro';
+import MosaicToolbar from '@/components/layout/MosaicToolbar.astro';
+import ArchiveMosaics from '@/components/layout/ArchiveMosaics.astro';
 import { renderMarkdown } from '@/lib/markdown';
-import { flattenCollectionPhotos, sortCollectionsOldest } from '@/lib/photos';
+import {
+  collectionCardData,
+  flattenCollectionPhotos,
+  formatDate,
+  sortCollectionsOldest,
+  type CollectionCardData,
+} from '@/lib/photos';
 
 export async function getStaticPaths() {
   const allSeries = await getCollection('photoSeries');
@@ -26,43 +32,63 @@ const posts = (await getCollection('photoCollections'))
   .sort(sortCollectionsOldest);
 
 const seriesPhotos = posts.flatMap(flattenCollectionPhotos);
+const collectionCards = posts
+  .map((c) => collectionCardData(c))
+  .filter((c): c is CollectionCardData => Boolean(c));
 const aboutHtml = renderMarkdown(series.data.aboutSeries);
 const viomisHtml = renderMarkdown(series.data.aboutViomis);
 const authorHtml = renderMarkdown(series.data.aboutAuthor);
-
-const meta = `Af ${series.data.author} · ${posts.length} kapitler · ${seriesPhotos.length} fotos`;
+const hasAboutFooter = Boolean(viomisHtml || authorHtml);
+const startedAt = posts[0]?.data.publishedAt;
+const heroMeta = [`Af ${series.data.author}`, startedAt ? formatDate(startedAt) : null]
+  .filter(Boolean)
+  .join(' · ');
 ---
 
 <BaseLayout title={series.data.title} description={series.data.intro}>
-  <Container class="pt-8 pb-16">
-    <article>
-      <PageHeader
-        title={series.data.title}
-        kicker="Fotoblog"
-        meta={meta}
-        crumbs={[{ label: '← Alle fotos', href: '/' }]}
-      >
-        <p class="mt-5 text-lg text-muted-foreground">{series.data.intro}</p>
-        {aboutHtml && <div class="prose prose-neutral mt-6 max-w-none" set:html={aboutHtml} />}
-      </PageHeader>
+  <article>
+    <Container class="pt-8">
+      <ContentHero title={series.data.title} kicker="Fotoblog" meta={heroMeta} />
+    </Container>
 
-      <section class="mt-10">
-        <h2 class="font-display mb-4 text-2xl font-semibold">
-          Alle fotos i fotobloggen ({seriesPhotos.length})
-        </h2>
-        <PhotoMosaic photos={seriesPhotos} />
-      </section>
+    {
+      (series.data.intro || aboutHtml) && (
+        <Container size="text" class="pt-4 pb-4">
+          {series.data.intro && (
+            <p class="text-lg text-muted-foreground">{series.data.intro}</p>
+          )}
+          {aboutHtml && (
+            <div
+              class:list={['prose prose-neutral max-w-none', series.data.intro && 'mt-6']}
+              set:html={aboutHtml}
+            />
+          )}
+        </Container>
+      )
+    }
 
-      <section class="mt-14">
-        <h2 class="font-display mb-5 text-2xl font-semibold">Kapitler i fotobloggen ({posts.length})</h2>
-        <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-          {posts.map((collection) => <CollectionCard collection={collection} />)}
-        </div>
-      </section>
+    <Container class:list={['pt-16', !hasAboutFooter && 'pb-20']}>
+      <MosaicToolbar
+        count={seriesPhotos.length}
+        seriesCount={collectionCards.length}
+        showView
+        showSort={false}
+        defaultView="collections"
+        persistView={false}
+        class="mb-4"
+      />
+      <ArchiveMosaics
+        photos={seriesPhotos}
+        collections={collectionCards}
+        defaultView="collections"
+        sortable={false}
+      />
+    </Container>
 
-      {
-        (viomisHtml || authorHtml) && (
-          <section class="mt-16 grid max-w-5xl gap-8 border-t border-border pt-10 md:grid-cols-2">
+    {
+      hasAboutFooter && (
+        <Container class="pt-20 pb-20">
+          <section class="grid gap-8 border-t border-border pt-12 md:grid-cols-2 md:gap-16">
             {viomisHtml && (
               <div>
                 <h2 class="font-display mb-3 text-xl font-semibold">Om VIOMIS</h2>
@@ -76,8 +102,8 @@ const meta = `Af ${series.data.author} · ${posts.length} kapitler · ${seriesPh
               </div>
             )}
           </section>
-        )
-      }
-    </article>
-  </Container>
+        </Container>
+      )
+    }
+  </article>
 </BaseLayout>

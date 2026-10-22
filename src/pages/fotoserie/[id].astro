@@ -2,14 +2,22 @@
 import { getCollection, type CollectionEntry } from 'astro:content';
 import BaseLayout from '@/layouts/BaseLayout.astro';
 import Container from '@/components/layout/Container.astro';
-import PageHeader from '@/components/layout/PageHeader.astro';
+import ContentHero from '@/components/layout/ContentHero.astro';
+import MosaicToolbar from '@/components/layout/MosaicToolbar.astro';
+import SeriesNav from '@/components/layout/SeriesNav.astro';
+import TagPills from '@/components/layout/TagPills.astro';
 import PhotoMosaic from '@/components/PhotoMosaic.astro';
+import CollectionMosaic from '@/components/CollectionMosaic.astro';
 import { renderMarkdown } from '@/lib/markdown';
 import {
   byline,
+  collectionCardData,
+  collectionKind,
   collectionKindLabel,
   flattenCollectionPhotos,
   formatDate,
+  sortCollectionsOldest,
+  type CollectionCardData,
 } from '@/lib/photos';
 
 export async function getStaticPaths() {
@@ -29,44 +37,99 @@ const data = collection.data;
 const photos = flattenCollectionPhotos(collection);
 const manchetHtml = renderMarkdown(data.manchet);
 const introHtml = renderMarkdown(data.introMarkdown);
-
-const crumbs = [
-  { label: '← Alle fotos', href: '/' },
-  { label: 'Fotoserier', href: '/fotoserie' },
-  ...(data.series
-    ? [{ label: `Fotoblog: ${data.prefix || data.series}`, href: `/fotoblog/${data.series}` }]
-    : []),
-];
+const kind = collectionKind(data.sourceType);
+const kindLabel = collectionKindLabel(data.sourceType);
 
 const meta = [
-  formatDate(data.publishedAt),
   data.authors.length ? byline(data.authors) : null,
-  `${photos.length} fotos`,
+  formatDate(data.publishedAt),
 ]
   .filter(Boolean)
   .join(' · ');
+
+const hasProse = Boolean(manchetHtml || introHtml);
+
+const seriesId = data.series ?? null;
+const seriesChapters = seriesId
+  ? (await getCollection('photoCollections'))
+      .filter((c) => c.data.series === seriesId)
+      .sort(sortCollectionsOldest)
+  : [];
+
+const siblingCards: CollectionCardData[] = seriesChapters
+  .filter((c) => c.data.id !== data.id)
+  .map((c) => collectionCardData(c))
+  .filter((c): c is CollectionCardData => Boolean(c));
+
+const seriesEntry = seriesId
+  ? (await getCollection('photoSeries')).find((s) => s.data.id === seriesId)
+  : null;
+
+const firstPhoto = photos[0] ?? null;
+const slideScope = kind === 'fotoblog' ? 'fotobloggen' : 'fotoserien';
 ---
 
 <BaseLayout
   title={data.title}
-  description={data.manchet?.slice(0, 160) || `${collectionKindLabel(data.sourceType)}: ${data.title}`}
+  description={data.manchet?.slice(0, 160) || `${kindLabel}: ${data.title}`}
 >
-  <Container class="pt-8 pb-16">
-    <article>
-      <PageHeader
-        title={data.title}
-        kicker={data.prefix}
-        meta={meta}
-        crumbs={crumbs}
-        tags={data.tags}
-      >
-        {manchetHtml && <div class="prose prose-neutral mt-6 max-w-none" set:html={manchetHtml} />}
-        {introHtml && <div class="prose prose-neutral mt-4 max-w-none" set:html={introHtml} />}
-      </PageHeader>
+  <article>
+    <Container size="full" class="pt-4 sm:pt-6">
+      <SeriesNav
+        ariaLabel="Fotoserie"
+        index={0}
+        total={photos.length}
+        prevHref={null}
+        nextHref={firstPhoto?.href ?? null}
+        nextTitle={`Næste foto i ${slideScope}`}
+      />
+    </Container>
 
-      <section class="mt-10">
-        <PhotoMosaic photos={photos} />
-      </section>
-    </article>
-  </Container>
+    <Container>
+      <ContentHero title={data.title} kicker="Fotoserie" meta={meta || null}>
+        {data.tags.length > 0 && <TagPills tags={data.tags} class="mt-6 justify-center" />}
+      </ContentHero>
+    </Container>
+
+    {
+      hasProse && (
+        <Container size="text" class="pt-4 pb-4">
+          {manchetHtml && (
+            <div class="prose prose-neutral max-w-none" set:html={manchetHtml} />
+          )}
+          {introHtml && (
+            <div
+              class:list={['prose prose-neutral max-w-none', manchetHtml && 'mt-4']}
+              set:html={introHtml}
+            />
+          )}
+        </Container>
+      )
+    }
+
+    <Container class:list={['pt-16', siblingCards.length === 0 && 'pb-20']}>
+      <MosaicToolbar count={photos.length} seriesCount={1} showSort={false} class="mb-4" />
+      <PhotoMosaic photos={photos} />
+    </Container>
+
+    {
+      siblingCards.length > 0 && (
+        <Container class="pt-20 pb-20">
+          <h2 class="font-display mb-5 text-2xl font-semibold">
+            {seriesEntry ? (
+              <>
+                Flere fotoserier i{' '}
+                <a href={`/fotoblog/${seriesEntry.data.id}`} class="underline-offset-2 hover:underline">
+                  {seriesEntry.data.title}
+                </a>
+              </>
+            ) : (
+              'Flere fotoserier i fotobloggen'
+            )}
+          </h2>
+          <CollectionMosaic collections={siblingCards} />
+        </Container>
+      )
+    }
+  </article>
 </BaseLayout>

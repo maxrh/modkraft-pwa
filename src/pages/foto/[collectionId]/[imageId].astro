@@ -1,11 +1,11 @@
 ---
 import { getCollection } from 'astro:content';
-import { ArrowLeft, ArrowRight, Calendar, Camera, Maximize2, Minimize2, Scaling } from 'lucide-react';
+import { Calendar, Camera, Maximize2, Minimize2, Scaling } from 'lucide-react';
 import BaseLayout from '@/layouts/BaseLayout.astro';
 import Container from '@/components/layout/Container.astro';
+import SeriesNav from '@/components/layout/SeriesNav.astro';
 import TagPills from '@/components/layout/TagPills.astro';
 import PhotoMosaic from '@/components/PhotoMosaic.astro';
-import { buttonVariants } from '@/components/ui/button';
 import { readCameraModel } from '@/lib/exif';
 import {
   collectionKind,
@@ -16,7 +16,6 @@ import {
   sortCollectionsNewest,
   type Photo,
 } from '@/lib/photos';
-import { cn } from '@/lib/utils';
 
 export async function getStaticPaths() {
   const collections = (await getCollection('photoCollections')).sort(sortCollectionsNewest);
@@ -126,77 +125,22 @@ if (cameraModel) {
     data-photo-slide
   >
     <Container size="full" class="flex w-full min-h-0 flex-1 flex-col pt-4 sm:pt-6">
-      <nav aria-label="Foto" class="mb-4 flex shrink-0 flex-wrap items-center justify-between gap-4">
-        <div class="flex flex-wrap items-center gap-1 text-base">
-          {kindLabel}:
-          <a
-            href={`/fotoserie/${photo.collectionId}`}
-            class="inline-flex items-center gap-1 font-semibold text-foreground leading-tight no-underline hover:underline"
-          >
-            {photo.collectionTitle}
-            <ArrowRight className="size-3.5 shrink-0" aria-hidden="true" />
-          </a>
-        </div>
-
-        <div class="flex items-center gap-1">
-          <span
-            class={cn(
-              buttonVariants({ variant: 'ghost', size: 'sm' }),
-              'pointer-events-none text-muted-foreground tabular-nums hover:bg-muted',
-            )}
-          >
-            {photo.sortOrder} / {photo.imageCount}
-          </span>
-          {
-            prevPhoto ? (
-              <a
-                href={prevPhoto.href}
-                class={cn(
-                  buttonVariants({ variant: 'ghost', size: 'icon' }),
-                  'bg-accent no-underline shadow-none hover:bg-muted',
-                )}
-                title={`Forrige foto i ${kind === 'fotoblog' ? 'fotobloggen' : 'fotoserien'}`}
-              >
-                <ArrowLeft aria-hidden="true" />
-              </a>
-            ) : (
-              <span
-                class={cn(
-                  buttonVariants({ variant: 'ghost', size: 'icon' }),
-                  'pointer-events-none bg-accent opacity-40 shadow-none',
-                )}
-                aria-disabled="true"
-              >
-                <ArrowLeft aria-hidden="true" />
-              </span>
-            )
-          }
-          {
-            nextPhoto ? (
-              <a
-                href={nextPhoto.href}
-                class={cn(
-                  buttonVariants({ variant: 'ghost', size: 'icon' }),
-                  'bg-accent no-underline shadow-none hover:bg-muted',
-                )}
-                title={`Næste foto i ${kind === 'fotoblog' ? 'fotobloggen' : 'fotoserien'}`}
-              >
-                <ArrowRight aria-hidden="true" />
-              </a>
-            ) : (
-              <span
-                class={cn(
-                  buttonVariants({ variant: 'ghost', size: 'icon' }),
-                  'pointer-events-none bg-accent opacity-40 shadow-none',
-                )}
-                aria-disabled="true"
-              >
-                <ArrowRight aria-hidden="true" />
-              </span>
-            )
-          }
-        </div>
-      </nav>
+      <SeriesNav
+        ariaLabel="Foto"
+        label={kindLabel}
+        parentHref={`/fotoserie/${photo.collectionId}`}
+        parentTitle={photo.collectionTitle}
+        index={photo.sortOrder}
+        total={photo.imageCount}
+        prevHref={prevPhoto?.href ?? `/fotoserie/${photo.collectionId}`}
+        nextHref={nextPhoto?.href}
+        prevTitle={
+          prevPhoto
+            ? `Forrige foto i ${kind === 'fotoblog' ? 'fotobloggen' : 'fotoserien'}`
+            : `Tilbage til ${kind === 'fotoblog' ? 'fotobloggen' : 'fotoserien'}`
+        }
+        nextTitle={`Næste foto i ${kind === 'fotoblog' ? 'fotobloggen' : 'fotoserien'}`}
+      />
 
       <figure class="flex w-full min-h-0 flex-1 flex-col items-center justify-center overflow-hidden">
         <div

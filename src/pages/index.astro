@@ -1,12 +1,15 @@
 ---
+import { getCollection } from 'astro:content';
 import BaseLayout from '@/layouts/BaseLayout.astro';
 import Container from '@/components/layout/Container.astro';
 import ContentHeader from '@/components/layout/ContentHeader.astro';
-import PhotoMosaic from '@/components/PhotoMosaic.astro';
-import { getAllPhotos, getArchiveStats } from '@/lib/photos';
+import ArchiveMosaics from '@/components/layout/ArchiveMosaics.astro';
+import { collectionCardsFromPhotos, getAllPhotos, getArchiveStats } from '@/lib/photos';
 import { SITE_DESCRIPTION, SITE_TITLE } from '@/lib/site';
 
 const photos = await getAllPhotos();
+const collections = await getCollection('photoCollections');
+const collectionCards = collectionCardsFromPhotos(photos, collections);
 const { collectionCount } = await getArchiveStats();
 ---
 
@@ -17,7 +20,8 @@ const { collectionCount } = await getArchiveStats();
       description={SITE_DESCRIPTION}
       count={photos.length}
       seriesCount={collectionCount}
+      showView
     />
-    <PhotoMosaic photos={photos} sortable />
+    <ArchiveMosaics photos={photos} collections={collectionCards} />
   </Container>
 </BaseLayout>

@@ -1,0 +1,81 @@
+---
+interface Props {
+  href: string;
+  thumb: string;
+  width: number;
+  height: number;
+  alt: string;
+  title: string;
+  badge: string;
+  meta?: string | null;
+  overlay?: 'hover' | 'always';
+  highPriority?: boolean;
+}
+
+const {
+  href,
+  thumb,
+  width,
+  height,
+  alt,
+  title,
+  badge,
+  meta = null,
+  overlay = 'hover',
+  highPriority = false,
+} = Astro.props;
+---
+
+<a
+  data-card-link
+  href={href}
+  class="group relative block w-full overflow-hidden rounded-sm bg-muted no-underline focus-visible:ring-2 focus-visible:ring-ring focus-visible:outline-none"
+  style={`aspect-ratio: ${width} / ${height};`}
+>
+  <img
+    data-card-img
+    src={thumb}
+    alt={alt}
+    width={width}
+    height={height}
+    loading={highPriority ? 'eager' : 'lazy'}
+    fetchpriority={highPriority ? 'high' : undefined}
+    decoding="async"
+    sizes="(max-width: 40rem) 100vw, (max-width: 64rem) 50vw, 33vw"
+    class="photo-img absolute inset-0 block h-full w-full object-cover text-transparent transition-transform duration-300 group-hover:scale-[1.04]"
+  />
+
+  <div
+    class:list={[
+      'pointer-events-none absolute inset-0 flex flex-col justify-between bg-gradient-to-t from-black/80 via-black/20 to-black/30 p-5 text-white transition-opacity duration-200',
+      overlay === 'always'
+        ? 'opacity-100'
+        : 'opacity-0 group-hover:opacity-100 group-focus-visible:opacity-100',
+    ]}
+  >
+    <div class="flex items-start justify-end text-[11px] font-medium tracking-wide">
+      <span
+        data-card-count
+        class="inline-flex shrink-0 items-center rounded bg-black/70 px-2 py-1.5 leading-none tabular-nums"
+      >
+        {badge}
+      </span>
+    </div>
+
+    <div class="space-y-1">
+      <p
+        data-card-title
+        class="font-display line-clamp-2 text-xl/5 font-semibold text-white drop-shadow-xs"
+      >
+        {title}
+      </p>
+      <p
+        data-card-meta
+        class="hidden pt-0.5 text-xs font-medium text-white/90 sm:block"
+        hidden={!meta}
+      >
+        {meta}
+      </p>
+    </div>
+  </div>
+</a>

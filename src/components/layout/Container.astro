@@ -1,12 +1,17 @@
 ---
 interface Props {
-  /** Uncapped width (keeps gutters). Default caps at --content-max. */
-  size?: 'full';
+  /** `text` = reading column (--prose-max). `full` = uncapped gutters. Default = --content-max. */
+  size?: 'full' | 'text';
   class?: string;
 }
 
 const { size, class: className } = Astro.props;
-const maxWidth = size === 'full' ? undefined : 'max-w-[var(--content-max)]';
+const maxWidth =
+  size === 'full'
+    ? undefined
+    : size === 'text'
+      ? 'max-w-[var(--prose-max)]'
+      : 'max-w-[var(--content-max)]';
 ---
 
 <div class:list={['mx-auto px-4 sm:px-6', maxWidth, className]}>

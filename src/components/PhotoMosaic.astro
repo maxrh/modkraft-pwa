@@ -1,15 +1,19 @@
 ---
 import type { Photo } from '@/lib/photos';
 import { packIntoColumns } from '@/lib/photos';
-import PhotoCard from '@/components/PhotoCard.astro';
+import MosaicCard from '@/components/MosaicCard.astro';
 
 interface Props {
   photos: Photo[];
   /** Client-side shuffle / alpha / date. Skips SSR cards and ships one JSON list. */
   sortable?: boolean;
+  /** Initial sort token when storage is empty or persistSort is false. */
+  defaultSort?: string;
+  /** Write sort choices to sessionStorage (off on fotoblog). */
+  persistSort?: boolean;
 }
 
-const { photos, sortable = false } = Astro.props;
+const { photos, sortable = false, defaultSort = 'shuffle', persistSort = true } = Astro.props;
 
 const INITIAL_COUNT = 48;
 const BATCH_SIZE = 48;
@@ -35,7 +39,7 @@ const restPhotos = sortable ? [] : photos.slice(INITIAL_COUNT);
 const ssrColumns = packIntoColumns(initialPhotos, ssrColumnCount);
 const indexById = new Map(initialPhotos.map((photo, index) => [photo.id, index]));
 
-/** Compact payload for client-side card construction (mirrors PhotoCard fields). */
+/** Compact payload for client-side card construction (mirrors MosaicCard fields). */
 const restPayload = restPhotos.map(cardPayload);
 const allPayload = sortable ? photos.map(cardPayload) : [];
 
@@ -48,6 +52,8 @@ const templatePhoto = photos[0];
 <div
   data-mosaic-root
   data-sortable={sortable ? '' : undefined}
+  data-default-sort={defaultSort}
+  data-persist-sort={persistSort ? undefined : 'false'}
   data-batch-size={String(BATCH_SIZE)}
   data-initial-count={String(INITIAL_COUNT)}
   data-total={String(photos.length)}
@@ -68,7 +74,17 @@ const templatePhoto = photos[0];
                 data-ratio={(photo.height / photo.width).toFixed(4)}
                 class="min-w-0"
               >
-                <PhotoCard photo={photo} highPriority={globalIndex < 2} />
+                <MosaicCard
+                  href={photo.href}
+                  thumb={photo.thumb}
+                  width={photo.width}
+                  height={photo.height}
+                  alt={photo.caption || `${photo.collectionTitle} (${photo.sortOrder}/${photo.imageCount})`}
+                  title={photo.collectionTitle}
+                  badge={`${photo.sortOrder}/${photo.imageCount}`}
+                  meta={photo.credit}
+                  highPriority={globalIndex < 2}
+                />
               </div>
             );
           })}
@@ -82,7 +98,16 @@ const templatePhoto = photos[0];
       <>
         <script type="application/json" data-mosaic-all set:html={allJson} />
         <template data-card-template>
-          <PhotoCard photo={templatePhoto} />
+          <MosaicCard
+            href={templatePhoto.href}
+            thumb={templatePhoto.thumb}
+            width={templatePhoto.width}
+            height={templatePhoto.height}
+            alt={templatePhoto.caption || `${templatePhoto.collectionTitle} (${templatePhoto.sortOrder}/${templatePhoto.imageCount})`}
+            title={templatePhoto.collectionTitle}
+            badge={`${templatePhoto.sortOrder}/${templatePhoto.imageCount}`}
+            meta={templatePhoto.credit}
+          />
         </template>
       </>
     )
@@ -92,7 +117,16 @@ const templatePhoto = photos[0];
       <>
         <script type="application/json" data-mosaic-rest set:html={restJson} />
         <template data-card-template>
-          <PhotoCard photo={restPhotos[0]} />
+          <MosaicCard
+            href={restPhotos[0].href}
+            thumb={restPhotos[0].thumb}
+            width={restPhotos[0].width}
+            height={restPhotos[0].height}
+            alt={restPhotos[0].caption || `${restPhotos[0].collectionTitle} (${restPhotos[0].sortOrder}/${restPhotos[0].imageCount})`}
+            title={restPhotos[0].collectionTitle}
+            badge={`${restPhotos[0].sortOrder}/${restPhotos[0].imageCount}`}
+            meta={restPhotos[0].credit}
+          />
         </template>
       </>
     )
@@ -261,8 +295,7 @@ const templatePhoto = photos[0];
       var img = card.querySelector('[data-card-img]');
       var count = card.querySelector('[data-card-count]');
       var title = card.querySelector('[data-card-title]');
-      var creditRow = card.querySelector('[data-card-credit-row]');
-      var credit = card.querySelector('[data-card-credit]');
+      var meta = card.querySelector('[data-card-meta]');
 
       if (link) {
         link.setAttribute('href', photo.href);
@@ -285,13 +318,13 @@ const templatePhoto = photos[0];
       if (count) count.textContent = photo.sortOrder + '/' + photo.imageCount;
       if (title) title.textContent = photo.collectionTitle;
 
-      if (creditRow && credit) {
+      if (meta) {
         if (photo.credit) {
-          credit.textContent = photo.credit;
-          creditRow.hidden = false;
+          meta.textContent = photo.credit;
+          meta.hidden = false;
         } else {
-          credit.textContent = '';
-          creditRow.hidden = true;
+          meta.textContent = '';
+          meta.hidden = true;
         }
       }
 
@@ -338,15 +371,33 @@ const templatePhoto = photos[0];
       if (cardTemplateEl) cardTemplateEl.remove();
     }
 
+    function pageDefaultSort() {
+      return root.getAttribute('data-default-sort') || 'shuffle';
+    }
+
+    function persistSortEnabled() {
+      return root.getAttribute('data-persist-sort') !== 'false';
+    }
+
+    function isValidSortToken(token) {
+      return (
+        token === 'shuffle' ||
+        token === 'alpha' ||
+        token === 'date' ||
+        token === 'alpha:asc' ||
+        token === 'alpha:desc' ||
+        token === 'date:asc' ||
+        token === 'date:desc'
+      );
+    }
+
     function readSortToken() {
+      if (!persistSortEnabled()) return pageDefaultSort();
       try {
         var token = sessionStorage.getItem('mosaic-sort');
-        if (token === 'shuffle' || token === 'alpha' || token === 'date') return token;
-        if (token === 'alpha:asc' || token === 'alpha:desc' || token === 'date:asc' || token === 'date:desc') {
-          return token;
-        }
+        if (isValidSortToken(token)) return token;
       } catch (e) {}
-      return 'shuffle';
+      return pageDefaultSort();
     }
 
     var SHUFFLE_SEED_KEY = 'mosaic-shuffle-seed';
@@ -457,9 +508,11 @@ const templatePhoto = photos[0];
       ) {
         token = 'shuffle';
       }
-      try {
-        sessionStorage.setItem('mosaic-sort', token);
-      } catch (e) {}
+      if (persistSortEnabled()) {
+        try {
+          sessionStorage.setItem('mosaic-sort', token);
+        } catch (e) {}
+      }
       var ordered = orderPhotos(allPhotos, token, reshuffle);
       var n = columnCount();
       var initial = ordered.slice(0, initialCount);
@@ -507,7 +560,9 @@ const templatePhoto = photos[0];
         window.addEventListener('mosaic:sort', function (event) {
           var mode = event && event.detail;
           var reshuffle = mode === 'shuffle';
-          var roots = document.querySelectorAll('[data-mosaic-root][data-sortable]');
+          var roots = document.querySelectorAll(
+            '[data-mosaic-root][data-sortable], [data-collection-mosaic][data-sortable]',
+          );
           for (var i = 0; i < roots.length; i++) {
             if (typeof roots[i]._renderSorted === 'function') {
               roots[i]._renderSorted(mode, reshuffle);

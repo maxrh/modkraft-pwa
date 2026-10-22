@@ -1,0 +1,37 @@
+---
+interface Props {
+  title: string;
+  description?: string;
+  kicker?: string | null;
+  meta?: string | null;
+  class?: string;
+}
+
+const {
+  title,
+  description,
+  kicker = null,
+  meta = null,
+  class: className,
+} = Astro.props;
+---
+
+<div class:list={['flex flex-1 flex-col items-center justify-center px-4 py-14 text-center', className]}>
+  {
+    kicker && (
+      <p class="mb-5 text-xs font-semibold tracking-wider text-muted-foreground uppercase">{kicker}</p>
+    )
+  }
+  <h1 class="font-display text-3xl font-extrabold tracking-tight sm:text-8xl/20">{title}</h1>
+  {
+    meta && (
+      <p class="mt-5 text-sm text-muted-foreground">{meta}</p>
+    )
+  }
+  {
+    description && (
+      <p class="mt-6 max-w-3xl text-xl leading-tight text-muted-foreground">{description}</p>
+    )
+  }
+  <slot />
+</div>

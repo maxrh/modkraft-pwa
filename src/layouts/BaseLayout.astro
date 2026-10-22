@@ -51,7 +51,7 @@ const {
     <SiteFooter />
     <dialog
       data-photo-modal
-      aria-label="Foto"
+      aria-label="Indhold"
       class="m-0 h-dvh max-h-none w-screen max-w-none cursor-zoom-out overflow-y-auto overscroll-contain border-0 bg-transparent p-0 backdrop:bg-black/80"
     >
       <button
@@ -86,15 +86,30 @@ const {
           return !!(dialog && dialog.open);
         }
 
-        function fotoHref(href) {
+        function modalHref(href) {
           try {
             var url = new URL(href, location.href);
             if (url.origin !== location.origin) return null;
-            if (url.pathname.indexOf('/foto/') !== 0) return null;
-            return url.pathname + url.search + url.hash;
+            var path = url.pathname;
+            if (/^\/foto\/[^/]+\/[^/]+\/?$/.test(path)) {
+              return path + url.search + url.hash;
+            }
+            if (/^\/fotoserie\/[^/]+\/?$/.test(path)) {
+              return path + url.search + url.hash;
+            }
+            return null;
           } catch (e) {
             return null;
           }
+        }
+
+        function modalKind(href) {
+          try {
+            var path = new URL(href, location.href).pathname;
+            if (path.indexOf('/fotoserie/') === 0) return 'fotoserie';
+            if (path.indexOf('/foto/') === 0) return 'foto';
+          } catch (e) {}
+          return null;
         }
 
         function lockScroll() {
@@ -172,9 +187,16 @@ const {
         }
 
         function initModalMosaics(root) {
-          if (typeof mk.initMosaic !== 'function') return;
-          var mosaics = root.querySelectorAll('[data-mosaic-root]:not([data-ready])');
-          for (var i = 0; i < mosaics.length; i++) mk.initMosaic(mosaics[i]);
+          if (typeof mk.initMosaic === 'function') {
+            var mosaics = root.querySelectorAll('[data-mosaic-root]:not([data-ready])');
+            for (var i = 0; i < mosaics.length; i++) mk.initMosaic(mosaics[i]);
+          }
+          if (typeof mk.initCollectionMosaic === 'function') {
+            var collections = root.querySelectorAll(
+              '[data-collection-mosaic]:not([data-ready])',
+            );
+            for (var c = 0; c < collections.length; c++) mk.initCollectionMosaic(collections[c]);
+          }
         }
 
         function hideModal() {
@@ -186,33 +208,62 @@ const {
           dialog.close();
           document.documentElement.removeAttribute('data-photo-modal-open');
           if (mk.photoModalTitle) document.title = mk.photoModalTitle;
+          mk.photoModalDepth = 0;
+          mk.photoModalStack = [];
+          mk.photoModalClosing = false;
           unlockScroll();
         }
 
-        function openPhoto(href, replace) {
+        function loadModalContent(href, options) {
           var dialog = modalDialog();
           if (!dialog) {
             location.assign(href);
             return;
           }
 
-          var first = !dialog.open;
-          if (first) {
+          options = options || {};
+          var writeHistory = options.writeHistory !== false;
+          var opening = !dialog.open;
+
+          if (opening) {
             mk.photoModalTitle = document.title;
             mk.photoModalScroll = window.scrollY || 0;
+            mk.photoModalDepth = 0;
+            mk.photoModalStack = [];
+            mk.photoModalClosing = false;
           }
 
-          // Don't carry the grid's scrollY onto the foto URL. A full load of that
-          // address (Enter in the address bar) would otherwise scroll the photo page.
-          var state = Object.assign({}, history.state || {}, {
-            photoModal: true,
-            scrollX: 0,
-            scrollY: 0,
-          });
-          if (replace && dialog.open) history.replaceState(state, '', href);
-          else history.pushState(state, '', href);
+          if (writeHistory) {
+            // Don't carry the grid's scrollY onto the modal URL. A full load of that
+            // address (Enter in the address bar) would otherwise restore that scroll.
+            var state = Object.assign({}, history.state || {}, {
+              photoModal: true,
+              scrollX: 0,
+              scrollY: 0,
+            });
+            var stack = mk.photoModalStack || [];
+            var replace = false;
+            if (dialog.open) {
+              var fromKind = modalKind(location.href);
+              var toKind = modalKind(href);
+              replace = Boolean(fromKind && toKind && fromKind === toKind);
+            }
+            if (replace) {
+              history.replaceState(state, '', href);
+              if (stack.length) stack[stack.length - 1] = href;
+              else stack.push(href);
+            } else if (stack.length >= 2 && stack[stack.length - 2] === href) {
+              // Prev/next back to the previous modal entry — pop history instead of stacking.
+              history.back();
+              return;
+            } else {
+              history.pushState(state, '', href);
+              stack.push(href);
+              mk.photoModalDepth = stack.length;
+            }
+            mk.photoModalStack = stack;
+          }
 
-          var opening = !dialog.open;
           document.documentElement.setAttribute('data-photo-modal-open', '');
 
           var id = ++requestId;
@@ -228,6 +279,8 @@ const {
               var body = dialog.querySelector('[data-photo-modal-body]');
               if (!main || !body) throw new Error('no main');
               main.querySelectorAll('script').forEach(function (script) {
+                var type = (script.getAttribute('type') || '').toLowerCase();
+                if (type === 'application/json' || type === 'application/ld+json') return;
                 script.remove();
               });
               body.replaceChildren();
@@ -250,9 +303,18 @@ const {
             });
         }
 
+        function openPhoto(href) {
+          loadModalContent(href, { writeHistory: true });
+        }
+
         function requestClose() {
-          if (history.state && history.state.photoModal) history.back();
-          else hideModal();
+          var depth = mk.photoModalDepth || 0;
+          if (depth > 0 && history.state && history.state.photoModal) {
+            mk.photoModalClosing = true;
+            history.go(-depth);
+            return;
+          }
+          hideModal();
         }
 
         document.addEventListener(
@@ -280,17 +342,18 @@ const {
 
             var link = event.target.closest('a[href]');
             if (!link) return;
-            var href = fotoHref(link.getAttribute('href'));
-            if (!href) return;
-
-            var inModal = dialog.contains(link);
             var isCard = link.hasAttribute('data-card-link');
-            if (!inModal && !isCard) return;
+            var isModalNav = link.hasAttribute('data-modal-link');
+            // Cards always open in the modal; prev/next only while the modal is already open.
+            // Parent SeriesNav title links stay normal page navigations.
+            if (!isCard && !(isModalNav && dialog.open)) return;
+            var href = modalHref(link.getAttribute('href'));
+            if (!href) return;
             if (!dialog.open && location.pathname.indexOf('/foto/') === 0) return;
 
             event.preventDefault();
             event.stopPropagation();
-            openPhoto(href, dialog.open);
+            openPhoto(href);
           },
           true,
         );
@@ -311,6 +374,19 @@ const {
           function (event) {
             if (!isOpen()) return;
             event.stopImmediatePropagation();
+            if (mk.photoModalClosing) {
+              hideModal();
+              return;
+            }
+            var href = modalHref(location.href);
+            if (href) {
+              var stack = mk.photoModalStack || [];
+              if (stack.length) stack.pop();
+              mk.photoModalStack = stack;
+              mk.photoModalDepth = stack.length;
+              loadModalContent(href, { writeHistory: false });
+              return;
+            }
             hideModal();
           },
           true,
@@ -321,7 +397,7 @@ const {
           hideModal();
         });
 
-        // Full load of the foto URL (Enter in the address bar) should start at the top.
+        // Full load of the photo URL (Enter in the address bar) should start at the top.
         // Don't move the grid while the modal is open.
         window.addEventListener('pagehide', function () {
           if (!isOpen() || !history.state) return;
