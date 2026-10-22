@@ -1,5 +1,6 @@
 ---
 import TagNav from './TagNav.astro';
+import SiteNavMenu from './SiteNavMenu';
 import { getAllTags, getPhotographers, getSearchCollections } from '@/lib/photos';
 
 interface Props {
@@ -24,11 +25,11 @@ const collectionsJson = JSON.stringify(collections).replace(/</g, '\\u003c');
   class="sticky top-0 z-50 bg-white"
   transition:persist="site-header"
 >
-  <div class="flex items-center gap-6 px-4 py-4 sm:gap-8 sm:px-6">
+  <div class="flex flex-col gap-3 px-4 py-4 sm:flex-row sm:items-center sm:gap-8 sm:px-6">
     <form
       action="/soeg"
       method="get"
-      class="relative min-w-0 flex-1"
+      class="relative order-2 w-full sm:order-1 sm:min-w-0 sm:flex-1"
       role="search"
       data-search-root
     >
@@ -108,12 +109,15 @@ const collectionsJson = JSON.stringify(collections).replace(/</g, '\\u003c');
       <script type="application/json" data-search-collections set:html={collectionsJson} />
     </form>
 
-    <a
-      href="/"
-      class="font-display shrink-0 text-lg !font-extrabold tracking-tight text-foreground no-underline hover:opacity-80 sm:text-xl"
-    >
-      Modkraft
-    </a>
+    <div class="order-1 flex w-full items-center justify-between sm:order-2 sm:w-auto sm:justify-start sm:gap-3">
+      <a
+        href="/"
+        class="font-display shrink-0 text-lg !font-extrabold tracking-tight text-foreground no-underline hover:opacity-80 sm:text-xl"
+      >
+        Modkraft
+      </a>
+      <SiteNavMenu client:load />
+    </div>
   </div>
 
   <TagNav activeTag={activeTag} searchQuery={searchQuery} />
@@ -141,9 +145,6 @@ const collectionsJson = JSON.stringify(collections).replace(/</g, '\\u003c');
 
     var SELECTED = ['border-foreground', 'font-semibold', 'text-foreground'];
     var IDLE = ['border-transparent', 'text-muted-foreground', 'hover:text-foreground'];
-    var MAX_SUGGESTIONS = 8;
-    var MAX_PHOTOGRAPHERS = 3;
-    var MAX_SERIES = 3;
 
     function setSelected(el, on) {
       SELECTED.forEach(function (c) {
@@ -208,7 +209,7 @@ const collectionsJson = JSON.stringify(collections).replace(/</g, '\\u003c');
       activeIndex = -1;
     }
 
-    function takeMatches(items, needle, limit, labelOf) {
+    function takeMatches(items, needle, labelOf) {
       var hits = [];
       for (var i = 0; i < items.length; i++) {
         var label = labelOf(items[i]);
@@ -221,17 +222,17 @@ const collectionsJson = JSON.stringify(collections).replace(/</g, '\\u003c');
         if (a.item.count !== b.item.count) return b.item.count - a.item.count;
         return a.label.localeCompare(b.label, 'da');
       });
-      return hits.slice(0, limit);
+      return hits;
     }
 
     function filterSuggestions(q) {
       var needle = q.trim().toLowerCase();
       if (!needle) return [];
 
-      var people = takeMatches(photographers, needle, MAX_PHOTOGRAPHERS, function (item) {
+      var people = takeMatches(photographers, needle, function (item) {
         return item.label;
       });
-      var series = takeMatches(collections, needle, MAX_SERIES, function (item) {
+      var series = takeMatches(collections, needle, function (item) {
         return item.title;
       });
 
@@ -251,10 +252,6 @@ const collectionsJson = JSON.stringify(collections).replace(/</g, '\\u003c');
         if (a.item.count !== b.item.count) return b.item.count - a.item.count;
         return a.label.localeCompare(b.label, 'da');
       });
-
-      var room = MAX_SUGGESTIONS - people.length - series.length;
-      if (room < 0) room = 0;
-      tagHits = tagHits.slice(0, room);
 
       var out = [];
       for (var t = 0; t < tagHits.length; t++) {
