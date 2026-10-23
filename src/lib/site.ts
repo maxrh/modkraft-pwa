@@ -18,7 +18,7 @@ export const MODKRAFT_ARCHIVE = {
   name: 'Modkraft',
   url: 'https://modkraft.dk/',
   blurb:
-    'Modkraft lukkede som venstrefløjens nyhedsmedie i 2017, men du kan besøge det gamle arkiv her:',
+    'Netavisen Modkraft lukkede i 2017, men er fortsat at finde online – bevaret som historisk arkiv.',
 } as const;
 
 export const SITE_LINKS = [
