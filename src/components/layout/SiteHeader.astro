@@ -25,10 +25,10 @@ const collectionsJson = JSON.stringify(collections).replace(/</g, '\\u003c');
   class="sticky top-0 z-50 bg-white"
   transition:persist="site-header"
 >
-  <div class="flex flex-wrap items-center gap-y-3 px-4 py-4 sm:flex-nowrap sm:px-6">
+  <div class="flex items-center px-4 py-4 sm:px-6">
     <a
       href="/"
-      class="order-1 shrink-0 no-underline hover:opacity-80 focus-visible:ring-2 focus-visible:ring-ring focus-visible:outline-none"
+      class="shrink-0 no-underline hover:opacity-80 focus-visible:ring-2 focus-visible:ring-ring focus-visible:outline-none"
       aria-label="Modkraft Fotoarkiv"
     >
       <img
@@ -41,20 +41,12 @@ const collectionsJson = JSON.stringify(collections).replace(/</g, '\\u003c');
       />
     </a>
 
-    <div
-      class="order-2 mx-3 hidden h-10 w-px shrink-0 bg-border sm:block"
-      aria-hidden="true"
-    >
-    </div>
-
-    <div class="order-2 ml-auto shrink-0 sm:order-5 sm:ml-0">
-      <SiteNavMenu client:load />
-    </div>
+    <div class="mx-2 h-10 w-px shrink-0 bg-border sm:mx-3" aria-hidden="true"></div>
 
     <form
       action="/soeg"
       method="get"
-      class="relative order-3 w-full sm:min-w-0 sm:flex-1"
+      class="relative min-w-0 flex-1"
       role="search"
       data-search-root
     >
@@ -134,10 +126,10 @@ const collectionsJson = JSON.stringify(collections).replace(/</g, '\\u003c');
       <script type="application/json" data-search-collections set:html={collectionsJson} />
     </form>
 
-    <div
-      class="order-4 mx-3 hidden h-10 w-px shrink-0 bg-border sm:block"
-      aria-hidden="true"
-    >
+    <div class="mx-2 h-10 w-px shrink-0 bg-border sm:mx-3" aria-hidden="true"></div>
+
+    <div class="shrink-0">
+      <SiteNavMenu client:load />
     </div>
   </div>
 
