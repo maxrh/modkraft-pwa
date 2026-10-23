@@ -23,7 +23,7 @@ const integrations = [
     includeAssets: ['favicon.svg', 'icons/*.png'],
     manifest: {
       name: 'Modkraft Fotoarkiv',
-      short_name: 'Modkraft',
+      short_name: 'Modkraft Fotoarkiv',
       description:
         'Dokumentariske fotografier fra Modkrafts fotoserier og fotoblogs 2012 - 2017',
       lang: 'da',
