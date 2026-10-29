@@ -60,12 +60,16 @@ Schemas live in `src/sanity/schemaTypes/` (`siteSettings`, `photoCollection`). P
 
 ## Deploy (Cloudflare Workers)
 
+Production domain: **https://fotoarkiv.modkraft.dk**
+
 ```bash
 npm run build
 npx wrangler deploy
 ```
 
-Requires a Cloudflare account and Wrangler login (`npx wrangler login`).
+Requires a Cloudflare account and Wrangler login (`npx wrangler login`). The Worker is bound to `fotoarkiv.modkraft.dk` via `wrangler.jsonc` (`custom_domain`). The `modkraft.dk` zone must be on the same Cloudflare account so DNS/SSL can be provisioned automatically.
+
+Canonical URLs / Open Graph use `site: https://fotoarkiv.modkraft.dk` (override with `PUBLIC_SITE` for staging). After cutover, allow that origin in Formspree if the contact form is restricted by domain.
 
 ## Photo collections
 
