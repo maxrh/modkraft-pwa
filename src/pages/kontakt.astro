@@ -2,10 +2,38 @@
 import BaseLayout from '@/layouts/BaseLayout.astro';
 import Container from '@/components/layout/Container.astro';
 import ContentHero from '@/components/layout/ContentHero.astro';
+import ContactForm from '@/components/ContactForm.astro';
+import { MONSUN } from '@/lib/site';
 ---
 
-<BaseLayout title="Kontakt">
+<BaseLayout
+  title="Kontakt"
+  description="Kontakt Modkraft Fotoarkiv — skriv til Monsun om arkivet."
+>
   <Container class="pt-8 pb-16">
     <ContentHero title="Kontakt" />
+    <div class="mx-auto max-w-2xl space-y-10">
+      <p class="text-base leading-relaxed text-foreground">
+        Har du spørgsmål til fotoarkivet, rettigheder eller brug af billederne?
+        Skriv til os, eller kontakt{' '}
+        <a
+          href={MONSUN.url}
+          class="underline underline-offset-2 hover:opacity-80"
+          rel="noopener noreferrer"
+          target="_blank"
+        >
+          Monsun
+        </a>{' '}
+        direkte på{' '}
+        <a
+          href={`mailto:${MONSUN.email}`}
+          class="underline underline-offset-2 hover:opacity-80"
+        >
+          {MONSUN.email}
+        </a>
+        .
+      </p>
+      <ContactForm />
+    </div>
   </Container>
 </BaseLayout>

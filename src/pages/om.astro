@@ -2,10 +2,59 @@
 import BaseLayout from '@/layouts/BaseLayout.astro';
 import Container from '@/components/layout/Container.astro';
 import ContentHero from '@/components/layout/ContentHero.astro';
+import { MODKRAFT_ARCHIVE, MONSUN } from '@/lib/site';
 ---
 
-<BaseLayout title="Om">
+<BaseLayout
+  title="Om"
+  description="Om Modkraft Fotoarkiv – dokumentariske fotoserier og fotoblogs fra netavisen Modkraft."
+>
   <Container class="pt-8 pb-16">
     <ContentHero title="Om" />
+    <div class="mx-auto max-w-2xl space-y-6 text-base leading-relaxed text-foreground">
+      <p>
+        Modkraft Fotoarkiv samler de dokumentariske fotoserier og fotoblogs, der
+        blev publiceret på netavisen{' '}
+        <a
+          href={MODKRAFT_ARCHIVE.url}
+          class="underline underline-offset-2 hover:opacity-80"
+          rel="noopener noreferrer"
+          target="_blank"
+        >
+          Modkraft
+        </a>
+        – et uafhængigt, venstreorienteret netmedie, der eksisterede fra 2000 til
+        2017.
+      </p>
+      <p>
+        Formålet er at bevare og gøre Modkrafts fotoserier tilgængelige ét sted,
+        efter at netavisen lukkede. Arkivet dækker fotoserier og fotoblogs fra
+        2012 til 2017 – ikke billeder fra nyhedsartikler, og heller ikke ældre
+        serier fra før 2012. Mere materiale fra før 2012 kan komme til senere.
+        Selve{' '}
+        <a
+          href={MODKRAFT_ARCHIVE.url}
+          class="underline underline-offset-2 hover:opacity-80"
+          rel="noopener noreferrer"
+          target="_blank"
+        >
+          modkraft.dk
+        </a>{' '}
+        findes stadig online som historisk arkiv. 
+      </p>
+      <p>
+        Sitet er udviklet og drevet af{' '}
+        <a
+          href={MONSUN.url}
+          class="underline underline-offset-2 hover:opacity-80"
+          rel="noopener noreferrer"
+          target="_blank"
+        >
+          Monsun
+        </a>
+        , det medarbejderejede kooperativ der også stod bag Modkrafts tekniske
+        drift.
+      </p>
+    </div>
   </Container>
 </BaseLayout>

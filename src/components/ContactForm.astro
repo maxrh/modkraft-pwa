@@ -1,0 +1,129 @@
+---
+const endpoint = 'https://formspree.io/f/xbggkdrj';
+const fieldClass =
+  'w-full rounded-md border-0 bg-input px-3 py-2.5 text-base text-foreground outline-none placeholder:text-muted-foreground focus-visible:ring-2 focus-visible:ring-ring';
+const labelClass = 'mb-1.5 block text-sm font-medium text-foreground';
+---
+
+<form
+  id="kontakt-form"
+  action={endpoint}
+  method="POST"
+  class="space-y-5"
+  data-kontakt-form
+>
+  <input type="hidden" name="_subject" value="Kontakt — Modkraft Fotoarkiv" />
+  {/* Honeypot — leave empty; Formspree drops spam that fills it */}
+  <input
+    type="text"
+    name="_gotcha"
+    class="hidden"
+    tabindex="-1"
+    autocomplete="off"
+    aria-hidden="true"
+  />
+
+  <div data-form-success hidden class="rounded-md bg-muted px-4 py-3 text-sm text-foreground">
+    Tak for din besked. Vi vender tilbage hurtigst muligt.
+  </div>
+  <div data-form-error hidden class="rounded-md bg-destructive/10 px-4 py-3 text-sm text-destructive">
+  </div>
+
+  <div data-form-fields class="space-y-5">
+    <div>
+      <label class={labelClass} for="kontakt-name">Navn</label>
+      <input
+        class={fieldClass}
+        id="kontakt-name"
+        type="text"
+        name="name"
+        autocomplete="name"
+        required
+      />
+    </div>
+
+    <div>
+      <label class={labelClass} for="kontakt-email">E-mail</label>
+      <input
+        class={fieldClass}
+        id="kontakt-email"
+        type="email"
+        name="email"
+        autocomplete="email"
+        required
+      />
+    </div>
+
+    <div>
+      <label class={labelClass} for="kontakt-message">Besked</label>
+      <textarea
+        class:list={[fieldClass, 'min-h-36 resize-y']}
+        id="kontakt-message"
+        name="message"
+        required
+      ></textarea>
+    </div>
+
+    <button
+      type="submit"
+      data-form-submit
+      class="inline-flex h-10 cursor-pointer items-center justify-center rounded-md bg-primary px-6 text-sm font-medium text-primary-foreground transition-colors hover:bg-primary/90 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50"
+    >
+      Send besked
+    </button>
+  </div>
+</form>
+
+<script>
+  function bindKontaktForm() {
+    const form = document.querySelector<HTMLFormElement>('[data-kontakt-form]');
+    if (!form || form.hasAttribute('data-bound')) return;
+    form.setAttribute('data-bound', '');
+
+    const success = form.querySelector<HTMLElement>('[data-form-success]');
+    const error = form.querySelector<HTMLElement>('[data-form-error]');
+    const fields = form.querySelector<HTMLElement>('[data-form-fields]');
+    const submit = form.querySelector<HTMLButtonElement>('[data-form-submit]');
+
+    form.addEventListener('submit', async (event) => {
+      event.preventDefault();
+      if (!success || !error || !fields || !submit) return;
+
+      error.hidden = true;
+      error.textContent = '';
+      submit.disabled = true;
+
+      try {
+        const res = await fetch(form.action, {
+          method: 'POST',
+          body: new FormData(form),
+          headers: { Accept: 'application/json' },
+        });
+
+        if (res.ok) {
+          fields.hidden = true;
+          success.hidden = false;
+          form.reset();
+          return;
+        }
+
+        const data = (await res.json().catch(() => null)) as
+          | { error?: string; errors?: Array<{ message?: string }> }
+          | null;
+        const msg =
+          data?.errors?.map((e) => e.message).filter(Boolean).join(' ') ||
+          data?.error ||
+          'Noget gik galt. Prøv igen, eller skriv til os på e-mail.';
+        error.textContent = msg;
+        error.hidden = false;
+      } catch {
+        error.textContent = 'Noget gik galt. Prøv igen, eller skriv til os på e-mail.';
+        error.hidden = false;
+      } finally {
+        submit.disabled = false;
+      }
+    });
+  }
+
+  document.addEventListener('astro:page-load', bindKontaktForm);
+</script>
