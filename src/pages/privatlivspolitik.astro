@@ -2,10 +2,171 @@
 import BaseLayout from '@/layouts/BaseLayout.astro';
 import Container from '@/components/layout/Container.astro';
 import ContentHero from '@/components/layout/ContentHero.astro';
+import { MONSUN, SITE_TITLE, SITE_URL } from '@/lib/site';
 ---
 
-<BaseLayout title="Privatlivspolitik">
+<BaseLayout
+  title="Privatlivspolitik"
+  description={`Privatlivspolitik for ${SITE_TITLE}.`}
+>
   <Container class="pt-8 pb-16">
     <ContentHero title="Privatlivspolitik" />
+    <div class="mx-auto max-w-2xl space-y-8 text-base leading-relaxed text-foreground">
+      <p class="text-sm text-muted-foreground">Senest opdateret: 29. oktober 2026</p>
+
+      <section class="space-y-3">
+        <h2 class="font-display text-xl font-semibold">1. Dataansvarlig</h2>
+        <p>
+          {SITE_TITLE} ({SITE_URL.replace(/^https:\/\//, '')}) drives af{' '}
+          <a
+            href={MONSUN.url}
+            class="underline underline-offset-2 hover:opacity-80"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            {MONSUN.name}
+          </a>
+          , der er dataansvarlig for behandling af personoplysninger i forbindelse med
+          sitet.
+        </p>
+        <p>
+          {MONSUN.name}<br />
+          {MONSUN.address[0]}<br />
+          {MONSUN.address[1]}<br />
+          CVR: {MONSUN.cvr}<br />
+          E-mail:{' '}
+          <a href={`mailto:${MONSUN.email}`} class="underline underline-offset-2 hover:opacity-80">
+            {MONSUN.email}
+          </a>
+          <br />
+          Telefon:{' '}
+          <a href={MONSUN.phoneHref} class="underline underline-offset-2 hover:opacity-80">
+            {MONSUN.phone}
+          </a>
+        </p>
+      </section>
+
+      <section class="space-y-3">
+        <h2 class="font-display text-xl font-semibold">2. Hvilke oplysninger behandler vi?</h2>
+        <p>
+          Vi indsamler kun personoplysninger, når du selv giver dem til os — typisk via
+          kontaktformularen på{' '}
+          <a href="/kontakt" class="underline underline-offset-2 hover:opacity-80">/kontakt</a>
+          .
+        </p>
+        <ul class="list-disc space-y-1 pl-5">
+          <li>Navn</li>
+          <li>E-mailadresse</li>
+          <li>Indholdet af din besked</li>
+          <li>
+            Tekniske metadata som Formspree automatisk kan knytte til indsendelsen (fx
+            tidspunkt og IP-adresse)
+          </li>
+        </ul>
+        <p>
+          Vi bruger ikke analyseværktøjer (fx Google Analytics) og indsamler ikke
+          personoplysninger til markedsføring.
+        </p>
+      </section>
+
+      <section class="space-y-3">
+        <h2 class="font-display text-xl font-semibold">3. Formål og retsgrundlag</h2>
+        <p>
+          Oplysningerne bruges til at besvare din henvendelse om fotoarkivet, rettigheder
+          eller brug af billeder. Retsgrundlaget er GDPR art. 6, stk. 1, litra f
+          (legitim interesse i at kunne kommunikere med brugere af arkivet) og — når
+          henvendelsen vedrører en konkret forespørgsel — art. 6, stk. 1, litra b
+          (foranstaltninger forud for en aftale).
+        </p>
+      </section>
+
+      <section class="space-y-3">
+        <h2 class="font-display text-xl font-semibold">4. Modtagere og databehandlere</h2>
+        <p>
+          Kontaktformularen leveres af{' '}
+          <a
+            href="https://formspree.io/"
+            class="underline underline-offset-2 hover:opacity-80"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            Formspree
+          </a>
+          , som behandler indsendte oplysninger på vores vegne. Formspree kan behandle
+          data i USA; overførsel sker under deres gældende garantier (fx standardkontraktbestemmelser).
+          Se også{' '}
+          <a
+            href="https://formspree.io/legal/privacy-policy/"
+            class="underline underline-offset-2 hover:opacity-80"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            Formsprees privatlivspolitik
+          </a>
+          .
+        </p>
+        <p>
+          Sitet hostes hos Cloudflare. Cloudflare kan behandle tekniske logdata (fx
+          IP-adresse og request-metadata) som led i drift og sikkerhed.
+        </p>
+        <p>
+          Skrifttyper indlæses fra Google Fonts. Din browser kan derfor sende en
+          forespørgsel til Google, når du besøger sitet.
+        </p>
+      </section>
+
+      <section class="space-y-3">
+        <h2 class="font-display text-xl font-semibold">5. Cookies og lokal lagring</h2>
+        <p>
+          Vi sætter ikke cookies til statistik eller markedsføring. Browseren kan gemme
+          dine egne valg lokalt (fx sortering og visning i mosaikken) via{' '}
+          <code class="text-sm">localStorage</code>. Det er ikke personhenførbare data,
+          vi indsamler eller ser.
+        </p>
+        <p>
+          Hvis du installerer sitet som PWA, kan din browser gemme app-relaterede data
+          lokalt (fx service worker-cache af ikoner og scripts). Fotoarkivets billeder
+          precaches ikke.
+        </p>
+      </section>
+
+      <section class="space-y-3">
+        <h2 class="font-display text-xl font-semibold">6. Opbevaring</h2>
+        <p>
+          Henvendelser via kontaktformularen opbevares, så længe det er nødvendigt for
+          at behandle sagen, og slettes derefter — normalt inden for 12 måneder, medmindre
+          der er en saglig grund til længere opbevaring (fx en igangværende
+          rettighedsforespørgsel).
+        </p>
+      </section>
+
+      <section class="space-y-3">
+        <h2 class="font-display text-xl font-semibold">7. Dine rettigheder</h2>
+        <p>Du har efter databeskyttelsesreglerne ret til bl.a. at:</p>
+        <ul class="list-disc space-y-1 pl-5">
+          <li>få indsigt i de personoplysninger, vi behandler om dig</li>
+          <li>få urigtige oplysninger berigtiget</li>
+          <li>få oplysninger slettet i visse tilfælde</li>
+          <li>gøre indsigelse mod behandlingen</li>
+          <li>klage til Datatilsynet (www.datatilsynet.dk)</li>
+        </ul>
+        <p>
+          Kontakt os på{' '}
+          <a href={`mailto:${MONSUN.email}`} class="underline underline-offset-2 hover:opacity-80">
+            {MONSUN.email}
+          </a>{' '}
+          for at udøve dine rettigheder.
+        </p>
+      </section>
+
+      <section class="space-y-3">
+        <h2 class="font-display text-xl font-semibold">8. Ændringer</h2>
+        <p>
+          Vi kan opdatere denne privatlivspolitik, hvis sitet eller vores behandling
+          ændrer sig. Den gældende version findes altid på denne side.
+        </p>
+      </section>
+
+    </div>
   </Container>
 </BaseLayout>

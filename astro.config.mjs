@@ -4,6 +4,7 @@ import { fileURLToPath } from 'node:url';
 import { defineConfig } from 'astro/config';
 import cloudflare from '@astrojs/cloudflare';
 import react from '@astrojs/react';
+import sitemap from '@astrojs/sitemap';
 import AstroPWA from '@vite-pwa/astro';
 import tailwindcss from '@tailwindcss/vite';
 import sanity from '@sanity/astro';
@@ -18,10 +19,14 @@ const sanityEnabled = Boolean(sanityProjectId);
 const integrations = [
   react(),
   matchWorkbenchIntegration(rootDir),
+  sitemap({
+    filter: (page) => !page.includes('/match'),
+  }),
   AstroPWA({
     registerType: 'autoUpdate',
     includeAssets: ['favicon.svg', 'icons/*.png'],
     manifest: {
+      id: 'https://fotoarkiv.modkraft.dk/',
       name: 'Modkraft Fotoarkiv',
       short_name: 'Modkraft Fotoarkiv',
       description:
@@ -82,7 +87,8 @@ if (sanityEnabled) {
 
 // https://astro.build/config
 export default defineConfig({
-  ...(process.env.PUBLIC_SITE ? { site: process.env.PUBLIC_SITE } : {}),
+  // Canonical production host. Override with PUBLIC_SITE for staging previews.
+  site: process.env.PUBLIC_SITE || 'https://fotoarkiv.modkraft.dk',
   output: 'static',
   redirects: {
     '/fotoserie': '/?view=collections',

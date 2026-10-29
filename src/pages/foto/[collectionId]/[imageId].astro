@@ -16,6 +16,7 @@ import {
   sortCollectionsNewest,
   type Photo,
 } from '@/lib/photos';
+import { SITE_URL } from '@/lib/site';
 
 export async function getStaticPaths() {
   const collections = (await getCollection('photoCollections')).sort(sortCollectionsNewest);
@@ -64,8 +65,10 @@ const kind = collectionKind(photo.sourceType);
 const kindLabel = collectionKindLabel(photo.sourceType);
 const cameraModel = await readCameraModel(photo.collectionId, photo.filename);
 const seo = photoPageSeo(photo);
-const configuredSite = import.meta.env.PUBLIC_SITE || Astro.site?.origin;
-const siteOrigin = String(configuredSite || Astro.url.origin).replace(/\/$/, '');
+const siteOrigin = String(import.meta.env.PUBLIC_SITE || Astro.site || SITE_URL).replace(
+  /\/$/,
+  '',
+);
 const pageUrl = new URL(photo.href, siteOrigin).href;
 const imageUrlAbs = new URL(photo.display, siteOrigin).href;
 const seriesUrl = new URL(`/fotoserie/${photo.collectionId}`, siteOrigin).href;

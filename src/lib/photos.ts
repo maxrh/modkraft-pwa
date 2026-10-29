@@ -172,7 +172,9 @@ export function collectionCardsFromPhotos(
 export function flattenCollectionPhotos(collection: PhotoCollection): Photo[] {
   const d = collection.data;
   const sortedImages = [...d.images].sort((a, b) => a.sortOrder - b.sortOrder);
-  const fallbackCredit = d.photographers.length > 0 ? d.photographers.join(', ') : null;
+  // Only fall back to collection photographers when the series has a single
+  // credited photographer — never join the whole roster onto every image.
+  const fallbackCredit = d.photographers.length === 1 ? d.photographers[0] : null;
 
   return sortedImages.map((img) => ({
     id: `${d.id}/${img.id}`,
@@ -185,7 +187,7 @@ export function flattenCollectionPhotos(collection: PhotoCollection): Photo[] {
     filename: img.filename,
     width: img.width ?? 940,
     height: img.height ?? 627,
-    credit: img.credit || fallbackCredit,
+    credit: img.credit?.trim() || fallbackCredit,
     caption: img.caption ?? null,
     sortOrder: img.sortOrder,
     imageCount: sortedImages.length,
@@ -365,7 +367,12 @@ export async function getPhotographers(): Promise<PhotographerInfo[]> {
     const photos = await getAllPhotos();
     const byKey = new Map<string, { label: string; labelCounts: Map<string, number>; photoIds: Set<string> }>();
     for (const photo of photos) {
-      const raw = photo.credit ? [...photo.photographers, photo.credit] : [...photo.photographers];
+      // Count from the photo's own credit only — never the whole series roster.
+      const raw = photo.credit
+        ? [photo.credit]
+        : photo.photographers.length === 1
+          ? photo.photographers
+          : [];
       const seen = new Map<string, string>();
       for (const piece of raw) {
         for (const name of splitCreditNames(piece)) {
@@ -454,6 +461,8 @@ export async function getArchiveStats(): Promise<ArchiveStats> {
 export function photoMatchesQuery(photo: Photo, query: string): boolean {
   const q = query.trim().toLowerCase();
   if (!q) return true;
+  // Do not search collection-level `photographers` — that list is shared by every
+  // photo in a series and would return other photographers' images.
   const haystack = [
     photo.collectionTitle,
     photo.caption ?? '',
@@ -461,7 +470,6 @@ export function photoMatchesQuery(photo: Photo, query: string): boolean {
     photo.prefix ?? '',
     ...photo.tags,
     ...photo.authors,
-    ...photo.photographers,
   ]
     .join(' ')
     .toLowerCase();

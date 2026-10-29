@@ -2,6 +2,18 @@ export const SITE_TITLE = 'Modkraft Fotoarkiv';
 export const SITE_DESCRIPTION =
   'Dokumentariske fotografier fra Modkrafts fotoserier og fotoblogs 2012 - 2017';
 
+/** Canonical production origin (no trailing slash). */
+export const SITE_URL = 'https://fotoarkiv.modkraft.dk';
+
+/**
+ * Default Open Graph image for non-photo pages (home, om, kontakt, …).
+ * From /foto/1-marts-vores-kampdag/04 — pages can override with their own `image`.
+ */
+export const DEFAULT_OG_IMAGE = {
+  path: '/media/display/1-marts-vores-kampdag/04-jagtvej-69-1582.webp',
+  alt: 'Demonstration på Jagtvej 69, 1. marts — Modkraft Fotoarkiv',
+} as const;
+
 /** Developer / agency credit in the site footer. */
 export const MONSUN = {
   name: 'MONSUN',

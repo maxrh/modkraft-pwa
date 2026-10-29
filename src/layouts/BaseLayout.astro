@@ -4,7 +4,7 @@ import '@/styles/global.css';
 import Head from '@/components/layout/Head.astro';
 import SiteHeader from '@/components/layout/SiteHeader.astro';
 import SiteFooter from '@/components/layout/SiteFooter.astro';
-import { SITE_DESCRIPTION, SITE_TITLE } from '@/lib/site';
+import { DEFAULT_OG_IMAGE, SITE_DESCRIPTION, SITE_TITLE, SITE_URL } from '@/lib/site';
 
 interface Props {
   title?: string;
@@ -29,6 +29,11 @@ const {
   imageAlt,
   jsonLd,
 } = Astro.props;
+
+const siteOrigin = String(import.meta.env.PUBLIC_SITE || Astro.site || SITE_URL).replace(/\/$/, '');
+const defaultOgHref = new URL(DEFAULT_OG_IMAGE.path, `${siteOrigin}/`).href;
+const ogImage = image ?? defaultOgHref;
+const ogImageAlt = image ? imageAlt : (imageAlt ?? DEFAULT_OG_IMAGE.alt);
 ---
 
 <!doctype html>
@@ -38,8 +43,8 @@ const {
       title={title}
       description={description}
       canonical={canonical}
-      image={image}
-      imageAlt={imageAlt}
+      image={ogImage}
+      imageAlt={ogImageAlt}
       jsonLd={jsonLd}
     />
     <script src="../pwa.ts"></script>

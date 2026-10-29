@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+
+Disallow: /match
+Disallow: /match/
+
+Host: https://fotoarkiv.modkraft.dk
+Sitemap: https://fotoarkiv.modkraft.dk/sitemap-index.xml
